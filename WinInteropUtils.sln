@@ -5,7 +5,7 @@ VisualStudioVersion = 17.14.36310.24
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinInteropUtils", "WinInteropUtils.csproj", "{7EFFEAED-7EE1-49E3-BF2C-9D0648FA884D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinInteropUtils Test App", "WinInteropUtils Test App\WinInteropUtils Test App.csproj", "{13293ACB-2F68-4491-BC9B-C2425D472547}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinInteropUtils Test App", "..\WinInteropUtils Test App\WinInteropUtils Test App.csproj", "{13293ACB-2F68-4491-BC9B-C2425D472547}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

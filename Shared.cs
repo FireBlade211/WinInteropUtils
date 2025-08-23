@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using System.Drawing;
 
 namespace FireBlade.WinInteropUtils
 {
