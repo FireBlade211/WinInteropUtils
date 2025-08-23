@@ -228,6 +228,78 @@ namespace FireBlade.WinInteropUtils
 
             return info;
         }
+
+
+        [StructLayout(LayoutKind.Sequential)]
+        private struct POINT(int x, int y)
+        {
+            public int X = x;
+            public int Y = y;
+
+            public readonly override string ToString() => $"({X}, {Y})";
+        }
+
+        [LibraryImport("user32.dll")]
+        private static partial nint WindowFromPoint(POINT Point);
+
+        /// <summary>
+        /// Retrieves a handle to the window that is under the specified point.
+        /// </summary>
+        /// <param name="point">The point to be checked.</param>
+        /// <returns>A handle to the window that is under the point. If no window exists at the given point, the return value is <see langword="null"/>.
+        /// If the point is over a static text control, the return value is a handle to the window under the static text control.</returns>
+        [SupportedOSPlatform("windows5.0")]
+        public static nint? GetWindowAtPoint(Point point)
+        {
+            var hwnd = WindowFromPoint(new POINT(point.X, point.Y));
+
+            return hwnd != nint.Zero ? hwnd : null;
+        }
+
+        /// <summary>
+        /// Retrieves a handle to the window that is under the specified point.
+        /// </summary>
+        /// <param name="x">The X position to be checked.</param>
+        /// <param name="y">The Y position to be checked.</param>
+        /// <returns>A handle to the window that is under the point. If no window exists at the given point, the return value is <see langword="null"/>.
+        /// If the point is over a static text control, the return value is a handle to the window under the static text control.</returns>
+        [SupportedOSPlatform("windows5.0")]
+        public static nint? GetWindowAtPoint(int x, int y)
+        {
+            var hwnd = WindowFromPoint(new POINT(x, y));
+
+            return hwnd != nint.Zero ? hwnd : null;
+        }
+
+        [LibraryImport("user32.dll")]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static partial bool IsZoomed(nint hWnd);
+
+        [LibraryImport("user32.dll")]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static partial bool IsIconic(nint hWnd);
+
+        [LibraryImport("user32.dll")]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static partial bool IsWindowVisible(nint hWnd);
+
+        /// <summary>
+        /// Determines the state of the window represented by the handle <paramref name="hWnd"/>.
+        /// </summary>
+        /// <param name="hWnd">The window handle to check.</param>
+        /// <returns>The state of the window.</returns>
+        [SupportedOSPlatform("windows5.0")]
+        public static WindowState GetWindowState(nint hWnd)
+        {
+            if (!IsWindowVisible(hWnd))
+                return WindowState.Hidden;
+            else if (IsZoomed(hWnd))
+                return WindowState.Zoomed;
+            else if (IsIconic(hWnd))
+                return WindowState.Iconic;
+            else
+                return WindowState.Normal;
+        }
     }
 
     /// <summary>
@@ -313,7 +385,7 @@ namespace FireBlade.WinInteropUtils
         [Obsolete("TitleBarElement.Reserved is a reserved value. Do not use.")]
         Reserved = 1,
         /// <summary>
-        /// The minimize button.
+        /// The minimize (-) button.
         /// </summary>
         MinimizeButton = 2,
         /// <summary>
@@ -325,7 +397,7 @@ namespace FireBlade.WinInteropUtils
         /// </summary>
         HelpButton = 4,
         /// <summary>
-        /// The close button.
+        /// The close (X) button.
         /// </summary>
         CloseButton = 5
     }
@@ -358,4 +430,42 @@ namespace FireBlade.WinInteropUtils
         Pressed = 0x00000008
     }
 
+    /// <summary>
+    /// Defines states a window can be in.
+    /// </summary>
+    public enum WindowState
+    {
+        /// <summary>
+        /// The window is in the normal state.
+        /// </summary>
+        Normal,
+        /// <summary>
+        /// The window is zoomed (maximized).
+        /// </summary>
+        Zoomed,
+        /// <summary>
+        /// The window is iconic (minimized).
+        /// </summary>
+        Iconic,
+        /// <summary>
+        /// The window is hidden.
+        /// </summary>
+        Hidden,
+        /// <summary>
+        /// The window is zoomed (maximized).
+        /// </summary>
+        Maximized = Zoomed,
+        /// <summary>
+        /// The window is iconic (minimized).
+        /// </summary>
+        Minimized = Iconic,
+        /// <summary>
+        /// The window is hidden.
+        /// </summary>
+        Invisible = Hidden,
+        /// <summary>
+        /// The window is in the normal state.
+        /// </summary>
+        Visible = Normal
+    }
 }

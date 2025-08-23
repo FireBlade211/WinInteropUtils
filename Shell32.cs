@@ -538,11 +538,17 @@ namespace FireBlade.WinInteropUtils
         /// <summary>
         /// Gets the text content of the file.
         /// </summary>
+        /// <remarks>
+        /// Unlike the rest of the <see cref="WindowsFile"/> class, this value is not cached.
+        /// </remarks>
         public string Content => File.ReadAllText(_path);
 
         /// <summary>
         /// Gets the bytes of the file.
         /// </summary>
+        /// <remarks>
+        /// Unlike the rest of the <see cref="WindowsFile"/> class, this value is not cached.
+        /// </remarks>
         public byte[] Bytes => File.ReadAllBytes(_path);
 
         private Shell32.SHFILEINFO shFileInfo = info;
