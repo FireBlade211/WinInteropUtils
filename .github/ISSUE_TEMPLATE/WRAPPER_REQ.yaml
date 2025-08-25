@@ -1,0 +1,40 @@
+name: Wrapper Request
+description: Suggest a function to be wrapped in the next version of WinInteropUtils
+labels: ["enhancement"]
+title: "[REQUEST] <short description>"
+body:
+  - type: textarea
+    id: "function"
+    attributes:
+      label: "Windows API function"
+      description: "Enter the name of the Windows API function to wrap."
+      placeholder: "e.g, ShellExecuteEx"
+    validations:
+      required: true
+
+  - type: textarea
+    id: "usecase"
+    attributes:
+      label: "Why should this function be wrapped?"
+      description: "Describe the use case or motivation for adding this wrapper."
+      placeholder: "I need ShellExecuteEx to launch files with default handlers..."
+    validations:
+      required: true
+
+  - type: input
+    id: "docs"
+    attributes:
+      label: "Reference / Documentation link"
+      description: "If available, provide a Microsoft Docs or MSDN link for the function."
+      placeholder: "https://learn.microsoft.com/windows/win32/api/shellapi/nf-shellapi-shellexecuteex"
+    validations:
+      required: false
+
+  - type: textarea
+    id: "notes"
+    attributes:
+      label: "Additional context"
+      description: "Add any other context, related APIs, or special considerations."
+      placeholder: "This function is often used with COM objects, might need structs..."
+    validations:
+      required: false
