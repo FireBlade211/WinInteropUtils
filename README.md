@@ -5,3 +5,6 @@ All classes are in the namespace `FireBlade.WinInteropUtils`.
 
 ## How to install (for now)
 Because WinInteropUtils isn't a NuGet package yet, to use it, simply download the DLL file, and go into the add references dialog, select Browse, and open the DLL. Warning: WinInteropUtils is built on .NET 8, so it won't work for .NET Framework projects.
+
+## Documentation
+For documentation, visit the [WinInteropUtils Wiki](https://github.com/FireBlade211/WinInteropUtils/wiki).
