@@ -1,0 +1,84 @@
+name: Bug Report
+description: File a bug
+title: "[BUG]"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "## Bug Report"
+  - type: markdown
+    attributes:
+      value: |
+        File a bug report by filling out this form!
+
+  - type: input
+    id: "winver"
+    attributes:
+      label: "Windows version"
+      description: "What **Windows version** are you using WinInteropUtils on?"
+      placeholder: "e.g, Windows 11"
+    validations:
+      required: true 
+
+  - type: input
+    id: "appver"
+    attributes:
+      label: "App version"
+      description: "What version of **WinInteropUtils** are you using?"
+      placeholder: "e.g, v1.0"
+    validations:
+      required: true 
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction steps
+      description: "How do you trigger this bug? Please walk us through it step by step."
+      placeholder: |
+        1. Go to ...
+        2. Scroll to ...
+        3. Click on ...
+        ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: "What did you expect to happen?"
+      placeholder: "The function should have returned..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: "What actually happened instead?"
+      placeholder: "Instead, it returned..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Frequency
+      description: How often does this bug occur?
+      options:
+        - Very rarely
+        - Rarely
+        - Occasionally
+        - Often
+        - Very often
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Screenshots
+      description: "If applicable, add logs or screenshots to help explain your problem."
+      placeholder: "Paste logs, or drag and drop screenshots here"
+    validations:
+      required: false
