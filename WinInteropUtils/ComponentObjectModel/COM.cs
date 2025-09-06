@@ -227,10 +227,10 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
 
         /// <summary>
         /// Values that are used in activation calls to indicate the execution contexts in which an object is to
-        /// be run. Used in <see cref="CreateInstance{TCoInterface}(Guid, IUnknown?, CreateInstanceContext, Guid, out TCoInterface?)"/>.
+        /// be run. Used in <see cref="CreateInstance"/>.
         /// </summary>
         /// <remarks>
-        /// <para>Values from the <see cref="CreateInstanceContext"/> enumeration are used in activation calls (<see cref="CreateInstance{TCoInterface}(Guid, IUnknown?, CreateInstanceContext, Guid, out TCoInterface?)"/>,
+        /// <para>Values from the <see cref="CreateInstanceContext"/> enumeration are used in activation calls (<see cref="CreateInstance"/>,
         /// CoCreateInstanceEx, CoGetClassObject, and so on) to indicate the preferred execution contexts (in-process, local, or remote) in which an
         /// object is to be run. They are also used in calls to CoRegisterClassObject to indicate the set of execution contexts in which a class object
         /// is to be made available for requests to construct instances.</para>
@@ -253,7 +253,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// The second case allows applications written prior to the release of distributed <see cref="COM"/> to be the configuration
         /// of classes for remote activation to be used by client applications available prior to DCOM and the <see cref="RemoteServer"/> flag. The cases
         /// in which there would be no explicit COSERVERINFO structure are when the value is specified as <see langword="null"/> or when it is not one of the function
-        /// parameters (as in calls to <see cref="CreateInstance{TCoInterface}(Guid, IUnknown?, CreateInstanceContext, Guid, out TCoInterface?)"/> and CoGetClassObject).
+        /// parameters (as in calls to <see cref="CreateInstance"/> and CoGetClassObject).
         /// </item>
         /// <item>If the explicit COSERVERINFO parameter indicates the current computer, <see cref="RemoteServer"/> is removed if present.</item>
         /// </list>
