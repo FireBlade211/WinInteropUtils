@@ -1,6 +1,9 @@
-﻿using System.Drawing;
+﻿using FireBlade.WinInteropUtils.ComponentObjectModel;
+using FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces;
+using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Runtime.Versioning;
+using static FireBlade.WinInteropUtils.ComponentObjectModel.COM;
 
 namespace FireBlade.WinInteropUtils
 {
