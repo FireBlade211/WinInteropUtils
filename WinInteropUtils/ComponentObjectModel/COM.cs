@@ -179,11 +179,11 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// </list>
         /// </returns>
         /// <remarks>
-        /// <para>The <see cref="CreateInstance{TCoInterface}(Guid, IUnknown?, CreateInstanceContext, Guid, out TCoInterface?)"/> function provides
+        /// <para>The <see cref="CreateInstance"/> function provides
         /// a convenient shortcut by connecting to the class object associated with the specified CLSID, creating a default-initialized instance,
         /// and releasing the class object.</para>
         /// 
-        /// <para>It is convenient to use <see cref="CreateInstance{TCoInterface}(Guid, IUnknown?, CreateInstanceContext, Guid, out TCoInterface?)"/> when
+        /// <para>It is convenient to use <see cref="CreateInstance"/> when
         /// you need to create only a single instance of an object on the local machine. If you are creating an instance on remote
         /// computer, call CoCreateInstanceEx.</para>
         /// 
@@ -195,7 +195,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// <para><i>UWP applications</i></para>
         /// 
         /// Although there are no restrictions on which CLSIDs a UWP application can pass
-        /// to <see cref="CreateInstance{TCoInterface}(Guid, IUnknown?, CreateInstanceContext, Guid, out TCoInterface?)"/>, many objects will fail
+        /// to <see cref="CreateInstance"/>, many objects will fail
         /// with <see cref="HRESULT.E_ACCESSDENIED"/> for security reasons, especially if they do not run in-process. Additionally, even if you can successfully
         /// create an object, it might fail at a later time due to UWP security constraints, app-model differences, etc. In particular, background tasks should limit
         /// the objects they communicate with to avoid hangs or other complications due to connected stand-by.
