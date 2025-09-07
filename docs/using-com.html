@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Using COM | WinInteropUtils </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Using COM | WinInteropUtils ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/FireBlade211/WinInteropUtils/blob/main/docs/using-com.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="WinInteropUtils">
+            WinInteropUtils
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="using-com">Using COM</h1>
+
+<p><strong>COM</strong> (Component-Object Model) is a Windows framework that allows for reusable components in your code. This guide will go over how to use COM in WinInteropUtils.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p><strong>COM</strong> is for advanced users, so there's manual memory management and other advanced things. Wrappers for COM interfaces will come in future releases, but for now this is the only option.</p>
+</div>
+<h2 id="basic-setup">Basic Setup</h2>
+<p>To begin using COM, you need to import the appropirate COM namespaces into your script:</p>
+<pre><code class="lang-cs">using FireBlade.WinInteropUtils.ComponentObjectModel; // for base COM class and additional future COM non-interface wrappers
+using FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces; // for COM interfaces
+
+using FireBlade.WinInteropUtils; // base WinInteropUtils namespace, required for Macros (useful for COM because we need to check a lot of HRESULTs)
+</code></pre>
+<p>Now we're ready to use COM. Over the course of this guide we will build up a sample of a file dialog. Before using COM interfaces, we need to initialize COM:</p>
+<pre><code class="lang-cs">// if you're using v0.11 or earlier the function is named COM.CoInitialize instead
+HRESULT hr = COM.Initialize(CoInit.ApartmentThreaded); // or MultiThreaded if inside a non-GUI/non-STA app
+</code></pre>
+<p>Now, after initializng COM, we need to check if the initialization succeeded:</p>
+<pre><code class="lang-cs">if (Macros.Succeeded(hr))
+{
+    // init succeeded: proceeded with COM
+
+    // our COM code...
+}
+</code></pre>
+<h2 id="creating-and-interacting-with-a-com-instance">Creating and Interacting with a COM instance</h2>
+<p>Now that COM is initialized, we need to actually create the COM instance, and once again check for success:</p>
+<pre><code class="lang-cs">// 84bccd23-5fde-4cdb-aea4-af64b83d78ab is the CLSID for the file open dialog
+
+hr = COM.CreateInstance&lt;IFileOpenDialog&gt;(
+    new Guid(&quot;84bccd23-5fde-4cdb-aea4-af64b83d78ab&quot;),
+    null,
+    CreateInstanceContext.InprocServer,
+    new Guid(&quot;84bccd23-5fde-4cdb-aea4-af64b83d78ab&quot;),
+    out IFileOpenDialog dlg);
+
+if (Macros.Succeeded(hr))
+{
+    // creation succeeded: proceed with interaction
+}
+</code></pre>
+<p>And we can now proceed with interacting with the interface, which is a lot easier. In the following example, we configure the file dialog with a custom title and 2 filters:</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This code defines the <code>COMDLG_FILTERSPEC</code> struct itself, because WinInteropUtils doesn't support it yet.</p>
+</div>
+<pre><code class="lang-cs">[StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+public struct COMDLG_FILTERSPEC
+{
+    public string pszName;
+    public string pszSpec;
+}
+
+
+COMDLG_FILTERSPEC[] filters = new COMDLG_FILTERSPEC[]
+{
+    new COMDLG_FILTERSPEC { pszName = &quot;Text Files&quot;, pszSpec = &quot;*.txt&quot; },
+    new COMDLG_FILTERSPEC { pszName = &quot;All Files&quot;, pszSpec = &quot;*.*&quot; }
+};
+
+// Allocate unmanaged memory (SetFileTypes requires pointer)
+IntPtr ptr = Marshal.AllocHGlobal(Marshal.SizeOf&lt;COMDLG_FILTERSPEC&gt;() * filters.Length);
+
+try
+{
+    // Copy each struct into unmanaged memory
+    for (int i = 0; i &lt; filters.Length; i++)
+    {
+        IntPtr structPtr = IntPtr.Add(ptr, i * Marshal.SizeOf&lt;COMDLG_FILTERSPEC&gt;());
+        Marshal.StructureToPtr(filters[i], structPtr, false);
+    }
+
+    // ptr now points to the unmanaged array
+    dlg.SetFileTypes((uint)filters.Length, ptr);
+}
+finally
+{
+    Marshal.FreeHGlobal(ptr);
+}
+
+dlg.SetTitle(&quot;Cool File Dialog&quot;);
+</code></pre>
+<p>And now we can actually SHOW the file dialog and read its results:</p>
+<pre><code class="lang-cs">hr = dlg.Show(hWnd);
+
+if (Macros.Succeeded(hr))
+{
+    Console.WriteLine(&quot;Dialog accepted!&quot;);
+
+    hr = dlg.GetResult(out nint iptr);
+
+    if (Macros.Succeeded(hr))
+    {
+        IShellItem item = (IShellItem)Marshal.GetTypedObjectForIUnknown(iptr, typeof(IShellItem));
+
+        hr = item.GetDisplayName(
+            SIGDN.SIGDN_FILESYSPATH,
+            out nint pptr);
+
+        if (Macros.Succeeded(hr))
+        {
+            string path = Marshal.PtrToStringUni(pptr);
+
+            Console.WriteLine(&quot;Chosen path: &quot; + path);
+            
+            Marshal.FreeCoTaskMem(pptr);
+        }
+    }
+}
+</code></pre>
+<h2 id="cleanup">Cleanup</h2>
+<p>Once you're done using COM, you need to deinitialize the COM library (if the initialization succeeded) and release any COM interfaces, using the <a href="../api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_Release">Release</a> method:</p>
+<pre><code class="lang-cs">dlg.Release();
+COM.Uninitialize();
+</code></pre>
+<h2 id="final-example">Final Example</h2>
+<p>So now, our final example code looks like this:</p>
+<pre><code class="lang-cs">using FireBlade.WinInteropUtils.ComponentObjectModel;
+using FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces;
+using FireBlade.WinInteropUtils;
+
+[StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+public struct COMDLG_FILTERSPEC
+{
+    public string pszName;
+    public string pszSpec;
+}
+
+HRESULT hr = COM.Initialize(CoInit.ApartmentThreaded);
+
+if (Macros.Succeeded(hr))
+{
+    // 84bccd23-5fde-4cdb-aea4-af64b83d78ab is the CLSID for the file open dialog
+
+    hr = COM.CreateInstance&lt;IFileOpenDialog&gt;(
+        new Guid(&quot;84bccd23-5fde-4cdb-aea4-af64b83d78ab&quot;),
+        null,
+        CreateInstanceContext.InprocServer,
+        new Guid(&quot;84bccd23-5fde-4cdb-aea4-af64b83d78ab&quot;),
+        out IFileOpenDialog dlg);
+
+    if (Macros.Succeeded(hr))
+    {
+        COMDLG_FILTERSPEC[] filters = new COMDLG_FILTERSPEC[]
+        {
+            new COMDLG_FILTERSPEC { pszName = &quot;Text Files&quot;, pszSpec = &quot;*.txt&quot; },
+            new COMDLG_FILTERSPEC { pszName = &quot;All Files&quot;, pszSpec = &quot;*.*&quot; }
+        };
+
+        // Allocate unmanaged memory (SetFileTypes requires pointer)
+        IntPtr ptr = Marshal.AllocHGlobal(Marshal.SizeOf&lt;COMDLG_FILTERSPEC&gt;() * filters.Length);
+
+        try
+        {
+            // Copy each struct into unmanaged memory
+            for (int i = 0; i &lt; filters.Length; i++)
+            {
+                IntPtr structPtr = IntPtr.Add(ptr, i * Marshal.SizeOf&lt;COMDLG_FILTERSPEC&gt;());
+                Marshal.StructureToPtr(filters[i], structPtr, false);
+            }
+
+            // ptr now points to the unmanaged array
+            dlg.SetFileTypes((uint)filters.Length, ptr);
+        }
+        finally
+        {
+            Marshal.FreeHGlobal(ptr);
+        }
+
+        dlg.SetTitle(&quot;Cool File Dialog&quot;);
+
+        hr = dlg.Show(hWnd);
+
+        if (Macros.Succeeded(hr))
+        {
+            Console.WriteLine(&quot;Dialog accepted!&quot;);
+
+            hr = dlg.GetResult(out nint iptr);
+
+            if (Macros.Succeeded(hr))
+            {
+                IShellItem item = (IShellItem)Marshal.GetTypedObjectForIUnknown(iptr, typeof(IShellItem));
+
+                hr = item.GetDisplayName(
+                    SIGDN.SIGDN_FILESYSPATH,
+                    out nint pptr);
+
+                if (Macros.Succeeded(hr))
+                {
+                    string path = Marshal.PtrToStringUni(pptr);
+
+                    Console.WriteLine(&quot;Chosen path: &quot; + path);
+                    
+                    Marshal.FreeCoTaskMem(pptr);
+                }
+
+                item.Release();
+            }
+        }
+
+        dlg.Release();
+    }
+
+    COM.Uninitialize();
+}
+</code></pre>
+<p>If we run this sample code, a file dialog should appear and, after picking a file, its path should be outputted.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/FireBlade211/WinInteropUtils/blob/main/docs/using-com.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

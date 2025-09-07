@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IFileDialog | WinInteropUtils </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IFileDialog | WinInteropUtils ">
+      
+      <meta name="description" content="Exposes methods that initialize, show, and get results from the common file dialog.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="WinInteropUtils">
+            WinInteropUtils
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog">
+
+
+
+  <h1 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog" class="text-break">
+Interface IFileDialog  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FireBlade.html">FireBlade</a>.<a class="xref" href="FireBlade.WinInteropUtils.html">WinInteropUtils</a>.<a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.html">ComponentObjectModel</a>.<a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.html">Interfaces</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>WinInteropUtils.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Exposes methods that initialize, show, and get results from the common file dialog.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GeneratedComInterface]
+[InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+[Guid(&quot;42f85136-db7e-439c-85f1-e4075d135fc8&quot;)]
+[IUnknownDerived&lt;InterfaceInformation, InterfaceImplementation&gt;]
+public interface IFileDialog : IModalWindow, IUnknown</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_AddRef_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.AddRef*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_AddRef" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.AddRef">
+  AddRef()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">uint AddRef()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Advise_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Advise*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Advise_System_IntPtr_System_UInt32__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Advise(System.IntPtr,System.UInt32@)">
+  Advise(nint, out uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Assigns an event handler that listens for events coming from the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT Advise(nint pfde, out uint pdwCookie)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pfde</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>A pointer to an <a href="https://learn.microsoft.com/en-us/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogevents">IFileDialogEvents</a>
+implementation that will receive events from the dialog.</p>
+</dd>
+    <dt><code>pdwCookie</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>A pointer to a <code>DWORD</code> that receives a value identifying this event handler. When the client
+is finished with the dialog, that client must call the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Unadvise_System_UInt32_">Unadvise(uint)</a> method with this value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Close_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Close*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Close_FireBlade_WinInteropUtils_HRESULT_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Close(FireBlade.WinInteropUtils.HRESULT)">
+  Close(HRESULT)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Closes the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT Close(HRESULT hr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hr</code> <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>The code that will be returned by <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Show_System_IntPtr_">Show(nint)</a> to indicate that the dialog was closed before a selection was made.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Close_FireBlade_WinInteropUtils_HRESULT__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>An application can call this method from a callback method or function while the dialog is open.
+The dialog will close and the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Show_System_IntPtr_">Show(nint)</a> method will return with the <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> specified in <code class="paramref">hr</code>.</p>
+<p>If this method is called, there is no result available for the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetResult_System_IntPtr__">GetResult(out nint)</a> or <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetResults_System_IntPtr__">GetResults(out nint)</a> methods,
+and they will fail if called.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetCurrentSelection_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.GetCurrentSelection*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetCurrentSelection_System_IntPtr__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.GetCurrentSelection(System.IntPtr@)">
+  GetCurrentSelection(out nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the user's current selection in the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT GetCurrentSelection(out nint ppsi)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ppsi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>The address of a pointer to the interface that represents the item currently selected in the dialog.
+This item can be a file or folder selected in the view window, or something that the user has entered
+into the dialog's edit box. The latter case may require a parsing operation (cancelable by the user) that blocks
+the current thread.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetFileName_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.GetFileName*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetFileName_System_IntPtr__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.GetFileName(System.IntPtr@)">
+  GetFileName(out nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the text currently entered in the dialog's <b>File name</b> edit box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT GetFileName(out nint pszName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pszName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>The address of a pointer to a string that, when this method returns successfully, receives the text.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetFileName_System_IntPtr___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The text in the <b>File name</b> edit box does not necessarily reflect the item the user chose.
+To get the item the user chose, use <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetResult_System_IntPtr__">GetResult(out nint)</a>.</p>
+<p>The calling application is responsible for releasing the retrieved buffer by using the CoTaskMemFree function.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetFileTypeIndex_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.GetFileTypeIndex*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetFileTypeIndex_System_UInt32__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.GetFileTypeIndex(System.UInt32@)">
+  GetFileTypeIndex(out uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the currently selected file type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT GetFileTypeIndex(out uint piFileType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>piFileType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>A pointer to a UINT value that receives the index of the selected file
+type in the file type array passed to <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFileTypes_System_UInt32_System_IntPtr_">SetFileTypes(uint, nint)</a> in its cFileTypes parameter.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetFileTypeIndex_System_UInt32___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetFileTypeIndex_System_UInt32__">GetFileTypeIndex(out uint)</a> can be called either while the dialog is open or after it has closed.</p>
+<p><i>Note: The index returned by this function is a one-based index rather than zero-based.</i></p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetFolder_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.GetFolder*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetFolder_System_IntPtr__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.GetFolder(System.IntPtr@)">
+  GetFolder(out nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets either the folder currently selected in the dialog, or, if the dialog is not currently displayed,
+the folder that is to be selected when the dialog is opened.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT GetFolder(out nint ppsi)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ppsi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>The address of a pointer to the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.html">IShellItem</a> interface that represents the folder.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetFolder_System_IntPtr___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The calling application is responsible for releasing the retrieved <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.html">IShellItem</a> when it is no longer needed.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetOptions_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.GetOptions*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetOptions_System_UInt32__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.GetOptions(System.UInt32@)">
+  GetOptions(out uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the current flags that are set to control dialog behavior.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT GetOptions(out uint pfos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pfos</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>When this method returns successfully, points to a value made up of one or more of
+the FILEOPENDIALOGOPTIONS values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetResult_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.GetResult*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetResult_System_IntPtr__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.GetResult(System.IntPtr@)">
+  GetResult(out nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the choice that the user made in the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT GetResult(out nint ppsi)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ppsi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>The address of a pointer to an <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.html">IShellItem</a> that represents the user's choice.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetResult_System_IntPtr___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetResult_System_IntPtr__">GetResult(out nint)</a> can be called after the dialog has closed or during the handling of an <code>OnFileOk</code> event.
+Calling this method at any other time will fail. If multiple items were chosen, this method will fail. In the case of multiple
+items, call <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetResults_System_IntPtr__">GetResults(out nint)</a>.</p>
+<p><a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Show_System_IntPtr_">Show(nint)</a> must return a success code for a result to be available to <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetResult_System_IntPtr__">GetResult(out nint)</a>.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_QueryInterface_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.QueryInterface*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_QueryInterface_System_Guid__System_IntPtr__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.QueryInterface(System.Guid@,System.IntPtr@)">
+  QueryInterface(ref Guid, out nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT QueryInterface(ref Guid riid, out nint ppvObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>riid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>ppvObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Release_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Release*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Release" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Release">
+  Release()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">uint Release()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetDefaultFolder_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.SetDefaultFolder*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetDefaultFolder_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.SetDefaultFolder(System.IntPtr)">
+  SetDefaultFolder(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the folder used as a default if there is not a recently used folder value available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT SetDefaultFolder(nint psi)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>psi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>A pointer to the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.html">IShellItem</a> interface that represents the folder.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns
+an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFileName_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.SetFileName*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFileName_System_String_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.SetFileName(System.String)">
+  SetFileName(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the file name that appears in the <b>File name</b> edit box when that dialog box is opened.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT SetFileName(string pszName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pszName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A pointer to the name of the file.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFileTypeIndex_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.SetFileTypeIndex*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFileTypeIndex_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.SetFileTypeIndex(System.UInt32)">
+  SetFileTypeIndex(uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the file type that appears as selected in the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT SetFileTypeIndex(uint iFileType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iFileType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The index of the file type in the file type array
+passed to <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFileTypes_System_UInt32_System_IntPtr_">SetFileTypes(uint, nint)</a> in its cFileTypes parameter. Note that this is a one-based index, not zero-based.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFileTypes_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.SetFileTypes*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFileTypes_System_UInt32_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.SetFileTypes(System.UInt32,System.IntPtr)">
+  SetFileTypes(uint, nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the file types that the dialog can open or save.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT SetFileTypes(uint cFileTypes, nint rgFilterSpec)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cFileTypes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The number of elements in the array specified by <code class="paramref">rgFilterSpec</code>.</p>
+</dd>
+    <dt><code>rgFilterSpec</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>A pointer to an array of COMDLG_FILTERSPEC structures, each representing a file type.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If the method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns
+an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code, including the following:
+<table><tbody><tr><td class="term"><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_E_UNEXPECTED">E_UNEXPECTED</a></td><td class="description"><a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFileTypes_System_UInt32_System_IntPtr_">SetFileTypes(uint, nint)</a> has already been called.</td></tr><tr><td class="term"><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_E_UNEXPECTED">E_UNEXPECTED</a></td><td class="description">The FOS_PICKFOLDERS flag was set in the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetOptions_System_UInt32_">SetOptions(uint)</a> method.</td></tr><tr><td class="term"><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_E_INVALIDARG">E_INVALIDARG</a></td><td class="description">The <code class="paramref">rgFilterSpec</code> parameter is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</td></tr></tbody></table>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFileTypes_System_UInt32_System_IntPtr__examples">Examples</h4>
+  <p>The following code example demonstrates the use of the array of COMDLG_FILTERSPEC structures in the context
+of this method. The example array consists of three COMDLG_FILTERSPEC structures. The first declares two
+patterns for the dialog filter, the second declares a single pattern, and the last shows
+files of all types. The variables szJPG, szBMP, and szAll are assumed to be previously declared
+strings that provide a friendly name for each filter. <b>Warning: This is C++ code, as the COMDLG_FILTERSPEC struct hasn't yet been
+ported to WinInteropUtils.</b>
+COMDLG_FILTERSPEC rgSpec[] =
+{
+{ szJPG, L&quot;<em>.jpg;</em>.jpeg&quot; },
+{ szBMP, L&quot;<em>.bmp&quot; },
+{ szAll, L&quot;</em>.*&quot; },
+};</p>
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFileTypes_System_UInt32_System_IntPtr__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When using the Open dialog, the file types declared there are used to filter the view. When using the Save
+dialog, these values determine which file name extension is appended to the file name.</p>
+<p>This method must be called before the dialog is shown and can only be called once for each
+dialog instance. File types cannot be modified once the Common Item dialog box is displayed.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFilter_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.SetFilter*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFilter_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.SetFilter(System.IntPtr)">
+  SetFilter(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the filter. Deprecated since Windows 7.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT SetFilter(nint pFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pFilter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>A pointer to the
+<a href="https://learn.microsoft.com/en-us/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitemfilter">IShellItemFilter</a> that is to be set.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFilter_System_IntPtr__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method can be used if the application needs to perform special filtering to remove some items from the dialog box's view.
+IncludeItem will be called for each item that would normally be included in the view. GetEnumFlagsForItem
+is not used. To filter by file type, <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFileTypes_System_UInt32_System_IntPtr_">SetFileTypes(uint, nint)</a> should be used,
+because in folders with a large number of items it may offer better performance than applying an IShellItemFilter.</p>
+This method is obsolete since Windows 7. Do not use it in new projects.
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFolder_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.SetFolder*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFolder_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.SetFolder(System.IntPtr)">
+  SetFolder(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a folder that is always selected when the dialog is opened, regardless of previous user action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT SetFolder(nint psi)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>psi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>A pointer to the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.html">IShellItem</a> interface that represents the folder.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFolder_System_IntPtr__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This folder overrides any "most recently used" folder. If this method is called while the dialog is displayed,
+it causes the dialog to navigate to the specified folder.</p>
+<p>In general, we do not recommended the use of this method. If you call <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFolder_System_IntPtr_">SetFolder(nint)</a> before you display the dialog box,
+the most recent location that the user saved to or opened from is not shown. Unless there is a very specific reason for
+this behavior, it is not a good or expected user experience and should therefore be avoided. In almost all instances,
+<a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetDefaultFolder_System_IntPtr_">SetDefaultFolder(nint)</a> is the better method.</p>
+<p>As of Windows 7, if the path of the folder specified through <code class="paramref">psi</code> is the default path of a known folder,
+the known folder's current path is used in the dialog. That path might not be the same as the path specified in <code class="paramref">psi</code>;
+for instance, if the known folder has been redirected. If the known folder is a library (virtual folders Documents, Music, Pictures, and Videos),
+the library's path is used in the dialog. If the specified library is hidden (as they are by default as of Windows 8.1),
+the library's default save location is used in the dialog, such as the Microsoft OneDrive Documents folder for the Documents library.
+Because of these mappings, the folder location used in the dialog might not be exactly as you specified when you called this method.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetOptions_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.SetOptions*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetOptions_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.SetOptions(System.UInt32)">
+  SetOptions(uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets flags to control the behavior of the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT SetOptions(uint fos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fos</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>One or more of the FILEOPENDIALOGOPTIONS values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an
+<a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetOptions_System_UInt32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Generally, this method should take the value that was retrieved by <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetOptions_System_UInt32__">GetOptions(out uint)</a>
+and modify it to include or exclude options by setting the appropriate flags.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetTitle_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.SetTitle*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetTitle_System_String_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.SetTitle(System.String)">
+  SetTitle(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the title of the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT SetTitle(string pszTitle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pszTitle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A pointer to a string that contains the title text.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Show_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Show_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Show(System.IntPtr)">
+  Show(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT Show(nint hwndOwner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hwndOwner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Unadvise_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Unadvise*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Unadvise_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Unadvise(System.UInt32)">
+  Unadvise(uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes an event handler that was attached through the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Advise_System_IntPtr_System_UInt32__">Advise(nint, out uint)</a> method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT Unadvise(uint dwCookie)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwCookie</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The DWORD value that represents the event handler. This value is obtained through the
+<code>pdwCookie</code> parameter of the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Advise_System_IntPtr_System_UInt32__">Advise(nint, out uint)</a> method.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

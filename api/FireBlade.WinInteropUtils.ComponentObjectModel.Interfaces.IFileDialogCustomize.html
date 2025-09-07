@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IFileDialogCustomize | WinInteropUtils </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IFileDialogCustomize | WinInteropUtils ">
+      
+      <meta name="description" content="Exposes methods that allow an application to add controls to a common item dialog.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="WinInteropUtils">
+            WinInteropUtils
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize">
+
+
+
+  <h1 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize" class="text-break">
+Interface IFileDialogCustomize  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FireBlade.html">FireBlade</a>.<a class="xref" href="FireBlade.WinInteropUtils.html">WinInteropUtils</a>.<a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.html">ComponentObjectModel</a>.<a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.html">Interfaces</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>WinInteropUtils.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Exposes methods that allow an application to add controls to a common item dialog.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GeneratedComInterface]
+[InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+[Guid(&quot;973510db-7d7f-452b-8975-74a85828d354&quot;)]
+[IUnknownDerived&lt;InterfaceInformation, InterfaceImplementation&gt;]
+public interface IFileDialogCustomize : IUnknown</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Controls are added to the dialog before the dialog is shown. Their layout is implied by the order in which they are added.
+Once the dialog is shown, controls cannot be added or removed, but the existing controls can be hidden or disabled at any time. Their labels can also
+be changed at any time.</p>
+<p>Container controls are controls that can have items added to them. Container controls include combo boxes, menus, the drop-down list
+attached to the Open button, and any option button groups. The order that items appear in a container is the order in which they were added. There is no
+facility for reordering them. IDs are scoped to the parent control. Container controls, with the exception of menus, have a selected item.</p>
+<p>Items with a container control cannot be changed after they have been created, except for their enabled and visible states. However, they can be added
+and removed at any time. For example, if you needed to change the text of a menu, you would have to
+remove the current menu and add another with the correct text.</p>
+</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddCheckButton_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddCheckButton*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddCheckButton_System_UInt32_System_String_System_Boolean_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddCheckButton(System.UInt32,System.String,System.Boolean)">
+  AddCheckButton(uint, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L484"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a check button (check box) to the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT AddCheckButton(uint dwIDCtl, string pszLabel, bool bChecked)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the check button to add.</p>
+</dd>
+    <dt><code>pszLabel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>-terminated Unicode string that contains the button text.</p>
+</dd>
+    <dt><code>bChecked</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> indicating the current state of the check
+button. <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if checked; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddCheckButton_System_UInt32_System_String_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The default state for this control is enabled and visible.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddComboBox_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddComboBox*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddComboBox_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddComboBox(System.UInt32)">
+  AddComboBox(uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L473"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a combo box to the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT AddComboBox(uint dwIDCtl)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the combo box to add.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddComboBox_System_UInt32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The default state for this control is enabled and visible.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddControlItem_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddControlItem*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddControlItem_System_UInt32_System_UInt32_System_String_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddControlItem(System.UInt32,System.UInt32,System.String)">
+  AddControlItem(uint, uint, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L601"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an item to a container control in the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT AddControlItem(uint dwIDCtl, uint dwIDItem, string pszLabel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the container control to which the item is to be added.</p>
+</dd>
+    <dt><code>dwIDItem</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the item.</p>
+</dd>
+    <dt><code>pszLabel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>-terminated Unicode string that contains the item's text, which can be either a label or, in the case
+of a drop-down list, the item itself.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddControlItem_System_UInt32_System_UInt32_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The default state for this item is enabled and visible. Items in control groups cannot be changed after they have been created,
+with the exception of their enabled and visible states.</p>
+<p>Container controls include option button groups, combo boxes, drop-down lists on the Open or Save button, and menus.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddEditBox_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddEditBox*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddEditBox_System_UInt32_System_String_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddEditBox(System.UInt32,System.String)">
+  AddEditBox(uint, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L505"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an edit box control to the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT AddEditBox(uint dwIDCtl, string pszText)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the edit box to add.</p>
+</dd>
+    <dt><code>pszText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>-terminated Unicode string that provides the default text displayed in the edit box.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddEditBox_System_UInt32_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The default state for this control is enabled and visible.</p>
+<p>To add a label next to the edit box, place it in a visual group with <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_StartVisualGroup_System_UInt32_System_String_">StartVisualGroup(uint, string)</a>.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddMenu_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddMenu*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddMenu_System_UInt32_System_String_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddMenu(System.UInt32,System.String)">
+  AddMenu(uint, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L456"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a menu to the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT AddMenu(uint dwIDCtl, string pszLabel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the menu to add.</p>
+</dd>
+    <dt><code>pszLabel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>-terminated Unicode string that contains the menu name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddMenu_System_UInt32_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The default state for this control is enabled and visible.</p>
+<p>To add items to this control, use <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddControlItem_System_UInt32_System_UInt32_System_String_">AddControlItem(uint, uint, string)</a>.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddPushButton_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddPushButton*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddPushButton_System_UInt32_System_String_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddPushButton(System.UInt32,System.String)">
+  AddPushButton(uint, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L465"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a button to the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT AddPushButton(uint dwIDCtl, string pszLabel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the button to add.</p>
+</dd>
+    <dt><code>pszLabel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>-terminated Unicode string that contains the button text.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddPushButton_System_UInt32_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The default state for this control is enabled and visible.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddRadioButtonList_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddRadioButtonList*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddRadioButtonList_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddRadioButtonList(System.UInt32)">
+  AddRadioButtonList(uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L492"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an option button (also known as radio button) group to the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT AddRadioButtonList(uint dwIDCtl)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the option button group to add.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddRadioButtonList_System_UInt32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The default state for this control is enabled and visible.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddRef_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddRef*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddRef" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddRef">
+  AddRef()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">uint AddRef()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddSeparator_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddSeparator*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddSeparator_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddSeparator(System.UInt32)">
+  AddSeparator(uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L513"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a separator to the dialog, allowing a visual separation of controls.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT AddSeparator(uint dwIDCtl)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The control ID of the separator.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddSeparator_System_UInt32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The default state for this control is enabled and visible.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddText_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddText*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddText_System_UInt32_System_String_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddText(System.UInt32,System.String)">
+  AddText(uint, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L522"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds text content to the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT AddText(uint dwIDCtl, string pszText)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the text to add.</p>
+</dd>
+    <dt><code>pszText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>-terminated Unicode string that contains the text.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddText_System_UInt32_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The default state for this control is enabled and visible.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_EnableOpenDropDown_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.EnableOpenDropDown*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_EnableOpenDropDown_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.EnableOpenDropDown(System.UInt32)">
+  EnableOpenDropDown(uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L443"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables a drop-down list on the Open or Save button in the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT EnableOpenDropDown(uint dwIDCtl)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the drop-down list.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_EnableOpenDropDown_System_UInt32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The Open or Save button label takes on the text of the first item in the drop-down.</p>
+<p>Use <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddControlItem_System_UInt32_System_UInt32_System_String_">AddControlItem(uint, uint, string)</a> to add items to the drop-down.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_EndVisualGroup_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.EndVisualGroup*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_EndVisualGroup" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.EndVisualGroup">
+  EndVisualGroup()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L670"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops the addition of elements to a visual group in the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT EndVisualGroup()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_GetCheckButtonState_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.GetCheckButtonState*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_GetCheckButtonState_System_UInt32_System_Boolean__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.GetCheckButtonState(System.UInt32,System.Boolean@)">
+  GetCheckButtonState(uint, out bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L576"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the current state of a check button (check box) in the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT GetCheckButtonState(uint dwIDCtl, out bool pbChecked)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the check box.</p>
+</dd>
+    <dt><code>pbChecked</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The address of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> value that indicates whether the box is checked.
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> means checked; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>, unchecked.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_GetControlItemState_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.GetControlItemState*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_GetControlItemState_System_UInt32_System_UInt32_System_UInt32__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.GetControlItemState(System.UInt32,System.UInt32,System.UInt32@)">
+  GetControlItemState(uint, uint, out uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L626"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the current state of an item in a container control found in the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT GetControlItemState(uint dwIDCtl, uint dwIDItem, out uint pdwState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the container control.</p>
+</dd>
+    <dt><code>dwIDItem</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the item.</p>
+</dd>
+    <dt><code>pdwState</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>A pointer to a variable that receives one of more values from the CDCONTROLSTATE
+enumeration that indicate the current state of the control.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_GetControlItemState_System_UInt32_System_UInt32_System_UInt32___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The default state of a control item is enabled and visible. Items in control groups cannot be changed after 
+they have been created, with the exception of their enabled and visible states.</p>
+<p>Container controls include option button groups, combo boxes, drop-down lists on the Open or Save button, and menus.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_GetControlState_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.GetControlState*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_GetControlState_System_UInt32_System_UInt32__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.GetControlState(System.UInt32,System.UInt32@)">
+  GetControlState(uint, out uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L540"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the current visibility and enabled states of a given control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT GetControlState(uint dwIDCtl, out uint pdwState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the control in question.</p>
+</dd>
+    <dt><code>pdwState</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>A pointer to a variable that receives one or more values
+from the CDCONTROLSTATE enumeration that indicate the current state of the control.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_GetEditBoxText_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.GetEditBoxText*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_GetEditBoxText_System_UInt32_System_IntPtr__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.GetEditBoxText(System.UInt32,System.IntPtr@)">
+  GetEditBoxText(uint, out nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L559"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the current text in an edit box control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT GetEditBoxText(uint dwIDCtl, out nint ppszText)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the edit box.</p>
+</dd>
+    <dt><code>ppszText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>The address of a pointer to a <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>-terminated Unicode string that receives the text.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_GetEditBoxText_System_UInt32_System_IntPtr___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>It is the responsibility of the calling application to free the buffer referenced by <code class="paramref">ppszText</code>
+when it is no longer needed. Use <code>CoTaskMemFree</code> to free the buffer.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_GetSelectedControlItem_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.GetSelectedControlItem*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_GetSelectedControlItem_System_UInt32_System_UInt32__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.GetSelectedControlItem(System.UInt32,System.UInt32@)">
+  GetSelectedControlItem(uint, out uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L655"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a particular item from specified container controls in the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT GetSelectedControlItem(uint dwIDCtl, out uint pdwIDItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the container control.</p>
+</dd>
+    <dt><code>pdwIDItem</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the item that the user selected in the control.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_GetSelectedControlItem_System_UInt32_System_UInt32___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To determine the user's final choice, this method can be called on option button groups, combo boxes, and drop-down lists on
+the Open or Save button after the dialog has closed. This method cannot be called on menus.</p>
+<p>For option button groups and combo boxes, this method can also be called while the dialog is showing, to determine the current choice.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_MakeProminent_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.MakeProminent*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_MakeProminent_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.MakeProminent(System.UInt32)">
+  MakeProminent(uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L686"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Places a control in the dialog so that it stands out compared to other added controls.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT MakeProminent(uint dwIDCtl)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the control.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_MakeProminent_System_UInt32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method causes the control to be placed near the Open or Save button instead of being grouped with the rest of the custom controls.</p>
+<p>Only check buttons (check boxes), push buttons, combo boxes, and menus—or a visual group that contains
+only a single item of one of those types—can be made prominent.</p>
+<p>Only one control can be marked in this way. If a dialog has only one added control, that control is marked as prominent by default.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_QueryInterface_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.QueryInterface*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_QueryInterface_System_Guid__System_IntPtr__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.QueryInterface(System.Guid@,System.IntPtr@)">
+  QueryInterface(ref Guid, out nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT QueryInterface(ref Guid riid, out nint ppvObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>riid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>ppvObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_Release_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.Release*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_Release" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.Release">
+  Release()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">uint Release()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_RemoveControlItem_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.RemoveControlItem*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_RemoveControlItem_System_UInt32_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.RemoveControlItem(System.UInt32,System.UInt32)">
+  RemoveControlItem(uint, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L610"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes an item from a container control in the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT RemoveControlItem(uint dwIDCtl, uint dwIDItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the container control from which the item is to be removed.</p>
+</dd>
+    <dt><code>dwIDItem</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the item.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_RemoveControlItem_System_UInt32_System_UInt32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Container controls include option button groups, combo boxes, drop-down lists on the Open or Save button, and menus.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetCheckButtonState_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.SetCheckButtonState*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetCheckButtonState_System_UInt32_System_Boolean_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.SetCheckButtonState(System.UInt32,System.Boolean)">
+  SetCheckButtonState(uint, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L585"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the state of a check button (check box) in the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT SetCheckButtonState(uint dwIDCtl, bool bChecked)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the check box.</p>
+</dd>
+    <dt><code>bChecked</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> value that indicates whether the box
+is checked. <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> means checked; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>, unchecked.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetControlItemState_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.SetControlItemState*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetControlItemState_System_UInt32_System_UInt32_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.SetControlItemState(System.UInt32,System.UInt32,System.UInt32)">
+  SetControlItemState(uint, uint, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L641"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the current state of an item in a container control found in the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT SetControlItemState(uint dwIDCtl, uint dwIDItem, uint dwState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the container control.</p>
+</dd>
+    <dt><code>dwIDItem</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the item.</p>
+</dd>
+    <dt><code>dwState</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>One or more values from the CDCONTROLSTATE enumeration that indicate the new state of the control.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetControlItemState_System_UInt32_System_UInt32_System_UInt32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The default state of a control item is enabled and visible. Items in control groups cannot be changed after they have
+been created, with the exception of their enabled and visible states.</p>
+<p>Container controls include option button groups, combo boxes, drop-down lists on the Open or Save button, and menus.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetControlItemText_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.SetControlItemText*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetControlItemText_System_UInt32_System_UInt32_System_String_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.SetControlItemText(System.UInt32,System.UInt32,System.String)">
+  SetControlItemText(uint, uint, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L702"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the text of a control item. For example, the text that accompanies a radio button or an item in a menu.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT SetControlItemText(uint dwIDCtl, uint dwIDItem, string pszLabel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the container control.</p>
+</dd>
+    <dt><code>dwIDItem</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the item.</p>
+</dd>
+    <dt><code>pszLabel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>-terminated Unicode string that contains the text.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetControlItemText_System_UInt32_System_UInt32_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The default state of a control item is enabled and visible. Items in control groups cannot be changed
+after they have been created, with the exception of their enabled and visible states.</p>
+<p>Container controls include option button groups, combo boxes, drop-down lists on the Open or Save button, and menus.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetControlLabel_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.SetControlLabel*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetControlLabel_System_UInt32_System_String_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.SetControlLabel(System.UInt32,System.String)">
+  SetControlLabel(uint, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L531"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the text associated with a control, such as button text or an edit box label.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT SetControlLabel(uint dwIDCtl, string pszLabel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the control whose text is to be changed.</p>
+</dd>
+    <dt><code>pszLabel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A null-terminated Unicode string that contains the text.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetControlLabel_System_UInt32_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Control labels can be changed at any time, including when the dialog is visible.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetControlState_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.SetControlState*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetControlState_System_UInt32_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.SetControlState(System.UInt32,System.UInt32)">
+  SetControlState(uint, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L549"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the current visibility and enabled states of a given control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT SetControlState(uint dwIDCtl, uint dwState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the control in question.</p>
+</dd>
+    <dt><code>dwState</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>One or more values from the CDCONTROLSTATE enumeration that indicate the current state of the control.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetControlState_System_UInt32_System_UInt32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When the dialog is shown, controls cannot be added or removed, but the existing controls can be hidden or disabled at any time.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetEditBoxText_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.SetEditBoxText*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetEditBoxText_System_UInt32_System_String_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.SetEditBoxText(System.UInt32,System.String)">
+  SetEditBoxText(uint, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L567"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the text in an edit box control found in the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT SetEditBoxText(uint dwIDCtl, string pszText)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the edit box.</p>
+</dd>
+    <dt><code>pszText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>-terminated Unicode string that contains the text.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetSelectedControlItem_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.SetSelectedControlItem*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetSelectedControlItem_System_UInt32_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.SetSelectedControlItem(System.UInt32,System.UInt32)">
+  SetSelectedControlItem(uint, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L663"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the selected state of a particular item in an option button group or a combo box found in the dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT SetSelectedControlItem(uint dwIDCtl, uint dwIDItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the container control.</p>
+</dd>
+    <dt><code>dwIDItem</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the item to display as selected in the control.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_StartVisualGroup_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.StartVisualGroup*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_StartVisualGroup_System_UInt32_System_String_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.StartVisualGroup(System.UInt32,System.String)">
+  StartVisualGroup(uint, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L717"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Declares a visual group in the dialog. Subsequent calls to any &quot;add&quot; method add those elements to this group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT StartVisualGroup(uint dwIDCtl, string pszLabel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwIDCtl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The ID of the visual group.</p>
+</dd>
+    <dt><code>pszLabel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>-terminated Unicode string that contains text that appears next to the visual group.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_StartVisualGroup_System_UInt32_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Controls will continue to be added to this visual group until you call <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_EndVisualGroup">EndVisualGroup()</a>.</p>
+<p>A visual group can be hidden and disabled like any other control, except that doing so affects all of the
+controls within it. Individual members of the visual group can also be hidden and disabled singly.</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

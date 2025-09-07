@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Shell32 | WinInteropUtils </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Shell32 | WinInteropUtils ">
+      
+      <meta name="description" content="Declares P/Invoke functions from Shell32.dll.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="WinInteropUtils">
+            WinInteropUtils
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FireBlade.WinInteropUtils.Shell32">
+
+
+
+  <h1 id="FireBlade_WinInteropUtils_Shell32" data-uid="FireBlade.WinInteropUtils.Shell32" class="text-break">
+Class Shell32  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FireBlade.html">FireBlade</a>.<a class="xref" href="FireBlade.WinInteropUtils.html">WinInteropUtils</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>WinInteropUtils.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Declares P/Invoke functions from <code>Shell32.dll</code>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Shell32</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Shell32</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FireBlade_WinInteropUtils_Shell32_DestroyIcon_" data-uid="FireBlade.WinInteropUtils.Shell32.DestroyIcon*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Shell32_DestroyIcon_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.Shell32.DestroyIcon(System.IntPtr)">
+  DestroyIcon(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Destroys an icon and frees any memory the icon occupied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DestroyIcon(nint hIcon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hIcon</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>A handle to the icon to be destroyed. The icon must not be in use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if successful; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>. To get extended error
+information, call <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshal.getlastpinvokeerror">GetLastPInvokeError()</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Shell32_DestroyIcon_System_IntPtr__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"> <p>It is only necessary to call <a class="xref" href="FireBlade.WinInteropUtils.Shell32.html#FireBlade_WinInteropUtils_Shell32_DestroyIcon_System_IntPtr_">DestroyIcon(nint)</a> for icons and cursors created with the following functions:
+ <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-createiconfromresourceex">CreateIconFromResourceEx</a>
+ (if called without the LR_SHARED flag),
+ <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-createiconindirect">CreateIconIndirect</a>, and
+ <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-copyicon">CopyIcon</a>.
+ Do not use this function to destroy a shared icon. A shared icon is valid as long as the module from which it was loaded remains in memory.
+ The following functions obtain a shared icon:</p>
+<ul><li><a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-loadicona">LoadIcon</a></li><li><a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-loadimagea">LoadImage</a>
+     (if you use the LR_SHARED flag)</li><li><a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-copyimage">CopyImage</a>
+     (if you use the LR_COPYRETURNORG flag and the hImage parameter is a shared icon)</li><li><a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-createiconfromresource">CreateIconFromResource</a></li><li><a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-createiconfromresourceex">CreateIconFromResourceEx</a>
+     (if you use the LR_SHARED flag)</li></ul>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Shell32_GetFileInfo_" data-uid="FireBlade.WinInteropUtils.Shell32.GetFileInfo*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Shell32_GetFileInfo_System_String_" data-uid="FireBlade.WinInteropUtils.Shell32.GetFileInfo(System.String)">
+  GetFileInfo(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves information about an object in the file system, such as a file, folder, directory, or drive root.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WindowsFile? GetFileInfo(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string of maximum length <a class="xref" href="FireBlade.WinInteropUtils.Win32Constants.html#FireBlade_WinInteropUtils_Win32Constants_MAX_PATH">MAX_PATH</a> that contains the path and file name.
+     Both absolute and relative paths are valid.</p>
+<pre><code> This string can use either short (the 8.3 form) or long file names.
+</code></pre>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.WindowsFile.html">WindowsFile</a></dt>
+    <dd><p>The <a class="xref" href="FireBlade.WinInteropUtils.WindowsFile.html">WindowsFile</a> instance containing the data about the file if successful; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Shell32_GetFileInfoEx_" data-uid="FireBlade.WinInteropUtils.Shell32.GetFileInfoEx*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Shell32_GetFileInfoEx_System_String_FireBlade_WinInteropUtils_WindowsFileAttributes_FireBlade_WinInteropUtils_Shell32_SHGetFileInfoFlags_FireBlade_WinInteropUtils_Shell32_SHFILEINFO__" data-uid="FireBlade.WinInteropUtils.Shell32.GetFileInfoEx(System.String,FireBlade.WinInteropUtils.WindowsFileAttributes,FireBlade.WinInteropUtils.Shell32.SHGetFileInfoFlags,FireBlade.WinInteropUtils.Shell32.SHFILEINFO@)">
+  GetFileInfoEx(string, WindowsFileAttributes, SHGetFileInfoFlags, ref SHFILEINFO)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L408"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves information about an object in the file system, such as a file, folder, directory, or drive root. This function provides all the customization
+of the Windows API function <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">SHGetFileInfoW(string, uint, ref SHFILEINFO, uint, uint)</a>, unlike <a class="xref" href="FireBlade.WinInteropUtils.Shell32.html#FireBlade_WinInteropUtils_Shell32_GetFileInfo_System_String_">GetFileInfo(string)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nuint GetFileInfoEx(string pszPath, WindowsFileAttributes dwFileAttributes, Shell32.SHGetFileInfoFlags uFlags, ref Shell32.SHFILEINFO psfi)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pszPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string of maximum length <a class="xref" href="FireBlade.WinInteropUtils.Win32Constants.html#FireBlade_WinInteropUtils_Win32Constants_MAX_PATH">MAX_PATH</a> that contains the path and file name.
+     Both absolute and relative paths are valid.</p>
+<pre><code> &lt;p&gt;If the &lt;code class=&quot;paramref&quot;&gt;uFlags&lt;/code&gt; parameter includes the &lt;xref href=&quot;FireBlade.WinInteropUtils.Shell32.SHGetFileInfoFlags.SHGFI_PIDL&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; flag, this parameter
+ must be the address of an ITEMIDLIST(PIDL) structure that contains the list of item identifiers that uniquely identifies the file
+ within the Shell's namespace. The PIDL must be a fully qualified PIDL. Relative PIDLs are not allowed.&lt;/p&gt;
+
+ &lt;p&gt;If the &lt;code class=&quot;paramref&quot;&gt;uFlags&lt;/code&gt; parameter includes the &lt;xref href=&quot;FireBlade.WinInteropUtils.Shell32.SHGetFileInfoFlags.SHGFI_USEFILEATTRIBUTES&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; flag, this parameter does not have to be a valid file name.
+ The function will proceed as if the file exists with the specified name and with the file attributes passed in the dwFileAttributes
+ parameter. This allows you to obtain information about a file type by passing just the extension for pszPath and passing
+ FILE_ATTRIBUTE_NORMAL in dwFileAttributes.&lt;/p&gt;
+
+ This string can use either short (the 8.3 form) or long file names.
+</code></pre>
+</dd>
+    <dt><code>dwFileAttributes</code> <a class="xref" href="FireBlade.WinInteropUtils.WindowsFileAttributes.html">WindowsFileAttributes</a></dt>
+    <dd><p>A combination of one or more file attribute flags (<a class="xref" href="FireBlade.WinInteropUtils.WindowsFileAttributes.html">WindowsFileAttributes</a> values). If <code class="paramref">uFlags</code> does not
+include the <a class="xref" href="FireBlade.WinInteropUtils.Shell32.SHGetFileInfoFlags.html#FireBlade_WinInteropUtils_Shell32_SHGetFileInfoFlags_SHGFI_USEFILEATTRIBUTES">SHGFI_USEFILEATTRIBUTES</a> flag, this parameter is ignored, so in that case you should set it
+to <a class="xref" href="FireBlade.WinInteropUtils.WindowsFileAttributes.html#FireBlade_WinInteropUtils_WindowsFileAttributes_None">None</a> instead.</p>
+</dd>
+    <dt><code>uFlags</code> <a class="xref" href="FireBlade.WinInteropUtils.Shell32.html">Shell32</a>.<a class="xref" href="FireBlade.WinInteropUtils.Shell32.SHGetFileInfoFlags.html">SHGetFileInfoFlags</a></dt>
+    <dd><p>The flags that specify the file information to retrieve. This should be a combination of <a class="xref" href="FireBlade.WinInteropUtils.Shell32.SHGetFileInfoFlags.html">Shell32.SHGetFileInfoFlags</a> values.</p>
+</dd>
+    <dt><code>psfi</code> <a class="xref" href="FireBlade.WinInteropUtils.Shell32.html">Shell32</a>.<a class="xref" href="FireBlade.WinInteropUtils.Shell32.SHFILEINFO.html">SHFILEINFO</a></dt>
+    <dd><p>Pointer to a <a class="xref" href="FireBlade.WinInteropUtils.Shell32.SHFILEINFO.html">Shell32.SHFILEINFO</a> structure to receive the file information.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd><p>A value whose meaning depends on the <code class="paramref">uFlags</code> parameter.</p>
+<pre><code> If &lt;code class=&quot;paramref&quot;&gt;uFlags&lt;/code&gt; does not contain &lt;xref href=&quot;FireBlade.WinInteropUtils.Shell32.SHGetFileInfoFlags.SHGFI_EXETYPE&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; or &lt;xref href=&quot;FireBlade.WinInteropUtils.Shell32.SHGetFileInfoFlags.SHGFI_SYSICONINDEX&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt;,
+ the return value is non-zero if successful, or zero otherwise.
+
+ &lt;p&gt;If &lt;code class=&quot;paramref&quot;&gt;uFlags&lt;/code&gt; contains the &lt;xref href=&quot;FireBlade.WinInteropUtils.Shell32.SHGetFileInfoFlags.SHGFI_EXETYPE&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; flag, the return value specifies the type of the executable file.
+ It will be one of the following values:&lt;/p&gt;
+ &lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;term&quot;&gt;0&lt;/td&gt;&lt;td class=&quot;description&quot;&gt;Nonexecutable file or an error condition.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;term&quot;&gt;LOWORD = NE or PE and HIWORD = Windows version&lt;/td&gt;&lt;td class=&quot;description&quot;&gt;Windows application.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;term&quot;&gt;LOWORD = PE and HIWORD = 0&lt;/td&gt;&lt;td class=&quot;description&quot;&gt;Console application or .bat file&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+</code></pre>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Shell32_GetFileInfoEx_System_String_FireBlade_WinInteropUtils_WindowsFileAttributes_FireBlade_WinInteropUtils_Shell32_SHGetFileInfoFlags_FireBlade_WinInteropUtils_Shell32_SHFILEINFO___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>You should call this function from a background thread. Failure to do so could cause the UI to stop responding.</p>
+<p>If <a class="xref" href="FireBlade.WinInteropUtils.Shell32.html#FireBlade_WinInteropUtils_Shell32_GetFileInfoEx_System_String_FireBlade_WinInteropUtils_WindowsFileAttributes_FireBlade_WinInteropUtils_Shell32_SHGetFileInfoFlags_FireBlade_WinInteropUtils_Shell32_SHFILEINFO__">GetFileInfoEx(string, WindowsFileAttributes, SHGetFileInfoFlags, ref SHFILEINFO)</a> returns an icon handle in the <a class="xref" href="FireBlade.WinInteropUtils.Shell32.SHFILEINFO.html#FireBlade_WinInteropUtils_Shell32_SHFILEINFO_hIcon">hIcon</a>
+member of the <a class="xref" href="FireBlade.WinInteropUtils.Shell32.SHFILEINFO.html">Shell32.SHFILEINFO</a> structure pointed to by <code class="paramref">psfi</code>, you are responsible for freeing it with
+<a class="xref" href="FireBlade.WinInteropUtils.Shell32.html#FireBlade_WinInteropUtils_Shell32_DestroyIcon_System_IntPtr_">DestroyIcon(nint)</a> when you no longer need it. The <a class="xref" href="FireBlade.WinInteropUtils.WindowsFile.html">WindowsFile</a> wrapper automatically cleans up these resources on dispose, so you
+should ideally use <a class="xref" href="FireBlade.WinInteropUtils.WindowsFile.html">WindowsFile</a> and convert <code class="paramref">psfi</code> to a <a class="xref" href="FireBlade.WinInteropUtils.WindowsFile.html">WindowsFile</a> using the <a class="xref" href="FireBlade.WinInteropUtils.WindowsFile.html#FireBlade_WinInteropUtils_WindowsFile__ctor_FireBlade_WinInteropUtils_Shell32_SHFILEINFO_System_String_">WindowsFile(SHFILEINFO, string)</a>
+constructor. Additionaly, <a class="xref" href="FireBlade.WinInteropUtils.WindowsFile.html">WindowsFile</a> provides managed types for almost all the <a class="xref" href="FireBlade.WinInteropUtils.Shell32.SHFILEINFO.html">Shell32.SHFILEINFO</a> properties, so using it is preffered.</p>
+<p><i>Note: Once you have a handle to a system image list, you can
+use the <a href="https://learn.microsoft.com/en-us/windows/desktop/Controls/image-lists">Image List API</a> to manipulate it like any other image list.
+Because system image lists are created on a per-process basis, you should treat them as read-only objects. Writing to a system image list
+may overwrite or delete one of the system images, making it unavailable or incorrect for the remainder of the process.</i></p>
+<p>You must initialize Component Object Model (COM) with <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CoInit_">Initialize(CoInit)</a> prior to calling <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">SHGetFileInfoW(string, uint, ref SHFILEINFO, uint, uint)</a>.
+<a class="xref" href="FireBlade.WinInteropUtils.Shell32.html#FireBlade_WinInteropUtils_Shell32_GetFileInfoEx_System_String_FireBlade_WinInteropUtils_WindowsFileAttributes_FireBlade_WinInteropUtils_Shell32_SHGetFileInfoFlags_FireBlade_WinInteropUtils_Shell32_SHFILEINFO__">GetFileInfoEx(string, WindowsFileAttributes, SHGetFileInfoFlags, ref SHFILEINFO)</a> wraps this automatically.</p>
+<p>When you use the <a class="xref" href="FireBlade.WinInteropUtils.Shell32.SHGetFileInfoFlags.html#FireBlade_WinInteropUtils_Shell32_SHGetFileInfoFlags_SHGFI_EXETYPE">SHGFI_EXETYPE</a> flag with a Windows application, the Windows version of the executable is given in
+the <code>HIWORD</code> of the return value. This version is returned as a hexadecimal value. For details on equating this value with
+a specific Windows version, see <a href="https://learn.microsoft.com/en-us/windows/desktop/WinProg/using-the-windows-headers">Using the Windows Headers</a>.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Shell32_ShellAbout_" data-uid="FireBlade.WinInteropUtils.Shell32.ShellAbout*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Shell32_ShellAbout_System_IntPtr_System_String_System_String_System_Drawing_Icon_" data-uid="FireBlade.WinInteropUtils.Shell32.ShellAbout(System.IntPtr,System.String,System.String,System.Drawing.Icon)">
+  ShellAbout(nint, string, string?, Icon?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Displays a <code>ShellAbout</code> dialog box. For an example of this dialog box, run the <code>winver</code> command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ShellAbout(nint hWnd, string app, string? moreText, Icon? icon = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hWnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>A window handle to a parent window.</p>
+</dd>
+    <dt><code>app</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that contains text to be displayed in the title bar of the <code>ShellAbout</code> dialog box and on the first line of the dialog box after the text
+     "Microsoft". If the text contains a separator <code>(#)</code> that divides it into two parts, the function displays the first part in the title bar and the second part on
+     the first line after the text "Microsoft".</p>
+<pre><code> &lt;b&gt;&lt;i&gt;Windows Vista, Windows Server 2008&lt;/i&gt;&lt;/b&gt;: This string cannot exceed 200 characters in length. The contents of &lt;code class=&quot;paramref&quot;&gt;app&lt;/code&gt; will no longer
+ show after &quot;Microsoft&quot;, unless there is a &lt;code&gt;#&lt;/code&gt; separator, in which case the part after the &lt;code&gt;#&lt;/code&gt; will completely replace the first line.
+</code></pre>
+</dd>
+    <dt><code>moreText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that contains text to be displayed in the dialog box after the version and copyright information.
+This parameter can be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt><code>icon</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.icon">Icon</a></dt>
+    <dd><p>An icon that is displayed in the dialog box. This parameter can be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>,
+in which case the dialog displays the Windows icon.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if successful; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Shell32_ShellAbout_System_IntPtr_System_String_System_String_System_Drawing_Icon__examples">Examples</h4>
+  <p>For an example of this dialog box, run the <code>winver</code> command.</p>
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Shell32_ShellAbout_" data-uid="FireBlade.WinInteropUtils.Shell32.ShellAbout*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Shell32_ShellAbout_System_String_System_String_System_Drawing_Icon_" data-uid="FireBlade.WinInteropUtils.Shell32.ShellAbout(System.String,System.String,System.Drawing.Icon)">
+  ShellAbout(string, string, Icon?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Displays a <code>ShellAbout</code> dialog box. For an example of this dialog box, run the <code>winver</code> command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ShellAbout(string app, string moreText, Icon? icon = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>app</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that contains text to be displayed in the title bar of the <code>ShellAbout</code> dialog box and on the first line of the dialog box after the text
+     "Microsoft". If the text contains a separator <code>(#)</code> that divides it into two parts, the function displays the first part in the title bar and the second part on
+     the first line after the text "Microsoft".</p>
+<pre><code> &lt;b&gt;&lt;i&gt;Windows Vista, Windows Server 2008&lt;/i&gt;&lt;/b&gt;: This string cannot exceed 200 characters in length. The contents of &lt;code class=&quot;paramref&quot;&gt;app&lt;/code&gt; will no longer
+ show after &quot;Microsoft&quot;, unless there is a &lt;code&gt;#&lt;/code&gt; separator, in which case the part after the &lt;code&gt;#&lt;/code&gt; will completely replace the first line.
+</code></pre>
+</dd>
+    <dt><code>moreText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that contains text to be displayed in the dialog box after the version and copyright information.
+This parameter can be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt><code>icon</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.icon">Icon</a></dt>
+    <dd><p>An icon that is displayed in the dialog box. This parameter can be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>,
+in which case the dialog displays the Windows icon.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if successful; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Shell32_ShellAbout_System_String_System_String_System_Drawing_Icon__examples">Examples</h4>
+  <p>For an example of this dialog box, run the <code>winver</code> command.</p>
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Shell32_ShowFileProperties_" data-uid="FireBlade.WinInteropUtils.Shell32.ShowFileProperties*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Shell32_ShowFileProperties_System_String___" data-uid="FireBlade.WinInteropUtils.Shell32.ShowFileProperties(System.String[])">
+  ShowFileProperties(params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L447"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Displays a merged property sheet for a set of files. Property values common to all the files are shown, while those
+that differ display the string (multiple values).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HRESULT ShowFileProperties(params string[] filePaths)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filePaths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>The file paths of the files to show.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>If this function succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns a <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Shell32_ShowPickIconDialog_" data-uid="FireBlade.WinInteropUtils.Shell32.ShowPickIconDialog*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Shell32_ShowPickIconDialog_System_IntPtr_System_String_System_Int32_System_Drawing_Icon__" data-uid="FireBlade.WinInteropUtils.Shell32.ShowPickIconDialog(System.IntPtr,System.String,System.Int32,System.Drawing.Icon@)">
+  ShowPickIconDialog(nint, string, int, out Icon)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Displays a dialog box that allows the user to choose an icon from the selection available embedded in a resource such as an executable or DLL file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ShowPickIconDialog(nint hWnd, string defIconPath, int defIconIndex, out Icon icon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hWnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>The handle of the parent window.</p>
+</dd>
+    <dt><code>defIconPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that contains the fully qualified path of the default resource that contains the icons.
+You should verify that the path is valid before using it.</p>
+</dd>
+    <dt><code>defIconIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>An integer that specifies the index of the initial selection.</p>
+</dd>
+    <dt><code>icon</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.icon">Icon</a></dt>
+    <dd><p>When this function returns, contains the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.icon">Icon</a> that was selected. If loading the icon fails, contains <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.systemicons.error">Error</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if successful; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Shell32_ShowPickIconDialog_" data-uid="FireBlade.WinInteropUtils.Shell32.ShowPickIconDialog*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Shell32_ShowPickIconDialog_System_IntPtr_System_String_System_Int32_System_String__System_Int32__" data-uid="FireBlade.WinInteropUtils.Shell32.ShowPickIconDialog(System.IntPtr,System.String,System.Int32,System.String@,System.Int32@)">
+  ShowPickIconDialog(nint, string, int, out string, out int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Displays a dialog box that allows the user to choose an icon from the selection available embedded in a resource such as an executable or DLL file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ShowPickIconDialog(nint hWnd, string defIconPath, int defIconIndex, out string iconPath, out int iconIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hWnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>The handle of the parent window.</p>
+</dd>
+    <dt><code>defIconPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that contains the fully qualified path of the default resource that contains the icons.
+You should verify that the path is valid before using it.</p>
+</dd>
+    <dt><code>defIconIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>An integer that specifies the index of the initial selection.</p>
+</dd>
+    <dt><code>iconPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>If the user chooses a different resource in the dialog, contains the path of that file when the function returns; otherwise, it contains
+the path stored in <code class="paramref">defIconPath</code>.</p>
+</dd>
+    <dt><code>iconIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>When this function returns successfully, receives the index of the icon that was selected.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if successful; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Shell32_ShowPickIconDialog_" data-uid="FireBlade.WinInteropUtils.Shell32.ShowPickIconDialog*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Shell32_ShowPickIconDialog_System_String_System_Int32_System_Drawing_Icon__" data-uid="FireBlade.WinInteropUtils.Shell32.ShowPickIconDialog(System.String,System.Int32,System.Drawing.Icon@)">
+  ShowPickIconDialog(string, int, out Icon)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Displays a dialog box that allows the user to choose an icon from the selection available embedded in a resource such as an executable or DLL file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ShowPickIconDialog(string defIconPath, int defIconIndex, out Icon icon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>defIconPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that contains the fully qualified path of the default resource that contains the icons.
+You should verify that the path is valid before using it.</p>
+</dd>
+    <dt><code>defIconIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>An integer that specifies the index of the initial selection.</p>
+</dd>
+    <dt><code>icon</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.icon">Icon</a></dt>
+    <dd><p>When this function returns, contains the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.icon">Icon</a> that was selected. If loading the icon fails, contains <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.systemicons.error">Error</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if successful; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Shell32_ShowPickIconDialog_" data-uid="FireBlade.WinInteropUtils.Shell32.ShowPickIconDialog*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Shell32_ShowPickIconDialog_System_String_System_Int32_System_String__System_Int32__" data-uid="FireBlade.WinInteropUtils.Shell32.ShowPickIconDialog(System.String,System.Int32,System.String@,System.Int32@)">
+  ShowPickIconDialog(string, int, out string, out int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Displays a dialog box that allows the user to choose an icon from the selection available embedded in a resource such as an executable or DLL file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ShowPickIconDialog(string defIconPath, int defIconIndex, out string iconPath, out int iconIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>defIconPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that contains the fully qualified path of the default resource that contains the icons.
+You should verify that the path is valid before using it.</p>
+</dd>
+    <dt><code>defIconIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>An integer that specifies the index of the initial selection.</p>
+</dd>
+    <dt><code>iconPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>If the user chooses a different resource in the dialog, contains the path of that file when the function returns; otherwise, it contains
+the path stored in <code class="paramref">defIconPath</code>.</p>
+</dd>
+    <dt><code>iconIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>When this function returns successfully, receives the index of the icon that was selected.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if successful; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IUnknown | WinInteropUtils </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IUnknown | WinInteropUtils ">
+      
+      <meta name="description" content="Enables clients to get pointers to other interfaces on a given object through the  method, and manage the existence of the object through the  and  methods. All other COM interfaces are inherited, directly or indirectly, from . Therefore, the three methods in  are the first entries in the vtable for every interface.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="WinInteropUtils">
+            WinInteropUtils
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown">
+
+
+
+  <h1 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown" class="text-break">
+Interface IUnknown  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FireBlade.html">FireBlade</a>.<a class="xref" href="FireBlade.WinInteropUtils.html">WinInteropUtils</a>.<a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.html">ComponentObjectModel</a>.<a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.html">Interfaces</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>WinInteropUtils.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Enables clients to get pointers to other interfaces on a given object through the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_QueryInterface_System_Guid__System_IntPtr__">QueryInterface(ref Guid, out nint)</a> method,
+and manage the existence of the object through the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_AddRef">AddRef()</a> and <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_Release">Release()</a> methods. All other COM interfaces are inherited,
+directly or indirectly, from <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html">IUnknown</a>. Therefore, the three methods in <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html">IUnknown</a> are the first entries in the vtable for every interface.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GeneratedComInterface]
+[InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+[Guid(&quot;00000000-0000-0000-C000-000000000046&quot;)]
+[IUnknownDerived&lt;InterfaceInformation, InterfaceImplementation&gt;]
+public interface IUnknown</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_AddRef_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.AddRef*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_AddRef" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.AddRef">
+  AddRef()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/IUnknown.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Increments the reference count for an interface pointer to a <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html">COM</a> object. You should call this method whenever you make a copy
+of an interface pointer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">uint AddRef()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The method returns the new reference count. This value is intended to be used only for test purposes.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_AddRef_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html">COM</a> object uses a per-interface reference-counting mechanism to ensure that the object doesn't outlive references to it.
+You use <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_AddRef">AddRef()</a> to stabilize a copy of an interface pointer. It can also be called when the life of a cloned pointer must extend beyond the lifetime
+of the original pointer. The cloned pointer must be released by calling <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_Release">Release()</a> on it.</p>
+<p>The internal reference counter that AddRef maintains should be a 32-bit unsigned integer.</p>
+<p><i>Notes to callers</i></p>
+<p>
+Call this method for every new copy of an interface pointer that you make. For example, if you return a copy of a pointer from a method, then you must
+call <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_AddRef">AddRef()</a> on that pointer. You must also call <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_AddRef">AddRef()</a> on a pointer before passing it as an in-out parameter
+to a method; the method will call <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_Release">Release()</a> before copying the out-value on top of it.
+</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_QueryInterface_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.QueryInterface*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_QueryInterface_System_Guid__System_IntPtr__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.QueryInterface(System.Guid@,System.IntPtr@)">
+  QueryInterface(ref Guid, out nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/IUnknown.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Queries a <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html">COM</a> object for a pointer to one of its interface; identifying the interface by a reference to its
+interface identifier (IID). If the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html">COM</a> object implements the interface, then it returns a pointer to that interface after
+calling <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_AddRef">AddRef()</a> on it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HRESULT QueryInterface(ref Guid riid, out nint ppvObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>riid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>A reference to the interface identifier (IID) of the interface being queried for.</p>
+</dd>
+    <dt><code>ppvObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>The address of a pointer to an interface with the IID specified in the <code class="paramref">riid</code> parameter. Because you pass
+the address of an interface pointer, the method can overwrite that address with the pointer to the interface being queried for.
+Upon successful return, *<code class="paramref">ppvObject</code> (the dereferenced address) contains a pointer to the requested interface. If the object doesn't support
+the interface, the method sets *<code class="paramref">ppvObject</code> (the dereferenced address) to <code>nullptr</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>This method returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a> if the interface is supported, and <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_E_NOINTERFACE">E_NOINTERFACE</a>
+otherwise. If <code class="paramref">ppvObject</code> (the address) is <code>nullptr</code>, then this method returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_E_POINTER">E_POINTER</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_QueryInterface_System_Guid__System_IntPtr___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>For any given <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html">COM</a> object (also known as a <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html">COM</a> component), a specific query for the
+<a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html">IUnknown</a> interface on any of the object's interfaces must always return the same pointer value. This enables
+a client to determine whether two pointers point to the same component by calling <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_QueryInterface_System_Guid__System_IntPtr__">QueryInterface(ref Guid, out nint)</a> with IID_IUnknown
+and comparing the results. It is specifically not the case that queries for interfaces other than <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html">IUnknown</a>
+(even the same interface through the same pointer) must return the same pointer value.</p>
+<p>There are four requirements for implementations of <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_QueryInterface_System_Guid__System_IntPtr__">QueryInterface(ref Guid, out nint)</a>
+(in these cases, &quot;must succeed&quot; means &quot;must succeed barring catastrophic failure.&quot;).</p>
+<ul><li>
+The set of interfaces accessible on an object through <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_QueryInterface_System_Guid__System_IntPtr__">QueryInterface(ref Guid, out nint)</a> must be <b>static</b>, not <i>dynamic</i>.
+This means that if a call to <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_QueryInterface_System_Guid__System_IntPtr__">QueryInterface(ref Guid, out nint)</a> for a pointer to a specified interface succeeds the first time,
+then it must succeed again. If the call fails the first time, then it must fail on all subsequent calls.
+</li><li>
+It must be reflexive — if a client holds a pointer to an interface on an object, and the client queries for that interface, then the call must succeed.
+</li><li>
+It must be symmetric—if a client holding a pointer to one interface queries successfully for another, then a query through the obtained pointer
+for the first interface must succeed.
+</li><li>
+It must be transitive — if a client holding a pointer to one interface queries successfully for a second,
+and through that pointer queries successfully for a third interface, then a query for the first interface through the pointer
+for the third interface must succeed.
+</li></ul>
+<p><i>Notes to implementers</i></p>
+Implementations of <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_QueryInterface_System_Guid__System_IntPtr__">QueryInterface(ref Guid, out nint)</a> must never check ACLs. The main reason for this rule
+is that <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html">COM</a> requires that an object supporting a particular interface always return success when queried for that interface. Another reason is
+that checking ACLs on <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_QueryInterface_System_Guid__System_IntPtr__">QueryInterface(ref Guid, out nint)</a> does not provide any real security because any client who has access to a particular interface can hand
+it directly to another client without any calls back to the server. Also, because <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html">COM</a> caches interface
+pointers, it does not call <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_QueryInterface_System_Guid__System_IntPtr__">QueryInterface(ref Guid, out nint)</a> on the server every time a client does a query.
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_Release_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.Release*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_Release" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.Release">
+  Release()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/IUnknown.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Decrements the reference count for an interface on a <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html">COM</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">uint Release()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The method returns the new reference count. This value is intended to be used only for test purposes.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_Release_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When the reference count on an object reaches zero, <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_Release">Release()</a> must cause the interface pointer to free itself.
+When the released pointer is the only (formerly) outstanding reference to an object (whether the object supports single or multiple interfaces),
+the implementation must free the object.</p>
+<p>Note that aggregation of objects restricts the ability to recover interface pointers.</p>
+<p><i>Notes to callers</i></p>
+Call this method when you no longer need to use an interface pointer. If you are writing a method
+that takes an in-out parameter, call <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_Release">Release()</a> on the pointer you are passing in before copying the out-value on top of it.
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

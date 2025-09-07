@@ -1,0 +1,594 @@
+{
+  "sitemap": {
+    "baseUrl": "https://fireblade211.github.io/wininteroputils/",
+    "changefreq": "weekly"
+  },
+  "source_base_path": "C:/Users/Piotr/Projects/Visual Studio Repos/WinInteropUtils",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.CoInit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.CoInit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.ComponentObjectModel.COM.CoInit",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.CoInit.yml\" sourcestartlinenumber=\"1\">Specifies flags for <xref href=\"FireBlade.WinInteropUtils.ComponentObjectModel.COM.Initialize(FireBlade.WinInteropUtils.ComponentObjectModel.COM.CoInit)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.yml\" sourcestartlinenumber=\"1\">Values that are used in activation calls to indicate the execution contexts in which an object is to\nbe run. Used in <xref href=\"FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstance%60%601(System.Guid%2cFireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown%2cFireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext%2cSystem.Guid%2c%60%600%40)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.ComponentObjectModel.COM",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.yml\" sourcestartlinenumber=\"1\">Provides basic COM (Component-Object Model) methods from <code>Ole32.dll</code> required to use COM.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.yml\" sourcestartlinenumber=\"1\">Exposes methods that initialize, show, and get results from the common file dialog.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.yml\" sourcestartlinenumber=\"1\">Exposes methods that allow an application to add controls to a common item dialog.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.yml\" sourcestartlinenumber=\"1\">Extends the <xref href=\"FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog\" data-throw-if-not-resolved=\"false\"></xref> interface by adding methods specific to the open dialog.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.yml\" sourcestartlinenumber=\"1\">Extends the <xref href=\"FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog\" data-throw-if-not-resolved=\"false\"></xref> interface by adding methods specific to the save dialog, which include those that provide support for the collection\nof metadata to be persisted with the file.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.yml\" sourcestartlinenumber=\"1\">Exposes a method that represents a modal window.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.yml\" sourcestartlinenumber=\"1\">Exposes methods that retrieve information about a Shell item. <xref href=\"FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem\" data-throw-if-not-resolved=\"false\"></xref> and\n<a href=\"https://learn.microsoft.com/en-us/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem2\">IShellItem2</a>\nare the preferred representations of items in any new code.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.yml\" sourcestartlinenumber=\"1\">Enables clients to get pointers to other interfaces on a given object through the <xref href=\"FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.QueryInterface(System.Guid%40%2cSystem.IntPtr%40)\" data-throw-if-not-resolved=\"false\"></xref> method,\nand manage the existence of the object through the <xref href=\"FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.AddRef\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.Release\" data-throw-if-not-resolved=\"false\"></xref> methods. All other COM interfaces are inherited,\ndirectly or indirectly, from <xref href=\"FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown\" data-throw-if-not-resolved=\"false\"></xref>. Therefore, the three methods in <xref href=\"FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown\" data-throw-if-not-resolved=\"false\"></xref> are the first entries in the vtable for every interface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.SICHINTF.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.SICHINTF.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.SICHINTF",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.SICHINTF.yml\" sourcestartlinenumber=\"1\">Used to determine how to compare two Shell items. <xref href=\"FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.Compare(System.IntPtr%2cFireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.SICHINTF%2cSystem.Int32%40)\" data-throw-if-not-resolved=\"false\"></xref> uses this enumerated type.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.SIGDN.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.SIGDN.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.SIGDN",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.SIGDN.yml\" sourcestartlinenumber=\"1\">Requests the form of an item's display name to retrieve through <xref href=\"FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.GetDisplayName(FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.SIGDN%2cSystem.IntPtr%40)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.ComponentObjectModel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.DefaultWindowLongPtrValues.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.DefaultWindowLongPtrValues.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.DefaultWindowLongPtrValues",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.DefaultWindowLongPtrValues.yml\" sourcestartlinenumber=\"1\">Defines default index values for <xref href=\"FireBlade.WinInteropUtils.User32.SetWindowLongPtr(System.IntPtr%2cSystem.Int32%2cSystem.IntPtr)\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"FireBlade.WinInteropUtils.User32.GetWindowLongPtr(System.IntPtr%2cSystem.Int32)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.EnumExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.EnumExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.EnumExtensions",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.EnumExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for <xref href=\"System.Enum\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.ExceptionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.ExceptionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.ExceptionExtensions",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.ExceptionExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for <xref href=\"System.Exception\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.HRESULT.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.HRESULT.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.HRESULT",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.HRESULT.yml\" sourcestartlinenumber=\"1\">Defines common HRESULT values. Values starting with <code>S_</code> indicate success, while those starting with <code>E_</code> indicate an error.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.IconExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.IconExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.IconExtensions",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.IconExtensions.yml\" sourcestartlinenumber=\"1\">Adds extension methods to the <xref href=\"System.Drawing.Icon\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Macros.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Macros.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Macros",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Macros.yml\" sourcestartlinenumber=\"1\">Defines Win32 macros.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Shell32.SHFILEINFO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Shell32.SHFILEINFO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Shell32.SHFILEINFO",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Shell32.SHFILEINFO.yml\" sourcestartlinenumber=\"1\">The internal Windows API struct for <xref href=\"FireBlade.WinInteropUtils.Shell32.SHGetFileInfoW(System.String%2cSystem.UInt32%2cFireBlade.WinInteropUtils.Shell32.SHFILEINFO%40%2cSystem.UInt32%2cSystem.UInt32)\" data-throw-if-not-resolved=\"false\"></xref>. Use with\n<xref href=\"FireBlade.WinInteropUtils.Shell32.GetFileInfoEx(System.String%2cFireBlade.WinInteropUtils.WindowsFileAttributes%2cFireBlade.WinInteropUtils.Shell32.SHGetFileInfoFlags%2cFireBlade.WinInteropUtils.Shell32.SHFILEINFO%40)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Shell32.SHGetFileInfoFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Shell32.SHGetFileInfoFlags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Shell32.SHGetFileInfoFlags",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Shell32.SHGetFileInfoFlags.yml\" sourcestartlinenumber=\"1\">Provides flags for the Windows API function <xref href=\"FireBlade.WinInteropUtils.Shell32.SHGetFileInfoW(System.String%2cSystem.UInt32%2cFireBlade.WinInteropUtils.Shell32.SHFILEINFO%40%2cSystem.UInt32%2cSystem.UInt32)\" data-throw-if-not-resolved=\"false\"></xref>.\nTo use this function, call the <xref href=\"FireBlade.WinInteropUtils.Shell32.GetFileInfoEx(System.String%2cFireBlade.WinInteropUtils.WindowsFileAttributes%2cFireBlade.WinInteropUtils.Shell32.SHGetFileInfoFlags%2cFireBlade.WinInteropUtils.Shell32.SHFILEINFO%40)\" data-throw-if-not-resolved=\"false\"></xref> wrapper instead.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Shell32.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Shell32.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Shell32",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Shell32.yml\" sourcestartlinenumber=\"1\">Declares P/Invoke functions from <code>Shell32.dll</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.TitleBarElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.TitleBarElement.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.TitleBarElement",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.TitleBarElement.yml\" sourcestartlinenumber=\"1\">Defines elements on a title bar.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.TitleBarElementState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.TitleBarElementState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.TitleBarElementState",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.TitleBarElementState.yml\" sourcestartlinenumber=\"1\">Defines the states of a title bar element.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.TitleBarInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.TitleBarInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.TitleBarInfo",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.TitleBarInfo.yml\" sourcestartlinenumber=\"1\">Stores data about a window's title bar.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.User32.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.User32.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.User32",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.User32.yml\" sourcestartlinenumber=\"1\">Declares P/Invoke functions from <code>User32.dll</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Win32Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Win32Constants.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Win32Constants",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Win32Constants.yml\" sourcestartlinenumber=\"1\">Defines common Win32 constants.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Win32ErrorCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Win32ErrorCode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Win32ErrorCode",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Win32ErrorCode.yml\" sourcestartlinenumber=\"1\">Defines Win32 error codes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WindowState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WindowState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WindowState",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WindowState.yml\" sourcestartlinenumber=\"1\">Defines states a window can be in.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WindowsFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WindowsFile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WindowsFile",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WindowsFile.yml\" sourcestartlinenumber=\"1\">Stores data about a Windows file.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WindowsFileAttributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WindowsFileAttributes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WindowsFileAttributes",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WindowsFileAttributes.yml\" sourcestartlinenumber=\"1\">Specifies attributes for Windows files.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/com-interfaces_basic.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/com-interfaces_basic.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/com-interfaces_filedlg.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/com-interfaces_filedlg.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/using-com.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/using-com.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
