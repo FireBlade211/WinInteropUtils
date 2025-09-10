@@ -17,7 +17,8 @@ Now we're ready to use COM. Over the course of this guide we will build up a sam
 
 ```cs
 // if you're using v0.11 or earlier the function is named COM.CoInitialize instead
-HRESULT hr = COM.Initialize(CoInit.ApartmentThreaded); // or MultiThreaded if inside a non-GUI/non-STA app
+// if you're using v0.2 or earlier the enum is named CoInit instead (don't blame me for the compatibility and migration issues; that's what you get for using a library in beta)
+HRESULT hr = COM.Initialize(COMInitOptions.ApartmentThreaded); // or MultiThreaded if inside a non-GUI/non-STA app
 ```
 
 Now, after initializng COM, we need to check if the initialization succeeded:
@@ -38,7 +39,7 @@ Now that COM is initialized, we need to actually create the COM instance, and on
 hr = COM.CreateInstance<IFileOpenDialog>(
     new Guid("DC1C5A9C-E88A-4dde-A5A1-60F82A20AEF7"),
     null,
-    CreateInstanceContext.InprocServer,
+    COM.CreateInstanceContext.InprocServer,
     new Guid("d57c7288-d4ad-4768-be02-9d969532d960"),
     out IFileOpenDialog dlg);
 
@@ -142,14 +143,14 @@ public struct COMDLG_FILTERSPEC
     public string pszSpec;
 }
 
-HRESULT hr = COM.Initialize(CoInit.ApartmentThreaded);
+HRESULT hr = COM.Initialize(COMInitOptions.ApartmentThreaded);
 
 if (Macros.Succeeded(hr))
 {
     hr = COM.CreateInstance<IFileOpenDialog>(
         new Guid("DC1C5A9C-E88A-4dde-A5A1-60F82A20AEF7"),
         null,
-        CreateInstanceContext.InprocServer,
+        COM.CreateInstanceContext.InprocServer,
         new Guid("d57c7288-d4ad-4768-be02-9d969532d960"),
         out IFileOpenDialog dlg);
 
