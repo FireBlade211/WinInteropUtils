@@ -147,9 +147,9 @@ namespace FireBlade.WinInteropUtils.Dialogs
         /// on the current active desktop, even if there is no user logged on to the computer.
         /// </summary>
         /// <remarks>
-        /// <para>> [!NOTE]
+        /// > [!NOTE]
         /// > <b>Terminal Services:</b> If the calling thread has an impersonation token, the function directs
-        /// the message box to the session specified in the impersonation token.</para>
+        /// the message box to the session specified in the impersonation token.
         /// 
         /// <para>If this flag is set, the <see cref="Show()"/> function should be called instead of <see cref="Show(nint)"/>.
         /// This is so that the message box can appear on a desktop other than the desktop corresponding to the window corresponding
