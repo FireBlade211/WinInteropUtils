@@ -34,13 +34,12 @@ if (Macros.Succeeded(hr))
 Now that COM is initialized, we need to actually create the COM instance, and once again check for success:
 
 ```cs
-// 84bccd23-5fde-4cdb-aea4-af64b83d78ab is the CLSID for the file open dialog
 
 hr = COM.CreateInstance<IFileOpenDialog>(
-    new Guid("84bccd23-5fde-4cdb-aea4-af64b83d78ab"),
+    new Guid("DC1C5A9C-E88A-4dde-A5A1-60F82A20AEF7"),
     null,
     CreateInstanceContext.InprocServer,
-    new Guid("84bccd23-5fde-4cdb-aea4-af64b83d78ab"),
+    new Guid("d57c7288-d4ad-4768-be02-9d969532d960"),
     out IFileOpenDialog dlg);
 
 if (Macros.Succeeded(hr))
@@ -127,7 +126,7 @@ Once you're done using COM, you need to deinitialize the COM library (if the ini
 ```cs
 dlg.Release();
 COM.Uninitialize();
-```
+``` 
 
 ## Final Example
 So now, our final example code looks like this:
@@ -147,13 +146,11 @@ HRESULT hr = COM.Initialize(CoInit.ApartmentThreaded);
 
 if (Macros.Succeeded(hr))
 {
-    // 84bccd23-5fde-4cdb-aea4-af64b83d78ab is the CLSID for the file open dialog
-
     hr = COM.CreateInstance<IFileOpenDialog>(
-        new Guid("84bccd23-5fde-4cdb-aea4-af64b83d78ab"),
+        new Guid("DC1C5A9C-E88A-4dde-A5A1-60F82A20AEF7"),
         null,
         CreateInstanceContext.InprocServer,
-        new Guid("84bccd23-5fde-4cdb-aea4-af64b83d78ab"),
+        new Guid("d57c7288-d4ad-4768-be02-9d969532d960"),
         out IFileOpenDialog dlg);
 
     if (Macros.Succeeded(hr))

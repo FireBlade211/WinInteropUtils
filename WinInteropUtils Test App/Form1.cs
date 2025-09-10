@@ -221,8 +221,6 @@ namespace WinInteropUtils_Test_App
 
             if (Macros.Succeeded(hr))
             {
-                // 84bccd23-5fde-4cdb-aea4-af64b83d78ab is the CLSID for the file open dialog
-
                 hr = COM.CreateInstance(
                     new Guid("DC1C5A9C-E88A-4dde-A5A1-60F82A20AEF7"),
                     null,
