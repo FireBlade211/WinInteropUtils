@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      
+      <meta name="docfx:docurl" content="https://github.com/FireBlade211/WinInteropUtils/new/main/apiSpec/new?filename=FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize.md&amp;value=---%0Auid%3A%20FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize" class="text-break">
-Interface IFileDialogCustomize  
+Interface IFileDialogCustomize  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L427"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,10 +102,8 @@ Interface IFileDialogCustomize
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[GeneratedComInterface]
-[InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+    <pre><code class="lang-csharp hljs">[InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
 [Guid(&quot;973510db-7d7f-452b-8975-74a85828d354&quot;)]
-[IUnknownDerived&lt;InterfaceInformation, InterfaceImplementation&gt;]
 public interface IFileDialogCustomize : IUnknown</code></pre>
   </div>
 
@@ -115,6 +113,19 @@ public interface IFileDialogCustomize : IUnknown</code></pre>
 
 
 
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_QueryInterface_System_Guid__System_IntPtr__">IUnknown.QueryInterface(ref Guid, out nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_AddRef">IUnknown.AddRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_Release">IUnknown.Release()</a>
+    </div>
+  </dd></dl>
 
 
 
@@ -453,37 +464,6 @@ with the exception of their enabled and visible states.</p>
   <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddRadioButtonList_System_UInt32__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>The default state for this control is enabled and visible.</p>
 </div>
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddRef_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddRef*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddRef" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddRef">
-  AddRef()
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">uint AddRef()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
 
 
 
@@ -926,75 +906,6 @@ only a single item of one of those types—can be made prominent.</p>
 
 
 
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_QueryInterface_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.QueryInterface*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_QueryInterface_System_Guid__System_IntPtr__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.QueryInterface(System.Guid@,System.IntPtr@)">
-  QueryInterface(ref Guid, out nint)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT QueryInterface(ref Guid riid, out nint ppvObject)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>riid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
-    <dd></dd>
-    <dt><code>ppvObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_Release_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.Release*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_Release" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.Release">
-  Release()
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">uint Release()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_RemoveControlItem_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.RemoveControlItem*"></a>
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_RemoveControlItem_System_UInt32_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.RemoveControlItem(System.UInt32,System.UInt32)">
@@ -1408,6 +1319,7 @@ controls within it. Individual members of the visual group can also be hidden an
 </article>
 
         <div class="contribution d-print-none">
+          <a href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L427" class="edit-link">Edit this page</a>
         </div>
 
 

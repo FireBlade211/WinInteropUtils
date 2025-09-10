@@ -26,6 +26,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.yml\" sourcestartlinenumber=\"1\">Specifies flags for <xref href=\"FireBlade.WinInteropUtils.ComponentObjectModel.COM.Initialize(FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.CoInit.yml",
       "output": {
         ".html": {
@@ -233,6 +247,132 @@
       "IsMRef": true,
       "Title": "FireBlade.WinInteropUtils.DefaultWindowLongPtrValues",
       "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.DefaultWindowLongPtrValues.yml\" sourcestartlinenumber=\"1\">Defines default index values for <xref href=\"FireBlade.WinInteropUtils.User32.SetWindowLongPtr(System.IntPtr%2cSystem.Int32%2cSystem.IntPtr)\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"FireBlade.WinInteropUtils.User32.GetWindowLongPtr(System.IntPtr%2cSystem.Int32)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Dialogs.DialogWindow<TShowReturn, TSelf>",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.yml\" sourcestartlinenumber=\"1\">Represents a dialog window that can be shown modally or modelessly. This class is abstract.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Dialogs.HelpContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Dialogs.HelpContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Dialogs.HelpContext",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Dialogs.HelpContext.yml\" sourcestartlinenumber=\"1\">The type of context for which help is requested.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Dialogs.HelpEventArgs",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.yml\" sourcestartlinenumber=\"1\">Provides event arguments for help events.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Dialogs.Win32MessageBox",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.yml\" sourcestartlinenumber=\"1\">Provides methods for showing a Win32 message box.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.yml\" sourcestartlinenumber=\"1\">Defines the buttons on a message box.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.yml\" sourcestartlinenumber=\"1\">Specifies the icon in a message box.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality.yml\" sourcestartlinenumber=\"1\">Specifies the modality of a <xref href=\"FireBlade.WinInteropUtils.Dialogs.Win32MessageBox\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.yml\" sourcestartlinenumber=\"1\">Represents the result of the message box.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Dialogs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Dialogs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Dialogs",
+      "Summary": null
     },
     {
       "type": "ManagedReference",

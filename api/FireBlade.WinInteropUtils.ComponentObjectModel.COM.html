@@ -157,7 +157,7 @@ Class COM
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstance__1_System_Guid_FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_System_Guid___0__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstance``1(System.Guid,FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown,FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext,System.Guid,``0@)">
   CreateInstance&lt;TCoInterface&gt;(Guid, IUnknown?, CreateInstanceContext, Guid, out TCoInterface?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/COM.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/COM.cs/#L240"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates and default-initializes a single object of the class associated with a specified CLSID.</p>
@@ -243,9 +243,53 @@ the objects they communicate with to avoid hangs or other complications due to c
 
   <a id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.COM.Initialize*"></a>
 
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CoInit_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.COM.Initialize(FireBlade.WinInteropUtils.ComponentObjectModel.COM.CoInit)">
-  Initialize(CoInit)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/COM.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.COM.Initialize">
+  Initialize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/COM.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the COM library on the current thread and identifies the concurrency model as single-thread apartment (STA).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HRESULT Initialize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dd><p>This function can return the standard
+return values <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_E_INVALIDARG">E_INVALIDARG</a>, <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_E_OUTOFMEMORY">E_OUTOFMEMORY</a>,
+and <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_E_UNEXPECTED">E_UNEXPECTED</a>, as well as the following values:</p>
+<table><tbody><tr><td class="term"><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a></td><td class="description">The COM library was initialized successfully on this thread.</td></tr><tr><td class="term"><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_FALSE">S_FALSE</a></td><td class="description">The COM library is already initialized on this thread.</td></tr><tr><td class="term"><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_RPC_E_CHANGED_MODE">RPC_E_CHANGED_MODE</a></td><td class="description">A previous call to <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a> specified the concurrency model for this thread
+as multithread apartment (MTA). This could also indicate that a change from neutral-threaded apartment to single-threaded
+apartment has occurred.</td></tr></tbody></table>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>New applications should call <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a> instead of <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize">Initialize()</a>.</p>
+<p>If you want to use the Windows Runtime, you must call
+<a href="https://learn.microsoft.com/en-us/windows/win32/api/roapi/nf-roapi-roinitialize">RoInitialize</a>
+or <a href="https://learn.microsoft.com/en-us/windows/win32/api/roapi/nf-roapi-initialize">Windows::Foundation::Initialize</a> instead.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.COM.Initialize*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.COM.Initialize(FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions)">
+  Initialize(COMInitOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/COM.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes the COM library for use by the calling thread, sets the thread's concurrency model, and creates a new apartment for the thread if one is required.</p>
@@ -253,15 +297,15 @@ the objects they communicate with to avoid hangs or other complications due to c
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static HRESULT Initialize(COM.CoInit coInit)</code></pre>
+    <pre><code class="lang-csharp hljs">public static HRESULT Initialize(COM.COMInitOptions options)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>coInit</code> <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html">COM</a>.<a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CoInit.html">CoInit</a></dt>
-    <dd><p>The concurrency model and initialization options for the thread. Any combination of values from <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CoInit.html">COM.CoInit</a> can be used, except
-that the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CoInit.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CoInit_ApartmentThreaded">ApartmentThreaded</a> and <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CoInit.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CoInit_MultiThreaded">MultiThreaded</a> flags cannot both be set.
-The default is <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CoInit.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CoInit_MultiThreaded">MultiThreaded</a>.</p>
+    <dt><code>options</code> <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html">COM</a>.<a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.html">COMInitOptions</a></dt>
+    <dd><p>The concurrency model and initialization options for the thread. Any combination of values from <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.html">COM.COMInitOptions</a> can be used, except
+that the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_ApartmentThreaded">ApartmentThreaded</a> and <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_MultiThreaded">MultiThreaded</a> flags cannot both be set.
+The default is <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_MultiThreaded">MultiThreaded</a>.</p>
 </dd>
   </dl>
 
@@ -278,12 +322,12 @@ The default is <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectMo
 
 
 
-  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CoInit__remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p><a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CoInit_">Initialize(CoInit)</a> must be called at least once, and is usually called only once, for each thread that uses the COM library. Multiple calls
-to <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CoInit_">Initialize(CoInit)</a> by the same thread are allowed as long as they pass the same concurrency flag, but subsequent valid calls return
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a> must be called at least once, and is usually called only once, for each thread that uses the COM library. Multiple calls
+to <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a> by the same thread are allowed as long as they pass the same concurrency flag, but subsequent valid calls return
 <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_FALSE">S_FALSE</a>. If the concurrency flag does not match, then the call fails and returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_RPC_E_CHANGED_MODE">RPC_E_CHANGED_MODE</a>. 
-(For the purpose of this rule, a call to CoInitialize is equivalent to calling <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CoInit_">Initialize(CoInit)</a> with the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CoInit.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CoInit_ApartmentThreaded">ApartmentThreaded</a> flag.) To
-uninitialize the COM library gracefully on a thread, each successful call to CoInitialize or <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CoInit_">Initialize(CoInit)</a>, including any call that
+(For the purpose of this rule, a call to CoInitialize is equivalent to calling <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a> with the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_ApartmentThreaded">ApartmentThreaded</a> flag.) To
+uninitialize the COM library gracefully on a thread, each successful call to CoInitialize or <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a>, including any call that
 returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_FALSE">S_FALSE</a>, must be balanced by a corresponding call to <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Uninitialize">Uninitialize()</a>. Once COM has been uninitialized on a thread,
 you can reinitialize it in any mode, subject to the constraints above.</p>
 <p>You need to initialize the COM library on a thread before you call any of the library functions except CoGetMalloc, to get
@@ -294,11 +338,11 @@ only at message-queue boundaries (when the PeekMessage or SendMessage function i
 would typically implement some form of concurrency control in a multithreaded object's code using synchronization primitives such as critical sections,
 semaphores, or mutexes to help protect the object's data.</p>
 <p>When an object that is configured to run in the neutral threaded apartment (NTA) is called by a thread that is in either
-an STA or the MTA, that thread transfers to the NTA. If this thread subsequently calls <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CoInit_">Initialize(CoInit)</a>, the call fails and returns
+an STA or the MTA, that thread transfers to the NTA. If this thread subsequently calls <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a>, the call fails and returns
 <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_RPC_E_CHANGED_MODE">RPC_E_CHANGED_MODE</a>.</p>
-<p>Because OLE technologies are not thread-safe, the OleInitialize function calls <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CoInit_">Initialize(CoInit)</a> with the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CoInit.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CoInit_ApartmentThreaded">ApartmentThreaded</a> flag. As a result,
+<p>Because OLE technologies are not thread-safe, the OleInitialize function calls <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a> with the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_ApartmentThreaded">ApartmentThreaded</a> flag. As a result,
 an apartment that is initialized for multithreaded object concurrency cannot use the features enabled by OleInitialize.</p>
-<p>Because there is no way to control the order in which in-process servers are loaded or unloaded, do not call CoInitialize, <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CoInit_">Initialize(CoInit)</a>,
+<p>Because there is no way to control the order in which in-process servers are loaded or unloaded, do not call CoInitialize, <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a>,
 or <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Uninitialize">Uninitialize()</a> from the <code>DllMain</code> function.</p>
 </div>
 
@@ -330,8 +374,8 @@ frees any other resources that the thread maintains, and forces all RPC connecti
 
 
   <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_Uninitialize_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>A thread must call <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Uninitialize">Uninitialize()</a> once for each successful call it has made to the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CoInit_">Initialize(CoInit)</a> function,
-including any call that returns S_FALSE. Only the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Uninitialize">Uninitialize()</a> call corresponding to the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CoInit_">Initialize(CoInit)</a> call that initialized the library
+  <div class="markdown level1 remarks"><p>A thread must call <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Uninitialize">Uninitialize()</a> once for each successful call it has made to the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a> function,
+including any call that returns S_FALSE. Only the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Uninitialize">Uninitialize()</a> call corresponding to the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a> call that initialized the library
 can close it.</p>
 <p>Calls to OleInitialize must be balanced by calls to OleUninitialize. The OleUninitialize function calls <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Uninitialize">Uninitialize()</a> internally, so applications
 that call OleUninitialize do not also need to call <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Uninitialize">Uninitialize()</a>.</p>
@@ -340,7 +384,7 @@ its main windows and falls through its main message loop. If there are open conv
 starts a modal message loop and dispatches any pending messages from the containers or server for this COM application.
 By dispatching the messages, <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Uninitialize">Uninitialize()</a> ensures that the application does not quit before receiving all of its pending messages.
 Non-COM messages are discarded.</p>
-<p>Because there is no way to control the order in which in-process servers are loaded or unloaded, do not call CoInitialize, <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CoInit_">Initialize(CoInit)</a>,
+<p>Because there is no way to control the order in which in-process servers are loaded or unloaded, do not call CoInitialize, <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a>,
 or <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Uninitialize">Uninitialize()</a> from the <code>DllMain</code> function.</p>
 </div>
 

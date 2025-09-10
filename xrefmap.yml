@@ -19,6 +19,36 @@ references:
   commentId: T:FireBlade.WinInteropUtils.ComponentObjectModel.COM
   fullName: FireBlade.WinInteropUtils.ComponentObjectModel.COM
   nameWithType: COM
+- uid: FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions
+  name: COM.COMInitOptions
+  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.html
+  commentId: T:FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions
+  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions
+  nameWithType: COM.COMInitOptions
+- uid: FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.ApartmentThreaded
+  name: ApartmentThreaded
+  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_ApartmentThreaded
+  commentId: F:FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.ApartmentThreaded
+  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.ApartmentThreaded
+  nameWithType: COM.COMInitOptions.ApartmentThreaded
+- uid: FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.DisableOle1DDE
+  name: DisableOle1DDE
+  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_DisableOle1DDE
+  commentId: F:FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.DisableOle1DDE
+  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.DisableOle1DDE
+  nameWithType: COM.COMInitOptions.DisableOle1DDE
+- uid: FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.MultiThreaded
+  name: MultiThreaded
+  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_MultiThreaded
+  commentId: F:FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.MultiThreaded
+  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.MultiThreaded
+  nameWithType: COM.COMInitOptions.MultiThreaded
+- uid: FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.SpeedOverMemory
+  name: SpeedOverMemory
+  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_SpeedOverMemory
+  commentId: F:FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.SpeedOverMemory
+  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.SpeedOverMemory
+  nameWithType: COM.COMInitOptions.SpeedOverMemory
 - uid: FireBlade.WinInteropUtils.ComponentObjectModel.COM.CoInit
   name: COM.CoInit
   href: api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.CoInit.html
@@ -233,12 +263,18 @@ references:
   fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstance(Of TCoInterface)(System.Guid, FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown, FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext, System.Guid, TCoInterface)
   nameWithType: COM.CreateInstance<TCoInterface>(Guid, IUnknown?, COM.CreateInstanceContext, Guid, out TCoInterface?)
   nameWithType.vb: COM.CreateInstance(Of TCoInterface)(Guid, IUnknown, COM.CreateInstanceContext, Guid, TCoInterface)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.COM.Initialize(FireBlade.WinInteropUtils.ComponentObjectModel.COM.CoInit)
-  name: Initialize(CoInit)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CoInit_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.COM.Initialize(FireBlade.WinInteropUtils.ComponentObjectModel.COM.CoInit)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.COM.Initialize(FireBlade.WinInteropUtils.ComponentObjectModel.COM.CoInit)
-  nameWithType: COM.Initialize(COM.CoInit)
+- uid: FireBlade.WinInteropUtils.ComponentObjectModel.COM.Initialize
+  name: Initialize()
+  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize
+  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.COM.Initialize
+  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.COM.Initialize()
+  nameWithType: COM.Initialize()
+- uid: FireBlade.WinInteropUtils.ComponentObjectModel.COM.Initialize(FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions)
+  name: Initialize(COMInitOptions)
+  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_
+  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.COM.Initialize(FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions)
+  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.COM.Initialize(FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions)
+  nameWithType: COM.Initialize(COM.COMInitOptions)
 - uid: FireBlade.WinInteropUtils.ComponentObjectModel.COM.Initialize*
   name: Initialize
   href: api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_
@@ -270,19 +306,6 @@ references:
   commentId: T:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog
   fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog
   nameWithType: IFileDialog
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.AddRef
-  name: AddRef()
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_AddRef
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.AddRef
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.AddRef()
-  nameWithType: IFileDialog.AddRef()
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.AddRef*
-  name: AddRef
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_AddRef_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.AddRef
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.AddRef
-  nameWithType: IFileDialog.AddRef
 - uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Advise(System.IntPtr,System.UInt32@)
   name: Advise(nint, out uint)
   href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Advise_System_IntPtr_System_UInt32__
@@ -408,35 +431,6 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.GetResult
   nameWithType: IFileDialog.GetResult
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.QueryInterface(System.Guid@,System.IntPtr@)
-  name: QueryInterface(ref Guid, out nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_QueryInterface_System_Guid__System_IntPtr__
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.QueryInterface(System.Guid@,System.IntPtr@)
-  name.vb: QueryInterface(Guid, IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.QueryInterface(ref System.Guid, out nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.QueryInterface(System.Guid, System.IntPtr)
-  nameWithType: IFileDialog.QueryInterface(ref Guid, out nint)
-  nameWithType.vb: IFileDialog.QueryInterface(Guid, IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.QueryInterface*
-  name: QueryInterface
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_QueryInterface_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.QueryInterface
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.QueryInterface
-  nameWithType: IFileDialog.QueryInterface
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Release
-  name: Release()
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Release
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Release
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Release()
-  nameWithType: IFileDialog.Release()
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Release*
-  name: Release
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Release_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Release
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Release
-  nameWithType: IFileDialog.Release
 - uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.SetDefaultFolder(System.IntPtr)
   name: SetDefaultFolder(nint)
   href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetDefaultFolder_System_IntPtr_
@@ -565,22 +559,6 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.SetTitle
   nameWithType: IFileDialog.SetTitle
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Show(System.IntPtr)
-  name: Show(nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Show_System_IntPtr_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Show(System.IntPtr)
-  name.vb: Show(IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Show(nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Show(System.IntPtr)
-  nameWithType: IFileDialog.Show(nint)
-  nameWithType.vb: IFileDialog.Show(IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Show*
-  name: Show
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Show_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Show
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Show
-  nameWithType: IFileDialog.Show
 - uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.Unadvise(System.UInt32)
   name: Unadvise(uint)
   href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Unadvise_System_UInt32_
@@ -715,19 +693,6 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddRadioButtonList
   nameWithType: IFileDialogCustomize.AddRadioButtonList
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddRef
-  name: AddRef()
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddRef
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddRef
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddRef()
-  nameWithType: IFileDialogCustomize.AddRef()
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddRef*
-  name: AddRef
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddRef_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddRef
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddRef
-  nameWithType: IFileDialogCustomize.AddRef
 - uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddSeparator(System.UInt32)
   name: AddSeparator(uint)
   href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddSeparator_System_UInt32_
@@ -885,35 +850,6 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.MakeProminent
   nameWithType: IFileDialogCustomize.MakeProminent
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.QueryInterface(System.Guid@,System.IntPtr@)
-  name: QueryInterface(ref Guid, out nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_QueryInterface_System_Guid__System_IntPtr__
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.QueryInterface(System.Guid@,System.IntPtr@)
-  name.vb: QueryInterface(Guid, IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.QueryInterface(ref System.Guid, out nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.QueryInterface(System.Guid, System.IntPtr)
-  nameWithType: IFileDialogCustomize.QueryInterface(ref Guid, out nint)
-  nameWithType.vb: IFileDialogCustomize.QueryInterface(Guid, IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.QueryInterface*
-  name: QueryInterface
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_QueryInterface_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.QueryInterface
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.QueryInterface
-  nameWithType: IFileDialogCustomize.QueryInterface
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.Release
-  name: Release()
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_Release
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.Release
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.Release()
-  nameWithType: IFileDialogCustomize.Release()
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.Release*
-  name: Release
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_Release_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.Release
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.Release
-  nameWithType: IFileDialogCustomize.Release
 - uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.RemoveControlItem(System.UInt32,System.UInt32)
   name: RemoveControlItem(uint, uint)
   href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_RemoveControlItem_System_UInt32_System_UInt32_
@@ -1064,144 +1000,6 @@ references:
   commentId: T:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog
   fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog
   nameWithType: IFileOpenDialog
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.AddRef
-  name: AddRef()
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_AddRef
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.AddRef
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.AddRef()
-  nameWithType: IFileOpenDialog.AddRef()
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.AddRef*
-  name: AddRef
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_AddRef_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.AddRef
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.AddRef
-  nameWithType: IFileOpenDialog.AddRef
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Advise(System.IntPtr,System.UInt32@)
-  name: Advise(nint, out uint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_Advise_System_IntPtr_System_UInt32__
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Advise(System.IntPtr,System.UInt32@)
-  name.vb: Advise(IntPtr, UInteger)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Advise(nint, out uint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Advise(System.IntPtr, UInteger)
-  nameWithType: IFileOpenDialog.Advise(nint, out uint)
-  nameWithType.vb: IFileOpenDialog.Advise(IntPtr, UInteger)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Advise*
-  name: Advise
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_Advise_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Advise
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Advise
-  nameWithType: IFileOpenDialog.Advise
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Close(FireBlade.WinInteropUtils.HRESULT)
-  name: Close(HRESULT)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_Close_FireBlade_WinInteropUtils_HRESULT_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Close(FireBlade.WinInteropUtils.HRESULT)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Close(FireBlade.WinInteropUtils.HRESULT)
-  nameWithType: IFileOpenDialog.Close(HRESULT)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Close*
-  name: Close
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_Close_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Close
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Close
-  nameWithType: IFileOpenDialog.Close
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetCurrentSelection(System.IntPtr@)
-  name: GetCurrentSelection(out nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetCurrentSelection_System_IntPtr__
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetCurrentSelection(System.IntPtr@)
-  name.vb: GetCurrentSelection(IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetCurrentSelection(out nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetCurrentSelection(System.IntPtr)
-  nameWithType: IFileOpenDialog.GetCurrentSelection(out nint)
-  nameWithType.vb: IFileOpenDialog.GetCurrentSelection(IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetCurrentSelection*
-  name: GetCurrentSelection
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetCurrentSelection_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetCurrentSelection
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetCurrentSelection
-  nameWithType: IFileOpenDialog.GetCurrentSelection
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFileName(System.IntPtr@)
-  name: GetFileName(out nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetFileName_System_IntPtr__
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFileName(System.IntPtr@)
-  name.vb: GetFileName(IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFileName(out nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFileName(System.IntPtr)
-  nameWithType: IFileOpenDialog.GetFileName(out nint)
-  nameWithType.vb: IFileOpenDialog.GetFileName(IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFileName*
-  name: GetFileName
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetFileName_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFileName
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFileName
-  nameWithType: IFileOpenDialog.GetFileName
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFileTypeIndex(System.UInt32@)
-  name: GetFileTypeIndex(out uint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetFileTypeIndex_System_UInt32__
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFileTypeIndex(System.UInt32@)
-  name.vb: GetFileTypeIndex(UInteger)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFileTypeIndex(out uint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFileTypeIndex(UInteger)
-  nameWithType: IFileOpenDialog.GetFileTypeIndex(out uint)
-  nameWithType.vb: IFileOpenDialog.GetFileTypeIndex(UInteger)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFileTypeIndex*
-  name: GetFileTypeIndex
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetFileTypeIndex_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFileTypeIndex
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFileTypeIndex
-  nameWithType: IFileOpenDialog.GetFileTypeIndex
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFolder(System.IntPtr@)
-  name: GetFolder(out nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetFolder_System_IntPtr__
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFolder(System.IntPtr@)
-  name.vb: GetFolder(IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFolder(out nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFolder(System.IntPtr)
-  nameWithType: IFileOpenDialog.GetFolder(out nint)
-  nameWithType.vb: IFileOpenDialog.GetFolder(IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFolder*
-  name: GetFolder
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetFolder_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFolder
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFolder
-  nameWithType: IFileOpenDialog.GetFolder
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetOptions(System.UInt32@)
-  name: GetOptions(out uint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetOptions_System_UInt32__
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetOptions(System.UInt32@)
-  name.vb: GetOptions(UInteger)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetOptions(out uint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetOptions(UInteger)
-  nameWithType: IFileOpenDialog.GetOptions(out uint)
-  nameWithType.vb: IFileOpenDialog.GetOptions(UInteger)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetOptions*
-  name: GetOptions
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetOptions_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetOptions
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetOptions
-  nameWithType: IFileOpenDialog.GetOptions
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetResult(System.IntPtr@)
-  name: GetResult(out nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetResult_System_IntPtr__
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetResult(System.IntPtr@)
-  name.vb: GetResult(IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetResult(out nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetResult(System.IntPtr)
-  nameWithType: IFileOpenDialog.GetResult(out nint)
-  nameWithType.vb: IFileOpenDialog.GetResult(IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetResult*
-  name: GetResult
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetResult_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetResult
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetResult
-  nameWithType: IFileOpenDialog.GetResult
 - uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetResults(System.IntPtr@)
   name: GetResults(out nint)
   href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetResults_System_IntPtr__
@@ -1234,230 +1032,12 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetSelectedItems
   nameWithType: IFileOpenDialog.GetSelectedItems
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.QueryInterface(System.Guid@,System.IntPtr@)
-  name: QueryInterface(ref Guid, out nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_QueryInterface_System_Guid__System_IntPtr__
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.QueryInterface(System.Guid@,System.IntPtr@)
-  name.vb: QueryInterface(Guid, IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.QueryInterface(ref System.Guid, out nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.QueryInterface(System.Guid, System.IntPtr)
-  nameWithType: IFileOpenDialog.QueryInterface(ref Guid, out nint)
-  nameWithType.vb: IFileOpenDialog.QueryInterface(Guid, IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.QueryInterface*
-  name: QueryInterface
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_QueryInterface_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.QueryInterface
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.QueryInterface
-  nameWithType: IFileOpenDialog.QueryInterface
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Release
-  name: Release()
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_Release
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Release
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Release()
-  nameWithType: IFileOpenDialog.Release()
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Release*
-  name: Release
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_Release_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Release
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Release
-  nameWithType: IFileOpenDialog.Release
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetDefaultFolder(System.IntPtr)
-  name: SetDefaultFolder(nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetDefaultFolder_System_IntPtr_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetDefaultFolder(System.IntPtr)
-  name.vb: SetDefaultFolder(IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetDefaultFolder(nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetDefaultFolder(System.IntPtr)
-  nameWithType: IFileOpenDialog.SetDefaultFolder(nint)
-  nameWithType.vb: IFileOpenDialog.SetDefaultFolder(IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetDefaultFolder*
-  name: SetDefaultFolder
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetDefaultFolder_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetDefaultFolder
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetDefaultFolder
-  nameWithType: IFileOpenDialog.SetDefaultFolder
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileName(System.String)
-  name: SetFileName(string)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetFileName_System_String_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileName(System.String)
-  name.vb: SetFileName(String)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileName(string)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileName(String)
-  nameWithType: IFileOpenDialog.SetFileName(string)
-  nameWithType.vb: IFileOpenDialog.SetFileName(String)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileName*
-  name: SetFileName
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetFileName_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileName
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileName
-  nameWithType: IFileOpenDialog.SetFileName
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileTypeIndex(System.UInt32)
-  name: SetFileTypeIndex(uint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetFileTypeIndex_System_UInt32_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileTypeIndex(System.UInt32)
-  name.vb: SetFileTypeIndex(UInteger)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileTypeIndex(uint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileTypeIndex(UInteger)
-  nameWithType: IFileOpenDialog.SetFileTypeIndex(uint)
-  nameWithType.vb: IFileOpenDialog.SetFileTypeIndex(UInteger)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileTypeIndex*
-  name: SetFileTypeIndex
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetFileTypeIndex_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileTypeIndex
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileTypeIndex
-  nameWithType: IFileOpenDialog.SetFileTypeIndex
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileTypes(System.UInt32,System.IntPtr)
-  name: SetFileTypes(uint, nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetFileTypes_System_UInt32_System_IntPtr_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileTypes(System.UInt32,System.IntPtr)
-  name.vb: SetFileTypes(UInteger, IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileTypes(uint, nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileTypes(UInteger, System.IntPtr)
-  nameWithType: IFileOpenDialog.SetFileTypes(uint, nint)
-  nameWithType.vb: IFileOpenDialog.SetFileTypes(UInteger, IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileTypes*
-  name: SetFileTypes
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetFileTypes_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileTypes
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileTypes
-  nameWithType: IFileOpenDialog.SetFileTypes
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFilter(System.IntPtr)
-  name: SetFilter(nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetFilter_System_IntPtr_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFilter(System.IntPtr)
-  name.vb: SetFilter(IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFilter(nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFilter(System.IntPtr)
-  nameWithType: IFileOpenDialog.SetFilter(nint)
-  nameWithType.vb: IFileOpenDialog.SetFilter(IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFilter*
-  name: SetFilter
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetFilter_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFilter
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFilter
-  nameWithType: IFileOpenDialog.SetFilter
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFolder(System.IntPtr)
-  name: SetFolder(nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetFolder_System_IntPtr_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFolder(System.IntPtr)
-  name.vb: SetFolder(IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFolder(nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFolder(System.IntPtr)
-  nameWithType: IFileOpenDialog.SetFolder(nint)
-  nameWithType.vb: IFileOpenDialog.SetFolder(IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFolder*
-  name: SetFolder
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetFolder_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFolder
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFolder
-  nameWithType: IFileOpenDialog.SetFolder
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetOptions(System.UInt32)
-  name: SetOptions(uint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetOptions_System_UInt32_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetOptions(System.UInt32)
-  name.vb: SetOptions(UInteger)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetOptions(uint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetOptions(UInteger)
-  nameWithType: IFileOpenDialog.SetOptions(uint)
-  nameWithType.vb: IFileOpenDialog.SetOptions(UInteger)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetOptions*
-  name: SetOptions
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetOptions_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetOptions
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetOptions
-  nameWithType: IFileOpenDialog.SetOptions
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetTitle(System.String)
-  name: SetTitle(string)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetTitle_System_String_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetTitle(System.String)
-  name.vb: SetTitle(String)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetTitle(string)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetTitle(String)
-  nameWithType: IFileOpenDialog.SetTitle(string)
-  nameWithType.vb: IFileOpenDialog.SetTitle(String)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetTitle*
-  name: SetTitle
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetTitle_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetTitle
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetTitle
-  nameWithType: IFileOpenDialog.SetTitle
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Show(System.IntPtr)
-  name: Show(nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_Show_System_IntPtr_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Show(System.IntPtr)
-  name.vb: Show(IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Show(nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Show(System.IntPtr)
-  nameWithType: IFileOpenDialog.Show(nint)
-  nameWithType.vb: IFileOpenDialog.Show(IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Show*
-  name: Show
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_Show_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Show
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Show
-  nameWithType: IFileOpenDialog.Show
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Unadvise(System.UInt32)
-  name: Unadvise(uint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_Unadvise_System_UInt32_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Unadvise(System.UInt32)
-  name.vb: Unadvise(UInteger)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Unadvise(uint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Unadvise(UInteger)
-  nameWithType: IFileOpenDialog.Unadvise(uint)
-  nameWithType.vb: IFileOpenDialog.Unadvise(UInteger)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Unadvise*
-  name: Unadvise
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_Unadvise_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Unadvise
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Unadvise
-  nameWithType: IFileOpenDialog.Unadvise
 - uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog
   name: IFileSaveDialog
   href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html
   commentId: T:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog
   fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog
   nameWithType: IFileSaveDialog
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.AddRef
-  name: AddRef()
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_AddRef
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.AddRef
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.AddRef()
-  nameWithType: IFileSaveDialog.AddRef()
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.AddRef*
-  name: AddRef
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_AddRef_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.AddRef
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.AddRef
-  nameWithType: IFileSaveDialog.AddRef
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Advise(System.IntPtr,System.UInt32@)
-  name: Advise(nint, out uint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_Advise_System_IntPtr_System_UInt32__
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Advise(System.IntPtr,System.UInt32@)
-  name.vb: Advise(IntPtr, UInteger)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Advise(nint, out uint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Advise(System.IntPtr, UInteger)
-  nameWithType: IFileSaveDialog.Advise(nint, out uint)
-  nameWithType.vb: IFileSaveDialog.Advise(IntPtr, UInteger)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Advise*
-  name: Advise
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_Advise_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Advise
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Advise
-  nameWithType: IFileSaveDialog.Advise
 - uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.ApplyProperties(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
   name: ApplyProperties(nint, nint, nint, nint)
   href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_ApplyProperties_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_
@@ -1474,99 +1054,6 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.ApplyProperties
   nameWithType: IFileSaveDialog.ApplyProperties
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Close(FireBlade.WinInteropUtils.HRESULT)
-  name: Close(HRESULT)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_Close_FireBlade_WinInteropUtils_HRESULT_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Close(FireBlade.WinInteropUtils.HRESULT)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Close(FireBlade.WinInteropUtils.HRESULT)
-  nameWithType: IFileSaveDialog.Close(HRESULT)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Close*
-  name: Close
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_Close_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Close
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Close
-  nameWithType: IFileSaveDialog.Close
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetCurrentSelection(System.IntPtr@)
-  name: GetCurrentSelection(out nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_GetCurrentSelection_System_IntPtr__
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetCurrentSelection(System.IntPtr@)
-  name.vb: GetCurrentSelection(IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetCurrentSelection(out nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetCurrentSelection(System.IntPtr)
-  nameWithType: IFileSaveDialog.GetCurrentSelection(out nint)
-  nameWithType.vb: IFileSaveDialog.GetCurrentSelection(IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetCurrentSelection*
-  name: GetCurrentSelection
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_GetCurrentSelection_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetCurrentSelection
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetCurrentSelection
-  nameWithType: IFileSaveDialog.GetCurrentSelection
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetFileName(System.IntPtr@)
-  name: GetFileName(out nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_GetFileName_System_IntPtr__
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetFileName(System.IntPtr@)
-  name.vb: GetFileName(IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetFileName(out nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetFileName(System.IntPtr)
-  nameWithType: IFileSaveDialog.GetFileName(out nint)
-  nameWithType.vb: IFileSaveDialog.GetFileName(IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetFileName*
-  name: GetFileName
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_GetFileName_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetFileName
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetFileName
-  nameWithType: IFileSaveDialog.GetFileName
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetFileTypeIndex(System.UInt32@)
-  name: GetFileTypeIndex(out uint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_GetFileTypeIndex_System_UInt32__
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetFileTypeIndex(System.UInt32@)
-  name.vb: GetFileTypeIndex(UInteger)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetFileTypeIndex(out uint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetFileTypeIndex(UInteger)
-  nameWithType: IFileSaveDialog.GetFileTypeIndex(out uint)
-  nameWithType.vb: IFileSaveDialog.GetFileTypeIndex(UInteger)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetFileTypeIndex*
-  name: GetFileTypeIndex
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_GetFileTypeIndex_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetFileTypeIndex
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetFileTypeIndex
-  nameWithType: IFileSaveDialog.GetFileTypeIndex
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetFolder(System.IntPtr@)
-  name: GetFolder(out nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_GetFolder_System_IntPtr__
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetFolder(System.IntPtr@)
-  name.vb: GetFolder(IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetFolder(out nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetFolder(System.IntPtr)
-  nameWithType: IFileSaveDialog.GetFolder(out nint)
-  nameWithType.vb: IFileSaveDialog.GetFolder(IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetFolder*
-  name: GetFolder
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_GetFolder_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetFolder
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetFolder
-  nameWithType: IFileSaveDialog.GetFolder
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetOptions(System.UInt32@)
-  name: GetOptions(out uint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_GetOptions_System_UInt32__
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetOptions(System.UInt32@)
-  name.vb: GetOptions(UInteger)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetOptions(out uint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetOptions(UInteger)
-  nameWithType: IFileSaveDialog.GetOptions(out uint)
-  nameWithType.vb: IFileSaveDialog.GetOptions(UInteger)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetOptions*
-  name: GetOptions
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_GetOptions_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetOptions
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetOptions
-  nameWithType: IFileSaveDialog.GetOptions
 - uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetProperties(System.IntPtr@)
   name: GetProperties(out nint)
   href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_GetProperties_System_IntPtr__
@@ -1583,51 +1070,6 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetProperties
   nameWithType: IFileSaveDialog.GetProperties
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetResult(System.IntPtr@)
-  name: GetResult(out nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_GetResult_System_IntPtr__
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetResult(System.IntPtr@)
-  name.vb: GetResult(IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetResult(out nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetResult(System.IntPtr)
-  nameWithType: IFileSaveDialog.GetResult(out nint)
-  nameWithType.vb: IFileSaveDialog.GetResult(IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetResult*
-  name: GetResult
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_GetResult_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetResult
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.GetResult
-  nameWithType: IFileSaveDialog.GetResult
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.QueryInterface(System.Guid@,System.IntPtr@)
-  name: QueryInterface(ref Guid, out nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_QueryInterface_System_Guid__System_IntPtr__
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.QueryInterface(System.Guid@,System.IntPtr@)
-  name.vb: QueryInterface(Guid, IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.QueryInterface(ref System.Guid, out nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.QueryInterface(System.Guid, System.IntPtr)
-  nameWithType: IFileSaveDialog.QueryInterface(ref Guid, out nint)
-  nameWithType.vb: IFileSaveDialog.QueryInterface(Guid, IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.QueryInterface*
-  name: QueryInterface
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_QueryInterface_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.QueryInterface
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.QueryInterface
-  nameWithType: IFileSaveDialog.QueryInterface
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Release
-  name: Release()
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_Release
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Release
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Release()
-  nameWithType: IFileSaveDialog.Release()
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Release*
-  name: Release
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_Release_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Release
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Release
-  nameWithType: IFileSaveDialog.Release
 - uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetCollectedProperties(System.IntPtr,System.Boolean)
   name: SetCollectedProperties(nint, bool)
   href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_SetCollectedProperties_System_IntPtr_System_Boolean_
@@ -1644,118 +1086,6 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetCollectedProperties
   nameWithType: IFileSaveDialog.SetCollectedProperties
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetDefaultFolder(System.IntPtr)
-  name: SetDefaultFolder(nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_SetDefaultFolder_System_IntPtr_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetDefaultFolder(System.IntPtr)
-  name.vb: SetDefaultFolder(IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetDefaultFolder(nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetDefaultFolder(System.IntPtr)
-  nameWithType: IFileSaveDialog.SetDefaultFolder(nint)
-  nameWithType.vb: IFileSaveDialog.SetDefaultFolder(IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetDefaultFolder*
-  name: SetDefaultFolder
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_SetDefaultFolder_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetDefaultFolder
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetDefaultFolder
-  nameWithType: IFileSaveDialog.SetDefaultFolder
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFileName(System.String)
-  name: SetFileName(string)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_SetFileName_System_String_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFileName(System.String)
-  name.vb: SetFileName(String)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFileName(string)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFileName(String)
-  nameWithType: IFileSaveDialog.SetFileName(string)
-  nameWithType.vb: IFileSaveDialog.SetFileName(String)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFileName*
-  name: SetFileName
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_SetFileName_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFileName
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFileName
-  nameWithType: IFileSaveDialog.SetFileName
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFileTypeIndex(System.UInt32)
-  name: SetFileTypeIndex(uint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_SetFileTypeIndex_System_UInt32_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFileTypeIndex(System.UInt32)
-  name.vb: SetFileTypeIndex(UInteger)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFileTypeIndex(uint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFileTypeIndex(UInteger)
-  nameWithType: IFileSaveDialog.SetFileTypeIndex(uint)
-  nameWithType.vb: IFileSaveDialog.SetFileTypeIndex(UInteger)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFileTypeIndex*
-  name: SetFileTypeIndex
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_SetFileTypeIndex_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFileTypeIndex
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFileTypeIndex
-  nameWithType: IFileSaveDialog.SetFileTypeIndex
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFileTypes(System.UInt32,System.IntPtr)
-  name: SetFileTypes(uint, nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_SetFileTypes_System_UInt32_System_IntPtr_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFileTypes(System.UInt32,System.IntPtr)
-  name.vb: SetFileTypes(UInteger, IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFileTypes(uint, nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFileTypes(UInteger, System.IntPtr)
-  nameWithType: IFileSaveDialog.SetFileTypes(uint, nint)
-  nameWithType.vb: IFileSaveDialog.SetFileTypes(UInteger, IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFileTypes*
-  name: SetFileTypes
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_SetFileTypes_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFileTypes
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFileTypes
-  nameWithType: IFileSaveDialog.SetFileTypes
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFilter(System.IntPtr)
-  name: SetFilter(nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_SetFilter_System_IntPtr_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFilter(System.IntPtr)
-  name.vb: SetFilter(IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFilter(nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFilter(System.IntPtr)
-  nameWithType: IFileSaveDialog.SetFilter(nint)
-  nameWithType.vb: IFileSaveDialog.SetFilter(IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFilter*
-  name: SetFilter
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_SetFilter_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFilter
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFilter
-  nameWithType: IFileSaveDialog.SetFilter
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFolder(System.IntPtr)
-  name: SetFolder(nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_SetFolder_System_IntPtr_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFolder(System.IntPtr)
-  name.vb: SetFolder(IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFolder(nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFolder(System.IntPtr)
-  nameWithType: IFileSaveDialog.SetFolder(nint)
-  nameWithType.vb: IFileSaveDialog.SetFolder(IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFolder*
-  name: SetFolder
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_SetFolder_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFolder
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetFolder
-  nameWithType: IFileSaveDialog.SetFolder
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetOptions(System.UInt32)
-  name: SetOptions(uint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_SetOptions_System_UInt32_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetOptions(System.UInt32)
-  name.vb: SetOptions(UInteger)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetOptions(uint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetOptions(UInteger)
-  nameWithType: IFileSaveDialog.SetOptions(uint)
-  nameWithType.vb: IFileSaveDialog.SetOptions(UInteger)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetOptions*
-  name: SetOptions
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_SetOptions_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetOptions
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetOptions
-  nameWithType: IFileSaveDialog.SetOptions
 - uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetProperties(System.IntPtr)
   name: SetProperties(nint)
   href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_SetProperties_System_IntPtr_
@@ -1788,102 +1118,12 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetSaveAsItem
   nameWithType: IFileSaveDialog.SetSaveAsItem
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetTitle(System.String)
-  name: SetTitle(string)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_SetTitle_System_String_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetTitle(System.String)
-  name.vb: SetTitle(String)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetTitle(string)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetTitle(String)
-  nameWithType: IFileSaveDialog.SetTitle(string)
-  nameWithType.vb: IFileSaveDialog.SetTitle(String)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetTitle*
-  name: SetTitle
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_SetTitle_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetTitle
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.SetTitle
-  nameWithType: IFileSaveDialog.SetTitle
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Show(System.IntPtr)
-  name: Show(nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_Show_System_IntPtr_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Show(System.IntPtr)
-  name.vb: Show(IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Show(nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Show(System.IntPtr)
-  nameWithType: IFileSaveDialog.Show(nint)
-  nameWithType.vb: IFileSaveDialog.Show(IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Show*
-  name: Show
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_Show_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Show
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Show
-  nameWithType: IFileSaveDialog.Show
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Unadvise(System.UInt32)
-  name: Unadvise(uint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_Unadvise_System_UInt32_
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Unadvise(System.UInt32)
-  name.vb: Unadvise(UInteger)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Unadvise(uint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Unadvise(UInteger)
-  nameWithType: IFileSaveDialog.Unadvise(uint)
-  nameWithType.vb: IFileSaveDialog.Unadvise(UInteger)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Unadvise*
-  name: Unadvise
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileSaveDialog_Unadvise_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Unadvise
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.Unadvise
-  nameWithType: IFileSaveDialog.Unadvise
 - uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow
   name: IModalWindow
   href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.html
   commentId: T:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow
   fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow
   nameWithType: IModalWindow
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.AddRef
-  name: AddRef()
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IModalWindow_AddRef
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.AddRef
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.AddRef()
-  nameWithType: IModalWindow.AddRef()
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.AddRef*
-  name: AddRef
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IModalWindow_AddRef_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.AddRef
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.AddRef
-  nameWithType: IModalWindow.AddRef
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.QueryInterface(System.Guid@,System.IntPtr@)
-  name: QueryInterface(ref Guid, out nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IModalWindow_QueryInterface_System_Guid__System_IntPtr__
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.QueryInterface(System.Guid@,System.IntPtr@)
-  name.vb: QueryInterface(Guid, IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.QueryInterface(ref System.Guid, out nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.QueryInterface(System.Guid, System.IntPtr)
-  nameWithType: IModalWindow.QueryInterface(ref Guid, out nint)
-  nameWithType.vb: IModalWindow.QueryInterface(Guid, IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.QueryInterface*
-  name: QueryInterface
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IModalWindow_QueryInterface_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.QueryInterface
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.QueryInterface
-  nameWithType: IModalWindow.QueryInterface
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.Release
-  name: Release()
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IModalWindow_Release
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.Release
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.Release()
-  nameWithType: IModalWindow.Release()
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.Release*
-  name: Release
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IModalWindow_Release_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.Release
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.Release
-  nameWithType: IModalWindow.Release
 - uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.Show(System.IntPtr)
   name: Show(nint)
   href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IModalWindow_Show_System_IntPtr_
@@ -1906,19 +1146,6 @@ references:
   commentId: T:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem
   fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem
   nameWithType: IShellItem
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.AddRef
-  name: AddRef()
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IShellItem_AddRef
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.AddRef
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.AddRef()
-  nameWithType: IShellItem.AddRef()
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.AddRef*
-  name: AddRef
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IShellItem_AddRef_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.AddRef
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.AddRef
-  nameWithType: IShellItem.AddRef
 - uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.BindToHandler(System.IntPtr,System.Guid@,System.Guid@,System.IntPtr@)
   name: BindToHandler(nint, ref Guid, ref Guid, out nint)
   href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IShellItem_BindToHandler_System_IntPtr_System_Guid__System_Guid__System_IntPtr__
@@ -1999,35 +1226,6 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.GetParent
   nameWithType: IShellItem.GetParent
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.QueryInterface(System.Guid@,System.IntPtr@)
-  name: QueryInterface(ref Guid, out nint)
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IShellItem_QueryInterface_System_Guid__System_IntPtr__
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.QueryInterface(System.Guid@,System.IntPtr@)
-  name.vb: QueryInterface(Guid, IntPtr)
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.QueryInterface(ref System.Guid, out nint)
-  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.QueryInterface(System.Guid, System.IntPtr)
-  nameWithType: IShellItem.QueryInterface(ref Guid, out nint)
-  nameWithType.vb: IShellItem.QueryInterface(Guid, IntPtr)
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.QueryInterface*
-  name: QueryInterface
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IShellItem_QueryInterface_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.QueryInterface
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.QueryInterface
-  nameWithType: IShellItem.QueryInterface
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.Release
-  name: Release()
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IShellItem_Release
-  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.Release
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.Release()
-  nameWithType: IShellItem.Release()
-- uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.Release*
-  name: Release
-  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IShellItem_Release_
-  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.Release
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.Release
-  nameWithType: IShellItem.Release
 - uid: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown
   name: IUnknown
   href: api/FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html
@@ -2226,6 +1424,724 @@ references:
   commentId: F:FireBlade.WinInteropUtils.DefaultWindowLongPtrValues.WndProc
   fullName: FireBlade.WinInteropUtils.DefaultWindowLongPtrValues.WndProc
   nameWithType: DefaultWindowLongPtrValues.WndProc
+- uid: FireBlade.WinInteropUtils.Dialogs
+  name: FireBlade.WinInteropUtils.Dialogs
+  href: api/FireBlade.WinInteropUtils.Dialogs.html
+  commentId: N:FireBlade.WinInteropUtils.Dialogs
+  fullName: FireBlade.WinInteropUtils.Dialogs
+  nameWithType: FireBlade.WinInteropUtils.Dialogs
+- uid: FireBlade.WinInteropUtils.Dialogs.DialogWindow`2
+  name: DialogWindow<TShowReturn, TSelf>
+  href: api/FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html
+  commentId: T:FireBlade.WinInteropUtils.Dialogs.DialogWindow`2
+  name.vb: DialogWindow(Of TShowReturn, TSelf)
+  fullName: FireBlade.WinInteropUtils.Dialogs.DialogWindow<TShowReturn, TSelf>
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.DialogWindow(Of TShowReturn, TSelf)
+  nameWithType: DialogWindow<TShowReturn, TSelf>
+  nameWithType.vb: DialogWindow(Of TShowReturn, TSelf)
+- uid: FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show
+  name: Show()
+  href: api/FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show
+  fullName: FireBlade.WinInteropUtils.Dialogs.DialogWindow<TShowReturn, TSelf>.Show()
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.DialogWindow(Of TShowReturn, TSelf).Show()
+  nameWithType: DialogWindow<TShowReturn, TSelf>.Show()
+  nameWithType.vb: DialogWindow(Of TShowReturn, TSelf).Show()
+- uid: FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show(System.IntPtr)
+  name: Show(nint)
+  href: api/FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show_System_IntPtr_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show(System.IntPtr)
+  name.vb: Show(IntPtr)
+  fullName: FireBlade.WinInteropUtils.Dialogs.DialogWindow<TShowReturn, TSelf>.Show(nint)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.DialogWindow(Of TShowReturn, TSelf).Show(System.IntPtr)
+  nameWithType: DialogWindow<TShowReturn, TSelf>.Show(nint)
+  nameWithType.vb: DialogWindow(Of TShowReturn, TSelf).Show(IntPtr)
+- uid: FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show(`1)
+  name: Show(TSelf)
+  href: api/FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show__1_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show(`1)
+  fullName: FireBlade.WinInteropUtils.Dialogs.DialogWindow<TShowReturn, TSelf>.Show(TSelf)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.DialogWindow(Of TShowReturn, TSelf).Show(TSelf)
+  nameWithType: DialogWindow<TShowReturn, TSelf>.Show(TSelf)
+  nameWithType.vb: DialogWindow(Of TShowReturn, TSelf).Show(TSelf)
+- uid: FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show(`1,System.IntPtr)
+  name: Show(TSelf, nint)
+  href: api/FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show__1_System_IntPtr_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show(`1,System.IntPtr)
+  name.vb: Show(TSelf, IntPtr)
+  fullName: FireBlade.WinInteropUtils.Dialogs.DialogWindow<TShowReturn, TSelf>.Show(TSelf, nint)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.DialogWindow(Of TShowReturn, TSelf).Show(TSelf, System.IntPtr)
+  nameWithType: DialogWindow<TShowReturn, TSelf>.Show(TSelf, nint)
+  nameWithType.vb: DialogWindow(Of TShowReturn, TSelf).Show(TSelf, IntPtr)
+- uid: FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show*
+  name: Show
+  href: api/FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.DialogWindow<TShowReturn, TSelf>.Show
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.DialogWindow(Of TShowReturn, TSelf).Show
+  nameWithType: DialogWindow<TShowReturn, TSelf>.Show
+  nameWithType.vb: DialogWindow(Of TShowReturn, TSelf).Show
+- uid: FireBlade.WinInteropUtils.Dialogs.HelpContext
+  name: HelpContext
+  href: api/FireBlade.WinInteropUtils.Dialogs.HelpContext.html
+  commentId: T:FireBlade.WinInteropUtils.Dialogs.HelpContext
+  fullName: FireBlade.WinInteropUtils.Dialogs.HelpContext
+  nameWithType: HelpContext
+- uid: FireBlade.WinInteropUtils.Dialogs.HelpContext.MenuItem
+  name: MenuItem
+  href: api/FireBlade.WinInteropUtils.Dialogs.HelpContext.html#FireBlade_WinInteropUtils_Dialogs_HelpContext_MenuItem
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.HelpContext.MenuItem
+  fullName: FireBlade.WinInteropUtils.Dialogs.HelpContext.MenuItem
+  nameWithType: HelpContext.MenuItem
+- uid: FireBlade.WinInteropUtils.Dialogs.HelpContext.Window
+  name: Window
+  href: api/FireBlade.WinInteropUtils.Dialogs.HelpContext.html#FireBlade_WinInteropUtils_Dialogs_HelpContext_Window
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.HelpContext.Window
+  fullName: FireBlade.WinInteropUtils.Dialogs.HelpContext.Window
+  nameWithType: HelpContext.Window
+- uid: FireBlade.WinInteropUtils.Dialogs.HelpEventArgs
+  name: HelpEventArgs
+  href: api/FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.html
+  commentId: T:FireBlade.WinInteropUtils.Dialogs.HelpEventArgs
+  fullName: FireBlade.WinInteropUtils.Dialogs.HelpEventArgs
+  nameWithType: HelpEventArgs
+- uid: FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ContextId
+  name: ContextId
+  href: api/FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.html#FireBlade_WinInteropUtils_Dialogs_HelpEventArgs_ContextId
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ContextId
+  fullName: FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ContextId
+  nameWithType: HelpEventArgs.ContextId
+- uid: FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ContextId*
+  name: ContextId
+  href: api/FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.html#FireBlade_WinInteropUtils_Dialogs_HelpEventArgs_ContextId_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ContextId
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ContextId
+  nameWithType: HelpEventArgs.ContextId
+- uid: FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ContextType
+  name: ContextType
+  href: api/FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.html#FireBlade_WinInteropUtils_Dialogs_HelpEventArgs_ContextType
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ContextType
+  fullName: FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ContextType
+  nameWithType: HelpEventArgs.ContextType
+- uid: FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ContextType*
+  name: ContextType
+  href: api/FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.html#FireBlade_WinInteropUtils_Dialogs_HelpEventArgs_ContextType_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ContextType
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ContextType
+  nameWithType: HelpEventArgs.ContextType
+- uid: FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ControlHandle
+  name: ControlHandle
+  href: api/FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.html#FireBlade_WinInteropUtils_Dialogs_HelpEventArgs_ControlHandle
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ControlHandle
+  fullName: FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ControlHandle
+  nameWithType: HelpEventArgs.ControlHandle
+- uid: FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ControlHandle*
+  name: ControlHandle
+  href: api/FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.html#FireBlade_WinInteropUtils_Dialogs_HelpEventArgs_ControlHandle_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ControlHandle
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ControlHandle
+  nameWithType: HelpEventArgs.ControlHandle
+- uid: FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ControlId
+  name: ControlId
+  href: api/FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.html#FireBlade_WinInteropUtils_Dialogs_HelpEventArgs_ControlId
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ControlId
+  fullName: FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ControlId
+  nameWithType: HelpEventArgs.ControlId
+- uid: FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ControlId*
+  name: ControlId
+  href: api/FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.html#FireBlade_WinInteropUtils_Dialogs_HelpEventArgs_ControlId_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ControlId
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.ControlId
+  nameWithType: HelpEventArgs.ControlId
+- uid: FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.MousePos
+  name: MousePos
+  href: api/FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.html#FireBlade_WinInteropUtils_Dialogs_HelpEventArgs_MousePos
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.MousePos
+  fullName: FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.MousePos
+  nameWithType: HelpEventArgs.MousePos
+- uid: FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.MousePos*
+  name: MousePos
+  href: api/FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.html#FireBlade_WinInteropUtils_Dialogs_HelpEventArgs_MousePos_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.MousePos
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.MousePos
+  nameWithType: HelpEventArgs.MousePos
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox
+  name: Win32MessageBox
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html
+  commentId: T:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox
+  nameWithType: Win32MessageBox
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Buttons
+  name: Buttons
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Buttons
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Buttons
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Buttons
+  nameWithType: Win32MessageBox.Buttons
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Buttons*
+  name: Buttons
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Buttons_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Buttons
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Buttons
+  nameWithType: Win32MessageBox.Buttons
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Caption
+  name: Caption
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Caption
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Caption
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Caption
+  nameWithType: Win32MessageBox.Caption
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Caption*
+  name: Caption
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Caption_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Caption
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Caption
+  nameWithType: Win32MessageBox.Caption
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.ContextHelpId
+  name: ContextHelpId
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_ContextHelpId
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.ContextHelpId
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.ContextHelpId
+  nameWithType: Win32MessageBox.ContextHelpId
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.ContextHelpId*
+  name: ContextHelpId
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_ContextHelpId_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.ContextHelpId
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.ContextHelpId
+  nameWithType: Win32MessageBox.ContextHelpId
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Culture
+  name: Culture
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Culture
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Culture
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Culture
+  nameWithType: Win32MessageBox.Culture
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Culture*
+  name: Culture
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Culture_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Culture
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Culture
+  nameWithType: Win32MessageBox.Culture
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.DefaultButton
+  name: DefaultButton
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_DefaultButton
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.DefaultButton
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.DefaultButton
+  nameWithType: Win32MessageBox.DefaultButton
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.DefaultButton*
+  name: DefaultButton
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_DefaultButton_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.DefaultButton
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.DefaultButton
+  nameWithType: Win32MessageBox.DefaultButton
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.DefaultDesktopOnly
+  name: DefaultDesktopOnly
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_DefaultDesktopOnly
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.DefaultDesktopOnly
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.DefaultDesktopOnly
+  nameWithType: Win32MessageBox.DefaultDesktopOnly
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.DefaultDesktopOnly*
+  name: DefaultDesktopOnly
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_DefaultDesktopOnly_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.DefaultDesktopOnly
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.DefaultDesktopOnly
+  nameWithType: Win32MessageBox.DefaultDesktopOnly
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Icon
+  name: Icon
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Icon
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Icon
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Icon
+  nameWithType: Win32MessageBox.Icon
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Icon*
+  name: Icon
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Icon_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Icon
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Icon
+  nameWithType: Win32MessageBox.Icon
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Modality
+  name: Modality
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Modality
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Modality
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Modality
+  nameWithType: Win32MessageBox.Modality
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Modality*
+  name: Modality
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Modality_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Modality
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Modality
+  nameWithType: Win32MessageBox.Modality
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.OnHelp
+  name: OnHelp
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_OnHelp
+  commentId: E:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.OnHelp
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.OnHelp
+  nameWithType: Win32MessageBox.OnHelp
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.RightAlign
+  name: RightAlign
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_RightAlign
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.RightAlign
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.RightAlign
+  nameWithType: Win32MessageBox.RightAlign
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.RightAlign*
+  name: RightAlign
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_RightAlign_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.RightAlign
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.RightAlign
+  nameWithType: Win32MessageBox.RightAlign
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.RightToLeft
+  name: RightToLeft
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_RightToLeft
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.RightToLeft
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.RightToLeft
+  nameWithType: Win32MessageBox.RightToLeft
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.RightToLeft*
+  name: RightToLeft
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_RightToLeft_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.RightToLeft
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.RightToLeft
+  nameWithType: Win32MessageBox.RightToLeft
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.ServiceNotification
+  name: ServiceNotification
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_ServiceNotification
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.ServiceNotification
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.ServiceNotification
+  nameWithType: Win32MessageBox.ServiceNotification
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.ServiceNotification*
+  name: ServiceNotification
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_ServiceNotification_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.ServiceNotification
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.ServiceNotification
+  nameWithType: Win32MessageBox.ServiceNotification
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.SetForeground
+  name: SetForeground
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_SetForeground
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.SetForeground
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.SetForeground
+  nameWithType: Win32MessageBox.SetForeground
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.SetForeground*
+  name: SetForeground
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_SetForeground_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.SetForeground
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.SetForeground
+  nameWithType: Win32MessageBox.SetForeground
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show
+  name: Show()
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Show
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show()
+  nameWithType: Win32MessageBox.Show()
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr)
+  name: Show(nint)
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Show_System_IntPtr_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr)
+  name.vb: Show(IntPtr)
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(nint)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr)
+  nameWithType: Win32MessageBox.Show(nint)
+  nameWithType.vb: Win32MessageBox.Show(IntPtr)
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr,System.String)
+  name: Show(nint, string)
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Show_System_IntPtr_System_String_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr,System.String)
+  name.vb: Show(IntPtr, String)
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(nint, string)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr, String)
+  nameWithType: Win32MessageBox.Show(nint, string)
+  nameWithType.vb: Win32MessageBox.Show(IntPtr, String)
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr,System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  name: Show(nint, string, Win32MessageBoxButtons)
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Show_System_IntPtr_System_String_FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxButtons_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr,System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  name.vb: Show(IntPtr, String, Win32MessageBoxButtons)
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(nint, string, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr, String, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  nameWithType: Win32MessageBox.Show(nint, string, Win32MessageBoxButtons)
+  nameWithType.vb: Win32MessageBox.Show(IntPtr, String, Win32MessageBoxButtons)
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr,System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon)
+  name: Show(nint, string, Win32MessageBoxIcon)
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Show_System_IntPtr_System_String_FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxIcon_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr,System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon)
+  name.vb: Show(IntPtr, String, Win32MessageBoxIcon)
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(nint, string, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr, String, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon)
+  nameWithType: Win32MessageBox.Show(nint, string, Win32MessageBoxIcon)
+  nameWithType.vb: Win32MessageBox.Show(IntPtr, String, Win32MessageBoxIcon)
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr,System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  name: Show(nint, string, Win32MessageBoxIcon, Win32MessageBoxButtons)
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Show_System_IntPtr_System_String_FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxIcon_FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxButtons_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr,System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  name.vb: Show(IntPtr, String, Win32MessageBoxIcon, Win32MessageBoxButtons)
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(nint, string, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr, String, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  nameWithType: Win32MessageBox.Show(nint, string, Win32MessageBoxIcon, Win32MessageBoxButtons)
+  nameWithType.vb: Win32MessageBox.Show(IntPtr, String, Win32MessageBoxIcon, Win32MessageBoxButtons)
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr,System.String,System.String)
+  name: Show(nint, string, string?)
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Show_System_IntPtr_System_String_System_String_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr,System.String,System.String)
+  name.vb: Show(IntPtr, String, String)
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(nint, string, string?)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr, String, String)
+  nameWithType: Win32MessageBox.Show(nint, string, string?)
+  nameWithType.vb: Win32MessageBox.Show(IntPtr, String, String)
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr,System.String,System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  name: Show(nint, string, string?, Win32MessageBoxButtons)
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Show_System_IntPtr_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxButtons_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr,System.String,System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  name.vb: Show(IntPtr, String, String, Win32MessageBoxButtons)
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(nint, string, string?, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr, String, String, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  nameWithType: Win32MessageBox.Show(nint, string, string?, Win32MessageBoxButtons)
+  nameWithType.vb: Win32MessageBox.Show(IntPtr, String, String, Win32MessageBoxButtons)
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr,System.String,System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon)
+  name: Show(nint, string, string?, Win32MessageBoxIcon)
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Show_System_IntPtr_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxIcon_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr,System.String,System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon)
+  name.vb: Show(IntPtr, String, String, Win32MessageBoxIcon)
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(nint, string, string?, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr, String, String, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon)
+  nameWithType: Win32MessageBox.Show(nint, string, string?, Win32MessageBoxIcon)
+  nameWithType.vb: Win32MessageBox.Show(IntPtr, String, String, Win32MessageBoxIcon)
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr,System.String,System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  name: Show(nint, string, string?, Win32MessageBoxIcon, Win32MessageBoxButtons)
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Show_System_IntPtr_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxIcon_FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxButtons_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr,System.String,System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  name.vb: Show(IntPtr, String, String, Win32MessageBoxIcon, Win32MessageBoxButtons)
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(nint, string, string?, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.IntPtr, String, String, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  nameWithType: Win32MessageBox.Show(nint, string, string?, Win32MessageBoxIcon, Win32MessageBoxButtons)
+  nameWithType.vb: Win32MessageBox.Show(IntPtr, String, String, Win32MessageBoxIcon, Win32MessageBoxButtons)
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.String)
+  name: Show(string)
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Show_System_String_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.String)
+  name.vb: Show(String)
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(string)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(String)
+  nameWithType: Win32MessageBox.Show(string)
+  nameWithType.vb: Win32MessageBox.Show(String)
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  name: Show(string, Win32MessageBoxButtons)
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Show_System_String_FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxButtons_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  name.vb: Show(String, Win32MessageBoxButtons)
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(string, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(String, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  nameWithType: Win32MessageBox.Show(string, Win32MessageBoxButtons)
+  nameWithType.vb: Win32MessageBox.Show(String, Win32MessageBoxButtons)
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon)
+  name: Show(string, Win32MessageBoxIcon)
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Show_System_String_FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxIcon_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon)
+  name.vb: Show(String, Win32MessageBoxIcon)
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(string, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(String, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon)
+  nameWithType: Win32MessageBox.Show(string, Win32MessageBoxIcon)
+  nameWithType.vb: Win32MessageBox.Show(String, Win32MessageBoxIcon)
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  name: Show(string, Win32MessageBoxIcon, Win32MessageBoxButtons)
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Show_System_String_FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxIcon_FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxButtons_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  name.vb: Show(String, Win32MessageBoxIcon, Win32MessageBoxButtons)
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(string, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(String, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  nameWithType: Win32MessageBox.Show(string, Win32MessageBoxIcon, Win32MessageBoxButtons)
+  nameWithType.vb: Win32MessageBox.Show(String, Win32MessageBoxIcon, Win32MessageBoxButtons)
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.String,System.String)
+  name: Show(string, string?)
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Show_System_String_System_String_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.String,System.String)
+  name.vb: Show(String, String)
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(string, string?)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(String, String)
+  nameWithType: Win32MessageBox.Show(string, string?)
+  nameWithType.vb: Win32MessageBox.Show(String, String)
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.String,System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  name: Show(string, string?, Win32MessageBoxButtons)
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Show_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxButtons_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.String,System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  name.vb: Show(String, String, Win32MessageBoxButtons)
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(string, string?, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(String, String, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  nameWithType: Win32MessageBox.Show(string, string?, Win32MessageBoxButtons)
+  nameWithType.vb: Win32MessageBox.Show(String, String, Win32MessageBoxButtons)
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.String,System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon)
+  name: Show(string, string?, Win32MessageBoxIcon)
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Show_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxIcon_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.String,System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon)
+  name.vb: Show(String, String, Win32MessageBoxIcon)
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(string, string?, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(String, String, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon)
+  nameWithType: Win32MessageBox.Show(string, string?, Win32MessageBoxIcon)
+  nameWithType.vb: Win32MessageBox.Show(String, String, Win32MessageBoxIcon)
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.String,System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  name: Show(string, string?, Win32MessageBoxIcon, Win32MessageBoxButtons)
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Show_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxIcon_FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxButtons_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(System.String,System.String,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon,FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  name.vb: Show(String, String, Win32MessageBoxIcon, Win32MessageBoxButtons)
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(string, string?, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show(String, String, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon, FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons)
+  nameWithType: Win32MessageBox.Show(string, string?, Win32MessageBoxIcon, Win32MessageBoxButtons)
+  nameWithType.vb: Win32MessageBox.Show(String, String, Win32MessageBoxIcon, Win32MessageBoxButtons)
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show*
+  name: Show
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Show_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Show
+  nameWithType: Win32MessageBox.Show
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.ShowHelp
+  name: ShowHelp
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_ShowHelp
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.ShowHelp
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.ShowHelp
+  nameWithType: Win32MessageBox.ShowHelp
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.ShowHelp*
+  name: ShowHelp
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_ShowHelp_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.ShowHelp
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.ShowHelp
+  nameWithType: Win32MessageBox.ShowHelp
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Text
+  name: Text
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Text
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Text
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Text
+  nameWithType: Win32MessageBox.Text
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Text*
+  name: Text
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_Text_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Text
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.Text
+  nameWithType: Win32MessageBox.Text
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.TopMost
+  name: TopMost
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_TopMost
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.TopMost
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.TopMost
+  nameWithType: Win32MessageBox.TopMost
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.TopMost*
+  name: TopMost
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBox_TopMost_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.TopMost
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.TopMost
+  nameWithType: Win32MessageBox.TopMost
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons
+  name: Win32MessageBoxButtons
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.html
+  commentId: T:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons
+  nameWithType: Win32MessageBoxButtons
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.AbortRetryIgnore
+  name: AbortRetryIgnore
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxButtons_AbortRetryIgnore
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.AbortRetryIgnore
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.AbortRetryIgnore
+  nameWithType: Win32MessageBoxButtons.AbortRetryIgnore
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.CancelRetryContinue
+  name: CancelRetryContinue
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxButtons_CancelRetryContinue
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.CancelRetryContinue
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.CancelRetryContinue
+  nameWithType: Win32MessageBoxButtons.CancelRetryContinue
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.Ok
+  name: Ok
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxButtons_Ok
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.Ok
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.Ok
+  nameWithType: Win32MessageBoxButtons.Ok
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.OkCancel
+  name: OkCancel
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxButtons_OkCancel
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.OkCancel
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.OkCancel
+  nameWithType: Win32MessageBoxButtons.OkCancel
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.RetryCancel
+  name: RetryCancel
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxButtons_RetryCancel
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.RetryCancel
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.RetryCancel
+  nameWithType: Win32MessageBoxButtons.RetryCancel
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.YesNo
+  name: YesNo
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxButtons_YesNo
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.YesNo
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.YesNo
+  nameWithType: Win32MessageBoxButtons.YesNo
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.YesNoCancel
+  name: YesNoCancel
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxButtons_YesNoCancel
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.YesNoCancel
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxButtons.YesNoCancel
+  nameWithType: Win32MessageBoxButtons.YesNoCancel
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon
+  name: Win32MessageBoxIcon
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.html
+  commentId: T:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon
+  nameWithType: Win32MessageBoxIcon
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Asterisk
+  name: Asterisk
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxIcon_Asterisk
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Asterisk
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Asterisk
+  nameWithType: Win32MessageBoxIcon.Asterisk
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Error
+  name: Error
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxIcon_Error
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Error
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Error
+  nameWithType: Win32MessageBoxIcon.Error
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Exclamation
+  name: Exclamation
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxIcon_Exclamation
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Exclamation
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Exclamation
+  nameWithType: Win32MessageBoxIcon.Exclamation
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Hand
+  name: Hand
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxIcon_Hand
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Hand
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Hand
+  nameWithType: Win32MessageBoxIcon.Hand
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Info
+  name: Info
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxIcon_Info
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Info
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Info
+  nameWithType: Win32MessageBoxIcon.Info
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Information
+  name: Information
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxIcon_Information
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Information
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Information
+  nameWithType: Win32MessageBoxIcon.Information
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.None
+  name: None
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxIcon_None
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.None
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.None
+  nameWithType: Win32MessageBoxIcon.None
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Question
+  name: Question
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxIcon_Question
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Question
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Question
+  nameWithType: Win32MessageBoxIcon.Question
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Stop
+  name: Stop
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxIcon_Stop
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Stop
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Stop
+  nameWithType: Win32MessageBoxIcon.Stop
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Warning
+  name: Warning
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxIcon_Warning
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Warning
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxIcon.Warning
+  nameWithType: Win32MessageBoxIcon.Warning
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality
+  name: Win32MessageBoxModality
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality.html
+  commentId: T:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality
+  nameWithType: Win32MessageBoxModality
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality.ApplicationModal
+  name: ApplicationModal
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxModality_ApplicationModal
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality.ApplicationModal
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality.ApplicationModal
+  nameWithType: Win32MessageBoxModality.ApplicationModal
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality.SystemModal
+  name: SystemModal
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxModality_SystemModal
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality.SystemModal
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality.SystemModal
+  nameWithType: Win32MessageBoxModality.SystemModal
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality.TaskModal
+  name: TaskModal
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxModality_TaskModal
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality.TaskModal
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality.TaskModal
+  nameWithType: Win32MessageBoxModality.TaskModal
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult
+  name: Win32MessageBoxResult
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.html
+  commentId: T:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult
+  nameWithType: Win32MessageBoxResult
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Abort
+  name: Abort
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxResult_Abort
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Abort
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Abort
+  nameWithType: Win32MessageBoxResult.Abort
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Cancel
+  name: Cancel
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxResult_Cancel
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Cancel
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Cancel
+  nameWithType: Win32MessageBoxResult.Cancel
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Continue
+  name: Continue
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxResult_Continue
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Continue
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Continue
+  nameWithType: Win32MessageBoxResult.Continue
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Ignore
+  name: Ignore
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxResult_Ignore
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Ignore
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Ignore
+  nameWithType: Win32MessageBoxResult.Ignore
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.No
+  name: No
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxResult_No
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.No
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.No
+  nameWithType: Win32MessageBoxResult.No
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Ok
+  name: Ok
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxResult_Ok
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Ok
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Ok
+  nameWithType: Win32MessageBoxResult.Ok
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Retry
+  name: Retry
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxResult_Retry
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Retry
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Retry
+  nameWithType: Win32MessageBoxResult.Retry
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.TryAgain
+  name: TryAgain
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxResult_TryAgain
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.TryAgain
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.TryAgain
+  nameWithType: Win32MessageBoxResult.TryAgain
+- uid: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Yes
+  name: Yes
+  href: api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_Win32MessageBoxResult_Yes
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Yes
+  fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Yes
+  nameWithType: Win32MessageBoxResult.Yes
 - uid: FireBlade.WinInteropUtils.EnumExtensions
   name: EnumExtensions
   href: api/FireBlade.WinInteropUtils.EnumExtensions.html

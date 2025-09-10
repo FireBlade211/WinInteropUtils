@@ -101,7 +101,8 @@ using FireBlade.WinInteropUtils; // base WinInteropUtils namespace, required for
 </code></pre>
 <p>Now we're ready to use COM. Over the course of this guide we will build up a sample of a file dialog. Before using COM interfaces, we need to initialize COM:</p>
 <pre><code class="lang-cs">// if you're using v0.11 or earlier the function is named COM.CoInitialize instead
-HRESULT hr = COM.Initialize(CoInit.ApartmentThreaded); // or MultiThreaded if inside a non-GUI/non-STA app
+// if you're using v0.2 or earlier the enum is named CoInit instead (don't blame me for the compatibility and migration issues; that's what you get for using a library in beta)
+HRESULT hr = COM.Initialize(COMInitOptions.ApartmentThreaded); // or MultiThreaded if inside a non-GUI/non-STA app
 </code></pre>
 <p>Now, after initializng COM, we need to check if the initialization succeeded:</p>
 <pre><code class="lang-cs">if (Macros.Succeeded(hr))
@@ -113,13 +114,12 @@ HRESULT hr = COM.Initialize(CoInit.ApartmentThreaded); // or MultiThreaded if in
 </code></pre>
 <h2 id="creating-and-interacting-with-a-com-instance">Creating and Interacting with a COM instance</h2>
 <p>Now that COM is initialized, we need to actually create the COM instance, and once again check for success:</p>
-<pre><code class="lang-cs">// 84bccd23-5fde-4cdb-aea4-af64b83d78ab is the CLSID for the file open dialog
-
+<pre><code class="lang-cs">
 hr = COM.CreateInstance&lt;IFileOpenDialog&gt;(
-    new Guid(&quot;84bccd23-5fde-4cdb-aea4-af64b83d78ab&quot;),
+    new Guid(&quot;DC1C5A9C-E88A-4dde-A5A1-60F82A20AEF7&quot;),
     null,
-    CreateInstanceContext.InprocServer,
-    new Guid(&quot;84bccd23-5fde-4cdb-aea4-af64b83d78ab&quot;),
+    COM.CreateInstanceContext.InprocServer,
+    new Guid(&quot;d57c7288-d4ad-4768-be02-9d969532d960&quot;),
     out IFileOpenDialog dlg);
 
 if (Macros.Succeeded(hr))
@@ -214,17 +214,15 @@ public struct COMDLG_FILTERSPEC
     public string pszSpec;
 }
 
-HRESULT hr = COM.Initialize(CoInit.ApartmentThreaded);
+HRESULT hr = COM.Initialize(COMInitOptions.ApartmentThreaded);
 
 if (Macros.Succeeded(hr))
 {
-    // 84bccd23-5fde-4cdb-aea4-af64b83d78ab is the CLSID for the file open dialog
-
     hr = COM.CreateInstance&lt;IFileOpenDialog&gt;(
-        new Guid(&quot;84bccd23-5fde-4cdb-aea4-af64b83d78ab&quot;),
+        new Guid(&quot;DC1C5A9C-E88A-4dde-A5A1-60F82A20AEF7&quot;),
         null,
-        CreateInstanceContext.InprocServer,
-        new Guid(&quot;84bccd23-5fde-4cdb-aea4-af64b83d78ab&quot;),
+        COM.CreateInstanceContext.InprocServer,
+        new Guid(&quot;d57c7288-d4ad-4768-be02-9d969532d960&quot;),
         out IFileOpenDialog dlg);
 
     if (Macros.Succeeded(hr))

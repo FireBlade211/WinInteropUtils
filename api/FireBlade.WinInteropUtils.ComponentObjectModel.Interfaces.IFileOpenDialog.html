@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      
+      <meta name="docfx:docurl" content="https://github.com/FireBlade211/WinInteropUtils/new/main/apiSpec/new?filename=FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog.md&amp;value=---%0Auid%3A%20FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog" class="text-break">
-Interface IFileOpenDialog  
+Interface IFileOpenDialog  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L278"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,10 +102,8 @@ Interface IFileOpenDialog
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[GeneratedComInterface]
-[InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+    <pre><code class="lang-csharp hljs">[InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
 [Guid(&quot;d57c7288-d4ad-4768-be02-9d969532d960&quot;)]
-[IUnknownDerived&lt;InterfaceInformation, InterfaceImplementation&gt;]
 public interface IFileOpenDialog : IFileDialog, IModalWindow, IUnknown</code></pre>
   </div>
 
@@ -115,6 +113,73 @@ public interface IFileOpenDialog : IFileDialog, IModalWindow, IUnknown</code></p
 
 
 
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFileTypes_System_UInt32_System_IntPtr_">IFileDialog.SetFileTypes(uint, nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFileTypeIndex_System_UInt32_">IFileDialog.SetFileTypeIndex(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetFileTypeIndex_System_UInt32__">IFileDialog.GetFileTypeIndex(out uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Advise_System_IntPtr_System_UInt32__">IFileDialog.Advise(nint, out uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Unadvise_System_UInt32_">IFileDialog.Unadvise(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetOptions_System_UInt32_">IFileDialog.SetOptions(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetOptions_System_UInt32__">IFileDialog.GetOptions(out uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetDefaultFolder_System_IntPtr_">IFileDialog.SetDefaultFolder(nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFolder_System_IntPtr_">IFileDialog.SetFolder(nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetFolder_System_IntPtr__">IFileDialog.GetFolder(out nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetCurrentSelection_System_IntPtr__">IFileDialog.GetCurrentSelection(out nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFileName_System_String_">IFileDialog.SetFileName(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetFileName_System_IntPtr__">IFileDialog.GetFileName(out nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetTitle_System_String_">IFileDialog.SetTitle(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_Close_FireBlade_WinInteropUtils_HRESULT_">IFileDialog.Close(HRESULT)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_GetResult_System_IntPtr__">IFileDialog.GetResult(out nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialog_SetFilter_System_IntPtr_">IFileDialog.SetFilter(nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IModalWindow_Show_System_IntPtr_">IModalWindow.Show(nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_QueryInterface_System_Guid__System_IntPtr__">IUnknown.QueryInterface(ref Guid, out nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_AddRef">IUnknown.AddRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_Release">IUnknown.Release()</a>
+    </div>
+  </dd></dl>
 
 
 
@@ -123,327 +188,6 @@ public interface IFileOpenDialog : IFileDialog, IModalWindow, IUnknown</code></p
 
   <h2 class="section" id="methods">Methods
 </h2>
-
-
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_AddRef_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.AddRef*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_AddRef" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.AddRef">
-  AddRef()
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">uint AddRef()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_Advise_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Advise*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_Advise_System_IntPtr_System_UInt32__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Advise(System.IntPtr,System.UInt32@)">
-  Advise(nint, out uint)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT Advise(nint pfde, out uint pdwCookie)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>pfde</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
-    <dd></dd>
-    <dt><code>pdwCookie</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_Close_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Close*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_Close_FireBlade_WinInteropUtils_HRESULT_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Close(FireBlade.WinInteropUtils.HRESULT)">
-  Close(HRESULT)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT Close(HRESULT hr)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>hr</code> <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetCurrentSelection_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetCurrentSelection*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetCurrentSelection_System_IntPtr__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetCurrentSelection(System.IntPtr@)">
-  GetCurrentSelection(out nint)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT GetCurrentSelection(out nint ppsi)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>ppsi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetFileName_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFileName*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetFileName_System_IntPtr__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFileName(System.IntPtr@)">
-  GetFileName(out nint)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT GetFileName(out nint pszName)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>pszName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetFileTypeIndex_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFileTypeIndex*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetFileTypeIndex_System_UInt32__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFileTypeIndex(System.UInt32@)">
-  GetFileTypeIndex(out uint)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT GetFileTypeIndex(out uint piFileType)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>piFileType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetFolder_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFolder*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetFolder_System_IntPtr__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetFolder(System.IntPtr@)">
-  GetFolder(out nint)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT GetFolder(out nint ppsi)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>ppsi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetOptions_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetOptions*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetOptions_System_UInt32__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetOptions(System.UInt32@)">
-  GetOptions(out uint)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT GetOptions(out uint pfos)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>pfos</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetResult_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetResult*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetResult_System_IntPtr__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetResult(System.IntPtr@)">
-  GetResult(out nint)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT GetResult(out nint ppsi)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>ppsi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
 
 
   <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetResults_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.GetResults*"></a>
@@ -485,7 +229,7 @@ public interface IFileOpenDialog : IFileDialog, IModalWindow, IUnknown</code></p
   <div class="markdown level1 remarks"><p>This method can be used whether the selection consists of a single item or multiple items.</p>
 <p><a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetResults_System_IntPtr__">GetResults(out nint)</a> can be called after the dialog has closed or during the handling
 of an IFileDialogEvents.OnFileOk event. Calling this method at any other time will fail.</p>
-<p><a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_Show_System_IntPtr_">Show(nint)</a> must return a success code for a result to be available to <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetResults_System_IntPtr__">GetResults(out nint)</a>.</p>
+<p>Show(nint) must return a success code for a result to be available to <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_GetResults_System_IntPtr__">GetResults(out nint)</a>.</p>
 </div>
 
 
@@ -537,441 +281,11 @@ the user should able to stop the operation, which will result in <a class="xref"
 
 
 
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_QueryInterface_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.QueryInterface*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_QueryInterface_System_Guid__System_IntPtr__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.QueryInterface(System.Guid@,System.IntPtr@)">
-  QueryInterface(ref Guid, out nint)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT QueryInterface(ref Guid riid, out nint ppvObject)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>riid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
-    <dd></dd>
-    <dt><code>ppvObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_Release_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Release*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_Release" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Release">
-  Release()
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">uint Release()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetDefaultFolder_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetDefaultFolder*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetDefaultFolder_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetDefaultFolder(System.IntPtr)">
-  SetDefaultFolder(nint)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT SetDefaultFolder(nint psi)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>psi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetFileName_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileName*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetFileName_System_String_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileName(System.String)">
-  SetFileName(string)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT SetFileName(string pszName)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>pszName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetFileTypeIndex_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileTypeIndex*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetFileTypeIndex_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileTypeIndex(System.UInt32)">
-  SetFileTypeIndex(uint)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT SetFileTypeIndex(uint iFileType)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>iFileType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetFileTypes_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileTypes*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetFileTypes_System_UInt32_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFileTypes(System.UInt32,System.IntPtr)">
-  SetFileTypes(uint, nint)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT SetFileTypes(uint cFileTypes, nint rgFilterSpec)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>cFileTypes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
-    <dt><code>rgFilterSpec</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetFilter_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFilter*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetFilter_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFilter(System.IntPtr)">
-  SetFilter(nint)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT SetFilter(nint pFilter)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>pFilter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetFolder_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFolder*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetFolder_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetFolder(System.IntPtr)">
-  SetFolder(nint)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT SetFolder(nint psi)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>psi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetOptions_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetOptions*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetOptions_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetOptions(System.UInt32)">
-  SetOptions(uint)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT SetOptions(uint fos)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>fos</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetTitle_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetTitle*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_SetTitle_System_String_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.SetTitle(System.String)">
-  SetTitle(string)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT SetTitle(string pszTitle)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>pszTitle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_Show_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Show*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_Show_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Show(System.IntPtr)">
-  Show(nint)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT Show(nint hwndOwner)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>hwndOwner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_Unadvise_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Unadvise*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileOpenDialog_Unadvise_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.Unadvise(System.UInt32)">
-  Unadvise(uint)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT Unadvise(uint dwCookie)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>dwCookie</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
 
 </article>
 
         <div class="contribution d-print-none">
+          <a href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L278" class="edit-link">Edit this page</a>
         </div>
 
 
