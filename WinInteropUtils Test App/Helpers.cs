@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
+﻿using System.Reflection;
 using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Linq;
 
 namespace WinInteropUtils_Test_App
@@ -58,7 +54,7 @@ namespace WinInteropUtils_Test_App
                             if (!string.IsNullOrWhiteSpace(cref))
                             {
                                 // Strip prefix (like "T:" or "M:")
-                                var display = cref.TrimStart('T', 'M', 'P', 'F', 'E', ':');
+                                var display = cref.TrimStart('T', 'M', 'P', 'E', ':');
                                 sb.Append(display);
                             }
                             else
@@ -123,7 +119,7 @@ namespace WinInteropUtils_Test_App
         {
             return string.Join(
                 Environment.NewLine,
-                input.Split(["\r\n", "\n", "\r" ], StringSplitOptions.None)
+                input.Split(["\r\n", "\n", "\r"], StringSplitOptions.None)
                      .Select(line => line.Trim())
             );
         }

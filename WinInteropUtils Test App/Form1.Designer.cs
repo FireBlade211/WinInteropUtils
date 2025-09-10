@@ -42,6 +42,9 @@
             exitToolStripMenuItem = new ToolStripMenuItem();
             viewToolStripMenuItem = new ToolStripMenuItem();
             viewHRESULTValuesToolStripMenuItem = new ToolStripMenuItem();
+            testToolStripMenuItem = new ToolStripMenuItem();
+            messageBoxToolStripMenuItem = new ToolStripMenuItem();
+            fileDialogToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -116,7 +119,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, viewToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, viewToolStripMenuItem, testToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(709, 24);
@@ -175,6 +178,27 @@
             viewHRESULTValuesToolStripMenuItem.Text = "View Enum Values...";
             viewHRESULTValuesToolStripMenuItem.Click += viewHRESULTValuesToolStripMenuItem_Click;
             // 
+            // testToolStripMenuItem
+            // 
+            testToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { messageBoxToolStripMenuItem, fileDialogToolStripMenuItem });
+            testToolStripMenuItem.Name = "testToolStripMenuItem";
+            testToolStripMenuItem.Size = new Size(39, 20);
+            testToolStripMenuItem.Text = "Test";
+            // 
+            // messageBoxToolStripMenuItem
+            // 
+            messageBoxToolStripMenuItem.Name = "messageBoxToolStripMenuItem";
+            messageBoxToolStripMenuItem.Size = new Size(180, 22);
+            messageBoxToolStripMenuItem.Text = "Message box";
+            messageBoxToolStripMenuItem.Click += messageBoxToolStripMenuItem_Click;
+            // 
+            // fileDialogToolStripMenuItem
+            // 
+            fileDialogToolStripMenuItem.Name = "fileDialogToolStripMenuItem";
+            fileDialogToolStripMenuItem.Size = new Size(180, 22);
+            fileDialogToolStripMenuItem.Text = "File dialog";
+            fileDialogToolStripMenuItem.Click += fileDialogToolStripMenuItem_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -212,5 +236,8 @@
         private ToolStripSeparator toolStripMenuItem1;
         private ToolStripMenuItem settingsToolStripMenuItem;
         private ToolStripMenuItem exitToolStripMenuItem;
+        private ToolStripMenuItem testToolStripMenuItem;
+        private ToolStripMenuItem messageBoxToolStripMenuItem;
+        private ToolStripMenuItem fileDialogToolStripMenuItem;
     }
 }

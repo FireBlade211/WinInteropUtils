@@ -1,12 +1,16 @@
 using FireBlade.WinInteropUtils;
+using FireBlade.WinInteropUtils.ComponentObjectModel;
+using FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces;
+using FireBlade.WinInteropUtils.Dialogs;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Drawing.Design;
 using System.Globalization;
 using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms.Design;
-using FireBlade.WinInteropUtils.ComponentObjectModel;
 
 namespace WinInteropUtils_Test_App
 {
@@ -15,6 +19,7 @@ namespace WinInteropUtils_Test_App
         public Form1()
         {
             InitializeComponent();
+            fileDialogToolStripMenuItem.Click += fileDialogToolStripMenuItem_Click;
 
             LoadConfig();
 
@@ -175,7 +180,154 @@ namespace WinInteropUtils_Test_App
             propertyGrid1.ToolbarVisible = Properties.Settings.Default.ArgPanelToolbarVisibility;
             propertyGrid1.LargeButtons = Properties.Settings.Default.ArgPanelUseLargeIcons;
         }
+
+        private void messageBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var msgBox = new Win32MessageBox();
+            msgBox.Buttons = Win32MessageBoxButtons.CancelRetryContinue;
+            msgBox.Caption = null;
+            msgBox.Text = "This is some text";
+            msgBox.DefaultButton = 2;
+            msgBox.Icon = Win32MessageBoxIcon.Warning;
+            msgBox.ShowHelp = true;
+            msgBox.Culture = new CultureInfo("en-US");
+            msgBox.RightAlign = true;
+
+            int helpCount = 0;
+            msgBox.OnHelp += (s, e) => helpCount++;
+
+            var result = msgBox.Show(Handle);
+
+            msgBox.Caption = "Result";
+            msgBox.Text =
+                $"Clicked button:\n" +
+                $"{result}\n" +
+                $"\n" +
+                $"Help button was clicked {helpCount} times";
+            msgBox.Buttons = Win32MessageBoxButtons.Ok;
+            msgBox.DefaultButton = 1;
+            msgBox.Icon = Win32MessageBoxIcon.Info;
+            msgBox.ShowHelp = false;
+            msgBox.RightAlign = false;
+
+            msgBox.Show(Handle);
+        }
+
+        private void fileDialogToolStripMenuItem_Click(object? sender, EventArgs e)
+        {
+            Debug.WriteLine("Code running!");
+
+            HRESULT hr = COM.Initialize(COM.COMInitOptions.ApartmentThreaded);
+
+            if (Macros.Succeeded(hr))
+            {
+                // 84bccd23-5fde-4cdb-aea4-af64b83d78ab is the CLSID for the file open dialog
+
+                hr = COM.CreateInstance(
+                    new Guid("DC1C5A9C-E88A-4dde-A5A1-60F82A20AEF7"),
+                    null,
+                    COM.CreateInstanceContext.InprocServer,
+                    new Guid("d57c7288-d4ad-4768-be02-9d969532d960"),
+                    out IFileOpenDialog? dlg);
+
+                if (Macros.Succeeded(hr) && dlg != null)
+                {
+                    COMDLG_FILTERSPEC[] filters =
+                    [
+            new COMDLG_FILTERSPEC { pszName = "Text Files", pszSpec = "*.txt" },
+            new COMDLG_FILTERSPEC { pszName = "All Files", pszSpec = "*.*" }
+                    ];
+
+                    // Allocate unmanaged memory (SetFileTypes requires pointer)
+                    IntPtr ptr = Marshal.AllocHGlobal(Marshal.SizeOf<COMDLG_FILTERSPEC>() * filters.Length);
+
+                    try
+                    {
+                        // Copy each struct into unmanaged memory
+                        for (int i = 0; i < filters.Length; i++)
+                        {
+                            IntPtr structPtr = IntPtr.Add(ptr, i * Marshal.SizeOf<COMDLG_FILTERSPEC>());
+                            Marshal.StructureToPtr(filters[i], structPtr, false);
+                        }
+
+                        // ptr now points to the unmanaged array
+                        dlg.SetFileTypes((uint)filters.Length, ptr);
+                    }
+                    catch { }
+
+                    dlg.SetTitle("Cool File Dialog");
+
+                    hr = dlg.Show(Handle);
+
+                    if (Macros.Succeeded(hr))
+                    {
+                        Console.WriteLine("Dialog accepted!");
+
+                        hr = dlg.GetResult(out nint iptr);
+
+                        if (Macros.Succeeded(hr))
+                        {
+                            IShellItem item = (IShellItem)Marshal.GetTypedObjectForIUnknown(iptr, typeof(IShellItem));
+
+                            hr = item.GetDisplayName(
+                                SIGDN.SIGDN_FILESYSPATH,
+                                out nint pptr);
+
+                            if (Macros.Succeeded(hr))
+                            {
+                                string? path = Marshal.PtrToStringUni(pptr);
+
+                                if (path != null)
+                                    Win32MessageBox.Show(Handle, $"Chosen path: {path}", "File dialog test", Win32MessageBoxIcon.Information);
+                                else
+                                    Debug.WriteLine("Path is null!");
+
+                                 Marshal.FreeCoTaskMem(pptr);
+                            }
+                            else
+                            {
+                                Debug.WriteLine($"Display name get failed: {hr}");
+                            }
+
+                            item.Release();
+                        }
+                        else
+                        {
+                            Debug.WriteLine($"Result get failed: {hr}");
+                        }
+                    }
+                    else
+                    {
+                        Debug.WriteLine($"File dialog show failed: {hr}");
+                    }
+
+                    dlg.Release();
+                    //Marshal.FreeHGlobal(ptr);
+                }
+                else
+                {
+                    Debug.WriteLine($"Instance create failed: {hr}");
+                }
+
+                COM.Uninitialize();
+            }
+            else
+            {
+                Debug.WriteLine($"COM init failed: {hr}");
+            }
+        }
     }
+
+    [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+    public struct COMDLG_FILTERSPEC
+    {
+        [MarshalAs(UnmanagedType.LPWStr)]
+        public string pszName;
+
+        [MarshalAs(UnmanagedType.LPWStr)]
+        public string pszSpec;
+    }
+
 
     public class MethodArgumentDescriptor : ICustomTypeDescriptor
     {
