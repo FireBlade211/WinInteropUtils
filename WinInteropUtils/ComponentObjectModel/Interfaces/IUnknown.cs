@@ -9,7 +9,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces
     /// and manage the existence of the object through the <see cref="AddRef"/> and <see cref="Release"/> methods. All other COM interfaces are inherited,
     /// directly or indirectly, from <see cref="IUnknown"/>. Therefore, the three methods in <see cref="IUnknown"/> are the first entries in the vtable for every interface.
     /// </summary>
-    [GeneratedComInterface]
+    [ComImport]
     [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
     [Guid("00000000-0000-0000-C000-000000000046")]
     [SupportedOSPlatform("windows5.0")]

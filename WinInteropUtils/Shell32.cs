@@ -324,7 +324,7 @@ namespace FireBlade.WinInteropUtils
         [SupportedOSPlatform("windows5.0")] // Windows 2000 Server
         public static WindowsFile? GetFileInfo(string path)
         {
-            COM.Initialize(COM.CoInit.ApartmentThreaded);
+            COM.Initialize(COM.COMInitOptions.ApartmentThreaded);
             var shFileInfo = new SHFILEINFO();
 
             if (SHGetFileInfoW(path, 0, ref shFileInfo, (uint)Marshal.SizeOf(shFileInfo),
@@ -398,7 +398,7 @@ namespace FireBlade.WinInteropUtils
         /// Because system image lists are created on a per-process basis, you should treat them as read-only objects. Writing to a system image list
         /// may overwrite or delete one of the system images, making it unavailable or incorrect for the remainder of the process.</i></para>
         /// 
-        /// <para>You must initialize Component Object Model (COM) with <see cref="COM.Initialize(COM.CoInit)"/> prior to calling <see cref="SHGetFileInfoW(string, uint, ref SHFILEINFO, uint, uint)"/>.
+        /// <para>You must initialize Component Object Model (COM) with <see cref="COM.Initialize(COM.COMInitOptions)"/> prior to calling <see cref="SHGetFileInfoW(string, uint, ref SHFILEINFO, uint, uint)"/>.
         /// <see cref="GetFileInfoEx(string, WindowsFileAttributes, SHGetFileInfoFlags, ref SHFILEINFO)"/> wraps this automatically.</para>
         /// 
         /// When you use the <see cref="SHGetFileInfoFlags.SHGFI_EXETYPE"/> flag with a Windows application, the Windows version of the executable is given in
@@ -409,7 +409,7 @@ namespace FireBlade.WinInteropUtils
         [SupportedOSPlatform("windows5.0")] // Windows 2000 Server
         public static nuint GetFileInfoEx(string pszPath, WindowsFileAttributes dwFileAttributes, SHGetFileInfoFlags uFlags, ref SHFILEINFO psfi)
         {
-            COM.Initialize(COM.CoInit.ApartmentThreaded);
+            COM.Initialize(COM.COMInitOptions.ApartmentThreaded);
 
             var result = SHGetFileInfoW(pszPath, (uint)dwFileAttributes, ref psfi, (uint)Marshal.SizeOf(psfi), (uint)uFlags);
 

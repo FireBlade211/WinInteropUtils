@@ -7,7 +7,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces
     /// <summary>
     /// Exposes methods that initialize, show, and get results from the common file dialog.
     /// </summary>
-    [GeneratedComInterface]
+    [ComImport]
     [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
     [Guid("42f85136-db7e-439c-85f1-e4075d135fc8")]
     [SupportedOSPlatform("windows6.0")]
@@ -275,7 +275,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces
     /// <summary>
     /// Extends the <see cref="IFileDialog"/> interface by adding methods specific to the open dialog.
     /// </summary>
-    [GeneratedComInterface]
+    [ComImport]
     [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
     [Guid("d57c7288-d4ad-4768-be02-9d969532d960")]
     [SupportedOSPlatform("windows6.0")]
@@ -315,7 +315,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces
     /// Extends the <see cref="IFileDialog"/> interface by adding methods specific to the save dialog, which include those that provide support for the collection
     /// of metadata to be persisted with the file.
     /// </summary>
-    [GeneratedComInterface]
+    [ComImport]
     [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
     [Guid("84bccd23-5fde-4cdb-aea4-af64b83d78ab")]
     [SupportedOSPlatform("windows6.0")]
@@ -424,7 +424,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces
     /// and removed at any time. For example, if you needed to change the text of a menu, you would have to
     /// remove the current menu and add another with the correct text.
     /// </remarks>
-    [GeneratedComInterface]
+    [ComImport]
     [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
     [Guid("973510db-7d7f-452b-8975-74a85828d354")]
     [SupportedOSPlatform("windows6.0")]

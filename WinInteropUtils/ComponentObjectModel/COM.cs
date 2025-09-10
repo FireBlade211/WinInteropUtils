@@ -14,19 +14,58 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         [LibraryImport("ole32.dll", EntryPoint = "CoInitializeEx")]
         private static partial int CoInitializeEx(IntPtr pvReserved, uint dwCoInit);
 
+        [LibraryImport("ole32.dll", EntryPoint = "CoInitialize")]
+        private static partial int CoInitialize(IntPtr pvReserved);
+
+        /// <summary>
+        /// Initializes the COM library on the current thread and identifies the concurrency model as single-thread apartment (STA).
+        /// </summary>
+        /// <remarks>
+        /// <para>New applications should call <see cref="Initialize(COMInitOptions)"/> instead of <see cref="Initialize()"/>.</para>
+        /// 
+        /// If you want to use the Windows Runtime, you must call
+        /// <see href="https://learn.microsoft.com/en-us/windows/win32/api/roapi/nf-roapi-roinitialize">RoInitialize</see>
+        /// or <see href="https://learn.microsoft.com/en-us/windows/win32/api/roapi/nf-roapi-initialize">Windows::Foundation::Initialize</see> instead.
+        /// </remarks>
+        /// <returns>
+        /// This function can return the standard
+        /// return values <see cref="HRESULT.E_INVALIDARG"/>, <see cref="HRESULT.E_OUTOFMEMORY"/>,
+        /// and <see cref="HRESULT.E_UNEXPECTED"/>, as well as the following values:
+        /// 
+        /// <list type="table">
+        /// <item>
+        /// <term><see cref="HRESULT.S_OK"/></term>
+        /// <description>The COM library was initialized successfully on this thread.</description>
+        /// </item>
+        /// 
+        /// <item>
+        /// <term><see cref="HRESULT.S_FALSE"/></term>
+        /// <description>The COM library is already initialized on this thread.</description>
+        /// </item>
+        /// 
+        /// <item>
+        /// <term><see cref="HRESULT.RPC_E_CHANGED_MODE"/></term>
+        /// <description>A previous call to <see cref="Initialize(COMInitOptions)"/> specified the concurrency model for this thread
+        /// as multithread apartment (MTA). This could also indicate that a change from neutral-threaded apartment to single-threaded
+        /// apartment has occurred.</description>
+        /// </item>
+        /// </list>
+        /// </returns>
+        public static HRESULT Initialize() => (HRESULT)CoInitialize(nint.Zero);
+
         /// <summary>
         /// Initializes the COM library for use by the calling thread, sets the thread's concurrency model, and creates a new apartment for the thread if one is required.
         /// </summary>
-        /// <param name="coInit">The concurrency model and initialization options for the thread. Any combination of values from <see cref="CoInit"/> can be used, except
-        /// that the <see cref="CoInit.ApartmentThreaded"/> and <see cref="CoInit.MultiThreaded"/> flags cannot both be set.
-        /// The default is <see cref="CoInit.MultiThreaded"/>.</param>
+        /// <param name="options">The concurrency model and initialization options for the thread. Any combination of values from <see cref="COMInitOptions"/> can be used, except
+        /// that the <see cref="COMInitOptions.ApartmentThreaded"/> and <see cref="COMInitOptions.MultiThreaded"/> flags cannot both be set.
+        /// The default is <see cref="COMInitOptions.MultiThreaded"/>.</param>
         /// <returns>This function can return either <see cref="HRESULT.S_OK"/> or <see cref="HRESULT.S_FALSE"/>.</returns>
         /// <remarks>
-        /// <para><see cref="Initialize(CoInit)"/> must be called at least once, and is usually called only once, for each thread that uses the COM library. Multiple calls
-        /// to <see cref="Initialize(CoInit)"/> by the same thread are allowed as long as they pass the same concurrency flag, but subsequent valid calls return
+        /// <para><see cref="Initialize(COMInitOptions)"/> must be called at least once, and is usually called only once, for each thread that uses the COM library. Multiple calls
+        /// to <see cref="Initialize(COMInitOptions)"/> by the same thread are allowed as long as they pass the same concurrency flag, but subsequent valid calls return
         /// <see cref="HRESULT.S_FALSE"/>. If the concurrency flag does not match, then the call fails and returns <see cref="HRESULT.RPC_E_CHANGED_MODE"/>. 
-        /// (For the purpose of this rule, a call to CoInitialize is equivalent to calling <see cref="Initialize(CoInit)"/> with the <see cref="CoInit.ApartmentThreaded"/> flag.) To
-        /// uninitialize the COM library gracefully on a thread, each successful call to CoInitialize or <see cref="Initialize(CoInit)"/>, including any call that
+        /// (For the purpose of this rule, a call to CoInitialize is equivalent to calling <see cref="Initialize(COMInitOptions)"/> with the <see cref="COMInitOptions.ApartmentThreaded"/> flag.) To
+        /// uninitialize the COM library gracefully on a thread, each successful call to CoInitialize or <see cref="Initialize(COMInitOptions)"/>, including any call that
         /// returns <see cref="HRESULT.S_FALSE"/>, must be balanced by a corresponding call to <see cref="Uninitialize"/>. Once COM has been uninitialized on a thread,
         /// you can reinitialize it in any mode, subject to the constraints above.</para>
         ///
@@ -41,27 +80,24 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// semaphores, or mutexes to help protect the object's data.</para>
         ///
         /// <para>When an object that is configured to run in the neutral threaded apartment (NTA) is called by a thread that is in either
-        /// an STA or the MTA, that thread transfers to the NTA. If this thread subsequently calls <see cref="Initialize(CoInit)"/>, the call fails and returns
+        /// an STA or the MTA, that thread transfers to the NTA. If this thread subsequently calls <see cref="Initialize(COMInitOptions)"/>, the call fails and returns
         /// <see cref="HRESULT.RPC_E_CHANGED_MODE"/>.</para>
         ///
-        /// <para>Because OLE technologies are not thread-safe, the OleInitialize function calls <see cref="Initialize(CoInit)"/> with the <see cref="CoInit.ApartmentThreaded"/> flag. As a result,
+        /// <para>Because OLE technologies are not thread-safe, the OleInitialize function calls <see cref="Initialize(COMInitOptions)"/> with the <see cref="COMInitOptions.ApartmentThreaded"/> flag. As a result,
         /// an apartment that is initialized for multithreaded object concurrency cannot use the features enabled by OleInitialize.</para>
         ///
-        /// Because there is no way to control the order in which in-process servers are loaded or unloaded, do not call CoInitialize, <see cref="Initialize(CoInit)"/>,
+        /// Because there is no way to control the order in which in-process servers are loaded or unloaded, do not call CoInitialize, <see cref="Initialize(COMInitOptions)"/>,
         /// or <see cref="Uninitialize"/> from the <c>DllMain</c> function.
         /// </remarks>
-        public static HRESULT Initialize(CoInit coInit)
-        {
-            return (HRESULT)CoInitializeEx(nint.Zero, (uint)coInit);
-        }
+        public static HRESULT Initialize(COMInitOptions options) => (HRESULT)CoInitializeEx(nint.Zero, (uint)options);
 
         /// <summary>
         /// Closes the COM library on the current thread, unloads all DLLs loaded by the thread,
         /// frees any other resources that the thread maintains, and forces all RPC connections on the thread to close.
         /// </summary>
         /// <remarks>
-        /// <para>A thread must call <see cref="Uninitialize"/> once for each successful call it has made to the <see cref="Initialize(CoInit)"/> function,
-        /// including any call that returns S_FALSE. Only the <see cref="Uninitialize"/> call corresponding to the <see cref="Initialize(CoInit)"/> call that initialized the library
+        /// <para>A thread must call <see cref="Uninitialize"/> once for each successful call it has made to the <see cref="Initialize(COMInitOptions)"/> function,
+        /// including any call that returns S_FALSE. Only the <see cref="Uninitialize"/> call corresponding to the <see cref="Initialize(COMInitOptions)"/> call that initialized the library
         /// can close it.</para>
         ///
         /// <para>Calls to OleInitialize must be balanced by calls to OleUninitialize. The OleUninitialize function calls <see cref="Uninitialize"/> internally, so applications
@@ -75,18 +111,18 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// Non-COM messages are discarded.</para>
         ///
         ///
-        /// Because there is no way to control the order in which in-process servers are loaded or unloaded, do not call CoInitialize, <see cref="Initialize(CoInit)"/>,
+        /// Because there is no way to control the order in which in-process servers are loaded or unloaded, do not call CoInitialize, <see cref="Initialize(COMInitOptions)"/>,
         /// or <see cref="Uninitialize"/> from the <c>DllMain</c> function.
         /// </remarks>
         [LibraryImport("ole32.dll", EntryPoint = "CoUninitialize")]
         public static partial void Uninitialize();
 
         /// <summary>
-        /// Specifies flags for <see cref="Initialize(CoInit)"/>.
+        /// Specifies flags for <see cref="Initialize(COMInitOptions)"/>.
         /// </summary>
         /// <remarks>
-        /// <para>When a thread is initialized through a call to <see cref="Initialize(CoInit)"/>, you choose whether to initialize it as apartment-threaded or
-        /// multithreaded by designating one of the members of <see cref="CoInit"/> as its parameter. This designates how incoming calls to any object created by that
+        /// <para>When a thread is initialized through a call to <see cref="Initialize(COMInitOptions)"/>, you choose whether to initialize it as apartment-threaded or
+        /// multithreaded by designating one of the members of <see cref="COMInitOptions"/> as its parameter. This designates how incoming calls to any object created by that
         /// thread are handled, that is, the object's concurrency.</para>
         ///
         /// <para>Apartment-threading, while allowing for multiple threads of execution, serializes all incoming calls by requiring that calls to methods
@@ -109,7 +145,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// This is because UI threads require a message pump, and COM does not pump messages for threads in a multi-threaded apartment.</i>
         /// </remarks>
         [Flags]
-        public enum CoInit
+        public enum COMInitOptions
         {
             /// <summary>
             /// Initializes the thread for STA (Single-Threaded Apartment).

@@ -13,7 +13,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces
     /// <remarks>
     /// Third parties do not implement this interface; only use the implementation provided with the system.
     /// </remarks>
-    [GeneratedComInterface]
+    [ComImport]
     [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
     [Guid("43826d1e-e718-42ee-bc55-a1e261c37bfe")]
     [SupportedOSPlatform("windows6.0")]

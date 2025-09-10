@@ -7,7 +7,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces
     /// <summary>
     /// Exposes a method that represents a modal window.
     /// </summary>
-    [GeneratedComInterface]
+    [ComImport]
     [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
     [Guid("b4db1657-70d7-485e-8e3e-6fcb5a5c1802")]
     [SupportedOSPlatform("windows5.1")] // XP

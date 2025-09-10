@@ -11,6 +11,7 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <Version>0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
