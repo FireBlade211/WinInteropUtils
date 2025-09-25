@@ -13,7 +13,7 @@ namespace FireBlade.WinInteropUtils.WinForms
     /// A variant of a <see cref="ComboBox"/> with native support for item images.
     /// </summary>
     [Description("A variant of a ComboBox with native support for item images.")]
-    public partial class ComboBoxEx : Control
+    internal partial class ComboBoxEx : Control
     {
         internal const int WM_USER = 0x0400;
         private const int CBEM_SETIMAGELIST = (WM_USER + 2);
@@ -206,7 +206,7 @@ namespace FireBlade.WinInteropUtils.WinForms
 
         public void RemoveAt(int index) => _items.RemoveAt(index);
 
-        public ComboBoxExItemCollection(ComboBoxEx combo)
+        internal ComboBoxExItemCollection(ComboBoxEx combo)
         {
             _cb = combo;
         }
