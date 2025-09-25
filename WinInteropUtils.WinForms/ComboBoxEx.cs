@@ -109,7 +109,7 @@ namespace FireBlade.WinInteropUtils.WinForms
     /// Represents a collection of items in a <see cref="ComboBoxEx"/> control.
     /// </summary>
     [ListBindable(false)]
-    public class ComboBoxExItemCollection : ICollection<ComboBoxExItem>, IList<ComboBoxExItem>
+    internal class ComboBoxExItemCollection : ICollection<ComboBoxExItem>, IList<ComboBoxExItem>
     {
         internal List<ComboBoxExItem> _items = [];
         internal ComboBoxEx _cb;
@@ -211,7 +211,8 @@ namespace FireBlade.WinInteropUtils.WinForms
             _cb = combo;
         }
     }
-    public class ComboBoxExItem
+
+    internal class ComboBoxExItem
     {
         /// <summary>
         /// The index of the item.
