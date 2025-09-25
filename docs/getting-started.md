@@ -4,15 +4,6 @@ WinInteropUtils provides many wrappers for P/Invoke functions, from simple funct
 > [!WARNING]
 > WinInteropUtils is still in beta, so bugs may occur. If you experience any bugs, please report them on the [Issues](https://github.com/FireBlade211/WinInteropUtils/issues/new?template=BUG_REPORT.yaml) page.
 
-## Installation
-1. Download the latest DLL from the [Releases](https://github.com/FireBlade211/WinInteropUtils/releases) page.
-2. In your Visual Studio project, right-click **References** and select **Add Project Reference**.
-3. In the dialog, select the **Browse** tab from the sidebar.
-4. Click the **Browse...** button in the bottom-right corner.
-5. In the file dialog, browse to the DLL you downloaded and select it.
-6. Back in the **Reference Manager** dialog, make sure the DLL name is checked.
-7. Finally, press **OK**.
-
 ## Usage Examples
 ### Reading file attributes
 This example reads the attributes of a file named `C:\test.txt` and checks if the file is hidden.
