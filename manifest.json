@@ -572,6 +572,90 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinForms.ComboBoxExItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinForms.ComboBoxExItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinForms.ComboBoxExItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinForms.ComboBoxExItemCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinForms.ComboBoxExItemCollection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinForms.ComboBoxExItemCollection",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.ComboBoxExItemCollection.yml\" sourcestartlinenumber=\"1\">Represents a collection of items in a <xref href=\"FireBlade.WinInteropUtils.WinForms.ComboBoxEx\" data-throw-if-not-resolved=\"false\"></xref> control.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinForms.ProgressBarEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinForms.ProgressBarEx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinForms.ProgressBarEx",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.ProgressBarEx.yml\" sourcestartlinenumber=\"1\">Represents a Win32 progress bar control.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinForms.ProgressBarExStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinForms.ProgressBarExStyle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinForms.ProgressBarExStyle",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.ProgressBarExStyle.yml\" sourcestartlinenumber=\"1\">Specifies the style of a <xref href=\"FireBlade.WinInteropUtils.WinForms.ProgressBarEx\" data-throw-if-not-resolved=\"false\"></xref> control.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinForms.ProgressBarExType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinForms.ProgressBarExType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinForms.ProgressBarExType",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.ProgressBarExType.yml\" sourcestartlinenumber=\"1\">Specifies the <xref href=\"FireBlade.WinInteropUtils.WinForms.ProgressBarEx.Type\" data-throw-if-not-resolved=\"false\"></xref> of a <xref href=\"FireBlade.WinInteropUtils.WinForms.ProgressBarEx\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinForms.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinForms.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinForms",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/FireBlade.WinInteropUtils.WindowState.yml",
       "output": {
         ".html": {

@@ -157,7 +157,7 @@ Class User32
 
   <h3 id="FireBlade_WinInteropUtils_User32_GetTitleBarInfo_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.User32.GetTitleBarInfo(System.IntPtr)">
   GetTitleBarInfo(nint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L344"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves information about the specified title bar.</p>
@@ -198,7 +198,7 @@ Class User32
 
   <h3 id="FireBlade_WinInteropUtils_User32_GetWindowAtPoint_System_Drawing_Point_" data-uid="FireBlade.WinInteropUtils.User32.GetWindowAtPoint(System.Drawing.Point)">
   GetWindowAtPoint(Point)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L389"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves a handle to the window that is under the specified point.</p>
@@ -238,7 +238,7 @@ If the point is over a static text control, the return value is a handle to the 
 
   <h3 id="FireBlade_WinInteropUtils_User32_GetWindowAtPoint_System_Int32_System_Int32_" data-uid="FireBlade.WinInteropUtils.User32.GetWindowAtPoint(System.Int32,System.Int32)">
   GetWindowAtPoint(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L404"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves a handle to the window that is under the specified point.</p>
@@ -335,7 +335,7 @@ encoding-neutral can lead to mismatches that result in compilation or runtime er
 
   <h3 id="FireBlade_WinInteropUtils_User32_GetWindowState_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.User32.GetWindowState(System.IntPtr)">
   GetWindowState(nint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L429"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines the state of the window represented by the handle <code class="paramref">hWnd</code>.</p>
@@ -374,7 +374,7 @@ encoding-neutral can lead to mismatches that result in compilation or runtime er
 
   <h3 id="FireBlade_WinInteropUtils_User32_IsGUIThread_System_Boolean_" data-uid="FireBlade.WinInteropUtils.User32.IsGUIThread(System.Boolean)">
   IsGUIThread(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L309"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the calling thread is already a GUI thread. It can also optionally convert the thread to a GUI thread (<code class="paramref">bConvert</code>).</p>
@@ -417,6 +417,240 @@ encoding-neutral can lead to mismatches that result in compilation or runtime er
 
   <a id="FireBlade_WinInteropUtils_User32_SendMessage_" data-uid="FireBlade.WinInteropUtils.User32.SendMessage*"></a>
 
+  <h3 id="FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_Boolean_System_Boolean_" data-uid="FireBlade.WinInteropUtils.User32.SendMessage(System.IntPtr,System.UInt32,System.Boolean,System.Boolean)">
+  SendMessage(nint, uint, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends the specified message to a window or windows. The <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(nint, uint, nuint, nint)</a> function calls the window procedure for the specified window
+and does not return until the window procedure has processed the message.</p>
+<p>To send a message and return immediately, use the <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-sendmessagecallbacka">SendMessageCallback</a>
+or <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-sendnotifymessagea">SendNotifyMessage</a> function.
+To post a message to a thread's message queue and return immediately, use the
+<a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-postmessagea">PostMessage</a>
+or <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-postthreadmessagea">PostThreadMessage</a> function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint SendMessage(nint hWnd, uint uMsg, bool wParam, bool lParam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hWnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>A handle to the window whose window procedure will receive the message. If this parameter is HWND_BROADCAST ((HWND)0xffff), the message is sent
+     to all top-level windows in the system, including disabled or invisible unowned windows, overlapped windows, and pop-up windows;
+     but the message is not sent to child windows.</p>
+<pre><code> Message sending is subject to UIPI. The thread of a process can send messages only to message queues of threads in processes of lesser or equal integrity level.
+</code></pre>
+</dd>
+    <dt><code>uMsg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The message to be sent.</p>
+<pre><code> For lists of the system-provided messages, see
+ &lt;a href=&quot;https://learn.microsoft.com/en-us/windows/desktop/winmsg/about-messages-and-message-queues&quot;&gt;System-Defined Messages&lt;/a&gt;.
+</code></pre>
+</dd>
+    <dt><code>wParam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Additional message-specific information.</p>
+</dd>
+    <dt><code>lParam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Additional message-specific information.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>The return value specifies the result of the message processing; it depends on the message sent.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_Boolean_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When a message is blocked by UIPI the last error, retrieved with <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshal.getlastpinvokeerror">GetLastPInvokeError()</a>, is set to 5 (access denied).</p>
+<p>Applications that need to communicate using HWND_BROADCAST should use the
+<a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea">RegisterWindowMessage</a> function to obtain a
+unique message for inter-application communication.</p>
+<p>The system only does marshalling for system messages (those in the range 0 to (WM_USER-1)). To send other messages (those &gt;= WM_USER) to another process,
+you must do custom marshalling.</p>
+<p>If the specified window was created by the calling thread, the window procedure is called immediately as a subroutine.
+If the specified window was created by a different thread, the system switches to that thread and calls the appropriate window procedure.
+Messages sent between threads are processed only when the receiving thread executes message retrieval code.The sending thread is blocked until
+the receiving thread processes the message. However, the sending thread will process incoming nonqueued messages while waiting for its message to be processed.
+To prevent this, use <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-sendmessagetimeouta">SendMessageTimeout</a>
+with SMTO_BLOCK set. For more information on non-queued messages, see
+<a href="https://learn.microsoft.com/en-us/windows/desktop/winmsg/about-messages-and-message-queues">Messages and Message Queues</a>.</p>
+<p>An accessibility application can use <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(nint, uint, nuint, nint)</a> to send WM_APPCOMMAND messages to the shell to launch applications.
+This functionality is not guaranteed to work for other types of applications.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_User32_SendMessage_" data-uid="FireBlade.WinInteropUtils.User32.SendMessage*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_Boolean_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.User32.SendMessage(System.IntPtr,System.UInt32,System.Boolean,System.IntPtr)">
+  SendMessage(nint, uint, bool, nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends the specified message to a window or windows. The <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(nint, uint, nuint, nint)</a> function calls the window procedure for the specified window
+and does not return until the window procedure has processed the message.</p>
+<p>To send a message and return immediately, use the <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-sendmessagecallbacka">SendMessageCallback</a>
+or <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-sendnotifymessagea">SendNotifyMessage</a> function.
+To post a message to a thread's message queue and return immediately, use the
+<a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-postmessagea">PostMessage</a>
+or <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-postthreadmessagea">PostThreadMessage</a> function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint SendMessage(nint hWnd, uint uMsg, bool wParam, nint lParam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hWnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>A handle to the window whose window procedure will receive the message. If this parameter is HWND_BROADCAST ((HWND)0xffff), the message is sent
+     to all top-level windows in the system, including disabled or invisible unowned windows, overlapped windows, and pop-up windows;
+     but the message is not sent to child windows.</p>
+<pre><code> Message sending is subject to UIPI. The thread of a process can send messages only to message queues of threads in processes of lesser or equal integrity level.
+</code></pre>
+</dd>
+    <dt><code>uMsg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The message to be sent.</p>
+<pre><code> For lists of the system-provided messages, see
+ &lt;a href=&quot;https://learn.microsoft.com/en-us/windows/desktop/winmsg/about-messages-and-message-queues&quot;&gt;System-Defined Messages&lt;/a&gt;.
+</code></pre>
+</dd>
+    <dt><code>wParam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Additional message-specific information.</p>
+</dd>
+    <dt><code>lParam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>Additional message-specific information.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>The return value specifies the result of the message processing; it depends on the message sent.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_Boolean_System_IntPtr__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When a message is blocked by UIPI the last error, retrieved with <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshal.getlastpinvokeerror">GetLastPInvokeError()</a>, is set to 5 (access denied).</p>
+<p>Applications that need to communicate using HWND_BROADCAST should use the
+<a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea">RegisterWindowMessage</a> function to obtain a
+unique message for inter-application communication.</p>
+<p>The system only does marshalling for system messages (those in the range 0 to (WM_USER-1)). To send other messages (those &gt;= WM_USER) to another process,
+you must do custom marshalling.</p>
+<p>If the specified window was created by the calling thread, the window procedure is called immediately as a subroutine.
+If the specified window was created by a different thread, the system switches to that thread and calls the appropriate window procedure.
+Messages sent between threads are processed only when the receiving thread executes message retrieval code.The sending thread is blocked until
+the receiving thread processes the message. However, the sending thread will process incoming nonqueued messages while waiting for its message to be processed.
+To prevent this, use <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-sendmessagetimeouta">SendMessageTimeout</a>
+with SMTO_BLOCK set. For more information on non-queued messages, see
+<a href="https://learn.microsoft.com/en-us/windows/desktop/winmsg/about-messages-and-message-queues">Messages and Message Queues</a>.</p>
+<p>An accessibility application can use <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(nint, uint, nuint, nint)</a> to send WM_APPCOMMAND messages to the shell to launch applications.
+This functionality is not guaranteed to work for other types of applications.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_User32_SendMessage_" data-uid="FireBlade.WinInteropUtils.User32.SendMessage*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_Boolean_" data-uid="FireBlade.WinInteropUtils.User32.SendMessage(System.IntPtr,System.UInt32,System.UIntPtr,System.Boolean)">
+  SendMessage(nint, uint, nuint, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends the specified message to a window or windows. The <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(nint, uint, nuint, nint)</a> function calls the window procedure for the specified window
+and does not return until the window procedure has processed the message.</p>
+<p>To send a message and return immediately, use the <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-sendmessagecallbacka">SendMessageCallback</a>
+or <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-sendnotifymessagea">SendNotifyMessage</a> function.
+To post a message to a thread's message queue and return immediately, use the
+<a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-postmessagea">PostMessage</a>
+or <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-postthreadmessagea">PostThreadMessage</a> function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint SendMessage(nint hWnd, uint uMsg, nuint wParam, bool lParam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hWnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>A handle to the window whose window procedure will receive the message. If this parameter is HWND_BROADCAST ((HWND)0xffff), the message is sent
+     to all top-level windows in the system, including disabled or invisible unowned windows, overlapped windows, and pop-up windows;
+     but the message is not sent to child windows.</p>
+<pre><code> Message sending is subject to UIPI. The thread of a process can send messages only to message queues of threads in processes of lesser or equal integrity level.
+</code></pre>
+</dd>
+    <dt><code>uMsg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The message to be sent.</p>
+<pre><code> For lists of the system-provided messages, see
+ &lt;a href=&quot;https://learn.microsoft.com/en-us/windows/desktop/winmsg/about-messages-and-message-queues&quot;&gt;System-Defined Messages&lt;/a&gt;.
+</code></pre>
+</dd>
+    <dt><code>wParam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd><p>Additional message-specific information.</p>
+</dd>
+    <dt><code>lParam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Additional message-specific information.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>The return value specifies the result of the message processing; it depends on the message sent.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When a message is blocked by UIPI the last error, retrieved with <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshal.getlastpinvokeerror">GetLastPInvokeError()</a>, is set to 5 (access denied).</p>
+<p>Applications that need to communicate using HWND_BROADCAST should use the
+<a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea">RegisterWindowMessage</a> function to obtain a
+unique message for inter-application communication.</p>
+<p>The system only does marshalling for system messages (those in the range 0 to (WM_USER-1)). To send other messages (those &gt;= WM_USER) to another process,
+you must do custom marshalling.</p>
+<p>If the specified window was created by the calling thread, the window procedure is called immediately as a subroutine.
+If the specified window was created by a different thread, the system switches to that thread and calls the appropriate window procedure.
+Messages sent between threads are processed only when the receiving thread executes message retrieval code.The sending thread is blocked until
+the receiving thread processes the message. However, the sending thread will process incoming nonqueued messages while waiting for its message to be processed.
+To prevent this, use <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-sendmessagetimeouta">SendMessageTimeout</a>
+with SMTO_BLOCK set. For more information on non-queued messages, see
+<a href="https://learn.microsoft.com/en-us/windows/desktop/winmsg/about-messages-and-message-queues">Messages and Message Queues</a>.</p>
+<p>An accessibility application can use <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(nint, uint, nuint, nint)</a> to send WM_APPCOMMAND messages to the shell to launch applications.
+This functionality is not guaranteed to work for other types of applications.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_User32_SendMessage_" data-uid="FireBlade.WinInteropUtils.User32.SendMessage*"></a>
+
   <h3 id="FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.User32.SendMessage(System.IntPtr,System.UInt32,System.UIntPtr,System.IntPtr)">
   SendMessage(nint, uint, nuint, nint)
   <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L153"><i class="bi bi-code-slash"></i></a>
@@ -433,7 +667,7 @@ or <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-win
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nint SendMessage(nint hWnd, uint Msg, nuint wParam, nint lParam)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint SendMessage(nint hWnd, uint uMsg, nuint wParam, nint lParam)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -445,7 +679,7 @@ or <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-win
 <pre><code> Message sending is subject to UIPI. The thread of a process can send messages only to message queues of threads in processes of lesser or equal integrity level.
 </code></pre>
 </dd>
-    <dt><code>Msg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dt><code>uMsg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
     <dd><p>The message to be sent.</p>
 <pre><code> For lists of the system-provided messages, see
  &lt;a href=&quot;https://learn.microsoft.com/en-us/windows/desktop/winmsg/about-messages-and-message-queues&quot;&gt;System-Defined Messages&lt;/a&gt;.
