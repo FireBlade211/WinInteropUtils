@@ -3,8 +3,5 @@ WinInteropUtils is an old, unfinished C# library that provides managed wrappers 
 
 The base namespace  is `FireBlade.WinInteropUtils`.
 
-## How to install (for now)
-Because WinInteropUtils isn't a NuGet package yet, to use it, simply download the DLL file, and go into the add references dialog, select Browse, and open the DLL. Warning: WinInteropUtils is built on .NET 8, so it won't work for .NET Framework projects.
-
 ## Documentation
 For documentation, visit the [official documentation page](https://fireblade211.github.io/WinInteropUtils).
