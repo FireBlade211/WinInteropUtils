@@ -24,7 +24,7 @@ namespace WinInteropUtils_Test_App
             LoadConfig();
 
             listView1.BeginUpdate();
-            foreach (var c in Assembly.GetAssembly(typeof(COM))!.GetTypes()
+            foreach (var c in Assembly.GetAssembly(typeof(Shell32))!.GetTypes()
             .Where(t => t.IsClass && t.Namespace == "FireBlade.WinInteropUtils"))
             {
                 if (c.Name == "ExceptionExtensions") continue;
@@ -280,7 +280,7 @@ namespace WinInteropUtils_Test_App
                                 else
                                     Debug.WriteLine("Path is null!");
 
-                                 Marshal.FreeCoTaskMem(pptr);
+                                Marshal.FreeCoTaskMem(pptr);
                             }
                             else
                             {
@@ -313,6 +313,11 @@ namespace WinInteropUtils_Test_App
             {
                 Debug.WriteLine($"COM init failed: {hr}");
             }
+        }
+
+        private void winInteropUtilsWinFormsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new WiuWinFormsTestForm().Show(this);
         }
     }
 

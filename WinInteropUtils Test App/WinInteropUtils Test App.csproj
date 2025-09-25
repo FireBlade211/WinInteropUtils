@@ -11,6 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WinInteropUtils.WinForms\WinInteropUtils.WinForms.csproj" />
     <ProjectReference Include="..\WinInteropUtils\WinInteropUtils.csproj" />
   </ItemGroup>
 

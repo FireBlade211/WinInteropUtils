@@ -45,6 +45,7 @@
             testToolStripMenuItem = new ToolStripMenuItem();
             messageBoxToolStripMenuItem = new ToolStripMenuItem();
             fileDialogToolStripMenuItem = new ToolStripMenuItem();
+            winInteropUtilsWinFormsToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -180,7 +181,7 @@
             // 
             // testToolStripMenuItem
             // 
-            testToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { messageBoxToolStripMenuItem, fileDialogToolStripMenuItem });
+            testToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { messageBoxToolStripMenuItem, fileDialogToolStripMenuItem, winInteropUtilsWinFormsToolStripMenuItem });
             testToolStripMenuItem.Name = "testToolStripMenuItem";
             testToolStripMenuItem.Size = new Size(39, 20);
             testToolStripMenuItem.Text = "Test";
@@ -188,16 +189,23 @@
             // messageBoxToolStripMenuItem
             // 
             messageBoxToolStripMenuItem.Name = "messageBoxToolStripMenuItem";
-            messageBoxToolStripMenuItem.Size = new Size(180, 22);
+            messageBoxToolStripMenuItem.Size = new Size(213, 22);
             messageBoxToolStripMenuItem.Text = "Message box";
             messageBoxToolStripMenuItem.Click += messageBoxToolStripMenuItem_Click;
             // 
             // fileDialogToolStripMenuItem
             // 
             fileDialogToolStripMenuItem.Name = "fileDialogToolStripMenuItem";
-            fileDialogToolStripMenuItem.Size = new Size(180, 22);
+            fileDialogToolStripMenuItem.Size = new Size(213, 22);
             fileDialogToolStripMenuItem.Text = "File dialog";
             fileDialogToolStripMenuItem.Click += fileDialogToolStripMenuItem_Click;
+            // 
+            // winInteropUtilsWinFormsToolStripMenuItem
+            // 
+            winInteropUtilsWinFormsToolStripMenuItem.Name = "winInteropUtilsWinFormsToolStripMenuItem";
+            winInteropUtilsWinFormsToolStripMenuItem.Size = new Size(213, 22);
+            winInteropUtilsWinFormsToolStripMenuItem.Text = "WinInteropUtils.WinForms";
+            winInteropUtilsWinFormsToolStripMenuItem.Click += winInteropUtilsWinFormsToolStripMenuItem_Click;
             // 
             // Form1
             // 
@@ -239,5 +247,6 @@
         private ToolStripMenuItem testToolStripMenuItem;
         private ToolStripMenuItem messageBoxToolStripMenuItem;
         private ToolStripMenuItem fileDialogToolStripMenuItem;
+        private ToolStripMenuItem winInteropUtilsWinFormsToolStripMenuItem;
     }
 }
