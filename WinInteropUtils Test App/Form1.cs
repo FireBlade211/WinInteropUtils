@@ -95,6 +95,10 @@ namespace WinInteropUtils_Test_App
                 "Int32" => "int",
                 "UInt32" => "uint",
                 "Nullable`1" => GetTypeName(type.GetGenericArguments().First()) + "?",
+                "Double" => "double",
+                "Decimal" => "decimal",
+                "Single" => "float",
+                "UInt16" => "ushort",
                 _ => type.Name
             };
         }
@@ -145,6 +149,15 @@ namespace WinInteropUtils_Test_App
 
                             exp.Text = sb.ToString();
                             page.Expander = exp;
+
+                            if (result is Icon icon)
+                            {
+                                page.Footnote = new TaskDialogFootnote
+                                {
+                                    Text = "This is a preview of the outputted icon.",
+                                    Icon = new TaskDialogIcon(icon)
+                                };
+                            }
                         }
                         else
                         {
