@@ -563,82 +563,55 @@ namespace FireBlade.WinInteropUtils
         /// <summary>
         /// High definition DVD drive (any type - HD DVD-ROM, HD DVD-R, HD-DVD-RAM) that uses the HD DVD format.
         /// </summary>
-        /// <remarks>
-        /// <para>Requires Windows Vista SP1 or later.</para>
-        /// ![Icon preview](https://learn.microsoft.com/en-us/windows/win32/api/shellapi/images/siid_drivehddvd.png)
-        /// </remarks>
+        /// <remarks>![Icon preview](https://learn.microsoft.com/en-us/windows/win32/api/shellapi/images/siid_drivehddvd.png)</remarks>
         [SupportedOSPlatform("windows6.0")]
         DriveHDDVD = 132,
         /// <summary>
         /// High definition DVD drive (any type - BD-ROM, BD-R, BD-RE) that uses the Blu-ray Disc format.
         /// </summary>
-        /// <remarks>
-        /// <para>Requires Windows Vista SP1 or later.</para>
-        /// ![Icon preview](https://learn.microsoft.com/en-us/windows/win32/api/shellapi/images/siid_drivebd.png)
-        /// </remarks>
+        /// <remarks>![Icon preview](https://learn.microsoft.com/en-us/windows/win32/api/shellapi/images/siid_drivebd.png)</remarks>
         [SupportedOSPlatform("windows6.0")]
         DriveBD = 133,
         /// <summary>
         /// High definition DVD-ROM media in the HD DVD-ROM format.
         /// </summary>
-        /// <remarks>
-        /// <para>Requires Windows Vista SP1 or later.</para>
-        /// ![Icon preview](https://learn.microsoft.com/en-us/windows/win32/api/shellapi/images/siid_mediahddvdrom.png)
-        /// </remarks>
+        /// <remarks>![Icon preview](https://learn.microsoft.com/en-us/windows/win32/api/shellapi/images/siid_mediahddvdrom.png)</remarks>
         [SupportedOSPlatform("windows6.0")]
         MediaHDDVDROM = 134,
         /// <summary>
         /// High definition DVD-R media in the HD DVD-R format.
         /// </summary>
-        /// <remarks>
-        /// <para>Requires Windows Vista SP1 or later.</para>
-        /// ![Icon preview](https://learn.microsoft.com/en-us/windows/win32/api/shellapi/images/siid_mediahddvdr.png)
-        /// </remarks>
+        /// <remarks>![Icon preview](https://learn.microsoft.com/en-us/windows/win32/api/shellapi/images/siid_mediahddvdr.png)</remarks>
         [SupportedOSPlatform("windows6.0")]
         MediaHDDVDR = 135,
         /// <summary>
         /// High definition DVD-RAM media in the HD DVD-RAM format.
         /// </summary>
-        /// <remarks>
-        /// <para>Requires Windows Vista SP1 or later.</para>
-        /// ![Icon preview](https://learn.microsoft.com/en-us/windows/win32/api/shellapi/images/siid_mediahddvdram.png)
-        /// </remarks>
+        /// <remarks>![Icon preview](https://learn.microsoft.com/en-us/windows/win32/api/shellapi/images/siid_mediahddvdram.png)</remarks>
         [SupportedOSPlatform("windows6.0")]
         MediaHDDVDRAM = 136,
         /// <summary>
         /// High definition DVD-ROM media in the Blu-ray Disc BD-ROM format.
         /// </summary>
-        /// <remarks>
-        /// <para>Requires Windows Vista SP1 or later.</para>
-        /// ![Icon preview](https://learn.microsoft.com/en-us/windows/win32/api/shellapi/images/siid_mediabdrom.png)
-        /// </remarks>
+        /// <remarks>![Icon preview](https://learn.microsoft.com/en-us/windows/win32/api/shellapi/images/siid_mediabdrom.png)</remarks>
         [SupportedOSPlatform("windows6.0")]
         MediaBDROM = 137,
         /// <summary>
         /// High definition write-once media in the Blu-ray Disc BD-R format.
         /// </summary>
-        /// <remarks>
-        /// <para>Requires Windows Vista SP1 or later.</para>
-        /// ![Icon preview](https://learn.microsoft.com/en-us/windows/win32/api/shellapi/images/siid_mediabdr.png)
-        /// </remarks>
+        /// <remarks>![Icon preview](https://learn.microsoft.com/en-us/windows/win32/api/shellapi/images/siid_mediabdr.png)</remarks>
         [SupportedOSPlatform("windows6.0")]
         MediaBDR = 138,
         /// <summary>
         /// High definition read/write media in the Blu-ray Disc BD-RE format.
         /// </summary>
-        /// <remarks>
-        /// <para>Requires Windows Vista SP1 or later.</para>
-        /// ![Icon preview](https://learn.microsoft.com/en-us/windows/win32/api/shellapi/images/siid_mediabdre.png)
-        /// </remarks>
+        /// <remarks>![Icon preview](https://learn.microsoft.com/en-us/windows/win32/api/shellapi/images/siid_mediabdre.png)</remarks>
         [SupportedOSPlatform("windows6.0")]
         MediaBDRE = 139,
         /// <summary>
         /// A cluster disk array.
         /// </summary>
-        /// <remarks>
-        /// <para>Requires Windows Vista SP1 or later.</para>
-        /// ![Icon preview](https://learn.microsoft.com/en-us/windows/win32/api/shellapi/images/siid_clustereddrive.png)
-        /// </remarks>
+        /// <remarks>![Icon preview](https://learn.microsoft.com/en-us/windows/win32/api/shellapi/images/siid_clustereddrive.png)</remarks>
         [SupportedOSPlatform("windows6.0")]
         ClusteredDrive = 140
     }
