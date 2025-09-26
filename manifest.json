@@ -488,6 +488,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.StockIcon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.StockIcon.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.StockIcon",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.StockIcon.yml\" sourcestartlinenumber=\"1\">Icon identifiers for the <xref href=\"FireBlade.WinInteropUtils.StockIconHelper.GetIcon(FireBlade.WinInteropUtils.StockIcon%2cSystem.Drawing.StockIconOptions)\" data-throw-if-not-resolved=\"false\"></xref> function.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.StockIconHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.StockIconHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.StockIconHelper",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.StockIconHelper.yml\" sourcestartlinenumber=\"1\">Allows you to get a shell stock icon. Unlike the built-in .NET <xref href=\"System.Drawing.SystemIcons.GetStockIcon(System.Drawing.StockIconId%2cSystem.Int32)\" data-throw-if-not-resolved=\"false\"></xref> or\n<xref href=\"System.Drawing.SystemIcons.GetStockIcon(System.Drawing.StockIconId%2cSystem.Drawing.StockIconOptions)\" data-throw-if-not-resolved=\"false\"></xref> functions, this wrapper allows you to enter any icon ID you want.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/FireBlade.WinInteropUtils.TitleBarElement.yml",
       "output": {
         ".html": {
