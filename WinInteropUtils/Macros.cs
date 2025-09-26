@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System.Numerics;
 
 namespace FireBlade.WinInteropUtils
 {
@@ -57,5 +58,77 @@ namespace FireBlade.WinInteropUtils
         /// <param name="hr">The status code. This value can be a <see cref="Win32ErrorCode"/>. A negative number indicates failure.</param>
         /// <returns><see langword="true"/> if the status code indicates failure; otherwise, <see langword="false"/>.</returns>
         public static bool Failed(Win32ErrorCode hr) => ((HRESULT)hr) < 0;
+
+        /// <summary>
+        /// Retrieves the low-order word from the specified value.
+        /// </summary>
+        /// <typeparam name="TNum">The number type.</typeparam>
+        /// <param name="l">The value to be converted.</param>
+        /// <returns>The low-order word of the value specified by <paramref name="l"/>.</returns>
+        public static ushort LowWord<TNum>(TNum l) where TNum : INumber<TNum> => ((ushort)((nuint.CreateTruncating(l)) & 0xffff));
+
+        /// <summary>
+        /// Retrieves the high-order word from the specified 32-bit value.
+        /// </summary>
+        /// <typeparam name="TNum">The number type.</typeparam>
+        /// <param name="l">The value to be converted.</param>
+        /// <returns>The high-order word of the value specified by <paramref name="l"/>.</returns>
+        public static ushort HighWord<TNum>(TNum l) where TNum: INumber<TNum> => ((ushort)(((nuint.CreateTruncating(l)) >> 16) & 0xffff));
+
+        /// <summary>
+        /// Retrieves the low-order word from the specified value.
+        /// </summary>
+        /// <param name="l">The value to be converted.</param>
+        /// <returns>The low-order word of the value specified by <paramref name="l"/>.</returns>
+        public static ushort LowWord(int l) => LowWord<int>(l);
+
+        /// <summary>
+        /// Retrieves the low-order word from the specified value.
+        /// </summary>
+        /// <param name="l">The value to be converted.</param>
+        /// <returns>The low-order word of the value specified by <paramref name="l"/>.</returns>
+        public static ushort LowWord(float l) => LowWord<float>(l);
+
+        /// <summary>
+        /// Retrieves the low-order word from the specified value.
+        /// </summary>
+        /// <param name="l">The value to be converted.</param>
+        /// <returns>The low-order word of the value specified by <paramref name="l"/>.</returns>
+        public static ushort LowWord(double l) => LowWord<double>(l);
+
+        /// <summary>
+        /// Retrieves the low-order word from the specified value.
+        /// </summary>
+        /// <param name="l">The value to be converted.</param>
+        /// <returns>The low-order word of the value specified by <paramref name="l"/>.</returns>
+        public static ushort LowWord(decimal l) => LowWord<decimal>(l);
+
+        /// <summary>
+        /// Retrieves the high-order word from the specified 32-bit value.
+        /// </summary>
+        /// <param name="l">The value to be converted.</param>
+        /// <returns>The high-order word of the value specified by <paramref name="l"/>.</returns>
+        public static ushort HighWord(int l) => HighWord<int>(l);
+
+        /// <summary>
+        /// Retrieves the high-order word from the specified 32-bit value.
+        /// </summary>
+        /// <param name="l">The value to be converted.</param>
+        /// <returns>The high-order word of the value specified by <paramref name="l"/>.</returns>
+        public static ushort HighWord(float l) => HighWord<float>(l);
+
+        /// <summary>
+        /// Retrieves the high-order word from the specified 32-bit value.
+        /// </summary>
+        /// <param name="l">The value to be converted.</param>
+        /// <returns>The high-order word of the value specified by <paramref name="l"/>.</returns>
+        public static ushort HighWord(double l) => HighWord<double>(l);
+
+        /// <summary>
+        /// Retrieves the high-order word from the specified 32-bit value.
+        /// </summary>
+        /// <param name="l">The value to be converted.</param>
+        /// <returns>The high-order word of the value specified by <paramref name="l"/>.</returns>
+        public static ushort HighWord(decimal l) => HighWord<decimal>(l);
     }
 }

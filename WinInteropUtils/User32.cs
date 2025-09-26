@@ -369,7 +369,7 @@ namespace FireBlade.WinInteropUtils
 
 
         [StructLayout(LayoutKind.Sequential)]
-        private struct POINT(int x, int y)
+        internal struct POINT(int x, int y)
         {
             public int X = x;
             public int Y = y;
@@ -438,6 +438,175 @@ namespace FireBlade.WinInteropUtils
             else
                 return WindowState.Normal;
         }
+
+        ///// <summary>
+        ///// A callback function, which you define in your application, that processes messages sent to a window.
+        ///// The <c>WndProc</c> name is a placeholder for the name of the function that you define in your application.
+        ///// </summary>
+        ///// <param name="hWnd">A handle to the window.</param>
+        ///// <param name="uMsg">The message. For lists of the system-provided messages, see
+        ///// <see href="https://learn.microsoft.com/en-us/windows/win32/winmsg/about-messages-and-message-queues#system-defined-messages">System-defined messages</see>.</param>
+        ///// <param name="wParam">Additional message information. The contents of the <paramref name="wParam"/> parameter
+        ///// depends on the value of the <paramref name="uMsg"/> parameter.</param>
+        ///// <param name="lParam">Additional message information. The contents of the <paramref name="lParam"/> parameter
+        ///// depends on the value of the <paramref name="uMsg"/> parameter.</param>
+        ///// <returns>The result of the message processing, depending on the message sent.</returns>
+        ///// <remarks>
+        ///// <para>If your application runs on a 32-bit version of Windows operating system, uncaught exceptions
+        ///// from the callback will be passed onto higher-level exception handlers of your application when available. The system
+        ///// then calls the unhandled exception filter to handle the exception prior to terminating the process. If the PCA is enabled,
+        ///// it will offer to fix the problem the next time you run the application.</para>
+        ///// 
+        ///// <para>However, if your application runs on a 64-bit version of Windows operating system or WOW64, you should be aware that
+        ///// a 64-bit operating system handles uncaught exceptions differently based on its 64-bit processor architecture, exception architecture,
+        ///// and calling convention. The following table summarizes all possible ways that a 64-bit Windows operating system or WOW64 handles uncaught exceptions:</para>
+        ///// 
+        ///// <list type="table">
+        ///// <item>
+        ///// <term>1</term>
+        ///// <description>The system suppresses any uncaught exceptions.</description>
+        ///// </item>
+        ///// <item>
+        ///// <term>2</term>
+        ///// <description>The system first terminates the process, and then the Program Compatibility Assistant (PCA) offers to fix it the next time
+        ///// you run the application. You can disable the PCA mitigation by adding a Compatibility section to the application manifest.</description>
+        ///// </item>
+        ///// <item>
+        ///// <term>3</term>
+        ///// <description>The system calls the exception filters but suppresses any uncaught exceptions when it leaves the callback scope,
+        ///// without invoking the associated handlers.</description>
+        ///// </item>
+        ///// </list>
+        ///// <para>The following table shows how a 64-bit version of the Windows operating system, and WOW64, handles uncaught exceptions.
+        ///// Notice that behavior type 2 applies only to the 64-bit version of the Windows 7 operating system and later:</para>
+        ///// <list type="table">
+        ///// <item>
+        ///// <term>Windows XP - WOW64</term>
+        ///// <description>3</description>
+        ///// </item>
+        ///// <item>
+        ///// <term>Windows XP - x64</term>
+        ///// <description>1</description>
+        ///// </item>
+        ///// <item>
+        ///// <term>Windows Vista - WOW64</term>
+        ///// <description>3</description>
+        ///// </item>
+        ///// <item>
+        ///// <term>Windows Vista - x64</term>
+        ///// <description>1</description>
+        ///// </item>
+        ///// <item>
+        ///// <term>Windows Vista SP1 - WOW64</term>
+        ///// <description>1</description>
+        ///// </item>
+        ///// <item>
+        ///// <term>Windows Vista SP1 - x64</term>
+        ///// <description>1</description>
+        ///// </item>
+        ///// <item>
+        ///// <term>Windows 7+ - WOW64</term>
+        ///// <description>1</description>
+        ///// </item>
+        ///// <item>
+        ///// <term>Windows 7+ - x64</term>
+        ///// <description>2</description>
+        ///// </item>
+        ///// </list>
+        ///// <para>
+        ///// > [!NOTE]
+        ///// > On Windows 7 with SP1 (32-bit, 64-bit, or WOW64), the system calls the unhandled exception filter to handle the exception
+        ///// > prior to terminating the process. If the Program Compatibility Assistant (PCA) is enabled, then it will offer to fix the problem
+        ///// > the next time you run the application.
+        ///// </para>
+        ///// <para>
+        ///// If you need to handle exceptions in your application, you can use structured exception handling to do so. For more information
+        ///// on how to use structured exception
+        ///// handling, see <see href="https://learn.microsoft.com/en-us/windows/win32/debug/structured-exception-handling">Structured exception handling</see>.
+        ///// </para>
+        ///// </remarks>
+        //public delegate nint WndProc(nint hWnd, uint uMsg, nint wParam, nint lParam);
+
+        //[StructLayout(LayoutKind.Sequential)]
+        //internal struct MSG
+        //{
+        //    public nint hwnd;
+        //    public uint message;
+        //    public nint wParam;
+        //    public nint lParam;
+        //    public uint time;
+        //    public POINT pt;
+        //}
+
+        //[StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+        //private struct WNDCLASS
+        //{
+        //    public uint style;
+        //    public WndProc lpfnWndProc;
+        //    public int cbClsExtra;
+        //    public int cbWndExtra;
+        //    public nint hInstance;
+        //    public nint hIcon;
+        //    public nint hCursor;
+        //    public nint hbrBackground;
+        //    [MarshalAs(UnmanagedType.LPWStr)]
+        //    public string lpszMenuName;
+        //    [MarshalAs(UnmanagedType.LPWStr)]
+        //    public string lpszClassName;
+        //}
+
+        //[LibraryImport("user32.dll", StringMarshalling = StringMarshalling.Utf16)]
+        //private static partial ushort RegisterClass(ref WNDCLASS lpWndClass);
+
+        //[LibraryImport("user32.dll", StringMarshalling = StringMarshalling.Utf16)]
+        //private static partial nint CreateWindowExW(
+        //    uint dwExStyle,
+        //    string lpClassName,
+        //    string lpWindowName,
+        //    uint dwStyle,
+        //    int x,
+        //    int y,
+        //    int nWidth,
+        //    int nHeight,
+        //    nint hWndParent,
+        //    nint hMenu,
+        //    nint hInstance,
+        //    nint lpParam);
+
+        //[LibraryImport("user32.dll")]
+        //[return: MarshalAs(UnmanagedType.Bool)]
+        //private static partial bool ShowWindow(nint hWnd, int nCmdShow);
+
+        //[LibraryImport("user32.dll")]
+        //private static partial sbyte GetMessageW(out MSG lpMsg, nint hWnd, uint wMsgFilterMin, uint wMsgFilterMax);
+
+        //[LibraryImport("user32.dll")]
+        //[return: MarshalAs(UnmanagedType.Bool)]
+        //private static partial bool TranslateMessage(ref MSG lpMsg);
+
+        //[LibraryImport("user32.dll")]
+        //private static partial nint DispatchMessageW(ref MSG lpMsg);
+
+        ///// <summary>
+        ///// 
+        ///// </summary>
+        ///// <param name="wndClassInfo"></param>
+        ///// <returns></returns>
+        //public static ushort RegisterWindowClass(WindowClassInfo wndClassInfo)
+        //{
+        //    return 0;
+        //}
+
+        ///// <summary>
+        ///// 
+        ///// </summary>
+        ///// <param name="hInstance"></param>
+        ///// <param name="hPrevInstance"></param>
+        ///// <param name="lpCmdLine"></param>
+        ///// <param name="nCmdShow"></param>
+        ///// <returns></returns>
+        //public delegate int WinMain(nint hInstance, nint hPrevInstance, string lpCmdLine, int nCmdShow);
+
     }
 
     /// <summary>
@@ -606,4 +775,92 @@ namespace FireBlade.WinInteropUtils
         /// </summary>
         Visible = Normal
     }
+
+    ///// <summary>
+    ///// Contains message information from a thread's message queue.
+    ///// </summary>
+    //public class WindowMessageInfo
+    //{
+    //    /// <summary>
+    //    /// A handle to the window whose window procedure receives the message. This member is <see cref="nint.Zero"/> when the message is a thread message.
+    //    /// </summary>
+    //    public nint Handle { get; set; } = nint.Zero;
+
+    //    /// <summary>
+    //    /// The message identifier. Applications can only use the low word; the high word is reserved by the system.
+    //    /// </summary>
+    //    /// <seealso cref="Macros.LowWord{TNum}(TNum)"/>
+    //    /// <seealso cref="Macros.HighWord{TNum}(TNum)"/>
+    //    public uint Message { get; set; } = 0;
+
+    //    /// <summary>
+    //    /// Additional information about the message. The exact meaning depends on the value of the <see cref="Message"/> member.
+    //    /// </summary>
+    //    /// 
+    //    public nint WParam { get; set; } = nint.Zero;
+    //    /// <summary>
+    //    /// Additional information about the message. The exact meaning depends on the value of the <see cref="Message"/> member.
+    //    /// </summary>
+    //    public nint LParam { get; set; } = nint.Zero;
+
+    //    /// <summary>
+    //    /// The time at which the message was posted.
+    //    /// </summary>
+    //    public DateTime Time { get; set; } = DateTime.MinValue;
+
+    //    /// <summary>
+    //    /// The cursor position, in screen coordinates, when the message was posted.
+    //    /// </summary>
+    //    public Point CursorLocation { get; set; } = Point.Empty;
+
+    //    internal WindowMessageInfo(User32.MSG msg)
+    //    {
+    //        Handle = msg.hwnd;
+    //        Message = msg.message;
+    //        WParam = msg.wParam;
+    //        LParam = msg.lParam;
+
+    //        long tick64 = Environment.TickCount64;
+    //        uint tick32 = (uint)tick64;
+
+    //        // Difference between current 32-bit tick and message time (modulo 32-bit wraparound)
+    //        uint diff = unchecked(tick32 - msg.time);
+
+    //        // Actual message tick in 64-bit space
+    //        long msgTick64 = tick64 - diff;
+
+    //        Time = DateTime.UtcNow - TimeSpan.FromMilliseconds(Environment.TickCount64) + TimeSpan.FromMilliseconds(msgTick64);
+
+    //        CursorLocation = new Point(msg.pt.X, msg.pt.Y);
+    //    }
+    //}
+
+//    /// <summary>
+//    /// Contains the window class attributes that are registered by the <see cref="User32.RegisterWindowClass(WindowClassInfo)"/> function.
+//    /// </summary>
+//    public class WindowClassInfo
+//    {
+//        /// <summary>
+//        /// The class style(s). This member can be any combination of
+//        /// the <see href="https://learn.microsoft.com/en-us/windows/win32/winmsg/about-window-classes#class-styles">Class Styles</see>.
+//        /// </summary>
+//        /// <seealso href="https://learn.microsoft.com/en-us/windows/win32/winmsg/about-window-classes#class-styles">Class Styles</seealso>
+//        /// <seealso href="https://learn.microsoft.com/en-us/windows/win32/winmsg/window-class-styles">Window Class Styles</seealso>
+//        public uint Style { get; set; } = 0u;
+
+//        /// <summary>
+//        /// The window procedure. For more information, see <see cref="User32.WndProc"/>.
+//        /// </summary>
+//        public User32.WndProc Procedure { get; set; }
+
+//        /// <summary>
+//        /// 
+//        /// </summary>
+//#pragma warning disable CS8618
+//        public WindowClassInfo()
+//        {
+
+//        }
+//#pragma warning restore
+//    }
 }
