@@ -5,7 +5,9 @@ using System.Runtime.InteropServices;
 namespace FireBlade.WinInteropUtils.WinForms
 {
     /// <summary>
-    /// Represents a Win32 progress bar control.
+    /// <para>Represents a Win32 progress bar control.</para>
+    /// 
+    /// ![Sample image](progressbars.png)
     /// </summary>
     [Description("Represents a Win32 progress bar control.")]
     public partial class ProgressBarEx : Control
