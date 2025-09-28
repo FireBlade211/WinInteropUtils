@@ -638,7 +638,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "FireBlade.WinInteropUtils.WinForms.ProgressBarEx",
-      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.ProgressBarEx.yml\" sourcestartlinenumber=\"1\">Represents a Win32 progress bar control.</p>\n"
+      "Summary": "<p>Represents a Win32 progress bar control.</p>\n<p sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.ProgressBarEx.yml\" sourcestartlinenumber=\"3\"><img src=\"~/images/progressbars.png\" sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.ProgressBarEx.yml\" sourcestartlinenumber=\"3\" alt=\"Sample image\"></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -667,6 +667,104 @@
       "IsMRef": true,
       "Title": "FireBlade.WinInteropUtils.WinForms.ProgressBarExType",
       "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.ProgressBarExType.yml\" sourcestartlinenumber=\"1\">Specifies the <xref href=\"FireBlade.WinInteropUtils.WinForms.ProgressBarEx.Type\" data-throw-if-not-resolved=\"false\"></xref> of a <xref href=\"FireBlade.WinInteropUtils.WinForms.ProgressBarEx\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinForms.Slider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinForms.Slider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinForms.Slider",
+      "Summary": "<p>Represents a control that allows the user to slide a slider along a track, commonly referred to as a track bar.</p>\n<p sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.Slider.yml\" sourcestartlinenumber=\"3\"><img src=\"~/images/sliders.png\" sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.Slider.yml\" sourcestartlinenumber=\"3\" alt=\"Sample image\"></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinForms.SliderActionList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinForms.SliderActionList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinForms.SliderActionList",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinForms.SliderDesigner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinForms.SliderDesigner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinForms.SliderDesigner",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinForms.SliderScrollEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinForms.SliderScrollEventArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinForms.SliderScrollEventArgs",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.SliderScrollEventArgs.yml\" sourcestartlinenumber=\"1\">Provides event arguments for the <xref href=\"FireBlade.WinInteropUtils.WinForms.Slider.HorizontalScroll\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"FireBlade.WinInteropUtils.WinForms.Slider.VerticalScroll\" data-throw-if-not-resolved=\"false\"></xref> events.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinForms.SliderTickMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinForms.SliderTickMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinForms.SliderTickMode",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.SliderTickMode.yml\" sourcestartlinenumber=\"1\">Specifies the type of ticks to use on a <xref href=\"FireBlade.WinInteropUtils.WinForms.Slider\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinForms.SliderToolTipSide.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinForms.SliderToolTipSide.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinForms.SliderToolTipSide",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.SliderToolTipSide.yml\" sourcestartlinenumber=\"1\">Specifes the side where the tooltip is located on a <xref href=\"FireBlade.WinInteropUtils.WinForms.Slider\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinForms.SliderValueChangeReason.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinForms.SliderValueChangeReason.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinForms.SliderValueChangeReason",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.SliderValueChangeReason.yml\" sourcestartlinenumber=\"1\">Specifies the reason that a <xref href=\"FireBlade.WinInteropUtils.WinForms.Slider\" data-throw-if-not-resolved=\"false\"></xref>'s value may be changing.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -810,6 +908,26 @@
       "output": {
         ".html": {
           "relative_path": "docs/using-com.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/progressbars.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/progressbars.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/sliders.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/sliders.png"
         }
       },
       "version": ""
