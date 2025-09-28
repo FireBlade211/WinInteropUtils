@@ -36,7 +36,17 @@
             progressBarEx4 = new FireBlade.WinInteropUtils.WinForms.ProgressBarEx();
             numericUpDown1 = new NumericUpDown();
             button1 = new Button();
+            slider1 = new FireBlade.WinInteropUtils.WinForms.Slider();
+            slider2 = new FireBlade.WinInteropUtils.WinForms.Slider();
+            slider3 = new FireBlade.WinInteropUtils.WinForms.Slider();
+            label2 = new Label();
+            label1 = new Label();
+            slider4 = new FireBlade.WinInteropUtils.WinForms.Slider();
+            numericUpDown2 = new NumericUpDown();
+            button2 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
             SuspendLayout();
             // 
             // progressBarEx1
@@ -99,11 +109,108 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // slider1
+            // 
+            slider1.Location = new Point(651, 21);
+            slider1.Name = "slider1";
+            slider1.Size = new Size(137, 35);
+            slider1.TabIndex = 6;
+            slider1.Text = "slider1";
+            // 
+            // slider2
+            // 
+            slider2.Location = new Point(651, 62);
+            slider2.Maximum = 10;
+            slider2.Name = "slider2";
+            slider2.SelectionRangeEnd = 7;
+            slider2.SelectionRangeStart = 3;
+            slider2.ShowSelectionRange = true;
+            slider2.Size = new Size(137, 35);
+            slider2.TabIndex = 7;
+            slider2.Text = "slider2";
+            slider2.TickFrequency = 1;
+            slider2.TickMode = FireBlade.WinInteropUtils.WinForms.SliderTickMode.Custom;
+            // 
+            // slider3
+            // 
+            slider3.LeftBuddy = label2;
+            slider3.Location = new Point(610, 21);
+            slider3.Name = "slider3";
+            slider3.Orientation = Orientation.Vertical;
+            slider3.RightBuddy = label1;
+            slider3.Size = new Size(35, 82);
+            slider3.TabIndex = 8;
+            slider3.Text = "slider3";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(570, 4);
+            label2.Name = "label2";
+            label2.Size = new Size(101, 15);
+            label2.TabIndex = 10;
+            label2.Text = "More - top buddy";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(562, 105);
+            label1.Name = "label1";
+            label1.Size = new Size(117, 15);
+            label1.TabIndex = 9;
+            label1.Text = "Less - bottom buddy";
+            // 
+            // slider4
+            // 
+            slider4.Location = new Point(570, 131);
+            slider4.Name = "slider4";
+            slider4.Size = new Size(159, 35);
+            slider4.TabIndex = 11;
+            slider4.Text = "slider4";
+            slider4.TickFrequency = 30;
+            slider4.TickMode = FireBlade.WinInteropUtils.WinForms.SliderTickMode.Custom;
+            // 
+            // numericUpDown2
+            // 
+            numericUpDown2.Location = new Point(738, 135);
+            numericUpDown2.Name = "numericUpDown2";
+            numericUpDown2.Size = new Size(50, 23);
+            numericUpDown2.TabIndex = 12;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(738, 173);
+            button2.Name = "button2";
+            button2.Size = new Size(59, 23);
+            button2.TabIndex = 13;
+            button2.Text = "Add tick";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(662, 173);
+            button3.Name = "button3";
+            button3.Size = new Size(70, 23);
+            button3.TabIndex = 14;
+            button3.Text = "Clear ticks";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // WiuWinFormsTestForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(numericUpDown2);
+            Controls.Add(slider4);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(slider3);
+            Controls.Add(slider2);
+            Controls.Add(slider1);
             Controls.Add(button1);
             Controls.Add(numericUpDown1);
             Controls.Add(progressBarEx4);
@@ -111,9 +218,11 @@
             Controls.Add(progressBarEx2);
             Controls.Add(progressBarEx1);
             Name = "WiuWinFormsTestForm";
-            Text = "WiuWinFormsTestForm";
+            Text = "WinInteropUtils.WinForms - Test";
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -125,5 +234,14 @@
         private FireBlade.WinInteropUtils.WinForms.ProgressBarEx progressBarEx4;
         private NumericUpDown numericUpDown1;
         private Button button1;
+        private FireBlade.WinInteropUtils.WinForms.Slider slider1;
+        private FireBlade.WinInteropUtils.WinForms.Slider slider2;
+        private FireBlade.WinInteropUtils.WinForms.Slider slider3;
+        private Label label2;
+        private Label label1;
+        private FireBlade.WinInteropUtils.WinForms.Slider slider4;
+        private NumericUpDown numericUpDown2;
+        private Button button2;
+        private Button button3;
     }
 }

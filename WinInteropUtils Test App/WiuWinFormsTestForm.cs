@@ -1,4 +1,4 @@
-﻿using FireBlade.WinInteropUtils.WinForms;
+﻿using System.Diagnostics;
 
 namespace WinInteropUtils_Test_App
 {
@@ -17,6 +17,20 @@ namespace WinInteropUtils_Test_App
         private void button1_Click(object sender, EventArgs e)
         {
             progressBarEx4.StepBy((int)numericUpDown1.Value);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Debug.WriteLine("Add click!");
+
+            slider4.AddTick((int)numericUpDown2.Value);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Debug.WriteLine("Clear click!");
+
+            slider4.ClearTicks();
         }
     }
 }
