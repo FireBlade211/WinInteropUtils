@@ -32,5 +32,20 @@ namespace WinInteropUtils_Test_App
 
             slider4.ClearTicks();
         }
+
+        private void hyperLink1_LinkClicked(object sender, FireBlade.WinInteropUtils.WinForms.HyperLinkLinkClickedEventArgs e)
+        {
+            Debug.WriteLine("Link clicked!");
+
+            if (e.ClickedLink.Index == 0)
+                Process.Start(new ProcessStartInfo
+                {
+                    UseShellExecute = true,
+                    FileName = e.ClickedLink.HRef
+                });
+            else
+                if (e.ClickedLink.Id?.Equals("test") ?? false)
+                    MessageBox.Show("ID link clicked!");
+        }
     }
 }
