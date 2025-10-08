@@ -9,7 +9,7 @@ namespace FireBlade.WinInteropUtils.WinForms
     /// <summary>
     /// <para>Represents a control that allows the user to slide a slider along a track, commonly referred to as a track bar.</para>
     /// 
-    /// ![Sample image](sliders.png)
+    /// ![Sample image](../images/sliders.png)
     /// </summary>
     [Designer("FireBlade.WinInteropUtils.WinForms.SliderDesigner, WinInteropUtils.WinForms")]
     public partial class Slider : Control
@@ -942,11 +942,9 @@ namespace FireBlade.WinInteropUtils.WinForms
     //}
 
     /// <summary>
-    /// Specifies the reason for a <see cref="Slider.ValueChanging"/> event. Used in <see cref="SliderValueChangingEventArgs"/>.
+    /// Specifies the reason that a <see cref="Slider"/>'s value may be changing.
     /// </summary>
-    /// <seealso cref="SliderValueChangingEventArgs"/>
     /// <seealso cref="Slider"/>
-    /// <seealso cref="Slider.ValueChanging"/>
     public enum SliderValueChangeReason
     {
         /// <summary>

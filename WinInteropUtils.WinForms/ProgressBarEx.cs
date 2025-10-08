@@ -7,7 +7,7 @@ namespace FireBlade.WinInteropUtils.WinForms
     /// <summary>
     /// <para>Represents a Win32 progress bar control.</para>
     /// 
-    /// ![Sample image](progressbars.png)
+    /// ![Sample image](../images/progressbars.png)
     /// </summary>
     [Description("Represents a Win32 progress bar control.")]
     public partial class ProgressBarEx : Control
