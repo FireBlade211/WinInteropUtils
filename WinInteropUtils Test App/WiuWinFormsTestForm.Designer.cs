@@ -45,7 +45,10 @@
             numericUpDown2 = new NumericUpDown();
             button2 = new Button();
             button3 = new Button();
-            //hyperLink1 = new FireBlade.WinInteropUtils.WinForms.HyperLink();
+            hotKeyBox1 = new FireBlade.WinInteropUtils.WinForms.HotKeyBox();
+            hotKeyBox2 = new FireBlade.WinInteropUtils.WinForms.HotKeyBox();
+            label3 = new Label();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
             SuspendLayout();
@@ -198,22 +201,54 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
-            // hyperLink1
+            // hotKeyBox1
             // 
-            //hyperLink1.Location = new Point(12, 225);
-            //hyperLink1.Name = "hyperLink1";
-            //hyperLink1.Size = new Size(161, 38);
-            //hyperLink1.TabIndex = 15;
-            //hyperLink1.Text = "This is a test <a href=\"https://www.github.com/fireblade211/wininteroputils\">href hyperlink!</a>\r\nThis is another <a id=\"test\">ID hyperlink</a>!\0";
-            //hyperLink1.UseVisualStyle = true;
-            //hyperLink1.LinkClicked += hyperLink1_LinkClicked;
+            hotKeyBox1.Keys = Keys.Control | Keys.A;
+            hotKeyBox1.Location = new Point(12, 225);
+            hotKeyBox1.Name = "hotKeyBox1";
+            hotKeyBox1.Size = new Size(108, 23);
+            hotKeyBox1.TabIndex = 15;
+            hotKeyBox1.Text = "hotKeyBox1";
+            // 
+            // hotKeyBox2
+            // 
+            hotKeyBox2.FallbackValue = FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.Shift;
+            hotKeyBox2.Location = new Point(81, 253);
+            hotKeyBox2.Name = "hotKeyBox2";
+            hotKeyBox2.Rules = FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.Control;
+            hotKeyBox2.Size = new Size(108, 23);
+            hotKeyBox2.TabIndex = 16;
+            hotKeyBox2.Text = "hotKeyBox2";
+            hotKeyBox2.HotKeyChanged += hotKeyBox2_HotKeyChanged;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(13, 256);
+            label3.Name = "label3";
+            label3.Size = new Size(62, 15);
+            label3.TabIndex = 17;
+            label3.Text = "Restricted:";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(131, 228);
+            label4.Name = "label4";
+            label4.Size = new Size(58, 15);
+            label4.TabIndex = 18;
+            label4.Text = "Changed!";
+            label4.Visible = false;
             // 
             // WiuWinFormsTestForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            //Controls.Add(hyperLink1);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(hotKeyBox2);
+            Controls.Add(hotKeyBox1);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(numericUpDown2);
@@ -255,6 +290,10 @@
         private NumericUpDown numericUpDown2;
         private Button button2;
         private Button button3;
+        private FireBlade.WinInteropUtils.WinForms.HotKeyBox hotKeyBox1;
+        private FireBlade.WinInteropUtils.WinForms.HotKeyBox hotKeyBox2;
+        private Label label3;
+        private Label label4;
         //private FireBlade.WinInteropUtils.WinForms.HyperLink hyperLink1;
     }
 }
