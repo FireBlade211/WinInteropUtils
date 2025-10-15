@@ -8,6 +8,8 @@ using System.Runtime.Versioning;
 
 namespace FireBlade.WinInteropUtils.WinForms
 {
+    // TODO: Make the LinkClicked actually work to finish this control
+
     /// <summary>
     /// Represents a control that renders marked-up text, and notifies the application when users click its embedded hyperlinks.
     /// </summary>
@@ -20,7 +22,7 @@ namespace FireBlade.WinInteropUtils.WinForms
     /// </remarks>
     //[Designer(typeof(HyperLinkDesigner))]
     [SupportedOSPlatform("windows5.1")] // WinXP (visual styles)
-    public partial class HyperLink : Control
+    internal partial class HyperLink : Control
     {
         private const int WM_USER = 0x0400;
         private const int LM_GETIDEALHEIGHT = WM_USER + 0x301;
@@ -395,7 +397,7 @@ namespace FireBlade.WinInteropUtils.WinForms
     /// <summary>
     /// Provides event data for the <see cref="HyperLink.LinkClicked"/> event.
     /// </summary>
-    public class HyperLinkLinkClickedEventArgs : EventArgs
+    internal class HyperLinkLinkClickedEventArgs : EventArgs
     {
         /// <summary>
         /// Gets the link that was clicked.
@@ -408,7 +410,7 @@ namespace FireBlade.WinInteropUtils.WinForms
     /// <summary>
     /// Represents a single hyperlink inside a <see cref="HyperLink"/> control.
     /// </summary>
-    public class Link
+    internal class Link
     {
         private const int WM_USER = 0x0400;
         private const int LM_SETITEM = WM_USER + 0x302;

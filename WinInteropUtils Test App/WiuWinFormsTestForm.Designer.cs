@@ -45,7 +45,7 @@
             numericUpDown2 = new NumericUpDown();
             button2 = new Button();
             button3 = new Button();
-            hyperLink1 = new FireBlade.WinInteropUtils.WinForms.HyperLink();
+            //hyperLink1 = new FireBlade.WinInteropUtils.WinForms.HyperLink();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
             SuspendLayout();
@@ -200,20 +200,20 @@
             // 
             // hyperLink1
             // 
-            hyperLink1.Location = new Point(12, 225);
-            hyperLink1.Name = "hyperLink1";
-            hyperLink1.Size = new Size(161, 38);
-            hyperLink1.TabIndex = 15;
-            hyperLink1.Text = "This is a test <a href=\"https://www.github.com/fireblade211/wininteroputils\">href hyperlink!</a>\r\nThis is another <a id=\"test\">ID hyperlink</a>!\0";
-            hyperLink1.UseVisualStyle = true;
-            hyperLink1.LinkClicked += hyperLink1_LinkClicked;
+            //hyperLink1.Location = new Point(12, 225);
+            //hyperLink1.Name = "hyperLink1";
+            //hyperLink1.Size = new Size(161, 38);
+            //hyperLink1.TabIndex = 15;
+            //hyperLink1.Text = "This is a test <a href=\"https://www.github.com/fireblade211/wininteroputils\">href hyperlink!</a>\r\nThis is another <a id=\"test\">ID hyperlink</a>!\0";
+            //hyperLink1.UseVisualStyle = true;
+            //hyperLink1.LinkClicked += hyperLink1_LinkClicked;
             // 
             // WiuWinFormsTestForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(hyperLink1);
+            //Controls.Add(hyperLink1);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(numericUpDown2);
@@ -255,6 +255,6 @@
         private NumericUpDown numericUpDown2;
         private Button button2;
         private Button button3;
-        private FireBlade.WinInteropUtils.WinForms.HyperLink hyperLink1;
+        //private FireBlade.WinInteropUtils.WinForms.HyperLink hyperLink1;
     }
 }
