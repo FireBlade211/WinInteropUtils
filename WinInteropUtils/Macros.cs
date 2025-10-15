@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using System;
+using System.Globalization;
 using System.Numerics;
 
 namespace FireBlade.WinInteropUtils
@@ -130,5 +131,77 @@ namespace FireBlade.WinInteropUtils
         /// <param name="l">The value to be converted.</param>
         /// <returns>The high-order word of the value specified by <paramref name="l"/>.</returns>
         public static ushort HighWord(decimal l) => HighWord<decimal>(l);
+
+        /// <summary>
+        /// Retrieves the low-order byte from the specified value.
+        /// </summary>
+        /// <typeparam name="TNum">The number type.</typeparam>
+        /// <param name="w">The value to be converted.</param>
+        /// <returns>The low-order byte of the value specified by <paramref name="w"/>.</returns>
+        public static byte LowByte<TNum>(TNum w) where TNum : INumber<TNum> => ((byte)((UIntPtr.CreateTruncating(w)) & 0xff));
+
+        /// <summary>
+        /// Retrieves the high-order byte from the given value.
+        /// </summary>
+        /// <typeparam name="TNum">The number type.</typeparam>
+        /// <param name="w">The value to be converted.</param>
+        /// <returns>The high-order byte of the specified value.</returns>
+        public static byte HighByte<TNum>(TNum w) where TNum : INumber<TNum> => ((byte)(((UIntPtr.CreateTruncating(w)) >> 8) & 0xff));
+
+        /// <summary>
+        /// Retrieves the low-order byte from the specified value.
+        /// </summary>
+        /// <param name="w">The value to be converted.</param>
+        /// <returns>The low-order byte of the value specified by <paramref name="w"/>.</returns>
+        public static byte LowByte(int w) => LowByte<int>(w);
+
+        /// <summary>
+        /// Retrieves the low-order byte from the specified value.
+        /// </summary>
+        /// <param name="w">The value to be converted.</param>
+        /// <returns>The low-order byte of the value specified by <paramref name="w"/>.</returns>
+        public static byte LowByte(float w) => LowByte<float>(w);
+
+        /// <summary>
+        /// Retrieves the low-order byte from the specified value.
+        /// </summary>
+        /// <param name="w">The value to be converted.</param>
+        /// <returns>The low-order byte of the value specified by <paramref name="w"/>.</returns>
+        public static byte LowByte(double w) => LowByte<double>(w);
+
+        /// <summary>
+        /// Retrieves the low-order byte from the specified value.
+        /// </summary>
+        /// <param name="w">The value to be converted.</param>
+        /// <returns>The low-order byte of the value specified by <paramref name="w"/>.</returns>
+        public static byte LowByte(decimal w) => LowByte<decimal>(w);
+
+        /// <summary>
+        /// Retrieves the high-order byte from the given value.
+        /// </summary>
+        /// <param name="w">The value to be converted.</param>
+        /// <returns>The high-order byte of the specified value.</returns>
+        public static byte HighByte(int w) => HighByte<int>(w);
+
+        /// <summary>
+        /// Retrieves the high-order byte from the given value.
+        /// </summary>
+        /// <param name="w">The value to be converted.</param>
+        /// <returns>The high-order byte of the specified value.</returns>
+        public static byte HighByte(float w) => HighByte<float>(w);
+
+        /// <summary>
+        /// Retrieves the high-order byte from the given value.
+        /// </summary>
+        /// <param name="w">The value to be converted.</param>
+        /// <returns>The high-order byte of the specified value.</returns>
+        public static byte HighByte(double w) => HighByte<double>(w);
+
+        /// <summary>
+        /// Retrieves the high-order byte from the given value.
+        /// </summary>
+        /// <param name="w">The value to be converted.</param>
+        /// <returns>The high-order byte of the specified value.</returns>
+        public static byte HighByte(decimal w) => HighByte<decimal>(w);
     }
 }
