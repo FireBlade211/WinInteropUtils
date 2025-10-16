@@ -62,6 +62,7 @@ namespace FireBlade.WinInteropUtils.WinForms
         private const int TBM_SETLINESIZE = WM_USER + 23;
         private const int TBM_SETPAGESIZE = WM_USER + 21;
         private const int TBM_GETPAGESIZE = WM_USER + 22;
+        private const uint WM_REFLECT = WM_USER + 0x1C00;
 
         protected override CreateParams CreateParams
         {
@@ -669,12 +670,12 @@ namespace FireBlade.WinInteropUtils.WinForms
         private int _smallChange = 1;
         private int _largeChange = 5;
 
-        ///// <summary>
-        ///// Fires before the slider's value changes and allows validation.
-        ///// </summary>
-        //[Description("Fires before the slider's value changes and allows validation.")]
-        //[Category("Property Changed")]
-        //public event EventHandler<SliderValueChangingEventArgs>? ValueChanging;
+        /// <summary>
+        /// Fires before the slider's value changes and allows validation.
+        /// </summary>
+        [Description("Fires before the slider's value changes and allows validation.")]
+        [Category("Property Changed")]
+        public event EventHandler<SliderValueChangingEventArgs>? ValueChanging;
 
         /// <summary>
         /// Fires when the slider scrolls horizontally.
@@ -695,7 +696,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             InitializeComponent();
 
             SetStyle(ControlStyles.UserPaint | ControlStyles.UseTextForAccessibility, false);
-            SetStyle(ControlStyles.SupportsTransparentBackColor | ControlStyles.EnableNotifyMessage, true);
+            SetStyle(ControlStyles.SupportsTransparentBackColor, true);
         }
 
         protected override void OnHandleCreated(EventArgs e)
@@ -733,30 +734,34 @@ namespace FireBlade.WinInteropUtils.WinForms
             }
         }
 
-        protected override void OnNotifyMessage(Message m)
+        protected override void WndProc(ref Message m)
         {
-            base.OnNotifyMessage(m);
-
-
-
-            switch (m.Msg)
+            if (m.Msg >= WM_REFLECT)
             {
-                //case WM_NOTIFY:
-                //    Debug.WriteLine("WM notify received!");
-                //    var nmhdr = (NMHDR)m.GetLParam(typeof(NMHDR))!;
+                WmReflect(ref m);
+            }
 
-                //    switch (nmhdr.code)
-                //    {
-                //        case TRBN_THUMBPOSCHANGING:
-                //            Debug.WriteLine("Thumb pos changing notif received!");
-                //            var args = new SliderValueChangingEventArgs((NMTRBTHUMBPOSCHANGING)m.GetLParam(typeof(NMTRBTHUMBPOSCHANGING))!);
-                //            ValueChanging?.Invoke(this, args);
+            base.WndProc(ref m);
+        }
 
-                //            m.Result = args.Cancel ? 1 : 0;
-                //            break;
-                //    }
+        private void WmReflect(ref Message m)
+        {
+            switch (m.Msg - WM_REFLECT)
+            {
+                case WM_NOTIFY:
+                    var nmhdr = (NMHDR)m.GetLParam(typeof(NMHDR))!;
 
-                //    break;
+                    switch (nmhdr.code)
+                    {
+                        case TRBN_THUMBPOSCHANGING:
+                            var args = new SliderValueChangingEventArgs((NMTRBTHUMBPOSCHANGING)m.GetLParam(typeof(NMTRBTHUMBPOSCHANGING))!);
+                            ValueChanging?.Invoke(this, args);
+                            
+                            m.Result = args.Cancel ? 1 : 0;
+                            break;
+                    }
+
+                    break;
                 case WM_HSCROLL:
                     HorizontalScroll?.Invoke(this, new SliderScrollEventArgs(m.WParam, m.LParam));
                     break;
@@ -779,7 +784,7 @@ namespace FireBlade.WinInteropUtils.WinForms
         }
 
         /// <summary>
-        /// Clears the slider's selection range and optionally, redraws the control.
+        /// Clears the slider's selection range and optionally redraws the control.
         /// </summary>
         /// <param name="redraw">Whether to redraw the control.</param>
         public void ClearSelectionRange(bool redraw)
@@ -876,7 +881,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             if (IsHandleCreated)
                 User32.SendMessage(Handle, TBM_CLEARTICS, true, 0);
         }
-
+          
         private bool ShouldSerializeThumbLength() => FixedLength;
         private void ResetThumbLength() => FixedLength = false;
     }
@@ -918,28 +923,28 @@ namespace FireBlade.WinInteropUtils.WinForms
         Custom = 0x0001
     }
 
-    ///// <summary>
-    ///// Defines event arguments for the <see cref="Slider.ValueChanging"/> event.
-    ///// </summary>
-    //public class SliderValueChangingEventArgs : CancelEventArgs
-    //{
-    //    internal NMTRBTHUMBPOSCHANGING internalStruct;
+    /// <summary>
+    /// Defines event arguments for the <see cref="Slider.ValueChanging"/> event.
+    /// </summary>
+    public class SliderValueChangingEventArgs : CancelEventArgs
+    {
+        internal NMTRBTHUMBPOSCHANGING internalStruct;
 
-    //    /// <summary>
-    //    /// Gets the reason for the event.
-    //    /// </summary>
-    //    public SliderValueChangeReason Reason => (SliderValueChangeReason)internalStruct.nReason;
+        /// <summary>
+        /// Gets the reason for the event.
+        /// </summary>
+        public SliderValueChangeReason Reason => (SliderValueChangeReason)internalStruct.nReason;
 
-    //    /// <summary>
-    //    /// Gets the new position of the thumb (value of the slider).
-    //    /// </summary>
-    //    public int NewValue => internalStruct.dwPos;
+        /// <summary>
+        /// Gets the new position of the thumb (value of the slider).
+        /// </summary>
+        public int NewValue => internalStruct.dwPos;
 
-    //    internal SliderValueChangingEventArgs(NMTRBTHUMBPOSCHANGING str)
-    //    {
-    //        internalStruct = str;
-    //    }
-    //}
+        internal SliderValueChangingEventArgs(NMTRBTHUMBPOSCHANGING str)
+        {
+            internalStruct = str;
+        }
+    }
 
     /// <summary>
     /// Specifies the reason that a <see cref="Slider"/>'s value may be changing.

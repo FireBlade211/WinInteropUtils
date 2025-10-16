@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using FireBlade.WinInteropUtils.WinForms;
 
 namespace WinInteropUtils_Test_App
 {
@@ -35,6 +36,12 @@ namespace WinInteropUtils_Test_App
         private void hotKeyBox2_HotKeyChanged(object sender, EventArgs e)
         {
             label4.Visible = !label4.Visible;
+        }
+
+        private void slider2_ValueChanging(object sender, SliderValueChangingEventArgs e)
+        {
+            if (e.NewValue < slider2.SelectionRangeStart || e.NewValue > slider2.SelectionRangeEnd) e.Cancel = true;
+            Debug.WriteLine($"Cancelled: {e.Cancel}\nNew value: {e.NewValue}");
         }
 
         //private void hyperLink1_LinkClicked(object sender, FireBlade.WinInteropUtils.WinForms.HyperLinkLinkClickedEventArgs e)

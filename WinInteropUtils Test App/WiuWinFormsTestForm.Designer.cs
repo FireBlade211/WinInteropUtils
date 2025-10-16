@@ -134,6 +134,8 @@
             slider2.Text = "slider2";
             slider2.TickFrequency = 1;
             slider2.TickMode = FireBlade.WinInteropUtils.WinForms.SliderTickMode.Custom;
+            slider2.Value = 5;
+            slider2.ValueChanging += slider2_ValueChanging;
             // 
             // slider3
             // 
