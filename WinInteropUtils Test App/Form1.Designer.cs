@@ -46,6 +46,7 @@
             messageBoxToolStripMenuItem = new ToolStripMenuItem();
             fileDialogToolStripMenuItem = new ToolStripMenuItem();
             winInteropUtilsWinFormsToolStripMenuItem = new ToolStripMenuItem();
+            colorDialogToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -181,7 +182,7 @@
             // 
             // testToolStripMenuItem
             // 
-            testToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { messageBoxToolStripMenuItem, fileDialogToolStripMenuItem, winInteropUtilsWinFormsToolStripMenuItem });
+            testToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { messageBoxToolStripMenuItem, fileDialogToolStripMenuItem, winInteropUtilsWinFormsToolStripMenuItem, colorDialogToolStripMenuItem });
             testToolStripMenuItem.Name = "testToolStripMenuItem";
             testToolStripMenuItem.Size = new Size(39, 20);
             testToolStripMenuItem.Text = "Test";
@@ -206,6 +207,13 @@
             winInteropUtilsWinFormsToolStripMenuItem.Size = new Size(213, 22);
             winInteropUtilsWinFormsToolStripMenuItem.Text = "WinInteropUtils.WinForms";
             winInteropUtilsWinFormsToolStripMenuItem.Click += winInteropUtilsWinFormsToolStripMenuItem_Click;
+            // 
+            // colorDialogToolStripMenuItem
+            // 
+            colorDialogToolStripMenuItem.Name = "colorDialogToolStripMenuItem";
+            colorDialogToolStripMenuItem.Size = new Size(213, 22);
+            colorDialogToolStripMenuItem.Text = "Color dialog";
+            colorDialogToolStripMenuItem.Click += colorDialogToolStripMenuItem_Click;
             // 
             // Form1
             // 
@@ -248,5 +256,6 @@
         private ToolStripMenuItem messageBoxToolStripMenuItem;
         private ToolStripMenuItem fileDialogToolStripMenuItem;
         private ToolStripMenuItem winInteropUtilsWinFormsToolStripMenuItem;
+        private ToolStripMenuItem colorDialogToolStripMenuItem;
     }
 }

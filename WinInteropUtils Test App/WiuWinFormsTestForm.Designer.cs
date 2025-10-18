@@ -49,6 +49,7 @@
             hotKeyBox2 = new FireBlade.WinInteropUtils.WinForms.HotKeyBox();
             label3 = new Label();
             label4 = new Label();
+            slider5 = new FireBlade.WinInteropUtils.WinForms.Slider();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
             SuspendLayout();
@@ -242,11 +243,24 @@
             label4.Text = "Changed!";
             label4.Visible = false;
             // 
+            // slider5
+            // 
+            slider5.Location = new Point(275, 315);
+            slider5.Name = "slider5";
+            slider5.SelectionRangeEnd = 75;
+            slider5.SelectionRangeStart = 25;
+            slider5.ShowSelectionRange = true;
+            slider5.Size = new Size(187, 36);
+            slider5.TabIndex = 19;
+            slider5.Text = "slider5";
+            slider5.Value = 15;
+            // 
             // WiuWinFormsTestForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(slider5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(hotKeyBox2);
@@ -296,6 +310,7 @@
         private FireBlade.WinInteropUtils.WinForms.HotKeyBox hotKeyBox2;
         private Label label3;
         private Label label4;
+        private FireBlade.WinInteropUtils.WinForms.Slider slider5;
         //private FireBlade.WinInteropUtils.WinForms.HyperLink hyperLink1;
     }
 }

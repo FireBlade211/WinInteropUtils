@@ -16,6 +16,9 @@ namespace WinInteropUtils_Test_App
 {
     public partial class Form1 : Form
     {
+        private ColorPickerDialog? _colordlg;
+        private uint _commDlgHelpId;
+
         public Form1()
         {
             InitializeComponent();
@@ -76,6 +79,19 @@ namespace WinInteropUtils_Test_App
             }
 
             listView1.EndUpdate();
+
+            _commDlgHelpId = User32.RegisterWindowMessage("commdlg_help");
+        }
+
+        protected override void WndProc(ref Message m)
+        {
+            base.WndProc(ref m);
+
+            if (m.Msg == _commDlgHelpId)
+            {
+                var wnd = new HwndWindow(m.WParam);
+                MessageBox.Show(wnd, "Help requested!", "Help");
+            }
         }
 
         public static string GetTypeName<T>()
@@ -99,6 +115,7 @@ namespace WinInteropUtils_Test_App
                 "Decimal" => "decimal",
                 "Single" => "float",
                 "UInt16" => "ushort",
+                "Byte" => "byte",
                 _ => type.Name
             };
         }
@@ -332,6 +349,39 @@ namespace WinInteropUtils_Test_App
         {
             new WiuWinFormsTestForm().Show(this);
         }
+
+        private const int WM_USER = 0x0400;
+        private const int CDM_MSGBOX = WM_USER + 0; // custom message
+
+        private void colorDialogToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _colordlg ??= new ColorPickerDialog();
+            _colordlg.ShowHelp = true;
+            _colordlg.UseHookProc = true;
+
+            nint dlgHandle = nint.Zero;
+
+            _colordlg.HookProcedure = nuint (nint hDlg, uint uMsg, nuint wParam, nint lParam) =>
+            {
+                switch (uMsg)
+                {
+                    case 0x0110: // WM_INITDIALOG
+                        var focusCtrl = (nint)wParam;
+                        dlgHandle = User32.GetParent(focusCtrl);
+
+                        User32.PostMessage(dlgHandle, CDM_MSGBOX, 0, 0);
+                        break;
+                    case CDM_MSGBOX:
+                        Win32MessageBox.Show(dlgHandle, "Dialog initialized!", "Init", Win32MessageBoxIcon.Info);
+                        break;
+                }
+
+                return 0;
+            };
+
+            _colordlg.Show(Handle);
+            
+        }
     }
 
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
@@ -343,7 +393,6 @@ namespace WinInteropUtils_Test_App
         [MarshalAs(UnmanagedType.LPWStr)]
         public string pszSpec;
     }
-
 
     public class MethodArgumentDescriptor : ICustomTypeDescriptor
     {
@@ -561,5 +610,10 @@ namespace WinInteropUtils_Test_App
 
             return dlg.Hwnd;
         }
+    }
+
+    public class HwndWindow(nint handle) : IWin32Window
+    {
+        public nint Handle => handle;
     }
 }
