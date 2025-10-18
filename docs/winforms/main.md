@@ -1,5 +1,5 @@
 # WinInteropUtils.WinForms
-`WinInteropUtils.WinForms` is a sub-package of WinInteropUtils that provides Windows Forms (WinForms) wrappers for Win32 controls such as track bars, progress bars, or hyperlink controls.
+`WinInteropUtils.WinForms` is a sub-package of WinInteropUtils that provides Windows Forms (WinForms) wrappers for Win32 controls.
 
 ![WinInteropUtils.WinForms demo image](../../images/winforms-demo.png)
 
@@ -7,7 +7,7 @@
 `WinInteropUtils.WinForms` currently has the following control wrappers:
 - [Slider](slider.md) (Win32: `Track Bar`)
 - [ProgressBarEx](progbarex.md) (Win32: `ProgressBar`)
-- [HyperLink](hyperlink.md) (Win32: `SysLink`)
+- [HotKeyBox](hotkeybox.md) (Win32: `HotKey`)
 
 ## What is WinInteropUtils.WinForms for?
 `WinInteropUtils.WinForms` allows you to make better apps with new Win32 controls that are not built-in by default with WinForms or extended versions of the built-in controls that support all the features of the native Win32 control.
@@ -21,7 +21,7 @@ If the controls don't show up in your WinForms designer's toolbox after installa
 2. Inside the dialog, find and check the controls to add. If you need all the controls, make sure you check:
     - Slider
     - ProgressBarEx
-    - HyperLink<br>
+    - HotKeyBox<br>
 
     Make sure that the namespace(s) of the controls you checked are all `FireBlade.WinInteropUtils.WinForms`.
     > [!TIP]
