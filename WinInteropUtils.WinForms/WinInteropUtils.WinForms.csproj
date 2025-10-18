@@ -6,7 +6,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>FireBlade.WinInteropUtils.WinForms</RootNamespace>
-    <AssemblyVersion>0.23</AssemblyVersion>
+    <AssemblyVersion>0.24</AssemblyVersion>
     <FileVersion>0.23</FileVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <Title>WinInteropUtils.WinForms</Title>
@@ -14,7 +14,7 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/FireBlade211/WinInteropUtils</RepositoryUrl>
     <PackageTags>pinvoke;win32;csharp;interop;windows;winforms;dotnet;dotnet8;windowsforms;controls;</PackageTags>
-    <Version>0.23-beta</Version>
+    <Version>0.24-beta</Version>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
