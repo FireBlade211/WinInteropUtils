@@ -1430,6 +1430,216 @@ references:
   commentId: N:FireBlade.WinInteropUtils.Dialogs
   fullName: FireBlade.WinInteropUtils.Dialogs
   nameWithType: FireBlade.WinInteropUtils.Dialogs
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorDialogHookProc
+  name: ColorDialogHookProc
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorDialogHookProc.html
+  commentId: T:FireBlade.WinInteropUtils.Dialogs.ColorDialogHookProc
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorDialogHookProc
+  nameWithType: ColorDialogHookProc
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog
+  name: ColorPickerDialog
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html
+  commentId: T:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog
+  nameWithType: ColorPickerDialog
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.AnyColor
+  name: AnyColor
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_AnyColor
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.AnyColor
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.AnyColor
+  nameWithType: ColorPickerDialog.AnyColor
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.AnyColor*
+  name: AnyColor
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_AnyColor_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.AnyColor
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.AnyColor
+  nameWithType: ColorPickerDialog.AnyColor
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.CustomColors
+  name: CustomColors
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_CustomColors
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.CustomColors
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.CustomColors
+  nameWithType: ColorPickerDialog.CustomColors
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.CustomColors*
+  name: CustomColors
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_CustomColors_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.CustomColors
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.CustomColors
+  nameWithType: ColorPickerDialog.CustomColors
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.DefaultColor
+  name: DefaultColor
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_DefaultColor
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.DefaultColor
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.DefaultColor
+  nameWithType: ColorPickerDialog.DefaultColor
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.DefaultColor*
+  name: DefaultColor
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_DefaultColor_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.DefaultColor
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.DefaultColor
+  nameWithType: ColorPickerDialog.DefaultColor
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.FullOpenMode
+  name: FullOpenMode
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_FullOpenMode
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.FullOpenMode
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.FullOpenMode
+  nameWithType: ColorPickerDialog.FullOpenMode
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.FullOpenMode*
+  name: FullOpenMode
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_FullOpenMode_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.FullOpenMode
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.FullOpenMode
+  nameWithType: ColorPickerDialog.FullOpenMode
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.HookProcedure
+  name: HookProcedure
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_HookProcedure
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.HookProcedure
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.HookProcedure
+  nameWithType: ColorPickerDialog.HookProcedure
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.HookProcedure*
+  name: HookProcedure
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_HookProcedure_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.HookProcedure
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.HookProcedure
+  nameWithType: ColorPickerDialog.HookProcedure
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show
+  name: Show()
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show()
+  nameWithType: ColorPickerDialog.Show()
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog)
+  name: Show(ColorPickerDialog)
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog)
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog)
+  nameWithType: ColorPickerDialog.Show(ColorPickerDialog)
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog,System.IntPtr)
+  name: Show(ColorPickerDialog, nint)
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_System_IntPtr_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog,System.IntPtr)
+  name.vb: Show(ColorPickerDialog, IntPtr)
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog, nint)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog, System.IntPtr)
+  nameWithType: ColorPickerDialog.Show(ColorPickerDialog, nint)
+  nameWithType.vb: ColorPickerDialog.Show(ColorPickerDialog, IntPtr)
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.Drawing.Color)
+  name: Show(Color)
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_System_Drawing_Color_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.Drawing.Color)
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.Drawing.Color)
+  nameWithType: ColorPickerDialog.Show(Color)
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.Drawing.Color,System.Drawing.Color[])
+  name: Show(Color, Color[])
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_System_Drawing_Color_System_Drawing_Color___
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.Drawing.Color,System.Drawing.Color[])
+  name.vb: Show(Color, Color())
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.Drawing.Color, System.Drawing.Color[])
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.Drawing.Color, System.Drawing.Color())
+  nameWithType: ColorPickerDialog.Show(Color, Color[])
+  nameWithType.vb: ColorPickerDialog.Show(Color, Color())
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.IntPtr)
+  name: Show(nint)
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_System_IntPtr_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.IntPtr)
+  name.vb: Show(IntPtr)
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(nint)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.IntPtr)
+  nameWithType: ColorPickerDialog.Show(nint)
+  nameWithType.vb: ColorPickerDialog.Show(IntPtr)
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.IntPtr,System.Drawing.Color)
+  name: Show(nint, Color)
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_System_IntPtr_System_Drawing_Color_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.IntPtr,System.Drawing.Color)
+  name.vb: Show(IntPtr, Color)
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(nint, System.Drawing.Color)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.IntPtr, System.Drawing.Color)
+  nameWithType: ColorPickerDialog.Show(nint, Color)
+  nameWithType.vb: ColorPickerDialog.Show(IntPtr, Color)
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.IntPtr,System.Drawing.Color,System.Drawing.Color[])
+  name: Show(nint, Color, Color[])
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_System_IntPtr_System_Drawing_Color_System_Drawing_Color___
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.IntPtr,System.Drawing.Color,System.Drawing.Color[])
+  name.vb: Show(IntPtr, Color, Color())
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(nint, System.Drawing.Color, System.Drawing.Color[])
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.IntPtr, System.Drawing.Color, System.Drawing.Color())
+  nameWithType: ColorPickerDialog.Show(nint, Color, Color[])
+  nameWithType.vb: ColorPickerDialog.Show(IntPtr, Color, Color())
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show*
+  name: Show
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show
+  nameWithType: ColorPickerDialog.Show
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.ShowHelp
+  name: ShowHelp
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_ShowHelp
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.ShowHelp
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.ShowHelp
+  nameWithType: ColorPickerDialog.ShowHelp
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.ShowHelp*
+  name: ShowHelp
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_ShowHelp_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.ShowHelp
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.ShowHelp
+  nameWithType: ColorPickerDialog.ShowHelp
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.SolidColorsOnly
+  name: SolidColorsOnly
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_SolidColorsOnly
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.SolidColorsOnly
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.SolidColorsOnly
+  nameWithType: ColorPickerDialog.SolidColorsOnly
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.SolidColorsOnly*
+  name: SolidColorsOnly
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_SolidColorsOnly_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.SolidColorsOnly
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.SolidColorsOnly
+  nameWithType: ColorPickerDialog.SolidColorsOnly
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.UseHookProc
+  name: UseHookProc
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_UseHookProc
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.UseHookProc
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.UseHookProc
+  nameWithType: ColorPickerDialog.UseHookProc
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.UseHookProc*
+  name: UseHookProc
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_UseHookProc_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.UseHookProc
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.UseHookProc
+  nameWithType: ColorPickerDialog.UseHookProc
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialogFullOpenMode
+  name: ColorPickerDialogFullOpenMode
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialogFullOpenMode.html
+  commentId: T:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialogFullOpenMode
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialogFullOpenMode
+  nameWithType: ColorPickerDialogFullOpenMode
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialogFullOpenMode.Disabled
+  name: Disabled
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialogFullOpenMode.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialogFullOpenMode_Disabled
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialogFullOpenMode.Disabled
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialogFullOpenMode.Disabled
+  nameWithType: ColorPickerDialogFullOpenMode.Disabled
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialogFullOpenMode.Enabled
+  name: Enabled
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialogFullOpenMode.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialogFullOpenMode_Enabled
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialogFullOpenMode.Enabled
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialogFullOpenMode.Enabled
+  nameWithType: ColorPickerDialogFullOpenMode.Enabled
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialogFullOpenMode.Opened
+  name: Opened
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialogFullOpenMode.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialogFullOpenMode_Opened
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialogFullOpenMode.Opened
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialogFullOpenMode.Opened
+  nameWithType: ColorPickerDialogFullOpenMode.Opened
 - uid: FireBlade.WinInteropUtils.Dialogs.DialogWindow`2
   name: DialogWindow<TShowReturn, TSelf>
   href: api/FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html
@@ -1439,6 +1649,24 @@ references:
   fullName.vb: FireBlade.WinInteropUtils.Dialogs.DialogWindow(Of TShowReturn, TSelf)
   nameWithType: DialogWindow<TShowReturn, TSelf>
   nameWithType.vb: DialogWindow(Of TShowReturn, TSelf)
+- uid: FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.PackFlags(System.Collections.Generic.Dictionary{System.Int32,System.Boolean})
+  name: PackFlags(Dictionary<int, bool>)
+  href: api/FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_PackFlags_System_Collections_Generic_Dictionary_System_Int32_System_Boolean__
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.PackFlags(System.Collections.Generic.Dictionary{System.Int32,System.Boolean})
+  name.vb: PackFlags(Dictionary(Of Integer, Boolean))
+  fullName: FireBlade.WinInteropUtils.Dialogs.DialogWindow<TShowReturn, TSelf>.PackFlags(System.Collections.Generic.Dictionary<int, bool>)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.DialogWindow(Of TShowReturn, TSelf).PackFlags(System.Collections.Generic.Dictionary(Of Integer, Boolean))
+  nameWithType: DialogWindow<TShowReturn, TSelf>.PackFlags(Dictionary<int, bool>)
+  nameWithType.vb: DialogWindow(Of TShowReturn, TSelf).PackFlags(Dictionary(Of Integer, Boolean))
+- uid: FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.PackFlags*
+  name: PackFlags
+  href: api/FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_PackFlags_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.PackFlags
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.DialogWindow<TShowReturn, TSelf>.PackFlags
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.DialogWindow(Of TShowReturn, TSelf).PackFlags
+  nameWithType: DialogWindow<TShowReturn, TSelf>.PackFlags
+  nameWithType.vb: DialogWindow(Of TShowReturn, TSelf).PackFlags
 - uid: FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show
   name: Show()
   href: api/FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show
@@ -1482,6 +1710,14 @@ references:
   fullName.vb: FireBlade.WinInteropUtils.Dialogs.DialogWindow(Of TShowReturn, TSelf).Show
   nameWithType: DialogWindow<TShowReturn, TSelf>.Show
   nameWithType.vb: DialogWindow(Of TShowReturn, TSelf).Show
+- uid: FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.WM_INITDIALOG
+  name: WM_INITDIALOG
+  href: api/FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_WM_INITDIALOG
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.WM_INITDIALOG
+  fullName: FireBlade.WinInteropUtils.Dialogs.DialogWindow<TShowReturn, TSelf>.WM_INITDIALOG
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.DialogWindow(Of TShowReturn, TSelf).WM_INITDIALOG
+  nameWithType: DialogWindow<TShowReturn, TSelf>.WM_INITDIALOG
+  nameWithType.vb: DialogWindow(Of TShowReturn, TSelf).WM_INITDIALOG
 - uid: FireBlade.WinInteropUtils.Dialogs.HelpContext
   name: HelpContext
   href: api/FireBlade.WinInteropUtils.Dialogs.HelpContext.html
@@ -19823,6 +20059,58 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.Macros.HResultFromWin32
   nameWithType: Macros.HResultFromWin32
+- uid: FireBlade.WinInteropUtils.Macros.HighByte(System.Decimal)
+  name: HighByte(decimal)
+  href: api/FireBlade.WinInteropUtils.Macros.html#FireBlade_WinInteropUtils_Macros_HighByte_System_Decimal_
+  commentId: M:FireBlade.WinInteropUtils.Macros.HighByte(System.Decimal)
+  name.vb: HighByte(Decimal)
+  fullName: FireBlade.WinInteropUtils.Macros.HighByte(decimal)
+  fullName.vb: FireBlade.WinInteropUtils.Macros.HighByte(Decimal)
+  nameWithType: Macros.HighByte(decimal)
+  nameWithType.vb: Macros.HighByte(Decimal)
+- uid: FireBlade.WinInteropUtils.Macros.HighByte(System.Double)
+  name: HighByte(double)
+  href: api/FireBlade.WinInteropUtils.Macros.html#FireBlade_WinInteropUtils_Macros_HighByte_System_Double_
+  commentId: M:FireBlade.WinInteropUtils.Macros.HighByte(System.Double)
+  name.vb: HighByte(Double)
+  fullName: FireBlade.WinInteropUtils.Macros.HighByte(double)
+  fullName.vb: FireBlade.WinInteropUtils.Macros.HighByte(Double)
+  nameWithType: Macros.HighByte(double)
+  nameWithType.vb: Macros.HighByte(Double)
+- uid: FireBlade.WinInteropUtils.Macros.HighByte(System.Int32)
+  name: HighByte(int)
+  href: api/FireBlade.WinInteropUtils.Macros.html#FireBlade_WinInteropUtils_Macros_HighByte_System_Int32_
+  commentId: M:FireBlade.WinInteropUtils.Macros.HighByte(System.Int32)
+  name.vb: HighByte(Integer)
+  fullName: FireBlade.WinInteropUtils.Macros.HighByte(int)
+  fullName.vb: FireBlade.WinInteropUtils.Macros.HighByte(Integer)
+  nameWithType: Macros.HighByte(int)
+  nameWithType.vb: Macros.HighByte(Integer)
+- uid: FireBlade.WinInteropUtils.Macros.HighByte(System.Single)
+  name: HighByte(float)
+  href: api/FireBlade.WinInteropUtils.Macros.html#FireBlade_WinInteropUtils_Macros_HighByte_System_Single_
+  commentId: M:FireBlade.WinInteropUtils.Macros.HighByte(System.Single)
+  name.vb: HighByte(Single)
+  fullName: FireBlade.WinInteropUtils.Macros.HighByte(float)
+  fullName.vb: FireBlade.WinInteropUtils.Macros.HighByte(Single)
+  nameWithType: Macros.HighByte(float)
+  nameWithType.vb: Macros.HighByte(Single)
+- uid: FireBlade.WinInteropUtils.Macros.HighByte*
+  name: HighByte
+  href: api/FireBlade.WinInteropUtils.Macros.html#FireBlade_WinInteropUtils_Macros_HighByte_
+  commentId: Overload:FireBlade.WinInteropUtils.Macros.HighByte
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Macros.HighByte
+  nameWithType: Macros.HighByte
+- uid: FireBlade.WinInteropUtils.Macros.HighByte``1(``0)
+  name: HighByte<TNum>(TNum)
+  href: api/FireBlade.WinInteropUtils.Macros.html#FireBlade_WinInteropUtils_Macros_HighByte__1___0_
+  commentId: M:FireBlade.WinInteropUtils.Macros.HighByte``1(``0)
+  name.vb: HighByte(Of TNum)(TNum)
+  fullName: FireBlade.WinInteropUtils.Macros.HighByte<TNum>(TNum)
+  fullName.vb: FireBlade.WinInteropUtils.Macros.HighByte(Of TNum)(TNum)
+  nameWithType: Macros.HighByte<TNum>(TNum)
+  nameWithType.vb: Macros.HighByte(Of TNum)(TNum)
 - uid: FireBlade.WinInteropUtils.Macros.HighWord(System.Decimal)
   name: HighWord(decimal)
   href: api/FireBlade.WinInteropUtils.Macros.html#FireBlade_WinInteropUtils_Macros_HighWord_System_Decimal_
@@ -19875,6 +20163,58 @@ references:
   fullName.vb: FireBlade.WinInteropUtils.Macros.HighWord(Of TNum)(TNum)
   nameWithType: Macros.HighWord<TNum>(TNum)
   nameWithType.vb: Macros.HighWord(Of TNum)(TNum)
+- uid: FireBlade.WinInteropUtils.Macros.LowByte(System.Decimal)
+  name: LowByte(decimal)
+  href: api/FireBlade.WinInteropUtils.Macros.html#FireBlade_WinInteropUtils_Macros_LowByte_System_Decimal_
+  commentId: M:FireBlade.WinInteropUtils.Macros.LowByte(System.Decimal)
+  name.vb: LowByte(Decimal)
+  fullName: FireBlade.WinInteropUtils.Macros.LowByte(decimal)
+  fullName.vb: FireBlade.WinInteropUtils.Macros.LowByte(Decimal)
+  nameWithType: Macros.LowByte(decimal)
+  nameWithType.vb: Macros.LowByte(Decimal)
+- uid: FireBlade.WinInteropUtils.Macros.LowByte(System.Double)
+  name: LowByte(double)
+  href: api/FireBlade.WinInteropUtils.Macros.html#FireBlade_WinInteropUtils_Macros_LowByte_System_Double_
+  commentId: M:FireBlade.WinInteropUtils.Macros.LowByte(System.Double)
+  name.vb: LowByte(Double)
+  fullName: FireBlade.WinInteropUtils.Macros.LowByte(double)
+  fullName.vb: FireBlade.WinInteropUtils.Macros.LowByte(Double)
+  nameWithType: Macros.LowByte(double)
+  nameWithType.vb: Macros.LowByte(Double)
+- uid: FireBlade.WinInteropUtils.Macros.LowByte(System.Int32)
+  name: LowByte(int)
+  href: api/FireBlade.WinInteropUtils.Macros.html#FireBlade_WinInteropUtils_Macros_LowByte_System_Int32_
+  commentId: M:FireBlade.WinInteropUtils.Macros.LowByte(System.Int32)
+  name.vb: LowByte(Integer)
+  fullName: FireBlade.WinInteropUtils.Macros.LowByte(int)
+  fullName.vb: FireBlade.WinInteropUtils.Macros.LowByte(Integer)
+  nameWithType: Macros.LowByte(int)
+  nameWithType.vb: Macros.LowByte(Integer)
+- uid: FireBlade.WinInteropUtils.Macros.LowByte(System.Single)
+  name: LowByte(float)
+  href: api/FireBlade.WinInteropUtils.Macros.html#FireBlade_WinInteropUtils_Macros_LowByte_System_Single_
+  commentId: M:FireBlade.WinInteropUtils.Macros.LowByte(System.Single)
+  name.vb: LowByte(Single)
+  fullName: FireBlade.WinInteropUtils.Macros.LowByte(float)
+  fullName.vb: FireBlade.WinInteropUtils.Macros.LowByte(Single)
+  nameWithType: Macros.LowByte(float)
+  nameWithType.vb: Macros.LowByte(Single)
+- uid: FireBlade.WinInteropUtils.Macros.LowByte*
+  name: LowByte
+  href: api/FireBlade.WinInteropUtils.Macros.html#FireBlade_WinInteropUtils_Macros_LowByte_
+  commentId: Overload:FireBlade.WinInteropUtils.Macros.LowByte
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Macros.LowByte
+  nameWithType: Macros.LowByte
+- uid: FireBlade.WinInteropUtils.Macros.LowByte``1(``0)
+  name: LowByte<TNum>(TNum)
+  href: api/FireBlade.WinInteropUtils.Macros.html#FireBlade_WinInteropUtils_Macros_LowByte__1___0_
+  commentId: M:FireBlade.WinInteropUtils.Macros.LowByte``1(``0)
+  name.vb: LowByte(Of TNum)(TNum)
+  fullName: FireBlade.WinInteropUtils.Macros.LowByte<TNum>(TNum)
+  fullName.vb: FireBlade.WinInteropUtils.Macros.LowByte(Of TNum)(TNum)
+  nameWithType: Macros.LowByte<TNum>(TNum)
+  nameWithType.vb: Macros.LowByte(Of TNum)(TNum)
 - uid: FireBlade.WinInteropUtils.Macros.LowWord(System.Decimal)
   name: LowWord(decimal)
   href: api/FireBlade.WinInteropUtils.Macros.html#FireBlade_WinInteropUtils_Macros_LowWord_System_Decimal_
@@ -21024,6 +21364,22 @@ references:
   commentId: T:FireBlade.WinInteropUtils.User32
   fullName: FireBlade.WinInteropUtils.User32
   nameWithType: User32
+- uid: FireBlade.WinInteropUtils.User32.GetParent(System.IntPtr)
+  name: GetParent(nint)
+  href: api/FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_GetParent_System_IntPtr_
+  commentId: M:FireBlade.WinInteropUtils.User32.GetParent(System.IntPtr)
+  name.vb: GetParent(IntPtr)
+  fullName: FireBlade.WinInteropUtils.User32.GetParent(nint)
+  fullName.vb: FireBlade.WinInteropUtils.User32.GetParent(System.IntPtr)
+  nameWithType: User32.GetParent(nint)
+  nameWithType.vb: User32.GetParent(IntPtr)
+- uid: FireBlade.WinInteropUtils.User32.GetParent*
+  name: GetParent
+  href: api/FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_GetParent_
+  commentId: Overload:FireBlade.WinInteropUtils.User32.GetParent
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.User32.GetParent
+  nameWithType: User32.GetParent
 - uid: FireBlade.WinInteropUtils.User32.GetTitleBarInfo(System.IntPtr)
   name: GetTitleBarInfo(nint)
   href: api/FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_GetTitleBarInfo_System_IntPtr_
@@ -21110,6 +21466,38 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.User32.IsGUIThread
   nameWithType: User32.IsGUIThread
+- uid: FireBlade.WinInteropUtils.User32.PostMessage(System.IntPtr,System.UInt32,System.UIntPtr,System.IntPtr)
+  name: PostMessage(nint, uint, nuint, nint)
+  href: api/FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_PostMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_IntPtr_
+  commentId: M:FireBlade.WinInteropUtils.User32.PostMessage(System.IntPtr,System.UInt32,System.UIntPtr,System.IntPtr)
+  name.vb: PostMessage(IntPtr, UInteger, UIntPtr, IntPtr)
+  fullName: FireBlade.WinInteropUtils.User32.PostMessage(nint, uint, nuint, nint)
+  fullName.vb: FireBlade.WinInteropUtils.User32.PostMessage(System.IntPtr, UInteger, System.UIntPtr, System.IntPtr)
+  nameWithType: User32.PostMessage(nint, uint, nuint, nint)
+  nameWithType.vb: User32.PostMessage(IntPtr, UInteger, UIntPtr, IntPtr)
+- uid: FireBlade.WinInteropUtils.User32.PostMessage*
+  name: PostMessage
+  href: api/FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_PostMessage_
+  commentId: Overload:FireBlade.WinInteropUtils.User32.PostMessage
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.User32.PostMessage
+  nameWithType: User32.PostMessage
+- uid: FireBlade.WinInteropUtils.User32.RegisterWindowMessage(System.String)
+  name: RegisterWindowMessage(string)
+  href: api/FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_RegisterWindowMessage_System_String_
+  commentId: M:FireBlade.WinInteropUtils.User32.RegisterWindowMessage(System.String)
+  name.vb: RegisterWindowMessage(String)
+  fullName: FireBlade.WinInteropUtils.User32.RegisterWindowMessage(string)
+  fullName.vb: FireBlade.WinInteropUtils.User32.RegisterWindowMessage(String)
+  nameWithType: User32.RegisterWindowMessage(string)
+  nameWithType.vb: User32.RegisterWindowMessage(String)
+- uid: FireBlade.WinInteropUtils.User32.RegisterWindowMessage*
+  name: RegisterWindowMessage
+  href: api/FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_RegisterWindowMessage_
+  commentId: Overload:FireBlade.WinInteropUtils.User32.RegisterWindowMessage
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.User32.RegisterWindowMessage
+  nameWithType: User32.RegisterWindowMessage
 - uid: FireBlade.WinInteropUtils.User32.SendMessage(System.IntPtr,System.UInt32,System.Boolean,System.Boolean)
   name: SendMessage(nint, uint, bool, bool)
   href: api/FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_Boolean_System_Boolean_
@@ -37723,6 +38111,390 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.WinForms.ComboBoxExItemCollection.RemoveAt
   nameWithType: ComboBoxExItemCollection.RemoveAt
+- uid: FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor
+  name: FlagsEnumEditor
+  href: api/FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.html
+  commentId: T:FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor
+  fullName: FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor
+  nameWithType: FlagsEnumEditor
+- uid: FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)
+  name: EditValue(ITypeDescriptorContext?, IServiceProvider?, object?)
+  href: api/FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.html#FireBlade_WinInteropUtils_WinForms_FlagsEnumEditor_EditValue_System_ComponentModel_ITypeDescriptorContext_System_IServiceProvider_System_Object_
+  commentId: M:FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)
+  name.vb: EditValue(ITypeDescriptorContext, IServiceProvider, Object)
+  fullName: FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.EditValue(System.ComponentModel.ITypeDescriptorContext?, System.IServiceProvider?, object?)
+  fullName.vb: FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.EditValue(System.ComponentModel.ITypeDescriptorContext, System.IServiceProvider, Object)
+  nameWithType: FlagsEnumEditor.EditValue(ITypeDescriptorContext?, IServiceProvider?, object?)
+  nameWithType.vb: FlagsEnumEditor.EditValue(ITypeDescriptorContext, IServiceProvider, Object)
+- uid: FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.EditValue*
+  name: EditValue
+  href: api/FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.html#FireBlade_WinInteropUtils_WinForms_FlagsEnumEditor_EditValue_
+  commentId: Overload:FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.EditValue
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.EditValue
+  nameWithType: FlagsEnumEditor.EditValue
+- uid: FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)
+  name: GetEditStyle(ITypeDescriptorContext?)
+  href: api/FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.html#FireBlade_WinInteropUtils_WinForms_FlagsEnumEditor_GetEditStyle_System_ComponentModel_ITypeDescriptorContext_
+  commentId: M:FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)
+  name.vb: GetEditStyle(ITypeDescriptorContext)
+  fullName: FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext?)
+  fullName.vb: FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)
+  nameWithType: FlagsEnumEditor.GetEditStyle(ITypeDescriptorContext?)
+  nameWithType.vb: FlagsEnumEditor.GetEditStyle(ITypeDescriptorContext)
+- uid: FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.GetEditStyle*
+  name: GetEditStyle
+  href: api/FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.html#FireBlade_WinInteropUtils_WinForms_FlagsEnumEditor_GetEditStyle_
+  commentId: Overload:FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.GetEditStyle
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.GetEditStyle
+  nameWithType: FlagsEnumEditor.GetEditStyle
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox
+  name: HotKeyBox
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html
+  commentId: T:FireBlade.WinInteropUtils.WinForms.HotKeyBox
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox
+  nameWithType: HotKeyBox
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox.#ctor
+  name: HotKeyBox()
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html#FireBlade_WinInteropUtils_WinForms_HotKeyBox__ctor
+  commentId: M:FireBlade.WinInteropUtils.WinForms.HotKeyBox.#ctor
+  name.vb: New()
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox.HotKeyBox()
+  fullName.vb: FireBlade.WinInteropUtils.WinForms.HotKeyBox.New()
+  nameWithType: HotKeyBox.HotKeyBox()
+  nameWithType.vb: HotKeyBox.New()
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox.#ctor*
+  name: HotKeyBox
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html#FireBlade_WinInteropUtils_WinForms_HotKeyBox__ctor_
+  commentId: Overload:FireBlade.WinInteropUtils.WinForms.HotKeyBox.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox.HotKeyBox
+  fullName.vb: FireBlade.WinInteropUtils.WinForms.HotKeyBox.New
+  nameWithType: HotKeyBox.HotKeyBox
+  nameWithType.vb: HotKeyBox.New
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox.CreateParams
+  name: CreateParams
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html#FireBlade_WinInteropUtils_WinForms_HotKeyBox_CreateParams
+  commentId: P:FireBlade.WinInteropUtils.WinForms.HotKeyBox.CreateParams
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox.CreateParams
+  nameWithType: HotKeyBox.CreateParams
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox.CreateParams*
+  name: CreateParams
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html#FireBlade_WinInteropUtils_WinForms_HotKeyBox_CreateParams_
+  commentId: Overload:FireBlade.WinInteropUtils.WinForms.HotKeyBox.CreateParams
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox.CreateParams
+  nameWithType: HotKeyBox.CreateParams
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox.Dispose(System.Boolean)
+  name: Dispose(bool)
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html#FireBlade_WinInteropUtils_WinForms_HotKeyBox_Dispose_System_Boolean_
+  commentId: M:FireBlade.WinInteropUtils.WinForms.HotKeyBox.Dispose(System.Boolean)
+  name.vb: Dispose(Boolean)
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox.Dispose(bool)
+  fullName.vb: FireBlade.WinInteropUtils.WinForms.HotKeyBox.Dispose(Boolean)
+  nameWithType: HotKeyBox.Dispose(bool)
+  nameWithType.vb: HotKeyBox.Dispose(Boolean)
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox.Dispose*
+  name: Dispose
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html#FireBlade_WinInteropUtils_WinForms_HotKeyBox_Dispose_
+  commentId: Overload:FireBlade.WinInteropUtils.WinForms.HotKeyBox.Dispose
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox.Dispose
+  nameWithType: HotKeyBox.Dispose
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox.FallbackValue
+  name: FallbackValue
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html#FireBlade_WinInteropUtils_WinForms_HotKeyBox_FallbackValue
+  commentId: P:FireBlade.WinInteropUtils.WinForms.HotKeyBox.FallbackValue
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox.FallbackValue
+  nameWithType: HotKeyBox.FallbackValue
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox.FallbackValue*
+  name: FallbackValue
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html#FireBlade_WinInteropUtils_WinForms_HotKeyBox_FallbackValue_
+  commentId: Overload:FireBlade.WinInteropUtils.WinForms.HotKeyBox.FallbackValue
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox.FallbackValue
+  nameWithType: HotKeyBox.FallbackValue
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox.HotKeyChanged
+  name: HotKeyChanged
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html#FireBlade_WinInteropUtils_WinForms_HotKeyBox_HotKeyChanged
+  commentId: E:FireBlade.WinInteropUtils.WinForms.HotKeyBox.HotKeyChanged
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox.HotKeyChanged
+  nameWithType: HotKeyBox.HotKeyChanged
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox.IsExKey
+  name: IsExKey
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html#FireBlade_WinInteropUtils_WinForms_HotKeyBox_IsExKey
+  commentId: P:FireBlade.WinInteropUtils.WinForms.HotKeyBox.IsExKey
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox.IsExKey
+  nameWithType: HotKeyBox.IsExKey
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox.IsExKey*
+  name: IsExKey
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html#FireBlade_WinInteropUtils_WinForms_HotKeyBox_IsExKey_
+  commentId: Overload:FireBlade.WinInteropUtils.WinForms.HotKeyBox.IsExKey
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox.IsExKey
+  nameWithType: HotKeyBox.IsExKey
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox.Keys
+  name: Keys
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html#FireBlade_WinInteropUtils_WinForms_HotKeyBox_Keys
+  commentId: P:FireBlade.WinInteropUtils.WinForms.HotKeyBox.Keys
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox.Keys
+  nameWithType: HotKeyBox.Keys
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox.Keys*
+  name: Keys
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html#FireBlade_WinInteropUtils_WinForms_HotKeyBox_Keys_
+  commentId: Overload:FireBlade.WinInteropUtils.WinForms.HotKeyBox.Keys
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox.Keys
+  nameWithType: HotKeyBox.Keys
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox.OnHandleCreated(System.EventArgs)
+  name: OnHandleCreated(EventArgs)
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html#FireBlade_WinInteropUtils_WinForms_HotKeyBox_OnHandleCreated_System_EventArgs_
+  commentId: M:FireBlade.WinInteropUtils.WinForms.HotKeyBox.OnHandleCreated(System.EventArgs)
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox.OnHandleCreated(System.EventArgs)
+  nameWithType: HotKeyBox.OnHandleCreated(EventArgs)
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox.OnHandleCreated*
+  name: OnHandleCreated
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html#FireBlade_WinInteropUtils_WinForms_HotKeyBox_OnHandleCreated_
+  commentId: Overload:FireBlade.WinInteropUtils.WinForms.HotKeyBox.OnHandleCreated
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox.OnHandleCreated
+  nameWithType: HotKeyBox.OnHandleCreated
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox.Rules
+  name: Rules
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html#FireBlade_WinInteropUtils_WinForms_HotKeyBox_Rules
+  commentId: P:FireBlade.WinInteropUtils.WinForms.HotKeyBox.Rules
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox.Rules
+  nameWithType: HotKeyBox.Rules
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox.Rules*
+  name: Rules
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html#FireBlade_WinInteropUtils_WinForms_HotKeyBox_Rules_
+  commentId: Overload:FireBlade.WinInteropUtils.WinForms.HotKeyBox.Rules
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox.Rules
+  nameWithType: HotKeyBox.Rules
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox.WndProc(System.Windows.Forms.Message@)
+  name: WndProc(ref Message)
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html#FireBlade_WinInteropUtils_WinForms_HotKeyBox_WndProc_System_Windows_Forms_Message__
+  commentId: M:FireBlade.WinInteropUtils.WinForms.HotKeyBox.WndProc(System.Windows.Forms.Message@)
+  name.vb: WndProc(Message)
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox.WndProc(ref System.Windows.Forms.Message)
+  fullName.vb: FireBlade.WinInteropUtils.WinForms.HotKeyBox.WndProc(System.Windows.Forms.Message)
+  nameWithType: HotKeyBox.WndProc(ref Message)
+  nameWithType.vb: HotKeyBox.WndProc(Message)
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox.WndProc*
+  name: WndProc
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html#FireBlade_WinInteropUtils_WinForms_HotKeyBox_WndProc_
+  commentId: Overload:FireBlade.WinInteropUtils.WinForms.HotKeyBox.WndProc
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox.WndProc
+  nameWithType: HotKeyBox.WndProc
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers
+  name: HotKeyBoxModifiers
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.html
+  commentId: T:FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers
+  nameWithType: HotKeyBoxModifiers
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.Alt
+  name: Alt
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.html#FireBlade_WinInteropUtils_WinForms_HotKeyBoxModifiers_Alt
+  commentId: F:FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.Alt
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.Alt
+  nameWithType: HotKeyBoxModifiers.Alt
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.Control
+  name: Control
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.html#FireBlade_WinInteropUtils_WinForms_HotKeyBoxModifiers_Control
+  commentId: F:FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.Control
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.Control
+  nameWithType: HotKeyBoxModifiers.Control
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.Ctrl
+  name: Ctrl
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.html#FireBlade_WinInteropUtils_WinForms_HotKeyBoxModifiers_Ctrl
+  commentId: F:FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.Ctrl
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.Ctrl
+  nameWithType: HotKeyBoxModifiers.Ctrl
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.Extended
+  name: Extended
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.html#FireBlade_WinInteropUtils_WinForms_HotKeyBoxModifiers_Extended
+  commentId: F:FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.Extended
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.Extended
+  nameWithType: HotKeyBoxModifiers.Extended
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.None
+  name: None
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.html#FireBlade_WinInteropUtils_WinForms_HotKeyBoxModifiers_None
+  commentId: F:FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.None
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.None
+  nameWithType: HotKeyBoxModifiers.None
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.Shift
+  name: Shift
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.html#FireBlade_WinInteropUtils_WinForms_HotKeyBoxModifiers_Shift
+  commentId: F:FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.Shift
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.Shift
+  nameWithType: HotKeyBoxModifiers.Shift
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules
+  name: HotKeyBoxRules
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.html
+  commentId: T:FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules
+  nameWithType: HotKeyBoxRules
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.Alt
+  name: Alt
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.html#FireBlade_WinInteropUtils_WinForms_HotKeyBoxRules_Alt
+  commentId: F:FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.Alt
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.Alt
+  nameWithType: HotKeyBoxRules.Alt
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.Control
+  name: Control
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.html#FireBlade_WinInteropUtils_WinForms_HotKeyBoxRules_Control
+  commentId: F:FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.Control
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.Control
+  nameWithType: HotKeyBoxRules.Control
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.Ctrl
+  name: Ctrl
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.html#FireBlade_WinInteropUtils_WinForms_HotKeyBoxRules_Ctrl
+  commentId: F:FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.Ctrl
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.Ctrl
+  nameWithType: HotKeyBoxRules.Ctrl
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.CtrlAlt
+  name: CtrlAlt
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.html#FireBlade_WinInteropUtils_WinForms_HotKeyBoxRules_CtrlAlt
+  commentId: F:FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.CtrlAlt
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.CtrlAlt
+  nameWithType: HotKeyBoxRules.CtrlAlt
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.None
+  name: None
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.html#FireBlade_WinInteropUtils_WinForms_HotKeyBoxRules_None
+  commentId: F:FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.None
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.None
+  nameWithType: HotKeyBoxRules.None
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.Shift
+  name: Shift
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.html#FireBlade_WinInteropUtils_WinForms_HotKeyBoxRules_Shift
+  commentId: F:FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.Shift
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.Shift
+  nameWithType: HotKeyBoxRules.Shift
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.ShiftAlt
+  name: ShiftAlt
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.html#FireBlade_WinInteropUtils_WinForms_HotKeyBoxRules_ShiftAlt
+  commentId: F:FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.ShiftAlt
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.ShiftAlt
+  nameWithType: HotKeyBoxRules.ShiftAlt
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.ShiftCtrl
+  name: ShiftCtrl
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.html#FireBlade_WinInteropUtils_WinForms_HotKeyBoxRules_ShiftCtrl
+  commentId: F:FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.ShiftCtrl
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.ShiftCtrl
+  nameWithType: HotKeyBoxRules.ShiftCtrl
+- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.ShiftCtrlAlt
+  name: ShiftCtrlAlt
+  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.html#FireBlade_WinInteropUtils_WinForms_HotKeyBoxRules_ShiftCtrlAlt
+  commentId: F:FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.ShiftCtrlAlt
+  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.ShiftCtrlAlt
+  nameWithType: HotKeyBoxRules.ShiftCtrlAlt
+- uid: FireBlade.WinInteropUtils.WinForms.HyperLink
+  name: HyperLink
+  href: api/FireBlade.WinInteropUtils.WinForms.HyperLink.html
+  commentId: T:FireBlade.WinInteropUtils.WinForms.HyperLink
+  fullName: FireBlade.WinInteropUtils.WinForms.HyperLink
+  nameWithType: HyperLink
+- uid: FireBlade.WinInteropUtils.WinForms.HyperLink.#ctor
+  name: HyperLink()
+  href: api/FireBlade.WinInteropUtils.WinForms.HyperLink.html#FireBlade_WinInteropUtils_WinForms_HyperLink__ctor
+  commentId: M:FireBlade.WinInteropUtils.WinForms.HyperLink.#ctor
+  name.vb: New()
+  fullName: FireBlade.WinInteropUtils.WinForms.HyperLink.HyperLink()
+  fullName.vb: FireBlade.WinInteropUtils.WinForms.HyperLink.New()
+  nameWithType: HyperLink.HyperLink()
+  nameWithType.vb: HyperLink.New()
+- uid: FireBlade.WinInteropUtils.WinForms.HyperLink.#ctor*
+  name: HyperLink
+  href: api/FireBlade.WinInteropUtils.WinForms.HyperLink.html#FireBlade_WinInteropUtils_WinForms_HyperLink__ctor_
+  commentId: Overload:FireBlade.WinInteropUtils.WinForms.HyperLink.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: FireBlade.WinInteropUtils.WinForms.HyperLink.HyperLink
+  fullName.vb: FireBlade.WinInteropUtils.WinForms.HyperLink.New
+  nameWithType: HyperLink.HyperLink
+  nameWithType.vb: HyperLink.New
+- uid: FireBlade.WinInteropUtils.WinForms.HyperLink.CreateParams
+  name: CreateParams
+  href: api/FireBlade.WinInteropUtils.WinForms.HyperLink.html#FireBlade_WinInteropUtils_WinForms_HyperLink_CreateParams
+  commentId: P:FireBlade.WinInteropUtils.WinForms.HyperLink.CreateParams
+  fullName: FireBlade.WinInteropUtils.WinForms.HyperLink.CreateParams
+  nameWithType: HyperLink.CreateParams
+- uid: FireBlade.WinInteropUtils.WinForms.HyperLink.CreateParams*
+  name: CreateParams
+  href: api/FireBlade.WinInteropUtils.WinForms.HyperLink.html#FireBlade_WinInteropUtils_WinForms_HyperLink_CreateParams_
+  commentId: Overload:FireBlade.WinInteropUtils.WinForms.HyperLink.CreateParams
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinForms.HyperLink.CreateParams
+  nameWithType: HyperLink.CreateParams
+- uid: FireBlade.WinInteropUtils.WinForms.HyperLink.Dispose(System.Boolean)
+  name: Dispose(bool)
+  href: api/FireBlade.WinInteropUtils.WinForms.HyperLink.html#FireBlade_WinInteropUtils_WinForms_HyperLink_Dispose_System_Boolean_
+  commentId: M:FireBlade.WinInteropUtils.WinForms.HyperLink.Dispose(System.Boolean)
+  name.vb: Dispose(Boolean)
+  fullName: FireBlade.WinInteropUtils.WinForms.HyperLink.Dispose(bool)
+  fullName.vb: FireBlade.WinInteropUtils.WinForms.HyperLink.Dispose(Boolean)
+  nameWithType: HyperLink.Dispose(bool)
+  nameWithType.vb: HyperLink.Dispose(Boolean)
+- uid: FireBlade.WinInteropUtils.WinForms.HyperLink.Dispose*
+  name: Dispose
+  href: api/FireBlade.WinInteropUtils.WinForms.HyperLink.html#FireBlade_WinInteropUtils_WinForms_HyperLink_Dispose_
+  commentId: Overload:FireBlade.WinInteropUtils.WinForms.HyperLink.Dispose
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinForms.HyperLink.Dispose
+  nameWithType: HyperLink.Dispose
+- uid: FireBlade.WinInteropUtils.WinForms.HyperLink.Text
+  name: Text
+  href: api/FireBlade.WinInteropUtils.WinForms.HyperLink.html#FireBlade_WinInteropUtils_WinForms_HyperLink_Text
+  commentId: P:FireBlade.WinInteropUtils.WinForms.HyperLink.Text
+  fullName: FireBlade.WinInteropUtils.WinForms.HyperLink.Text
+  nameWithType: HyperLink.Text
+- uid: FireBlade.WinInteropUtils.WinForms.HyperLink.Text*
+  name: Text
+  href: api/FireBlade.WinInteropUtils.WinForms.HyperLink.html#FireBlade_WinInteropUtils_WinForms_HyperLink_Text_
+  commentId: Overload:FireBlade.WinInteropUtils.WinForms.HyperLink.Text
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinForms.HyperLink.Text
+  nameWithType: HyperLink.Text
+- uid: FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState
+  name: HyperLinkLinkState
+  href: api/FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.html
+  commentId: T:FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState
+  fullName: FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState
+  nameWithType: HyperLinkLinkState
+- uid: FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.DefaultColors
+  name: DefaultColors
+  href: api/FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.html#FireBlade_WinInteropUtils_WinForms_HyperLinkLinkState_DefaultColors
+  commentId: F:FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.DefaultColors
+  fullName: FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.DefaultColors
+  nameWithType: HyperLinkLinkState.DefaultColors
+- uid: FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.Enabled
+  name: Enabled
+  href: api/FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.html#FireBlade_WinInteropUtils_WinForms_HyperLinkLinkState_Enabled
+  commentId: F:FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.Enabled
+  fullName: FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.Enabled
+  nameWithType: HyperLinkLinkState.Enabled
+- uid: FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.Focused
+  name: Focused
+  href: api/FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.html#FireBlade_WinInteropUtils_WinForms_HyperLinkLinkState_Focused
+  commentId: F:FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.Focused
+  fullName: FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.Focused
+  nameWithType: HyperLinkLinkState.Focused
+- uid: FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.HotTrack
+  name: HotTrack
+  href: api/FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.html#FireBlade_WinInteropUtils_WinForms_HyperLinkLinkState_HotTrack
+  commentId: F:FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.HotTrack
+  fullName: FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.HotTrack
+  nameWithType: HyperLinkLinkState.HotTrack
+- uid: FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.Visited
+  name: Visited
+  href: api/FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.html#FireBlade_WinInteropUtils_WinForms_HyperLinkLinkState_Visited
+  commentId: F:FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.Visited
+  fullName: FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.Visited
+  nameWithType: HyperLinkLinkState.Visited
 - uid: FireBlade.WinInteropUtils.WinForms.ProgressBarEx
   name: ProgressBarEx
   href: api/FireBlade.WinInteropUtils.WinForms.ProgressBarEx.html
@@ -38293,19 +39065,6 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.WinForms.Slider.OnHandleCreated
   nameWithType: Slider.OnHandleCreated
-- uid: FireBlade.WinInteropUtils.WinForms.Slider.OnNotifyMessage(System.Windows.Forms.Message)
-  name: OnNotifyMessage(Message)
-  href: api/FireBlade.WinInteropUtils.WinForms.Slider.html#FireBlade_WinInteropUtils_WinForms_Slider_OnNotifyMessage_System_Windows_Forms_Message_
-  commentId: M:FireBlade.WinInteropUtils.WinForms.Slider.OnNotifyMessage(System.Windows.Forms.Message)
-  fullName: FireBlade.WinInteropUtils.WinForms.Slider.OnNotifyMessage(System.Windows.Forms.Message)
-  nameWithType: Slider.OnNotifyMessage(Message)
-- uid: FireBlade.WinInteropUtils.WinForms.Slider.OnNotifyMessage*
-  name: OnNotifyMessage
-  href: api/FireBlade.WinInteropUtils.WinForms.Slider.html#FireBlade_WinInteropUtils_WinForms_Slider_OnNotifyMessage_
-  commentId: Overload:FireBlade.WinInteropUtils.WinForms.Slider.OnNotifyMessage
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.WinForms.Slider.OnNotifyMessage
-  nameWithType: Slider.OnNotifyMessage
 - uid: FireBlade.WinInteropUtils.WinForms.Slider.Orientation
   name: Orientation
   href: api/FireBlade.WinInteropUtils.WinForms.Slider.html#FireBlade_WinInteropUtils_WinForms_Slider_Orientation
@@ -38514,12 +39273,34 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.WinForms.Slider.Value
   nameWithType: Slider.Value
+- uid: FireBlade.WinInteropUtils.WinForms.Slider.ValueChanging
+  name: ValueChanging
+  href: api/FireBlade.WinInteropUtils.WinForms.Slider.html#FireBlade_WinInteropUtils_WinForms_Slider_ValueChanging
+  commentId: E:FireBlade.WinInteropUtils.WinForms.Slider.ValueChanging
+  fullName: FireBlade.WinInteropUtils.WinForms.Slider.ValueChanging
+  nameWithType: Slider.ValueChanging
 - uid: FireBlade.WinInteropUtils.WinForms.Slider.VerticalScroll
   name: VerticalScroll
   href: api/FireBlade.WinInteropUtils.WinForms.Slider.html#FireBlade_WinInteropUtils_WinForms_Slider_VerticalScroll
   commentId: E:FireBlade.WinInteropUtils.WinForms.Slider.VerticalScroll
   fullName: FireBlade.WinInteropUtils.WinForms.Slider.VerticalScroll
   nameWithType: Slider.VerticalScroll
+- uid: FireBlade.WinInteropUtils.WinForms.Slider.WndProc(System.Windows.Forms.Message@)
+  name: WndProc(ref Message)
+  href: api/FireBlade.WinInteropUtils.WinForms.Slider.html#FireBlade_WinInteropUtils_WinForms_Slider_WndProc_System_Windows_Forms_Message__
+  commentId: M:FireBlade.WinInteropUtils.WinForms.Slider.WndProc(System.Windows.Forms.Message@)
+  name.vb: WndProc(Message)
+  fullName: FireBlade.WinInteropUtils.WinForms.Slider.WndProc(ref System.Windows.Forms.Message)
+  fullName.vb: FireBlade.WinInteropUtils.WinForms.Slider.WndProc(System.Windows.Forms.Message)
+  nameWithType: Slider.WndProc(ref Message)
+  nameWithType.vb: Slider.WndProc(Message)
+- uid: FireBlade.WinInteropUtils.WinForms.Slider.WndProc*
+  name: WndProc
+  href: api/FireBlade.WinInteropUtils.WinForms.Slider.html#FireBlade_WinInteropUtils_WinForms_Slider_WndProc_
+  commentId: Overload:FireBlade.WinInteropUtils.WinForms.Slider.WndProc
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinForms.Slider.WndProc
+  nameWithType: Slider.WndProc
 - uid: FireBlade.WinInteropUtils.WinForms.SliderActionList
   name: SliderActionList
   href: api/FireBlade.WinInteropUtils.WinForms.SliderActionList.html
@@ -38762,6 +39543,38 @@ references:
   commentId: F:FireBlade.WinInteropUtils.WinForms.SliderValueChangeReason.Top
   fullName: FireBlade.WinInteropUtils.WinForms.SliderValueChangeReason.Top
   nameWithType: SliderValueChangeReason.Top
+- uid: FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs
+  name: SliderValueChangingEventArgs
+  href: api/FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs.html
+  commentId: T:FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs
+  fullName: FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs
+  nameWithType: SliderValueChangingEventArgs
+- uid: FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs.NewValue
+  name: NewValue
+  href: api/FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs.html#FireBlade_WinInteropUtils_WinForms_SliderValueChangingEventArgs_NewValue
+  commentId: P:FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs.NewValue
+  fullName: FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs.NewValue
+  nameWithType: SliderValueChangingEventArgs.NewValue
+- uid: FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs.NewValue*
+  name: NewValue
+  href: api/FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs.html#FireBlade_WinInteropUtils_WinForms_SliderValueChangingEventArgs_NewValue_
+  commentId: Overload:FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs.NewValue
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs.NewValue
+  nameWithType: SliderValueChangingEventArgs.NewValue
+- uid: FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs.Reason
+  name: Reason
+  href: api/FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs.html#FireBlade_WinInteropUtils_WinForms_SliderValueChangingEventArgs_Reason
+  commentId: P:FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs.Reason
+  fullName: FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs.Reason
+  nameWithType: SliderValueChangingEventArgs.Reason
+- uid: FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs.Reason*
+  name: Reason
+  href: api/FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs.html#FireBlade_WinInteropUtils_WinForms_SliderValueChangingEventArgs_Reason_
+  commentId: Overload:FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs.Reason
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs.Reason
+  nameWithType: SliderValueChangingEventArgs.Reason
 - uid: FireBlade.WinInteropUtils.WindowState
   name: WindowState
   href: api/FireBlade.WinInteropUtils.WindowState.html

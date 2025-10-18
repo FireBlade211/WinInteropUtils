@@ -153,6 +153,54 @@ Class User32
 </h2>
 
 
+  <a id="FireBlade_WinInteropUtils_User32_GetParent_" data-uid="FireBlade.WinInteropUtils.User32.GetParent*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_User32_GetParent_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.User32.GetParent(System.IntPtr)">
+  GetParent(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L733"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a handle to the specified window's parent or owner.</p>
+To retrieve a handle to a specified ancestor, use the <code>GetAncestor</code> function.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint GetParent(nint hWnd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hWnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>A handle to the window whose parent window handle is to be retrieved.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>If the window is a child window, the return value is a handle to the parent window. If the window is a top-level window with the
+<code>WS_POPUP</code> style, the return value is a handle to the owner window.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_User32_GetParent_System_IntPtr__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If the function fails, the return value is <code>0</code>. To get extended error information, call <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshal.getlastpinvokeerror">GetLastPInvokeError()</a>.</p>
+<p>This function typically fails for one of the following reasons:</p>
+<ul><li>The window is a top-level window that is unowned or does not have the <code>WS_POPUP</code> style.</li><li>The owner window has the <code>WS_POPUP</code> style.</li></ul>
+<p>To obtain a window's owner window, instead of using <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_GetParent_System_IntPtr_">GetParent(nint)</a>, use <code>GetWindow</code> with the <code>GW_OWNER</code> flag. To obtain
+the parent window and not the owner, instead of using <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_GetParent_System_IntPtr_">GetParent(nint)</a>, use <code>GetAncestor</code> with the <code>GA_PARENT</code> flag.</p>
+</div>
+
+
+
+
   <a id="FireBlade_WinInteropUtils_User32_GetTitleBarInfo_" data-uid="FireBlade.WinInteropUtils.User32.GetTitleBarInfo*"></a>
 
   <h3 id="FireBlade_WinInteropUtils_User32_GetTitleBarInfo_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.User32.GetTitleBarInfo(System.IntPtr)">
@@ -402,6 +450,140 @@ encoding-neutral can lead to mismatches that result in compilation or runtime er
  If &lt;code class=&quot;paramref&quot;&gt;bConvert&lt;/code&gt; is &lt;a href=&quot;https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool&quot;&gt;true&lt;/a&gt; and the function cannot successfully convert the thread to a GUI thread, IsGUIThread
  returns ERROR_NOT_ENOUGH_MEMORY.
 </code></pre>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_User32_PostMessage_" data-uid="FireBlade.WinInteropUtils.User32.PostMessage*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_User32_PostMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.User32.PostMessage(System.IntPtr,System.UInt32,System.UIntPtr,System.IntPtr)">
+  PostMessage(nint, uint, nuint, nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L709"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Places (posts) a message in the message queue associated with the thread that created the specified window and returns without waiting
+for the thread to process the message. <!-- To post a message in the message queue associated with a thread, use the PostThreadMessage function. --></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PostMessage(nint hWnd, uint uMsg, nuint wParam, nint lParam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hWnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>A handle to the window whose window procedure is to receive the message.</p>
+    Starting with Windows Vista, message posting is subject to UIPI. The thread of a process can post messages only to message queues
+    of threads in processes of lesser or equal integrity level.
+</dd>
+    <dt><code>uMsg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The message to be posted.</p>
+    For lists of the system-provided messages,
+    see <a href="https://learn.microsoft.com/en-us/windows/desktop/winmsg/about-messages-and-message-queues">System-Defined Messages</a>.
+</dd>
+    <dt><code>wParam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd><p>Additional message-specific information.</p>
+</dd>
+    <dt><code>lParam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>Additional message-specific information.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if successful; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_User32_PostMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_IntPtr__examples">Examples</h4>
+  <p>The following example shows how to post a private window message using the <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_PostMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_IntPtr_">PostMessage(nint, uint, nuint, nint)</a> function. Assume
+you defined a private window message called <code>WM_COMPLETE</code>:</p>
+<pre><code class="lang-csharp">private const int WM_USER = 0x0400;
+private const int WM_COMPLETE = WM_USER + 0;</code></pre>
+<p>You can post a message to the message queue associated with the thread that created the specified window as shown below:</p>
+<pre><code class="lang-csharp">var time = DateTime.Now;
+User32.PostMessage(Handle, WM_COMPLETE, 0, (nint)time.ToFileTimeUtc());</code></pre>
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_User32_PostMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_IntPtr__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The following values have special meanings for the <code class="paramref">hWnd</code> parameter:</p>
+<table><tbody><tr><td class="term">HWND_BROADCAST</td><td class="description">The message is posted to all top-level windows in the system, including disabled or invisible unowned windows, overlapped windows,
+        and pop-up windows. The message is not posted to child windows. (0xffff)</td></tr><tr><td class="term">0</td><td class="description">The function behaves like a call to PostThreadMessage with the
+        dwThreadId parameter set to the identifier of the current thread.</td></tr></tbody></table>
+<p>If the function fails, call <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshal.getlastpinvokeerror">GetLastPInvokeError()</a> to get extended error information.</p>
+<p>When a message is blocked by UIPI the last error is set to 5 (access denied).</p>
+<p>Messages in a message queue are retrieved by calls to the <code>GetMessage</code> or <code>PeekMessage</code> function.</p>
+<p>Applications that need to communicate using <code>HWND_BROADCAST</code> should use the <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_RegisterWindowMessage_System_String_">RegisterWindowMessage(string)</a> function to
+obtain a unique message for inter-application communication.</p>
+<p>The system only does marshalling for system messages (those in the range 0 to (<code>WM_USER</code>-1)). To send other messages (those &gt;= <code>WM_USER</code>) to
+another process, you must do custom marshalling.</p>
+<p>If you send a message in the range below <code>WM_USER</code> to the asynchronous message
+functions (<a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_PostMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_IntPtr_">PostMessage(nint, uint, nuint, nint)</a>, SendNotifyMessage, and SendMessageCallback), its message parameters cannot
+include pointers. Otherwise, the operation will fail. The functions will return before the receiving thread has had a chance to process the
+message and the sender will free the memory before it is used.</p>
+<p>Do not post the <code>WM_QUIT</code> message using <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_PostMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_IntPtr_">PostMessage(nint, uint, nuint, nint)</a>; use the PostQuitMessage function.</p>
+<p>An accessibility application can use <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_PostMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_IntPtr_">PostMessage(nint, uint, nuint, nint)</a> to post <code>WM_APPCOMMAND</code> messages to the
+shell to launch applications. This functionality is not guaranteed to work for other types of applications.</p>
+<p>There is a limit of 10,000 posted messages per message queue. This limit should be sufficiently large. If your application exceeds the limit, it should be redesigned to avoid consuming so many system resources. To adjust this limit,
+modify the following registry key:</p>
+<pre><code class="lang-csharp">HKEY_LOCAL_MACHINE
+    SOFTWARE
+        Microsoft
+            Windows NT
+                CurrentVersion
+                    Windows
+                        USERPostMessageLimit</code></pre>
+<p>If the function fails, call <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshal.getlastpinvokeerror">GetLastPInvokeError()</a> to get extended error information.
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshal.getlastpinvokeerror">GetLastPInvokeError()</a> returns <a class="xref" href="FireBlade.WinInteropUtils.Win32ErrorCode.html#FireBlade_WinInteropUtils_Win32ErrorCode_ERROR_NOT_ENOUGH_QUOTA">ERROR_NOT_ENOUGH_QUOTA</a> when the limit is hit.</p>
+<p>The minimum acceptable value is 4000.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_User32_RegisterWindowMessage_" data-uid="FireBlade.WinInteropUtils.User32.RegisterWindowMessage*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_User32_RegisterWindowMessage_System_String_" data-uid="FireBlade.WinInteropUtils.User32.RegisterWindowMessage(System.String)">
+  RegisterWindowMessage(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L620"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a new window message that is guaranteed to be unique throughout the system. The message value can be used when sending or posting messages.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint RegisterWindowMessage(string msg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>msg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The message to be registered.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>If the message is successfully registered, the return value is a message identifier in the range <code>0xC000</code> through <code>0xFFFF</code>.</p>
+    <p>If the function fails, the return value is zero. To get extended error information, call <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshal.getlastpinvokeerror">GetLastPInvokeError()</a>.</p>
 </dd>
   </dl>
 

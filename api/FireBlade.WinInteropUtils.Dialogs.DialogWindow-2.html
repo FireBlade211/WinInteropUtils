@@ -129,6 +129,7 @@ Class DialogWindow&lt;TShowReturn, TSelf&gt;  <a class="header-action link-secon
   <dl class="typelist derived">
     <dt>Derived</dt>
     <dd>
+      <div><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html">ColorPickerDialog</a></div>
       <div><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html">Win32MessageBox</a></div>
     </dd>
   </dl>
@@ -164,15 +165,89 @@ Class DialogWindow&lt;TShowReturn, TSelf&gt;  <a class="header-action link-secon
 
 
 
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_WM_INITDIALOG" data-uid="FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.WM_INITDIALOG">
+  WM_INITDIALOG
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/DialogWindow.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The message sent to a dialog's hook procedure when it initializes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int WM_INITDIALOG = 272</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_PackFlags_" data-uid="FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.PackFlags*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_PackFlags_System_Collections_Generic_Dictionary_System_Int32_System_Boolean__" data-uid="FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.PackFlags(System.Collections.Generic.Dictionary{System.Int32,System.Boolean})">
+  PackFlags(Dictionary&lt;int, bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/DialogWindow.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Packs the specified flags for use in a dialog's struct's <code>dwFlags</code> or <code>Flags</code> member.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int PackFlags(Dictionary&lt;int, bool&gt; flags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>flags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>The dictionary of flags to pack. The key indicates the value of the flag, and the value indicates whether to pack the flag.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The packed flags, or <code>0</code> if no flags were marked as packable.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show*"></a>
 
   <h3 id="FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show" data-uid="FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show">
   Show()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/DialogWindow.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/DialogWindow.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When overriden in a dervied class, shows the dialog window.</p>
@@ -205,7 +280,7 @@ Class DialogWindow&lt;TShowReturn, TSelf&gt;  <a class="header-action link-secon
 
   <h3 id="FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show(System.IntPtr)">
   Show(nint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/DialogWindow.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/DialogWindow.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When overriden in a dervied class, shows the dialog window modally.</p>
@@ -244,7 +319,7 @@ Class DialogWindow&lt;TShowReturn, TSelf&gt;  <a class="header-action link-secon
 
   <h3 id="FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show__1_" data-uid="FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show(`1)">
   Show(TSelf)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/DialogWindow.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/DialogWindow.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Shows the <code class="typeparamref">TSelf</code>.</p>
@@ -283,7 +358,7 @@ Class DialogWindow&lt;TShowReturn, TSelf&gt;  <a class="header-action link-secon
 
   <h3 id="FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show__1_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show(`1,System.IntPtr)">
   Show(TSelf, nint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/DialogWindow.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/DialogWindow.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Shows the <code class="typeparamref">TSelf</code> modally.</p>

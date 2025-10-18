@@ -250,6 +250,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Dialogs.ColorDialogHookProc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Dialogs.ColorDialogHookProc.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Dialogs.ColorDialogHookProc",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Dialogs.ColorDialogHookProc.yml\" sourcestartlinenumber=\"1\">Defines the hook procedure for a <xref href=\"FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.yml\" sourcestartlinenumber=\"1\">Represents a dialog that allows the user to pick a color.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialogFullOpenMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialogFullOpenMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Dialogs.ColorPickerDialogFullOpenMode",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialogFullOpenMode.yml\" sourcestartlinenumber=\"1\">Defines how a <xref href=\"FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog\" data-throw-if-not-resolved=\"false\"></xref> handles opening the full custom color picker.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.yml",
       "output": {
         ".html": {
@@ -628,6 +670,90 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.yml\" sourcestartlinenumber=\"1\">Provides a type editor for enumerations with the <xref href=\"System.FlagsAttribute\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinForms.HotKeyBox",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.yml\" sourcestartlinenumber=\"1\">Represents a control that allows the user to enter a combination of keystrokes to be used as a hot key.\n<img src=\"../images/hotkeys.png\" sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.yml\" sourcestartlinenumber=\"2\" alt=\"Sample image\"></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.yml\" sourcestartlinenumber=\"1\">Specifies the modifier keys in a <xref href=\"FireBlade.WinInteropUtils.WinForms.HotKeyBox\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.yml\" sourcestartlinenumber=\"1\">Specifies the invalid modifiers for a <xref href=\"FireBlade.WinInteropUtils.WinForms.HotKeyBox\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinForms.HyperLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinForms.HyperLink.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinForms.HyperLink",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.HyperLink.yml\" sourcestartlinenumber=\"1\">Represents a control that renders marked-up text, and notifies the application when users click its embedded hyperlinks.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.HyperLinkLinkState.yml\" sourcestartlinenumber=\"1\">Describes the state(s) of a <xref href=\"FireBlade.WinInteropUtils.WinForms.Link\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/FireBlade.WinInteropUtils.WinForms.ProgressBarEx.yml",
       "output": {
         ".html": {
@@ -765,6 +891,20 @@
       "IsMRef": true,
       "Title": "FireBlade.WinInteropUtils.WinForms.SliderValueChangeReason",
       "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.SliderValueChangeReason.yml\" sourcestartlinenumber=\"1\">Specifies the reason that a <xref href=\"FireBlade.WinInteropUtils.WinForms.Slider\" data-throw-if-not-resolved=\"false\"></xref>'s value may be changing.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs.yml\" sourcestartlinenumber=\"1\">Defines event arguments for the <xref href=\"FireBlade.WinInteropUtils.WinForms.Slider.ValueChanging\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -913,6 +1053,86 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "docs/winforms/hotkeybox.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/winforms/hotkeybox.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/winforms/hyperlink.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/winforms/hyperlink.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/winforms/main.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/winforms/main.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/winforms/progbarex.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/winforms/progbarex.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/winforms/slider.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/winforms/slider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/hotkeyboxes.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/hotkeyboxes.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pbar-horizontal.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pbar-horizontal.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pbar-vertical.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pbar-vertical.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "images/progressbars.png",
       "output": {
@@ -924,10 +1144,70 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/slider-buddies.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/slider-buddies.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/slider-selrange-modern.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/slider-selrange-modern.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/slider-selrange.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/slider-selrange.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/slider-thumb-aero.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/slider-thumb-aero.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/slider-thumb.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/slider-thumb.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/sliders.png",
       "output": {
         "resource": {
           "relative_path": "images/sliders.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/winforms-demo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/winforms-demo.png"
         }
       },
       "version": ""
