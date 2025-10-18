@@ -607,6 +607,130 @@ namespace FireBlade.WinInteropUtils
         ///// <returns></returns>
         //public delegate int WinMain(nint hInstance, nint hPrevInstance, string lpCmdLine, int nCmdShow);
 
+        [LibraryImport("user32.dll", StringMarshalling = StringMarshalling.Utf16, SetLastError = true)]
+        private static partial uint RegisterWindowMessageW(string lpString);
+
+        /// <summary>
+        /// Defines a new window message that is guaranteed to be unique throughout the system. The message value can be used when sending or posting messages.
+        /// </summary>
+        /// <param name="msg">The message to be registered.</param>
+        /// <returns><para>If the message is successfully registered, the return value is a message identifier in the range <c>0xC000</c> through <c>0xFFFF</c>.</para>
+        /// <para>If the function fails, the return value is zero. To get extended error information, call <see cref="Marshal.GetLastPInvokeError"/>.</para>
+        /// </returns>
+        public static uint RegisterWindowMessage(string msg) => RegisterWindowMessageW(msg);
+
+        [LibraryImport("user32.dll", EntryPoint = "PostMessageW")]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static partial bool PostMessageW(nint hWnd, uint Msg, nuint wParam, nint lParam);
+
+        /// <summary>
+        /// Places (posts) a message in the message queue associated with the thread that created the specified window and returns without waiting
+        /// for the thread to process the message. <!-- To post a message in the message queue associated with a thread, use the PostThreadMessage function. -->
+        /// </summary>
+        /// <param name="hWnd"><para>A handle to the window whose window procedure is to receive the message.</para>
+        /// Starting with Windows Vista, message posting is subject to UIPI. The thread of a process can post messages only to message queues
+        /// of threads in processes of lesser or equal integrity level.
+        /// </param>
+        /// <param name="uMsg"><para>The message to be posted.</para>
+        /// For lists of the system-provided messages,
+        /// see <see href="https://learn.microsoft.com/en-us/windows/desktop/winmsg/about-messages-and-message-queues">System-Defined Messages</see>.
+        /// </param>
+        /// <param name="wParam">Additional message-specific information.</param>
+        /// <param name="lParam">Additional message-specific information.</param>
+        /// <returns><see langword="true"/> if successful; otherwise, <see langword="false"/>.</returns>
+        /// <remarks>
+        /// <para>The following values have special meanings for the <paramref name="hWnd"/> parameter:</para>
+        /// <list type="table">
+        ///     <item>
+        ///         <term>HWND_BROADCAST</term>
+        ///         <description>The message is posted to all top-level windows in the system, including disabled or invisible unowned windows, overlapped windows,
+        ///         and pop-up windows. The message is not posted to child windows. (0xffff)</description>
+        ///     </item>
+        ///     <item>
+        ///         <term>0</term>
+        ///         <description>The function behaves like a call to PostThreadMessage with the
+        ///         dwThreadId parameter set to the identifier of the current thread.</description>
+        ///     </item>
+        /// </list>
+        /// 
+        /// <para>If the function fails, call <see cref="Marshal.GetLastPInvokeError"/> to get extended error information.</para>
+        /// 
+        /// <para>When a message is blocked by UIPI the last error is set to 5 (access denied).</para>
+        /// 
+        /// <para>Messages in a message queue are retrieved by calls to the <c>GetMessage</c> or <c>PeekMessage</c> function.</para>
+        /// 
+        /// <para>Applications that need to communicate using <c>HWND_BROADCAST</c> should use the <see cref="RegisterWindowMessage(string)"/> function to
+        /// obtain a unique message for inter-application communication.</para>
+        /// <para>The system only does marshalling for system messages (those in the range 0 to (<c>WM_USER</c>-1)). To send other messages (those >= <c>WM_USER</c>) to
+        /// another process, you must do custom marshalling.</para>
+        /// 
+        /// <para>If you send a message in the range below <c>WM_USER</c> to the asynchronous message
+        /// functions (<see cref="PostMessage(nint, uint, nuint, nint)"/>, SendNotifyMessage, and SendMessageCallback), its message parameters cannot
+        /// include pointers. Otherwise, the operation will fail. The functions will return before the receiving thread has had a chance to process the
+        /// message and the sender will free the memory before it is used.</para>
+        /// 
+        /// <para>Do not post the <c>WM_QUIT</c> message using <see cref="PostMessage(nint, uint, nuint, nint)"/>; use the PostQuitMessage function.</para>
+        /// 
+        /// <para>An accessibility application can use <see cref="PostMessage(nint, uint, nuint, nint)"/> to post <c>WM_APPCOMMAND</c> messages to the
+        /// shell to launch applications. This functionality is not guaranteed to work for other types of applications.</para>
+        /// 
+        /// <para>There is a limit of 10,000 posted messages per message queue. This limit should be sufficiently large. If your application exceeds the limit, it should be redesigned to avoid consuming so many system resources. To adjust this limit,
+        /// modify the following registry key:</para>
+        /// 
+        /// <code>
+        /// HKEY_LOCAL_MACHINE
+        ///     SOFTWARE
+        ///         Microsoft
+        ///             Windows NT
+        ///                 CurrentVersion
+        ///                     Windows
+        ///                         USERPostMessageLimit
+        /// </code>
+        /// 
+        /// <para>If the function fails, call <see cref="Marshal.GetLastPInvokeError"/> to get extended error information.
+        /// <see cref="Marshal.GetLastPInvokeError"/> returns <see cref="Win32ErrorCode.ERROR_NOT_ENOUGH_QUOTA"/> when the limit is hit.</para>
+        /// 
+        /// The minimum acceptable value is 4000.
+        /// </remarks>
+        /// <example>
+        /// The following example shows how to post a private window message using the <see cref="PostMessage(nint, uint, nuint, nint)"/> function. Assume
+        /// you defined a private window message called <c>WM_COMPLETE</c>:
+        /// <code>
+        /// private const int WM_USER = 0x0400;
+        /// private const int WM_COMPLETE = WM_USER + 0;
+        /// </code>
+        /// 
+        /// You can post a message to the message queue associated with the thread that created the specified window as shown below:
+        /// <code>
+        /// var time = DateTime.Now;
+        /// User32.PostMessage(Handle, WM_COMPLETE, 0, (nint)time.ToFileTimeUtc());
+        /// </code>
+        /// </example>
+        public static bool PostMessage(nint hWnd, uint uMsg, nuint wParam, nint lParam) => PostMessageW(hWnd, uMsg, wParam, lParam);
+
+        [LibraryImport("user32.dll", SetLastError = true, EntryPoint = "GetParent")]
+        private static partial nint _GetParent(nint hWnd);
+
+        /// <summary>
+        /// <para>Retrieves a handle to the specified window's parent or owner.</para>
+        /// To retrieve a handle to a specified ancestor, use the <c>GetAncestor</c> function.
+        /// </summary>
+        /// <param name="hWnd">A handle to the window whose parent window handle is to be retrieved.</param>
+        /// <returns>If the window is a child window, the return value is a handle to the parent window. If the window is a top-level window with the
+        /// <c>WS_POPUP</c> style, the return value is a handle to the owner window.</returns>
+        /// <remarks>
+        /// <para>If the function fails, the return value is <c>0</c>. To get extended error information, call <see cref="Marshal.GetLastPInvokeError"/>.</para>
+        /// 
+        /// This function typically fails for one of the following reasons:
+        /// <list type="bullet">
+        /// <item>The window is a top-level window that is unowned or does not have the <c>WS_POPUP</c> style.</item>
+        /// <item>The owner window has the <c>WS_POPUP</c> style.</item>
+        /// </list>
+        /// 
+        /// <para>To obtain a window's owner window, instead of using <see cref="GetParent(nint)"/>, use <c>GetWindow</c> with the <c>GW_OWNER</c> flag. To obtain
+        /// the parent window and not the owner, instead of using <see cref="GetParent(nint)"/>, use <c>GetAncestor</c> with the <c>GA_PARENT</c> flag.</para>
+        /// </remarks>
+        public static nint GetParent(nint hWnd) => _GetParent(hWnd);
     }
 
     /// <summary>
