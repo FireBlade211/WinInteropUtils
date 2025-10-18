@@ -15,7 +15,7 @@
         /// <summary>
         /// Packs the specified flags for use in a dialog's struct's <c>dwFlags</c> or <c>Flags</c> member.
         /// </summary>
-        /// <param name="flags">The dictionary of flags to pack. The key indicates whether to pack the flag, and the value indicates the value of the flag.</param>
+        /// <param name="flags">The dictionary of flags to pack. The key indicates the value of the flag, and the value indicates whether to pack the flag.</param>
         /// <returns>The packed flags, or <c>0</c> if no flags were marked as packable.</returns>
         protected int PackFlags(Dictionary<int, bool> flags)
         {
