@@ -18,6 +18,8 @@
     <Copyright>Copyright (c) 2026 FireBlade</Copyright>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Description>A C# library that provides managed wrappers for unmanaged WinAPI functions.</Description>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <ItemGroup>
