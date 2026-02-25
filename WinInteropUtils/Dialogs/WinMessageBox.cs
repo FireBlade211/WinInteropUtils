@@ -115,7 +115,7 @@ namespace FireBlade.WinInteropUtils.Dialogs
         /// information, see <see href="https://learn.microsoft.com/en-us/windows/desktop/winstation/window-stations">Window Stations</see>.
         /// </summary>
         /// <remarks>
-        /// If the current input desktop is not the default desktop, <see cref="Show()"/> and <see cref="Show(nint)"/> does not
+        /// If the current input desktop is not the default desktop, <see cref="Show()"/> and <see cref="Show(Window)"/> does not
         /// return until the user switches to the default desktop.
         /// </remarks>
         public bool DefaultDesktopOnly { get; set; } = false;
@@ -302,7 +302,7 @@ namespace FireBlade.WinInteropUtils.Dialogs
         /// taken from a resource file, because an attempt to load the resource may fail.</para>
         /// 
         /// For extended customization, create an instance of the <see cref="WinMessageBox"/> class with the <see cref="WinMessageBox.WinMessageBox"/> constructor
-        /// and show it with the <see cref="Show(nint)"/> method.
+        /// and show it with the <see cref="Show(Window)"/> method.
         /// </remarks>
         public static WinMessageBoxResult Show(Window wnd, string text) => Show(wnd, text, null);
 
@@ -325,7 +325,7 @@ namespace FireBlade.WinInteropUtils.Dialogs
         /// taken from a resource file, because an attempt to load the resource may fail.</para>
         /// 
         /// For extended customization, create an instance of the <see cref="WinMessageBox"/> class with the <see cref="WinMessageBox.WinMessageBox"/> constructor
-        /// and show it with the <see cref="Show(nint)"/> method.
+        /// and show it with the <see cref="Show(Window)"/> method.
         /// </remarks>
         public static WinMessageBoxResult Show(Window wnd, string text, string? caption) => new WinMessageBox
         {
@@ -453,7 +453,7 @@ namespace FireBlade.WinInteropUtils.Dialogs
         /// taken from a resource file, because an attempt to load the resource may fail.</para>
         /// 
         /// For extended customization, create an instance of the <see cref="WinMessageBox"/> class with the <see cref="WinMessageBox.WinMessageBox"/> constructor
-        /// and show it with the <see cref="Show(nint)"/> method.
+        /// and show it with the <see cref="Show(Window)"/> method.
         /// </remarks>
         public static WinMessageBoxResult Show(Window wnd,
             string text,
@@ -481,7 +481,7 @@ namespace FireBlade.WinInteropUtils.Dialogs
         /// taken from a resource file, because an attempt to load the resource may fail.</para>
         /// 
         /// For extended customization, create an instance of the <see cref="WinMessageBox"/> class with the <see cref="WinMessageBox.WinMessageBox"/> constructor
-        /// and show it with the <see cref="Show(nint)"/> method.
+        /// and show it with the <see cref="Show(Window)"/> method.
         /// </remarks>
         public static WinMessageBoxResult Show(Window wnd, string text, string? caption, WinMessageBoxIcon icon, WinMessageBoxButtons buttons) => new WinMessageBox
         {
@@ -560,7 +560,7 @@ namespace FireBlade.WinInteropUtils.Dialogs
         /// taken from a resource file, because an attempt to load the resource may fail.</para>
         /// 
         /// For extended customization, create an instance of the <see cref="WinMessageBox"/> class with the <see cref="WinMessageBox.WinMessageBox"/> constructor
-        /// and show it with the <see cref="Show(nint)"/> method.
+        /// and show it with the <see cref="Show(Window)"/> method.
         /// </remarks>
         public static WinMessageBoxResult Show(Window wnd, string text, WinMessageBoxButtons buttons) => Show(wnd, text, null, buttons);
 
@@ -584,7 +584,7 @@ namespace FireBlade.WinInteropUtils.Dialogs
         /// taken from a resource file, because an attempt to load the resource may fail.</para>
         /// 
         /// For extended customization, create an instance of the <see cref="WinMessageBox"/> class with the <see cref="WinMessageBox.WinMessageBox"/> constructor
-        /// and show it with the <see cref="Show(nint)"/> method.
+        /// and show it with the <see cref="Show(Window)"/> method.
         /// </remarks>
         public static WinMessageBoxResult Show(Window wnd, string text, string? caption, WinMessageBoxButtons buttons) => new WinMessageBox
         {
@@ -662,7 +662,7 @@ namespace FireBlade.WinInteropUtils.Dialogs
         /// taken from a resource file, because an attempt to load the resource may fail.</para>
         /// 
         /// For extended customization, create an instance of the <see cref="WinMessageBox"/> class with the <see cref="WinMessageBox.WinMessageBox"/> constructor
-        /// and show it with the <see cref="Show(nint)"/> method.
+        /// and show it with the <see cref="Show(Window)"/> method.
         /// </remarks>
         public static WinMessageBoxResult Show(Window wnd, string text, WinMessageBoxIcon icon) => Show(wnd, text, null, icon);
 
@@ -686,7 +686,7 @@ namespace FireBlade.WinInteropUtils.Dialogs
         /// taken from a resource file, because an attempt to load the resource may fail.</para>
         /// 
         /// For extended customization, create an instance of the <see cref="WinMessageBox"/> class with the <see cref="WinMessageBox.WinMessageBox"/> constructor
-        /// and show it with the <see cref="Show(nint)"/> method.
+        /// and show it with the <see cref="Show(Window)"/> method.
         /// </remarks>
         public static WinMessageBoxResult Show(Window wnd, string text, string? caption, WinMessageBoxIcon icon) => new WinMessageBox
         {
