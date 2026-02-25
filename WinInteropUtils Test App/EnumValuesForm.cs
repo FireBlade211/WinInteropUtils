@@ -58,7 +58,7 @@ namespace WinInteropUtils_Test_App
                     {
                         // We can update the icon using a SendMessage call. But we must specify the icon via ID, not an object or hIcon handle
                         // We do NOT use the negative of the ID, since the API is doing other stuff with the ID and handles it automatically
-                        User32.SendMessage(hwnd, (uint)TDM.UPDATE_ICON, UIntPtr.Zero, new IntPtr(5335));
+                        Window.FromHandle(hwnd)?.SendMessage((uint)TDM.UPDATE_ICON, UIntPtr.Zero, new IntPtr(5335));
                     }
                     catch (Exception ex)
                     {

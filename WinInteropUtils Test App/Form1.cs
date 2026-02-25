@@ -210,7 +210,7 @@ namespace WinInteropUtils_Test_App
             propertyGrid1.ToolbarVisible = Properties.Settings.Default.ArgPanelToolbarVisibility;
             propertyGrid1.LargeButtons = Properties.Settings.Default.ArgPanelUseLargeIcons;
         }
-
+#pragma warning disable CS0618
         private void messageBoxToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var msgBox = new Win32MessageBox();
@@ -242,6 +242,7 @@ namespace WinInteropUtils_Test_App
 
             msgBox.Show(Handle);
         }
+#pragma warning restore
 
         private void fileDialogToolStripMenuItem_Click(object? sender, EventArgs e)
         {
@@ -305,8 +306,8 @@ namespace WinInteropUtils_Test_App
                             {
                                 string? path = Marshal.PtrToStringUni(pptr);
 
-                                if (path != null)
-                                    Win32MessageBox.Show(Handle, $"Chosen path: {path}", "File dialog test", Win32MessageBoxIcon.Information);
+                                if (path != null && Window.FromHandle(Handle) is Window wnd)
+                                    WinMessageBox.Show(wnd, $"Chosen path: {path}", "File dialog test", WinMessageBoxIcon.Information);
                                 else
                                     Debug.WriteLine("Path is null!");
 
@@ -359,7 +360,7 @@ namespace WinInteropUtils_Test_App
             _colordlg.ShowHelp = true;
             _colordlg.UseHookProc = true;
 
-            nint dlgHandle = nint.Zero;
+            Window? dlgWnd = null;
 
             _colordlg.HookProcedure = nuint (nint hDlg, uint uMsg, nuint wParam, nint lParam) =>
             {
@@ -367,20 +368,33 @@ namespace WinInteropUtils_Test_App
                 {
                     case 0x0110: // WM_INITDIALOG
                         var focusCtrl = (nint)wParam;
-                        dlgHandle = User32.GetParent(focusCtrl);
+                        var focusWnd = Window.FromHandle(focusCtrl);
+                        dlgWnd = focusWnd?.Parent;
 
-                        User32.PostMessage(dlgHandle, CDM_MSGBOX, 0, 0);
+                        dlgWnd?.PostMessage(CDM_MSGBOX, 0, 0);
                         break;
                     case CDM_MSGBOX:
-                        Win32MessageBox.Show(dlgHandle, "Dialog initialized!", "Init", Win32MessageBoxIcon.Info);
+                        if (dlgWnd != null)
+                            WinMessageBox.Show(dlgWnd, "Dialog initialized!", "Init", WinMessageBoxIcon.Info);
                         break;
                 }
 
                 return 0;
             };
 
-            _colordlg.Show(Handle);
-            
+            if (Window.FromHandle(Handle) is Window wnd)
+                _colordlg.Show(wnd);
+
+        }
+
+        private void visualStylesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new VisualStyleTestForm().Show(this);
+        }
+
+        private void windowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new WindowTestForm().Show(this);
         }
     }
 

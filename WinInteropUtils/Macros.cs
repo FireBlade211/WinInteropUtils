@@ -16,7 +16,7 @@ namespace FireBlade.WinInteropUtils
         /// <returns>The created <see cref="HRESULT"/>.</returns>
         public static HRESULT HResultFromWin32(this Win32ErrorCode error)
         {
-            return ((HRESULT)((int)error) <= 0 ? ((HRESULT)((int)error)) : ((HRESULT)((((int)error) & 0x0000FFFF) | (Win32Constants.FACILITY_WIN32 << 16) | 0x80000000)));
+            return ((HRESULT)((int)error) <= 0 ? ((HRESULT)((int)error)) : ((HRESULT)((((int)error) & 0x0000FFFF) | (WinConstants.FACILITY_WIN32 << 16) | 0x80000000)));
         }
 
         /// <summary>
@@ -203,5 +203,17 @@ namespace FireBlade.WinInteropUtils
         /// <param name="w">The value to be converted.</param>
         /// <returns>The high-order byte of the specified value.</returns>
         public static byte HighByte(decimal w) => HighByte<decimal>(w);
+
+        /// <summary>
+        /// Converts the specified atom into a string, so it can be passed to functions which accept either atoms or strings.
+        /// </summary>
+        /// <typeparam name="TNum">The number type.</typeparam>
+        /// <param name="num">The numeric value to be made into an integer atom. This parameter can be either an integer atom or a string atom.</param>
+        /// <returns>The atom, converted to a value that can be passed to functions that accept atoms or strings.</returns>
+        /// <remarks>
+        /// Although the return value of the MAKEINTATOM macro is cast as a string value, it cannot be used as a string pointer except when it is passed to
+        /// atom-management functions that require a string argument.
+        /// </remarks>
+        public static string MakeIntAtom<TNum>(TNum num) where TNum : INumber<TNum> => ((ulong)(short.CreateTruncating(num))).ToString(CultureInfo.InvariantCulture);
     }
 }

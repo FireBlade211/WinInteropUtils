@@ -46,7 +46,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             {
                 if (!IsHandleCreated) return _keys;
 
-                var info = User32.SendMessage(Handle, HKM_GETHOTKEY, 0, 0);
+                var info = Window.FromHandle(Handle)?.SendMessage(HKM_GETHOTKEY, 0, 0) ?? nint.Zero;
                 var vk = Macros.LowByte(Macros.LowWord(info));
                 var keys = (Keys)vk;
 
@@ -89,7 +89,7 @@ namespace FireBlade.WinInteropUtils.WinForms
 
                 var packed = (ushort)((highByte << 8) | lowByte);
 
-                User32.SendMessage(Handle, HKM_SETHOTKEY, packed, 0);
+                Window.FromHandle(Handle)?.SendMessage(HKM_SETHOTKEY, packed, 0);
             }
         }
 
@@ -105,7 +105,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             {
                 if (!IsHandleCreated) return _exKey;
 
-                var info = User32.SendMessage(Handle, HKM_GETHOTKEY, 0, 0);
+                var info = Window.FromHandle(Handle)?.SendMessage(HKM_GETHOTKEY, 0, 0) ?? nint.Zero;
                 var mods = Macros.HighByte(Macros.LowWord(info));
 
                 return (mods & HOTKEYF_EXT) != 0;
@@ -139,7 +139,7 @@ namespace FireBlade.WinInteropUtils.WinForms
 
                 var packed = (ushort)((highByte << 8) | lowByte);
 
-                User32.SendMessage(Handle, HKM_SETHOTKEY, packed, 0);
+                Window.FromHandle(Handle)?.SendMessage(HKM_SETHOTKEY, packed, 0);
             }
         }
 
@@ -165,7 +165,7 @@ namespace FireBlade.WinInteropUtils.WinForms
 
                 if (!IsHandleCreated) return;
 
-                User32.SendMessage(Handle, HKM_SETRULES, (nuint)value, (nint)FallbackValue);
+                Window.FromHandle(Handle)?.SendMessage(HKM_SETRULES, (nuint)value, (nint)FallbackValue);
             }
         }
 
@@ -190,7 +190,7 @@ namespace FireBlade.WinInteropUtils.WinForms
 
                 if (!IsHandleCreated) return;
 
-                User32.SendMessage(Handle, HKM_SETRULES, (nuint)Rules, (nint)value);
+                Window.FromHandle(Handle)?.SendMessage(HKM_SETRULES, (nuint)Rules, (nint)value);
             }
         }
 
@@ -208,7 +208,7 @@ namespace FireBlade.WinInteropUtils.WinForms
         {
             base.OnHandleCreated(e);
 
-            User32.SendMessage(Handle, HKM_SETRULES, (nuint)Rules, (nint)FallbackValue);
+            Window.FromHandle(Handle)?.SendMessage(HKM_SETRULES, (nuint)Rules, (nint)FallbackValue);
 
             bool ctrl = (_keys & Keys.Control) != 0;
             bool shift = (_keys & Keys.Shift) != 0;
@@ -231,7 +231,7 @@ namespace FireBlade.WinInteropUtils.WinForms
 
             var packed = (ushort)((highByte << 8) | lowByte);
 
-            User32.SendMessage(Handle, HKM_SETHOTKEY, packed, 0);
+            Window.FromHandle(Handle)?.SendMessage(HKM_SETHOTKEY, packed, 0);
         }
 
         private void WmReflect(Message m)

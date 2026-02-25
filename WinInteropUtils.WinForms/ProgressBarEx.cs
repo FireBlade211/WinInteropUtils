@@ -143,7 +143,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    return (int)User32.SendMessage(Handle, PBM_GETRANGE, true, nint.Zero);
+                    return (int)Window.FromHandle(Handle)?.SendMessage(PBM_GETRANGE, true, nint.Zero);
 
                 return _min;
             }
@@ -152,7 +152,7 @@ namespace FireBlade.WinInteropUtils.WinForms
                 ArgumentOutOfRangeException.ThrowIfGreaterThan(value, Maximum, nameof(value));
 
                 if (IsHandleCreated)
-                    User32.SendMessage(Handle, PBM_SETRANGE32, (nuint)value, Maximum);
+                    Window.FromHandle(Handle)?.SendMessage(PBM_SETRANGE32, (nuint)value, Maximum);
 
                 _min = value;
             }
@@ -168,7 +168,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    return (int)User32.SendMessage(Handle, PBM_GETRANGE, false, nint.Zero);
+                    return (int)Window.FromHandle(Handle)?.SendMessage(PBM_GETRANGE, false, nint.Zero);
 
                 return _max;
             }
@@ -177,7 +177,7 @@ namespace FireBlade.WinInteropUtils.WinForms
                 ArgumentOutOfRangeException.ThrowIfLessThan(value, Minimum, nameof(value));
 
                 if (IsHandleCreated)
-                    User32.SendMessage(Handle, PBM_SETRANGE32, (nuint)Minimum, value);
+                    Window.FromHandle(Handle)?.SendMessage(PBM_SETRANGE32, (nuint)Minimum, value);
 
                 _max = value;
             }
@@ -194,7 +194,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    return (int)User32.SendMessage(Handle, PBM_GETPOS, 0, 0);
+                    return (int)Window.FromHandle(Handle)?.SendMessage(PBM_GETPOS, 0, 0);
 
                 return _val;
             }
@@ -204,7 +204,7 @@ namespace FireBlade.WinInteropUtils.WinForms
                 ArgumentOutOfRangeException.ThrowIfGreaterThan(value, Maximum, nameof(value));
 
                 if (Type != ProgressBarExType.Marquee && IsHandleCreated)
-                    User32.SendMessage(Handle, PBM_SETPOS, (nuint)value, 0);
+                    Window.FromHandle(Handle)?.SendMessage(PBM_SETPOS, (nuint)value, 0);
 
                 _val = value;
             }
@@ -221,14 +221,14 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    return (ProgressBarExStyle)User32.SendMessage(Handle, PBM_GETSTATE, 0, 0);
+                    return (ProgressBarExStyle)Window.FromHandle(Handle)?.SendMessage(PBM_GETSTATE, 0, 0);
 
                 return _style;
             }
             set
             {
                 if (IsHandleCreated)
-                    User32.SendMessage(Handle, PBM_SETSTATE, (nuint)value, 0);
+                    Window.FromHandle(Handle)?.SendMessage(PBM_SETSTATE, (nuint)value, 0);
 
                 _style = value;
             }
@@ -246,14 +246,14 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    return (int)User32.SendMessage(Handle, PBM_GETSTEP, 0, 0);
+                    return (int)Window.FromHandle(Handle)?.SendMessage(PBM_GETSTEP, 0, 0);
 
                 return _step;
             }
             set
             {
                 if (IsHandleCreated)
-                    User32.SendMessage(Handle, PBM_SETSTEP, (nuint)value, 0);
+                    Window.FromHandle(Handle)?.SendMessage(PBM_SETSTEP, (nuint)value, 0);
 
                 _step = value;
             }
@@ -280,14 +280,14 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    return ((uint)User32.SendMessage(Handle, PBM_GETBKCOLOR, 0, 0)) == CLR_DEFAULT;
+                    return ((uint)Window.FromHandle(Handle)?.SendMessage(PBM_GETBKCOLOR, 0, 0)) == CLR_DEFAULT;
 
                 return _defBk;
             }
             set
             {
                 if (IsHandleCreated)
-                    User32.SendMessage(Handle, PBM_SETBKCOLOR, 0, value ? unchecked((nint)CLR_DEFAULT) : (nint)_bkColor);
+                    Window.FromHandle(Handle)?.SendMessage(PBM_SETBKCOLOR, 0, value ? unchecked((nint)CLR_DEFAULT) : (nint)_bkColor);
 
                 _defBk = value;
             }
@@ -305,14 +305,14 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    return ((uint)User32.SendMessage(Handle, PBM_GETBARCOLOR, 0, 0)) == CLR_DEFAULT;
+                    return ((uint)Window.FromHandle(Handle)?.SendMessage(PBM_GETBARCOLOR, 0, 0)) == CLR_DEFAULT;
 
                 return _defBar;
             }
             set
             {
                 if (IsHandleCreated)
-                    User32.SendMessage(Handle, PBM_SETBARCOLOR, 0, value ? unchecked((nint)CLR_DEFAULT) : (nint)_barColor);
+                    Window.FromHandle(Handle)?.SendMessage(PBM_SETBARCOLOR, 0, value ? unchecked((nint)CLR_DEFAULT) : (nint)_barColor);
 
                 _defBar = value;
             }
@@ -331,14 +331,14 @@ namespace FireBlade.WinInteropUtils.WinForms
                     return SystemColors.Control;
 
                 if (IsHandleCreated)
-                    return FromCOLORREF((uint)User32.SendMessage(Handle, PBM_GETBKCOLOR, 0, 0));
+                    return FromCOLORREF((uint)Window.FromHandle(Handle)?.SendMessage(PBM_GETBKCOLOR, 0, 0));
 
                 return FromCOLORREF(_bkColor);
             }
             set
             {
                 if (IsHandleCreated)
-                    User32.SendMessage(Handle, PBM_SETBKCOLOR, 0, (nint)ToCOLORREF(value));
+                    Window.FromHandle(Handle)?.SendMessage(PBM_SETBKCOLOR, 0, (nint)ToCOLORREF(value));
 
                 _bkColor = ToCOLORREF(value);
             }
@@ -357,14 +357,14 @@ namespace FireBlade.WinInteropUtils.WinForms
                     return SystemColors.Highlight;
 
                 if (IsHandleCreated)
-                    return FromCOLORREF((uint)User32.SendMessage(Handle, PBM_GETBARCOLOR, 0, 0));
+                    return FromCOLORREF((uint)Window.FromHandle(Handle)?.SendMessage(PBM_GETBARCOLOR, 0, 0));
 
                 return FromCOLORREF(_barColor);
             }
             set
             {
                 if (IsHandleCreated)
-                    User32.SendMessage(Handle, PBM_SETBARCOLOR, 0, (nint)ToCOLORREF(value));
+                    Window.FromHandle(Handle)?.SendMessage(PBM_SETBARCOLOR, 0, (nint)ToCOLORREF(value));
 
                 _barColor = ToCOLORREF(value);
             }
@@ -381,7 +381,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             set
             {
                 if (IsHandleCreated)
-                    User32.SendMessage(Handle, PBM_SETMARQUEE, Type == ProgressBarExType.Marquee, value);
+                    Window.FromHandle(Handle)?.SendMessage(PBM_SETMARQUEE, Type == ProgressBarExType.Marquee, value);
 
                 _marqueeSpeed = value;
             }
@@ -410,17 +410,17 @@ namespace FireBlade.WinInteropUtils.WinForms
         {
             base.OnHandleCreated(e);
 
-            User32.SendMessage(Handle, PBM_SETRANGE32, (nuint)_min, _max);
+            Window.FromHandle(Handle)?.SendMessage(PBM_SETRANGE32, (nuint)_min, _max);
 
             if (Type != ProgressBarExType.Marquee)
-                User32.SendMessage(Handle, PBM_SETPOS, (nuint)_val, 0);
+                Window.FromHandle(Handle)?.SendMessage(PBM_SETPOS, (nuint)_val, 0);
 
-            User32.SendMessage(Handle, PBM_SETSTATE, (nuint)_style, 0);
-            User32.SendMessage(Handle, PBM_SETBKCOLOR, 0, _defBk ? unchecked((nint)CLR_DEFAULT) : (nint)ToCOLORREF(BackColor));
+            Window.FromHandle(Handle)?.SendMessage(PBM_SETSTATE, (nuint)_style, 0);
+            Window.FromHandle(Handle)?.SendMessage(PBM_SETBKCOLOR, 0, _defBk ? unchecked((nint)CLR_DEFAULT) : (nint)ToCOLORREF(BackColor));
 
-            User32.SendMessage(Handle, PBM_SETBARCOLOR, 0, _defBar ? unchecked((nint)CLR_DEFAULT) : (nint)_barColor);
+            Window.FromHandle(Handle)?.SendMessage(PBM_SETBARCOLOR, 0, _defBar ? unchecked((nint)CLR_DEFAULT) : (nint)_barColor);
 
-            User32.SendMessage(Handle, PBM_SETMARQUEE, Type == ProgressBarExType.Marquee, _marqueeSpeed);
+            Window.FromHandle(Handle)?.SendMessage(PBM_SETMARQUEE, Type == ProgressBarExType.Marquee, _marqueeSpeed);
         }
 
         /// <summary>
@@ -459,7 +459,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             if (!IsHandleCreated)
                 throw new InvalidOperationException("Can't perform a step right now; the control handle has not been created yet.");
 
-            return (int)User32.SendMessage(Handle, PBM_STEPIT, 0, 0);
+            return (int)Window.FromHandle(Handle)?.SendMessage(PBM_STEPIT, 0, 0);
         }
 
         /// <summary>
@@ -480,7 +480,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             if (!IsHandleCreated)
                 throw new InvalidOperationException("Can't perform a step right now; the control handle has not been created yet.");
 
-            return (int)User32.SendMessage(Handle, PBM_DELTAPOS, (nuint)step, 0);
+            return (int)Window.FromHandle(Handle)?.SendMessage(PBM_DELTAPOS, (nuint)step, 0);
         }
     }
 

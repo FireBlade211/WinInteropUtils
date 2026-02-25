@@ -19,7 +19,7 @@ namespace FireBlade.WinInteropUtils
         /// The <see cref="SetWindowLongPtr(nint, int, nint)"/> function fails if the process that owns the window specified by the <paramref name="hWnd"/> parameter is at a higher process privilege in the UIPI
         /// hierarchy than the process the calling thread resides in. Windows XP/2000: The <see cref="SetWindowLongPtr(nint, int, nint)"/> function fails if the window specified by the hWnd parameter
         /// does not belong to the same process as the calling thread.</param>
-        /// <param name="nIndex">The zero-based offset to the value to be set. Valid values are in the range zero through the number of bytes of extra window memory, minus the size of a LONG_PTR. To set any other value, specify one of the <see cref="DefaultWindowLongPtrValues"/>.</param>
+        /// <param name="nIndex">The zero-based offset to the value to be set. Valid values are in the range zero through the number of bytes of extra window memory, minus the size of a LONG_PTR. To set any other value, specify one of the <see cref="WindowLongPtr"/>.</param>
         /// <param name="dwNewLong">The replacement value.</param>
         /// <returns>If the function succeeds, the return value is the previous value of the specified offset.
         ///
@@ -30,24 +30,26 @@ namespace FireBlade.WinInteropUtils
         /// <remarks>
         /// <para>Certain window data is cached, so changes you make using <see cref="SetWindowLongPtr(nint, int, nint)"/> will not take effect until you call the <see href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-setwindowpos">SetWindowPos</see> function.</para>
         ///
-        /// <para>If you use <see cref="SetWindowLongPtr(nint, int, nint)"/> with the <see cref="DefaultWindowLongPtrValues.WndProc"/> index to replace the window procedure, the window procedure must conform to the guidelines specified in the description
+        /// <para>If you use <see cref="SetWindowLongPtr(nint, int, nint)"/> with the <see cref="WindowLongPtr.WndProc"/> index to replace the window procedure, the window procedure must conform to the guidelines specified in the description
         /// of the <see href="https://learn.microsoft.com/en-us/windows/win32/api/winuser/nc-winuser-wndproc">WndProc</see> callback function.</para>
         ///
-        /// <para>If you use <see cref="SetWindowLongPtr(nint, int, nint)"/> with the <see cref="DefaultWindowLongPtrValues.MessageResult"/> index to set the return value for a message processed by a dialog box procedure,
+        /// <para>If you use <see cref="SetWindowLongPtr(nint, int, nint)"/> with the <see cref="WindowLongPtr.MessageResult"/> index to set the return value for a message processed by a dialog box procedure,
         /// the dialog box procedure should return <see langword="true"/> directly afterward. Otherwise, if you call any function that results
-        /// in your dialog box procedure receiving a window message, the nested window message could overwrite the return value you set by using <see cref="DefaultWindowLongPtrValues.MessageResult"/>.</para>
+        /// in your dialog box procedure receiving a window message, the nested window message could overwrite the return value you set by using <see cref="WindowLongPtr.MessageResult"/>.</para>
         ///
-        /// <para>Calling <see cref="SetWindowLongPtr(nint, int, nint)"/> with the <see cref="DefaultWindowLongPtrValues.WndProc"/> index creates a subclass of the window class used to create the window. An application
+        /// <para>Calling <see cref="SetWindowLongPtr(nint, int, nint)"/> with the <see cref="WindowLongPtr.WndProc"/> index creates a subclass of the window class used to create the window. An application
         /// can subclass a system class, but should not subclass a window class created by another process.The <see cref="SetWindowLongPtr(nint, int, nint)"/> function creates
         /// the window subclass by changing the window procedure associated with a particular window class, causing the system to call the new window procedure
         /// instead of the previous one.</para>
         ///
-        /// Do not call <see cref="SetWindowLongPtr(nint, int, nint)"/> with the <see cref="DefaultWindowLongPtrValues.HWNDParent"/> index to change the parent of a child window. Instead, use the <see href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-setparent">SetParent</see> function.
-        /// <see cref="DefaultWindowLongPtrValues.HWNDParent"/> is used to change the owner of a top-level window, not the parent of a child window.
+        /// Do not call <see cref="SetWindowLongPtr(nint, int, nint)"/> with the <see cref="WindowLongPtr.HWNDParent"/> index to change the parent of a child window. Instead, use the <see href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-setparent">SetParent</see> function.
+        /// <see cref="WindowLongPtr.HWNDParent"/> is used to change the owner of a top-level window, not the parent of a child window.
         /// A window can have either a parent or an owner, or neither, but never both simultaneously.
         /// 
         /// <para>Calling <see cref="SetWindowLongPtr(nint, int, nint)"/> to set the style on a progress bar will reset its position.</para>
         /// </remarks>
+        [Obsolete("Create a Window instance or call FromHandle to get one for an existing handle, then call SetWindowLongPtr on the new Window instance instead." +
+            " This function will get removed in the next release of WinInteropUtils.")]
         [SupportedOSPlatform("windows5.0")] // Windows 2000
         public static nint SetWindowLongPtr(nint hWnd, int nIndex, nint dwNewLong)
         {
@@ -72,7 +74,7 @@ namespace FireBlade.WinInteropUtils
         /// </summary>
         /// <param name="hWnd">A handle to the window and, indirectly, the class to which the window belongs.</param>
         /// <param name="nIndex">The zero-based offset to the value to be retrieved. Valid values are in the range zero through the number of bytes of extra window memory, minus the size of a LONG_PTR.
-        /// To retrieve any other value, specify one of the <see cref="DefaultWindowLongPtrValues"/>.</param>
+        /// To retrieve any other value, specify one of the constants from the <see cref="WindowLongPtr"/> class.</param>
         /// <returns>If the function succeeds, the return value is the requested value.
         ///
         /// If the function fails, the return value is zero.To get extended error information, call <see cref="Marshal.GetLastPInvokeError"/>.
@@ -86,6 +88,8 @@ namespace FireBlade.WinInteropUtils
         /// encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see <see href="https://learn.microsoft.com/en-us/windows/win32/intl/conventions-for-function-prototypes">Conventions for Function Prototypes</see>.
         /// </remarks>
         [SupportedOSPlatform("windows5.0")] // Windows 2000
+        [Obsolete("Create a Window instance or call FromHandle to get one for an existing handle, then call GetWindowLongPtr on the new Window instance instead." +
+            " This function will get removed in the next release of WinInteropUtils.")]
         public static nint GetWindowLongPtr(nint hWnd, int nIndex)
         {
             if (nint.Size == 8)
@@ -151,6 +155,8 @@ namespace FireBlade.WinInteropUtils
         /// This functionality is not guaranteed to work for other types of applications.
         /// </remarks>
         [SupportedOSPlatform("windows5.0")] // Windows 2000
+        [Obsolete("Create a Window instance or call FromHandle to get one for an existing handle, then call SendMessage on the new Window instance instead." +
+            " This function will get removed in the next release of WinInteropUtils.")]
         public static nint SendMessage(nint hWnd, uint uMsg, nuint wParam, nint lParam) => SendMessageW(hWnd, uMsg, wParam, lParam);
 
         /// <summary>
@@ -197,6 +203,8 @@ namespace FireBlade.WinInteropUtils
         /// This functionality is not guaranteed to work for other types of applications.
         /// </remarks>
         [SupportedOSPlatform("windows5.0")] // Windows 2000
+        [Obsolete("Create a Window instance or call FromHandle to get one for an existing handle, then call SendMessage on the new Window instance instead." +
+            " This function will get removed in the next release of WinInteropUtils.")]
         public static nint SendMessage(nint hWnd, uint uMsg, bool wParam, nint lParam) => SendMessage(hWnd, uMsg, wParam ? 1u : 0u, lParam);
 
         /// <summary>
@@ -243,6 +251,8 @@ namespace FireBlade.WinInteropUtils
         /// This functionality is not guaranteed to work for other types of applications.
         /// </remarks>
         [SupportedOSPlatform("windows5.0")] // Windows 2000
+        [Obsolete("Create a Window instance or call FromHandle to get one for an existing handle, then call SendMessage on the new Window instance instead." +
+            " This function will get removed in the next release of WinInteropUtils.")]
         public static nint SendMessage(nint hWnd, uint uMsg, nuint wParam, bool lParam) => SendMessage(hWnd, uMsg, wParam, lParam ? 1 : 0);
 
         /// <summary>
@@ -289,6 +299,8 @@ namespace FireBlade.WinInteropUtils
         /// This functionality is not guaranteed to work for other types of applications.
         /// </remarks>
         [SupportedOSPlatform("windows5.0")] // Windows 2000
+        [Obsolete("Create a Window instance or call FromHandle to get one for an existing handle, then call SendMessage on the new Window instance instead." +
+            " This function will get removed in the next release of WinInteropUtils.")]
         public static nint SendMessage(nint hWnd, uint uMsg, bool wParam, bool lParam) => SendMessage(hWnd, uMsg, wParam ? 1u : 0u, lParam ? 1 : 0);
 
         [LibraryImport("user32.dll", EntryPoint = "IsGUIThread")]
@@ -387,6 +399,7 @@ namespace FireBlade.WinInteropUtils
         /// <returns>A handle to the window that is under the point. If no window exists at the given point, the return value is <see langword="null"/>.
         /// If the point is over a static text control, the return value is a handle to the window under the static text control.</returns>
         [SupportedOSPlatform("windows5.0")]
+        [Obsolete("Use Window.FromPoint instead. This function will get removed in the next release of WinInteropUtils.")]
         public static nint? GetWindowAtPoint(Point point)
         {
             var hwnd = WindowFromPoint(new POINT(point.X, point.Y));
@@ -402,6 +415,7 @@ namespace FireBlade.WinInteropUtils
         /// <returns>A handle to the window that is under the point. If no window exists at the given point, the return value is <see langword="null"/>.
         /// If the point is over a static text control, the return value is a handle to the window under the static text control.</returns>
         [SupportedOSPlatform("windows5.0")]
+        [Obsolete("Use Window.FromPoint instead. This function will get removed in the next release of WinInteropUtils.")]
         public static nint? GetWindowAtPoint(int x, int y)
         {
             var hwnd = WindowFromPoint(new POINT(x, y));
@@ -427,6 +441,8 @@ namespace FireBlade.WinInteropUtils
         /// <param name="hWnd">The window handle to check.</param>
         /// <returns>The state of the window.</returns>
         [SupportedOSPlatform("windows5.0")]
+        [Obsolete("Create a Window instance or call FromHandle to get one for an existing handle, then use the State property on the new Window instance instead." +
+            " This function will get removed in the next release of WinInteropUtils.")]
         public static WindowState GetWindowState(nint hWnd)
         {
             if (!IsWindowVisible(hWnd))
@@ -706,6 +722,8 @@ namespace FireBlade.WinInteropUtils
         /// User32.PostMessage(Handle, WM_COMPLETE, 0, (nint)time.ToFileTimeUtc());
         /// </code>
         /// </example>
+        [Obsolete("Create a Window instance or call FromHandle to get one for an existing handle, then call PostMessage on the new Window instance instead." +
+    " This function will get removed in the next release of WinInteropUtils.")]
         public static bool PostMessage(nint hWnd, uint uMsg, nuint wParam, nint lParam) => PostMessageW(hWnd, uMsg, wParam, lParam);
 
         [LibraryImport("user32.dll", SetLastError = true, EntryPoint = "GetParent")]
@@ -730,13 +748,15 @@ namespace FireBlade.WinInteropUtils
         /// <para>To obtain a window's owner window, instead of using <see cref="GetParent(nint)"/>, use <c>GetWindow</c> with the <c>GW_OWNER</c> flag. To obtain
         /// the parent window and not the owner, instead of using <see cref="GetParent(nint)"/>, use <c>GetAncestor</c> with the <c>GA_PARENT</c> flag.</para>
         /// </remarks>
+        [Obsolete("Create a Window instance or call FromHandle to get one for an existing handle, then use the Parent property on the new Window instance instead." +
+    " This function will get removed in the next release of WinInteropUtils.")]
         public static nint GetParent(nint hWnd) => _GetParent(hWnd);
     }
 
     /// <summary>
     /// Defines default index values for <see cref="User32.SetWindowLongPtr(nint, int, nint)"/> and <see cref="User32.GetWindowLongPtr(nint, int)"/>.
     /// </summary>
-    public static class DefaultWindowLongPtrValues
+    public static class WindowLongPtr
     {
         /// <summary>
         /// Gets or sets a new extended window style. (GWL_EXSTYLE)

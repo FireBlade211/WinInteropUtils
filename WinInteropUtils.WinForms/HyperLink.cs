@@ -131,7 +131,7 @@ namespace FireBlade.WinInteropUtils.WinForms
         //            Marshal.StructureToPtr(size, pSize, false);
 
         //            // Send the message
-        //            User32.SendMessage(Handle, LM_GETIDEALSIZE, (nuint)MaximumSize.Width, pSize);
+        //            Window.FromHandle(Handle)?.SendMessage(LM_GETIDEALSIZE, (nuint)MaximumSize.Width, pSize);
 
         //            // Read back the structure after the message is processed
         //            SIZE updated = Marshal.PtrToStructure<SIZE>(pSize);
@@ -272,7 +272,7 @@ namespace FireBlade.WinInteropUtils.WinForms
                     HyperLinkLinkState.DefaultColors);
                 Marshal.StructureToPtr(li, ptrLi, false);
 
-                var result = User32.SendMessage(Handle, LM_GETITEM, nuint.Zero, ptrLi) == 1;
+                var result = Window.FromHandle(Handle)?.SendMessage(LM_GETITEM, nuint.Zero, ptrLi) == 1;
 
                 if (result)
                 {
@@ -456,7 +456,7 @@ namespace FireBlade.WinInteropUtils.WinForms
                     {
                         Marshal.StructureToPtr(li, ptrLi, false);
 
-                        result = User32.SendMessage(ParentControl.Handle, LM_SETITEM, nuint.Zero, ptrLi) == 1;
+                        result = Window.FromHandle(ParentControl.Handle)?.SendMessage(LM_SETITEM, nuint.Zero, ptrLi) == 1;
                     }
                     finally
                     {

@@ -55,7 +55,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             set
             {
                 _itemImgList = value;
-                User32.SendMessage(Handle, CBEM_SETIMAGELIST, 0, value?.Handle ?? 0);
+                Window.FromHandle(Handle)?.SendMessage(CBEM_SETIMAGELIST, 0, value?.Handle ?? 0);
             }
         }
 
@@ -146,7 +146,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             IntPtr ptr = Marshal.AllocHGlobal(Marshal.SizeOf<COMBOBOXEXITEMW>());
             Marshal.StructureToPtr(cbexi, ptr, false);
 
-            User32.SendMessage(_cb.Handle, CBEM_INSERTITEM, 0, ptr);
+            Window.FromHandle(_cb.Handle)?.SendMessage(CBEM_INSERTITEM, 0, ptr);
 
             // Store handles for freeing later with FreeHGlobal
             handles.Add(ptr);
@@ -158,7 +158,7 @@ namespace FireBlade.WinInteropUtils.WinForms
         {
             for (int i = 0; i < _items.Count; i++)
             {
-                User32.SendMessage(_cb.Handle, CBEM_DELETEITEM, (nuint)i, 0);
+                Window.FromHandle(_cb.Handle)?.SendMessage(CBEM_DELETEITEM, (nuint)i, 0);
             }
 
             _items.Clear();
@@ -190,7 +190,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             gch.Free();
             Marshal.FreeHGlobal(h);
 
-            User32.SendMessage(_cb.Handle, CBEM_DELETEITEM, (nuint)i, 0);
+            Window.FromHandle(_cb.Handle)?.SendMessage(CBEM_DELETEITEM, (nuint)i, 0);
 
             return true;
         }

@@ -47,6 +47,8 @@
             fileDialogToolStripMenuItem = new ToolStripMenuItem();
             winInteropUtilsWinFormsToolStripMenuItem = new ToolStripMenuItem();
             colorDialogToolStripMenuItem = new ToolStripMenuItem();
+            visualStylesToolStripMenuItem = new ToolStripMenuItem();
+            windowToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -182,7 +184,7 @@
             // 
             // testToolStripMenuItem
             // 
-            testToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { messageBoxToolStripMenuItem, fileDialogToolStripMenuItem, winInteropUtilsWinFormsToolStripMenuItem, colorDialogToolStripMenuItem });
+            testToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { messageBoxToolStripMenuItem, fileDialogToolStripMenuItem, winInteropUtilsWinFormsToolStripMenuItem, colorDialogToolStripMenuItem, visualStylesToolStripMenuItem, windowToolStripMenuItem });
             testToolStripMenuItem.Name = "testToolStripMenuItem";
             testToolStripMenuItem.Size = new Size(39, 20);
             testToolStripMenuItem.Text = "Test";
@@ -214,6 +216,20 @@
             colorDialogToolStripMenuItem.Size = new Size(213, 22);
             colorDialogToolStripMenuItem.Text = "Color dialog";
             colorDialogToolStripMenuItem.Click += colorDialogToolStripMenuItem_Click;
+            // 
+            // visualStylesToolStripMenuItem
+            // 
+            visualStylesToolStripMenuItem.Name = "visualStylesToolStripMenuItem";
+            visualStylesToolStripMenuItem.Size = new Size(213, 22);
+            visualStylesToolStripMenuItem.Text = "Visual styles";
+            visualStylesToolStripMenuItem.Click += visualStylesToolStripMenuItem_Click;
+            // 
+            // windowToolStripMenuItem
+            // 
+            windowToolStripMenuItem.Name = "windowToolStripMenuItem";
+            windowToolStripMenuItem.Size = new Size(213, 22);
+            windowToolStripMenuItem.Text = "Window";
+            windowToolStripMenuItem.Click += windowToolStripMenuItem_Click;
             // 
             // Form1
             // 
@@ -257,5 +273,7 @@
         private ToolStripMenuItem fileDialogToolStripMenuItem;
         private ToolStripMenuItem winInteropUtilsWinFormsToolStripMenuItem;
         private ToolStripMenuItem colorDialogToolStripMenuItem;
+        private ToolStripMenuItem visualStylesToolStripMenuItem;
+        private ToolStripMenuItem windowToolStripMenuItem;
     }
 }

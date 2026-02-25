@@ -11,7 +11,7 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <Version>0.24-beta</Version>
+    <Version>0.25-beta</Version>
     <RepositoryUrl>https://github.com/FireBlade211/WinInteropUtils</RepositoryUrl>
     <PackageTags>pinvoke;winapi;win32;csharp;interop;windows;dotnet;dotnet8</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>

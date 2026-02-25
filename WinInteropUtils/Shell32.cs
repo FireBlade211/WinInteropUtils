@@ -33,7 +33,7 @@ namespace FireBlade.WinInteropUtils
         [SupportedOSPlatform("windows5.1")] // Windows XP
         public static bool ShowPickIconDialog(nint hWnd, string defIconPath, int defIconIndex, out string iconPath, out int iconIndex)
         {
-            var sb = new StringBuilder(defIconPath, Win32Constants.MAX_PATH);
+            var sb = new StringBuilder(defIconPath, WinConstants.MAX_PATH);
             iconIndex = defIconIndex;
 
             var result = PickIconDlg(hWnd, sb, (uint)sb.Capacity, ref iconIndex);
@@ -54,7 +54,7 @@ namespace FireBlade.WinInteropUtils
         [SupportedOSPlatform("windows5.1")] // Windows XP
         public static bool ShowPickIconDialog(string defIconPath, int defIconIndex, out string iconPath, out int iconIndex)
         {
-            var sb = new StringBuilder(defIconPath, Win32Constants.MAX_PATH);
+            var sb = new StringBuilder(defIconPath, WinConstants.MAX_PATH);
             iconIndex = defIconIndex;
 
             var result = PickIconDlg(nint.Zero, sb, (uint)sb.Capacity, ref iconIndex);
@@ -75,7 +75,7 @@ namespace FireBlade.WinInteropUtils
         [SupportedOSPlatform("windows5.1")] // Windows XP
         public static bool ShowPickIconDialog(nint hWnd, string defIconPath, int defIconIndex, out Icon icon)
         {
-            var sb = new StringBuilder(defIconPath, Win32Constants.MAX_PATH);
+            var sb = new StringBuilder(defIconPath, WinConstants.MAX_PATH);
 
             int iconIndex = defIconIndex;
 
@@ -96,7 +96,7 @@ namespace FireBlade.WinInteropUtils
         [SupportedOSPlatform("windows5.1")] // Windows XP
         public static bool ShowPickIconDialog(string defIconPath, int defIconIndex, out Icon icon)
         {
-            var sb = new StringBuilder(defIconPath, Win32Constants.MAX_PATH);
+            var sb = new StringBuilder(defIconPath, WinConstants.MAX_PATH);
 
             int iconIndex = defIconIndex;
 
@@ -175,7 +175,7 @@ namespace FireBlade.WinInteropUtils
             public int iIcon;
             public uint dwAttributes;
 
-            [MarshalAs(UnmanagedType.ByValTStr, SizeConst = Win32Constants.MAX_PATH)]
+            [MarshalAs(UnmanagedType.ByValTStr, SizeConst = WinConstants.MAX_PATH)]
             public string szDisplayName;
 
             [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 80)]
@@ -315,7 +315,7 @@ namespace FireBlade.WinInteropUtils
         /// <summary>
         /// Retrieves information about an object in the file system, such as a file, folder, directory, or drive root.
         /// </summary>
-        /// <param name="path"><para>A string of maximum length <see cref="Win32Constants.MAX_PATH"/> that contains the path and file name.
+        /// <param name="path"><para>A string of maximum length <see cref="WinConstants.MAX_PATH"/> that contains the path and file name.
         /// Both absolute and relative paths are valid.</para>
         ///
         /// This string can use either short (the 8.3 form) or long file names.</param>
@@ -344,7 +344,7 @@ namespace FireBlade.WinInteropUtils
         /// Retrieves information about an object in the file system, such as a file, folder, directory, or drive root. This function provides all the customization
         /// of the Windows API function <see cref="SHGetFileInfoW(string, uint, ref SHFILEINFO, uint, uint)"/>, unlike <see cref="GetFileInfo(string)"/>.
         /// </summary>
-        /// <param name="pszPath"><para>A string of maximum length <see cref="Win32Constants.MAX_PATH"/> that contains the path and file name.
+        /// <param name="pszPath"><para>A string of maximum length <see cref="WinConstants.MAX_PATH"/> that contains the path and file name.
         /// Both absolute and relative paths are valid.</para>
         ///
         /// <para>If the <paramref name="uFlags"/> parameter includes the <see cref="SHGetFileInfoFlags.SHGFI_PIDL"/> flag, this parameter

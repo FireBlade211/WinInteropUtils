@@ -3,7 +3,7 @@
     /// <summary>
     /// Represents a dialog window that can be shown modally or modelessly. This class is abstract.
     /// </summary>
-    /// <typeparam name="TShowReturn">The return type of the <see cref="Show()"/> and <see cref="Show(nint)"/> methods.</typeparam>
+    /// <typeparam name="TShowReturn">The return type of the <see cref="Show()"/> and <see cref="Show(Window)"/> methods.</typeparam>
     /// <typeparam name="TSelf">The class that is inheriting <see cref="DialogWindow{TShowReturn, TSelf}"/>.</typeparam>
     public abstract class DialogWindow<TShowReturn, TSelf> where TSelf : DialogWindow<TShowReturn, TSelf>
     {
@@ -40,8 +40,8 @@
         /// When overriden in a dervied class, shows the dialog window modally.
         /// </summary>
         /// <returns>The result of the dialog.</returns>
-        /// <param name="hWnd">The handle of the owner window.</param>
-        public abstract TShowReturn Show(nint hWnd);
+        /// <param name="wnd">The owner window.</param>
+        public abstract TShowReturn Show(Window wnd);
 
         /// <summary>
         /// Shows the <typeparamref name="TSelf"/>.
@@ -55,7 +55,7 @@
         /// </summary>
         /// <returns>The result of the dialog.</returns>
         /// <param name="dlg">The <typeparamref name="TSelf"/> to show.</param>
-        /// <param name="hWnd">The handle of the owner window.</param>
-        public static TShowReturn Show(TSelf dlg, nint hWnd) => dlg.Show(hWnd);
+        /// <param name="wnd">The owner window.</param>
+        public static TShowReturn Show(TSelf dlg, Window wnd) => dlg.Show(wnd);
     }
 }

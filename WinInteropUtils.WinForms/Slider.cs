@@ -119,7 +119,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    if (User32.SendMessage(Handle, TBM_GETBUDDY, true, 0) is nint hCtrl)
+                    if (Window.FromHandle(Handle)?.SendMessage(TBM_GETBUDDY, true, 0) is nint hCtrl)
                         if (FromHandle(hCtrl) is Control ctrl)
                             return ctrl;
 
@@ -134,7 +134,7 @@ namespace FireBlade.WinInteropUtils.WinForms
                     throw new ArgumentException("The buddy can't be set to the same Slider that the buddy is being set on.", nameof(value));
 
                 if (IsHandleCreated)
-                    User32.SendMessage(Handle, TBM_SETBUDDY, true, value?.Handle ?? nint.Zero);
+                    Window.FromHandle(Handle)?.SendMessage(TBM_SETBUDDY, true, value?.Handle ?? nint.Zero);
 
                 _leftBuddy = value;
             }
@@ -152,7 +152,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    if (User32.SendMessage(Handle, TBM_GETBUDDY, false, 0) is nint hCtrl)
+                    if (Window.FromHandle(Handle)?.SendMessage(TBM_GETBUDDY, false, 0) is nint hCtrl)
                         if (FromHandle(hCtrl) is Control ctrl)
                             return ctrl;
 
@@ -167,7 +167,7 @@ namespace FireBlade.WinInteropUtils.WinForms
                     throw new ArgumentException("The buddy can't be set to the same Slider that the buddy is being set on.", nameof(value));
 
                 if (IsHandleCreated)
-                    User32.SendMessage(Handle, TBM_SETBUDDY, false, value?.Handle ?? nint.Zero);
+                    Window.FromHandle(Handle)?.SendMessage(TBM_SETBUDDY, false, value?.Handle ?? nint.Zero);
 
                 _rightBuddy = value;
             }
@@ -313,7 +313,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    if (User32.SendMessage(Handle, TBM_GETSELSTART, 0, 0) is nint start)
+                    if (Window.FromHandle(Handle)?.SendMessage(TBM_GETSELSTART, 0, 0) is nint start)
                         return (int)start;
 
                 return _selRangeStart;
@@ -323,7 +323,7 @@ namespace FireBlade.WinInteropUtils.WinForms
                 _selRangeStart = value;
 
                 if (IsHandleCreated)
-                    User32.SendMessage(Handle, TBM_SETSELSTART, true, value);
+                    Window.FromHandle(Handle)?.SendMessage(TBM_SETSELSTART, true, value);
             }
         }
 
@@ -350,7 +350,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    if (User32.SendMessage(Handle, TBM_GETSELEND, 0, 0) is nint start)
+                    if (Window.FromHandle(Handle)?.SendMessage(TBM_GETSELEND, 0, 0) is nint start)
                         return (int)start;
 
                 return _selRangeEnd;
@@ -360,7 +360,7 @@ namespace FireBlade.WinInteropUtils.WinForms
                 _selRangeEnd = value;
 
                 if (IsHandleCreated)
-                    User32.SendMessage(Handle, TBM_SETSELEND, true, value);
+                    Window.FromHandle(Handle)?.SendMessage(TBM_SETSELEND, true, value);
             }
         }
 
@@ -396,7 +396,7 @@ namespace FireBlade.WinInteropUtils.WinForms
                 _tickFreq = value;
 
                 if (IsHandleCreated)
-                    User32.SendMessage(Handle, TBM_SETTICKFREQ, (nuint)value, 0);
+                    Window.FromHandle(Handle)?.SendMessage(TBM_SETTICKFREQ, (nuint)value, 0);
             }
         }
         /// <summary>
@@ -445,7 +445,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             set
             {
                 if (IsHandleCreated)
-                    User32.SendMessage(Handle, TBM_SETTIPSIDE, (nuint)value, 0);
+                    Window.FromHandle(Handle)?.SendMessage(TBM_SETTIPSIDE, (nuint)value, 0);
 
                 _side = value;
             }
@@ -462,14 +462,14 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    return (int)User32.SendMessage(Handle, TBM_GETPOS, 0, 0);
+                    return (int)Window.FromHandle(Handle)?.SendMessage(TBM_GETPOS, 0, 0);
 
                 return _val;
             }
             set
             {
                 if (IsHandleCreated)
-                    User32.SendMessage(Handle, TBM_SETPOSNOTIFY, true, value);
+                    Window.FromHandle(Handle)?.SendMessage(TBM_SETPOSNOTIFY, true, value);
 
                 _val = value;
             }
@@ -502,14 +502,14 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    return (int)User32.SendMessage(Handle, TBM_GETTHUMBLENGTH, 0, 0);
+                    return (int)Window.FromHandle(Handle)?.SendMessage(TBM_GETTHUMBLENGTH, 0, 0);
 
                 return _thumbLength;
             }
             set
             {
                 if (IsHandleCreated)
-                    User32.SendMessage(Handle, TBM_SETTHUMBLENGTH, (nuint)value, 0);
+                    Window.FromHandle(Handle)?.SendMessage(TBM_SETTHUMBLENGTH, (nuint)value, 0);
 
                 _thumbLength = value;
             }
@@ -526,14 +526,14 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    return (int)User32.SendMessage(Handle, TBM_GETRANGEMIN, 0, 0);
+                    return (int)Window.FromHandle(Handle)?.SendMessage(TBM_GETRANGEMIN, 0, 0);
 
                 return _min;
             }
             set
             {
                 if (IsHandleCreated)
-                    User32.SendMessage(Handle, TBM_SETRANGEMIN, true, value);
+                    Window.FromHandle(Handle)?.SendMessage(TBM_SETRANGEMIN, true, value);
 
                 _min = value;
             }
@@ -550,14 +550,14 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    return (int)User32.SendMessage(Handle, TBM_GETRANGEMAX, 0, 0);
+                    return (int)Window.FromHandle(Handle)?.SendMessage(TBM_GETRANGEMAX, 0, 0);
 
                 return _max;
             }
             set
             {
                 if (IsHandleCreated)
-                    User32.SendMessage(Handle, TBM_SETRANGEMAX, true, value);
+                    Window.FromHandle(Handle)?.SendMessage(TBM_SETRANGEMAX, true, value);
 
                 _max = value;
             }
@@ -585,9 +585,9 @@ namespace FireBlade.WinInteropUtils.WinForms
                 {
                     unsafe
                     {
-                        RECT rect;
+                        RECT rect = new RECT();
 
-                        User32.SendMessage(Handle, TBM_GETTHUMBRECT, 0, (nint)(&rect));
+                        Window.FromHandle(Handle)?.SendMessage(TBM_GETTHUMBRECT, 0, (nint)(&rect));
 
                         return rect.ToRectangle();
                     }
@@ -609,14 +609,14 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    return (int)User32.SendMessage(Handle, TBM_GETLINESIZE, 0, 0);
+                    return (int)Window.FromHandle(Handle)?.SendMessage(TBM_GETLINESIZE, 0, 0);
 
                 return _smallChange;
             }
             set
             {
                 if (IsHandleCreated)
-                    User32.SendMessage(Handle, TBM_SETLINESIZE, 0, value);
+                    Window.FromHandle(Handle)?.SendMessage(TBM_SETLINESIZE, 0, value);
 
                 _smallChange = value;
             }
@@ -635,14 +635,14 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    return (int)User32.SendMessage(Handle, TBM_GETPAGESIZE, 0, 0);
+                    return (int)Window.FromHandle(Handle)?.SendMessage(TBM_GETPAGESIZE, 0, 0);
 
                 return _largeChange;
             }
             set
             {
                 if (IsHandleCreated)
-                    User32.SendMessage(Handle, TBM_SETPAGESIZE, 0, value);
+                    Window.FromHandle(Handle)?.SendMessage(TBM_SETPAGESIZE, 0, value);
 
                 _largeChange = value;
             }
@@ -703,25 +703,25 @@ namespace FireBlade.WinInteropUtils.WinForms
         {
             base.OnHandleCreated(e);
 
-            User32.SendMessage(Handle, TBM_SETBUDDY, true, _leftBuddy?.Handle ?? nint.Zero);
-            User32.SendMessage(Handle, TBM_SETBUDDY, false, _rightBuddy?.Handle ?? nint.Zero);
+            Window.FromHandle(Handle)?.SendMessage(TBM_SETBUDDY, true, _leftBuddy?.Handle ?? nint.Zero);
+            Window.FromHandle(Handle)?.SendMessage(TBM_SETBUDDY, false, _rightBuddy?.Handle ?? nint.Zero);
 
-            User32.SendMessage(Handle, TBM_SETSELSTART, true, _selRangeStart);
-            User32.SendMessage(Handle, TBM_SETSELEND, true, _selRangeEnd);
+            Window.FromHandle(Handle)?.SendMessage(TBM_SETSELSTART, true, _selRangeStart);
+            Window.FromHandle(Handle)?.SendMessage(TBM_SETSELEND, true, _selRangeEnd);
 
-            User32.SendMessage(Handle, TBM_SETTICKFREQ, (nuint)_tickFreq, 0);
+            Window.FromHandle(Handle)?.SendMessage(TBM_SETTICKFREQ, (nuint)_tickFreq, 0);
 
-            User32.SendMessage(Handle, TBM_SETTIPSIDE, (nuint)_side, 0);
+            Window.FromHandle(Handle)?.SendMessage(TBM_SETTIPSIDE, (nuint)_side, 0);
 
-            User32.SendMessage(Handle, TBM_SETPOS, true, _val);
+            Window.FromHandle(Handle)?.SendMessage(TBM_SETPOS, true, _val);
 
-            User32.SendMessage(Handle, TBM_SETTHUMBLENGTH, (nuint)_thumbLength, 0);
+            Window.FromHandle(Handle)?.SendMessage(TBM_SETTHUMBLENGTH, (nuint)_thumbLength, 0);
 
-            User32.SendMessage(Handle, TBM_SETRANGEMIN, true, _min);
-            User32.SendMessage(Handle, TBM_SETRANGEMAX, true, _max);
+            Window.FromHandle(Handle)?.SendMessage(TBM_SETRANGEMIN, true, _min);
+            Window.FromHandle(Handle)?.SendMessage(TBM_SETRANGEMAX, true, _max);
 
-            User32.SendMessage(Handle, TBM_SETLINESIZE, 0, _smallChange);
-            User32.SendMessage(Handle, TBM_SETPAGESIZE, 0, _largeChange);
+            Window.FromHandle(Handle)?.SendMessage(TBM_SETLINESIZE, 0, _smallChange);
+            Window.FromHandle(Handle)?.SendMessage(TBM_SETPAGESIZE, 0, _largeChange);
         }
 
         protected override void OnBackColorChanged(EventArgs e)
@@ -777,7 +777,7 @@ namespace FireBlade.WinInteropUtils.WinForms
         public void ClearSelectionRange()
         {
             if (IsHandleCreated)
-                User32.SendMessage(Handle, TBM_CLEARSEL, true, 0);
+                Window.FromHandle(Handle)?.SendMessage(TBM_CLEARSEL, true, 0);
 
             _selRangeStart = 0;
             _selRangeEnd = 0;
@@ -790,7 +790,7 @@ namespace FireBlade.WinInteropUtils.WinForms
         public void ClearSelectionRange(bool redraw)
         {
             if (IsHandleCreated)
-                User32.SendMessage(Handle, TBM_CLEARSEL, redraw, 0);
+                Window.FromHandle(Handle)?.SendMessage(TBM_CLEARSEL, redraw, 0);
 
             _selRangeStart = 0;
             _selRangeEnd = 0;
@@ -803,7 +803,7 @@ namespace FireBlade.WinInteropUtils.WinForms
         public void AddTick(int pos)
         {
             if (IsHandleCreated)
-                User32.SendMessage(Handle, TBM_SETTIC, 0, pos);
+                Window.FromHandle(Handle)?.SendMessage(TBM_SETTIC, 0, pos);
         }
 
         /// <summary>
@@ -817,7 +817,7 @@ namespace FireBlade.WinInteropUtils.WinForms
         public int GetTickPosition(int idx)
         {
             if (IsHandleCreated)
-                return (int)User32.SendMessage(Handle, TBM_GETTIC, (nuint)idx, 0);
+                return (int)Window.FromHandle(Handle)?.SendMessage(TBM_GETTIC, (nuint)idx, 0);
 
             return -1;
         }
@@ -834,7 +834,7 @@ namespace FireBlade.WinInteropUtils.WinForms
         public int? GetTickCount()
         {
             if (IsHandleCreated)
-                return (int)User32.SendMessage(Handle, TBM_GETNUMTICS, 0, 0);
+                return (int)Window.FromHandle(Handle)?.SendMessage(TBM_GETNUMTICS, 0, 0);
 
             return null;
         }
@@ -854,7 +854,7 @@ namespace FireBlade.WinInteropUtils.WinForms
         {
             if (IsHandleCreated)
             {
-                var ptr = User32.SendMessage(Handle, TBM_GETPTICS, 0, 0);
+                var ptr = Window.FromHandle(Handle)?.SendMessage(TBM_GETPTICS, 0, 0) ?? nint.Zero;
                 var length = ((int)GetTickCount()!) - 2;
 
                 if (ptr == nint.Zero || length <= 0)
@@ -879,7 +879,7 @@ namespace FireBlade.WinInteropUtils.WinForms
         public void ClearTicks()
         {
             if (IsHandleCreated)
-                User32.SendMessage(Handle, TBM_CLEARTICS, true, 0);
+                Window.FromHandle(Handle)?.SendMessage(TBM_CLEARTICS, true, 0);
         }
           
         private bool ShouldSerializeThumbLength() => FixedLength;

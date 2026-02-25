@@ -102,17 +102,17 @@ namespace FireBlade.WinInteropUtils.Dialogs
         /// Shows the color dialog modelessly.
         /// </summary>
         /// <returns>The chosen <see cref="Color"/>, or <see langword="null"/> if the user cancelled the dialog.</returns>
-        public override Color? Show() => Show(nint.Zero);
+        public override Color? Show() => Show(Window.FromHandleInternal(nint.Zero));
 
         /// <summary>
         /// Shows the color dialog modally.
         /// </summary>
         /// <returns>The chosen <see cref="Color"/>, or <see langword="null"/> if the user cancelled the dialog.</returns>
-        public override Color? Show(nint hwnd)
+        public override Color? Show(Window wnd)
         {
             CHOOSECOLORW ccw = new CHOOSECOLORW();
             ccw.lStructSize = (uint)Marshal.SizeOf<CHOOSECOLORW>();
-            ccw.hwndOwner = hwnd;
+            ccw.hwndOwner = wnd.Handle;
             ccw.Flags = (uint)PackFlags(new() { { CC_ANYCOLOR, AnyColor  }, { CC_SOLIDCOLOR, SolidColorsOnly }, { CC_RGBINIT, DefaultColor != null },
                 { CC_SHOWHELP, ShowHelp } }) | (uint)FullOpenMode;
             ccw.rgbResult = DefaultColor != null ? ToCOLORREF((Color)DefaultColor) : 0;
@@ -186,28 +186,28 @@ namespace FireBlade.WinInteropUtils.Dialogs
         /// <summary>
         /// Shows the color dialog modally.
         /// </summary>
-        /// <param name="hwnd">The owner window handle.</param>
+        /// <param name="wnd">The owner window.</param>
         /// <param name="defaultColor">The default color.</param>
         /// <returns>The chosen color.</returns>
         /// <remarks>For more customization, create an instance of the <see cref="ColorPickerDialog"/> class.</remarks>
-        public static Color? Show(nint hwnd, Color defaultColor) => new ColorPickerDialog
+        public static Color? Show(Window wnd, Color defaultColor) => new ColorPickerDialog
         {
             DefaultColor = defaultColor
-        }.Show(hwnd);
+        }.Show(wnd);
 
         /// <summary>
         /// Shows the color dialog modally.
         /// </summary>
-        /// <param name="hwnd">The owner window handle.</param>
+        /// <param name="wnd">The owner window.</param>
         /// <param name="defaultColor">The default color.</param>
         /// <param name="customColors">The array of custom colors in the dialog.</param>
         /// <returns>The chosen color.</returns>
         /// <remarks>For more customization, create an instance of the <see cref="ColorPickerDialog"/> class.</remarks>
-        public static Color? Show(nint hwnd, Color defaultColor, Color[] customColors) => new ColorPickerDialog
+        public static Color? Show(Window wnd, Color defaultColor, Color[] customColors) => new ColorPickerDialog
         {
             DefaultColor = defaultColor,
             CustomColors = customColors
-        }.Show(hwnd);
+        }.Show(wnd);
 
         /// <summary>
         /// Shows the color dialog modelessly.
@@ -233,9 +233,9 @@ namespace FireBlade.WinInteropUtils.Dialogs
         /// Shows the <see cref="ColorPickerDialog"/> modally.
         /// </summary>
         /// <param name="dlg">The <see cref="ColorPickerDialog"/> to show.</param>
-        /// <param name="hwnd">The owner window handle.</param>
+        /// <param name="hwnd">The owner window.</param>
         /// <returns>The result of the dialog.</returns>
-        public static new Color? Show(ColorPickerDialog dlg, nint hwnd) => DialogWindow<Color?, ColorPickerDialog>.Show(dlg, hwnd);
+        public static new Color? Show(ColorPickerDialog dlg, Window wnd) => DialogWindow<Color?, ColorPickerDialog>.Show(dlg, wnd);
     }
 
     /// <summary>
