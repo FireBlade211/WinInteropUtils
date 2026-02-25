@@ -1074,6 +1074,55 @@ Class Macros  <a class="header-action link-secondary" title="View source" href="
 
 
 
+  <a id="FireBlade_WinInteropUtils_Macros_MakeIntAtom_" data-uid="FireBlade.WinInteropUtils.Macros.MakeIntAtom*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Macros_MakeIntAtom__1___0_" data-uid="FireBlade.WinInteropUtils.Macros.MakeIntAtom``1(``0)">
+  MakeIntAtom&lt;TNum&gt;(TNum)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Macros.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the specified atom into a string, so it can be passed to functions which accept either atoms or strings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string MakeIntAtom&lt;TNum&gt;(TNum num) where TNum : INumber&lt;TNum&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>num</code> <span class="xref">TNum</span></dt>
+    <dd><p>The numeric value to be made into an integer atom. This parameter can be either an integer atom or a string atom.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The atom, converted to a value that can be passed to functions that accept atoms or strings.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TNum</code></dt>
+    <dd><p>The number type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Macros_MakeIntAtom__1___0__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Although the return value of the MAKEINTATOM macro is cast as a string value, it cannot be used as a string pointer except when it is passed to
+atom-management functions that require a string argument.</p>
+</div>
+
+
+
+
   <a id="FireBlade_WinInteropUtils_Macros_MakeIntResource_" data-uid="FireBlade.WinInteropUtils.Macros.MakeIntResource*"></a>
 
   <h3 id="FireBlade_WinInteropUtils_Macros_MakeIntResource_System_Int32_" data-uid="FireBlade.WinInteropUtils.Macros.MakeIntResource(System.Int32)">

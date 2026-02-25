@@ -110,7 +110,7 @@ Class DialogWindow&lt;TShowReturn, TSelf&gt;  <a class="header-action link-secon
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TShowReturn</code></dt>
-    <dd><p>The return type of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show">Show()</a> and <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show_System_IntPtr_">Show(nint)</a> methods.</p>
+    <dd><p>The return type of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show">Show()</a> and <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show_FireBlade_WinInteropUtils_Window_">Show(Window)</a> methods.</p>
 </dd>
     <dt><code>TSelf</code></dt>
     <dd><p>The class that is inheriting <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html">DialogWindow&lt;TShowReturn, TSelf&gt;</a>.</p>
@@ -130,7 +130,7 @@ Class DialogWindow&lt;TShowReturn, TSelf&gt;  <a class="header-action link-secon
     <dt>Derived</dt>
     <dd>
       <div><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html">ColorPickerDialog</a></div>
-      <div><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.Win32MessageBox.html">Win32MessageBox</a></div>
+      <div><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html">WinMessageBox</a></div>
     </dd>
   </dl>
 
@@ -278,8 +278,8 @@ Class DialogWindow&lt;TShowReturn, TSelf&gt;  <a class="header-action link-secon
 
   <a id="FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show*"></a>
 
-  <h3 id="FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show(System.IntPtr)">
-  Show(nint)
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show_FireBlade_WinInteropUtils_Window_" data-uid="FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show(FireBlade.WinInteropUtils.Window)">
+  Show(Window)
   <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/DialogWindow.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -288,13 +288,13 @@ Class DialogWindow&lt;TShowReturn, TSelf&gt;  <a class="header-action link-secon
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract TShowReturn Show(nint hWnd)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract TShowReturn Show(Window wnd)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>hWnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
-    <dd><p>The handle of the owner window.</p>
+    <dt><code>wnd</code> <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd><p>The owner window.</p>
 </dd>
   </dl>
 
@@ -356,8 +356,8 @@ Class DialogWindow&lt;TShowReturn, TSelf&gt;  <a class="header-action link-secon
 
   <a id="FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show*"></a>
 
-  <h3 id="FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show__1_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show(`1,System.IntPtr)">
-  Show(TSelf, nint)
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show__1_FireBlade_WinInteropUtils_Window_" data-uid="FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show(`1,FireBlade.WinInteropUtils.Window)">
+  Show(TSelf, Window)
   <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/DialogWindow.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -366,7 +366,7 @@ Class DialogWindow&lt;TShowReturn, TSelf&gt;  <a class="header-action link-secon
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static TShowReturn Show(TSelf dlg, nint hWnd)</code></pre>
+    <pre><code class="lang-csharp hljs">public static TShowReturn Show(TSelf dlg, Window wnd)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -374,8 +374,8 @@ Class DialogWindow&lt;TShowReturn, TSelf&gt;  <a class="header-action link-secon
     <dt><code>dlg</code> <span class="xref">TSelf</span></dt>
     <dd><p>The <code class="typeparamref">TSelf</code> to show.</p>
 </dd>
-    <dt><code>hWnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
-    <dd><p>The handle of the owner window.</p>
+    <dt><code>wnd</code> <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd><p>The owner window.</p>
 </dd>
   </dl>
 

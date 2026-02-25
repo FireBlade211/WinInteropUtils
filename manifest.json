@@ -26,6 +26,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.ClassStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.ClassStyle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.ClassStyle",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.ClassStyle.yml\" sourcestartlinenumber=\"1\">Represents class styles. Class styles define additional elements of the window class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.yml",
       "output": {
         ".html": {
@@ -236,6 +250,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.CreateStruct.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.CreateStruct.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.CreateStruct",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.CreateStruct.yml\" sourcestartlinenumber=\"1\">The structure passed to the <code>lParam</code> parameter of the <code>WM_CREATE</code> message of a window.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/FireBlade.WinInteropUtils.DefaultWindowLongPtrValues.yml",
       "output": {
         ".html": {
@@ -386,7 +414,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality",
-      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality.yml\" sourcestartlinenumber=\"1\">Specifies the modality of a <xref href=\"FireBlade.WinInteropUtils.Dialogs.Win32MessageBox\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxModality.yml\" sourcestartlinenumber=\"1\">Specifies the modality of a <xref href=\"FireBlade.WinInteropUtils.Dialogs.WinMessageBox\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -404,6 +432,76 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Dialogs.WinMessageBox",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.yml\" sourcestartlinenumber=\"1\">Provides methods for showing a Win32 message box.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.yml\" sourcestartlinenumber=\"1\">Defines the buttons on a message box.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.yml\" sourcestartlinenumber=\"1\">Specifies the icon in a message box.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxModality.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxModality.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Dialogs.WinMessageBoxModality",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxModality.yml\" sourcestartlinenumber=\"1\">Specifies the modality of a <xref href=\"FireBlade.WinInteropUtils.Dialogs.WinMessageBox\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.yml\" sourcestartlinenumber=\"1\">Represents the result of the message box.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/FireBlade.WinInteropUtils.Dialogs.yml",
       "output": {
         ".html": {
@@ -418,6 +516,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.DrawTextAdvancedOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.DrawTextAdvancedOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.DrawTextAdvancedOptions",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.DrawTextAdvancedOptions.yml\" sourcestartlinenumber=\"1\">Represents a structure that contains extended formatting options</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/FireBlade.WinInteropUtils.EnumExtensions.yml",
       "output": {
         ".html": {
@@ -429,6 +541,20 @@
       "IsMRef": true,
       "Title": "FireBlade.WinInteropUtils.EnumExtensions",
       "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.EnumExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for <xref href=\"System.Enum\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.ExWindowStyles.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.ExWindowStyles.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.ExWindowStyles",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.ExWindowStyles.yml\" sourcestartlinenumber=\"1\">Specifies extended window styles.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -460,6 +586,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.IHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.IHandle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.IHandle",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.IHandle.yml\" sourcestartlinenumber=\"1\">Represents an interface for classes wrapping unmanaged handles.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/FireBlade.WinInteropUtils.IconExtensions.yml",
       "output": {
         ".html": {
@@ -485,6 +625,48 @@
       "IsMRef": true,
       "Title": "FireBlade.WinInteropUtils.Macros",
       "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Macros.yml\" sourcestartlinenumber=\"1\">Defines Win32 macros.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.MessageLoop.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.MessageLoop.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.MessageLoop",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.MessageLoop.yml\" sourcestartlinenumber=\"1\">Provides methods for managing message loops.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.MessageProcessingLimit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.MessageProcessingLimit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.MessageProcessingLimit",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.MessageProcessingLimit.yml\" sourcestartlinenumber=\"1\">Specifies what message types should be processed by <xref href=\"FireBlade.WinInteropUtils.MessageLoop.PeekMessage(FireBlade.WinInteropUtils.WinMessage%40%2cFireBlade.WinInteropUtils.Window%2cSystem.UInt32%2cSystem.UInt32%2cFireBlade.WinInteropUtils.MessageRemoval%2cFireBlade.WinInteropUtils.MessageProcessingLimit)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.MessageRemoval.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.MessageRemoval.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.MessageRemoval",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.MessageRemoval.yml\" sourcestartlinenumber=\"1\">Specifies message removal options for <xref href=\"FireBlade.WinInteropUtils.MessageLoop.PeekMessage(FireBlade.WinInteropUtils.WinMessage%40%2cFireBlade.WinInteropUtils.Window%2cSystem.UInt32%2cSystem.UInt32%2cFireBlade.WinInteropUtils.MessageRemoval%2cFireBlade.WinInteropUtils.MessageProcessingLimit)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -558,6 +740,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.SystemColorId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.SystemColorId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.SystemColorId",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.SystemColorId.yml\" sourcestartlinenumber=\"1\">Defines the identifiers for system colors.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.SystemFontId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.SystemFontId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.SystemFontId",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.SystemFontId.yml\" sourcestartlinenumber=\"1\">Defines the identifiers for system fonts.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.ThemeTextOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.ThemeTextOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.ThemeTextOptions",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.ThemeTextOptions.yml\" sourcestartlinenumber=\"1\">Represents the options for <xref href=\"FireBlade.WinInteropUtils.VisualStyle.DrawThemeText(System.Drawing.Graphics%2cSystem.Int32%2cSystem.Int32%2cSystem.String%2cSystem.Int32%2cFireBlade.WinInteropUtils.ThemeTextOptions%2cSystem.Drawing.Rectangle)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/FireBlade.WinInteropUtils.TitleBarElement.yml",
       "output": {
         ".html": {
@@ -614,6 +838,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.VisualStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.VisualStyle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.VisualStyle",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.VisualStyle.yml\" sourcestartlinenumber=\"1\">Provides methods for managing and drawing with visual styles.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/FireBlade.WinInteropUtils.Win32Constants.yml",
       "output": {
         ".html": {
@@ -639,6 +877,20 @@
       "IsMRef": true,
       "Title": "FireBlade.WinInteropUtils.Win32ErrorCode",
       "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Win32ErrorCode.yml\" sourcestartlinenumber=\"1\">Defines Win32 error codes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinConstants.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinConstants",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WinConstants.yml\" sourcestartlinenumber=\"1\">Defines common Win32 constants.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -922,6 +1174,104 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinMessage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinMessage",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WinMessage.yml\" sourcestartlinenumber=\"1\">Provides information about a Windows message.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Window.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Window.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Window",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Window.yml\" sourcestartlinenumber=\"1\">Provides methods for managing Win32 windows.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WindowClass.WndProc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WindowClass.WndProc.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WindowClass.WndProc",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WindowClass.WndProc.yml\" sourcestartlinenumber=\"1\">A callback function, which you define in your application, that processes messages sent to a window.\nThe <code>WndProc</code> name is a placeholder for the name of the function that you define in your application.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WindowClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WindowClass.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WindowClass",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WindowClass.yml\" sourcestartlinenumber=\"1\">Represents a window class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WindowLongPtr.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WindowLongPtr.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WindowLongPtr",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WindowLongPtr.yml\" sourcestartlinenumber=\"1\">Defines default index values for <xref href=\"FireBlade.WinInteropUtils.User32.SetWindowLongPtr(System.IntPtr%2cSystem.Int32%2cSystem.IntPtr)\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"FireBlade.WinInteropUtils.User32.GetWindowLongPtr(System.IntPtr%2cSystem.Int32)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WindowSetPosOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WindowSetPosOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WindowSetPosOptions",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WindowSetPosOptions.yml\" sourcestartlinenumber=\"1\">Window sizing and positioning flags for <xref href=\"FireBlade.WinInteropUtils.Window.SetPos(System.Drawing.Point%2cSystem.Drawing.Size%2cFireBlade.WinInteropUtils.WindowSetPosOptions%2cFireBlade.WinInteropUtils.Window)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WindowShowCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WindowShowCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WindowShowCommand",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WindowShowCommand.yml\" sourcestartlinenumber=\"1\">Represents the show command for <xref href=\"FireBlade.WinInteropUtils.Window.Show(FireBlade.WinInteropUtils.WindowShowCommand)\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"FireBlade.WinInteropUtils.Window.ShowAsync(FireBlade.WinInteropUtils.WindowShowCommand)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/FireBlade.WinInteropUtils.WindowState.yml",
       "output": {
         ".html": {
@@ -933,6 +1283,20 @@
       "IsMRef": true,
       "Title": "FireBlade.WinInteropUtils.WindowState",
       "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WindowState.yml\" sourcestartlinenumber=\"1\">Defines states a window can be in.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WindowStyles.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WindowStyles.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WindowStyles",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WindowStyles.yml\" sourcestartlinenumber=\"1\">Represents the various standard styles that can be applied to a window (after the window has been created, these styles cannot be modified, except as documented).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -961,6 +1325,20 @@
       "IsMRef": true,
       "Title": "FireBlade.WinInteropUtils.WindowsFileAttributes",
       "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WindowsFileAttributes.yml\" sourcestartlinenumber=\"1\">Specifies attributes for Windows files.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.ZOrderWindows.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.ZOrderWindows.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.ZOrderWindows",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.ZOrderWindows.yml\" sourcestartlinenumber=\"1\">Represents windows used for Z position ordering.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1030,6 +1408,46 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "docs/migration/changes.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/migration/changes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/migration/class-names.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/migration/class-names.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/migration/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/migration/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/migration/windowing.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/migration/windowing.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "docs/toc.yml",
       "output": {
@@ -1048,6 +1466,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/using-com.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/vs.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/vs.html"
         }
       },
       "version": ""

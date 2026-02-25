@@ -157,7 +157,7 @@ Class User32
 
   <h3 id="FireBlade_WinInteropUtils_User32_GetParent_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.User32.GetParent(System.IntPtr)">
   GetParent(nint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L733"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L751"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves a handle to the specified window's parent or owner.</p>
@@ -166,7 +166,8 @@ To retrieve a handle to a specified ancestor, use the <code>GetAncestor</code> f
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nint GetParent(nint hWnd)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Create a Window instance or call FromHandle to get one for an existing handle, then use the Parent property on the new Window instance instead. This function will get removed in the next release of WinInteropUtils.&quot;)]
+public static nint GetParent(nint hWnd)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -205,7 +206,7 @@ the parent window and not the owner, instead of using <a class="xref" href="Fire
 
   <h3 id="FireBlade_WinInteropUtils_User32_GetTitleBarInfo_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.User32.GetTitleBarInfo(System.IntPtr)">
   GetTitleBarInfo(nint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L356"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves information about the specified title bar.</p>
@@ -246,7 +247,7 @@ the parent window and not the owner, instead of using <a class="xref" href="Fire
 
   <h3 id="FireBlade_WinInteropUtils_User32_GetWindowAtPoint_System_Drawing_Point_" data-uid="FireBlade.WinInteropUtils.User32.GetWindowAtPoint(System.Drawing.Point)">
   GetWindowAtPoint(Point)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L389"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L401"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves a handle to the window that is under the specified point.</p>
@@ -254,7 +255,8 @@ the parent window and not the owner, instead of using <a class="xref" href="Fire
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nint? GetWindowAtPoint(Point point)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use Window.FromPoint instead. This function will get removed in the next release of WinInteropUtils.&quot;)]
+public static nint? GetWindowAtPoint(Point point)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -286,7 +288,7 @@ If the point is over a static text control, the return value is a handle to the 
 
   <h3 id="FireBlade_WinInteropUtils_User32_GetWindowAtPoint_System_Int32_System_Int32_" data-uid="FireBlade.WinInteropUtils.User32.GetWindowAtPoint(System.Int32,System.Int32)">
   GetWindowAtPoint(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L404"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L417"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves a handle to the window that is under the specified point.</p>
@@ -294,7 +296,8 @@ If the point is over a static text control, the return value is a handle to the 
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nint? GetWindowAtPoint(int x, int y)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use Window.FromPoint instead. This function will get removed in the next release of WinInteropUtils.&quot;)]
+public static nint? GetWindowAtPoint(int x, int y)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -329,7 +332,7 @@ If the point is over a static text control, the return value is a handle to the 
 
   <h3 id="FireBlade_WinInteropUtils_User32_GetWindowLongPtr_System_IntPtr_System_Int32_" data-uid="FireBlade.WinInteropUtils.User32.GetWindowLongPtr(System.IntPtr,System.Int32)">
   GetWindowLongPtr(nint, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L90"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves information about the specified window. The function also retrieves the value at a specified offset into the extra window memory.</p>
@@ -337,7 +340,8 @@ If the point is over a static text control, the return value is a handle to the 
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nint GetWindowLongPtr(nint hWnd, int nIndex)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Create a Window instance or call FromHandle to get one for an existing handle, then call GetWindowLongPtr on the new Window instance instead. This function will get removed in the next release of WinInteropUtils.&quot;)]
+public static nint GetWindowLongPtr(nint hWnd, int nIndex)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -347,7 +351,7 @@ If the point is over a static text control, the return value is a handle to the 
 </dd>
     <dt><code>nIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd><p>The zero-based offset to the value to be retrieved. Valid values are in the range zero through the number of bytes of extra window memory, minus the size of a LONG_PTR.
-To retrieve any other value, specify one of the <a class="xref" href="FireBlade.WinInteropUtils.DefaultWindowLongPtrValues.html">DefaultWindowLongPtrValues</a>.</p>
+To retrieve any other value, specify one of the constants from the <a class="xref" href="FireBlade.WinInteropUtils.WindowLongPtr.html">WindowLongPtr</a> class.</p>
 </dd>
   </dl>
 
@@ -383,7 +387,7 @@ encoding-neutral can lead to mismatches that result in compilation or runtime er
 
   <h3 id="FireBlade_WinInteropUtils_User32_GetWindowState_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.User32.GetWindowState(System.IntPtr)">
   GetWindowState(nint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L429"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L443"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines the state of the window represented by the handle <code class="paramref">hWnd</code>.</p>
@@ -391,7 +395,8 @@ encoding-neutral can lead to mismatches that result in compilation or runtime er
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static WindowState GetWindowState(nint hWnd)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Create a Window instance or call FromHandle to get one for an existing handle, then use the State property on the new Window instance instead. This function will get removed in the next release of WinInteropUtils.&quot;)]
+public static WindowState GetWindowState(nint hWnd)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -422,7 +427,7 @@ encoding-neutral can lead to mismatches that result in compilation or runtime er
 
   <h3 id="FireBlade_WinInteropUtils_User32_IsGUIThread_System_Boolean_" data-uid="FireBlade.WinInteropUtils.User32.IsGUIThread(System.Boolean)">
   IsGUIThread(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L309"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L321"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the calling thread is already a GUI thread. It can also optionally convert the thread to a GUI thread (<code class="paramref">bConvert</code>).</p>
@@ -467,7 +472,7 @@ encoding-neutral can lead to mismatches that result in compilation or runtime er
 
   <h3 id="FireBlade_WinInteropUtils_User32_PostMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.User32.PostMessage(System.IntPtr,System.UInt32,System.UIntPtr,System.IntPtr)">
   PostMessage(nint, uint, nuint, nint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L709"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L725"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Places (posts) a message in the message queue associated with the thread that created the specified window and returns without waiting
@@ -476,7 +481,8 @@ for the thread to process the message. <!-- To post a message in the message que
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool PostMessage(nint hWnd, uint uMsg, nuint wParam, nint lParam)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Create a Window instance or call FromHandle to get one for an existing handle, then call PostMessage on the new Window instance instead. This function will get removed in the next release of WinInteropUtils.&quot;)]
+public static bool PostMessage(nint hWnd, uint uMsg, nuint wParam, nint lParam)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -561,7 +567,7 @@ modify the following registry key:</p>
 
   <h3 id="FireBlade_WinInteropUtils_User32_RegisterWindowMessage_System_String_" data-uid="FireBlade.WinInteropUtils.User32.RegisterWindowMessage(System.String)">
   RegisterWindowMessage(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L620"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L636"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines a new window message that is guaranteed to be unique throughout the system. The message value can be used when sending or posting messages.</p>
@@ -601,7 +607,7 @@ modify the following registry key:</p>
 
   <h3 id="FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_Boolean_System_Boolean_" data-uid="FireBlade.WinInteropUtils.User32.SendMessage(System.IntPtr,System.UInt32,System.Boolean,System.Boolean)">
   SendMessage(nint, uint, bool, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L301"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sends the specified message to a window or windows. The <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(nint, uint, nuint, nint)</a> function calls the window procedure for the specified window
@@ -615,7 +621,8 @@ or <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-win
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nint SendMessage(nint hWnd, uint uMsg, bool wParam, bool lParam)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Create a Window instance or call FromHandle to get one for an existing handle, then call SendMessage on the new Window instance instead. This function will get removed in the next release of WinInteropUtils.&quot;)]
+public static nint SendMessage(nint hWnd, uint uMsg, bool wParam, bool lParam)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -679,7 +686,7 @@ This functionality is not guaranteed to work for other types of applications.</p
 
   <h3 id="FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_Boolean_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.User32.SendMessage(System.IntPtr,System.UInt32,System.Boolean,System.IntPtr)">
   SendMessage(nint, uint, bool, nint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L205"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sends the specified message to a window or windows. The <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(nint, uint, nuint, nint)</a> function calls the window procedure for the specified window
@@ -693,7 +700,8 @@ or <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-win
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nint SendMessage(nint hWnd, uint uMsg, bool wParam, nint lParam)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Create a Window instance or call FromHandle to get one for an existing handle, then call SendMessage on the new Window instance instead. This function will get removed in the next release of WinInteropUtils.&quot;)]
+public static nint SendMessage(nint hWnd, uint uMsg, bool wParam, nint lParam)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -757,7 +765,7 @@ This functionality is not guaranteed to work for other types of applications.</p
 
   <h3 id="FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_Boolean_" data-uid="FireBlade.WinInteropUtils.User32.SendMessage(System.IntPtr,System.UInt32,System.UIntPtr,System.Boolean)">
   SendMessage(nint, uint, nuint, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L253"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sends the specified message to a window or windows. The <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(nint, uint, nuint, nint)</a> function calls the window procedure for the specified window
@@ -771,7 +779,8 @@ or <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-win
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nint SendMessage(nint hWnd, uint uMsg, nuint wParam, bool lParam)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Create a Window instance or call FromHandle to get one for an existing handle, then call SendMessage on the new Window instance instead. This function will get removed in the next release of WinInteropUtils.&quot;)]
+public static nint SendMessage(nint hWnd, uint uMsg, nuint wParam, bool lParam)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -835,7 +844,7 @@ This functionality is not guaranteed to work for other types of applications.</p
 
   <h3 id="FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.User32.SendMessage(System.IntPtr,System.UInt32,System.UIntPtr,System.IntPtr)">
   SendMessage(nint, uint, nuint, nint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/User32.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sends the specified message to a window or windows. The <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(nint, uint, nuint, nint)</a> function calls the window procedure for the specified window
@@ -849,7 +858,8 @@ or <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-win
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nint SendMessage(nint hWnd, uint uMsg, nuint wParam, nint lParam)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Create a Window instance or call FromHandle to get one for an existing handle, then call SendMessage on the new Window instance instead. This function will get removed in the next release of WinInteropUtils.&quot;)]
+public static nint SendMessage(nint hWnd, uint uMsg, nuint wParam, nint lParam)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -921,7 +931,8 @@ This functionality is not guaranteed to work for other types of applications.</p
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nint SetWindowLongPtr(nint hWnd, int nIndex, nint dwNewLong)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Create a Window instance or call FromHandle to get one for an existing handle, then call SetWindowLongPtr on the new Window instance instead. This function will get removed in the next release of WinInteropUtils.&quot;)]
+public static nint SetWindowLongPtr(nint hWnd, int nIndex, nint dwNewLong)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -933,7 +944,7 @@ hierarchy than the process the calling thread resides in. Windows XP/2000: The <
 does not belong to the same process as the calling thread.</p>
 </dd>
     <dt><code>nIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>The zero-based offset to the value to be set. Valid values are in the range zero through the number of bytes of extra window memory, minus the size of a LONG_PTR. To set any other value, specify one of the <a class="xref" href="FireBlade.WinInteropUtils.DefaultWindowLongPtrValues.html">DefaultWindowLongPtrValues</a>.</p>
+    <dd><p>The zero-based offset to the value to be set. Valid values are in the range zero through the number of bytes of extra window memory, minus the size of a LONG_PTR. To set any other value, specify one of the <a class="xref" href="FireBlade.WinInteropUtils.WindowLongPtr.html">WindowLongPtr</a>.</p>
 </dd>
     <dt><code>dwNewLong</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
     <dd><p>The replacement value.</p>
@@ -960,17 +971,17 @@ does not belong to the same process as the calling thread.</p>
 
   <h4 class="section" id="FireBlade_WinInteropUtils_User32_SetWindowLongPtr_System_IntPtr_System_Int32_System_IntPtr__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>Certain window data is cached, so changes you make using <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SetWindowLongPtr_System_IntPtr_System_Int32_System_IntPtr_">SetWindowLongPtr(nint, int, nint)</a> will not take effect until you call the <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-setwindowpos">SetWindowPos</a> function.</p>
-<p>If you use <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SetWindowLongPtr_System_IntPtr_System_Int32_System_IntPtr_">SetWindowLongPtr(nint, int, nint)</a> with the <a class="xref" href="FireBlade.WinInteropUtils.DefaultWindowLongPtrValues.html#FireBlade_WinInteropUtils_DefaultWindowLongPtrValues_WndProc">WndProc</a> index to replace the window procedure, the window procedure must conform to the guidelines specified in the description
+<p>If you use <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SetWindowLongPtr_System_IntPtr_System_Int32_System_IntPtr_">SetWindowLongPtr(nint, int, nint)</a> with the <a class="xref" href="FireBlade.WinInteropUtils.WindowLongPtr.html#FireBlade_WinInteropUtils_WindowLongPtr_WndProc">WndProc</a> index to replace the window procedure, the window procedure must conform to the guidelines specified in the description
 of the <a href="https://learn.microsoft.com/en-us/windows/win32/api/winuser/nc-winuser-wndproc">WndProc</a> callback function.</p>
-<p>If you use <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SetWindowLongPtr_System_IntPtr_System_Int32_System_IntPtr_">SetWindowLongPtr(nint, int, nint)</a> with the <a class="xref" href="FireBlade.WinInteropUtils.DefaultWindowLongPtrValues.html#FireBlade_WinInteropUtils_DefaultWindowLongPtrValues_MessageResult">MessageResult</a> index to set the return value for a message processed by a dialog box procedure,
+<p>If you use <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SetWindowLongPtr_System_IntPtr_System_Int32_System_IntPtr_">SetWindowLongPtr(nint, int, nint)</a> with the <a class="xref" href="FireBlade.WinInteropUtils.WindowLongPtr.html#FireBlade_WinInteropUtils_WindowLongPtr_MessageResult">MessageResult</a> index to set the return value for a message processed by a dialog box procedure,
 the dialog box procedure should return <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> directly afterward. Otherwise, if you call any function that results
-in your dialog box procedure receiving a window message, the nested window message could overwrite the return value you set by using <a class="xref" href="FireBlade.WinInteropUtils.DefaultWindowLongPtrValues.html#FireBlade_WinInteropUtils_DefaultWindowLongPtrValues_MessageResult">MessageResult</a>.</p>
-<p>Calling <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SetWindowLongPtr_System_IntPtr_System_Int32_System_IntPtr_">SetWindowLongPtr(nint, int, nint)</a> with the <a class="xref" href="FireBlade.WinInteropUtils.DefaultWindowLongPtrValues.html#FireBlade_WinInteropUtils_DefaultWindowLongPtrValues_WndProc">WndProc</a> index creates a subclass of the window class used to create the window. An application
+in your dialog box procedure receiving a window message, the nested window message could overwrite the return value you set by using <a class="xref" href="FireBlade.WinInteropUtils.WindowLongPtr.html#FireBlade_WinInteropUtils_WindowLongPtr_MessageResult">MessageResult</a>.</p>
+<p>Calling <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SetWindowLongPtr_System_IntPtr_System_Int32_System_IntPtr_">SetWindowLongPtr(nint, int, nint)</a> with the <a class="xref" href="FireBlade.WinInteropUtils.WindowLongPtr.html#FireBlade_WinInteropUtils_WindowLongPtr_WndProc">WndProc</a> index creates a subclass of the window class used to create the window. An application
 can subclass a system class, but should not subclass a window class created by another process.The <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SetWindowLongPtr_System_IntPtr_System_Int32_System_IntPtr_">SetWindowLongPtr(nint, int, nint)</a> function creates
 the window subclass by changing the window procedure associated with a particular window class, causing the system to call the new window procedure
 instead of the previous one.</p>
-<p>Do not call <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SetWindowLongPtr_System_IntPtr_System_Int32_System_IntPtr_">SetWindowLongPtr(nint, int, nint)</a> with the <a class="xref" href="FireBlade.WinInteropUtils.DefaultWindowLongPtrValues.html#FireBlade_WinInteropUtils_DefaultWindowLongPtrValues_HWNDParent">HWNDParent</a> index to change the parent of a child window. Instead, use the <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-setparent">SetParent</a> function.
-<a class="xref" href="FireBlade.WinInteropUtils.DefaultWindowLongPtrValues.html#FireBlade_WinInteropUtils_DefaultWindowLongPtrValues_HWNDParent">HWNDParent</a> is used to change the owner of a top-level window, not the parent of a child window.
+<p>Do not call <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SetWindowLongPtr_System_IntPtr_System_Int32_System_IntPtr_">SetWindowLongPtr(nint, int, nint)</a> with the <a class="xref" href="FireBlade.WinInteropUtils.WindowLongPtr.html#FireBlade_WinInteropUtils_WindowLongPtr_HWNDParent">HWNDParent</a> index to change the parent of a child window. Instead, use the <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-setparent">SetParent</a> function.
+<a class="xref" href="FireBlade.WinInteropUtils.WindowLongPtr.html#FireBlade_WinInteropUtils_WindowLongPtr_HWNDParent">HWNDParent</a> is used to change the owner of a top-level window, not the parent of a child window.
 A window can have either a parent or an owner, or neither, but never both simultaneously.</p>
 <p>Calling <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SetWindowLongPtr_System_IntPtr_System_Int32_System_IntPtr_">SetWindowLongPtr(nint, int, nint)</a> to set the style on a progress bar will reset its position.</p>
 </div>

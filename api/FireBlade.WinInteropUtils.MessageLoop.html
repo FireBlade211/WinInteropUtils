@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MessageLoop | WinInteropUtils </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MessageLoop | WinInteropUtils ">
+      
+      <meta name="description" content="Provides methods for managing message loops.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="WinInteropUtils">
+            WinInteropUtils
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FireBlade.WinInteropUtils.MessageLoop">
+
+
+
+  <h1 id="FireBlade_WinInteropUtils_MessageLoop" data-uid="FireBlade.WinInteropUtils.MessageLoop" class="text-break">
+Class MessageLoop  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FireBlade.html">FireBlade</a>.<a class="xref" href="FireBlade.WinInteropUtils.html">WinInteropUtils</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>WinInteropUtils.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides methods for managing message loops.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class MessageLoop</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MessageLoop</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+  <h2 id="FireBlade_WinInteropUtils_MessageLoop_examples">Examples</h2>
+  <p>To create a message loop, use the following pattern:</p>
+<pre><code class="lang-csharp">WinMessage msg = new WinMessage();
+while (MessageLoop.GetMessage(ref msg, null, 0, 0))
+{
+    MessageLoop.TranslateMessage(ref msg);
+    MessageLoop.DispatchMessage(ref msg);
+}</code></pre>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FireBlade_WinInteropUtils_MessageLoop_DispatchMessage_" data-uid="FireBlade.WinInteropUtils.MessageLoop.DispatchMessage*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_MessageLoop_DispatchMessage_FireBlade_WinInteropUtils_WinMessage__" data-uid="FireBlade.WinInteropUtils.MessageLoop.DispatchMessage(FireBlade.WinInteropUtils.WinMessage@)">
+  DispatchMessage(ref WinMessage)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/MessageLoop.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Dispatches a message to a window procedure. It is typically used to dispatch a message retrieved by
+the <a class="xref" href="FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_GetMessage_FireBlade_WinInteropUtils_WinMessage__FireBlade_WinInteropUtils_Window_System_UInt32_System_UInt32_">GetMessage(ref WinMessage, Window?, uint, uint)</a> function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint DispatchMessage(ref WinMessage msg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>msg</code> <a class="xref" href="FireBlade.WinInteropUtils.WinMessage.html">WinMessage</a></dt>
+    <dd><p>A structure that contains the message.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>The return value specifies the value returned by the window procedure. Although its meaning depends
+on the message being dispatched, the return value generally is ignored.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_MessageLoop_DispatchMessage_FireBlade_WinInteropUtils_WinMessage___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="FireBlade.WinInteropUtils.WinMessage.html">WinMessage</a> structure must contain valid message values. If the <code class="paramref">msg</code> parameter points to
+a <code>WM_TIMER</code> message and the <code>lParam</code> parameter of the <code>WM_TIMER</code> message is not <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, 
+<code>lParam</code> points to a function that is called instead of the window procedure.</p>
+<p>Note that the application is responsible for retrieving and dispatching input messages to the dialog box. Most applications use the main 
+message loop for this. However, to permit the user to move to and to select controls by using the keyboard, the application must call
+<code>IsDialogMessage</code>. For more information, see
+<a href="https://learn.microsoft.com/en-us/windows/desktop/dlgbox/dlgbox-programming-considerations">Dialog Box Keyboard Interface</a>.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_MessageLoop_GetMessage_" data-uid="FireBlade.WinInteropUtils.MessageLoop.GetMessage*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_MessageLoop_GetMessage_FireBlade_WinInteropUtils_WinMessage__FireBlade_WinInteropUtils_Window_System_UInt32_System_UInt32_" data-uid="FireBlade.WinInteropUtils.MessageLoop.GetMessage(FireBlade.WinInteropUtils.WinMessage@,FireBlade.WinInteropUtils.Window,System.UInt32,System.UInt32)">
+  GetMessage(ref WinMessage, Window?, uint, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/MessageLoop.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a message from the calling thread's message queue. The function dispatches incoming sent messages until a posted message is available for retrieval.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetMessage(ref WinMessage msg, Window? wnd, uint minMessageFilter, uint maxMessageFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>msg</code> <a class="xref" href="FireBlade.WinInteropUtils.WinMessage.html">WinMessage</a></dt>
+    <dd><p>A <a class="xref" href="FireBlade.WinInteropUtils.WinMessage.html">WinMessage</a> structure that receives message information from the thread's message queue.</p>
+</dd>
+    <dt><code>wnd</code> <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd><p>The window whose messages are to be retrieved. The window must belong to the current thread.</p>
+</dd>
+    <dt><code>minMessageFilter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The integer value of the lowest message value to be retrieved. Use <code>WM_KEYFIRST</code> (0x0100) to specify the
+first keyboard message or <code>WM_MOUSEFIRST</code> (0x0200) to specify the first mouse message.</p>
+</dd>
+    <dt><code>maxMessageFilter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The integer value of the highest message value to be retrieved. Use <code>WM_KEYLAST</code> to specify the last keyboard
+message or <code>WM_MOUSELAST</code> to specify the last mouse message.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the function retrieves a message other than <code>WM_QUIT</code>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_MessageLoop_GetMessage_FireBlade_WinInteropUtils_WinMessage__FireBlade_WinInteropUtils_Window_System_UInt32_System_UInt32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <code class="paramref">wnd</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, <a class="xref" href="FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_GetMessage_FireBlade_WinInteropUtils_WinMessage__FireBlade_WinInteropUtils_Window_System_UInt32_System_UInt32_">GetMessage(ref WinMessage, Window?, uint, uint)</a> retrieves messages
+for any window that belongs to the current thread, and any messages on the current thread's message queue whose <code>hwnd</code> value
+is <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr.zero">Zero</a>. Therefore if <code class="paramref">wnd</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, both window messages and thread messages are processed.</p>
+<p>Use <code>WM_INPUT</code> in <code class="paramref">minMessageFilter</code> and <code class="paramref">maxMessageFilter</code> to specify only the
+<code>WM_INPUT</code> messages.</p>
+<p>If <code class="paramref">minMessageFilter</code> and <code class="paramref">maxMessageFilter</code> are both zero,
+<a class="xref" href="FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_GetMessage_FireBlade_WinInteropUtils_WinMessage__FireBlade_WinInteropUtils_Window_System_UInt32_System_UInt32_">GetMessage(ref WinMessage, Window?, uint, uint)</a> returns all available messages (that is, no range filtering is performed).</p>
+<p>An application typically uses the return value to determine whether to end the main message loop and exit the program.</p>
+<p>The <a class="xref" href="FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_GetMessage_FireBlade_WinInteropUtils_WinMessage__FireBlade_WinInteropUtils_Window_System_UInt32_System_UInt32_">GetMessage(ref WinMessage, Window?, uint, uint)</a> function retrieves messages associated with the
+window in <code class="paramref">wnd</code> parameter or any of its children, as specified by the <code>IsChild</code> function, and within
+the range of message values given by the <code class="paramref">minMessageFilter</code> and <code class="paramref">maxMessageFilter</code> parameters.
+Note that an application can only use the low word in the <code class="paramref">maxMessageFilter</code> and <code class="paramref">maxMessageFilter</code>
+parameters; the high word is reserved for the system.</p>
+<p>Note that <a class="xref" href="FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_GetMessage_FireBlade_WinInteropUtils_WinMessage__FireBlade_WinInteropUtils_Window_System_UInt32_System_UInt32_">GetMessage(ref WinMessage, Window?, uint, uint)</a> always retrieves <code>WM_QUIT</code> messages,
+no matter which values you specify for <code class="paramref">minMessageFilter</code> and <code class="paramref">maxMessageFilter</code>.</p>
+<p>During this call, the system delivers pending, nonqueued messages, that is, messages sent to windows owned by the calling thread using
+the <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(uint, nuint, nint)</a>, <code>SendMessageCallback</code>, <code>SendMessageTimeout</code>, or <code>SendNotifyMessage</code> function.
+Then the first queued message that matches the specified filter is retrieved. The system may also process internal events. If no filter is specified,
+messages are processed in the following order:
+<ol><li>Sent messages</li><li>Posted messages</li><li>Input (hardware) messages and system internal events</li><li>Sent messages (again)</li><li><code>WM_PAINT</code> messages</li><li><code>WM_TIMER</code> messages</li></ol>
+
+<p>To retrieve input messages before posted messages, use the <code class="paramref">minMessageFilter</code> and <code class="paramref">maxMessageFilter</code> parameters.</p>
+<p><a class="xref" href="FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_GetMessage_FireBlade_WinInteropUtils_WinMessage__FireBlade_WinInteropUtils_Window_System_UInt32_System_UInt32_">GetMessage(ref WinMessage, Window?, uint, uint)</a> does not remove <code>WM_PAINT</code> messages from the queue. The messages remain in the
+queue until processed.</p>
+<p>If a top-level window stops responding to messages for more than several seconds, the system considers the window to be not responding and replaces
+it with a ghost window that has the same z-order, location, size, and visual attributes. This allows the user to move it, resize it, or even close the
+application. However, these are the only actions available because the application is actually not responding. When in the debugger mode, the system
+does not generate a ghost window.</p>
+<!-- this renders as plain text in vs but will render as an actual header in the docs -->
+<h1>DPI Virtualization</h1>
+<p>This API does not participate in DPI virtualization. The output is in the mode of the window that the message is targeting. The calling
+thread is not taken into consideration.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.win32exception">Win32Exception</a></dt>
+    <dd><p>The function has failed. For example, the function fails if <code class="paramref">wnd</code> is an invalid window.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_MessageLoop_PeekMessage_" data-uid="FireBlade.WinInteropUtils.MessageLoop.PeekMessage*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_MessageLoop_PeekMessage_FireBlade_WinInteropUtils_WinMessage__FireBlade_WinInteropUtils_Window_System_UInt32_System_UInt32_FireBlade_WinInteropUtils_MessageRemoval_FireBlade_WinInteropUtils_MessageProcessingLimit_" data-uid="FireBlade.WinInteropUtils.MessageLoop.PeekMessage(FireBlade.WinInteropUtils.WinMessage@,FireBlade.WinInteropUtils.Window,System.UInt32,System.UInt32,FireBlade.WinInteropUtils.MessageRemoval,FireBlade.WinInteropUtils.MessageProcessingLimit)">
+  PeekMessage(ref WinMessage, Window?, uint, uint, MessageRemoval, MessageProcessingLimit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/MessageLoop.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Dispatches incoming nonqueued messages, checks the thread message queue for a posted message, and retrieves the message (if any exist).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PeekMessage(ref WinMessage msg, Window? wnd, uint minMessageFilter, uint maxMessageFilter, MessageRemoval removeMsg, MessageProcessingLimit limit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>msg</code> <a class="xref" href="FireBlade.WinInteropUtils.WinMessage.html">WinMessage</a></dt>
+    <dd><p>A <a class="xref" href="FireBlade.WinInteropUtils.WinMessage.html">WinMessage</a> structure that receives message information.</p>
+</dd>
+    <dt><code>wnd</code> <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd><p>The window whose messages are to be retrieved. The window must belong to the current thread.</p>
+</dd>
+    <dt><code>minMessageFilter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The value of the first message in the range of messages to be examined. Use <code>WM_KEYFIRST</code> (0x0100) to specify
+the first keyboard message or <code>WM_MOUSEFIRST</code> (0x0200) to specify the first mouse message.</p>
+</dd>
+    <dt><code>maxMessageFilter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The value of the last message in the range of messages to be examined. Use <code>WM_KEYLAST</code> to specify the last
+keyboard message or <code>WM_MOUSELAST</code> to specify the last mouse message.</p>
+</dd>
+    <dt><code>removeMsg</code> <a class="xref" href="FireBlade.WinInteropUtils.MessageRemoval.html">MessageRemoval</a></dt>
+    <dd><p>Specifies how messages are to be handled.</p>
+</dd>
+    <dt><code>limit</code> <a class="xref" href="FireBlade.WinInteropUtils.MessageProcessingLimit.html">MessageProcessingLimit</a></dt>
+    <dd><p>Specifies what messages should be processed.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if a message is available; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_MessageLoop_PeekMessage_FireBlade_WinInteropUtils_WinMessage__FireBlade_WinInteropUtils_Window_System_UInt32_System_UInt32_FireBlade_WinInteropUtils_MessageRemoval_FireBlade_WinInteropUtils_MessageProcessingLimit__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><a class="xref" href="FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_PeekMessage_FireBlade_WinInteropUtils_WinMessage__FireBlade_WinInteropUtils_Window_System_UInt32_System_UInt32_FireBlade_WinInteropUtils_MessageRemoval_FireBlade_WinInteropUtils_MessageProcessingLimit_">PeekMessage(ref WinMessage, Window?, uint, uint, MessageRemoval, MessageProcessingLimit)</a> retrieves messages associated
+with the window in the <code class="paramref">wnd</code> parameter or any of its children as specified by the <code>IsChild</code> function, and within
+the range of message values given by the <code class="paramref">minMessageFilter</code> and <code class="paramref">maxMessageFilter</code> parameters.
+Note that an application can only use the low word in the <code class="paramref">minMessageFilter</code> and <code class="paramref">maxMessageFilter</code> parameters;
+the high word is reserved for the system.</p>
+<p>Note that <a class="xref" href="FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_PeekMessage_FireBlade_WinInteropUtils_WinMessage__FireBlade_WinInteropUtils_Window_System_UInt32_System_UInt32_FireBlade_WinInteropUtils_MessageRemoval_FireBlade_WinInteropUtils_MessageProcessingLimit_">PeekMessage(ref WinMessage, Window?, uint, uint, MessageRemoval, MessageProcessingLimit)</a> always
+retrieves <code>WM_QUIT</code> messages, no matter which values you specify for <code class="paramref">minMessageFilter</code> and <code class="paramref">maxMessageFilter</code>.</p>
+<p>During this call, the system dispatches (DispatchMessage) pending, nonqueued messages, that is, messages sent to windows owned by the calling
+thread using the <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(uint, nuint, nint)</a>, <code>SendMessageCallback</code>, <code>SendMessageTimeout</code>,
+or <code>SendNotifyMessage</code> function. Then the first queued message that matches the specified filter is retrieved. The system may also
+process internal events. If no filter is specified, messages are processed in the following order:
+<ol><li>Sent messages</li><li>Posted messages</li><li>Input (hardware) messages and system internal events</li><li>Sent messages (again)</li><li><code>WM_PAINT</code> messages</li><li><code>WM_TIMER</code> messages</li></ol>
+
+<p>To retrieve input messages before posted messages, use the <code class="paramref">minMessageFilter</code> and <code class="paramref">maxMessageFilter</code> parameters.</p>
+<p>The <a class="xref" href="FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_PeekMessage_FireBlade_WinInteropUtils_WinMessage__FireBlade_WinInteropUtils_Window_System_UInt32_System_UInt32_FireBlade_WinInteropUtils_MessageRemoval_FireBlade_WinInteropUtils_MessageProcessingLimit_">PeekMessage(ref WinMessage, Window?, uint, uint, MessageRemoval, MessageProcessingLimit)</a> function normally does not
+remove <code>WM_PAINT</code> messages from the queue. <code>WM_PAINT</code> messages remain in the queue until they are processed. However, if a
+<code>WM_PAINT</code> message has a <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> update region,
+<a class="xref" href="FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_PeekMessage_FireBlade_WinInteropUtils_WinMessage__FireBlade_WinInteropUtils_Window_System_UInt32_System_UInt32_FireBlade_WinInteropUtils_MessageRemoval_FireBlade_WinInteropUtils_MessageProcessingLimit_">PeekMessage(ref WinMessage, Window?, uint, uint, MessageRemoval, MessageProcessingLimit)</a> does remove it from the queue.</p>
+<p>If a top-level window stops responding to messages for more than several seconds, the system considers the window to be not responding
+and replaces it with a ghost window that has the same z-order, location, size, and visual attributes. This allows the user to move it, resize it,
+or even close the application. However, these are the only actions available because the application is actually not responding. When an application
+is being debugged, the system does not generate a ghost window.</p>
+<h1>DPI Virtualization</h1>
+<p>This API does not participate in DPI virtualization. The output is in the mode of the window that the message is
+targeting. The calling thread is not taken into consideration.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_MessageLoop_PostQuitMessage_" data-uid="FireBlade.WinInteropUtils.MessageLoop.PostQuitMessage*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_MessageLoop_PostQuitMessage_System_Int32_" data-uid="FireBlade.WinInteropUtils.MessageLoop.PostQuitMessage(System.Int32)">
+  PostQuitMessage(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/MessageLoop.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates to the system that a thread has made a request to terminate (quit). It is typically used in response to a <code>WM_DESTROY</code> message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PostQuitMessage(int exitCode = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>exitCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The application exit code. This value is used as the <code>wParam</code> parameter of the <code>WM_QUIT</code> message.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_MessageLoop_PostQuitMessage_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_PostQuitMessage_System_Int32_">PostQuitMessage(int)</a> function posts a <code>WM_QUIT</code> message to the thread's message queue and returns immediately;
+the function simply indicates to the system that the thread is requesting to quit at some time in the future.</p>
+<p>When the thread retrieves the <code>WM_QUIT</code> message from its message queue, it should exit its message loop and return control to the system.
+The exit value returned to the system must be the wParam parameter of the <code>WM_QUIT</code> message.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_MessageLoop_TranslateMessage_" data-uid="FireBlade.WinInteropUtils.MessageLoop.TranslateMessage*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_MessageLoop_TranslateMessage_FireBlade_WinInteropUtils_WinMessage__" data-uid="FireBlade.WinInteropUtils.MessageLoop.TranslateMessage(FireBlade.WinInteropUtils.WinMessage@)">
+  TranslateMessage(ref WinMessage)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/MessageLoop.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Translates virtual-key messages into character messages. The character messages are posted to the calling thread's message queue, to be read
+the next time the thread calls the <a class="xref" href="FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_GetMessage_FireBlade_WinInteropUtils_WinMessage__FireBlade_WinInteropUtils_Window_System_UInt32_System_UInt32_">GetMessage(ref WinMessage, Window?, uint, uint)</a> or
+<a class="xref" href="FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_PeekMessage_FireBlade_WinInteropUtils_WinMessage__FireBlade_WinInteropUtils_Window_System_UInt32_System_UInt32_FireBlade_WinInteropUtils_MessageRemoval_FireBlade_WinInteropUtils_MessageProcessingLimit_">PeekMessage(ref WinMessage, Window?, uint, uint, MessageRemoval, MessageProcessingLimit)</a> function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TranslateMessage(ref WinMessage msg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>msg</code> <a class="xref" href="FireBlade.WinInteropUtils.WinMessage.html">WinMessage</a></dt>
+    <dd><p>A <a class="xref" href="FireBlade.WinInteropUtils.WinMessage.html">WinMessage</a> structure that contains message information retrieved from the calling thread's message queue
+by using the <a class="xref" href="FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_GetMessage_FireBlade_WinInteropUtils_WinMessage__FireBlade_WinInteropUtils_Window_System_UInt32_System_UInt32_">GetMessage(ref WinMessage, Window?, uint, uint)</a>
+or <a class="xref" href="FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_PeekMessage_FireBlade_WinInteropUtils_WinMessage__FireBlade_WinInteropUtils_Window_System_UInt32_System_UInt32_FireBlade_WinInteropUtils_MessageRemoval_FireBlade_WinInteropUtils_MessageProcessingLimit_">PeekMessage(ref WinMessage, Window?, uint, uint, MessageRemoval, MessageProcessingLimit)</a> function.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the message is translated (that is, a character message is posted to the thread's message queue) or the message is
+<code>WM_KEYDOWN</code>, <code>WM_KEYUP</code>, <code>WM_SYSKEYDOWN</code>, or <code>WM_SYSKEYUP</code>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_MessageLoop_TranslateMessage_FireBlade_WinInteropUtils_WinMessage___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_TranslateMessage_FireBlade_WinInteropUtils_WinMessage__">TranslateMessage(ref WinMessage)</a> function does not modify the message pointed to by the <code class="paramref">msg</code> parameter.</p>
+<p><code>WM_KEYDOWN</code> and <code>WM_KEYUP</code> combinations produce a <code>WM_CHAR</code> or <code>WM_DEADCHAR</code> message. <code>WM_SYSKEYDOWN</code>
+and <code>WM_SYSKEYUP</code> combinations produce a <code>WM_SYSCHAR</code> or <code>WM_SYSDEADCHAR</code> message.</p>
+<p><a class="xref" href="FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_TranslateMessage_FireBlade_WinInteropUtils_WinMessage__">TranslateMessage(ref WinMessage)</a> produces <code>WM_CHAR</code> messages only for keys that are mapped to ASCII characters by the keyboard driver.</p>
+<p>If applications process virtual-key messages for some other purpose, they should not call <a class="xref" href="FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_TranslateMessage_FireBlade_WinInteropUtils_WinMessage__">TranslateMessage(ref WinMessage)</a>. For instance,
+an application should not call <a class="xref" href="FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_TranslateMessage_FireBlade_WinInteropUtils_WinMessage__">TranslateMessage(ref WinMessage)</a> if the <code>TranslateAccelerator</code> function returns a nonzero value. Note that
+the application is responsible for retrieving and dispatching input messages to the dialog box. Most applications use the main message loop for this.
+However, to permit the user to move to and to select controls by using the keyboard, the application must call <code>IsDialogMessage</code>. For more information,
+see <a href="https://learn.microsoft.com/en-us/windows/desktop/dlgbox/dlgbox-programming-considerations">Dialog Box Keyboard Interface.</a></p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

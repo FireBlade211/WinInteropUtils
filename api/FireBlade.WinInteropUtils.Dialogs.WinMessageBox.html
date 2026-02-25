@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class WinMessageBox | WinInteropUtils </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class WinMessageBox | WinInteropUtils ">
+      
+      <meta name="description" content="Provides methods for showing a Win32 message box.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/FireBlade211/WinInteropUtils/new/main/apiSpec/new?filename=FireBlade_WinInteropUtils_Dialogs_WinMessageBox.md&amp;value=---%0Auid%3A%20FireBlade.WinInteropUtils.Dialogs.WinMessageBox%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="WinInteropUtils">
+            WinInteropUtils
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox">
+
+
+
+  <h1 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox" class="text-break">
+Class WinMessageBox  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FireBlade.html">FireBlade</a>.<a class="xref" href="FireBlade.WinInteropUtils.html">WinInteropUtils</a>.<a class="xref" href="FireBlade.WinInteropUtils.Dialogs.html">Dialogs</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>WinInteropUtils.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides methods for showing a Win32 message box.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class WinMessageBox : DialogWindow&lt;WinMessageBoxResult, WinMessageBox&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html">DialogWindow</a>&lt;<a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html">WinMessageBoxResult</a>, <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html">WinMessageBox</a>&gt;</div>
+      <div><span class="xref">WinMessageBox</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_WM_INITDIALOG">DialogWindow&lt;WinMessageBoxResult, WinMessageBox&gt;.WM_INITDIALOG</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_PackFlags_System_Collections_Generic_Dictionary_System_Int32_System_Boolean__">DialogWindow&lt;WinMessageBoxResult, WinMessageBox&gt;.PackFlags(Dictionary&lt;int, bool&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show">DialogWindow&lt;WinMessageBoxResult, WinMessageBox&gt;.Show()</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show_FireBlade_WinInteropUtils_Window_">DialogWindow&lt;WinMessageBoxResult, WinMessageBox&gt;.Show(Window)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show__1_">DialogWindow&lt;WinMessageBoxResult, WinMessageBox&gt;.Show(WinMessageBox)</a>
+    </div>
+    <div>
+      <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show__1_FireBlade_WinInteropUtils_Window_">DialogWindow&lt;WinMessageBoxResult, WinMessageBox&gt;.Show(WinMessageBox, Window)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Buttons_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Buttons*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Buttons" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Buttons">
+  Buttons
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the buttons on the message box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WinMessageBoxButtons Buttons { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html">WinMessageBoxButtons</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Caption_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Caption*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Caption" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Caption">
+  Caption
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the caption of the message box. If set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, defaults to Error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Caption { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_ContextHelpId_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ContextHelpId*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_ContextHelpId" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ContextHelpId">
+  ContextHelpId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the help context. When <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_OnHelp">OnHelp</a> fires, this specifies the value that will be
+in the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.html#FireBlade_WinInteropUtils_Dialogs_HelpEventArgs_ContextId">ContextId</a> property of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.html">HelpEventArgs</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public nuint? ContextHelpId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Culture_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Culture*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Culture" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Culture">
+  Culture
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the culture this message box uses. If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, uses the default system culture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CultureInfo? Culture { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Culture_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><div class="NOTE">
+<h5>Note</h5>
+<p>Each localized release of Windows typically contains resources only for a limited set of languages.
+Thus, for example, the U.S. version offers <b>English</b>, the French version offers <b>French</b>, the German version
+offers <b>German</b>, and the Japanese version offers <b>Japanese</b>. Each version offers <b>Neutral</b>. This limits
+the set of values that can be used with the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Culture">Culture</a> parameter. Before specifying a language identifier, you should
+enumerate the locales that are installed on a system.</p>
+</div>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_DefaultButton_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.DefaultButton*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_DefaultButton" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.DefaultButton">
+  DefaultButton
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the default button on the message box. This value must be in a range of 1-4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DefaultButton { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>The value is out of the range. The value must be in a range of 1-4.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_DefaultDesktopOnly_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.DefaultDesktopOnly*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_DefaultDesktopOnly" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.DefaultDesktopOnly">
+  DefaultDesktopOnly
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Same as desktop of the interactive window station. For more
+information, see <a href="https://learn.microsoft.com/en-us/windows/desktop/winstation/window-stations">Window Stations</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DefaultDesktopOnly { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_DefaultDesktopOnly_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If the current input desktop is not the default desktop, <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show">Show()</a> and <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_">Show(Window)</a> does not
+return until the user switches to the default desktop.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Icon_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Icon*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Icon" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Icon">
+  Icon
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the icon displayed on the message box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WinMessageBoxIcon Icon { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html">WinMessageBoxIcon</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Modality_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Modality*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Modality" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Modality">
+  Modality
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the modality of the message box. The default is <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxModality.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxModality_ApplicationModal">ApplicationModal</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WinMessageBoxModality Modality { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxModality.html">WinMessageBoxModality</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_RightAlign_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.RightAlign*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_RightAlign" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.RightAlign">
+  RightAlign
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, the message box is right aligned. Otherwise, it is left-aligned. The default is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RightAlign { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_RightToLeft_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.RightToLeft*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_RightToLeft" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.RightToLeft">
+  RightToLeft
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, displays message and caption text using right-to-left
+reading order on Hebrew and Arabic systems. (called RtlReading in Win32)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RightToLeft { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_ServiceNotification_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ServiceNotification*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_ServiceNotification" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ServiceNotification">
+  ServiceNotification
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The caller is a service notifying the user of an event. The function displays a message box
+on the current active desktop, even if there is no user logged on to the computer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ServiceNotification { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_ServiceNotification_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><div class="NOTE">
+<h5>Note</h5>
+<p><b>Terminal Services:</b> If the calling thread has an impersonation token, the function directs
+the message box to the session specified in the impersonation token.</p>
+</div>
+<p>If this flag is set, the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show">Show()</a> function should be called instead of <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_">Show(Window)</a>.
+This is so that the message box can appear on a desktop other than the desktop corresponding to the window corresponding
+to the specified <code>hWnd</code> in <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_">Show(Window)</a>.</p>
+<p>For information on security considerations in regard to using this
+flag, see <a href="https://learn.microsoft.com/en-us/windows/desktop/Services/interactive-services">Interactive Services</a>. In particular, be aware
+that this flag can produce interactive content on a locked desktop and should therefore be used for only a very limited set of scenarios,
+such as resource exhaustion.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_SetForeground_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.SetForeground*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_SetForeground" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.SetForeground">
+  SetForeground
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, the message box becomes the foreground window. Internally, the system calls
+the <code>SetForegroundWindow</code> function for the message box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetForeground { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_ShowHelp_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ShowHelp*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_ShowHelp" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ShowHelp">
+  ShowHelp
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a Help button to the message box. When the user clicks the Help button or presses F1,
+the message box fires the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_OnHelp">OnHelp</a> event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowHelp { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Text_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Text*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Text" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Text">
+  Text
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the text of the message box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Text { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_TopMost_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.TopMost*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_TopMost" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.TopMost">
+  TopMost
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, the message box is created as a top-most window (stays on top).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TopMost { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show">
+  Show()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows the message box modelessly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override WinMessageBoxResult Show()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html">WinMessageBoxResult</a></dt>
+    <dd><p>The button that was clicked.</p>
+<p>If a message box has a Cancel button, the function returns the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Cancel">Cancel</a> value
+if either the ESC key is pressed or the Cancel button is selected. If the message box has no Cancel button, pressing ESC has no effect.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When you use a system-modal message box to indicate that the system is low on memory,
+the strings in the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Text">Text</a> and <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Caption">Caption</a> members should not be
+taken from a resource file, because an attempt to load the resource may fail.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></dt>
+    <dd><p>There was not enough memory to create the message box.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window)">
+  Show(Window)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows the message box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override WinMessageBoxResult Show(Window wnd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wnd</code> <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd><p>The parent window to attach the message box to.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html">WinMessageBoxResult</a></dt>
+    <dd><p>The button that was clicked.</p>
+<p>If a message box has a Cancel button, the function returns the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Cancel">Cancel</a> value
+if either the ESC key is pressed or the Cancel button is selected. If the message box has no Cancel button, pressing ESC has no effect.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When you use a system-modal message box to indicate that the system is low on memory,
+the strings in the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Text">Text</a> and <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Caption">Caption</a> members should not be
+taken from a resource file, because an attempt to load the resource may fail.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></dt>
+    <dd><p>There was not enough memory to create the message box.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String)">
+  Show(Window, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows a message box with the specified text and the default caption (Error) as a child of the window specified by <code class="paramref">wnd</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WinMessageBoxResult Show(Window wnd, string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wnd</code> <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd><p>The parent window to attach the message box to.</p>
+</dd>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text on the message box.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html">WinMessageBoxResult</a></dt>
+    <dd><p>The button that was clicked.</p>
+<p>If a message box has a Cancel button, the function returns the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Cancel">Cancel</a> value
+if either the ESC key is pressed or the Cancel button is selected. If the message box has no Cancel button, pressing ESC has no effect.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When you use a system-modal message box to indicate that the system is low on memory,
+the string in the <code class="paramref">text</code> parameter should not be
+taken from a resource file, because an attempt to load the resource may fail.</p>
+<p>For extended customization, create an instance of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html">WinMessageBox</a> class with the <span class="xref">FireBlade.WinInteropUtils.Dialogs.WinMessageBox.WinMessageBox()</span> constructor
+and show it with the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_">Show(Window)</a> method.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></dt>
+    <dd><p>There was not enough memory to create the message box.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)">
+  Show(Window, string, WinMessageBoxButtons)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L565"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows a message box with the specified text and buttons as a child of the window specified by <code class="paramref">wnd</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WinMessageBoxResult Show(Window wnd, string text, WinMessageBoxButtons buttons)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wnd</code> <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd><p>The parent window to attach the message box to.</p>
+</dd>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text on the message box.</p>
+</dd>
+    <dt><code>buttons</code> <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html">WinMessageBoxButtons</a></dt>
+    <dd><p>The buttons on the message box. One of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html">WinMessageBoxButtons</a> values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html">WinMessageBoxResult</a></dt>
+    <dd><p>The button that was clicked.</p>
+<p>If a message box has a Cancel button, the function returns the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Cancel">Cancel</a> value
+if either the ESC key is pressed or the Cancel button is selected. If the message box has no Cancel button, pressing ESC has no effect.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When you use a system-modal message box to indicate that the system is low on memory,
+the string in the <code class="paramref">text</code> parameter should not be
+taken from a resource file, because an attempt to load the resource may fail.</p>
+<p>For extended customization, create an instance of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html">WinMessageBox</a> class with the <span class="xref">FireBlade.WinInteropUtils.Dialogs.WinMessageBox.WinMessageBox()</span> constructor
+and show it with the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_">Show(Window)</a> method.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></dt>
+    <dd><p>There was not enough memory to create the message box.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon)">
+  Show(Window, string, WinMessageBoxIcon)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L667"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows a message box with the specified text and icon as a child of the window specified by <code class="paramref">wnd</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WinMessageBoxResult Show(Window wnd, string text, WinMessageBoxIcon icon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wnd</code> <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd><p>The parent window to attach the message box to.</p>
+</dd>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text on the message box.</p>
+</dd>
+    <dt><code>icon</code> <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html">WinMessageBoxIcon</a></dt>
+    <dd><p>The icon displayed on the message box. One of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html">WinMessageBoxIcon</a> values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html">WinMessageBoxResult</a></dt>
+    <dd><p>The button that was clicked.</p>
+<p>If a message box has a Cancel button, the function returns the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Cancel">Cancel</a> value
+if either the ESC key is pressed or the Cancel button is selected. If the message box has no Cancel button, pressing ESC has no effect.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When you use a system-modal message box to indicate that the system is low on memory,
+the string in the <code class="paramref">text</code> parameter should not be
+taken from a resource file, because an attempt to load the resource may fail.</p>
+<p>For extended customization, create an instance of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html">WinMessageBox</a> class with the <span class="xref">FireBlade.WinInteropUtils.Dialogs.WinMessageBox.WinMessageBox()</span> constructor
+and show it with the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_">Show(Window)</a> method.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></dt>
+    <dd><p>There was not enough memory to create the message box.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)">
+  Show(Window, string, WinMessageBoxIcon, WinMessageBoxButtons)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L458"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows a message box with the specified text, icon, and buttons as a child of the window specified by <code class="paramref">wnd</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WinMessageBoxResult Show(Window wnd, string text, WinMessageBoxIcon icon, WinMessageBoxButtons buttons)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wnd</code> <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd><p>The parent window to attach the message box to.</p>
+</dd>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text on the message box.</p>
+</dd>
+    <dt><code>icon</code> <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html">WinMessageBoxIcon</a></dt>
+    <dd><p>The icon displayed on the message box. One of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html">WinMessageBoxIcon</a> values.</p>
+</dd>
+    <dt><code>buttons</code> <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html">WinMessageBoxButtons</a></dt>
+    <dd><p>The buttons on the message box. One of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html">WinMessageBoxButtons</a> values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html">WinMessageBoxResult</a></dt>
+    <dd><p>The button that was clicked.</p>
+<p>If a message box has a Cancel button, the function returns the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Cancel">Cancel</a> value
+if either the ESC key is pressed or the Cancel button is selected. If the message box has no Cancel button, pressing ESC has no effect.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When you use a system-modal message box to indicate that the system is low on memory,
+the string in the <code class="paramref">text</code> parameter should not be
+taken from a resource file, because an attempt to load the resource may fail.</p>
+<p>For extended customization, create an instance of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html">WinMessageBox</a> class with the <span class="xref">FireBlade.WinInteropUtils.Dialogs.WinMessageBox.WinMessageBox()</span> constructor
+and show it with the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_">Show(Window)</a> method.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></dt>
+    <dd><p>There was not enough memory to create the message box.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_System_String_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String,System.String)">
+  Show(Window, string, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows a message box with the specified text and caption as a child of the window specified by <code class="paramref">wnd</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WinMessageBoxResult Show(Window wnd, string text, string? caption)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wnd</code> <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd><p>The parent window to attach the message box to.</p>
+</dd>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text on the message box.</p>
+</dd>
+    <dt><code>caption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The caption (title) of the message box.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html">WinMessageBoxResult</a></dt>
+    <dd><p>The button that was clicked.</p>
+<p>If a message box has a Cancel button, the function returns the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Cancel">Cancel</a> value
+if either the ESC key is pressed or the Cancel button is selected. If the message box has no Cancel button, pressing ESC has no effect.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When you use a system-modal message box to indicate that the system is low on memory,
+the strings in the <code class="paramref">text</code> and <code class="paramref">caption</code> parameters should not be
+taken from a resource file, because an attempt to load the resource may fail.</p>
+<p>For extended customization, create an instance of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html">WinMessageBox</a> class with the <span class="xref">FireBlade.WinInteropUtils.Dialogs.WinMessageBox.WinMessageBox()</span> constructor
+and show it with the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_">Show(Window)</a> method.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></dt>
+    <dd><p>There was not enough memory to create the message box.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)">
+  Show(Window, string, string?, WinMessageBoxButtons)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L589"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows a message box with the specified text, caption, and buttons as a child of the window specified by <code class="paramref">wnd</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WinMessageBoxResult Show(Window wnd, string text, string? caption, WinMessageBoxButtons buttons)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wnd</code> <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd><p>The parent window to attach the message box to.</p>
+</dd>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text on the message box.</p>
+</dd>
+    <dt><code>caption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The caption (title) of the message box.</p>
+</dd>
+    <dt><code>buttons</code> <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html">WinMessageBoxButtons</a></dt>
+    <dd><p>The buttons on the message box. One of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html">WinMessageBoxButtons</a> values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html">WinMessageBoxResult</a></dt>
+    <dd><p>The button that was clicked.</p>
+<p>If a message box has a Cancel button, the function returns the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Cancel">Cancel</a> value
+if either the ESC key is pressed or the Cancel button is selected. If the message box has no Cancel button, pressing ESC has no effect.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When you use a system-modal message box to indicate that the system is low on memory,
+the strings in the <code class="paramref">text</code> and <code class="paramref">caption</code> parameters should not be
+taken from a resource file, because an attempt to load the resource may fail.</p>
+<p>For extended customization, create an instance of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html">WinMessageBox</a> class with the <span class="xref">FireBlade.WinInteropUtils.Dialogs.WinMessageBox.WinMessageBox()</span> constructor
+and show it with the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_">Show(Window)</a> method.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></dt>
+    <dd><p>There was not enough memory to create the message box.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon)">
+  Show(Window, string, string?, WinMessageBoxIcon)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L691"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows a message box with the specified text, caption, and icon as a child of the window specified by <code class="paramref">wnd</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WinMessageBoxResult Show(Window wnd, string text, string? caption, WinMessageBoxIcon icon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wnd</code> <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd><p>The parent window to attach the message box to.</p>
+</dd>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text on the message box.</p>
+</dd>
+    <dt><code>caption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The caption (title) of the message box.</p>
+</dd>
+    <dt><code>icon</code> <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html">WinMessageBoxIcon</a></dt>
+    <dd><p>The icon displayed on the message box. One of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html">WinMessageBoxIcon</a> values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html">WinMessageBoxResult</a></dt>
+    <dd><p>The button that was clicked.</p>
+<p>If a message box has a Cancel button, the function returns the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Cancel">Cancel</a> value
+if either the ESC key is pressed or the Cancel button is selected. If the message box has no Cancel button, pressing ESC has no effect.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When you use a system-modal message box to indicate that the system is low on memory,
+the strings in the <code class="paramref">text</code> and <code class="paramref">caption</code> parameters should not be
+taken from a resource file, because an attempt to load the resource may fail.</p>
+<p>For extended customization, create an instance of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html">WinMessageBox</a> class with the <span class="xref">FireBlade.WinInteropUtils.Dialogs.WinMessageBox.WinMessageBox()</span> constructor
+and show it with the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_">Show(Window)</a> method.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></dt>
+    <dd><p>There was not enough memory to create the message box.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)">
+  Show(Window, string, string?, WinMessageBoxIcon, WinMessageBoxButtons)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L486"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows a message box with the specified text, caption, icon, and buttons as a child of the window specified by <code class="paramref">wnd</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WinMessageBoxResult Show(Window wnd, string text, string? caption, WinMessageBoxIcon icon, WinMessageBoxButtons buttons)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wnd</code> <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd><p>The parent window to attach the message box to.</p>
+</dd>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text on the message box.</p>
+</dd>
+    <dt><code>caption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The caption (title) of the message box.</p>
+</dd>
+    <dt><code>icon</code> <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html">WinMessageBoxIcon</a></dt>
+    <dd><p>The icon displayed on the message box. One of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html">WinMessageBoxIcon</a> values.</p>
+</dd>
+    <dt><code>buttons</code> <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html">WinMessageBoxButtons</a></dt>
+    <dd><p>The buttons on the message box. One of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html">WinMessageBoxButtons</a> values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html">WinMessageBoxResult</a></dt>
+    <dd><p>The button that was clicked.</p>
+<p>If a message box has a Cancel button, the function returns the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Cancel">Cancel</a> value
+if either the ESC key is pressed or the Cancel button is selected. If the message box has no Cancel button, pressing ESC has no effect.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When you use a system-modal message box to indicate that the system is low on memory,
+the strings in the <code class="paramref">text</code> and <code class="paramref">caption</code> parameters should not be
+taken from a resource file, because an attempt to load the resource may fail.</p>
+<p>For extended customization, create an instance of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html">WinMessageBox</a> class with the <span class="xref">FireBlade.WinInteropUtils.Dialogs.WinMessageBox.WinMessageBox()</span> constructor
+and show it with the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_">Show(Window)</a> method.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></dt>
+    <dd><p>There was not enough memory to create the message box.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String)">
+  Show(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows a modeless message box with the specified text and the default caption (Error).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WinMessageBoxResult Show(string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text on the message box.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html">WinMessageBoxResult</a></dt>
+    <dd><p>The button that was clicked.</p>
+<p>If a message box has a Cancel button, the function returns the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Cancel">Cancel</a> value
+if either the ESC key is pressed or the Cancel button is selected. If the message box has no Cancel button, pressing ESC has no effect.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When you use a system-modal message box to indicate that the system is low on memory,
+the string in the <code class="paramref">text</code> parameter should not be
+taken from a resource file, because an attempt to load the resource may fail.</p>
+<p>For extended customization, create an instance of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html">WinMessageBox</a> class with the <span class="xref">FireBlade.WinInteropUtils.Dialogs.WinMessageBox.WinMessageBox()</span> constructor
+and show it with the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show">Show()</a> method.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></dt>
+    <dd><p>There was not enough memory to create the message box.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)">
+  Show(string, WinMessageBoxButtons)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L514"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows a modeless message box with the specified text and buttons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WinMessageBoxResult Show(string text, WinMessageBoxButtons buttons)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text on the message box.</p>
+</dd>
+    <dt><code>buttons</code> <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html">WinMessageBoxButtons</a></dt>
+    <dd><p>The buttons on the message box. One of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html">WinMessageBoxButtons</a> values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html">WinMessageBoxResult</a></dt>
+    <dd><p>The button that was clicked.</p>
+<p>If a message box has a Cancel button, the function returns the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Cancel">Cancel</a> value
+if either the ESC key is pressed or the Cancel button is selected. If the message box has no Cancel button, pressing ESC has no effect.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When you use a system-modal message box to indicate that the system is low on memory,
+the string in the <code class="paramref">text</code> parameter should not be
+taken from a resource file, because an attempt to load the resource may fail.</p>
+<p>For extended customization, create an instance of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html">WinMessageBox</a> class with the <span class="xref">FireBlade.WinInteropUtils.Dialogs.WinMessageBox.WinMessageBox()</span> constructor
+and show it with the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show">Show()</a> method.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></dt>
+    <dd><p>There was not enough memory to create the message box.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon)">
+  Show(string, WinMessageBoxIcon)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L616"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows a modeless message box with the specified text and icon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WinMessageBoxResult Show(string text, WinMessageBoxIcon icon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text on the message box.</p>
+</dd>
+    <dt><code>icon</code> <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html">WinMessageBoxIcon</a></dt>
+    <dd><p>The icon displayed on the message box. One of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html">WinMessageBoxIcon</a> values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html">WinMessageBoxResult</a></dt>
+    <dd><p>The button that was clicked.</p>
+<p>If a message box has a Cancel button, the function returns the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Cancel">Cancel</a> value
+if either the ESC key is pressed or the Cancel button is selected. If the message box has no Cancel button, pressing ESC has no effect.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When you use a system-modal message box to indicate that the system is low on memory,
+the string in the <code class="paramref">text</code> parameter should not be
+taken from a resource file, because an attempt to load the resource may fail.</p>
+<p>For extended customization, create an instance of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html">WinMessageBox</a> class with the <span class="xref">FireBlade.WinInteropUtils.Dialogs.WinMessageBox.WinMessageBox()</span> constructor
+and show it with the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show">Show()</a> method.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></dt>
+    <dd><p>There was not enough memory to create the message box.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)">
+  Show(string, WinMessageBoxIcon, WinMessageBoxButtons)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L404"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows a modeless message box with the specified text, icon, and buttons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WinMessageBoxResult Show(string text, WinMessageBoxIcon icon, WinMessageBoxButtons buttons)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text on the message box.</p>
+</dd>
+    <dt><code>icon</code> <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html">WinMessageBoxIcon</a></dt>
+    <dd><p>The icon displayed on the message box. One of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html">WinMessageBoxIcon</a> values.</p>
+</dd>
+    <dt><code>buttons</code> <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html">WinMessageBoxButtons</a></dt>
+    <dd><p>The buttons on the message box. One of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html">WinMessageBoxButtons</a> values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html">WinMessageBoxResult</a></dt>
+    <dd><p>The button that was clicked.</p>
+<p>If a message box has a Cancel button, the function returns the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Cancel">Cancel</a> value
+if either the ESC key is pressed or the Cancel button is selected. If the message box has no Cancel button, pressing ESC has no effect.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When you use a system-modal message box to indicate that the system is low on memory,
+the string in the <code class="paramref">text</code> parameter should not be
+taken from a resource file, because an attempt to load the resource may fail.</p>
+<p>For extended customization, create an instance of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html">WinMessageBox</a> class with the <span class="xref">FireBlade.WinInteropUtils.Dialogs.WinMessageBox.WinMessageBox()</span> constructor
+and show it with the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show">Show()</a> method.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></dt>
+    <dd><p>There was not enough memory to create the message box.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_System_String_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String,System.String)">
+  Show(string, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L377"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows a modeless message box with the specified text and caption.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WinMessageBoxResult Show(string text, string? caption)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text on the message box.</p>
+</dd>
+    <dt><code>caption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The caption (title) of the message box.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html">WinMessageBoxResult</a></dt>
+    <dd><p>The button that was clicked.</p>
+<p>If a message box has a Cancel button, the function returns the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Cancel">Cancel</a> value
+if either the ESC key is pressed or the Cancel button is selected. If the message box has no Cancel button, pressing ESC has no effect.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When you use a system-modal message box to indicate that the system is low on memory,
+the strings in the <code class="paramref">text</code> and <code class="paramref">caption</code> parameters should not be
+taken from a resource file, because an attempt to load the resource may fail.</p>
+<p>For extended customization, create an instance of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html">WinMessageBox</a> class with the <span class="xref">FireBlade.WinInteropUtils.Dialogs.WinMessageBox.WinMessageBox()</span> constructor
+and show it with the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show">Show()</a> method.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></dt>
+    <dd><p>There was not enough memory to create the message box.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)">
+  Show(string, string?, WinMessageBoxButtons)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L537"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows a modeless message box with the specified text, caption, and buttons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WinMessageBoxResult Show(string text, string? caption, WinMessageBoxButtons buttons)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text on the message box.</p>
+</dd>
+    <dt><code>caption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The caption (title) of the message box.</p>
+</dd>
+    <dt><code>buttons</code> <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html">WinMessageBoxButtons</a></dt>
+    <dd><p>The buttons on the message box. One of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html">WinMessageBoxButtons</a> values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html">WinMessageBoxResult</a></dt>
+    <dd><p>The button that was clicked.</p>
+<p>If a message box has a Cancel button, the function returns the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Cancel">Cancel</a> value
+if either the ESC key is pressed or the Cancel button is selected. If the message box has no Cancel button, pressing ESC has no effect.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When you use a system-modal message box to indicate that the system is low on memory,
+the strings in the <code class="paramref">text</code> and <code class="paramref">caption</code> parameters should not be
+taken from a resource file, because an attempt to load the resource may fail.</p>
+<p>For extended customization, create an instance of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html">WinMessageBox</a> class with the <span class="xref">FireBlade.WinInteropUtils.Dialogs.WinMessageBox.WinMessageBox()</span> constructor
+and show it with the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show">Show()</a> method.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></dt>
+    <dd><p>There was not enough memory to create the message box.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon)">
+  Show(string, string?, WinMessageBoxIcon)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L639"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows a modeless message box with the specified text, caption, and icon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WinMessageBoxResult Show(string text, string? caption, WinMessageBoxIcon icon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text on the message box.</p>
+</dd>
+    <dt><code>caption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The caption (title) of the message box.</p>
+</dd>
+    <dt><code>icon</code> <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html">WinMessageBoxIcon</a></dt>
+    <dd><p>The icon displayed on the message box. One of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html">WinMessageBoxIcon</a> values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html">WinMessageBoxResult</a></dt>
+    <dd><p>The button that was clicked.</p>
+<p>If a message box has a Cancel button, the function returns the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Cancel">Cancel</a> value
+if either the ESC key is pressed or the Cancel button is selected. If the message box has no Cancel button, pressing ESC has no effect.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When you use a system-modal message box to indicate that the system is low on memory,
+the strings in the <code class="paramref">text</code> and <code class="paramref">caption</code> parameters should not be
+taken from a resource file, because an attempt to load the resource may fail.</p>
+<p>For extended customization, create an instance of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html">WinMessageBox</a> class with the <span class="xref">FireBlade.WinInteropUtils.Dialogs.WinMessageBox.WinMessageBox()</span> constructor
+and show it with the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show">Show()</a> method.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></dt>
+    <dd><p>There was not enough memory to create the message box.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)">
+  Show(string, string?, WinMessageBoxIcon, WinMessageBoxButtons)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L428"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows a modeless message box with the specified text, caption, icon, and buttons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WinMessageBoxResult Show(string text, string? caption, WinMessageBoxIcon icon, WinMessageBoxButtons buttons)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text on the message box.</p>
+</dd>
+    <dt><code>caption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The caption (title) of the message box.</p>
+</dd>
+    <dt><code>icon</code> <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html">WinMessageBoxIcon</a></dt>
+    <dd><p>The icon displayed on the message box. One of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html">WinMessageBoxIcon</a> values.</p>
+</dd>
+    <dt><code>buttons</code> <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html">WinMessageBoxButtons</a></dt>
+    <dd><p>The buttons on the message box. One of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html">WinMessageBoxButtons</a> values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html">WinMessageBoxResult</a></dt>
+    <dd><p>The button that was clicked.</p>
+<p>If a message box has a Cancel button, the function returns the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Cancel">Cancel</a> value
+if either the ESC key is pressed or the Cancel button is selected. If the message box has no Cancel button, pressing ESC has no effect.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When you use a system-modal message box to indicate that the system is low on memory,
+the strings in the <code class="paramref">text</code> and <code class="paramref">caption</code> parameters should not be
+taken from a resource file, because an attempt to load the resource may fail.</p>
+<p>For extended customization, create an instance of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html">WinMessageBox</a> class with the <span class="xref">FireBlade.WinInteropUtils.Dialogs.WinMessageBox.WinMessageBox()</span> constructor
+and show it with the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show">Show()</a> method.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></dt>
+    <dd><p>There was not enough memory to create the message box.</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_WinMessageBox_OnHelp" data-uid="FireBlade.WinInteropUtils.Dialogs.WinMessageBox.OnHelp">
+  OnHelp
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fires when help is requested from the message box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;HelpEventArgs&gt;? OnHelp</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="FireBlade.WinInteropUtils.Dialogs.HelpEventArgs.html">HelpEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/WinMessageBox.cs/#L10" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

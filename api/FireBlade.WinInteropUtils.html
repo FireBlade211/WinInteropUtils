@@ -95,11 +95,6 @@
 Classes
 </h3>
     <dl class="jumplist">
-      <dt><a class="xref" href="FireBlade.WinInteropUtils.DefaultWindowLongPtrValues.html">DefaultWindowLongPtrValues</a></dt>
-      <dd><p>Defines default index values for <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SetWindowLongPtr_System_IntPtr_System_Int32_System_IntPtr_">SetWindowLongPtr(nint, int, nint)</a> and <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_GetWindowLongPtr_System_IntPtr_System_Int32_">GetWindowLongPtr(nint, int)</a>.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
       <dt><a class="xref" href="FireBlade.WinInteropUtils.EnumExtensions.html">EnumExtensions</a></dt>
       <dd><p>Provides extension methods for <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.enum">Enum</a>.</p>
 </dd>
@@ -117,6 +112,11 @@ Classes
     <dl class="jumplist">
       <dt><a class="xref" href="FireBlade.WinInteropUtils.Macros.html">Macros</a></dt>
       <dd><p>Defines Win32 macros.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FireBlade.WinInteropUtils.MessageLoop.html">MessageLoop</a></dt>
+      <dd><p>Provides methods for managing message loops.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -141,8 +141,38 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="FireBlade.WinInteropUtils.VisualStyle.html">VisualStyle</a></dt>
+      <dd><p>Provides methods for managing and drawing with visual styles.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="FireBlade.WinInteropUtils.Win32Constants.html">Win32Constants</a></dt>
       <dd><p>Defines common Win32 constants.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FireBlade.WinInteropUtils.WinConstants.html">WinConstants</a></dt>
+      <dd><p>Defines common Win32 constants.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+      <dd><p>Provides methods for managing Win32 windows.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FireBlade.WinInteropUtils.WindowClass.html">WindowClass</a></dt>
+      <dd><p>Represents a window class.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FireBlade.WinInteropUtils.WindowLongPtr.html">WindowLongPtr</a></dt>
+      <dd><p>Defines default index values for <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SetWindowLongPtr_System_IntPtr_System_Int32_System_IntPtr_">SetWindowLongPtr(nint, int, nint)</a> and <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_GetWindowLongPtr_System_IntPtr_System_Int32_">GetWindowLongPtr(nint, int)</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FireBlade.WinInteropUtils.WindowStyles.html">WindowStyles</a></dt>
+      <dd><p>Represents the various standard styles that can be applied to a window (after the window has been created, these styles cannot be modified, except as documented).</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -150,21 +180,69 @@ Classes
       <dd><p>Stores data about a Windows file.</p>
 </dd>
     </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FireBlade.WinInteropUtils.ZOrderWindows.html">ZOrderWindows</a></dt>
+      <dd><p>Represents windows used for Z position ordering.</p>
+</dd>
+    </dl>
     <h3 id="structs">
 Structs
 </h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FireBlade.WinInteropUtils.CreateStruct.html">CreateStruct</a></dt>
+      <dd><p>The structure passed to the <code>lParam</code> parameter of the <code>WM_CREATE</code> message of a window.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FireBlade.WinInteropUtils.DrawTextAdvancedOptions.html">DrawTextAdvancedOptions</a></dt>
+      <dd><p>Represents a structure that contains extended formatting options</p>
+</dd>
+    </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="FireBlade.WinInteropUtils.Shell32.SHFILEINFO.html">Shell32.SHFILEINFO</a></dt>
       <dd><p>The internal Windows API struct for <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">SHGetFileInfoW(string, uint, ref SHFILEINFO, uint, uint)</a>. Use with
 <a class="xref" href="FireBlade.WinInteropUtils.Shell32.html#FireBlade_WinInteropUtils_Shell32_GetFileInfoEx_System_String_FireBlade_WinInteropUtils_WindowsFileAttributes_FireBlade_WinInteropUtils_Shell32_SHGetFileInfoFlags_FireBlade_WinInteropUtils_Shell32_SHFILEINFO__">GetFileInfoEx(string, WindowsFileAttributes, SHGetFileInfoFlags, ref SHFILEINFO)</a>.</p>
 </dd>
     </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FireBlade.WinInteropUtils.WinMessage.html">WinMessage</a></dt>
+      <dd><p>Provides information about a Windows message.</p>
+</dd>
+    </dl>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FireBlade.WinInteropUtils.IHandle.html">IHandle</a></dt>
+      <dd><p>Represents an interface for classes wrapping unmanaged handles.</p>
+</dd>
+    </dl>
     <h3 id="enums">
 Enums
 </h3>
     <dl class="jumplist">
+      <dt><a class="xref" href="FireBlade.WinInteropUtils.ClassStyle.html">ClassStyle</a></dt>
+      <dd><p>Represents class styles. Class styles define additional elements of the window class.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FireBlade.WinInteropUtils.ExWindowStyles.html">ExWindowStyles</a></dt>
+      <dd><p>Specifies extended window styles.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
       <dd><p>Defines common HRESULT values. Values starting with <code>S_</code> indicate success, while those starting with <code>E_</code> indicate an error.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FireBlade.WinInteropUtils.MessageProcessingLimit.html">MessageProcessingLimit</a></dt>
+      <dd><p>Specifies what message types should be processed by <a class="xref" href="FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_PeekMessage_FireBlade_WinInteropUtils_WinMessage__FireBlade_WinInteropUtils_Window_System_UInt32_System_UInt32_FireBlade_WinInteropUtils_MessageRemoval_FireBlade_WinInteropUtils_MessageProcessingLimit_">PeekMessage(ref WinMessage, Window?, uint, uint, MessageRemoval, MessageProcessingLimit)</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FireBlade.WinInteropUtils.MessageRemoval.html">MessageRemoval</a></dt>
+      <dd><p>Specifies message removal options for <a class="xref" href="FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_PeekMessage_FireBlade_WinInteropUtils_WinMessage__FireBlade_WinInteropUtils_Window_System_UInt32_System_UInt32_FireBlade_WinInteropUtils_MessageRemoval_FireBlade_WinInteropUtils_MessageProcessingLimit_">PeekMessage(ref WinMessage, Window?, uint, uint, MessageRemoval, MessageProcessingLimit)</a>.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -176,6 +254,21 @@ To use this function, call the <a class="xref" href="FireBlade.WinInteropUtils.S
     <dl class="jumplist">
       <dt><a class="xref" href="FireBlade.WinInteropUtils.StockIcon.html">StockIcon</a></dt>
       <dd><p>Icon identifiers for the <a class="xref" href="FireBlade.WinInteropUtils.StockIconHelper.html#FireBlade_WinInteropUtils_StockIconHelper_GetIcon_FireBlade_WinInteropUtils_StockIcon_System_Drawing_StockIconOptions_">GetIcon(StockIcon, StockIconOptions)</a> function.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FireBlade.WinInteropUtils.SystemColorId.html">SystemColorId</a></dt>
+      <dd><p>Defines the identifiers for system colors.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FireBlade.WinInteropUtils.SystemFontId.html">SystemFontId</a></dt>
+      <dd><p>Defines the identifiers for system fonts.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FireBlade.WinInteropUtils.ThemeTextOptions.html">ThemeTextOptions</a></dt>
+      <dd><p>Represents the options for <a class="xref" href="FireBlade.WinInteropUtils.VisualStyle.html#FireBlade_WinInteropUtils_VisualStyle_DrawThemeText_System_Drawing_Graphics_System_Int32_System_Int32_System_String_System_Int32_FireBlade_WinInteropUtils_ThemeTextOptions_System_Drawing_Rectangle_">DrawThemeText(Graphics, int, int, string, int, ThemeTextOptions, Rectangle)</a>.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -194,6 +287,16 @@ To use this function, call the <a class="xref" href="FireBlade.WinInteropUtils.S
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="FireBlade.WinInteropUtils.WindowSetPosOptions.html">WindowSetPosOptions</a></dt>
+      <dd><p>Window sizing and positioning flags for <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SetPos_System_Drawing_Point_System_Drawing_Size_FireBlade_WinInteropUtils_WindowSetPosOptions_FireBlade_WinInteropUtils_Window_">SetPos(Point, Size, WindowSetPosOptions, Window?)</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FireBlade.WinInteropUtils.WindowShowCommand.html">WindowShowCommand</a></dt>
+      <dd><p>Represents the show command for <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Show_FireBlade_WinInteropUtils_WindowShowCommand_">Show(WindowShowCommand)</a> and <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_ShowAsync_FireBlade_WinInteropUtils_WindowShowCommand_">ShowAsync(WindowShowCommand)</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="FireBlade.WinInteropUtils.WindowState.html">WindowState</a></dt>
       <dd><p>Defines states a window can be in.</p>
 </dd>
@@ -201,6 +304,15 @@ To use this function, call the <a class="xref" href="FireBlade.WinInteropUtils.S
     <dl class="jumplist">
       <dt><a class="xref" href="FireBlade.WinInteropUtils.WindowsFileAttributes.html">WindowsFileAttributes</a></dt>
       <dd><p>Specifies attributes for Windows files.</p>
+</dd>
+    </dl>
+    <h3 id="delegates">
+Delegates
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="FireBlade.WinInteropUtils.WindowClass.WndProc.html">WindowClass.WndProc</a></dt>
+      <dd><p>A callback function, which you define in your application, that processes messages sent to a window.
+The <code>WndProc</code> name is a placeholder for the name of the function that you define in your application.</p>
 </dd>
     </dl>
 

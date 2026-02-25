@@ -7,6 +7,84 @@ references:
   commentId: N:FireBlade.WinInteropUtils
   fullName: FireBlade.WinInteropUtils
   nameWithType: FireBlade.WinInteropUtils
+- uid: FireBlade.WinInteropUtils.ClassStyle
+  name: ClassStyle
+  href: api/FireBlade.WinInteropUtils.ClassStyle.html
+  commentId: T:FireBlade.WinInteropUtils.ClassStyle
+  fullName: FireBlade.WinInteropUtils.ClassStyle
+  nameWithType: ClassStyle
+- uid: FireBlade.WinInteropUtils.ClassStyle.ByteAlignClient
+  name: ByteAlignClient
+  href: api/FireBlade.WinInteropUtils.ClassStyle.html#FireBlade_WinInteropUtils_ClassStyle_ByteAlignClient
+  commentId: F:FireBlade.WinInteropUtils.ClassStyle.ByteAlignClient
+  fullName: FireBlade.WinInteropUtils.ClassStyle.ByteAlignClient
+  nameWithType: ClassStyle.ByteAlignClient
+- uid: FireBlade.WinInteropUtils.ClassStyle.ByteAlignWindow
+  name: ByteAlignWindow
+  href: api/FireBlade.WinInteropUtils.ClassStyle.html#FireBlade_WinInteropUtils_ClassStyle_ByteAlignWindow
+  commentId: F:FireBlade.WinInteropUtils.ClassStyle.ByteAlignWindow
+  fullName: FireBlade.WinInteropUtils.ClassStyle.ByteAlignWindow
+  nameWithType: ClassStyle.ByteAlignWindow
+- uid: FireBlade.WinInteropUtils.ClassStyle.ClassDeviceContext
+  name: ClassDeviceContext
+  href: api/FireBlade.WinInteropUtils.ClassStyle.html#FireBlade_WinInteropUtils_ClassStyle_ClassDeviceContext
+  commentId: F:FireBlade.WinInteropUtils.ClassStyle.ClassDeviceContext
+  fullName: FireBlade.WinInteropUtils.ClassStyle.ClassDeviceContext
+  nameWithType: ClassStyle.ClassDeviceContext
+- uid: FireBlade.WinInteropUtils.ClassStyle.DoubleClicks
+  name: DoubleClicks
+  href: api/FireBlade.WinInteropUtils.ClassStyle.html#FireBlade_WinInteropUtils_ClassStyle_DoubleClicks
+  commentId: F:FireBlade.WinInteropUtils.ClassStyle.DoubleClicks
+  fullName: FireBlade.WinInteropUtils.ClassStyle.DoubleClicks
+  nameWithType: ClassStyle.DoubleClicks
+- uid: FireBlade.WinInteropUtils.ClassStyle.DropShadow
+  name: DropShadow
+  href: api/FireBlade.WinInteropUtils.ClassStyle.html#FireBlade_WinInteropUtils_ClassStyle_DropShadow
+  commentId: F:FireBlade.WinInteropUtils.ClassStyle.DropShadow
+  fullName: FireBlade.WinInteropUtils.ClassStyle.DropShadow
+  nameWithType: ClassStyle.DropShadow
+- uid: FireBlade.WinInteropUtils.ClassStyle.GlobalClass
+  name: GlobalClass
+  href: api/FireBlade.WinInteropUtils.ClassStyle.html#FireBlade_WinInteropUtils_ClassStyle_GlobalClass
+  commentId: F:FireBlade.WinInteropUtils.ClassStyle.GlobalClass
+  fullName: FireBlade.WinInteropUtils.ClassStyle.GlobalClass
+  nameWithType: ClassStyle.GlobalClass
+- uid: FireBlade.WinInteropUtils.ClassStyle.HRedraw
+  name: HRedraw
+  href: api/FireBlade.WinInteropUtils.ClassStyle.html#FireBlade_WinInteropUtils_ClassStyle_HRedraw
+  commentId: F:FireBlade.WinInteropUtils.ClassStyle.HRedraw
+  fullName: FireBlade.WinInteropUtils.ClassStyle.HRedraw
+  nameWithType: ClassStyle.HRedraw
+- uid: FireBlade.WinInteropUtils.ClassStyle.NoClose
+  name: NoClose
+  href: api/FireBlade.WinInteropUtils.ClassStyle.html#FireBlade_WinInteropUtils_ClassStyle_NoClose
+  commentId: F:FireBlade.WinInteropUtils.ClassStyle.NoClose
+  fullName: FireBlade.WinInteropUtils.ClassStyle.NoClose
+  nameWithType: ClassStyle.NoClose
+- uid: FireBlade.WinInteropUtils.ClassStyle.OwnDeviceContext
+  name: OwnDeviceContext
+  href: api/FireBlade.WinInteropUtils.ClassStyle.html#FireBlade_WinInteropUtils_ClassStyle_OwnDeviceContext
+  commentId: F:FireBlade.WinInteropUtils.ClassStyle.OwnDeviceContext
+  fullName: FireBlade.WinInteropUtils.ClassStyle.OwnDeviceContext
+  nameWithType: ClassStyle.OwnDeviceContext
+- uid: FireBlade.WinInteropUtils.ClassStyle.ParentDC
+  name: ParentDC
+  href: api/FireBlade.WinInteropUtils.ClassStyle.html#FireBlade_WinInteropUtils_ClassStyle_ParentDC
+  commentId: F:FireBlade.WinInteropUtils.ClassStyle.ParentDC
+  fullName: FireBlade.WinInteropUtils.ClassStyle.ParentDC
+  nameWithType: ClassStyle.ParentDC
+- uid: FireBlade.WinInteropUtils.ClassStyle.SaveBits
+  name: SaveBits
+  href: api/FireBlade.WinInteropUtils.ClassStyle.html#FireBlade_WinInteropUtils_ClassStyle_SaveBits
+  commentId: F:FireBlade.WinInteropUtils.ClassStyle.SaveBits
+  fullName: FireBlade.WinInteropUtils.ClassStyle.SaveBits
+  nameWithType: ClassStyle.SaveBits
+- uid: FireBlade.WinInteropUtils.ClassStyle.VRedraw
+  name: VRedraw
+  href: api/FireBlade.WinInteropUtils.ClassStyle.html#FireBlade_WinInteropUtils_ClassStyle_VRedraw
+  commentId: F:FireBlade.WinInteropUtils.ClassStyle.VRedraw
+  fullName: FireBlade.WinInteropUtils.ClassStyle.VRedraw
+  nameWithType: ClassStyle.VRedraw
 - uid: FireBlade.WinInteropUtils.ComponentObjectModel
   name: FireBlade.WinInteropUtils.ComponentObjectModel
   href: api/FireBlade.WinInteropUtils.ComponentObjectModel.html
@@ -1370,6 +1448,72 @@ references:
   commentId: F:FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.SIGDN.SIGDN_URL
   fullName: FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.SIGDN.SIGDN_URL
   nameWithType: SIGDN.SIGDN_URL
+- uid: FireBlade.WinInteropUtils.CreateStruct
+  name: CreateStruct
+  href: api/FireBlade.WinInteropUtils.CreateStruct.html
+  commentId: T:FireBlade.WinInteropUtils.CreateStruct
+  fullName: FireBlade.WinInteropUtils.CreateStruct
+  nameWithType: CreateStruct
+- uid: FireBlade.WinInteropUtils.CreateStruct.Class
+  name: Class
+  href: api/FireBlade.WinInteropUtils.CreateStruct.html#FireBlade_WinInteropUtils_CreateStruct_Class
+  commentId: F:FireBlade.WinInteropUtils.CreateStruct.Class
+  fullName: FireBlade.WinInteropUtils.CreateStruct.Class
+  nameWithType: CreateStruct.Class
+- uid: FireBlade.WinInteropUtils.CreateStruct.CreateParam
+  name: CreateParam
+  href: api/FireBlade.WinInteropUtils.CreateStruct.html#FireBlade_WinInteropUtils_CreateStruct_CreateParam
+  commentId: F:FireBlade.WinInteropUtils.CreateStruct.CreateParam
+  fullName: FireBlade.WinInteropUtils.CreateStruct.CreateParam
+  nameWithType: CreateStruct.CreateParam
+- uid: FireBlade.WinInteropUtils.CreateStruct.ExStyle
+  name: ExStyle
+  href: api/FireBlade.WinInteropUtils.CreateStruct.html#FireBlade_WinInteropUtils_CreateStruct_ExStyle
+  commentId: F:FireBlade.WinInteropUtils.CreateStruct.ExStyle
+  fullName: FireBlade.WinInteropUtils.CreateStruct.ExStyle
+  nameWithType: CreateStruct.ExStyle
+- uid: FireBlade.WinInteropUtils.CreateStruct.HInstance
+  name: HInstance
+  href: api/FireBlade.WinInteropUtils.CreateStruct.html#FireBlade_WinInteropUtils_CreateStruct_HInstance
+  commentId: F:FireBlade.WinInteropUtils.CreateStruct.HInstance
+  fullName: FireBlade.WinInteropUtils.CreateStruct.HInstance
+  nameWithType: CreateStruct.HInstance
+- uid: FireBlade.WinInteropUtils.CreateStruct.HMenu
+  name: HMenu
+  href: api/FireBlade.WinInteropUtils.CreateStruct.html#FireBlade_WinInteropUtils_CreateStruct_HMenu
+  commentId: F:FireBlade.WinInteropUtils.CreateStruct.HMenu
+  fullName: FireBlade.WinInteropUtils.CreateStruct.HMenu
+  nameWithType: CreateStruct.HMenu
+- uid: FireBlade.WinInteropUtils.CreateStruct.Location
+  name: Location
+  href: api/FireBlade.WinInteropUtils.CreateStruct.html#FireBlade_WinInteropUtils_CreateStruct_Location
+  commentId: F:FireBlade.WinInteropUtils.CreateStruct.Location
+  fullName: FireBlade.WinInteropUtils.CreateStruct.Location
+  nameWithType: CreateStruct.Location
+- uid: FireBlade.WinInteropUtils.CreateStruct.Parent
+  name: Parent
+  href: api/FireBlade.WinInteropUtils.CreateStruct.html#FireBlade_WinInteropUtils_CreateStruct_Parent
+  commentId: F:FireBlade.WinInteropUtils.CreateStruct.Parent
+  fullName: FireBlade.WinInteropUtils.CreateStruct.Parent
+  nameWithType: CreateStruct.Parent
+- uid: FireBlade.WinInteropUtils.CreateStruct.Size
+  name: Size
+  href: api/FireBlade.WinInteropUtils.CreateStruct.html#FireBlade_WinInteropUtils_CreateStruct_Size
+  commentId: F:FireBlade.WinInteropUtils.CreateStruct.Size
+  fullName: FireBlade.WinInteropUtils.CreateStruct.Size
+  nameWithType: CreateStruct.Size
+- uid: FireBlade.WinInteropUtils.CreateStruct.Style
+  name: Style
+  href: api/FireBlade.WinInteropUtils.CreateStruct.html#FireBlade_WinInteropUtils_CreateStruct_Style
+  commentId: F:FireBlade.WinInteropUtils.CreateStruct.Style
+  fullName: FireBlade.WinInteropUtils.CreateStruct.Style
+  nameWithType: CreateStruct.Style
+- uid: FireBlade.WinInteropUtils.CreateStruct.Text
+  name: Text
+  href: api/FireBlade.WinInteropUtils.CreateStruct.html#FireBlade_WinInteropUtils_CreateStruct_Text
+  commentId: F:FireBlade.WinInteropUtils.CreateStruct.Text
+  fullName: FireBlade.WinInteropUtils.CreateStruct.Text
+  nameWithType: CreateStruct.Text
 - uid: FireBlade.WinInteropUtils.DefaultWindowLongPtrValues
   name: DefaultWindowLongPtrValues
   href: api/FireBlade.WinInteropUtils.DefaultWindowLongPtrValues.html
@@ -1519,15 +1663,33 @@ references:
   commentId: M:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog)
   fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog)
   nameWithType: ColorPickerDialog.Show(ColorPickerDialog)
-- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog,System.IntPtr)
-  name: Show(ColorPickerDialog, nint)
-  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_System_IntPtr_
-  commentId: M:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog,System.IntPtr)
-  name.vb: Show(ColorPickerDialog, IntPtr)
-  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog, nint)
-  fullName.vb: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog, System.IntPtr)
-  nameWithType: ColorPickerDialog.Show(ColorPickerDialog, nint)
-  nameWithType.vb: ColorPickerDialog.Show(ColorPickerDialog, IntPtr)
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog,FireBlade.WinInteropUtils.Window)
+  name: Show(ColorPickerDialog, Window)
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_FireBlade_WinInteropUtils_Window_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog,FireBlade.WinInteropUtils.Window)
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog, FireBlade.WinInteropUtils.Window)
+  nameWithType: ColorPickerDialog.Show(ColorPickerDialog, Window)
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Window)
+  name: Show(Window)
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_FireBlade_WinInteropUtils_Window_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Window)
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Window)
+  nameWithType: ColorPickerDialog.Show(Window)
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Window,System.Drawing.Color)
+  name: Show(Window, Color)
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_FireBlade_WinInteropUtils_Window_System_Drawing_Color_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Window,System.Drawing.Color)
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Window, System.Drawing.Color)
+  nameWithType: ColorPickerDialog.Show(Window, Color)
+- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Window,System.Drawing.Color,System.Drawing.Color[])
+  name: Show(Window, Color, Color[])
+  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_FireBlade_WinInteropUtils_Window_System_Drawing_Color_System_Drawing_Color___
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Window,System.Drawing.Color,System.Drawing.Color[])
+  name.vb: Show(Window, Color, Color())
+  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Window, System.Drawing.Color, System.Drawing.Color[])
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Window, System.Drawing.Color, System.Drawing.Color())
+  nameWithType: ColorPickerDialog.Show(Window, Color, Color[])
+  nameWithType.vb: ColorPickerDialog.Show(Window, Color, Color())
 - uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.Drawing.Color)
   name: Show(Color)
   href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_System_Drawing_Color_
@@ -1543,33 +1705,6 @@ references:
   fullName.vb: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.Drawing.Color, System.Drawing.Color())
   nameWithType: ColorPickerDialog.Show(Color, Color[])
   nameWithType.vb: ColorPickerDialog.Show(Color, Color())
-- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.IntPtr)
-  name: Show(nint)
-  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_System_IntPtr_
-  commentId: M:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.IntPtr)
-  name.vb: Show(IntPtr)
-  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(nint)
-  fullName.vb: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.IntPtr)
-  nameWithType: ColorPickerDialog.Show(nint)
-  nameWithType.vb: ColorPickerDialog.Show(IntPtr)
-- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.IntPtr,System.Drawing.Color)
-  name: Show(nint, Color)
-  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_System_IntPtr_System_Drawing_Color_
-  commentId: M:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.IntPtr,System.Drawing.Color)
-  name.vb: Show(IntPtr, Color)
-  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(nint, System.Drawing.Color)
-  fullName.vb: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.IntPtr, System.Drawing.Color)
-  nameWithType: ColorPickerDialog.Show(nint, Color)
-  nameWithType.vb: ColorPickerDialog.Show(IntPtr, Color)
-- uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.IntPtr,System.Drawing.Color,System.Drawing.Color[])
-  name: Show(nint, Color, Color[])
-  href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_System_IntPtr_System_Drawing_Color_System_Drawing_Color___
-  commentId: M:FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.IntPtr,System.Drawing.Color,System.Drawing.Color[])
-  name.vb: Show(IntPtr, Color, Color())
-  fullName: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(nint, System.Drawing.Color, System.Drawing.Color[])
-  fullName.vb: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.IntPtr, System.Drawing.Color, System.Drawing.Color())
-  nameWithType: ColorPickerDialog.Show(nint, Color, Color[])
-  nameWithType.vb: ColorPickerDialog.Show(IntPtr, Color, Color())
 - uid: FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show*
   name: Show
   href: api/FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_
@@ -1675,15 +1810,14 @@ references:
   fullName.vb: FireBlade.WinInteropUtils.Dialogs.DialogWindow(Of TShowReturn, TSelf).Show()
   nameWithType: DialogWindow<TShowReturn, TSelf>.Show()
   nameWithType.vb: DialogWindow(Of TShowReturn, TSelf).Show()
-- uid: FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show(System.IntPtr)
-  name: Show(nint)
-  href: api/FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show_System_IntPtr_
-  commentId: M:FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show(System.IntPtr)
-  name.vb: Show(IntPtr)
-  fullName: FireBlade.WinInteropUtils.Dialogs.DialogWindow<TShowReturn, TSelf>.Show(nint)
-  fullName.vb: FireBlade.WinInteropUtils.Dialogs.DialogWindow(Of TShowReturn, TSelf).Show(System.IntPtr)
-  nameWithType: DialogWindow<TShowReturn, TSelf>.Show(nint)
-  nameWithType.vb: DialogWindow(Of TShowReturn, TSelf).Show(IntPtr)
+- uid: FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show(FireBlade.WinInteropUtils.Window)
+  name: Show(Window)
+  href: api/FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show_FireBlade_WinInteropUtils_Window_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show(FireBlade.WinInteropUtils.Window)
+  fullName: FireBlade.WinInteropUtils.Dialogs.DialogWindow<TShowReturn, TSelf>.Show(FireBlade.WinInteropUtils.Window)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.DialogWindow(Of TShowReturn, TSelf).Show(FireBlade.WinInteropUtils.Window)
+  nameWithType: DialogWindow<TShowReturn, TSelf>.Show(Window)
+  nameWithType.vb: DialogWindow(Of TShowReturn, TSelf).Show(Window)
 - uid: FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show(`1)
   name: Show(TSelf)
   href: api/FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show__1_
@@ -1692,15 +1826,14 @@ references:
   fullName.vb: FireBlade.WinInteropUtils.Dialogs.DialogWindow(Of TShowReturn, TSelf).Show(TSelf)
   nameWithType: DialogWindow<TShowReturn, TSelf>.Show(TSelf)
   nameWithType.vb: DialogWindow(Of TShowReturn, TSelf).Show(TSelf)
-- uid: FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show(`1,System.IntPtr)
-  name: Show(TSelf, nint)
-  href: api/FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show__1_System_IntPtr_
-  commentId: M:FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show(`1,System.IntPtr)
-  name.vb: Show(TSelf, IntPtr)
-  fullName: FireBlade.WinInteropUtils.Dialogs.DialogWindow<TShowReturn, TSelf>.Show(TSelf, nint)
-  fullName.vb: FireBlade.WinInteropUtils.Dialogs.DialogWindow(Of TShowReturn, TSelf).Show(TSelf, System.IntPtr)
-  nameWithType: DialogWindow<TShowReturn, TSelf>.Show(TSelf, nint)
-  nameWithType.vb: DialogWindow(Of TShowReturn, TSelf).Show(TSelf, IntPtr)
+- uid: FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show(`1,FireBlade.WinInteropUtils.Window)
+  name: Show(TSelf, Window)
+  href: api/FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show__1_FireBlade_WinInteropUtils_Window_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show(`1,FireBlade.WinInteropUtils.Window)
+  fullName: FireBlade.WinInteropUtils.Dialogs.DialogWindow<TShowReturn, TSelf>.Show(TSelf, FireBlade.WinInteropUtils.Window)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.DialogWindow(Of TShowReturn, TSelf).Show(TSelf, FireBlade.WinInteropUtils.Window)
+  nameWithType: DialogWindow<TShowReturn, TSelf>.Show(TSelf, Window)
+  nameWithType.vb: DialogWindow(Of TShowReturn, TSelf).Show(TSelf, Window)
 - uid: FireBlade.WinInteropUtils.Dialogs.DialogWindow`2.Show*
   name: Show
   href: api/FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show_
@@ -2378,6 +2511,632 @@ references:
   commentId: F:FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Yes
   fullName: FireBlade.WinInteropUtils.Dialogs.Win32MessageBoxResult.Yes
   nameWithType: Win32MessageBoxResult.Yes
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox
+  name: WinMessageBox
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html
+  commentId: T:FireBlade.WinInteropUtils.Dialogs.WinMessageBox
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox
+  nameWithType: WinMessageBox
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Buttons
+  name: Buttons
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Buttons
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Buttons
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Buttons
+  nameWithType: WinMessageBox.Buttons
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Buttons*
+  name: Buttons
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Buttons_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Buttons
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Buttons
+  nameWithType: WinMessageBox.Buttons
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Caption
+  name: Caption
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Caption
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Caption
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Caption
+  nameWithType: WinMessageBox.Caption
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Caption*
+  name: Caption
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Caption_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Caption
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Caption
+  nameWithType: WinMessageBox.Caption
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ContextHelpId
+  name: ContextHelpId
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_ContextHelpId
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ContextHelpId
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ContextHelpId
+  nameWithType: WinMessageBox.ContextHelpId
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ContextHelpId*
+  name: ContextHelpId
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_ContextHelpId_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ContextHelpId
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ContextHelpId
+  nameWithType: WinMessageBox.ContextHelpId
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Culture
+  name: Culture
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Culture
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Culture
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Culture
+  nameWithType: WinMessageBox.Culture
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Culture*
+  name: Culture
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Culture_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Culture
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Culture
+  nameWithType: WinMessageBox.Culture
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.DefaultButton
+  name: DefaultButton
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_DefaultButton
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.DefaultButton
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.DefaultButton
+  nameWithType: WinMessageBox.DefaultButton
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.DefaultButton*
+  name: DefaultButton
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_DefaultButton_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.DefaultButton
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.DefaultButton
+  nameWithType: WinMessageBox.DefaultButton
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.DefaultDesktopOnly
+  name: DefaultDesktopOnly
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_DefaultDesktopOnly
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.DefaultDesktopOnly
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.DefaultDesktopOnly
+  nameWithType: WinMessageBox.DefaultDesktopOnly
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.DefaultDesktopOnly*
+  name: DefaultDesktopOnly
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_DefaultDesktopOnly_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.DefaultDesktopOnly
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.DefaultDesktopOnly
+  nameWithType: WinMessageBox.DefaultDesktopOnly
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Icon
+  name: Icon
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Icon
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Icon
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Icon
+  nameWithType: WinMessageBox.Icon
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Icon*
+  name: Icon
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Icon_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Icon
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Icon
+  nameWithType: WinMessageBox.Icon
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Modality
+  name: Modality
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Modality
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Modality
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Modality
+  nameWithType: WinMessageBox.Modality
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Modality*
+  name: Modality
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Modality_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Modality
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Modality
+  nameWithType: WinMessageBox.Modality
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.OnHelp
+  name: OnHelp
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_OnHelp
+  commentId: E:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.OnHelp
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.OnHelp
+  nameWithType: WinMessageBox.OnHelp
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.RightAlign
+  name: RightAlign
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_RightAlign
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.RightAlign
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.RightAlign
+  nameWithType: WinMessageBox.RightAlign
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.RightAlign*
+  name: RightAlign
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_RightAlign_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.RightAlign
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.RightAlign
+  nameWithType: WinMessageBox.RightAlign
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.RightToLeft
+  name: RightToLeft
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_RightToLeft
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.RightToLeft
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.RightToLeft
+  nameWithType: WinMessageBox.RightToLeft
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.RightToLeft*
+  name: RightToLeft
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_RightToLeft_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.RightToLeft
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.RightToLeft
+  nameWithType: WinMessageBox.RightToLeft
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ServiceNotification
+  name: ServiceNotification
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_ServiceNotification
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ServiceNotification
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ServiceNotification
+  nameWithType: WinMessageBox.ServiceNotification
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ServiceNotification*
+  name: ServiceNotification
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_ServiceNotification_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ServiceNotification
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ServiceNotification
+  nameWithType: WinMessageBox.ServiceNotification
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.SetForeground
+  name: SetForeground
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_SetForeground
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.SetForeground
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.SetForeground
+  nameWithType: WinMessageBox.SetForeground
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.SetForeground*
+  name: SetForeground
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_SetForeground_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.SetForeground
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.SetForeground
+  nameWithType: WinMessageBox.SetForeground
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show
+  name: Show()
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show()
+  nameWithType: WinMessageBox.Show()
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window)
+  name: Show(Window)
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window)
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window)
+  nameWithType: WinMessageBox.Show(Window)
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String)
+  name: Show(Window, string)
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String)
+  name.vb: Show(Window, String)
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window, string)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window, String)
+  nameWithType: WinMessageBox.Show(Window, string)
+  nameWithType.vb: WinMessageBox.Show(Window, String)
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  name: Show(Window, string, WinMessageBoxButtons)
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  name.vb: Show(Window, String, WinMessageBoxButtons)
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window, string, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window, String, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  nameWithType: WinMessageBox.Show(Window, string, WinMessageBoxButtons)
+  nameWithType.vb: WinMessageBox.Show(Window, String, WinMessageBoxButtons)
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon)
+  name: Show(Window, string, WinMessageBoxIcon)
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon)
+  name.vb: Show(Window, String, WinMessageBoxIcon)
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window, string, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window, String, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon)
+  nameWithType: WinMessageBox.Show(Window, string, WinMessageBoxIcon)
+  nameWithType.vb: WinMessageBox.Show(Window, String, WinMessageBoxIcon)
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  name: Show(Window, string, WinMessageBoxIcon, WinMessageBoxButtons)
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  name.vb: Show(Window, String, WinMessageBoxIcon, WinMessageBoxButtons)
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window, string, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window, String, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  nameWithType: WinMessageBox.Show(Window, string, WinMessageBoxIcon, WinMessageBoxButtons)
+  nameWithType.vb: WinMessageBox.Show(Window, String, WinMessageBoxIcon, WinMessageBoxButtons)
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String,System.String)
+  name: Show(Window, string, string?)
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_System_String_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String,System.String)
+  name.vb: Show(Window, String, String)
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window, string, string?)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window, String, String)
+  nameWithType: WinMessageBox.Show(Window, string, string?)
+  nameWithType.vb: WinMessageBox.Show(Window, String, String)
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  name: Show(Window, string, string?, WinMessageBoxButtons)
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  name.vb: Show(Window, String, String, WinMessageBoxButtons)
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window, string, string?, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window, String, String, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  nameWithType: WinMessageBox.Show(Window, string, string?, WinMessageBoxButtons)
+  nameWithType.vb: WinMessageBox.Show(Window, String, String, WinMessageBoxButtons)
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon)
+  name: Show(Window, string, string?, WinMessageBoxIcon)
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon)
+  name.vb: Show(Window, String, String, WinMessageBoxIcon)
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window, string, string?, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window, String, String, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon)
+  nameWithType: WinMessageBox.Show(Window, string, string?, WinMessageBoxIcon)
+  nameWithType.vb: WinMessageBox.Show(Window, String, String, WinMessageBoxIcon)
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  name: Show(Window, string, string?, WinMessageBoxIcon, WinMessageBoxButtons)
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_FireBlade_WinInteropUtils_Window_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window,System.String,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  name.vb: Show(Window, String, String, WinMessageBoxIcon, WinMessageBoxButtons)
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window, string, string?, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(FireBlade.WinInteropUtils.Window, String, String, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  nameWithType: WinMessageBox.Show(Window, string, string?, WinMessageBoxIcon, WinMessageBoxButtons)
+  nameWithType.vb: WinMessageBox.Show(Window, String, String, WinMessageBoxIcon, WinMessageBoxButtons)
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String)
+  name: Show(string)
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String)
+  name.vb: Show(String)
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(string)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(String)
+  nameWithType: WinMessageBox.Show(string)
+  nameWithType.vb: WinMessageBox.Show(String)
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  name: Show(string, WinMessageBoxButtons)
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  name.vb: Show(String, WinMessageBoxButtons)
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(string, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(String, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  nameWithType: WinMessageBox.Show(string, WinMessageBoxButtons)
+  nameWithType.vb: WinMessageBox.Show(String, WinMessageBoxButtons)
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon)
+  name: Show(string, WinMessageBoxIcon)
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon)
+  name.vb: Show(String, WinMessageBoxIcon)
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(string, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(String, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon)
+  nameWithType: WinMessageBox.Show(string, WinMessageBoxIcon)
+  nameWithType.vb: WinMessageBox.Show(String, WinMessageBoxIcon)
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  name: Show(string, WinMessageBoxIcon, WinMessageBoxButtons)
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  name.vb: Show(String, WinMessageBoxIcon, WinMessageBoxButtons)
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(string, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(String, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  nameWithType: WinMessageBox.Show(string, WinMessageBoxIcon, WinMessageBoxButtons)
+  nameWithType.vb: WinMessageBox.Show(String, WinMessageBoxIcon, WinMessageBoxButtons)
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String,System.String)
+  name: Show(string, string?)
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_System_String_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String,System.String)
+  name.vb: Show(String, String)
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(string, string?)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(String, String)
+  nameWithType: WinMessageBox.Show(string, string?)
+  nameWithType.vb: WinMessageBox.Show(String, String)
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  name: Show(string, string?, WinMessageBoxButtons)
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  name.vb: Show(String, String, WinMessageBoxButtons)
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(string, string?, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(String, String, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  nameWithType: WinMessageBox.Show(string, string?, WinMessageBoxButtons)
+  nameWithType.vb: WinMessageBox.Show(String, String, WinMessageBoxButtons)
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon)
+  name: Show(string, string?, WinMessageBoxIcon)
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon)
+  name.vb: Show(String, String, WinMessageBoxIcon)
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(string, string?, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(String, String, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon)
+  nameWithType: WinMessageBox.Show(string, string?, WinMessageBoxIcon)
+  nameWithType.vb: WinMessageBox.Show(String, String, WinMessageBoxIcon)
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  name: Show(string, string?, WinMessageBoxIcon, WinMessageBoxButtons)
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_System_String_System_String_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_
+  commentId: M:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(System.String,System.String,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon,FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  name.vb: Show(String, String, WinMessageBoxIcon, WinMessageBoxButtons)
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(string, string?, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  fullName.vb: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show(String, String, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon, FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons)
+  nameWithType: WinMessageBox.Show(string, string?, WinMessageBoxIcon, WinMessageBoxButtons)
+  nameWithType.vb: WinMessageBox.Show(String, String, WinMessageBoxIcon, WinMessageBoxButtons)
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show*
+  name: Show
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Show_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Show
+  nameWithType: WinMessageBox.Show
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ShowHelp
+  name: ShowHelp
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_ShowHelp
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ShowHelp
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ShowHelp
+  nameWithType: WinMessageBox.ShowHelp
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ShowHelp*
+  name: ShowHelp
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_ShowHelp_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ShowHelp
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.ShowHelp
+  nameWithType: WinMessageBox.ShowHelp
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Text
+  name: Text
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Text
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Text
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Text
+  nameWithType: WinMessageBox.Text
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Text*
+  name: Text
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_Text_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Text
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.Text
+  nameWithType: WinMessageBox.Text
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.TopMost
+  name: TopMost
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_TopMost
+  commentId: P:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.TopMost
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.TopMost
+  nameWithType: WinMessageBox.TopMost
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.TopMost*
+  name: TopMost
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBox.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBox_TopMost_
+  commentId: Overload:FireBlade.WinInteropUtils.Dialogs.WinMessageBox.TopMost
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBox.TopMost
+  nameWithType: WinMessageBox.TopMost
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons
+  name: WinMessageBoxButtons
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html
+  commentId: T:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons
+  nameWithType: WinMessageBoxButtons
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.AbortRetryIgnore
+  name: AbortRetryIgnore
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_AbortRetryIgnore
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.AbortRetryIgnore
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.AbortRetryIgnore
+  nameWithType: WinMessageBoxButtons.AbortRetryIgnore
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.CancelRetryContinue
+  name: CancelRetryContinue
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_CancelRetryContinue
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.CancelRetryContinue
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.CancelRetryContinue
+  nameWithType: WinMessageBoxButtons.CancelRetryContinue
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.Ok
+  name: Ok
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_Ok
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.Ok
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.Ok
+  nameWithType: WinMessageBoxButtons.Ok
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.OkCancel
+  name: OkCancel
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_OkCancel
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.OkCancel
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.OkCancel
+  nameWithType: WinMessageBoxButtons.OkCancel
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.RetryCancel
+  name: RetryCancel
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_RetryCancel
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.RetryCancel
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.RetryCancel
+  nameWithType: WinMessageBoxButtons.RetryCancel
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.YesNo
+  name: YesNo
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_YesNo
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.YesNo
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.YesNo
+  nameWithType: WinMessageBoxButtons.YesNo
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.YesNoCancel
+  name: YesNoCancel
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxButtons_YesNoCancel
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.YesNoCancel
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxButtons.YesNoCancel
+  nameWithType: WinMessageBoxButtons.YesNoCancel
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon
+  name: WinMessageBoxIcon
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html
+  commentId: T:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon
+  nameWithType: WinMessageBoxIcon
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Asterisk
+  name: Asterisk
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_Asterisk
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Asterisk
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Asterisk
+  nameWithType: WinMessageBoxIcon.Asterisk
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Error
+  name: Error
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_Error
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Error
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Error
+  nameWithType: WinMessageBoxIcon.Error
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Exclamation
+  name: Exclamation
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_Exclamation
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Exclamation
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Exclamation
+  nameWithType: WinMessageBoxIcon.Exclamation
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Hand
+  name: Hand
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_Hand
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Hand
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Hand
+  nameWithType: WinMessageBoxIcon.Hand
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Info
+  name: Info
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_Info
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Info
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Info
+  nameWithType: WinMessageBoxIcon.Info
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Information
+  name: Information
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_Information
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Information
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Information
+  nameWithType: WinMessageBoxIcon.Information
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.None
+  name: None
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_None
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.None
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.None
+  nameWithType: WinMessageBoxIcon.None
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Question
+  name: Question
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_Question
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Question
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Question
+  nameWithType: WinMessageBoxIcon.Question
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Stop
+  name: Stop
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_Stop
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Stop
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Stop
+  nameWithType: WinMessageBoxIcon.Stop
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Warning
+  name: Warning
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxIcon_Warning
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Warning
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxIcon.Warning
+  nameWithType: WinMessageBoxIcon.Warning
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxModality
+  name: WinMessageBoxModality
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxModality.html
+  commentId: T:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxModality
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxModality
+  nameWithType: WinMessageBoxModality
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxModality.ApplicationModal
+  name: ApplicationModal
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxModality.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxModality_ApplicationModal
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxModality.ApplicationModal
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxModality.ApplicationModal
+  nameWithType: WinMessageBoxModality.ApplicationModal
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxModality.SystemModal
+  name: SystemModal
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxModality.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxModality_SystemModal
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxModality.SystemModal
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxModality.SystemModal
+  nameWithType: WinMessageBoxModality.SystemModal
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxModality.TaskModal
+  name: TaskModal
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxModality.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxModality_TaskModal
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxModality.TaskModal
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxModality.TaskModal
+  nameWithType: WinMessageBoxModality.TaskModal
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult
+  name: WinMessageBoxResult
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html
+  commentId: T:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult
+  nameWithType: WinMessageBoxResult
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.Abort
+  name: Abort
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Abort
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.Abort
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.Abort
+  nameWithType: WinMessageBoxResult.Abort
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.Cancel
+  name: Cancel
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Cancel
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.Cancel
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.Cancel
+  nameWithType: WinMessageBoxResult.Cancel
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.Continue
+  name: Continue
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Continue
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.Continue
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.Continue
+  nameWithType: WinMessageBoxResult.Continue
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.Ignore
+  name: Ignore
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Ignore
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.Ignore
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.Ignore
+  nameWithType: WinMessageBoxResult.Ignore
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.No
+  name: No
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_No
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.No
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.No
+  nameWithType: WinMessageBoxResult.No
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.Ok
+  name: Ok
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Ok
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.Ok
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.Ok
+  nameWithType: WinMessageBoxResult.Ok
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.Retry
+  name: Retry
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Retry
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.Retry
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.Retry
+  nameWithType: WinMessageBoxResult.Retry
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.TryAgain
+  name: TryAgain
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_TryAgain
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.TryAgain
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.TryAgain
+  nameWithType: WinMessageBoxResult.TryAgain
+- uid: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.Yes
+  name: Yes
+  href: api/FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.html#FireBlade_WinInteropUtils_Dialogs_WinMessageBoxResult_Yes
+  commentId: F:FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.Yes
+  fullName: FireBlade.WinInteropUtils.Dialogs.WinMessageBoxResult.Yes
+  nameWithType: WinMessageBoxResult.Yes
+- uid: FireBlade.WinInteropUtils.DrawTextAdvancedOptions
+  name: DrawTextAdvancedOptions
+  href: api/FireBlade.WinInteropUtils.DrawTextAdvancedOptions.html
+  commentId: T:FireBlade.WinInteropUtils.DrawTextAdvancedOptions
+  fullName: FireBlade.WinInteropUtils.DrawTextAdvancedOptions
+  nameWithType: DrawTextAdvancedOptions
+- uid: FireBlade.WinInteropUtils.DrawTextAdvancedOptions.LeftMargin
+  name: LeftMargin
+  href: api/FireBlade.WinInteropUtils.DrawTextAdvancedOptions.html#FireBlade_WinInteropUtils_DrawTextAdvancedOptions_LeftMargin
+  commentId: P:FireBlade.WinInteropUtils.DrawTextAdvancedOptions.LeftMargin
+  fullName: FireBlade.WinInteropUtils.DrawTextAdvancedOptions.LeftMargin
+  nameWithType: DrawTextAdvancedOptions.LeftMargin
+- uid: FireBlade.WinInteropUtils.DrawTextAdvancedOptions.LeftMargin*
+  name: LeftMargin
+  href: api/FireBlade.WinInteropUtils.DrawTextAdvancedOptions.html#FireBlade_WinInteropUtils_DrawTextAdvancedOptions_LeftMargin_
+  commentId: Overload:FireBlade.WinInteropUtils.DrawTextAdvancedOptions.LeftMargin
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.DrawTextAdvancedOptions.LeftMargin
+  nameWithType: DrawTextAdvancedOptions.LeftMargin
+- uid: FireBlade.WinInteropUtils.DrawTextAdvancedOptions.LengthDrawn
+  name: LengthDrawn
+  href: api/FireBlade.WinInteropUtils.DrawTextAdvancedOptions.html#FireBlade_WinInteropUtils_DrawTextAdvancedOptions_LengthDrawn
+  commentId: P:FireBlade.WinInteropUtils.DrawTextAdvancedOptions.LengthDrawn
+  fullName: FireBlade.WinInteropUtils.DrawTextAdvancedOptions.LengthDrawn
+  nameWithType: DrawTextAdvancedOptions.LengthDrawn
+- uid: FireBlade.WinInteropUtils.DrawTextAdvancedOptions.LengthDrawn*
+  name: LengthDrawn
+  href: api/FireBlade.WinInteropUtils.DrawTextAdvancedOptions.html#FireBlade_WinInteropUtils_DrawTextAdvancedOptions_LengthDrawn_
+  commentId: Overload:FireBlade.WinInteropUtils.DrawTextAdvancedOptions.LengthDrawn
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.DrawTextAdvancedOptions.LengthDrawn
+  nameWithType: DrawTextAdvancedOptions.LengthDrawn
+- uid: FireBlade.WinInteropUtils.DrawTextAdvancedOptions.RightMargin
+  name: RightMargin
+  href: api/FireBlade.WinInteropUtils.DrawTextAdvancedOptions.html#FireBlade_WinInteropUtils_DrawTextAdvancedOptions_RightMargin
+  commentId: P:FireBlade.WinInteropUtils.DrawTextAdvancedOptions.RightMargin
+  fullName: FireBlade.WinInteropUtils.DrawTextAdvancedOptions.RightMargin
+  nameWithType: DrawTextAdvancedOptions.RightMargin
+- uid: FireBlade.WinInteropUtils.DrawTextAdvancedOptions.RightMargin*
+  name: RightMargin
+  href: api/FireBlade.WinInteropUtils.DrawTextAdvancedOptions.html#FireBlade_WinInteropUtils_DrawTextAdvancedOptions_RightMargin_
+  commentId: Overload:FireBlade.WinInteropUtils.DrawTextAdvancedOptions.RightMargin
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.DrawTextAdvancedOptions.RightMargin
+  nameWithType: DrawTextAdvancedOptions.RightMargin
+- uid: FireBlade.WinInteropUtils.DrawTextAdvancedOptions.TabLength
+  name: TabLength
+  href: api/FireBlade.WinInteropUtils.DrawTextAdvancedOptions.html#FireBlade_WinInteropUtils_DrawTextAdvancedOptions_TabLength
+  commentId: P:FireBlade.WinInteropUtils.DrawTextAdvancedOptions.TabLength
+  fullName: FireBlade.WinInteropUtils.DrawTextAdvancedOptions.TabLength
+  nameWithType: DrawTextAdvancedOptions.TabLength
+- uid: FireBlade.WinInteropUtils.DrawTextAdvancedOptions.TabLength*
+  name: TabLength
+  href: api/FireBlade.WinInteropUtils.DrawTextAdvancedOptions.html#FireBlade_WinInteropUtils_DrawTextAdvancedOptions_TabLength_
+  commentId: Overload:FireBlade.WinInteropUtils.DrawTextAdvancedOptions.TabLength
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.DrawTextAdvancedOptions.TabLength
+  nameWithType: DrawTextAdvancedOptions.TabLength
 - uid: FireBlade.WinInteropUtils.EnumExtensions
   name: EnumExtensions
   href: api/FireBlade.WinInteropUtils.EnumExtensions.html
@@ -2397,6 +3156,174 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.EnumExtensions.GetValues
   nameWithType: EnumExtensions.GetValues
+- uid: FireBlade.WinInteropUtils.ExWindowStyles
+  name: ExWindowStyles
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html
+  commentId: T:FireBlade.WinInteropUtils.ExWindowStyles
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles
+  nameWithType: ExWindowStyles
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.AcceptFiles
+  name: AcceptFiles
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_AcceptFiles
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.AcceptFiles
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.AcceptFiles
+  nameWithType: ExWindowStyles.AcceptFiles
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.AppWindow
+  name: AppWindow
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_AppWindow
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.AppWindow
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.AppWindow
+  nameWithType: ExWindowStyles.AppWindow
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.ClientEdge
+  name: ClientEdge
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_ClientEdge
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.ClientEdge
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.ClientEdge
+  nameWithType: ExWindowStyles.ClientEdge
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.Composited
+  name: Composited
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_Composited
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.Composited
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.Composited
+  nameWithType: ExWindowStyles.Composited
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.ContextHelp
+  name: ContextHelp
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_ContextHelp
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.ContextHelp
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.ContextHelp
+  nameWithType: ExWindowStyles.ContextHelp
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.ControlParent
+  name: ControlParent
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_ControlParent
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.ControlParent
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.ControlParent
+  nameWithType: ExWindowStyles.ControlParent
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.DlgModalFrame
+  name: DlgModalFrame
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_DlgModalFrame
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.DlgModalFrame
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.DlgModalFrame
+  nameWithType: ExWindowStyles.DlgModalFrame
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.LTRReading
+  name: LTRReading
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_LTRReading
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.LTRReading
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.LTRReading
+  nameWithType: ExWindowStyles.LTRReading
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.Layered
+  name: Layered
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_Layered
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.Layered
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.Layered
+  nameWithType: ExWindowStyles.Layered
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.LayoutRTL
+  name: LayoutRTL
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_LayoutRTL
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.LayoutRTL
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.LayoutRTL
+  nameWithType: ExWindowStyles.LayoutRTL
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.Left
+  name: Left
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_Left
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.Left
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.Left
+  nameWithType: ExWindowStyles.Left
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.LeftScrollBar
+  name: LeftScrollBar
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_LeftScrollBar
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.LeftScrollBar
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.LeftScrollBar
+  nameWithType: ExWindowStyles.LeftScrollBar
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.MdiChild
+  name: MdiChild
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_MdiChild
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.MdiChild
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.MdiChild
+  nameWithType: ExWindowStyles.MdiChild
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.NoActivate
+  name: NoActivate
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_NoActivate
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.NoActivate
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.NoActivate
+  nameWithType: ExWindowStyles.NoActivate
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.NoInheritLayout
+  name: NoInheritLayout
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_NoInheritLayout
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.NoInheritLayout
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.NoInheritLayout
+  nameWithType: ExWindowStyles.NoInheritLayout
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.NoParentNotify
+  name: NoParentNotify
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_NoParentNotify
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.NoParentNotify
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.NoParentNotify
+  nameWithType: ExWindowStyles.NoParentNotify
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.NoRedirectionBitmap
+  name: NoRedirectionBitmap
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_NoRedirectionBitmap
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.NoRedirectionBitmap
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.NoRedirectionBitmap
+  nameWithType: ExWindowStyles.NoRedirectionBitmap
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.OverlappedWindow
+  name: OverlappedWindow
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_OverlappedWindow
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.OverlappedWindow
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.OverlappedWindow
+  nameWithType: ExWindowStyles.OverlappedWindow
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.PaletteWindow
+  name: PaletteWindow
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_PaletteWindow
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.PaletteWindow
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.PaletteWindow
+  nameWithType: ExWindowStyles.PaletteWindow
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.RTLReading
+  name: RTLReading
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_RTLReading
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.RTLReading
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.RTLReading
+  nameWithType: ExWindowStyles.RTLReading
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.Right
+  name: Right
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_Right
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.Right
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.Right
+  nameWithType: ExWindowStyles.Right
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.RightScrollBar
+  name: RightScrollBar
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_RightScrollBar
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.RightScrollBar
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.RightScrollBar
+  nameWithType: ExWindowStyles.RightScrollBar
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.StaticEdge
+  name: StaticEdge
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_StaticEdge
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.StaticEdge
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.StaticEdge
+  nameWithType: ExWindowStyles.StaticEdge
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.ToolWindow
+  name: ToolWindow
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_ToolWindow
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.ToolWindow
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.ToolWindow
+  nameWithType: ExWindowStyles.ToolWindow
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.TopMost
+  name: TopMost
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_TopMost
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.TopMost
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.TopMost
+  nameWithType: ExWindowStyles.TopMost
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.Transparent
+  name: Transparent
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_Transparent
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.Transparent
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.Transparent
+  nameWithType: ExWindowStyles.Transparent
+- uid: FireBlade.WinInteropUtils.ExWindowStyles.WindowEdge
+  name: WindowEdge
+  href: api/FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_WindowEdge
+  commentId: F:FireBlade.WinInteropUtils.ExWindowStyles.WindowEdge
+  fullName: FireBlade.WinInteropUtils.ExWindowStyles.WindowEdge
+  nameWithType: ExWindowStyles.WindowEdge
 - uid: FireBlade.WinInteropUtils.ExceptionExtensions
   name: ExceptionExtensions
   href: api/FireBlade.WinInteropUtils.ExceptionExtensions.html
@@ -20002,6 +20929,25 @@ references:
   commentId: F:FireBlade.WinInteropUtils.HRESULT.XENROLL_E_RESPONSE_UNEXPECTED_KA_HASH
   fullName: FireBlade.WinInteropUtils.HRESULT.XENROLL_E_RESPONSE_UNEXPECTED_KA_HASH
   nameWithType: HRESULT.XENROLL_E_RESPONSE_UNEXPECTED_KA_HASH
+- uid: FireBlade.WinInteropUtils.IHandle
+  name: IHandle
+  href: api/FireBlade.WinInteropUtils.IHandle.html
+  commentId: T:FireBlade.WinInteropUtils.IHandle
+  fullName: FireBlade.WinInteropUtils.IHandle
+  nameWithType: IHandle
+- uid: FireBlade.WinInteropUtils.IHandle.Handle
+  name: Handle
+  href: api/FireBlade.WinInteropUtils.IHandle.html#FireBlade_WinInteropUtils_IHandle_Handle
+  commentId: P:FireBlade.WinInteropUtils.IHandle.Handle
+  fullName: FireBlade.WinInteropUtils.IHandle.Handle
+  nameWithType: IHandle.Handle
+- uid: FireBlade.WinInteropUtils.IHandle.Handle*
+  name: Handle
+  href: api/FireBlade.WinInteropUtils.IHandle.html#FireBlade_WinInteropUtils_IHandle_Handle_
+  commentId: Overload:FireBlade.WinInteropUtils.IHandle.Handle
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.IHandle.Handle
+  nameWithType: IHandle.Handle
 - uid: FireBlade.WinInteropUtils.IconExtensions
   name: IconExtensions
   href: api/FireBlade.WinInteropUtils.IconExtensions.html
@@ -20267,6 +21213,22 @@ references:
   fullName.vb: FireBlade.WinInteropUtils.Macros.LowWord(Of TNum)(TNum)
   nameWithType: Macros.LowWord<TNum>(TNum)
   nameWithType.vb: Macros.LowWord(Of TNum)(TNum)
+- uid: FireBlade.WinInteropUtils.Macros.MakeIntAtom*
+  name: MakeIntAtom
+  href: api/FireBlade.WinInteropUtils.Macros.html#FireBlade_WinInteropUtils_Macros_MakeIntAtom_
+  commentId: Overload:FireBlade.WinInteropUtils.Macros.MakeIntAtom
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Macros.MakeIntAtom
+  nameWithType: Macros.MakeIntAtom
+- uid: FireBlade.WinInteropUtils.Macros.MakeIntAtom``1(``0)
+  name: MakeIntAtom<TNum>(TNum)
+  href: api/FireBlade.WinInteropUtils.Macros.html#FireBlade_WinInteropUtils_Macros_MakeIntAtom__1___0_
+  commentId: M:FireBlade.WinInteropUtils.Macros.MakeIntAtom``1(``0)
+  name.vb: MakeIntAtom(Of TNum)(TNum)
+  fullName: FireBlade.WinInteropUtils.Macros.MakeIntAtom<TNum>(TNum)
+  fullName.vb: FireBlade.WinInteropUtils.Macros.MakeIntAtom(Of TNum)(TNum)
+  nameWithType: Macros.MakeIntAtom<TNum>(TNum)
+  nameWithType.vb: Macros.MakeIntAtom(Of TNum)(TNum)
 - uid: FireBlade.WinInteropUtils.Macros.MakeIntResource(System.Int32)
   name: MakeIntResource(int)
   href: api/FireBlade.WinInteropUtils.Macros.html#FireBlade_WinInteropUtils_Macros_MakeIntResource_System_Int32_
@@ -20302,6 +21264,152 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.Macros.Succeeded
   nameWithType: Macros.Succeeded
+- uid: FireBlade.WinInteropUtils.MessageLoop
+  name: MessageLoop
+  href: api/FireBlade.WinInteropUtils.MessageLoop.html
+  commentId: T:FireBlade.WinInteropUtils.MessageLoop
+  fullName: FireBlade.WinInteropUtils.MessageLoop
+  nameWithType: MessageLoop
+- uid: FireBlade.WinInteropUtils.MessageLoop.DispatchMessage(FireBlade.WinInteropUtils.WinMessage@)
+  name: DispatchMessage(ref WinMessage)
+  href: api/FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_DispatchMessage_FireBlade_WinInteropUtils_WinMessage__
+  commentId: M:FireBlade.WinInteropUtils.MessageLoop.DispatchMessage(FireBlade.WinInteropUtils.WinMessage@)
+  name.vb: DispatchMessage(WinMessage)
+  fullName: FireBlade.WinInteropUtils.MessageLoop.DispatchMessage(ref FireBlade.WinInteropUtils.WinMessage)
+  fullName.vb: FireBlade.WinInteropUtils.MessageLoop.DispatchMessage(FireBlade.WinInteropUtils.WinMessage)
+  nameWithType: MessageLoop.DispatchMessage(ref WinMessage)
+  nameWithType.vb: MessageLoop.DispatchMessage(WinMessage)
+- uid: FireBlade.WinInteropUtils.MessageLoop.DispatchMessage*
+  name: DispatchMessage
+  href: api/FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_DispatchMessage_
+  commentId: Overload:FireBlade.WinInteropUtils.MessageLoop.DispatchMessage
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.MessageLoop.DispatchMessage
+  nameWithType: MessageLoop.DispatchMessage
+- uid: FireBlade.WinInteropUtils.MessageLoop.GetMessage(FireBlade.WinInteropUtils.WinMessage@,FireBlade.WinInteropUtils.Window,System.UInt32,System.UInt32)
+  name: GetMessage(ref WinMessage, Window?, uint, uint)
+  href: api/FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_GetMessage_FireBlade_WinInteropUtils_WinMessage__FireBlade_WinInteropUtils_Window_System_UInt32_System_UInt32_
+  commentId: M:FireBlade.WinInteropUtils.MessageLoop.GetMessage(FireBlade.WinInteropUtils.WinMessage@,FireBlade.WinInteropUtils.Window,System.UInt32,System.UInt32)
+  name.vb: GetMessage(WinMessage, Window, UInteger, UInteger)
+  fullName: FireBlade.WinInteropUtils.MessageLoop.GetMessage(ref FireBlade.WinInteropUtils.WinMessage, FireBlade.WinInteropUtils.Window?, uint, uint)
+  fullName.vb: FireBlade.WinInteropUtils.MessageLoop.GetMessage(FireBlade.WinInteropUtils.WinMessage, FireBlade.WinInteropUtils.Window, UInteger, UInteger)
+  nameWithType: MessageLoop.GetMessage(ref WinMessage, Window?, uint, uint)
+  nameWithType.vb: MessageLoop.GetMessage(WinMessage, Window, UInteger, UInteger)
+- uid: FireBlade.WinInteropUtils.MessageLoop.GetMessage*
+  name: GetMessage
+  href: api/FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_GetMessage_
+  commentId: Overload:FireBlade.WinInteropUtils.MessageLoop.GetMessage
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.MessageLoop.GetMessage
+  nameWithType: MessageLoop.GetMessage
+- uid: FireBlade.WinInteropUtils.MessageLoop.PeekMessage(FireBlade.WinInteropUtils.WinMessage@,FireBlade.WinInteropUtils.Window,System.UInt32,System.UInt32,FireBlade.WinInteropUtils.MessageRemoval,FireBlade.WinInteropUtils.MessageProcessingLimit)
+  name: PeekMessage(ref WinMessage, Window?, uint, uint, MessageRemoval, MessageProcessingLimit)
+  href: api/FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_PeekMessage_FireBlade_WinInteropUtils_WinMessage__FireBlade_WinInteropUtils_Window_System_UInt32_System_UInt32_FireBlade_WinInteropUtils_MessageRemoval_FireBlade_WinInteropUtils_MessageProcessingLimit_
+  commentId: M:FireBlade.WinInteropUtils.MessageLoop.PeekMessage(FireBlade.WinInteropUtils.WinMessage@,FireBlade.WinInteropUtils.Window,System.UInt32,System.UInt32,FireBlade.WinInteropUtils.MessageRemoval,FireBlade.WinInteropUtils.MessageProcessingLimit)
+  name.vb: PeekMessage(WinMessage, Window, UInteger, UInteger, MessageRemoval, MessageProcessingLimit)
+  fullName: FireBlade.WinInteropUtils.MessageLoop.PeekMessage(ref FireBlade.WinInteropUtils.WinMessage, FireBlade.WinInteropUtils.Window?, uint, uint, FireBlade.WinInteropUtils.MessageRemoval, FireBlade.WinInteropUtils.MessageProcessingLimit)
+  fullName.vb: FireBlade.WinInteropUtils.MessageLoop.PeekMessage(FireBlade.WinInteropUtils.WinMessage, FireBlade.WinInteropUtils.Window, UInteger, UInteger, FireBlade.WinInteropUtils.MessageRemoval, FireBlade.WinInteropUtils.MessageProcessingLimit)
+  nameWithType: MessageLoop.PeekMessage(ref WinMessage, Window?, uint, uint, MessageRemoval, MessageProcessingLimit)
+  nameWithType.vb: MessageLoop.PeekMessage(WinMessage, Window, UInteger, UInteger, MessageRemoval, MessageProcessingLimit)
+- uid: FireBlade.WinInteropUtils.MessageLoop.PeekMessage*
+  name: PeekMessage
+  href: api/FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_PeekMessage_
+  commentId: Overload:FireBlade.WinInteropUtils.MessageLoop.PeekMessage
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.MessageLoop.PeekMessage
+  nameWithType: MessageLoop.PeekMessage
+- uid: FireBlade.WinInteropUtils.MessageLoop.PostQuitMessage(System.Int32)
+  name: PostQuitMessage(int)
+  href: api/FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_PostQuitMessage_System_Int32_
+  commentId: M:FireBlade.WinInteropUtils.MessageLoop.PostQuitMessage(System.Int32)
+  name.vb: PostQuitMessage(Integer)
+  fullName: FireBlade.WinInteropUtils.MessageLoop.PostQuitMessage(int)
+  fullName.vb: FireBlade.WinInteropUtils.MessageLoop.PostQuitMessage(Integer)
+  nameWithType: MessageLoop.PostQuitMessage(int)
+  nameWithType.vb: MessageLoop.PostQuitMessage(Integer)
+- uid: FireBlade.WinInteropUtils.MessageLoop.PostQuitMessage*
+  name: PostQuitMessage
+  href: api/FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_PostQuitMessage_
+  commentId: Overload:FireBlade.WinInteropUtils.MessageLoop.PostQuitMessage
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.MessageLoop.PostQuitMessage
+  nameWithType: MessageLoop.PostQuitMessage
+- uid: FireBlade.WinInteropUtils.MessageLoop.TranslateMessage(FireBlade.WinInteropUtils.WinMessage@)
+  name: TranslateMessage(ref WinMessage)
+  href: api/FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_TranslateMessage_FireBlade_WinInteropUtils_WinMessage__
+  commentId: M:FireBlade.WinInteropUtils.MessageLoop.TranslateMessage(FireBlade.WinInteropUtils.WinMessage@)
+  name.vb: TranslateMessage(WinMessage)
+  fullName: FireBlade.WinInteropUtils.MessageLoop.TranslateMessage(ref FireBlade.WinInteropUtils.WinMessage)
+  fullName.vb: FireBlade.WinInteropUtils.MessageLoop.TranslateMessage(FireBlade.WinInteropUtils.WinMessage)
+  nameWithType: MessageLoop.TranslateMessage(ref WinMessage)
+  nameWithType.vb: MessageLoop.TranslateMessage(WinMessage)
+- uid: FireBlade.WinInteropUtils.MessageLoop.TranslateMessage*
+  name: TranslateMessage
+  href: api/FireBlade.WinInteropUtils.MessageLoop.html#FireBlade_WinInteropUtils_MessageLoop_TranslateMessage_
+  commentId: Overload:FireBlade.WinInteropUtils.MessageLoop.TranslateMessage
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.MessageLoop.TranslateMessage
+  nameWithType: MessageLoop.TranslateMessage
+- uid: FireBlade.WinInteropUtils.MessageProcessingLimit
+  name: MessageProcessingLimit
+  href: api/FireBlade.WinInteropUtils.MessageProcessingLimit.html
+  commentId: T:FireBlade.WinInteropUtils.MessageProcessingLimit
+  fullName: FireBlade.WinInteropUtils.MessageProcessingLimit
+  nameWithType: MessageProcessingLimit
+- uid: FireBlade.WinInteropUtils.MessageProcessingLimit.Input
+  name: Input
+  href: api/FireBlade.WinInteropUtils.MessageProcessingLimit.html#FireBlade_WinInteropUtils_MessageProcessingLimit_Input
+  commentId: F:FireBlade.WinInteropUtils.MessageProcessingLimit.Input
+  fullName: FireBlade.WinInteropUtils.MessageProcessingLimit.Input
+  nameWithType: MessageProcessingLimit.Input
+- uid: FireBlade.WinInteropUtils.MessageProcessingLimit.None
+  name: None
+  href: api/FireBlade.WinInteropUtils.MessageProcessingLimit.html#FireBlade_WinInteropUtils_MessageProcessingLimit_None
+  commentId: F:FireBlade.WinInteropUtils.MessageProcessingLimit.None
+  fullName: FireBlade.WinInteropUtils.MessageProcessingLimit.None
+  nameWithType: MessageProcessingLimit.None
+- uid: FireBlade.WinInteropUtils.MessageProcessingLimit.Paint
+  name: Paint
+  href: api/FireBlade.WinInteropUtils.MessageProcessingLimit.html#FireBlade_WinInteropUtils_MessageProcessingLimit_Paint
+  commentId: F:FireBlade.WinInteropUtils.MessageProcessingLimit.Paint
+  fullName: FireBlade.WinInteropUtils.MessageProcessingLimit.Paint
+  nameWithType: MessageProcessingLimit.Paint
+- uid: FireBlade.WinInteropUtils.MessageProcessingLimit.PostMessage
+  name: PostMessage
+  href: api/FireBlade.WinInteropUtils.MessageProcessingLimit.html#FireBlade_WinInteropUtils_MessageProcessingLimit_PostMessage
+  commentId: F:FireBlade.WinInteropUtils.MessageProcessingLimit.PostMessage
+  fullName: FireBlade.WinInteropUtils.MessageProcessingLimit.PostMessage
+  nameWithType: MessageProcessingLimit.PostMessage
+- uid: FireBlade.WinInteropUtils.MessageProcessingLimit.SendMessage
+  name: SendMessage
+  href: api/FireBlade.WinInteropUtils.MessageProcessingLimit.html#FireBlade_WinInteropUtils_MessageProcessingLimit_SendMessage
+  commentId: F:FireBlade.WinInteropUtils.MessageProcessingLimit.SendMessage
+  fullName: FireBlade.WinInteropUtils.MessageProcessingLimit.SendMessage
+  nameWithType: MessageProcessingLimit.SendMessage
+- uid: FireBlade.WinInteropUtils.MessageRemoval
+  name: MessageRemoval
+  href: api/FireBlade.WinInteropUtils.MessageRemoval.html
+  commentId: T:FireBlade.WinInteropUtils.MessageRemoval
+  fullName: FireBlade.WinInteropUtils.MessageRemoval
+  nameWithType: MessageRemoval
+- uid: FireBlade.WinInteropUtils.MessageRemoval.NoRemove
+  name: NoRemove
+  href: api/FireBlade.WinInteropUtils.MessageRemoval.html#FireBlade_WinInteropUtils_MessageRemoval_NoRemove
+  commentId: F:FireBlade.WinInteropUtils.MessageRemoval.NoRemove
+  fullName: FireBlade.WinInteropUtils.MessageRemoval.NoRemove
+  nameWithType: MessageRemoval.NoRemove
+- uid: FireBlade.WinInteropUtils.MessageRemoval.NoYield
+  name: NoYield
+  href: api/FireBlade.WinInteropUtils.MessageRemoval.html#FireBlade_WinInteropUtils_MessageRemoval_NoYield
+  commentId: F:FireBlade.WinInteropUtils.MessageRemoval.NoYield
+  fullName: FireBlade.WinInteropUtils.MessageRemoval.NoYield
+  nameWithType: MessageRemoval.NoYield
+- uid: FireBlade.WinInteropUtils.MessageRemoval.Remove
+  name: Remove
+  href: api/FireBlade.WinInteropUtils.MessageRemoval.html#FireBlade_WinInteropUtils_MessageRemoval_Remove
+  commentId: F:FireBlade.WinInteropUtils.MessageRemoval.Remove
+  fullName: FireBlade.WinInteropUtils.MessageRemoval.Remove
+  nameWithType: MessageRemoval.Remove
 - uid: FireBlade.WinInteropUtils.Shell32
   name: Shell32
   href: api/FireBlade.WinInteropUtils.Shell32.html
@@ -21248,6 +22356,402 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.StockIconHelper.GetIcon
   nameWithType: StockIconHelper.GetIcon
+- uid: FireBlade.WinInteropUtils.SystemColorId
+  name: SystemColorId
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html
+  commentId: T:FireBlade.WinInteropUtils.SystemColorId
+  fullName: FireBlade.WinInteropUtils.SystemColorId
+  nameWithType: SystemColorId
+- uid: FireBlade.WinInteropUtils.SystemColorId.ActiveBorder
+  name: ActiveBorder
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_ActiveBorder
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.ActiveBorder
+  fullName: FireBlade.WinInteropUtils.SystemColorId.ActiveBorder
+  nameWithType: SystemColorId.ActiveBorder
+- uid: FireBlade.WinInteropUtils.SystemColorId.ActiveCaption
+  name: ActiveCaption
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_ActiveCaption
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.ActiveCaption
+  fullName: FireBlade.WinInteropUtils.SystemColorId.ActiveCaption
+  nameWithType: SystemColorId.ActiveCaption
+- uid: FireBlade.WinInteropUtils.SystemColorId.AppWorkSpace
+  name: AppWorkSpace
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_AppWorkSpace
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.AppWorkSpace
+  fullName: FireBlade.WinInteropUtils.SystemColorId.AppWorkSpace
+  nameWithType: SystemColorId.AppWorkSpace
+- uid: FireBlade.WinInteropUtils.SystemColorId.Background
+  name: Background
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_Background
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.Background
+  fullName: FireBlade.WinInteropUtils.SystemColorId.Background
+  nameWithType: SystemColorId.Background
+- uid: FireBlade.WinInteropUtils.SystemColorId.ButtonFace
+  name: ButtonFace
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_ButtonFace
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.ButtonFace
+  fullName: FireBlade.WinInteropUtils.SystemColorId.ButtonFace
+  nameWithType: SystemColorId.ButtonFace
+- uid: FireBlade.WinInteropUtils.SystemColorId.ButtonHiLight
+  name: ButtonHiLight
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_ButtonHiLight
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.ButtonHiLight
+  fullName: FireBlade.WinInteropUtils.SystemColorId.ButtonHiLight
+  nameWithType: SystemColorId.ButtonHiLight
+- uid: FireBlade.WinInteropUtils.SystemColorId.ButtonHighlight
+  name: ButtonHighlight
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_ButtonHighlight
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.ButtonHighlight
+  fullName: FireBlade.WinInteropUtils.SystemColorId.ButtonHighlight
+  nameWithType: SystemColorId.ButtonHighlight
+- uid: FireBlade.WinInteropUtils.SystemColorId.ButtonText
+  name: ButtonText
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_ButtonText
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.ButtonText
+  fullName: FireBlade.WinInteropUtils.SystemColorId.ButtonText
+  nameWithType: SystemColorId.ButtonText
+- uid: FireBlade.WinInteropUtils.SystemColorId.CaptionText
+  name: CaptionText
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_CaptionText
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.CaptionText
+  fullName: FireBlade.WinInteropUtils.SystemColorId.CaptionText
+  nameWithType: SystemColorId.CaptionText
+- uid: FireBlade.WinInteropUtils.SystemColorId.Dark3DShadow
+  name: Dark3DShadow
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_Dark3DShadow
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.Dark3DShadow
+  fullName: FireBlade.WinInteropUtils.SystemColorId.Dark3DShadow
+  nameWithType: SystemColorId.Dark3DShadow
+- uid: FireBlade.WinInteropUtils.SystemColorId.Desktop
+  name: Desktop
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_Desktop
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.Desktop
+  fullName: FireBlade.WinInteropUtils.SystemColorId.Desktop
+  nameWithType: SystemColorId.Desktop
+- uid: FireBlade.WinInteropUtils.SystemColorId.Face3D
+  name: Face3D
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_Face3D
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.Face3D
+  fullName: FireBlade.WinInteropUtils.SystemColorId.Face3D
+  nameWithType: SystemColorId.Face3D
+- uid: FireBlade.WinInteropUtils.SystemColorId.GradientActiveCaption
+  name: GradientActiveCaption
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_GradientActiveCaption
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.GradientActiveCaption
+  fullName: FireBlade.WinInteropUtils.SystemColorId.GradientActiveCaption
+  nameWithType: SystemColorId.GradientActiveCaption
+- uid: FireBlade.WinInteropUtils.SystemColorId.GradientInactiveCaption
+  name: GradientInactiveCaption
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_GradientInactiveCaption
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.GradientInactiveCaption
+  fullName: FireBlade.WinInteropUtils.SystemColorId.GradientInactiveCaption
+  nameWithType: SystemColorId.GradientInactiveCaption
+- uid: FireBlade.WinInteropUtils.SystemColorId.GrayText
+  name: GrayText
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_GrayText
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.GrayText
+  fullName: FireBlade.WinInteropUtils.SystemColorId.GrayText
+  nameWithType: SystemColorId.GrayText
+- uid: FireBlade.WinInteropUtils.SystemColorId.HiLight3D
+  name: HiLight3D
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_HiLight3D
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.HiLight3D
+  fullName: FireBlade.WinInteropUtils.SystemColorId.HiLight3D
+  nameWithType: SystemColorId.HiLight3D
+- uid: FireBlade.WinInteropUtils.SystemColorId.Highlight
+  name: Highlight
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_Highlight
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.Highlight
+  fullName: FireBlade.WinInteropUtils.SystemColorId.Highlight
+  nameWithType: SystemColorId.Highlight
+- uid: FireBlade.WinInteropUtils.SystemColorId.Highlight3D
+  name: Highlight3D
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_Highlight3D
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.Highlight3D
+  fullName: FireBlade.WinInteropUtils.SystemColorId.Highlight3D
+  nameWithType: SystemColorId.Highlight3D
+- uid: FireBlade.WinInteropUtils.SystemColorId.HighlightText
+  name: HighlightText
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_HighlightText
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.HighlightText
+  fullName: FireBlade.WinInteropUtils.SystemColorId.HighlightText
+  nameWithType: SystemColorId.HighlightText
+- uid: FireBlade.WinInteropUtils.SystemColorId.HotLight
+  name: HotLight
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_HotLight
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.HotLight
+  fullName: FireBlade.WinInteropUtils.SystemColorId.HotLight
+  nameWithType: SystemColorId.HotLight
+- uid: FireBlade.WinInteropUtils.SystemColorId.InactiveBorder
+  name: InactiveBorder
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_InactiveBorder
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.InactiveBorder
+  fullName: FireBlade.WinInteropUtils.SystemColorId.InactiveBorder
+  nameWithType: SystemColorId.InactiveBorder
+- uid: FireBlade.WinInteropUtils.SystemColorId.InactiveCaption
+  name: InactiveCaption
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_InactiveCaption
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.InactiveCaption
+  fullName: FireBlade.WinInteropUtils.SystemColorId.InactiveCaption
+  nameWithType: SystemColorId.InactiveCaption
+- uid: FireBlade.WinInteropUtils.SystemColorId.InactiveCaptionText
+  name: InactiveCaptionText
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_InactiveCaptionText
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.InactiveCaptionText
+  fullName: FireBlade.WinInteropUtils.SystemColorId.InactiveCaptionText
+  nameWithType: SystemColorId.InactiveCaptionText
+- uid: FireBlade.WinInteropUtils.SystemColorId.InfoBackground
+  name: InfoBackground
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_InfoBackground
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.InfoBackground
+  fullName: FireBlade.WinInteropUtils.SystemColorId.InfoBackground
+  nameWithType: SystemColorId.InfoBackground
+- uid: FireBlade.WinInteropUtils.SystemColorId.InfoText
+  name: InfoText
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_InfoText
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.InfoText
+  fullName: FireBlade.WinInteropUtils.SystemColorId.InfoText
+  nameWithType: SystemColorId.InfoText
+- uid: FireBlade.WinInteropUtils.SystemColorId.Light3D
+  name: Light3D
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_Light3D
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.Light3D
+  fullName: FireBlade.WinInteropUtils.SystemColorId.Light3D
+  nameWithType: SystemColorId.Light3D
+- uid: FireBlade.WinInteropUtils.SystemColorId.Menu
+  name: Menu
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_Menu
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.Menu
+  fullName: FireBlade.WinInteropUtils.SystemColorId.Menu
+  nameWithType: SystemColorId.Menu
+- uid: FireBlade.WinInteropUtils.SystemColorId.MenuBar
+  name: MenuBar
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_MenuBar
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.MenuBar
+  fullName: FireBlade.WinInteropUtils.SystemColorId.MenuBar
+  nameWithType: SystemColorId.MenuBar
+- uid: FireBlade.WinInteropUtils.SystemColorId.MenuHiLight
+  name: MenuHiLight
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_MenuHiLight
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.MenuHiLight
+  fullName: FireBlade.WinInteropUtils.SystemColorId.MenuHiLight
+  nameWithType: SystemColorId.MenuHiLight
+- uid: FireBlade.WinInteropUtils.SystemColorId.MenuText
+  name: MenuText
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_MenuText
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.MenuText
+  fullName: FireBlade.WinInteropUtils.SystemColorId.MenuText
+  nameWithType: SystemColorId.MenuText
+- uid: FireBlade.WinInteropUtils.SystemColorId.ScrollBar
+  name: ScrollBar
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_ScrollBar
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.ScrollBar
+  fullName: FireBlade.WinInteropUtils.SystemColorId.ScrollBar
+  nameWithType: SystemColorId.ScrollBar
+- uid: FireBlade.WinInteropUtils.SystemColorId.Shadow3D
+  name: Shadow3D
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_Shadow3D
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.Shadow3D
+  fullName: FireBlade.WinInteropUtils.SystemColorId.Shadow3D
+  nameWithType: SystemColorId.Shadow3D
+- uid: FireBlade.WinInteropUtils.SystemColorId.Window
+  name: Window
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_Window
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.Window
+  fullName: FireBlade.WinInteropUtils.SystemColorId.Window
+  nameWithType: SystemColorId.Window
+- uid: FireBlade.WinInteropUtils.SystemColorId.WindowFrame
+  name: WindowFrame
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_WindowFrame
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.WindowFrame
+  fullName: FireBlade.WinInteropUtils.SystemColorId.WindowFrame
+  nameWithType: SystemColorId.WindowFrame
+- uid: FireBlade.WinInteropUtils.SystemColorId.WindowText
+  name: WindowText
+  href: api/FireBlade.WinInteropUtils.SystemColorId.html#FireBlade_WinInteropUtils_SystemColorId_WindowText
+  commentId: F:FireBlade.WinInteropUtils.SystemColorId.WindowText
+  fullName: FireBlade.WinInteropUtils.SystemColorId.WindowText
+  nameWithType: SystemColorId.WindowText
+- uid: FireBlade.WinInteropUtils.SystemFontId
+  name: SystemFontId
+  href: api/FireBlade.WinInteropUtils.SystemFontId.html
+  commentId: T:FireBlade.WinInteropUtils.SystemFontId
+  fullName: FireBlade.WinInteropUtils.SystemFontId
+  nameWithType: SystemFontId
+- uid: FireBlade.WinInteropUtils.SystemFontId.CaptionFont
+  name: CaptionFont
+  href: api/FireBlade.WinInteropUtils.SystemFontId.html#FireBlade_WinInteropUtils_SystemFontId_CaptionFont
+  commentId: F:FireBlade.WinInteropUtils.SystemFontId.CaptionFont
+  fullName: FireBlade.WinInteropUtils.SystemFontId.CaptionFont
+  nameWithType: SystemFontId.CaptionFont
+- uid: FireBlade.WinInteropUtils.SystemFontId.IconTitleFont
+  name: IconTitleFont
+  href: api/FireBlade.WinInteropUtils.SystemFontId.html#FireBlade_WinInteropUtils_SystemFontId_IconTitleFont
+  commentId: F:FireBlade.WinInteropUtils.SystemFontId.IconTitleFont
+  fullName: FireBlade.WinInteropUtils.SystemFontId.IconTitleFont
+  nameWithType: SystemFontId.IconTitleFont
+- uid: FireBlade.WinInteropUtils.SystemFontId.MenuFont
+  name: MenuFont
+  href: api/FireBlade.WinInteropUtils.SystemFontId.html#FireBlade_WinInteropUtils_SystemFontId_MenuFont
+  commentId: F:FireBlade.WinInteropUtils.SystemFontId.MenuFont
+  fullName: FireBlade.WinInteropUtils.SystemFontId.MenuFont
+  nameWithType: SystemFontId.MenuFont
+- uid: FireBlade.WinInteropUtils.SystemFontId.MessageBoxFont
+  name: MessageBoxFont
+  href: api/FireBlade.WinInteropUtils.SystemFontId.html#FireBlade_WinInteropUtils_SystemFontId_MessageBoxFont
+  commentId: F:FireBlade.WinInteropUtils.SystemFontId.MessageBoxFont
+  fullName: FireBlade.WinInteropUtils.SystemFontId.MessageBoxFont
+  nameWithType: SystemFontId.MessageBoxFont
+- uid: FireBlade.WinInteropUtils.SystemFontId.SmallCaptionFont
+  name: SmallCaptionFont
+  href: api/FireBlade.WinInteropUtils.SystemFontId.html#FireBlade_WinInteropUtils_SystemFontId_SmallCaptionFont
+  commentId: F:FireBlade.WinInteropUtils.SystemFontId.SmallCaptionFont
+  fullName: FireBlade.WinInteropUtils.SystemFontId.SmallCaptionFont
+  nameWithType: SystemFontId.SmallCaptionFont
+- uid: FireBlade.WinInteropUtils.SystemFontId.StatusFont
+  name: StatusFont
+  href: api/FireBlade.WinInteropUtils.SystemFontId.html#FireBlade_WinInteropUtils_SystemFontId_StatusFont
+  commentId: F:FireBlade.WinInteropUtils.SystemFontId.StatusFont
+  fullName: FireBlade.WinInteropUtils.SystemFontId.StatusFont
+  nameWithType: SystemFontId.StatusFont
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions
+  name: ThemeTextOptions
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html
+  commentId: T:FireBlade.WinInteropUtils.ThemeTextOptions
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions
+  nameWithType: ThemeTextOptions
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions.AlignBottom
+  name: AlignBottom
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html#FireBlade_WinInteropUtils_ThemeTextOptions_AlignBottom
+  commentId: F:FireBlade.WinInteropUtils.ThemeTextOptions.AlignBottom
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions.AlignBottom
+  nameWithType: ThemeTextOptions.AlignBottom
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions.AlignCenter
+  name: AlignCenter
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html#FireBlade_WinInteropUtils_ThemeTextOptions_AlignCenter
+  commentId: F:FireBlade.WinInteropUtils.ThemeTextOptions.AlignCenter
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions.AlignCenter
+  nameWithType: ThemeTextOptions.AlignCenter
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions.AlignLeft
+  name: AlignLeft
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html#FireBlade_WinInteropUtils_ThemeTextOptions_AlignLeft
+  commentId: F:FireBlade.WinInteropUtils.ThemeTextOptions.AlignLeft
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions.AlignLeft
+  nameWithType: ThemeTextOptions.AlignLeft
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions.AlignMiddle
+  name: AlignMiddle
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html#FireBlade_WinInteropUtils_ThemeTextOptions_AlignMiddle
+  commentId: F:FireBlade.WinInteropUtils.ThemeTextOptions.AlignMiddle
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions.AlignMiddle
+  nameWithType: ThemeTextOptions.AlignMiddle
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions.AlignRight
+  name: AlignRight
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html#FireBlade_WinInteropUtils_ThemeTextOptions_AlignRight
+  commentId: F:FireBlade.WinInteropUtils.ThemeTextOptions.AlignRight
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions.AlignRight
+  nameWithType: ThemeTextOptions.AlignRight
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions.AlignTop
+  name: AlignTop
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html#FireBlade_WinInteropUtils_ThemeTextOptions_AlignTop
+  commentId: F:FireBlade.WinInteropUtils.ThemeTextOptions.AlignTop
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions.AlignTop
+  nameWithType: ThemeTextOptions.AlignTop
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions.EditControl
+  name: EditControl
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html#FireBlade_WinInteropUtils_ThemeTextOptions_EditControl
+  commentId: F:FireBlade.WinInteropUtils.ThemeTextOptions.EditControl
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions.EditControl
+  nameWithType: ThemeTextOptions.EditControl
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions.EndEllipsis
+  name: EndEllipsis
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html#FireBlade_WinInteropUtils_ThemeTextOptions_EndEllipsis
+  commentId: F:FireBlade.WinInteropUtils.ThemeTextOptions.EndEllipsis
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions.EndEllipsis
+  nameWithType: ThemeTextOptions.EndEllipsis
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions.ExpandTabs
+  name: ExpandTabs
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html#FireBlade_WinInteropUtils_ThemeTextOptions_ExpandTabs
+  commentId: F:FireBlade.WinInteropUtils.ThemeTextOptions.ExpandTabs
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions.ExpandTabs
+  nameWithType: ThemeTextOptions.ExpandTabs
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions.ExternalLeading
+  name: ExternalLeading
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html#FireBlade_WinInteropUtils_ThemeTextOptions_ExternalLeading
+  commentId: F:FireBlade.WinInteropUtils.ThemeTextOptions.ExternalLeading
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions.ExternalLeading
+  nameWithType: ThemeTextOptions.ExternalLeading
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions.HidePrefix
+  name: HidePrefix
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html#FireBlade_WinInteropUtils_ThemeTextOptions_HidePrefix
+  commentId: F:FireBlade.WinInteropUtils.ThemeTextOptions.HidePrefix
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions.HidePrefix
+  nameWithType: ThemeTextOptions.HidePrefix
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions.ModifyString
+  name: ModifyString
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html#FireBlade_WinInteropUtils_ThemeTextOptions_ModifyString
+  commentId: F:FireBlade.WinInteropUtils.ThemeTextOptions.ModifyString
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions.ModifyString
+  nameWithType: ThemeTextOptions.ModifyString
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions.NoClip
+  name: NoClip
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html#FireBlade_WinInteropUtils_ThemeTextOptions_NoClip
+  commentId: F:FireBlade.WinInteropUtils.ThemeTextOptions.NoClip
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions.NoClip
+  nameWithType: ThemeTextOptions.NoClip
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions.NoFullWidthCharBreak
+  name: NoFullWidthCharBreak
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html#FireBlade_WinInteropUtils_ThemeTextOptions_NoFullWidthCharBreak
+  commentId: F:FireBlade.WinInteropUtils.ThemeTextOptions.NoFullWidthCharBreak
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions.NoFullWidthCharBreak
+  nameWithType: ThemeTextOptions.NoFullWidthCharBreak
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions.NoPrefix
+  name: NoPrefix
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html#FireBlade_WinInteropUtils_ThemeTextOptions_NoPrefix
+  commentId: F:FireBlade.WinInteropUtils.ThemeTextOptions.NoPrefix
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions.NoPrefix
+  nameWithType: ThemeTextOptions.NoPrefix
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions.PathEllipsis
+  name: PathEllipsis
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html#FireBlade_WinInteropUtils_ThemeTextOptions_PathEllipsis
+  commentId: F:FireBlade.WinInteropUtils.ThemeTextOptions.PathEllipsis
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions.PathEllipsis
+  nameWithType: ThemeTextOptions.PathEllipsis
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions.PrefixOnly
+  name: PrefixOnly
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html#FireBlade_WinInteropUtils_ThemeTextOptions_PrefixOnly
+  commentId: F:FireBlade.WinInteropUtils.ThemeTextOptions.PrefixOnly
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions.PrefixOnly
+  nameWithType: ThemeTextOptions.PrefixOnly
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions.RtlReading
+  name: RtlReading
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html#FireBlade_WinInteropUtils_ThemeTextOptions_RtlReading
+  commentId: F:FireBlade.WinInteropUtils.ThemeTextOptions.RtlReading
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions.RtlReading
+  nameWithType: ThemeTextOptions.RtlReading
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions.SingleLine
+  name: SingleLine
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html#FireBlade_WinInteropUtils_ThemeTextOptions_SingleLine
+  commentId: F:FireBlade.WinInteropUtils.ThemeTextOptions.SingleLine
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions.SingleLine
+  nameWithType: ThemeTextOptions.SingleLine
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions.TabStop
+  name: TabStop
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html#FireBlade_WinInteropUtils_ThemeTextOptions_TabStop
+  commentId: F:FireBlade.WinInteropUtils.ThemeTextOptions.TabStop
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions.TabStop
+  nameWithType: ThemeTextOptions.TabStop
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions.WordBreak
+  name: WordBreak
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html#FireBlade_WinInteropUtils_ThemeTextOptions_WordBreak
+  commentId: F:FireBlade.WinInteropUtils.ThemeTextOptions.WordBreak
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions.WordBreak
+  nameWithType: ThemeTextOptions.WordBreak
+- uid: FireBlade.WinInteropUtils.ThemeTextOptions.WordEllipsis
+  name: WordEllipsis
+  href: api/FireBlade.WinInteropUtils.ThemeTextOptions.html#FireBlade_WinInteropUtils_ThemeTextOptions_WordEllipsis
+  commentId: F:FireBlade.WinInteropUtils.ThemeTextOptions.WordEllipsis
+  fullName: FireBlade.WinInteropUtils.ThemeTextOptions.WordEllipsis
+  nameWithType: ThemeTextOptions.WordEllipsis
 - uid: FireBlade.WinInteropUtils.TitleBarElement
   name: TitleBarElement
   href: api/FireBlade.WinInteropUtils.TitleBarElement.html
@@ -21557,6 +23061,95 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.User32.SetWindowLongPtr
   nameWithType: User32.SetWindowLongPtr
+- uid: FireBlade.WinInteropUtils.VisualStyle
+  name: VisualStyle
+  href: api/FireBlade.WinInteropUtils.VisualStyle.html
+  commentId: T:FireBlade.WinInteropUtils.VisualStyle
+  fullName: FireBlade.WinInteropUtils.VisualStyle
+  nameWithType: VisualStyle
+- uid: FireBlade.WinInteropUtils.VisualStyle.Dispose
+  name: Dispose()
+  href: api/FireBlade.WinInteropUtils.VisualStyle.html#FireBlade_WinInteropUtils_VisualStyle_Dispose
+  commentId: M:FireBlade.WinInteropUtils.VisualStyle.Dispose
+  fullName: FireBlade.WinInteropUtils.VisualStyle.Dispose()
+  nameWithType: VisualStyle.Dispose()
+- uid: FireBlade.WinInteropUtils.VisualStyle.Dispose*
+  name: Dispose
+  href: api/FireBlade.WinInteropUtils.VisualStyle.html#FireBlade_WinInteropUtils_VisualStyle_Dispose_
+  commentId: Overload:FireBlade.WinInteropUtils.VisualStyle.Dispose
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.VisualStyle.Dispose
+  nameWithType: VisualStyle.Dispose
+- uid: FireBlade.WinInteropUtils.VisualStyle.DrawText(System.Drawing.Graphics,System.String,System.Drawing.Rectangle@,FireBlade.WinInteropUtils.ThemeTextOptions)
+  name: DrawText(Graphics, string, ref Rectangle, ThemeTextOptions)
+  href: api/FireBlade.WinInteropUtils.VisualStyle.html#FireBlade_WinInteropUtils_VisualStyle_DrawText_System_Drawing_Graphics_System_String_System_Drawing_Rectangle__FireBlade_WinInteropUtils_ThemeTextOptions_
+  commentId: M:FireBlade.WinInteropUtils.VisualStyle.DrawText(System.Drawing.Graphics,System.String,System.Drawing.Rectangle@,FireBlade.WinInteropUtils.ThemeTextOptions)
+  name.vb: DrawText(Graphics, String, Rectangle, ThemeTextOptions)
+  fullName: FireBlade.WinInteropUtils.VisualStyle.DrawText(System.Drawing.Graphics, string, ref System.Drawing.Rectangle, FireBlade.WinInteropUtils.ThemeTextOptions)
+  fullName.vb: FireBlade.WinInteropUtils.VisualStyle.DrawText(System.Drawing.Graphics, String, System.Drawing.Rectangle, FireBlade.WinInteropUtils.ThemeTextOptions)
+  nameWithType: VisualStyle.DrawText(Graphics, string, ref Rectangle, ThemeTextOptions)
+  nameWithType.vb: VisualStyle.DrawText(Graphics, String, Rectangle, ThemeTextOptions)
+- uid: FireBlade.WinInteropUtils.VisualStyle.DrawText(System.Drawing.Graphics,System.String,System.Drawing.Rectangle@,FireBlade.WinInteropUtils.ThemeTextOptions,FireBlade.WinInteropUtils.DrawTextAdvancedOptions@)
+  name: DrawText(Graphics, string, ref Rectangle, ThemeTextOptions, ref DrawTextAdvancedOptions)
+  href: api/FireBlade.WinInteropUtils.VisualStyle.html#FireBlade_WinInteropUtils_VisualStyle_DrawText_System_Drawing_Graphics_System_String_System_Drawing_Rectangle__FireBlade_WinInteropUtils_ThemeTextOptions_FireBlade_WinInteropUtils_DrawTextAdvancedOptions__
+  commentId: M:FireBlade.WinInteropUtils.VisualStyle.DrawText(System.Drawing.Graphics,System.String,System.Drawing.Rectangle@,FireBlade.WinInteropUtils.ThemeTextOptions,FireBlade.WinInteropUtils.DrawTextAdvancedOptions@)
+  name.vb: DrawText(Graphics, String, Rectangle, ThemeTextOptions, DrawTextAdvancedOptions)
+  fullName: FireBlade.WinInteropUtils.VisualStyle.DrawText(System.Drawing.Graphics, string, ref System.Drawing.Rectangle, FireBlade.WinInteropUtils.ThemeTextOptions, ref FireBlade.WinInteropUtils.DrawTextAdvancedOptions)
+  fullName.vb: FireBlade.WinInteropUtils.VisualStyle.DrawText(System.Drawing.Graphics, String, System.Drawing.Rectangle, FireBlade.WinInteropUtils.ThemeTextOptions, FireBlade.WinInteropUtils.DrawTextAdvancedOptions)
+  nameWithType: VisualStyle.DrawText(Graphics, string, ref Rectangle, ThemeTextOptions, ref DrawTextAdvancedOptions)
+  nameWithType.vb: VisualStyle.DrawText(Graphics, String, Rectangle, ThemeTextOptions, DrawTextAdvancedOptions)
+- uid: FireBlade.WinInteropUtils.VisualStyle.DrawText*
+  name: DrawText
+  href: api/FireBlade.WinInteropUtils.VisualStyle.html#FireBlade_WinInteropUtils_VisualStyle_DrawText_
+  commentId: Overload:FireBlade.WinInteropUtils.VisualStyle.DrawText
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.VisualStyle.DrawText
+  nameWithType: VisualStyle.DrawText
+- uid: FireBlade.WinInteropUtils.VisualStyle.DrawThemeText(System.Drawing.Graphics,System.Int32,System.Int32,System.String,System.Int32,FireBlade.WinInteropUtils.ThemeTextOptions,System.Drawing.Rectangle)
+  name: DrawThemeText(Graphics, int, int, string, int, ThemeTextOptions, Rectangle)
+  href: api/FireBlade.WinInteropUtils.VisualStyle.html#FireBlade_WinInteropUtils_VisualStyle_DrawThemeText_System_Drawing_Graphics_System_Int32_System_Int32_System_String_System_Int32_FireBlade_WinInteropUtils_ThemeTextOptions_System_Drawing_Rectangle_
+  commentId: M:FireBlade.WinInteropUtils.VisualStyle.DrawThemeText(System.Drawing.Graphics,System.Int32,System.Int32,System.String,System.Int32,FireBlade.WinInteropUtils.ThemeTextOptions,System.Drawing.Rectangle)
+  name.vb: DrawThemeText(Graphics, Integer, Integer, String, Integer, ThemeTextOptions, Rectangle)
+  fullName: FireBlade.WinInteropUtils.VisualStyle.DrawThemeText(System.Drawing.Graphics, int, int, string, int, FireBlade.WinInteropUtils.ThemeTextOptions, System.Drawing.Rectangle)
+  fullName.vb: FireBlade.WinInteropUtils.VisualStyle.DrawThemeText(System.Drawing.Graphics, Integer, Integer, String, Integer, FireBlade.WinInteropUtils.ThemeTextOptions, System.Drawing.Rectangle)
+  nameWithType: VisualStyle.DrawThemeText(Graphics, int, int, string, int, ThemeTextOptions, Rectangle)
+  nameWithType.vb: VisualStyle.DrawThemeText(Graphics, Integer, Integer, String, Integer, ThemeTextOptions, Rectangle)
+- uid: FireBlade.WinInteropUtils.VisualStyle.DrawThemeText*
+  name: DrawThemeText
+  href: api/FireBlade.WinInteropUtils.VisualStyle.html#FireBlade_WinInteropUtils_VisualStyle_DrawThemeText_
+  commentId: Overload:FireBlade.WinInteropUtils.VisualStyle.DrawThemeText
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.VisualStyle.DrawThemeText
+  nameWithType: VisualStyle.DrawThemeText
+- uid: FireBlade.WinInteropUtils.VisualStyle.Handle
+  name: Handle
+  href: api/FireBlade.WinInteropUtils.VisualStyle.html#FireBlade_WinInteropUtils_VisualStyle_Handle
+  commentId: P:FireBlade.WinInteropUtils.VisualStyle.Handle
+  fullName: FireBlade.WinInteropUtils.VisualStyle.Handle
+  nameWithType: VisualStyle.Handle
+- uid: FireBlade.WinInteropUtils.VisualStyle.Handle*
+  name: Handle
+  href: api/FireBlade.WinInteropUtils.VisualStyle.html#FireBlade_WinInteropUtils_VisualStyle_Handle_
+  commentId: Overload:FireBlade.WinInteropUtils.VisualStyle.Handle
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.VisualStyle.Handle
+  nameWithType: VisualStyle.Handle
+- uid: FireBlade.WinInteropUtils.VisualStyle.OpenThemeData(FireBlade.WinInteropUtils.Window,System.String)
+  name: OpenThemeData(Window, string)
+  href: api/FireBlade.WinInteropUtils.VisualStyle.html#FireBlade_WinInteropUtils_VisualStyle_OpenThemeData_FireBlade_WinInteropUtils_Window_System_String_
+  commentId: M:FireBlade.WinInteropUtils.VisualStyle.OpenThemeData(FireBlade.WinInteropUtils.Window,System.String)
+  name.vb: OpenThemeData(Window, String)
+  fullName: FireBlade.WinInteropUtils.VisualStyle.OpenThemeData(FireBlade.WinInteropUtils.Window, string)
+  fullName.vb: FireBlade.WinInteropUtils.VisualStyle.OpenThemeData(FireBlade.WinInteropUtils.Window, String)
+  nameWithType: VisualStyle.OpenThemeData(Window, string)
+  nameWithType.vb: VisualStyle.OpenThemeData(Window, String)
+- uid: FireBlade.WinInteropUtils.VisualStyle.OpenThemeData*
+  name: OpenThemeData
+  href: api/FireBlade.WinInteropUtils.VisualStyle.html#FireBlade_WinInteropUtils_VisualStyle_OpenThemeData_
+  commentId: Overload:FireBlade.WinInteropUtils.VisualStyle.OpenThemeData
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.VisualStyle.OpenThemeData
+  nameWithType: VisualStyle.OpenThemeData
 - uid: FireBlade.WinInteropUtils.Win32Constants
   name: Win32Constants
   href: api/FireBlade.WinInteropUtils.Win32Constants.html
@@ -37799,6 +39392,24 @@ references:
   commentId: F:FireBlade.WinInteropUtils.Win32ErrorCode.WSA_QOS_TRAFFIC_CTRL_ERROR
   fullName: FireBlade.WinInteropUtils.Win32ErrorCode.WSA_QOS_TRAFFIC_CTRL_ERROR
   nameWithType: Win32ErrorCode.WSA_QOS_TRAFFIC_CTRL_ERROR
+- uid: FireBlade.WinInteropUtils.WinConstants
+  name: WinConstants
+  href: api/FireBlade.WinInteropUtils.WinConstants.html
+  commentId: T:FireBlade.WinInteropUtils.WinConstants
+  fullName: FireBlade.WinInteropUtils.WinConstants
+  nameWithType: WinConstants
+- uid: FireBlade.WinInteropUtils.WinConstants.FACILITY_WIN32
+  name: FACILITY_WIN32
+  href: api/FireBlade.WinInteropUtils.WinConstants.html#FireBlade_WinInteropUtils_WinConstants_FACILITY_WIN32
+  commentId: F:FireBlade.WinInteropUtils.WinConstants.FACILITY_WIN32
+  fullName: FireBlade.WinInteropUtils.WinConstants.FACILITY_WIN32
+  nameWithType: WinConstants.FACILITY_WIN32
+- uid: FireBlade.WinInteropUtils.WinConstants.MAX_PATH
+  name: MAX_PATH
+  href: api/FireBlade.WinInteropUtils.WinConstants.html#FireBlade_WinInteropUtils_WinConstants_MAX_PATH
+  commentId: F:FireBlade.WinInteropUtils.WinConstants.MAX_PATH
+  fullName: FireBlade.WinInteropUtils.WinConstants.MAX_PATH
+  nameWithType: WinConstants.MAX_PATH
 - uid: FireBlade.WinInteropUtils.WinForms
   name: FireBlade.WinInteropUtils.WinForms
   href: api/FireBlade.WinInteropUtils.WinForms.html
@@ -39575,6 +41186,928 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.WinForms.SliderValueChangingEventArgs.Reason
   nameWithType: SliderValueChangingEventArgs.Reason
+- uid: FireBlade.WinInteropUtils.WinMessage
+  name: WinMessage
+  href: api/FireBlade.WinInteropUtils.WinMessage.html
+  commentId: T:FireBlade.WinInteropUtils.WinMessage
+  fullName: FireBlade.WinInteropUtils.WinMessage
+  nameWithType: WinMessage
+- uid: FireBlade.WinInteropUtils.WinMessage.CursorPos
+  name: CursorPos
+  href: api/FireBlade.WinInteropUtils.WinMessage.html#FireBlade_WinInteropUtils_WinMessage_CursorPos
+  commentId: P:FireBlade.WinInteropUtils.WinMessage.CursorPos
+  fullName: FireBlade.WinInteropUtils.WinMessage.CursorPos
+  nameWithType: WinMessage.CursorPos
+- uid: FireBlade.WinInteropUtils.WinMessage.CursorPos*
+  name: CursorPos
+  href: api/FireBlade.WinInteropUtils.WinMessage.html#FireBlade_WinInteropUtils_WinMessage_CursorPos_
+  commentId: Overload:FireBlade.WinInteropUtils.WinMessage.CursorPos
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinMessage.CursorPos
+  nameWithType: WinMessage.CursorPos
+- uid: FireBlade.WinInteropUtils.WinMessage.LParam
+  name: LParam
+  href: api/FireBlade.WinInteropUtils.WinMessage.html#FireBlade_WinInteropUtils_WinMessage_LParam
+  commentId: P:FireBlade.WinInteropUtils.WinMessage.LParam
+  fullName: FireBlade.WinInteropUtils.WinMessage.LParam
+  nameWithType: WinMessage.LParam
+- uid: FireBlade.WinInteropUtils.WinMessage.LParam*
+  name: LParam
+  href: api/FireBlade.WinInteropUtils.WinMessage.html#FireBlade_WinInteropUtils_WinMessage_LParam_
+  commentId: Overload:FireBlade.WinInteropUtils.WinMessage.LParam
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinMessage.LParam
+  nameWithType: WinMessage.LParam
+- uid: FireBlade.WinInteropUtils.WinMessage.MessageId
+  name: MessageId
+  href: api/FireBlade.WinInteropUtils.WinMessage.html#FireBlade_WinInteropUtils_WinMessage_MessageId
+  commentId: P:FireBlade.WinInteropUtils.WinMessage.MessageId
+  fullName: FireBlade.WinInteropUtils.WinMessage.MessageId
+  nameWithType: WinMessage.MessageId
+- uid: FireBlade.WinInteropUtils.WinMessage.MessageId*
+  name: MessageId
+  href: api/FireBlade.WinInteropUtils.WinMessage.html#FireBlade_WinInteropUtils_WinMessage_MessageId_
+  commentId: Overload:FireBlade.WinInteropUtils.WinMessage.MessageId
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinMessage.MessageId
+  nameWithType: WinMessage.MessageId
+- uid: FireBlade.WinInteropUtils.WinMessage.Time
+  name: Time
+  href: api/FireBlade.WinInteropUtils.WinMessage.html#FireBlade_WinInteropUtils_WinMessage_Time
+  commentId: P:FireBlade.WinInteropUtils.WinMessage.Time
+  fullName: FireBlade.WinInteropUtils.WinMessage.Time
+  nameWithType: WinMessage.Time
+- uid: FireBlade.WinInteropUtils.WinMessage.Time*
+  name: Time
+  href: api/FireBlade.WinInteropUtils.WinMessage.html#FireBlade_WinInteropUtils_WinMessage_Time_
+  commentId: Overload:FireBlade.WinInteropUtils.WinMessage.Time
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinMessage.Time
+  nameWithType: WinMessage.Time
+- uid: FireBlade.WinInteropUtils.WinMessage.WParam
+  name: WParam
+  href: api/FireBlade.WinInteropUtils.WinMessage.html#FireBlade_WinInteropUtils_WinMessage_WParam
+  commentId: P:FireBlade.WinInteropUtils.WinMessage.WParam
+  fullName: FireBlade.WinInteropUtils.WinMessage.WParam
+  nameWithType: WinMessage.WParam
+- uid: FireBlade.WinInteropUtils.WinMessage.WParam*
+  name: WParam
+  href: api/FireBlade.WinInteropUtils.WinMessage.html#FireBlade_WinInteropUtils_WinMessage_WParam_
+  commentId: Overload:FireBlade.WinInteropUtils.WinMessage.WParam
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinMessage.WParam
+  nameWithType: WinMessage.WParam
+- uid: FireBlade.WinInteropUtils.WinMessage.Window
+  name: Window
+  href: api/FireBlade.WinInteropUtils.WinMessage.html#FireBlade_WinInteropUtils_WinMessage_Window
+  commentId: P:FireBlade.WinInteropUtils.WinMessage.Window
+  fullName: FireBlade.WinInteropUtils.WinMessage.Window
+  nameWithType: WinMessage.Window
+- uid: FireBlade.WinInteropUtils.WinMessage.Window*
+  name: Window
+  href: api/FireBlade.WinInteropUtils.WinMessage.html#FireBlade_WinInteropUtils_WinMessage_Window_
+  commentId: Overload:FireBlade.WinInteropUtils.WinMessage.Window
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinMessage.Window
+  nameWithType: WinMessage.Window
+- uid: FireBlade.WinInteropUtils.Window
+  name: Window
+  href: api/FireBlade.WinInteropUtils.Window.html
+  commentId: T:FireBlade.WinInteropUtils.Window
+  fullName: FireBlade.WinInteropUtils.Window
+  nameWithType: Window
+- uid: FireBlade.WinInteropUtils.Window.#ctor(FireBlade.WinInteropUtils.ExWindowStyles,System.String,System.String,System.UInt32,System.Drawing.Point,System.Drawing.Size,FireBlade.WinInteropUtils.Window,System.Nullable{System.IntPtr},System.Object)
+  name: Window(ExWindowStyles, string, string, uint, Point, Size, Window?, nint?, object?)
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window__ctor_FireBlade_WinInteropUtils_ExWindowStyles_System_String_System_String_System_UInt32_System_Drawing_Point_System_Drawing_Size_FireBlade_WinInteropUtils_Window_System_Nullable_System_IntPtr__System_Object_
+  commentId: M:FireBlade.WinInteropUtils.Window.#ctor(FireBlade.WinInteropUtils.ExWindowStyles,System.String,System.String,System.UInt32,System.Drawing.Point,System.Drawing.Size,FireBlade.WinInteropUtils.Window,System.Nullable{System.IntPtr},System.Object)
+  name.vb: New(ExWindowStyles, String, String, UInteger, Point, Size, Window, IntPtr?, Object)
+  fullName: FireBlade.WinInteropUtils.Window.Window(FireBlade.WinInteropUtils.ExWindowStyles, string, string, uint, System.Drawing.Point, System.Drawing.Size, FireBlade.WinInteropUtils.Window?, nint?, object?)
+  fullName.vb: FireBlade.WinInteropUtils.Window.New(FireBlade.WinInteropUtils.ExWindowStyles, String, String, UInteger, System.Drawing.Point, System.Drawing.Size, FireBlade.WinInteropUtils.Window, System.IntPtr?, Object)
+  nameWithType: Window.Window(ExWindowStyles, string, string, uint, Point, Size, Window?, nint?, object?)
+  nameWithType.vb: Window.New(ExWindowStyles, String, String, UInteger, Point, Size, Window, IntPtr?, Object)
+- uid: FireBlade.WinInteropUtils.Window.#ctor*
+  name: Window
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window__ctor_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: FireBlade.WinInteropUtils.Window.Window
+  fullName.vb: FireBlade.WinInteropUtils.Window.New
+  nameWithType: Window.Window
+  nameWithType.vb: Window.New
+- uid: FireBlade.WinInteropUtils.Window.Close
+  name: Close()
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Close
+  commentId: M:FireBlade.WinInteropUtils.Window.Close
+  fullName: FireBlade.WinInteropUtils.Window.Close()
+  nameWithType: Window.Close()
+- uid: FireBlade.WinInteropUtils.Window.Close*
+  name: Close
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Close_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.Close
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.Close
+  nameWithType: Window.Close
+- uid: FireBlade.WinInteropUtils.Window.Destroy
+  name: Destroy()
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Destroy
+  commentId: M:FireBlade.WinInteropUtils.Window.Destroy
+  fullName: FireBlade.WinInteropUtils.Window.Destroy()
+  nameWithType: Window.Destroy()
+- uid: FireBlade.WinInteropUtils.Window.Destroy*
+  name: Destroy
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Destroy_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.Destroy
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.Destroy
+  nameWithType: Window.Destroy
+- uid: FireBlade.WinInteropUtils.Window.Enabled
+  name: Enabled
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Enabled
+  commentId: P:FireBlade.WinInteropUtils.Window.Enabled
+  fullName: FireBlade.WinInteropUtils.Window.Enabled
+  nameWithType: Window.Enabled
+- uid: FireBlade.WinInteropUtils.Window.Enabled*
+  name: Enabled
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Enabled_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.Enabled
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.Enabled
+  nameWithType: Window.Enabled
+- uid: FireBlade.WinInteropUtils.Window.Exists(System.IntPtr)
+  name: Exists(nint)
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Exists_System_IntPtr_
+  commentId: M:FireBlade.WinInteropUtils.Window.Exists(System.IntPtr)
+  name.vb: Exists(IntPtr)
+  fullName: FireBlade.WinInteropUtils.Window.Exists(nint)
+  fullName.vb: FireBlade.WinInteropUtils.Window.Exists(System.IntPtr)
+  nameWithType: Window.Exists(nint)
+  nameWithType.vb: Window.Exists(IntPtr)
+- uid: FireBlade.WinInteropUtils.Window.Exists*
+  name: Exists
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Exists_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.Exists
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.Exists
+  nameWithType: Window.Exists
+- uid: FireBlade.WinInteropUtils.Window.FromHandle(System.IntPtr)
+  name: FromHandle(nint)
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_FromHandle_System_IntPtr_
+  commentId: M:FireBlade.WinInteropUtils.Window.FromHandle(System.IntPtr)
+  name.vb: FromHandle(IntPtr)
+  fullName: FireBlade.WinInteropUtils.Window.FromHandle(nint)
+  fullName.vb: FireBlade.WinInteropUtils.Window.FromHandle(System.IntPtr)
+  nameWithType: Window.FromHandle(nint)
+  nameWithType.vb: Window.FromHandle(IntPtr)
+- uid: FireBlade.WinInteropUtils.Window.FromHandle*
+  name: FromHandle
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_FromHandle_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.FromHandle
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.FromHandle
+  nameWithType: Window.FromHandle
+- uid: FireBlade.WinInteropUtils.Window.FromPoint(System.Drawing.Point)
+  name: FromPoint(Point)
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_FromPoint_System_Drawing_Point_
+  commentId: M:FireBlade.WinInteropUtils.Window.FromPoint(System.Drawing.Point)
+  fullName: FireBlade.WinInteropUtils.Window.FromPoint(System.Drawing.Point)
+  nameWithType: Window.FromPoint(Point)
+- uid: FireBlade.WinInteropUtils.Window.FromPoint*
+  name: FromPoint
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_FromPoint_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.FromPoint
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.FromPoint
+  nameWithType: Window.FromPoint
+- uid: FireBlade.WinInteropUtils.Window.GetWindowLongPtr(System.Int32)
+  name: GetWindowLongPtr(int)
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_GetWindowLongPtr_System_Int32_
+  commentId: M:FireBlade.WinInteropUtils.Window.GetWindowLongPtr(System.Int32)
+  name.vb: GetWindowLongPtr(Integer)
+  fullName: FireBlade.WinInteropUtils.Window.GetWindowLongPtr(int)
+  fullName.vb: FireBlade.WinInteropUtils.Window.GetWindowLongPtr(Integer)
+  nameWithType: Window.GetWindowLongPtr(int)
+  nameWithType.vb: Window.GetWindowLongPtr(Integer)
+- uid: FireBlade.WinInteropUtils.Window.GetWindowLongPtr*
+  name: GetWindowLongPtr
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_GetWindowLongPtr_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.GetWindowLongPtr
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.GetWindowLongPtr
+  nameWithType: Window.GetWindowLongPtr
+- uid: FireBlade.WinInteropUtils.Window.Handle
+  name: Handle
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Handle
+  commentId: P:FireBlade.WinInteropUtils.Window.Handle
+  fullName: FireBlade.WinInteropUtils.Window.Handle
+  nameWithType: Window.Handle
+- uid: FireBlade.WinInteropUtils.Window.Handle*
+  name: Handle
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Handle_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.Handle
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.Handle
+  nameWithType: Window.Handle
+- uid: FireBlade.WinInteropUtils.Window.MoveToForeground
+  name: MoveToForeground()
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_MoveToForeground
+  commentId: M:FireBlade.WinInteropUtils.Window.MoveToForeground
+  fullName: FireBlade.WinInteropUtils.Window.MoveToForeground()
+  nameWithType: Window.MoveToForeground()
+- uid: FireBlade.WinInteropUtils.Window.MoveToForeground*
+  name: MoveToForeground
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_MoveToForeground_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.MoveToForeground
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.MoveToForeground
+  nameWithType: Window.MoveToForeground
+- uid: FireBlade.WinInteropUtils.Window.Parent
+  name: Parent
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Parent
+  commentId: P:FireBlade.WinInteropUtils.Window.Parent
+  fullName: FireBlade.WinInteropUtils.Window.Parent
+  nameWithType: Window.Parent
+- uid: FireBlade.WinInteropUtils.Window.Parent*
+  name: Parent
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Parent_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.Parent
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.Parent
+  nameWithType: Window.Parent
+- uid: FireBlade.WinInteropUtils.Window.PostMessage(System.UInt32,System.UIntPtr,System.IntPtr)
+  name: PostMessage(uint, nuint, nint)
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_PostMessage_System_UInt32_System_UIntPtr_System_IntPtr_
+  commentId: M:FireBlade.WinInteropUtils.Window.PostMessage(System.UInt32,System.UIntPtr,System.IntPtr)
+  name.vb: PostMessage(UInteger, UIntPtr, IntPtr)
+  fullName: FireBlade.WinInteropUtils.Window.PostMessage(uint, nuint, nint)
+  fullName.vb: FireBlade.WinInteropUtils.Window.PostMessage(UInteger, System.UIntPtr, System.IntPtr)
+  nameWithType: Window.PostMessage(uint, nuint, nint)
+  nameWithType.vb: Window.PostMessage(UInteger, UIntPtr, IntPtr)
+- uid: FireBlade.WinInteropUtils.Window.PostMessage*
+  name: PostMessage
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_PostMessage_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.PostMessage
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.PostMessage
+  nameWithType: Window.PostMessage
+- uid: FireBlade.WinInteropUtils.Window.SendMessage(System.UInt32,System.Boolean,System.Boolean)
+  name: SendMessage(uint, bool, bool)
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_Boolean_System_Boolean_
+  commentId: M:FireBlade.WinInteropUtils.Window.SendMessage(System.UInt32,System.Boolean,System.Boolean)
+  name.vb: SendMessage(UInteger, Boolean, Boolean)
+  fullName: FireBlade.WinInteropUtils.Window.SendMessage(uint, bool, bool)
+  fullName.vb: FireBlade.WinInteropUtils.Window.SendMessage(UInteger, Boolean, Boolean)
+  nameWithType: Window.SendMessage(uint, bool, bool)
+  nameWithType.vb: Window.SendMessage(UInteger, Boolean, Boolean)
+- uid: FireBlade.WinInteropUtils.Window.SendMessage(System.UInt32,System.Boolean,System.IntPtr)
+  name: SendMessage(uint, bool, nint)
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_Boolean_System_IntPtr_
+  commentId: M:FireBlade.WinInteropUtils.Window.SendMessage(System.UInt32,System.Boolean,System.IntPtr)
+  name.vb: SendMessage(UInteger, Boolean, IntPtr)
+  fullName: FireBlade.WinInteropUtils.Window.SendMessage(uint, bool, nint)
+  fullName.vb: FireBlade.WinInteropUtils.Window.SendMessage(UInteger, Boolean, System.IntPtr)
+  nameWithType: Window.SendMessage(uint, bool, nint)
+  nameWithType.vb: Window.SendMessage(UInteger, Boolean, IntPtr)
+- uid: FireBlade.WinInteropUtils.Window.SendMessage(System.UInt32,System.UIntPtr,System.Boolean)
+  name: SendMessage(uint, nuint, bool)
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_UIntPtr_System_Boolean_
+  commentId: M:FireBlade.WinInteropUtils.Window.SendMessage(System.UInt32,System.UIntPtr,System.Boolean)
+  name.vb: SendMessage(UInteger, UIntPtr, Boolean)
+  fullName: FireBlade.WinInteropUtils.Window.SendMessage(uint, nuint, bool)
+  fullName.vb: FireBlade.WinInteropUtils.Window.SendMessage(UInteger, System.UIntPtr, Boolean)
+  nameWithType: Window.SendMessage(uint, nuint, bool)
+  nameWithType.vb: Window.SendMessage(UInteger, UIntPtr, Boolean)
+- uid: FireBlade.WinInteropUtils.Window.SendMessage(System.UInt32,System.UIntPtr,System.IntPtr)
+  name: SendMessage(uint, nuint, nint)
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_UIntPtr_System_IntPtr_
+  commentId: M:FireBlade.WinInteropUtils.Window.SendMessage(System.UInt32,System.UIntPtr,System.IntPtr)
+  name.vb: SendMessage(UInteger, UIntPtr, IntPtr)
+  fullName: FireBlade.WinInteropUtils.Window.SendMessage(uint, nuint, nint)
+  fullName.vb: FireBlade.WinInteropUtils.Window.SendMessage(UInteger, System.UIntPtr, System.IntPtr)
+  nameWithType: Window.SendMessage(uint, nuint, nint)
+  nameWithType.vb: Window.SendMessage(UInteger, UIntPtr, IntPtr)
+- uid: FireBlade.WinInteropUtils.Window.SendMessage*
+  name: SendMessage
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SendMessage_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.SendMessage
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.SendMessage
+  nameWithType: Window.SendMessage
+- uid: FireBlade.WinInteropUtils.Window.SetActive
+  name: SetActive()
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SetActive
+  commentId: M:FireBlade.WinInteropUtils.Window.SetActive
+  fullName: FireBlade.WinInteropUtils.Window.SetActive()
+  nameWithType: Window.SetActive()
+- uid: FireBlade.WinInteropUtils.Window.SetActive*
+  name: SetActive
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SetActive_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.SetActive
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.SetActive
+  nameWithType: Window.SetActive
+- uid: FireBlade.WinInteropUtils.Window.SetPos(System.Drawing.Point,System.Drawing.Size,FireBlade.WinInteropUtils.WindowSetPosOptions,FireBlade.WinInteropUtils.Window)
+  name: SetPos(Point, Size, WindowSetPosOptions, Window?)
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SetPos_System_Drawing_Point_System_Drawing_Size_FireBlade_WinInteropUtils_WindowSetPosOptions_FireBlade_WinInteropUtils_Window_
+  commentId: M:FireBlade.WinInteropUtils.Window.SetPos(System.Drawing.Point,System.Drawing.Size,FireBlade.WinInteropUtils.WindowSetPosOptions,FireBlade.WinInteropUtils.Window)
+  name.vb: SetPos(Point, Size, WindowSetPosOptions, Window)
+  fullName: FireBlade.WinInteropUtils.Window.SetPos(System.Drawing.Point, System.Drawing.Size, FireBlade.WinInteropUtils.WindowSetPosOptions, FireBlade.WinInteropUtils.Window?)
+  fullName.vb: FireBlade.WinInteropUtils.Window.SetPos(System.Drawing.Point, System.Drawing.Size, FireBlade.WinInteropUtils.WindowSetPosOptions, FireBlade.WinInteropUtils.Window)
+  nameWithType: Window.SetPos(Point, Size, WindowSetPosOptions, Window?)
+  nameWithType.vb: Window.SetPos(Point, Size, WindowSetPosOptions, Window)
+- uid: FireBlade.WinInteropUtils.Window.SetPos*
+  name: SetPos
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SetPos_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.SetPos
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.SetPos
+  nameWithType: Window.SetPos
+- uid: FireBlade.WinInteropUtils.Window.SetWindowLongPtr(System.Int32,System.IntPtr)
+  name: SetWindowLongPtr(int, nint)
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SetWindowLongPtr_System_Int32_System_IntPtr_
+  commentId: M:FireBlade.WinInteropUtils.Window.SetWindowLongPtr(System.Int32,System.IntPtr)
+  name.vb: SetWindowLongPtr(Integer, IntPtr)
+  fullName: FireBlade.WinInteropUtils.Window.SetWindowLongPtr(int, nint)
+  fullName.vb: FireBlade.WinInteropUtils.Window.SetWindowLongPtr(Integer, System.IntPtr)
+  nameWithType: Window.SetWindowLongPtr(int, nint)
+  nameWithType.vb: Window.SetWindowLongPtr(Integer, IntPtr)
+- uid: FireBlade.WinInteropUtils.Window.SetWindowLongPtr*
+  name: SetWindowLongPtr
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SetWindowLongPtr_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.SetWindowLongPtr
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.SetWindowLongPtr
+  nameWithType: Window.SetWindowLongPtr
+- uid: FireBlade.WinInteropUtils.Window.Show(FireBlade.WinInteropUtils.WindowShowCommand)
+  name: Show(WindowShowCommand)
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Show_FireBlade_WinInteropUtils_WindowShowCommand_
+  commentId: M:FireBlade.WinInteropUtils.Window.Show(FireBlade.WinInteropUtils.WindowShowCommand)
+  fullName: FireBlade.WinInteropUtils.Window.Show(FireBlade.WinInteropUtils.WindowShowCommand)
+  nameWithType: Window.Show(WindowShowCommand)
+- uid: FireBlade.WinInteropUtils.Window.Show*
+  name: Show
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Show_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.Show
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.Show
+  nameWithType: Window.Show
+- uid: FireBlade.WinInteropUtils.Window.ShowAsync(FireBlade.WinInteropUtils.WindowShowCommand)
+  name: ShowAsync(WindowShowCommand)
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_ShowAsync_FireBlade_WinInteropUtils_WindowShowCommand_
+  commentId: M:FireBlade.WinInteropUtils.Window.ShowAsync(FireBlade.WinInteropUtils.WindowShowCommand)
+  fullName: FireBlade.WinInteropUtils.Window.ShowAsync(FireBlade.WinInteropUtils.WindowShowCommand)
+  nameWithType: Window.ShowAsync(WindowShowCommand)
+- uid: FireBlade.WinInteropUtils.Window.ShowAsync*
+  name: ShowAsync
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_ShowAsync_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.ShowAsync
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.ShowAsync
+  nameWithType: Window.ShowAsync
+- uid: FireBlade.WinInteropUtils.Window.State
+  name: State
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_State
+  commentId: P:FireBlade.WinInteropUtils.Window.State
+  fullName: FireBlade.WinInteropUtils.Window.State
+  nameWithType: Window.State
+- uid: FireBlade.WinInteropUtils.Window.State*
+  name: State
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_State_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.State
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.State
+  nameWithType: Window.State
+- uid: FireBlade.WinInteropUtils.Window.Text
+  name: Text
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Text
+  commentId: P:FireBlade.WinInteropUtils.Window.Text
+  fullName: FireBlade.WinInteropUtils.Window.Text
+  nameWithType: Window.Text
+- uid: FireBlade.WinInteropUtils.Window.Text*
+  name: Text
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Text_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.Text
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.Text
+  nameWithType: Window.Text
+- uid: FireBlade.WinInteropUtils.Window.Visible
+  name: Visible
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Visible
+  commentId: P:FireBlade.WinInteropUtils.Window.Visible
+  fullName: FireBlade.WinInteropUtils.Window.Visible
+  nameWithType: Window.Visible
+- uid: FireBlade.WinInteropUtils.Window.Visible*
+  name: Visible
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Visible_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.Visible
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.Visible
+  nameWithType: Window.Visible
+- uid: FireBlade.WinInteropUtils.Window.WindowDefaultLocation
+  name: WindowDefaultLocation
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_WindowDefaultLocation
+  commentId: F:FireBlade.WinInteropUtils.Window.WindowDefaultLocation
+  fullName: FireBlade.WinInteropUtils.Window.WindowDefaultLocation
+  nameWithType: Window.WindowDefaultLocation
+- uid: FireBlade.WinInteropUtils.Window.WindowDefaultSize
+  name: WindowDefaultSize
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_WindowDefaultSize
+  commentId: F:FireBlade.WinInteropUtils.Window.WindowDefaultSize
+  fullName: FireBlade.WinInteropUtils.Window.WindowDefaultSize
+  nameWithType: Window.WindowDefaultSize
+- uid: FireBlade.WinInteropUtils.Window.op_Explicit(System.IntPtr)~FireBlade.WinInteropUtils.Window
+  name: explicit operator Window(nint)
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_op_Explicit_System_IntPtr__FireBlade_WinInteropUtils_Window
+  commentId: M:FireBlade.WinInteropUtils.Window.op_Explicit(System.IntPtr)~FireBlade.WinInteropUtils.Window
+  name.vb: CType(IntPtr)
+  fullName: FireBlade.WinInteropUtils.Window.explicit operator FireBlade.WinInteropUtils.Window(nint)
+  fullName.vb: FireBlade.WinInteropUtils.Window.CType(System.IntPtr)
+  nameWithType: Window.explicit operator Window(nint)
+  nameWithType.vb: Window.CType(IntPtr)
+- uid: FireBlade.WinInteropUtils.Window.op_Explicit*
+  name: explicit operator
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_op_Explicit_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.op_Explicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: FireBlade.WinInteropUtils.Window.explicit operator
+  fullName.vb: FireBlade.WinInteropUtils.Window.CType
+  nameWithType: Window.explicit operator
+  nameWithType.vb: Window.CType
+- uid: FireBlade.WinInteropUtils.Window.op_Implicit(FireBlade.WinInteropUtils.Window)~System.IntPtr
+  name: implicit operator nint(Window)
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_op_Implicit_FireBlade_WinInteropUtils_Window__System_IntPtr
+  commentId: M:FireBlade.WinInteropUtils.Window.op_Implicit(FireBlade.WinInteropUtils.Window)~System.IntPtr
+  name.vb: CType(Window)
+  fullName: FireBlade.WinInteropUtils.Window.implicit operator nint(FireBlade.WinInteropUtils.Window)
+  fullName.vb: FireBlade.WinInteropUtils.Window.CType(FireBlade.WinInteropUtils.Window)
+  nameWithType: Window.implicit operator nint(Window)
+  nameWithType.vb: Window.CType(Window)
+- uid: FireBlade.WinInteropUtils.Window.op_Implicit*
+  name: implicit operator
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_op_Implicit_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.op_Implicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: FireBlade.WinInteropUtils.Window.implicit operator
+  fullName.vb: FireBlade.WinInteropUtils.Window.CType
+  nameWithType: Window.implicit operator
+  nameWithType.vb: Window.CType
+- uid: FireBlade.WinInteropUtils.WindowClass
+  name: WindowClass
+  href: api/FireBlade.WinInteropUtils.WindowClass.html
+  commentId: T:FireBlade.WinInteropUtils.WindowClass
+  fullName: FireBlade.WinInteropUtils.WindowClass
+  nameWithType: WindowClass
+- uid: FireBlade.WinInteropUtils.WindowClass.Atom
+  name: Atom
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_Atom
+  commentId: P:FireBlade.WinInteropUtils.WindowClass.Atom
+  fullName: FireBlade.WinInteropUtils.WindowClass.Atom
+  nameWithType: WindowClass.Atom
+- uid: FireBlade.WinInteropUtils.WindowClass.Atom*
+  name: Atom
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_Atom_
+  commentId: Overload:FireBlade.WinInteropUtils.WindowClass.Atom
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WindowClass.Atom
+  nameWithType: WindowClass.Atom
+- uid: FireBlade.WinInteropUtils.WindowClass.BackgroundBrush
+  name: BackgroundBrush
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_BackgroundBrush
+  commentId: P:FireBlade.WinInteropUtils.WindowClass.BackgroundBrush
+  fullName: FireBlade.WinInteropUtils.WindowClass.BackgroundBrush
+  nameWithType: WindowClass.BackgroundBrush
+- uid: FireBlade.WinInteropUtils.WindowClass.BackgroundBrush*
+  name: BackgroundBrush
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_BackgroundBrush_
+  commentId: Overload:FireBlade.WinInteropUtils.WindowClass.BackgroundBrush
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WindowClass.BackgroundBrush
+  nameWithType: WindowClass.BackgroundBrush
+- uid: FireBlade.WinInteropUtils.WindowClass.ClassIcon
+  name: ClassIcon
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_ClassIcon
+  commentId: P:FireBlade.WinInteropUtils.WindowClass.ClassIcon
+  fullName: FireBlade.WinInteropUtils.WindowClass.ClassIcon
+  nameWithType: WindowClass.ClassIcon
+- uid: FireBlade.WinInteropUtils.WindowClass.ClassIcon*
+  name: ClassIcon
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_ClassIcon_
+  commentId: Overload:FireBlade.WinInteropUtils.WindowClass.ClassIcon
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WindowClass.ClassIcon
+  nameWithType: WindowClass.ClassIcon
+- uid: FireBlade.WinInteropUtils.WindowClass.ClassName
+  name: ClassName
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_ClassName
+  commentId: P:FireBlade.WinInteropUtils.WindowClass.ClassName
+  fullName: FireBlade.WinInteropUtils.WindowClass.ClassName
+  nameWithType: WindowClass.ClassName
+- uid: FireBlade.WinInteropUtils.WindowClass.ClassName*
+  name: ClassName
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_ClassName_
+  commentId: Overload:FireBlade.WinInteropUtils.WindowClass.ClassName
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WindowClass.ClassName
+  nameWithType: WindowClass.ClassName
+- uid: FireBlade.WinInteropUtils.WindowClass.ClassStyle
+  name: ClassStyle
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_ClassStyle
+  commentId: P:FireBlade.WinInteropUtils.WindowClass.ClassStyle
+  fullName: FireBlade.WinInteropUtils.WindowClass.ClassStyle
+  nameWithType: WindowClass.ClassStyle
+- uid: FireBlade.WinInteropUtils.WindowClass.ClassStyle*
+  name: ClassStyle
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_ClassStyle_
+  commentId: Overload:FireBlade.WinInteropUtils.WindowClass.ClassStyle
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WindowClass.ClassStyle
+  nameWithType: WindowClass.ClassStyle
+- uid: FireBlade.WinInteropUtils.WindowClass.DefaultWndProc(FireBlade.WinInteropUtils.Window,System.UInt32,System.UIntPtr,System.Object)
+  name: DefaultWndProc(Window, uint, nuint, object)
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_DefaultWndProc_FireBlade_WinInteropUtils_Window_System_UInt32_System_UIntPtr_System_Object_
+  commentId: M:FireBlade.WinInteropUtils.WindowClass.DefaultWndProc(FireBlade.WinInteropUtils.Window,System.UInt32,System.UIntPtr,System.Object)
+  name.vb: DefaultWndProc(Window, UInteger, UIntPtr, Object)
+  fullName: FireBlade.WinInteropUtils.WindowClass.DefaultWndProc(FireBlade.WinInteropUtils.Window, uint, nuint, object)
+  fullName.vb: FireBlade.WinInteropUtils.WindowClass.DefaultWndProc(FireBlade.WinInteropUtils.Window, UInteger, System.UIntPtr, Object)
+  nameWithType: WindowClass.DefaultWndProc(Window, uint, nuint, object)
+  nameWithType.vb: WindowClass.DefaultWndProc(Window, UInteger, UIntPtr, Object)
+- uid: FireBlade.WinInteropUtils.WindowClass.DefaultWndProc*
+  name: DefaultWndProc
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_DefaultWndProc_
+  commentId: Overload:FireBlade.WinInteropUtils.WindowClass.DefaultWndProc
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WindowClass.DefaultWndProc
+  nameWithType: WindowClass.DefaultWndProc
+- uid: FireBlade.WinInteropUtils.WindowClass.DlgWindowExtra
+  name: DlgWindowExtra
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_DlgWindowExtra
+  commentId: F:FireBlade.WinInteropUtils.WindowClass.DlgWindowExtra
+  fullName: FireBlade.WinInteropUtils.WindowClass.DlgWindowExtra
+  nameWithType: WindowClass.DlgWindowExtra
+- uid: FireBlade.WinInteropUtils.WindowClass.ExtraSize
+  name: ExtraSize
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_ExtraSize
+  commentId: P:FireBlade.WinInteropUtils.WindowClass.ExtraSize
+  fullName: FireBlade.WinInteropUtils.WindowClass.ExtraSize
+  nameWithType: WindowClass.ExtraSize
+- uid: FireBlade.WinInteropUtils.WindowClass.ExtraSize*
+  name: ExtraSize
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_ExtraSize_
+  commentId: Overload:FireBlade.WinInteropUtils.WindowClass.ExtraSize
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WindowClass.ExtraSize
+  nameWithType: WindowClass.ExtraSize
+- uid: FireBlade.WinInteropUtils.WindowClass.ExtraWindowSize
+  name: ExtraWindowSize
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_ExtraWindowSize
+  commentId: P:FireBlade.WinInteropUtils.WindowClass.ExtraWindowSize
+  fullName: FireBlade.WinInteropUtils.WindowClass.ExtraWindowSize
+  nameWithType: WindowClass.ExtraWindowSize
+- uid: FireBlade.WinInteropUtils.WindowClass.ExtraWindowSize*
+  name: ExtraWindowSize
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_ExtraWindowSize_
+  commentId: Overload:FireBlade.WinInteropUtils.WindowClass.ExtraWindowSize
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WindowClass.ExtraWindowSize
+  nameWithType: WindowClass.ExtraWindowSize
+- uid: FireBlade.WinInteropUtils.WindowClass.FromExisting(System.String)
+  name: FromExisting(string)
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_FromExisting_System_String_
+  commentId: M:FireBlade.WinInteropUtils.WindowClass.FromExisting(System.String)
+  name.vb: FromExisting(String)
+  fullName: FireBlade.WinInteropUtils.WindowClass.FromExisting(string)
+  fullName.vb: FireBlade.WinInteropUtils.WindowClass.FromExisting(String)
+  nameWithType: WindowClass.FromExisting(string)
+  nameWithType.vb: WindowClass.FromExisting(String)
+- uid: FireBlade.WinInteropUtils.WindowClass.FromExisting(System.String,System.IntPtr)
+  name: FromExisting(string, nint)
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_FromExisting_System_String_System_IntPtr_
+  commentId: M:FireBlade.WinInteropUtils.WindowClass.FromExisting(System.String,System.IntPtr)
+  name.vb: FromExisting(String, IntPtr)
+  fullName: FireBlade.WinInteropUtils.WindowClass.FromExisting(string, nint)
+  fullName.vb: FireBlade.WinInteropUtils.WindowClass.FromExisting(String, System.IntPtr)
+  nameWithType: WindowClass.FromExisting(string, nint)
+  nameWithType.vb: WindowClass.FromExisting(String, IntPtr)
+- uid: FireBlade.WinInteropUtils.WindowClass.FromExisting*
+  name: FromExisting
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_FromExisting_
+  commentId: Overload:FireBlade.WinInteropUtils.WindowClass.FromExisting
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WindowClass.FromExisting
+  nameWithType: WindowClass.FromExisting
+- uid: FireBlade.WinInteropUtils.WindowClass.Instance
+  name: Instance
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_Instance
+  commentId: P:FireBlade.WinInteropUtils.WindowClass.Instance
+  fullName: FireBlade.WinInteropUtils.WindowClass.Instance
+  nameWithType: WindowClass.Instance
+- uid: FireBlade.WinInteropUtils.WindowClass.Instance*
+  name: Instance
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_Instance_
+  commentId: Overload:FireBlade.WinInteropUtils.WindowClass.Instance
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WindowClass.Instance
+  nameWithType: WindowClass.Instance
+- uid: FireBlade.WinInteropUtils.WindowClass.MenuName
+  name: MenuName
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_MenuName
+  commentId: P:FireBlade.WinInteropUtils.WindowClass.MenuName
+  fullName: FireBlade.WinInteropUtils.WindowClass.MenuName
+  nameWithType: WindowClass.MenuName
+- uid: FireBlade.WinInteropUtils.WindowClass.MenuName*
+  name: MenuName
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_MenuName_
+  commentId: Overload:FireBlade.WinInteropUtils.WindowClass.MenuName
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WindowClass.MenuName
+  nameWithType: WindowClass.MenuName
+- uid: FireBlade.WinInteropUtils.WindowClass.Register
+  name: Register()
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_Register
+  commentId: M:FireBlade.WinInteropUtils.WindowClass.Register
+  fullName: FireBlade.WinInteropUtils.WindowClass.Register()
+  nameWithType: WindowClass.Register()
+- uid: FireBlade.WinInteropUtils.WindowClass.Register*
+  name: Register
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_Register_
+  commentId: Overload:FireBlade.WinInteropUtils.WindowClass.Register
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WindowClass.Register
+  nameWithType: WindowClass.Register
+- uid: FireBlade.WinInteropUtils.WindowClass.SmallClassIcon
+  name: SmallClassIcon
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_SmallClassIcon
+  commentId: P:FireBlade.WinInteropUtils.WindowClass.SmallClassIcon
+  fullName: FireBlade.WinInteropUtils.WindowClass.SmallClassIcon
+  nameWithType: WindowClass.SmallClassIcon
+- uid: FireBlade.WinInteropUtils.WindowClass.SmallClassIcon*
+  name: SmallClassIcon
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_SmallClassIcon_
+  commentId: Overload:FireBlade.WinInteropUtils.WindowClass.SmallClassIcon
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WindowClass.SmallClassIcon
+  nameWithType: WindowClass.SmallClassIcon
+- uid: FireBlade.WinInteropUtils.WindowClass.WindowProcedure
+  name: WindowProcedure
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_WindowProcedure
+  commentId: P:FireBlade.WinInteropUtils.WindowClass.WindowProcedure
+  fullName: FireBlade.WinInteropUtils.WindowClass.WindowProcedure
+  nameWithType: WindowClass.WindowProcedure
+- uid: FireBlade.WinInteropUtils.WindowClass.WindowProcedure*
+  name: WindowProcedure
+  href: api/FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_WindowProcedure_
+  commentId: Overload:FireBlade.WinInteropUtils.WindowClass.WindowProcedure
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WindowClass.WindowProcedure
+  nameWithType: WindowClass.WindowProcedure
+- uid: FireBlade.WinInteropUtils.WindowClass.WndProc
+  name: WindowClass.WndProc
+  href: api/FireBlade.WinInteropUtils.WindowClass.WndProc.html
+  commentId: T:FireBlade.WinInteropUtils.WindowClass.WndProc
+  fullName: FireBlade.WinInteropUtils.WindowClass.WndProc
+  nameWithType: WindowClass.WndProc
+- uid: FireBlade.WinInteropUtils.WindowLongPtr
+  name: WindowLongPtr
+  href: api/FireBlade.WinInteropUtils.WindowLongPtr.html
+  commentId: T:FireBlade.WinInteropUtils.WindowLongPtr
+  fullName: FireBlade.WinInteropUtils.WindowLongPtr
+  nameWithType: WindowLongPtr
+- uid: FireBlade.WinInteropUtils.WindowLongPtr.AppHInstance
+  name: AppHInstance
+  href: api/FireBlade.WinInteropUtils.WindowLongPtr.html#FireBlade_WinInteropUtils_WindowLongPtr_AppHInstance
+  commentId: F:FireBlade.WinInteropUtils.WindowLongPtr.AppHInstance
+  fullName: FireBlade.WinInteropUtils.WindowLongPtr.AppHInstance
+  nameWithType: WindowLongPtr.AppHInstance
+- uid: FireBlade.WinInteropUtils.WindowLongPtr.ExStyle
+  name: ExStyle
+  href: api/FireBlade.WinInteropUtils.WindowLongPtr.html#FireBlade_WinInteropUtils_WindowLongPtr_ExStyle
+  commentId: F:FireBlade.WinInteropUtils.WindowLongPtr.ExStyle
+  fullName: FireBlade.WinInteropUtils.WindowLongPtr.ExStyle
+  nameWithType: WindowLongPtr.ExStyle
+- uid: FireBlade.WinInteropUtils.WindowLongPtr.HWNDParent
+  name: HWNDParent
+  href: api/FireBlade.WinInteropUtils.WindowLongPtr.html#FireBlade_WinInteropUtils_WindowLongPtr_HWNDParent
+  commentId: F:FireBlade.WinInteropUtils.WindowLongPtr.HWNDParent
+  fullName: FireBlade.WinInteropUtils.WindowLongPtr.HWNDParent
+  nameWithType: WindowLongPtr.HWNDParent
+- uid: FireBlade.WinInteropUtils.WindowLongPtr.ID
+  name: ID
+  href: api/FireBlade.WinInteropUtils.WindowLongPtr.html#FireBlade_WinInteropUtils_WindowLongPtr_ID
+  commentId: F:FireBlade.WinInteropUtils.WindowLongPtr.ID
+  fullName: FireBlade.WinInteropUtils.WindowLongPtr.ID
+  nameWithType: WindowLongPtr.ID
+- uid: FireBlade.WinInteropUtils.WindowLongPtr.MessageResult
+  name: MessageResult
+  href: api/FireBlade.WinInteropUtils.WindowLongPtr.html#FireBlade_WinInteropUtils_WindowLongPtr_MessageResult
+  commentId: F:FireBlade.WinInteropUtils.WindowLongPtr.MessageResult
+  fullName: FireBlade.WinInteropUtils.WindowLongPtr.MessageResult
+  nameWithType: WindowLongPtr.MessageResult
+- uid: FireBlade.WinInteropUtils.WindowLongPtr.Style
+  name: Style
+  href: api/FireBlade.WinInteropUtils.WindowLongPtr.html#FireBlade_WinInteropUtils_WindowLongPtr_Style
+  commentId: F:FireBlade.WinInteropUtils.WindowLongPtr.Style
+  fullName: FireBlade.WinInteropUtils.WindowLongPtr.Style
+  nameWithType: WindowLongPtr.Style
+- uid: FireBlade.WinInteropUtils.WindowLongPtr.UserData
+  name: UserData
+  href: api/FireBlade.WinInteropUtils.WindowLongPtr.html#FireBlade_WinInteropUtils_WindowLongPtr_UserData
+  commentId: F:FireBlade.WinInteropUtils.WindowLongPtr.UserData
+  fullName: FireBlade.WinInteropUtils.WindowLongPtr.UserData
+  nameWithType: WindowLongPtr.UserData
+- uid: FireBlade.WinInteropUtils.WindowLongPtr.WndProc
+  name: WndProc
+  href: api/FireBlade.WinInteropUtils.WindowLongPtr.html#FireBlade_WinInteropUtils_WindowLongPtr_WndProc
+  commentId: F:FireBlade.WinInteropUtils.WindowLongPtr.WndProc
+  fullName: FireBlade.WinInteropUtils.WindowLongPtr.WndProc
+  nameWithType: WindowLongPtr.WndProc
+- uid: FireBlade.WinInteropUtils.WindowSetPosOptions
+  name: WindowSetPosOptions
+  href: api/FireBlade.WinInteropUtils.WindowSetPosOptions.html
+  commentId: T:FireBlade.WinInteropUtils.WindowSetPosOptions
+  fullName: FireBlade.WinInteropUtils.WindowSetPosOptions
+  nameWithType: WindowSetPosOptions
+- uid: FireBlade.WinInteropUtils.WindowSetPosOptions.AsyncWindowPos
+  name: AsyncWindowPos
+  href: api/FireBlade.WinInteropUtils.WindowSetPosOptions.html#FireBlade_WinInteropUtils_WindowSetPosOptions_AsyncWindowPos
+  commentId: F:FireBlade.WinInteropUtils.WindowSetPosOptions.AsyncWindowPos
+  fullName: FireBlade.WinInteropUtils.WindowSetPosOptions.AsyncWindowPos
+  nameWithType: WindowSetPosOptions.AsyncWindowPos
+- uid: FireBlade.WinInteropUtils.WindowSetPosOptions.DeferErase
+  name: DeferErase
+  href: api/FireBlade.WinInteropUtils.WindowSetPosOptions.html#FireBlade_WinInteropUtils_WindowSetPosOptions_DeferErase
+  commentId: F:FireBlade.WinInteropUtils.WindowSetPosOptions.DeferErase
+  fullName: FireBlade.WinInteropUtils.WindowSetPosOptions.DeferErase
+  nameWithType: WindowSetPosOptions.DeferErase
+- uid: FireBlade.WinInteropUtils.WindowSetPosOptions.DrawFrame
+  name: DrawFrame
+  href: api/FireBlade.WinInteropUtils.WindowSetPosOptions.html#FireBlade_WinInteropUtils_WindowSetPosOptions_DrawFrame
+  commentId: F:FireBlade.WinInteropUtils.WindowSetPosOptions.DrawFrame
+  fullName: FireBlade.WinInteropUtils.WindowSetPosOptions.DrawFrame
+  nameWithType: WindowSetPosOptions.DrawFrame
+- uid: FireBlade.WinInteropUtils.WindowSetPosOptions.FrameChanged
+  name: FrameChanged
+  href: api/FireBlade.WinInteropUtils.WindowSetPosOptions.html#FireBlade_WinInteropUtils_WindowSetPosOptions_FrameChanged
+  commentId: F:FireBlade.WinInteropUtils.WindowSetPosOptions.FrameChanged
+  fullName: FireBlade.WinInteropUtils.WindowSetPosOptions.FrameChanged
+  nameWithType: WindowSetPosOptions.FrameChanged
+- uid: FireBlade.WinInteropUtils.WindowSetPosOptions.HideWindow
+  name: HideWindow
+  href: api/FireBlade.WinInteropUtils.WindowSetPosOptions.html#FireBlade_WinInteropUtils_WindowSetPosOptions_HideWindow
+  commentId: F:FireBlade.WinInteropUtils.WindowSetPosOptions.HideWindow
+  fullName: FireBlade.WinInteropUtils.WindowSetPosOptions.HideWindow
+  nameWithType: WindowSetPosOptions.HideWindow
+- uid: FireBlade.WinInteropUtils.WindowSetPosOptions.NoActivate
+  name: NoActivate
+  href: api/FireBlade.WinInteropUtils.WindowSetPosOptions.html#FireBlade_WinInteropUtils_WindowSetPosOptions_NoActivate
+  commentId: F:FireBlade.WinInteropUtils.WindowSetPosOptions.NoActivate
+  fullName: FireBlade.WinInteropUtils.WindowSetPosOptions.NoActivate
+  nameWithType: WindowSetPosOptions.NoActivate
+- uid: FireBlade.WinInteropUtils.WindowSetPosOptions.NoCopyBits
+  name: NoCopyBits
+  href: api/FireBlade.WinInteropUtils.WindowSetPosOptions.html#FireBlade_WinInteropUtils_WindowSetPosOptions_NoCopyBits
+  commentId: F:FireBlade.WinInteropUtils.WindowSetPosOptions.NoCopyBits
+  fullName: FireBlade.WinInteropUtils.WindowSetPosOptions.NoCopyBits
+  nameWithType: WindowSetPosOptions.NoCopyBits
+- uid: FireBlade.WinInteropUtils.WindowSetPosOptions.NoMove
+  name: NoMove
+  href: api/FireBlade.WinInteropUtils.WindowSetPosOptions.html#FireBlade_WinInteropUtils_WindowSetPosOptions_NoMove
+  commentId: F:FireBlade.WinInteropUtils.WindowSetPosOptions.NoMove
+  fullName: FireBlade.WinInteropUtils.WindowSetPosOptions.NoMove
+  nameWithType: WindowSetPosOptions.NoMove
+- uid: FireBlade.WinInteropUtils.WindowSetPosOptions.NoOwnerZOrder
+  name: NoOwnerZOrder
+  href: api/FireBlade.WinInteropUtils.WindowSetPosOptions.html#FireBlade_WinInteropUtils_WindowSetPosOptions_NoOwnerZOrder
+  commentId: F:FireBlade.WinInteropUtils.WindowSetPosOptions.NoOwnerZOrder
+  fullName: FireBlade.WinInteropUtils.WindowSetPosOptions.NoOwnerZOrder
+  nameWithType: WindowSetPosOptions.NoOwnerZOrder
+- uid: FireBlade.WinInteropUtils.WindowSetPosOptions.NoRedraw
+  name: NoRedraw
+  href: api/FireBlade.WinInteropUtils.WindowSetPosOptions.html#FireBlade_WinInteropUtils_WindowSetPosOptions_NoRedraw
+  commentId: F:FireBlade.WinInteropUtils.WindowSetPosOptions.NoRedraw
+  fullName: FireBlade.WinInteropUtils.WindowSetPosOptions.NoRedraw
+  nameWithType: WindowSetPosOptions.NoRedraw
+- uid: FireBlade.WinInteropUtils.WindowSetPosOptions.NoReposition
+  name: NoReposition
+  href: api/FireBlade.WinInteropUtils.WindowSetPosOptions.html#FireBlade_WinInteropUtils_WindowSetPosOptions_NoReposition
+  commentId: F:FireBlade.WinInteropUtils.WindowSetPosOptions.NoReposition
+  fullName: FireBlade.WinInteropUtils.WindowSetPosOptions.NoReposition
+  nameWithType: WindowSetPosOptions.NoReposition
+- uid: FireBlade.WinInteropUtils.WindowSetPosOptions.NoSendChanging
+  name: NoSendChanging
+  href: api/FireBlade.WinInteropUtils.WindowSetPosOptions.html#FireBlade_WinInteropUtils_WindowSetPosOptions_NoSendChanging
+  commentId: F:FireBlade.WinInteropUtils.WindowSetPosOptions.NoSendChanging
+  fullName: FireBlade.WinInteropUtils.WindowSetPosOptions.NoSendChanging
+  nameWithType: WindowSetPosOptions.NoSendChanging
+- uid: FireBlade.WinInteropUtils.WindowSetPosOptions.NoSize
+  name: NoSize
+  href: api/FireBlade.WinInteropUtils.WindowSetPosOptions.html#FireBlade_WinInteropUtils_WindowSetPosOptions_NoSize
+  commentId: F:FireBlade.WinInteropUtils.WindowSetPosOptions.NoSize
+  fullName: FireBlade.WinInteropUtils.WindowSetPosOptions.NoSize
+  nameWithType: WindowSetPosOptions.NoSize
+- uid: FireBlade.WinInteropUtils.WindowSetPosOptions.NoZOrder
+  name: NoZOrder
+  href: api/FireBlade.WinInteropUtils.WindowSetPosOptions.html#FireBlade_WinInteropUtils_WindowSetPosOptions_NoZOrder
+  commentId: F:FireBlade.WinInteropUtils.WindowSetPosOptions.NoZOrder
+  fullName: FireBlade.WinInteropUtils.WindowSetPosOptions.NoZOrder
+  nameWithType: WindowSetPosOptions.NoZOrder
+- uid: FireBlade.WinInteropUtils.WindowSetPosOptions.ShowWindow
+  name: ShowWindow
+  href: api/FireBlade.WinInteropUtils.WindowSetPosOptions.html#FireBlade_WinInteropUtils_WindowSetPosOptions_ShowWindow
+  commentId: F:FireBlade.WinInteropUtils.WindowSetPosOptions.ShowWindow
+  fullName: FireBlade.WinInteropUtils.WindowSetPosOptions.ShowWindow
+  nameWithType: WindowSetPosOptions.ShowWindow
+- uid: FireBlade.WinInteropUtils.WindowShowCommand
+  name: WindowShowCommand
+  href: api/FireBlade.WinInteropUtils.WindowShowCommand.html
+  commentId: T:FireBlade.WinInteropUtils.WindowShowCommand
+  fullName: FireBlade.WinInteropUtils.WindowShowCommand
+  nameWithType: WindowShowCommand
+- uid: FireBlade.WinInteropUtils.WindowShowCommand.ForceMinimize
+  name: ForceMinimize
+  href: api/FireBlade.WinInteropUtils.WindowShowCommand.html#FireBlade_WinInteropUtils_WindowShowCommand_ForceMinimize
+  commentId: F:FireBlade.WinInteropUtils.WindowShowCommand.ForceMinimize
+  fullName: FireBlade.WinInteropUtils.WindowShowCommand.ForceMinimize
+  nameWithType: WindowShowCommand.ForceMinimize
+- uid: FireBlade.WinInteropUtils.WindowShowCommand.Hide
+  name: Hide
+  href: api/FireBlade.WinInteropUtils.WindowShowCommand.html#FireBlade_WinInteropUtils_WindowShowCommand_Hide
+  commentId: F:FireBlade.WinInteropUtils.WindowShowCommand.Hide
+  fullName: FireBlade.WinInteropUtils.WindowShowCommand.Hide
+  nameWithType: WindowShowCommand.Hide
+- uid: FireBlade.WinInteropUtils.WindowShowCommand.Maximize
+  name: Maximize
+  href: api/FireBlade.WinInteropUtils.WindowShowCommand.html#FireBlade_WinInteropUtils_WindowShowCommand_Maximize
+  commentId: F:FireBlade.WinInteropUtils.WindowShowCommand.Maximize
+  fullName: FireBlade.WinInteropUtils.WindowShowCommand.Maximize
+  nameWithType: WindowShowCommand.Maximize
+- uid: FireBlade.WinInteropUtils.WindowShowCommand.Minimize
+  name: Minimize
+  href: api/FireBlade.WinInteropUtils.WindowShowCommand.html#FireBlade_WinInteropUtils_WindowShowCommand_Minimize
+  commentId: F:FireBlade.WinInteropUtils.WindowShowCommand.Minimize
+  fullName: FireBlade.WinInteropUtils.WindowShowCommand.Minimize
+  nameWithType: WindowShowCommand.Minimize
+- uid: FireBlade.WinInteropUtils.WindowShowCommand.Normal
+  name: Normal
+  href: api/FireBlade.WinInteropUtils.WindowShowCommand.html#FireBlade_WinInteropUtils_WindowShowCommand_Normal
+  commentId: F:FireBlade.WinInteropUtils.WindowShowCommand.Normal
+  fullName: FireBlade.WinInteropUtils.WindowShowCommand.Normal
+  nameWithType: WindowShowCommand.Normal
+- uid: FireBlade.WinInteropUtils.WindowShowCommand.Restore
+  name: Restore
+  href: api/FireBlade.WinInteropUtils.WindowShowCommand.html#FireBlade_WinInteropUtils_WindowShowCommand_Restore
+  commentId: F:FireBlade.WinInteropUtils.WindowShowCommand.Restore
+  fullName: FireBlade.WinInteropUtils.WindowShowCommand.Restore
+  nameWithType: WindowShowCommand.Restore
+- uid: FireBlade.WinInteropUtils.WindowShowCommand.Show
+  name: Show
+  href: api/FireBlade.WinInteropUtils.WindowShowCommand.html#FireBlade_WinInteropUtils_WindowShowCommand_Show
+  commentId: F:FireBlade.WinInteropUtils.WindowShowCommand.Show
+  fullName: FireBlade.WinInteropUtils.WindowShowCommand.Show
+  nameWithType: WindowShowCommand.Show
+- uid: FireBlade.WinInteropUtils.WindowShowCommand.ShowDefault
+  name: ShowDefault
+  href: api/FireBlade.WinInteropUtils.WindowShowCommand.html#FireBlade_WinInteropUtils_WindowShowCommand_ShowDefault
+  commentId: F:FireBlade.WinInteropUtils.WindowShowCommand.ShowDefault
+  fullName: FireBlade.WinInteropUtils.WindowShowCommand.ShowDefault
+  nameWithType: WindowShowCommand.ShowDefault
+- uid: FireBlade.WinInteropUtils.WindowShowCommand.ShowMaximized
+  name: ShowMaximized
+  href: api/FireBlade.WinInteropUtils.WindowShowCommand.html#FireBlade_WinInteropUtils_WindowShowCommand_ShowMaximized
+  commentId: F:FireBlade.WinInteropUtils.WindowShowCommand.ShowMaximized
+  fullName: FireBlade.WinInteropUtils.WindowShowCommand.ShowMaximized
+  nameWithType: WindowShowCommand.ShowMaximized
+- uid: FireBlade.WinInteropUtils.WindowShowCommand.ShowMinimized
+  name: ShowMinimized
+  href: api/FireBlade.WinInteropUtils.WindowShowCommand.html#FireBlade_WinInteropUtils_WindowShowCommand_ShowMinimized
+  commentId: F:FireBlade.WinInteropUtils.WindowShowCommand.ShowMinimized
+  fullName: FireBlade.WinInteropUtils.WindowShowCommand.ShowMinimized
+  nameWithType: WindowShowCommand.ShowMinimized
+- uid: FireBlade.WinInteropUtils.WindowShowCommand.ShowMinimizedNoActivate
+  name: ShowMinimizedNoActivate
+  href: api/FireBlade.WinInteropUtils.WindowShowCommand.html#FireBlade_WinInteropUtils_WindowShowCommand_ShowMinimizedNoActivate
+  commentId: F:FireBlade.WinInteropUtils.WindowShowCommand.ShowMinimizedNoActivate
+  fullName: FireBlade.WinInteropUtils.WindowShowCommand.ShowMinimizedNoActivate
+  nameWithType: WindowShowCommand.ShowMinimizedNoActivate
+- uid: FireBlade.WinInteropUtils.WindowShowCommand.ShowNA
+  name: ShowNA
+  href: api/FireBlade.WinInteropUtils.WindowShowCommand.html#FireBlade_WinInteropUtils_WindowShowCommand_ShowNA
+  commentId: F:FireBlade.WinInteropUtils.WindowShowCommand.ShowNA
+  fullName: FireBlade.WinInteropUtils.WindowShowCommand.ShowNA
+  nameWithType: WindowShowCommand.ShowNA
+- uid: FireBlade.WinInteropUtils.WindowShowCommand.ShowNoActivate
+  name: ShowNoActivate
+  href: api/FireBlade.WinInteropUtils.WindowShowCommand.html#FireBlade_WinInteropUtils_WindowShowCommand_ShowNoActivate
+  commentId: F:FireBlade.WinInteropUtils.WindowShowCommand.ShowNoActivate
+  fullName: FireBlade.WinInteropUtils.WindowShowCommand.ShowNoActivate
+  nameWithType: WindowShowCommand.ShowNoActivate
+- uid: FireBlade.WinInteropUtils.WindowShowCommand.ShowNormal
+  name: ShowNormal
+  href: api/FireBlade.WinInteropUtils.WindowShowCommand.html#FireBlade_WinInteropUtils_WindowShowCommand_ShowNormal
+  commentId: F:FireBlade.WinInteropUtils.WindowShowCommand.ShowNormal
+  fullName: FireBlade.WinInteropUtils.WindowShowCommand.ShowNormal
+  nameWithType: WindowShowCommand.ShowNormal
 - uid: FireBlade.WinInteropUtils.WindowState
   name: WindowState
   href: api/FireBlade.WinInteropUtils.WindowState.html
@@ -39629,6 +42162,174 @@ references:
   commentId: F:FireBlade.WinInteropUtils.WindowState.Zoomed
   fullName: FireBlade.WinInteropUtils.WindowState.Zoomed
   nameWithType: WindowState.Zoomed
+- uid: FireBlade.WinInteropUtils.WindowStyles
+  name: WindowStyles
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html
+  commentId: T:FireBlade.WinInteropUtils.WindowStyles
+  fullName: FireBlade.WinInteropUtils.WindowStyles
+  nameWithType: WindowStyles
+- uid: FireBlade.WinInteropUtils.WindowStyles.Border
+  name: Border
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_Border
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.Border
+  fullName: FireBlade.WinInteropUtils.WindowStyles.Border
+  nameWithType: WindowStyles.Border
+- uid: FireBlade.WinInteropUtils.WindowStyles.Caption
+  name: Caption
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_Caption
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.Caption
+  fullName: FireBlade.WinInteropUtils.WindowStyles.Caption
+  nameWithType: WindowStyles.Caption
+- uid: FireBlade.WinInteropUtils.WindowStyles.Child
+  name: Child
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_Child
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.Child
+  fullName: FireBlade.WinInteropUtils.WindowStyles.Child
+  nameWithType: WindowStyles.Child
+- uid: FireBlade.WinInteropUtils.WindowStyles.ChildWindow
+  name: ChildWindow
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_ChildWindow
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.ChildWindow
+  fullName: FireBlade.WinInteropUtils.WindowStyles.ChildWindow
+  nameWithType: WindowStyles.ChildWindow
+- uid: FireBlade.WinInteropUtils.WindowStyles.ClipChildren
+  name: ClipChildren
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_ClipChildren
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.ClipChildren
+  fullName: FireBlade.WinInteropUtils.WindowStyles.ClipChildren
+  nameWithType: WindowStyles.ClipChildren
+- uid: FireBlade.WinInteropUtils.WindowStyles.ClipSiblings
+  name: ClipSiblings
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_ClipSiblings
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.ClipSiblings
+  fullName: FireBlade.WinInteropUtils.WindowStyles.ClipSiblings
+  nameWithType: WindowStyles.ClipSiblings
+- uid: FireBlade.WinInteropUtils.WindowStyles.Disabled
+  name: Disabled
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_Disabled
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.Disabled
+  fullName: FireBlade.WinInteropUtils.WindowStyles.Disabled
+  nameWithType: WindowStyles.Disabled
+- uid: FireBlade.WinInteropUtils.WindowStyles.DlgFrame
+  name: DlgFrame
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_DlgFrame
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.DlgFrame
+  fullName: FireBlade.WinInteropUtils.WindowStyles.DlgFrame
+  nameWithType: WindowStyles.DlgFrame
+- uid: FireBlade.WinInteropUtils.WindowStyles.Group
+  name: Group
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_Group
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.Group
+  fullName: FireBlade.WinInteropUtils.WindowStyles.Group
+  nameWithType: WindowStyles.Group
+- uid: FireBlade.WinInteropUtils.WindowStyles.HScrollBar
+  name: HScrollBar
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_HScrollBar
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.HScrollBar
+  fullName: FireBlade.WinInteropUtils.WindowStyles.HScrollBar
+  nameWithType: WindowStyles.HScrollBar
+- uid: FireBlade.WinInteropUtils.WindowStyles.Iconic
+  name: Iconic
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_Iconic
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.Iconic
+  fullName: FireBlade.WinInteropUtils.WindowStyles.Iconic
+  nameWithType: WindowStyles.Iconic
+- uid: FireBlade.WinInteropUtils.WindowStyles.Maximize
+  name: Maximize
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_Maximize
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.Maximize
+  fullName: FireBlade.WinInteropUtils.WindowStyles.Maximize
+  nameWithType: WindowStyles.Maximize
+- uid: FireBlade.WinInteropUtils.WindowStyles.MaximizeBox
+  name: MaximizeBox
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_MaximizeBox
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.MaximizeBox
+  fullName: FireBlade.WinInteropUtils.WindowStyles.MaximizeBox
+  nameWithType: WindowStyles.MaximizeBox
+- uid: FireBlade.WinInteropUtils.WindowStyles.Minimize
+  name: Minimize
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_Minimize
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.Minimize
+  fullName: FireBlade.WinInteropUtils.WindowStyles.Minimize
+  nameWithType: WindowStyles.Minimize
+- uid: FireBlade.WinInteropUtils.WindowStyles.MinimizeBox
+  name: MinimizeBox
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_MinimizeBox
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.MinimizeBox
+  fullName: FireBlade.WinInteropUtils.WindowStyles.MinimizeBox
+  nameWithType: WindowStyles.MinimizeBox
+- uid: FireBlade.WinInteropUtils.WindowStyles.Overlapped
+  name: Overlapped
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_Overlapped
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.Overlapped
+  fullName: FireBlade.WinInteropUtils.WindowStyles.Overlapped
+  nameWithType: WindowStyles.Overlapped
+- uid: FireBlade.WinInteropUtils.WindowStyles.OverlappedWindow
+  name: OverlappedWindow
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_OverlappedWindow
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.OverlappedWindow
+  fullName: FireBlade.WinInteropUtils.WindowStyles.OverlappedWindow
+  nameWithType: WindowStyles.OverlappedWindow
+- uid: FireBlade.WinInteropUtils.WindowStyles.Popup
+  name: Popup
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_Popup
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.Popup
+  fullName: FireBlade.WinInteropUtils.WindowStyles.Popup
+  nameWithType: WindowStyles.Popup
+- uid: FireBlade.WinInteropUtils.WindowStyles.PopupWindow
+  name: PopupWindow
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_PopupWindow
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.PopupWindow
+  fullName: FireBlade.WinInteropUtils.WindowStyles.PopupWindow
+  nameWithType: WindowStyles.PopupWindow
+- uid: FireBlade.WinInteropUtils.WindowStyles.SizeBox
+  name: SizeBox
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_SizeBox
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.SizeBox
+  fullName: FireBlade.WinInteropUtils.WindowStyles.SizeBox
+  nameWithType: WindowStyles.SizeBox
+- uid: FireBlade.WinInteropUtils.WindowStyles.SystemMenu
+  name: SystemMenu
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_SystemMenu
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.SystemMenu
+  fullName: FireBlade.WinInteropUtils.WindowStyles.SystemMenu
+  nameWithType: WindowStyles.SystemMenu
+- uid: FireBlade.WinInteropUtils.WindowStyles.TabStop
+  name: TabStop
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_TabStop
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.TabStop
+  fullName: FireBlade.WinInteropUtils.WindowStyles.TabStop
+  nameWithType: WindowStyles.TabStop
+- uid: FireBlade.WinInteropUtils.WindowStyles.ThickFrame
+  name: ThickFrame
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_ThickFrame
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.ThickFrame
+  fullName: FireBlade.WinInteropUtils.WindowStyles.ThickFrame
+  nameWithType: WindowStyles.ThickFrame
+- uid: FireBlade.WinInteropUtils.WindowStyles.Tiled
+  name: Tiled
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_Tiled
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.Tiled
+  fullName: FireBlade.WinInteropUtils.WindowStyles.Tiled
+  nameWithType: WindowStyles.Tiled
+- uid: FireBlade.WinInteropUtils.WindowStyles.TiledWindow
+  name: TiledWindow
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_TiledWindow
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.TiledWindow
+  fullName: FireBlade.WinInteropUtils.WindowStyles.TiledWindow
+  nameWithType: WindowStyles.TiledWindow
+- uid: FireBlade.WinInteropUtils.WindowStyles.VScrollBar
+  name: VScrollBar
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_VScrollBar
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.VScrollBar
+  fullName: FireBlade.WinInteropUtils.WindowStyles.VScrollBar
+  nameWithType: WindowStyles.VScrollBar
+- uid: FireBlade.WinInteropUtils.WindowStyles.Visible
+  name: Visible
+  href: api/FireBlade.WinInteropUtils.WindowStyles.html#FireBlade_WinInteropUtils_WindowStyles_Visible
+  commentId: F:FireBlade.WinInteropUtils.WindowStyles.Visible
+  fullName: FireBlade.WinInteropUtils.WindowStyles.Visible
+  nameWithType: WindowStyles.Visible
 - uid: FireBlade.WinInteropUtils.WindowsFile
   name: WindowsFile
   href: api/FireBlade.WinInteropUtils.WindowsFile.html
@@ -39947,3 +42648,33 @@ references:
   commentId: F:FireBlade.WinInteropUtils.WindowsFileAttributes.Virtual
   fullName: FireBlade.WinInteropUtils.WindowsFileAttributes.Virtual
   nameWithType: WindowsFileAttributes.Virtual
+- uid: FireBlade.WinInteropUtils.ZOrderWindows
+  name: ZOrderWindows
+  href: api/FireBlade.WinInteropUtils.ZOrderWindows.html
+  commentId: T:FireBlade.WinInteropUtils.ZOrderWindows
+  fullName: FireBlade.WinInteropUtils.ZOrderWindows
+  nameWithType: ZOrderWindows
+- uid: FireBlade.WinInteropUtils.ZOrderWindows.Bottom
+  name: Bottom
+  href: api/FireBlade.WinInteropUtils.ZOrderWindows.html#FireBlade_WinInteropUtils_ZOrderWindows_Bottom
+  commentId: F:FireBlade.WinInteropUtils.ZOrderWindows.Bottom
+  fullName: FireBlade.WinInteropUtils.ZOrderWindows.Bottom
+  nameWithType: ZOrderWindows.Bottom
+- uid: FireBlade.WinInteropUtils.ZOrderWindows.NoTopMost
+  name: NoTopMost
+  href: api/FireBlade.WinInteropUtils.ZOrderWindows.html#FireBlade_WinInteropUtils_ZOrderWindows_NoTopMost
+  commentId: F:FireBlade.WinInteropUtils.ZOrderWindows.NoTopMost
+  fullName: FireBlade.WinInteropUtils.ZOrderWindows.NoTopMost
+  nameWithType: ZOrderWindows.NoTopMost
+- uid: FireBlade.WinInteropUtils.ZOrderWindows.Top
+  name: Top
+  href: api/FireBlade.WinInteropUtils.ZOrderWindows.html#FireBlade_WinInteropUtils_ZOrderWindows_Top
+  commentId: F:FireBlade.WinInteropUtils.ZOrderWindows.Top
+  fullName: FireBlade.WinInteropUtils.ZOrderWindows.Top
+  nameWithType: ZOrderWindows.Top
+- uid: FireBlade.WinInteropUtils.ZOrderWindows.TopMost
+  name: TopMost
+  href: api/FireBlade.WinInteropUtils.ZOrderWindows.html#FireBlade_WinInteropUtils_ZOrderWindows_TopMost
+  commentId: F:FireBlade.WinInteropUtils.ZOrderWindows.TopMost
+  fullName: FireBlade.WinInteropUtils.ZOrderWindows.TopMost
+  nameWithType: ZOrderWindows.TopMost

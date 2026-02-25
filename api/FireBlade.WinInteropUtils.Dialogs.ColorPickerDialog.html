@@ -132,13 +132,13 @@ Class ColorPickerDialog  <a class="header-action link-secondary" title="View sou
       <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show">DialogWindow&lt;Color?, ColorPickerDialog&gt;.Show()</a>
     </div>
     <div>
-      <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show_System_IntPtr_">DialogWindow&lt;Color?, ColorPickerDialog&gt;.Show(nint)</a>
+      <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show_FireBlade_WinInteropUtils_Window_">DialogWindow&lt;Color?, ColorPickerDialog&gt;.Show(Window)</a>
     </div>
     <div>
       <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show__1_">DialogWindow&lt;Color?, ColorPickerDialog&gt;.Show(ColorPickerDialog)</a>
     </div>
     <div>
-      <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show__1_System_IntPtr_">DialogWindow&lt;Color?, ColorPickerDialog&gt;.Show(ColorPickerDialog, nint)</a>
+      <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.DialogWindow-2.html#FireBlade_WinInteropUtils_Dialogs_DialogWindow_2_Show__1_FireBlade_WinInteropUtils_Window_">DialogWindow&lt;Color?, ColorPickerDialog&gt;.Show(ColorPickerDialog, Window)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
@@ -233,7 +233,7 @@ Class ColorPickerDialog  <a class="header-action link-secondary" title="View sou
 
 
   <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_CustomColors_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>When the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show">Show()</a> or <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_System_IntPtr_">Show(nint)</a> functions return, this property will contain the custom colors
+  <div class="markdown level1 remarks"><p>When the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html#FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show">Show()</a> or Show(nint) functions return, this property will contain the custom colors
 set by the user. You can store this array to persist the custom colors between sessions. The array has a capacity of <code>16</code>.</p>
 </div>
 
@@ -515,8 +515,8 @@ for it in your window procedure.</p>
 
   <a id="FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show*"></a>
 
-  <h3 id="FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog,System.IntPtr)">
-  Show(ColorPickerDialog, nint)
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_FireBlade_WinInteropUtils_Window_" data-uid="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog,FireBlade.WinInteropUtils.Window)">
+  Show(ColorPickerDialog, Window)
   <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/ColorPickerDialog.cs/#L238"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -525,7 +525,7 @@ for it in your window procedure.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color? Show(ColorPickerDialog dlg, nint hwnd)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color? Show(ColorPickerDialog dlg, Window wnd)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -533,9 +533,8 @@ for it in your window procedure.</p>
     <dt><code>dlg</code> <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html">ColorPickerDialog</a></dt>
     <dd><p>The <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html">ColorPickerDialog</a> to show.</p>
 </dd>
-    <dt><code>hwnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
-    <dd><p>The owner window handle.</p>
-</dd>
+    <dt><code>wnd</code> <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -551,6 +550,137 @@ for it in your window procedure.</p>
 
 
 
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_FireBlade_WinInteropUtils_Window_" data-uid="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Window)">
+  Show(Window)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/ColorPickerDialog.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows the color dialog modally.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Color? Show(Window wnd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wnd</code> <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a>?</dt>
+    <dd><p>The chosen <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a>, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the user cancelled the dialog.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_FireBlade_WinInteropUtils_Window_System_Drawing_Color_" data-uid="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Window,System.Drawing.Color)">
+  Show(Window, Color)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/ColorPickerDialog.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows the color dialog modally.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color? Show(Window wnd, Color defaultColor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wnd</code> <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd><p>The owner window.</p>
+</dd>
+    <dt><code>defaultColor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a></dt>
+    <dd><p>The default color.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a>?</dt>
+    <dd><p>The chosen color.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_FireBlade_WinInteropUtils_Window_System_Drawing_Color__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>For more customization, create an instance of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html">ColorPickerDialog</a> class.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_FireBlade_WinInteropUtils_Window_System_Drawing_Color_System_Drawing_Color___" data-uid="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(FireBlade.WinInteropUtils.Window,System.Drawing.Color,System.Drawing.Color[])">
+  Show(Window, Color, Color[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/ColorPickerDialog.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows the color dialog modally.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color? Show(Window wnd, Color defaultColor, Color[] customColors)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wnd</code> <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd><p>The owner window.</p>
+</dd>
+    <dt><code>defaultColor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a></dt>
+    <dd><p>The default color.</p>
+</dd>
+    <dt><code>customColors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a>[]</dt>
+    <dd><p>The array of custom colors in the dialog.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a>?</dt>
+    <dd><p>The chosen color.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_FireBlade_WinInteropUtils_Window_System_Drawing_Color_System_Drawing_Color____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>For more customization, create an instance of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html">ColorPickerDialog</a> class.</p>
+</div>
 
 
 
@@ -636,137 +766,6 @@ for it in your window procedure.</p>
 
 
   <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_System_Drawing_Color_System_Drawing_Color____remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>For more customization, create an instance of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html">ColorPickerDialog</a> class.</p>
-</div>
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.IntPtr)">
-  Show(nint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/ColorPickerDialog.cs/#L111"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Shows the color dialog modally.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Color? Show(nint hwnd)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>hwnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a>?</dt>
-    <dd><p>The chosen <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a>, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the user cancelled the dialog.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_System_IntPtr_System_Drawing_Color_" data-uid="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.IntPtr,System.Drawing.Color)">
-  Show(nint, Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/ColorPickerDialog.cs/#L193"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Shows the color dialog modally.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color? Show(nint hwnd, Color defaultColor)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>hwnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
-    <dd><p>The owner window handle.</p>
-</dd>
-    <dt><code>defaultColor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a></dt>
-    <dd><p>The default color.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a>?</dt>
-    <dd><p>The chosen color.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_System_IntPtr_System_Drawing_Color__remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>For more customization, create an instance of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html">ColorPickerDialog</a> class.</p>
-</div>
-
-
-
-
-  <a id="FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_" data-uid="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show*"></a>
-
-  <h3 id="FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_System_IntPtr_System_Drawing_Color_System_Drawing_Color___" data-uid="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.Show(System.IntPtr,System.Drawing.Color,System.Drawing.Color[])">
-  Show(nint, Color, Color[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Dialogs/ColorPickerDialog.cs/#L206"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Shows the color dialog modally.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color? Show(nint hwnd, Color defaultColor, Color[] customColors)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>hwnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
-    <dd><p>The owner window handle.</p>
-</dd>
-    <dt><code>defaultColor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a></dt>
-    <dd><p>The default color.</p>
-</dd>
-    <dt><code>customColors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a>[]</dt>
-    <dd><p>The array of custom colors in the dialog.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a>?</dt>
-    <dd><p>The chosen color.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-  <h4 class="section" id="FireBlade_WinInteropUtils_Dialogs_ColorPickerDialog_Show_System_IntPtr_System_Drawing_Color_System_Drawing_Color____remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>For more customization, create an instance of the <a class="xref" href="FireBlade.WinInteropUtils.Dialogs.ColorPickerDialog.html">ColorPickerDialog</a> class.</p>
 </div>
 

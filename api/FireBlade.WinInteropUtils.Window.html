@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Window | WinInteropUtils </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Window | WinInteropUtils ">
+      
+      <meta name="description" content="Provides methods for managing Win32 windows.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="WinInteropUtils">
+            WinInteropUtils
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FireBlade.WinInteropUtils.Window">
+
+
+
+  <h1 id="FireBlade_WinInteropUtils_Window" data-uid="FireBlade.WinInteropUtils.Window" class="text-break">
+Class Window  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FireBlade.html">FireBlade</a>.<a class="xref" href="FireBlade.WinInteropUtils.html">WinInteropUtils</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>WinInteropUtils.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides methods for managing Win32 windows.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Window : IHandle</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Window</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="FireBlade.WinInteropUtils.IHandle.html">IHandle</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="FireBlade_WinInteropUtils_Window__ctor_" data-uid="FireBlade.WinInteropUtils.Window.#ctor*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window__ctor_FireBlade_WinInteropUtils_ExWindowStyles_System_String_System_String_System_UInt32_System_Drawing_Point_System_Drawing_Size_FireBlade_WinInteropUtils_Window_System_Nullable_System_IntPtr__System_Object_" data-uid="FireBlade.WinInteropUtils.Window.#ctor(FireBlade.WinInteropUtils.ExWindowStyles,System.String,System.String,System.UInt32,System.Drawing.Point,System.Drawing.Size,FireBlade.WinInteropUtils.Window,System.Nullable{System.IntPtr},System.Object)">
+  Window(ExWindowStyles, string, string, uint, Point, Size, Window?, nint?, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L580"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an overlapped, pop-up, or child window with an extended window style.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Window(ExWindowStyles exStyle, string className, string windowName, uint style, Point location, Size size, Window? parent = null, nint? hMenu = null, object? param = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>exStyle</code> <a class="xref" href="FireBlade.WinInteropUtils.ExWindowStyles.html">ExWindowStyles</a></dt>
+    <dd><p>The extended window style of the window being created.</p>
+</dd>
+    <dt><code>className</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A class name string or a class atom.</p>
+</dd>
+    <dt><code>windowName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The window name. If the window style specifies a title bar, the window title specified in <code class="paramref">windowName</code> is displayed in the title bar. When using the function to create controls, such as buttons, check boxes, and static controls,
+use <code class="paramref">windowName</code> to specify the text of the control. When creating a static control with the <code>SS_ICON</code> style, use <code class="paramref">windowName</code> to specify the icon name or identifier. To specify an identifier, use the syntax &quot;#num&quot;.</p>
+</dd>
+    <dt><code>style</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The style of the window being created. This parameter can be a bitwise OR (<code>|</code>) combination of constants from the normal <a class="xref" href="FireBlade.WinInteropUtils.WindowStyles.html">WindowStyles</a>, combined with any additional control style values.</p>
+</dd>
+    <dt><code>location</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.point">Point</a></dt>
+    <dd><p>The initial position of the window. For an overlapped or pop-up window, the location is relative to the top-left corner of the screen. For a child window, the location is relative to the top-left corner of the parent window's client area. If this parameter is set to <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_WindowDefaultLocation">WindowDefaultLocation</a>, Windows automatically selects the position.</p>
+</dd>
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.size">Size</a></dt>
+    <dd><p>The initial size of the window, in device units. If this parameter is set to <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_WindowDefaultSize">WindowDefaultSize</a>, Windows automatically selects a size.</p>
+</dd>
+    <dt><code>parent</code> <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd><p>The parent or owner window of the window being created. To create a child window or an owned window, supply a valid window. This parameter is optional for pop-up windows.</p>
+</dd>
+    <dt><code>hMenu</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>?</dt>
+    <dd><p>A handle to a menu, or specifies a child-window identifier, depending on the window style. For an overlapped or pop-up window, <code class="paramref">hMenu</code> identifies the menu to be used with the window; it can be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the class menu is to be used. For a child window, <code class="paramref">hMenu</code> specifies the child-window identifier, an integer value used by a dialog box control
+to notify its parent about events. The application determines the child-window identifier; it must be unique for all child windows with the same parent window.</p>
+</dd>
+    <dt><code>param</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Pointer to a value to be passed to the window through the <code>CREATESTRUCT</code> structure (lpCreateParams member) pointed to by the <code>lParam</code> parameter of the <code>WM_CREATE</code> message. This message is sent to the created window by this function before it returns. See the Memory Notes section in Remarks for more info.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Window__ctor_FireBlade_WinInteropUtils_ExWindowStyles_System_String_System_String_System_UInt32_System_Drawing_Point_System_Drawing_Size_FireBlade_WinInteropUtils_Window_System_Nullable_System_IntPtr__System_Object__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The function sends <code>WM_NCCREATE</code>, <code>WM_NCCALCSIZE</code>, and <code>WM_CREATE</code> messages to the window being created.</p>
+<p>If the created window is a child window, its default position is at the bottom of the Z-order. If the created window is a top-level window, its default position
+is at the top of the Z-order (but beneath all topmost windows unless the created window is itself topmost).</p>
+<p>For information on controlling whether the Taskbar displays a button for the created window, see
+<a href="https://learn.microsoft.com/windows/desktop/shell/taskbar">Managing Taskbar Buttons</a>.</p>
+<p>The <a class="xref" href="FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_NoActivate">NoActivate</a> value for <code class="paramref">exStyle</code> prevents foreground activation by the system.
+To prevent queue activation when the user clicks on the window, you must process the <code>WM_MOUSEACTIVATE</code> message appropriately.
+To bring the window to the foreground or to activate it programmatically, use <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_MoveToForeground">MoveToForeground()</a> or <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SetActive">SetActive()</a>.
+Returning <code>FALSE</code> (1) to <code>WM_NCACTIVATE</code> prevents the window from losing queue activation. However, the return value is ignored at
+activation time.</p>
+<h1>Memory Notes</h1>
+If you set the <code class="paramref">param</code> parameter to a non-<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> value, the <code>lParam</code> parameter inside the <code>WM_CREATE</code> message
+will point to a
+</div>
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FireBlade_WinInteropUtils_Window_WindowDefaultLocation" data-uid="FireBlade.WinInteropUtils.Window.WindowDefaultLocation">
+  WindowDefaultLocation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L537"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the default location for a window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Point WindowDefaultLocation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.point">Point</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FireBlade_WinInteropUtils_Window_WindowDefaultSize" data-uid="FireBlade.WinInteropUtils.Window.WindowDefaultSize">
+  WindowDefaultSize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L542"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the default size for a window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Size WindowDefaultSize</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.size">Size</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="FireBlade_WinInteropUtils_Window_Enabled_" data-uid="FireBlade.WinInteropUtils.Window.Enabled*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_Enabled" data-uid="FireBlade.WinInteropUtils.Window.Enabled">
+  Enabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L708"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the enabled state of the window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Enabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Window_Handle_" data-uid="FireBlade.WinInteropUtils.Window.Handle*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_Handle" data-uid="FireBlade.WinInteropUtils.Window.Handle">
+  Handle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the handle (HWND) of the window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public nint Handle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Window_Parent_" data-uid="FireBlade.WinInteropUtils.Window.Parent*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_Parent" data-uid="FireBlade.WinInteropUtils.Window.Parent">
+  Parent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L508"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the parent window of this <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Window? Parent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Window_Parent_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To obtain a window's owner window, use <code>GetWindow</code> with the <code>GW_OWNER</code> flag. To obtain
+the parent window and not the owner, use <code>GetAncestor</code> with the <code>GA_PARENT</code> flag.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Window_State_" data-uid="FireBlade.WinInteropUtils.Window.State*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_State" data-uid="FireBlade.WinInteropUtils.Window.State">
+  State
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the state of the window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WindowState State { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.WindowState.html">WindowState</a></dt>
+    <dd><p>The state of the window.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Window_Text_" data-uid="FireBlade.WinInteropUtils.Window.Text*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_Text" data-uid="FireBlade.WinInteropUtils.Window.Text">
+  Text
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the text of the window. For top-level windows, this is usually the window title. For controls, this is the text displayed on the control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Text { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Window_Visible_" data-uid="FireBlade.WinInteropUtils.Window.Visible*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_Visible" data-uid="FireBlade.WinInteropUtils.Window.Visible">
+  Visible
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L664"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the visibility of the window. For more options, use the <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Show_FireBlade_WinInteropUtils_WindowShowCommand_">Show(WindowShowCommand)</a> or <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_ShowAsync_FireBlade_WinInteropUtils_WindowShowCommand_">ShowAsync(WindowShowCommand)</a> functions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Visible { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FireBlade_WinInteropUtils_Window_Close_" data-uid="FireBlade.WinInteropUtils.Window.Close*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_Close" data-uid="FireBlade.WinInteropUtils.Window.Close">
+  Close()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L625"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Closes the window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Close()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Window_Close_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>There is a difference between closing a window and destroying a window. Closing a window sends the window a <code>WM_CLOSE</code>
+message, which the app can then handle to prompt the user to, for example, save their changes. If the app handles <code>WM_CLOSE</code>
+the app can call the <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Destroy">Destroy()</a> function, which actually destroys the window. The
+<a class="xref" href="FireBlade.WinInteropUtils.WindowClass.html#FireBlade_WinInteropUtils_WindowClass_DefaultWndProc_FireBlade_WinInteropUtils_Window_System_UInt32_System_UIntPtr_System_Object_">DefaultWndProc(Window, uint, nuint, object)</a> automatically does this (without a prompt). Destroying the window
+is when the actual exiting happens. On destroy, the window receives a <code>WM_DESTROY</code> message.</p>
+<p>For more details, see <a href="https://learn.microsoft.com/windows/win32/learnwin32/closing-the-window">Closing the Window</a>.</p>
+<p>To destroy a window, an application must use the <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Destroy">Destroy()</a> function.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Window_Destroy_" data-uid="FireBlade.WinInteropUtils.Window.Destroy*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_Destroy" data-uid="FireBlade.WinInteropUtils.Window.Destroy">
+  Destroy()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L647"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Destroys the window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Destroy()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the function succeeded; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Window_Destroy_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The function sends <code>WM_DESTROY</code> and <code>WM_NCDESTROY</code> messages to the window to deactivate it and remove the keyboard focus
+from it. The function also destroys the window's menu, destroys timers, removes clipboard ownership, and breaks the clipboard
+viewer chain (if the window is at the top of the viewer chain).</p>
+<p>If the specified window is a parent or owner window, the <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Destroy">Destroy()</a> function automatically destroys the associated child
+or owned windows when it destroys the parent or owner window. The function first destroys child or owned windows, and then it destroys
+the parent or owner window.</p>
+<p><a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Destroy">Destroy()</a> also destroys modeless dialog boxes.</p>
+<p>A thread cannot use <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Destroy">Destroy()</a> to destroy a window created by a different thread.</p>
+<p>If the window being destroyed is a child window that does not have the
+<a class="xref" href="FireBlade.WinInteropUtils.ExWindowStyles.html#FireBlade_WinInteropUtils_ExWindowStyles_NoParentNotify">NoParentNotify</a> style, a <code>WM_PARENTNOTIFY</code> message is sent to the parent.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Window_Exists_" data-uid="FireBlade.WinInteropUtils.Window.Exists*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_Exists_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.Window.Exists(System.IntPtr)">
+  Exists(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified window handle identifies an existing window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Exists(nint hwnd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hwnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>A handle to the window to be tested.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the window handle identifies an existing window; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Window_Exists_System_IntPtr__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>A thread should not use <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Exists_System_IntPtr_">Exists(nint)</a> for a window that it did not create because the window could be
+destroyed after this function was called. Further, because window handles are recycled the handle could
+even point to a different window.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Window_FromHandle_" data-uid="FireBlade.WinInteropUtils.Window.FromHandle*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_FromHandle_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.Window.FromHandle(System.IntPtr)">
+  FromHandle(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a> from an existing handle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Window? FromHandle(nint hwnd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hwnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>The handle of the window.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd><p>A <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a> corresponding to the handle specified by <code class="paramref">hwnd</code>,
+or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the window does not exist.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Window_FromPoint_" data-uid="FireBlade.WinInteropUtils.Window.FromPoint*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_FromPoint_System_Drawing_Point_" data-uid="FireBlade.WinInteropUtils.Window.FromPoint(System.Drawing.Point)">
+  FromPoint(Point)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L346"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the window that is under the specified point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Window? FromPoint(Point pt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.point">Point</a></dt>
+    <dd><p>The point to be checked.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd><p>The window that is under the point. If no window exists at the given point, the return value is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+If the point is over a static text control, the return value is the window under the static text control.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Window_GetWindowLongPtr_" data-uid="FireBlade.WinInteropUtils.Window.GetWindowLongPtr*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_GetWindowLongPtr_System_Int32_" data-uid="FireBlade.WinInteropUtils.Window.GetWindowLongPtr(System.Int32)">
+  GetWindowLongPtr(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L372"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves information about the specified window. The function also retrieves the value at a specified offset into the extra window memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public nint GetWindowLongPtr(int nIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based offset to the value to be retrieved. Valid values are in the range zero through the number of bytes of extra window memory, minus the size of a LONG_PTR.
+To retrieve any other value, specify one of the <a class="xref" href="FireBlade.WinInteropUtils.WindowLongPtr.html">WindowLongPtr</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>If the function succeeds, the return value is the requested value.</p>
+<pre><code> If the function fails, the return value is zero. To get extended error information, call &lt;xref href=&quot;System.Runtime.InteropServices.Marshal.GetLastPInvokeError&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt;.
+
+ If &lt;xref href=&quot;FireBlade.WinInteropUtils.Window.SetWindowLongPtr(System.Int32%2cSystem.IntPtr)&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; has not been called previously, &lt;xref href=&quot;FireBlade.WinInteropUtils.Window.GetWindowLongPtr(System.Int32)&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; returns zero for values
+ in the extra window or class memory.
+</code></pre>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Window_GetWindowLongPtr_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Reserve extra window memory by specifying a nonzero value in the cbWndExtra member
+of the <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/ns-winuser-wndclassexa">WNDCLASSEX</a> structure used
+with the <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-registerclassexa">RegisterClassEx</a> function.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Window_MoveToForeground_" data-uid="FireBlade.WinInteropUtils.Window.MoveToForeground*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_MoveToForeground" data-uid="FireBlade.WinInteropUtils.Window.MoveToForeground">
+  MoveToForeground()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L756"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Brings the thread that created the window into the foreground and activates the window. Keyboard input is directed to the window, and various
+visual cues are changed for the user. The system assigns a slightly higher priority to the thread that created the foreground window than it does to
+other threads.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MoveToForeground()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the window was brought to the foreground; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Window_MoveToForeground_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The system restricts which processes can set the foreground window. A process can set the foreground window by
+calling <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_MoveToForeground">MoveToForeground()</a> only if:</p>
+<ul><li>
+        All of the following conditions are true:
+        <ul><li>The calling process belongs to a desktop application, not a UWP app or a Windows Store app designed for Windows 8 or 8.1.</li><li>The foreground process has not disabled calls to <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_MoveToForeground">MoveToForeground()</a> by a previous call
+            to the <code>LockSetForegroundWindow</code> function.</li><li>No menus are active.</li></ul>
+    </li><li>
+        Additionally, at least one of the following conditions is true:
+        <ul><li>The foreground lock time-out has expired.</li><li>The calling process is the foreground process.</li><li>The calling process was started by the foreground process.</li><li>There is currently no foreground window, and thus no foreground process.</li><li>The calling process received the last input event.</li><li>Either the foreground process or the calling process is being debugged.</li></ul>
+    </li></ul>
+<p>It is possible for a process to be denied the right to set the foreground window even if it meets these conditions.</p>
+<p>An application cannot force a window to the foreground while the user is working with another window. Instead, Windows flashes the taskbar button
+of the window to notify the user.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Window_PostMessage_" data-uid="FireBlade.WinInteropUtils.Window.PostMessage*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_PostMessage_System_UInt32_System_UIntPtr_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.Window.PostMessage(System.UInt32,System.UIntPtr,System.IntPtr)">
+  PostMessage(uint, nuint, nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L493"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Places (posts) a message in the message queue associated with the thread that created the specified window and returns without waiting
+for the thread to process the message. <!-- To post a message in the message queue associated with a thread, use the PostThreadMessage function. --></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PostMessage(uint uMsg, nuint wParam, nint lParam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>uMsg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The message to be posted.</p>
+    For lists of the system-provided messages,
+    see <a href="https://learn.microsoft.com/en-us/windows/desktop/winmsg/about-messages-and-message-queues">System-Defined Messages</a>.
+</dd>
+    <dt><code>wParam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd><p>Additional message-specific information.</p>
+</dd>
+    <dt><code>lParam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>Additional message-specific information.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Window_PostMessage_System_UInt32_System_UIntPtr_System_IntPtr__examples">Examples</h4>
+  <p>The following example shows how to post a private window message using the <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_PostMessage_System_UInt32_System_UIntPtr_System_IntPtr_">PostMessage(uint, nuint, nint)</a> function. Assume
+you defined a private window message called <code>WM_COMPLETE</code>:</p>
+<pre><code class="lang-csharp">private const int WM_USER = 0x0400;
+private const int WM_COMPLETE = WM_USER + 0;</code></pre>
+<p>You can post a message to the message queue associated with the thread that created the specified window as shown below:</p>
+<pre><code class="lang-csharp">var time = DateTime.Now;
+var window = Window.FromHandle(hwnd);
+
+window.PostMessage(WM_COMPLETE, 0, (nint)time.ToFileTimeUtc());</code></pre>
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Window_PostMessage_System_UInt32_System_UIntPtr_System_IntPtr__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When a message is blocked by UIPI the last error is set to 5 (access denied).</p>
+<p>Messages in a message queue are retrieved by calls to the <code>GetMessage</code> or <code>PeekMessage</code> function.</p>
+<p>Applications that need to communicate using <code>HWND_BROADCAST</code> should use the <a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_RegisterWindowMessage_System_String_">RegisterWindowMessage(string)</a> function to
+obtain a unique message for inter-application communication.</p>
+<p>The system only does marshalling for system messages (those in the range 0 to (<code>WM_USER</code>-1)). To send other messages (those &gt;= <code>WM_USER</code>) to
+another process, you must do custom marshalling.</p>
+<p>If you send a message in the range below <code>WM_USER</code> to the asynchronous message
+functions (<a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_PostMessage_System_UInt32_System_UIntPtr_System_IntPtr_">PostMessage(uint, nuint, nint)</a>, SendNotifyMessage, and SendMessageCallback), its message parameters cannot
+include pointers. Otherwise, the operation will fail. The functions will return before the receiving thread has had a chance to process the
+message and the sender will free the memory before it is used.</p>
+<p>Do not post the <code>WM_QUIT</code> message using <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_PostMessage_System_UInt32_System_UIntPtr_System_IntPtr_">PostMessage(uint, nuint, nint)</a>; use the PostQuitMessage function.</p>
+<p>An accessibility application can use <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_PostMessage_System_UInt32_System_UIntPtr_System_IntPtr_">PostMessage(uint, nuint, nint)</a> to post <code>WM_APPCOMMAND</code> messages to the
+shell to launch applications. This functionality is not guaranteed to work for other types of applications.</p>
+<p>There is a limit of 10,000 posted messages per message queue. This limit should be sufficiently large. If your application exceeds the limit, it should be redesigned to avoid consuming so many system resources. To adjust this limit,
+modify the following registry key:</p>
+<pre><code class="lang-csharp">HKEY_LOCAL_MACHINE
+    SOFTWARE
+        Microsoft
+            Windows NT
+                CurrentVersion
+                    Windows
+                        USERPostMessageLimit</code></pre>
+<p>The minimum acceptable value is 4000.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.comexception">COMException</a></dt>
+    <dd><p>The 10,000 message quota has been exceeded. There is not enough qouta available to process this command.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.comexception">COMException</a></dt>
+    <dd><p>An unknown error occured.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_Window_SendMessage_" data-uid="FireBlade.WinInteropUtils.Window.SendMessage*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_Boolean_System_Boolean_" data-uid="FireBlade.WinInteropUtils.Window.SendMessage(System.UInt32,System.Boolean,System.Boolean)">
+  SendMessage(uint, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends the specified message to the window. The <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(uint, nuint, nint)</a> function calls the window procedure for the specified window
+and does not return until the window procedure has processed the message.</p>
+<p>To send a message and return immediately, use the <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-sendmessagecallbacka">SendMessageCallback</a>
+or <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-sendnotifymessagea">SendNotifyMessage</a> function.
+To post a message to a thread's message queue and return immediately, use the
+<a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-postmessagea">PostMessage</a>
+or <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-postthreadmessagea">PostThreadMessage</a> function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public nint SendMessage(uint uMsg, bool wParam, bool lParam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>uMsg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The message to be sent.</p>
+<pre><code> For lists of the system-provided messages, see
+ &lt;a href=&quot;https://learn.microsoft.com/en-us/windows/desktop/winmsg/about-messages-and-message-queues&quot;&gt;System-Defined Messages&lt;/a&gt;.
+</code></pre>
+</dd>
+    <dt><code>wParam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Additional message-specific information.</p>
+</dd>
+    <dt><code>lParam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Additional message-specific information.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>The return value specifies the result of the message processing; it depends on the message sent.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_Boolean_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Message sending is subject to UIPI. The thread of a process can send messages only to message queues of threads in processes of lesser or equal integrity level.
+When a message is blocked by UIPI the last error, retrieved with <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshal.getlastpinvokeerror">GetLastPInvokeError()</a>, is set to 5 (access denied).</p>
+<p>Applications that need to communicate using HWND_BROADCAST should use the
+<a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea">RegisterWindowMessage</a> function to obtain a
+unique message for inter-application communication.</p>
+<p>The system only does marshalling for system messages (those in the range 0 to (WM_USER-1)). To send other messages (those &gt;= WM_USER) to another process,
+you must do custom marshalling.</p>
+<p>If the specified window was created by the calling thread, the window procedure is called immediately as a subroutine.
+If the specified window was created by a different thread, the system switches to that thread and calls the appropriate window procedure.
+Messages sent between threads are processed only when the receiving thread executes message retrieval code.The sending thread is blocked until
+the receiving thread processes the message. However, the sending thread will process incoming nonqueued messages while waiting for its message to be processed.
+To prevent this, use <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-sendmessagetimeouta">SendMessageTimeout</a>
+with SMTO_BLOCK set. For more information on non-queued messages, see
+<a href="https://learn.microsoft.com/en-us/windows/desktop/winmsg/about-messages-and-message-queues">Messages and Message Queues</a>.</p>
+<p>An accessibility application can use <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(uint, nuint, nint)</a> to send WM_APPCOMMAND messages to the shell to launch applications.
+This functionality is not guaranteed to work for other types of applications.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Window_SendMessage_" data-uid="FireBlade.WinInteropUtils.Window.SendMessage*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_Boolean_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.Window.SendMessage(System.UInt32,System.Boolean,System.IntPtr)">
+  SendMessage(uint, bool, nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends the specified message to the window. The <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(uint, nuint, nint)</a> function calls the window procedure for the specified window
+and does not return until the window procedure has processed the message.</p>
+<p>To send a message and return immediately, use the <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-sendmessagecallbacka">SendMessageCallback</a>
+or <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-sendnotifymessagea">SendNotifyMessage</a> function.
+To post a message to a thread's message queue and return immediately, use the
+<a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-postmessagea">PostMessage</a>
+or <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-postthreadmessagea">PostThreadMessage</a> function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public nint SendMessage(uint uMsg, bool wParam, nint lParam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>uMsg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The message to be sent.</p>
+<pre><code> For lists of the system-provided messages, see
+ &lt;a href=&quot;https://learn.microsoft.com/en-us/windows/desktop/winmsg/about-messages-and-message-queues&quot;&gt;System-Defined Messages&lt;/a&gt;.
+</code></pre>
+</dd>
+    <dt><code>wParam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Additional message-specific information.</p>
+</dd>
+    <dt><code>lParam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>Additional message-specific information.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>The return value specifies the result of the message processing; it depends on the message sent.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_Boolean_System_IntPtr__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Message sending is subject to UIPI. The thread of a process can send messages only to message queues of threads in processes of lesser or equal integrity level.
+When a message is blocked by UIPI the last error, retrieved with <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshal.getlastpinvokeerror">GetLastPInvokeError()</a>, is set to 5 (access denied).</p>
+<p>Applications that need to communicate using HWND_BROADCAST should use the
+<a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea">RegisterWindowMessage</a> function to obtain a
+unique message for inter-application communication.</p>
+<p>The system only does marshalling for system messages (those in the range 0 to (WM_USER-1)). To send other messages (those &gt;= WM_USER) to another process,
+you must do custom marshalling.</p>
+<p>If the specified window was created by the calling thread, the window procedure is called immediately as a subroutine.
+If the specified window was created by a different thread, the system switches to that thread and calls the appropriate window procedure.
+Messages sent between threads are processed only when the receiving thread executes message retrieval code.The sending thread is blocked until
+the receiving thread processes the message. However, the sending thread will process incoming nonqueued messages while waiting for its message to be processed.
+To prevent this, use <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-sendmessagetimeouta">SendMessageTimeout</a>
+with SMTO_BLOCK set. For more information on non-queued messages, see
+<a href="https://learn.microsoft.com/en-us/windows/desktop/winmsg/about-messages-and-message-queues">Messages and Message Queues</a>.</p>
+<p>An accessibility application can use <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(uint, nuint, nint)</a> to send WM_APPCOMMAND messages to the shell to launch applications.
+This functionality is not guaranteed to work for other types of applications.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Window_SendMessage_" data-uid="FireBlade.WinInteropUtils.Window.SendMessage*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_UIntPtr_System_Boolean_" data-uid="FireBlade.WinInteropUtils.Window.SendMessage(System.UInt32,System.UIntPtr,System.Boolean)">
+  SendMessage(uint, nuint, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends the specified message to the window. The <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(uint, nuint, nint)</a> function calls the window procedure for the specified window
+and does not return until the window procedure has processed the message.</p>
+<p>To send a message and return immediately, use the <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-sendmessagecallbacka">SendMessageCallback</a>
+or <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-sendnotifymessagea">SendNotifyMessage</a> function.
+To post a message to a thread's message queue and return immediately, use the
+<a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-postmessagea">PostMessage</a>
+or <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-postthreadmessagea">PostThreadMessage</a> function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public nint SendMessage(uint uMsg, nuint wParam, bool lParam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>uMsg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The message to be sent.</p>
+<pre><code> For lists of the system-provided messages, see
+ &lt;a href=&quot;https://learn.microsoft.com/en-us/windows/desktop/winmsg/about-messages-and-message-queues&quot;&gt;System-Defined Messages&lt;/a&gt;.
+</code></pre>
+</dd>
+    <dt><code>wParam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd><p>Additional message-specific information.</p>
+</dd>
+    <dt><code>lParam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Additional message-specific information.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>The return value specifies the result of the message processing; it depends on the message sent.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_UIntPtr_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Message sending is subject to UIPI. The thread of a process can send messages only to message queues of threads in processes of lesser or equal integrity level.
+When a message is blocked by UIPI the last error, retrieved with <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshal.getlastpinvokeerror">GetLastPInvokeError()</a>, is set to 5 (access denied).</p>
+<p>Applications that need to communicate using HWND_BROADCAST should use the
+<a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea">RegisterWindowMessage</a> function to obtain a
+unique message for inter-application communication.</p>
+<p>The system only does marshalling for system messages (those in the range 0 to (WM_USER-1)). To send other messages (those &gt;= WM_USER) to another process,
+you must do custom marshalling.</p>
+<p>If the specified window was created by the calling thread, the window procedure is called immediately as a subroutine.
+If the specified window was created by a different thread, the system switches to that thread and calls the appropriate window procedure.
+Messages sent between threads are processed only when the receiving thread executes message retrieval code.The sending thread is blocked until
+the receiving thread processes the message. However, the sending thread will process incoming nonqueued messages while waiting for its message to be processed.
+To prevent this, use <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-sendmessagetimeouta">SendMessageTimeout</a>
+with SMTO_BLOCK set. For more information on non-queued messages, see
+<a href="https://learn.microsoft.com/en-us/windows/desktop/winmsg/about-messages-and-message-queues">Messages and Message Queues</a>.</p>
+<p>An accessibility application can use <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(uint, nuint, nint)</a> to send WM_APPCOMMAND messages to the shell to launch applications.
+This functionality is not guaranteed to work for other types of applications.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Window_SendMessage_" data-uid="FireBlade.WinInteropUtils.Window.SendMessage*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_UIntPtr_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.Window.SendMessage(System.UInt32,System.UIntPtr,System.IntPtr)">
+  SendMessage(uint, nuint, nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends the specified message to the window. The <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(uint, nuint, nint)</a> function calls the window procedure for the specified window
+and does not return until the window procedure has processed the message.</p>
+<p>To send a message and return immediately, use the <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-sendmessagecallbacka">SendMessageCallback</a>
+or <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-sendnotifymessagea">SendNotifyMessage</a> function.
+To post a message to a thread's message queue and return immediately, use the
+<a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-postmessagea">PostMessage</a>
+or <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-postthreadmessagea">PostThreadMessage</a> function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public nint SendMessage(uint uMsg, nuint wParam, nint lParam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>uMsg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The message to be sent.</p>
+<pre><code> For lists of the system-provided messages, see
+ &lt;a href=&quot;https://learn.microsoft.com/en-us/windows/desktop/winmsg/about-messages-and-message-queues&quot;&gt;System-Defined Messages&lt;/a&gt;.
+</code></pre>
+</dd>
+    <dt><code>wParam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd><p>Additional message-specific information.</p>
+</dd>
+    <dt><code>lParam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>Additional message-specific information.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>The return value specifies the result of the message processing; it depends on the message sent.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_UIntPtr_System_IntPtr__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Message sending is subject to UIPI. The thread of a process can send messages only to message queues of threads in processes of lesser or equal integrity level.
+When a message is blocked by UIPI the last error, retrieved with <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshal.getlastpinvokeerror">GetLastPInvokeError()</a>, is set to 5 (access denied).</p>
+<p>Applications that need to communicate using HWND_BROADCAST should use the
+<a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea">RegisterWindowMessage</a> function to obtain a
+unique message for inter-application communication.</p>
+<p>The system only does marshalling for system messages (those in the range 0 to (WM_USER-1)). To send other messages (those &gt;= WM_USER) to another process,
+you must do custom marshalling.</p>
+<p>If the specified window was created by the calling thread, the window procedure is called immediately as a subroutine.
+If the specified window was created by a different thread, the system switches to that thread and calls the appropriate window procedure.
+Messages sent between threads are processed only when the receiving thread executes message retrieval code.The sending thread is blocked until
+the receiving thread processes the message. However, the sending thread will process incoming nonqueued messages while waiting for its message to be processed.
+To prevent this, use <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-sendmessagetimeouta">SendMessageTimeout</a>
+with SMTO_BLOCK set. For more information on non-queued messages, see
+<a href="https://learn.microsoft.com/en-us/windows/desktop/winmsg/about-messages-and-message-queues">Messages and Message Queues</a>.</p>
+<p>An accessibility application can use <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(uint, nuint, nint)</a> to send WM_APPCOMMAND messages to the shell to launch applications.
+This functionality is not guaranteed to work for other types of applications.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Window_SetActive_" data-uid="FireBlade.WinInteropUtils.Window.SetActive*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_SetActive" data-uid="FireBlade.WinInteropUtils.Window.SetActive">
+  SetActive()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L774"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Activates the window. The window must be attached to the calling thread's message queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Window SetActive()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd><p>The window that was previously active.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Window_SetActive_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SetActive">SetActive()</a> function activates a window, but not if the application is in the
+background. The window will be brought into the foreground (top of Z-Order) if its application is in the
+foreground when the system activates the window.</p>
+<p>If the window was created by the calling thread, the active window status of the calling thread is set to the handle of the window. Otherwise, the active window
+status of the calling thread is set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.win32exception">Win32Exception</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_Window_SetPos_" data-uid="FireBlade.WinInteropUtils.Window.SetPos*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_SetPos_System_Drawing_Point_System_Drawing_Size_FireBlade_WinInteropUtils_WindowSetPosOptions_FireBlade_WinInteropUtils_Window_" data-uid="FireBlade.WinInteropUtils.Window.SetPos(System.Drawing.Point,System.Drawing.Size,FireBlade.WinInteropUtils.WindowSetPosOptions,FireBlade.WinInteropUtils.Window)">
+  SetPos(Point, Size, WindowSetPosOptions, Window?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L838"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Changes the size, position, and Z order of a child, pop-up, or top-level window. These windows are ordered according to their appearance
+on the screen. The topmost window receives the highest rank and is the first window in the Z order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPos(Point pos, Size size, WindowSetPosOptions options, Window? insertAfter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.point">Point</a></dt>
+    <dd><p>The new position of the window, in client coordinates.</p>
+</dd>
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.size">Size</a></dt>
+    <dd><p>The new size of the window, in pixels.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="FireBlade.WinInteropUtils.WindowSetPosOptions.html">WindowSetPosOptions</a></dt>
+    <dd><p>The window sizing and positioning flags.</p>
+</dd>
+    <dt><code>insertAfter</code> <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd><p>The window to precede the positioned window in the Z order. This parameter must be a window handle or one of the <a class="xref" href="FireBlade.WinInteropUtils.ZOrderWindows.html">ZOrderWindows</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Window_SetPos_System_Drawing_Point_System_Drawing_Size_FireBlade_WinInteropUtils_WindowSetPosOptions_FireBlade_WinInteropUtils_Window__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>As part of the Vista re-architecture, all services were moved off the interactive desktop into Session 0. Window and window manager operations are only
+effective inside a session and cross-session attempts to manipulate the window will fail. For more information, see
+<a href="https://learn.microsoft.com/en-us/previous-versions/aa480152(v=msdn.10)">The Windows Vista Developer Story: Application Compatibility Cookbook.</a></p>
+<p>If you have changed certain window data using <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SetWindowLongPtr_System_Int32_System_IntPtr_">SetWindowLongPtr(int, nint)</a>, you must
+call <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SetPos_System_Drawing_Point_System_Drawing_Size_FireBlade_WinInteropUtils_WindowSetPosOptions_FireBlade_WinInteropUtils_Window_">SetPos(Point, Size, WindowSetPosOptions, Window?)</a> for the changes to take effect. Use the following combination for
+<code class="paramref">options</code>: <a class="xref" href="FireBlade.WinInteropUtils.WindowSetPosOptions.html#FireBlade_WinInteropUtils_WindowSetPosOptions_NoMove">NoMove</a> | <a class="xref" href="FireBlade.WinInteropUtils.WindowSetPosOptions.html#FireBlade_WinInteropUtils_WindowSetPosOptions_NoSize">NoSize</a>
+| <a class="xref" href="FireBlade.WinInteropUtils.WindowSetPosOptions.html#FireBlade_WinInteropUtils_WindowSetPosOptions_NoZOrder">NoZOrder</a> | <a class="xref" href="FireBlade.WinInteropUtils.WindowSetPosOptions.html#FireBlade_WinInteropUtils_WindowSetPosOptions_FrameChanged">FrameChanged</a>.</p>
+<p>A window can be made a topmost window either by setting the <code class="paramref">insertAfter</code> parameter
+to <a class="xref" href="FireBlade.WinInteropUtils.ZOrderWindows.html#FireBlade_WinInteropUtils_ZOrderWindows_TopMost">TopMost</a> and ensuring that the <a class="xref" href="FireBlade.WinInteropUtils.WindowSetPosOptions.html#FireBlade_WinInteropUtils_WindowSetPosOptions_NoZOrder">NoZOrder</a> flag is not set, or by setting a
+window's position in the Z order so that it is above any existing topmost windows. When a non-topmost window is made topmost, its owned
+windows are also made topmost. Its owners, however, are not changed.</p>
+<p>If neither the <a class="xref" href="FireBlade.WinInteropUtils.WindowSetPosOptions.html#FireBlade_WinInteropUtils_WindowSetPosOptions_NoActivate">NoActivate</a> nor <a class="xref" href="FireBlade.WinInteropUtils.WindowSetPosOptions.html#FireBlade_WinInteropUtils_WindowSetPosOptions_NoZOrder">NoZOrder</a> flag is specified
+(that is, when the application requests that a window be simultaneously activated and its position in the Z order changed), the value specified
+in <code class="paramref">insertAfter</code> is used only in the following circumstances:
+<ul><li>Neither the <a class="xref" href="FireBlade.WinInteropUtils.ZOrderWindows.html#FireBlade_WinInteropUtils_ZOrderWindows_TopMost">TopMost</a> nor <a class="xref" href="FireBlade.WinInteropUtils.ZOrderWindows.html#FireBlade_WinInteropUtils_ZOrderWindows_NoTopMost">NoTopMost</a> flag is specified
+    in <code class="paramref">insertAfter</code>.</li><li>The window is not the active window.</li></ul>
+
+<p>An application cannot activate an inactive window without also bringing it to the top of the Z order. Applications can change an activated
+window's position in the Z order without restrictions, or it can activate a window and then move it to the top of the topmost or non-topmost windows.</p>
+<p>If a topmost window is repositioned to the bottom (<a class="xref" href="FireBlade.WinInteropUtils.ZOrderWindows.html#FireBlade_WinInteropUtils_ZOrderWindows_Bottom">Bottom</a>) of the Z order or after any non-topmost window, it is no
+longer topmost. When a topmost window is made non-topmost, its owners and its owned windows are also made non-topmost windows.</p>
+<p>A non-topmost window can own a topmost window, but the reverse cannot occur. Any window (for example, a dialog box) owned by a topmost window is itself
+made a topmost window, to ensure that all owned windows stay above their owner.</p>
+<p>If an application is not in the foreground, and should be in the foreground, it must call the <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_MoveToForeground">MoveToForeground()</a> function.</p>
+<p>To use <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SetPos_System_Drawing_Point_System_Drawing_Size_FireBlade_WinInteropUtils_WindowSetPosOptions_FireBlade_WinInteropUtils_Window_">SetPos(Point, Size, WindowSetPosOptions, Window?)</a> to bring a window to the top, the process that
+owns the window must have <code>SetForegroundWindow</code> permission.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.win32exception">Win32Exception</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_Window_SetWindowLongPtr_" data-uid="FireBlade.WinInteropUtils.Window.SetWindowLongPtr*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_SetWindowLongPtr_System_Int32_System_IntPtr_" data-uid="FireBlade.WinInteropUtils.Window.SetWindowLongPtr(System.Int32,System.IntPtr)">
+  SetWindowLongPtr(int, nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L416"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Changes an attribute of the specified window. The function also sets a value at the specified offset in the extra window memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public nint SetWindowLongPtr(int nIndex, nint dwNewLong)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based offset to the value to be set. Valid values are in the range zero through the number of bytes of extra window memory, minus the size of a LONG_PTR. To set any other value, specify one of the <a class="xref" href="FireBlade.WinInteropUtils.WindowLongPtr.html">WindowLongPtr</a>.</p>
+</dd>
+    <dt><code>dwNewLong</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>The replacement value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>If the function succeeds, the return value is the previous value of the specified offset.</p>
+<pre><code> If the function fails, the return value is zero. To get extended error information, call &lt;xref href=&quot;System.Runtime.InteropServices.Marshal.GetLastPInvokeError&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt;.
+
+ If the previous value is zero and the function succeeds, the return value is zero, but the function does not clear the last error information.
+ To determine success or failure, clear the last error information by calling SetLastError with 0, then call &lt;xref href=&quot;FireBlade.WinInteropUtils.Window.SetWindowLongPtr(System.Int32%2cSystem.IntPtr)&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt;. Function failure will be indicated by a return value of zero and a &lt;xref href=&quot;System.Runtime.InteropServices.Marshal.GetLastPInvokeError&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; result that is nonzero.
+</code></pre>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Window_SetWindowLongPtr_System_Int32_System_IntPtr__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Certain window data is cached, so changes you make using <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SetWindowLongPtr_System_Int32_System_IntPtr_">SetWindowLongPtr(int, nint)</a> will not take effect until you call the <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-setwindowpos">SetWindowPos</a> function.</p>
+<p>If you use <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SetWindowLongPtr_System_Int32_System_IntPtr_">SetWindowLongPtr(int, nint)</a> with the <a class="xref" href="FireBlade.WinInteropUtils.WindowLongPtr.html#FireBlade_WinInteropUtils_WindowLongPtr_WndProc">WndProc</a> index to replace the window procedure, the window procedure must conform to the guidelines specified in the description
+of the <a href="https://learn.microsoft.com/en-us/windows/win32/api/winuser/nc-winuser-wndproc">WndProc</a> callback function.</p>
+<p>If you use <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SetWindowLongPtr_System_Int32_System_IntPtr_">SetWindowLongPtr(int, nint)</a> with the <a class="xref" href="FireBlade.WinInteropUtils.WindowLongPtr.html#FireBlade_WinInteropUtils_WindowLongPtr_MessageResult">MessageResult</a> index to set the return value for a message processed by a dialog box procedure,
+the dialog box procedure should return <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> directly afterward. Otherwise, if you call any function that results
+in your dialog box procedure receiving a window message, the nested window message could overwrite the return value you set by using <a class="xref" href="FireBlade.WinInteropUtils.WindowLongPtr.html#FireBlade_WinInteropUtils_WindowLongPtr_MessageResult">MessageResult</a>.</p>
+<p>Calling <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SetWindowLongPtr_System_Int32_System_IntPtr_">SetWindowLongPtr(int, nint)</a> with the <a class="xref" href="FireBlade.WinInteropUtils.WindowLongPtr.html#FireBlade_WinInteropUtils_WindowLongPtr_WndProc">WndProc</a> index creates a subclass of the window class used to create the window. An application
+can subclass a system class, but should not subclass a window class created by another process.The <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SetWindowLongPtr_System_Int32_System_IntPtr_">SetWindowLongPtr(int, nint)</a> function creates
+the window subclass by changing the window procedure associated with a particular window class, causing the system to call the new window procedure
+instead of the previous one.</p>
+<p>Do not call <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SetWindowLongPtr_System_Int32_System_IntPtr_">SetWindowLongPtr(int, nint)</a> with the <a class="xref" href="FireBlade.WinInteropUtils.WindowLongPtr.html#FireBlade_WinInteropUtils_WindowLongPtr_HWNDParent">HWNDParent</a> index to change the parent of a child window. Instead, use the <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-setparent">SetParent</a> function.
+<a class="xref" href="FireBlade.WinInteropUtils.WindowLongPtr.html#FireBlade_WinInteropUtils_WindowLongPtr_HWNDParent">HWNDParent</a> is used to change the owner of a top-level window, not the parent of a child window.
+A window can have either a parent or an owner, or neither, but never both simultaneously.</p>
+<p>Calling <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SetWindowLongPtr_System_Int32_System_IntPtr_">SetWindowLongPtr(int, nint)</a> to set the style on a progress bar will reset its position.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Window_Show_" data-uid="FireBlade.WinInteropUtils.Window.Show*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_Show_FireBlade_WinInteropUtils_WindowShowCommand_" data-uid="FireBlade.WinInteropUtils.Window.Show(FireBlade.WinInteropUtils.WindowShowCommand)">
+  Show(WindowShowCommand)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L682"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the window's show state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Show(WindowShowCommand cmd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cmd</code> <a class="xref" href="FireBlade.WinInteropUtils.WindowShowCommand.html">WindowShowCommand</a></dt>
+    <dd><p>Controls how the window is to be shown.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the window was previously visible; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Window_ShowAsync_" data-uid="FireBlade.WinInteropUtils.Window.ShowAsync*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_ShowAsync_FireBlade_WinInteropUtils_WindowShowCommand_" data-uid="FireBlade.WinInteropUtils.Window.ShowAsync(FireBlade.WinInteropUtils.WindowShowCommand)">
+  ShowAsync(WindowShowCommand)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L695"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the window's show state asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowAsync(WindowShowCommand cmd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cmd</code> <a class="xref" href="FireBlade.WinInteropUtils.WindowShowCommand.html">WindowShowCommand</a></dt>
+    <dd><p>Controls how the window is to be shown.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the operation was successfully started; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_Window_ShowAsync_FireBlade_WinInteropUtils_WindowShowCommand__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Note that this funcion is not "asynchronous" in the C# sense, but that it immediatelly returns, unlike <a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Show_FireBlade_WinInteropUtils_WindowShowCommand_">Show(WindowShowCommand)</a>.</p>
+<p>This function posts a show-window event to the message queue of the given window. An application can use this function to avoid becoming
+nonresponsive while waiting for a nonresponsive application to finish processing a show-window event.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="FireBlade_WinInteropUtils_Window_op_Explicit_" data-uid="FireBlade.WinInteropUtils.Window.op_Explicit*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_op_Explicit_System_IntPtr__FireBlade_WinInteropUtils_Window" data-uid="FireBlade.WinInteropUtils.Window.op_Explicit(System.IntPtr)~FireBlade.WinInteropUtils.Window">
+  explicit operator Window(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the window handle to a <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator Window(nint hwnd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hwnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd><p>The window handle to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_Window_op_Implicit_" data-uid="FireBlade.WinInteropUtils.Window.op_Implicit*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_Window_op_Implicit_FireBlade_WinInteropUtils_Window__System_IntPtr" data-uid="FireBlade.WinInteropUtils.Window.op_Implicit(FireBlade.WinInteropUtils.Window)~System.IntPtr">
+  implicit operator nint(Window)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Window.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a> to a handle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator nint(Window wnd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wnd</code> <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a></dt>
+    <dd><p>The <a class="xref" href="FireBlade.WinInteropUtils.Window.html">Window</a> to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
