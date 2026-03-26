@@ -3,7 +3,7 @@ description: Request a change or addition to the documentation
 labels: documentation
 title: "[DOCS]"
 body:
-- type: input
+- type: textarea
   id: docissue
   attributes:
     label: What is the documentation issue?
