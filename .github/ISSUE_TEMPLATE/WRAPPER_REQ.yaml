@@ -1,7 +1,7 @@
 name: Wrapper Request
 description: Suggest a function to be wrapped in the next version of WinInteropUtils
 labels: ["enhancement"]
-title: "[REQUEST] <short description>"
+title: "[REQUEST]"
 body:
   - type: textarea
     id: "function"
