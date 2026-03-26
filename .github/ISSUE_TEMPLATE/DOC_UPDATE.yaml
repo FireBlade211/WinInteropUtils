@@ -1,0 +1,20 @@
+- name: Documentation Update
+  description: Request a change or addition to the documentation
+  labels: documentation
+  title: "[DOCS]"
+  body:
+  - type: input
+    id: docissue
+    attributes:
+      label: What is the documentation issue?
+      description: What documentation issue are you experiencing?
+      placeholder: "API documentation is missing for ..."
+    validations:
+      required: true
+  - type: checkboxes
+    id: critical-problem
+    attributes:
+      label: "Does this issue significantly hurt the documentation?"
+      description: "Does this issue make it harder to understand the purpose or behavior of the library or a specific API?"
+      options:
+        - label: "Yes, this issue makes it significantly harder to understand the documentation"
