@@ -5,14 +5,25 @@ using System.Runtime.Versioning;
 namespace FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces
 {
     /// <summary>
-    /// Exposes methods that initialize, show, and get results from the common file dialog.
+    /// Extends the <c>IFileDialog</c> interface by adding methods specific to the open dialog.
     /// </summary>
     [ComImport]
     [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
-    [Guid("42f85136-db7e-439c-85f1-e4075d135fc8")]
+    [Guid("d57c7288-d4ad-4768-be02-9d969532d960")]
     [SupportedOSPlatform("windows6.0")]
-    public partial interface IFileDialog : IModalWindow
+    public partial interface IFileOpenDialog
     {
+        // HRESULT Show(HWND hwndOwner);
+        /// <summary>
+        /// Launches the modal window.
+        /// </summary>
+        /// <param name="hwndOwner">The handle of the owner window. This value can be <see langword="null"/>.</param>
+        /// <returns>If the method succeeds, it returns <see cref="HRESULT.S_OK"/>. Otherwise, it returns an <see cref="HRESULT"/> error code,
+        /// including Macros.HResultFromWin32(<see cref="Win32ErrorCode.ERROR_CANCELLED"/>), indicating the user closed the
+        /// window by cancelling the operation.</returns>
+        [PreserveSig]
+        public HRESULT Show(nint hwndOwner);
+
         // HRESULT SetFileTypes(UINT cFileTypes, const COMDLG_FILTERSPEC *rgFilterSpec);
         /// <summary>
         /// Sets the file types that the dialog can open or save.
@@ -270,17 +281,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces
         [ObsoletedOSPlatform("windows6.1")]
         [PreserveSig]
         public HRESULT SetFilter(nint pFilter);
-    }
 
-    /// <summary>
-    /// Extends the <see cref="IFileDialog"/> interface by adding methods specific to the open dialog.
-    /// </summary>
-    [ComImport]
-    [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
-    [Guid("d57c7288-d4ad-4768-be02-9d969532d960")]
-    [SupportedOSPlatform("windows6.0")]
-    public partial interface IFileOpenDialog : IFileDialog
-    {
         // Additional methods specific to file open dialogs
         /// <summary>
         /// Gets the user's choices in a dialog that allows multiple selection.
@@ -312,15 +313,284 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces
     }
 
     /// <summary>
-    /// Extends the <see cref="IFileDialog"/> interface by adding methods specific to the save dialog, which include those that provide support for the collection
+    /// Extends the <c>IFileDialog</c> interface by adding methods specific to the save dialog, which include those that provide support for the collection
     /// of metadata to be persisted with the file.
     /// </summary>
     [ComImport]
     [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
     [Guid("84bccd23-5fde-4cdb-aea4-af64b83d78ab")]
     [SupportedOSPlatform("windows6.0")]
-    public partial interface IFileSaveDialog : IFileDialog
+    public partial interface IFileSaveDialog
     {
+        // HRESULT Show(HWND hwndOwner);
+        /// <summary>
+        /// Launches the modal window.
+        /// </summary>
+        /// <param name="hwndOwner">The handle of the owner window. This value can be <see langword="null"/>.</param>
+        /// <returns>If the method succeeds, it returns <see cref="HRESULT.S_OK"/>. Otherwise, it returns an <see cref="HRESULT"/> error code,
+        /// including Macros.HResultFromWin32(<see cref="Win32ErrorCode.ERROR_CANCELLED"/>), indicating the user closed the
+        /// window by cancelling the operation.</returns>
+        [PreserveSig]
+        public HRESULT Show(nint hwndOwner);
+
+        // HRESULT SetFileTypes(UINT cFileTypes, const COMDLG_FILTERSPEC *rgFilterSpec);
+        /// <summary>
+        /// Sets the file types that the dialog can open or save.
+        /// </summary>
+        /// <param name="cFileTypes">The number of elements in the array specified by <paramref name="rgFilterSpec"/>.</param>
+        /// <param name="rgFilterSpec">A pointer to an array of COMDLG_FILTERSPEC structures, each representing a file type.</param>
+        /// <returns>If the method succeeds, it returns <see cref="HRESULT.S_OK"/>. Otherwise, it returns
+        /// an <see cref="HRESULT"/> error code, including the following:
+        /// <list type="table">
+        /// <item>
+        /// <term><see cref="HRESULT.E_UNEXPECTED"/></term>
+        /// <description><see cref="SetFileTypes(uint, nint)"/> has already been called.</description>
+        /// </item>
+        /// <item>
+        /// <term><see cref="HRESULT.E_UNEXPECTED"/></term>
+        /// <description>The FOS_PICKFOLDERS flag was set in the <see cref="SetOptions(uint)"/> method.</description>
+        /// </item>
+        /// <item>
+        /// <term><see cref="HRESULT.E_INVALIDARG"/></term>
+        /// <description>The <paramref name="rgFilterSpec"/> parameter is <see langword="null"/>.</description>
+        /// </item>
+        /// </list>
+        /// </returns>
+        /// <remarks>
+        /// <para>When using the Open dialog, the file types declared there are used to filter the view. When using the Save
+        /// dialog, these values determine which file name extension is appended to the file name.</para>
+        /// 
+        /// This method must be called before the dialog is shown and can only be called once for each
+        /// dialog instance. File types cannot be modified once the Common Item dialog box is displayed.
+        /// </remarks>
+        /// <example>
+        /// The following code example demonstrates the use of the array of COMDLG_FILTERSPEC structures in the context
+        /// of this method. The example array consists of three COMDLG_FILTERSPEC structures. The first declares two
+        /// patterns for the dialog filter, the second declares a single pattern, and the last shows
+        /// files of all types. The variables szJPG, szBMP, and szAll are assumed to be previously declared
+        /// strings that provide a friendly name for each filter. <b>Warning: This is C++ code, as the COMDLG_FILTERSPEC struct hasn't yet been
+        /// ported to WinInteropUtils.</b>
+        /// COMDLG_FILTERSPEC rgSpec[] =
+        /// { 
+        ///    { szJPG, L"*.jpg;*.jpeg" },
+        ///    { szBMP, L"*.bmp" },
+        ///    { szAll, L"*.*" },
+        /// };
+        /// </example>
+        [PreserveSig]
+        public HRESULT SetFileTypes(uint cFileTypes, IntPtr rgFilterSpec);
+
+        // HRESULT SetFileTypeIndex(UINT iFileType);
+        /// <summary>
+        /// Sets the file type that appears as selected in the dialog.
+        /// </summary>
+        /// <param name="iFileType">The index of the file type in the file type array
+        /// passed to <see cref="SetFileTypes(uint, nint)"/> in its cFileTypes parameter. Note that this is a one-based index, not zero-based.</param>
+        /// <returns>If this method succeeds, it returns <see cref="HRESULT.S_OK"/>. Otherwise, it returns an <see cref="HRESULT"/> error code.</returns>
+        [PreserveSig]
+        public HRESULT SetFileTypeIndex(uint iFileType);
+
+        // HRESULT GetFileTypeIndex(UINT *piFileType);
+        /// <summary>
+        /// Gets the currently selected file type.
+        /// </summary>
+        /// <param name="piFileType">A pointer to a UINT value that receives the index of the selected file
+        /// type in the file type array passed to <see cref="SetFileTypes(uint, nint)"/> in its cFileTypes parameter.</param>
+        /// <returns>If this method succeeds, it returns <see cref="HRESULT.S_OK"/>. Otherwise, it returns an <see cref="HRESULT"/> error code.</returns>
+        /// <remarks>
+        /// <para><see cref="GetFileTypeIndex(out uint)"/> can be called either while the dialog is open or after it has closed.</para>
+        /// 
+        /// <i>Note: The index returned by this function is a one-based index rather than zero-based.</i>
+        /// </remarks>
+        [PreserveSig]
+        public HRESULT GetFileTypeIndex(out uint piFileType);
+
+        // HRESULT Advise(IFileDialogEvents *pfde, DWORD *pdwCookie);
+        /// <summary>
+        /// Assigns an event handler that listens for events coming from the dialog.
+        /// </summary>
+        /// <param name="pfde">A pointer to an <see href="https://learn.microsoft.com/en-us/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogevents">IFileDialogEvents</see>
+        /// implementation that will receive events from the dialog.</param>
+        /// <param name="pdwCookie">A pointer to a <c>DWORD</c> that receives a value identifying this event handler. When the client
+        /// is finished with the dialog, that client must call the <see cref="Unadvise(uint)"/> method with this value.</param>
+        /// <returns>If this method succeeds, it returns <see cref="HRESULT.S_OK"/>. Otherwise, it returns an <see cref="HRESULT"/> error code.</returns>
+        [PreserveSig]
+        public HRESULT Advise(IntPtr pfde, out uint pdwCookie);
+
+        // HRESULT Unadvise(DWORD dwCookie);
+        /// <summary>
+        /// Removes an event handler that was attached through the <see cref="Advise(nint, out uint)"/> method.
+        /// </summary>
+        /// <param name="dwCookie">The DWORD value that represents the event handler. This value is obtained through the
+        /// <c>pdwCookie</c> parameter of the <see cref="Advise(nint, out uint)"/> method.</param>
+        /// <returns>If this method succeeds, it returns <see cref="HRESULT.S_OK"/>. Otherwise, it returns an <see cref="HRESULT"/> error code.</returns>
+        [PreserveSig]
+        public HRESULT Unadvise(uint dwCookie);
+
+        // HRESULT SetOptions(FILEOPENDIALOGOPTIONS fos);
+        /// <summary>
+        /// Sets flags to control the behavior of the dialog.
+        /// </summary>
+        /// <param name="fos">One or more of the FILEOPENDIALOGOPTIONS values.</param>
+        /// <returns>If this method succeeds, it returns <see cref="HRESULT.S_OK"/>. Otherwise, it returns an
+        /// <see cref="HRESULT"/> error code.</returns>
+        /// <remarks>
+        /// Generally, this method should take the value that was retrieved by <see cref="GetOptions(out uint)"/>
+        /// and modify it to include or exclude options by setting the appropriate flags.
+        /// </remarks>
+        [PreserveSig]
+        public HRESULT SetOptions(uint fos);
+
+        // HRESULT GetOptions(FILEOPENDIALOGOPTIONS *pfos);
+        /// <summary>
+        /// Gets the current flags that are set to control dialog behavior.
+        /// </summary>
+        /// <param name="pfos">When this method returns successfully, points to a value made up of one or more of
+        /// the FILEOPENDIALOGOPTIONS values.</param>
+        /// <returns>If this method succeeds, it returns <see cref="HRESULT.S_OK"/>. Otherwise, it returns an <see cref="HRESULT"/> error code.</returns>
+        [PreserveSig]
+        public HRESULT GetOptions(out uint pfos);
+
+        // HRESULT SetDefaultFolder(IShellItem *psi);
+        /// <summary>
+        /// Sets the folder used as a default if there is not a recently used folder value available.
+        /// </summary>
+        /// <param name="psi">A pointer to the <see cref="IShellItem"/> interface that represents the folder.</param>
+        /// <returns>If this method succeeds, it returns <see cref="HRESULT.S_OK"/>. Otherwise, it returns
+        /// an <see cref="HRESULT"/> error code.</returns>
+        [PreserveSig]
+        public HRESULT SetDefaultFolder(IntPtr psi);
+
+        // HRESULT SetFolder(IShellItem *psi);
+        /// <summary>
+        /// Sets a folder that is always selected when the dialog is opened, regardless of previous user action.
+        /// </summary>
+        /// <param name="psi">A pointer to the <see cref="IShellItem"/> interface that represents the folder.</param>
+        /// <returns>If this method succeeds, it returns <see cref="HRESULT.S_OK"/>. Otherwise, it returns an <see cref="HRESULT"/> error code.</returns>
+        /// <remarks>
+        /// <para>This folder overrides any "most recently used" folder. If this method is called while the dialog is displayed,
+        /// it causes the dialog to navigate to the specified folder.</para>
+        /// 
+        /// <para>In general, we do not recommended the use of this method. If you call <see cref="SetFolder(nint)"/> before you display the dialog box,
+        /// the most recent location that the user saved to or opened from is not shown. Unless there is a very specific reason for
+        /// this behavior, it is not a good or expected user experience and should therefore be avoided. In almost all instances,
+        /// <see cref="SetDefaultFolder(nint)"/> is the better method.</para>
+        /// 
+        /// <para>As of Windows 7, if the path of the folder specified through <paramref name="psi"/> is the default path of a known folder,
+        /// the known folder's current path is used in the dialog. That path might not be the same as the path specified in <paramref name="psi"/>;
+        /// for instance, if the known folder has been redirected. If the known folder is a library (virtual folders Documents, Music, Pictures, and Videos),
+        /// the library's path is used in the dialog. If the specified library is hidden (as they are by default as of Windows 8.1),
+        /// the library's default save location is used in the dialog, such as the Microsoft OneDrive Documents folder for the Documents library.
+        /// Because of these mappings, the folder location used in the dialog might not be exactly as you specified when you called this method.</para>
+        /// </remarks>
+        [PreserveSig]
+        public HRESULT SetFolder(IntPtr psi);
+
+        // HRESULT GetFolder(IShellItem **ppsi);
+        /// <summary>
+        /// Gets either the folder currently selected in the dialog, or, if the dialog is not currently displayed,
+        /// the folder that is to be selected when the dialog is opened.
+        /// </summary>
+        /// <param name="ppsi">The address of a pointer to the <see cref="IShellItem"/> interface that represents the folder.</param>
+        /// <returns>If this method succeeds, it returns <see cref="HRESULT.S_OK"/>. Otherwise, it returns an <see cref="HRESULT"/> error code.</returns>
+        /// <remarks>
+        /// The calling application is responsible for releasing the retrieved <see cref="IShellItem"/> when it is no longer needed.
+        /// </remarks>
+        [PreserveSig]
+        public HRESULT GetFolder(out IntPtr ppsi);
+
+        // HRESULT GetCurrentSelection(IShellItem **ppsi);
+        /// <summary>
+        /// Gets the user's current selection in the dialog.
+        /// </summary>
+        /// <param name="ppsi">The address of a pointer to the interface that represents the item currently selected in the dialog.
+        /// This item can be a file or folder selected in the view window, or something that the user has entered
+        /// into the dialog's edit box. The latter case may require a parsing operation (cancelable by the user) that blocks
+        /// the current thread.</param>
+        /// <returns>If this method succeeds, it returns <see cref="HRESULT.S_OK"/>. Otherwise, it returns an <see cref="HRESULT"/> error code.</returns>
+        [PreserveSig]
+        public HRESULT GetCurrentSelection(out IntPtr ppsi);
+
+        // HRESULT SetFileName(LPCWSTR pszName);
+        /// <summary>
+        /// Sets the file name that appears in the <b>File name</b> edit box when that dialog box is opened.
+        /// </summary>
+        /// <param name="pszName">A pointer to the name of the file.</param>
+        /// <returns>If this method succeeds, it returns <see cref="HRESULT.S_OK"/>. Otherwise, it returns an <see cref="HRESULT"/> error code.</returns>
+        [PreserveSig]
+        public HRESULT SetFileName([MarshalAs(UnmanagedType.LPWStr)] string pszName);
+
+        // HRESULT GetFileName(LPWSTR *pszName);
+        /// <summary>
+        /// Retrieves the text currently entered in the dialog's <b>File name</b> edit box.
+        /// </summary>
+        /// <param name="pszName">The address of a pointer to a string that, when this method returns successfully, receives the text.</param>
+        /// <returns>If this method succeeds, it returns <see cref="HRESULT.S_OK"/>. Otherwise, it returns an <see cref="HRESULT"/> error code.</returns>
+        /// <remarks>
+        /// <para>The text in the <b>File name</b> edit box does not necessarily reflect the item the user chose.
+        /// To get the item the user chose, use <see cref="GetResult"/>.</para>
+        /// 
+        /// The calling application is responsible for releasing the retrieved buffer by using the CoTaskMemFree function.
+        /// </remarks>
+        [PreserveSig]
+        public HRESULT GetFileName(out IntPtr pszName);
+
+        // HRESULT SetTitle(LPCWSTR pszTitle);
+        /// <summary>
+        /// Sets the title of the dialog.
+        /// </summary>
+        /// <param name="pszTitle">A pointer to a string that contains the title text.</param>
+        /// <returns>If this method succeeds, it returns <see cref="HRESULT.S_OK"/>. Otherwise, it returns an <see cref="HRESULT"/> error code.</returns>
+        [PreserveSig]
+        public HRESULT SetTitle([MarshalAs(UnmanagedType.LPWStr)] string pszTitle);
+
+        /// <summary>
+        /// Closes the dialog.
+        /// </summary>
+        /// <param name="hr">The code that will be returned by <see cref="Show(nint)"/> to indicate that the dialog was closed before a selection was made.</param>
+        /// <returns>If this method succeeds, it returns <see cref="HRESULT.S_OK"/>. Otherwise, it returns an <see cref="HRESULT"/> error code.</returns>
+        /// <remarks>
+        /// <para>An application can call this method from a callback method or function while the dialog is open.
+        /// The dialog will close and the <see cref="Show(nint)"/> method will return with the <see cref="HRESULT"/> specified in <paramref name="hr"/>.</para>
+        /// 
+        /// If this method is called, there is no result available for the <see cref="GetResult"/> or <see cref="IFileOpenDialog.GetResults(out nint)"/> methods,
+        /// and they will fail if called.
+        /// </remarks>
+        [PreserveSig]
+        public HRESULT Close(HRESULT hr);
+
+        /// <summary>
+        /// Gets the choice that the user made in the dialog.
+        /// </summary>
+        /// <param name="ppsi">The address of a pointer to an <see cref="IShellItem"/> that represents the user's choice.</param>
+        /// <returns>If this method succeeds, it returns <see cref="HRESULT.S_OK"/>. Otherwise, it returns an <see cref="HRESULT"/> error code.</returns>
+        /// <remarks>
+        /// <para><see cref="GetResult(out nint)"/> can be called after the dialog has closed or during the handling of an <c>OnFileOk</c> event.
+        /// Calling this method at any other time will fail. If multiple items were chosen, this method will fail. In the case of multiple
+        /// items, call <see cref="IFileOpenDialog.GetResults(out nint)"/>.</para>
+        ///
+        /// <see cref="Show(nint)"/> must return a success code for a result to be available to <see cref="GetResult(out nint)"/>.
+        /// </remarks>
+        [PreserveSig]
+        public HRESULT GetResult(out nint ppsi);
+
+        /// <summary>
+        /// Sets the filter. Deprecated since Windows 7.
+        /// </summary>
+        /// <param name="pFilter">A pointer to the
+        /// <see href="https://learn.microsoft.com/en-us/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitemfilter">IShellItemFilter</see> that is to be set.</param>
+        /// <returns>If this method succeeds, it returns <see cref="HRESULT.S_OK"/>. Otherwise, it returns an <see cref="HRESULT"/> error code.</returns>
+        /// <remarks>
+        /// <para>This method can be used if the application needs to perform special filtering to remove some items from the dialog box's view.
+        /// IncludeItem will be called for each item that would normally be included in the view. GetEnumFlagsForItem
+        /// is not used. To filter by file type, <see cref="SetFileTypes(uint, nint)"/> should be used,
+        /// because in folders with a large number of items it may offer better performance than applying an IShellItemFilter.</para>
+        /// This method is obsolete since Windows 7. Do not use it in new projects.
+        /// </remarks>
+        [ObsoletedOSPlatform("windows6.1")]
+        [PreserveSig]
+        public HRESULT SetFilter(nint pFilter);
+
         // Additional methods specific to file save dialogs
         /// <summary>
         /// Sets an item to be used as the initial entry in a Save As dialog.
@@ -329,7 +599,8 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces
         /// <returns>If this method succeeds, it returns <see cref="HRESULT.S_OK"/>. Otherwise, it returns an <see cref="HRESULT"/> error code.</returns>
         /// <remarks>
         /// The name of the item is displayed in the file name edit box, and the containing folder is opened in the view.
-        /// This would generally be used when the application is saving an item that already exists. For new items, use <see cref="SetFileName(string)"/>.
+        /// This would generally be used when the application is saving an item that already exists. For new items, use
+        /// <see cref="SetFileName(string)"/>.
         /// </remarks>
         [PreserveSig]
         public HRESULT SetSaveAsItem(IntPtr psi); // IShellItem
@@ -391,7 +662,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces
         /// Applies a set of properties to an item using the Shell's copy engine.
         /// </summary>
         /// <param name="psi">Pointer to the <see cref="IShellItem"/> that represents the file being saved.
-        /// This is usually the item retrieved by <see cref="IFileDialog.GetResult(out nint)"/>.</param>
+        /// This is usually the item retrieved by <see cref="GetResult(out nint)"/>.</param>
         /// <param name="pStore">Pointer to the IPropertyStore that represents the property values to be applied to the file.
         /// This can be the property store returned by <see cref="GetProperties(out nint)"/>.</param>
         /// <param name="hwnd">The handle of the application window.</param>
@@ -428,7 +699,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces
     [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
     [Guid("973510db-7d7f-452b-8975-74a85828d354")]
     [SupportedOSPlatform("windows6.0")]
-    public partial interface IFileDialogCustomize : IUnknown
+    public partial interface IFileDialogCustomize
     {
         /// <summary>
         /// Enables a drop-down list on the Open or Save button in the dialog.

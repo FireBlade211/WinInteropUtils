@@ -182,7 +182,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// <typeparam name="TCoInterface"></typeparam>
         /// <param name="rclsid">The CLSID associated with the data and code that will be used to create the object.</param>
         /// <param name="pUnkOuter">If <see langword="null"/>, indicates that the object is not being created as part of an aggregate. If non-<see langword="null"/>, pointer
-        /// to the aggregate object's <see cref="IUnknown"/> interface (the controlling <see cref="IUnknown"/>).</param>
+        /// to the aggregate object's <c>IUnknown</c> interface (the controlling <c>IUnknown</c>).</param>
         /// <param name="dwClsContext">Context in which the code that manages the newly created object will run.
         /// A bitwise combination of <see cref="CreateInstanceContext"/> values.</param>
         /// <param name="riid">A reference to the identifier of the interface to be used to communicate with the object.</param>
@@ -206,7 +206,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// <item>
         /// <term><see cref="HRESULT.E_NOINTERFACE"/></term>
         /// <description>The specified class does not implement the requested interface,
-        /// or the controlling <see cref="IUnknown"/> does not expose the requested interface.</description>
+        /// or the controlling <c>IUnknown</c> does not expose the requested interface.</description>
         /// </item>
         /// <item>
         /// <term><see cref="HRESULT.E_POINTER"/></term>
@@ -215,37 +215,43 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// </list>
         /// </returns>
         /// <remarks>
-        /// <para>The <see cref="CreateInstance"/> function provides
+        /// <para>The <c>CreateInstance</c> function provides
         /// a convenient shortcut by connecting to the class object associated with the specified CLSID, creating a default-initialized instance,
         /// and releasing the class object.</para>
         /// 
-        /// <para>It is convenient to use <see cref="CreateInstance"/> when
-        /// you need to create only a single instance of an object on the local machine. If you are creating an instance on remote
-        /// computer, call CoCreateInstanceEx.</para>
+        /// <para>It is convenient to use <c>CreateInstance</c>
+        /// when you need to create only a single instance of an object on the local machine. If you are creating an instance on
+        /// remote computer, call CoCreateInstanceEx.</para>
         /// 
         /// <para>In the <see cref="CreateInstanceContext"/> enumeration, you can specify the type of server used to manage
         /// the object. The constants can be <see cref="CreateInstanceContext.InprocServer"/>,
         /// <see cref="CreateInstanceContext.InprocHandler"/>, <see cref="CreateInstanceContext.LocalServer"/>, <see cref="CreateInstanceContext.RemoteServer"/> or any
         /// combination of these values.</para>
         /// 
-        /// <para><i>UWP applications</i></para>
+        /// <para><h3><i>UWP applications</i></h3></para>
         /// 
         /// Although there are no restrictions on which CLSIDs a UWP application can pass
-        /// to <see cref="CreateInstance"/>, many objects will fail
-        /// with <see cref="HRESULT.E_ACCESSDENIED"/> for security reasons, especially if they do not run in-process. Additionally, even if you can successfully
-        /// create an object, it might fail at a later time due to UWP security constraints, app-model differences, etc. In particular, background tasks should limit
+        /// to <c>CreateInstance</c>,
+        /// many objects will fail with <see cref="HRESULT.E_ACCESSDENIED"/> for security reasons, especially if they do
+        /// not run in-process. Additionally, even if you can successfully create an object, it might fail at a later
+        /// time due to UWP security constraints, app-model differences, etc. In particular, background tasks should limit
         /// the objects they communicate with to avoid hangs or other complications due to connected stand-by.
         /// </remarks>
         /// <exception cref="InvalidOperationException">TCoInterface must be an interface.</exception>
         [SupportedOSPlatform("windows5.0")]
+        [Obsolete("Use the new overload instead. The new overload automatically detects the riid to prevent runtime" +
+            " errors, and uses .NET-style exceptions instead of the old HRESULT system.")]
         public static HRESULT CreateInstance<TCoInterface>(Guid rclsid,
-            [AllowNull] IUnknown? pUnkOuter,
+            [AllowNull] object? pUnkOuter,
             CreateInstanceContext dwClsContext,
             Guid riid,
-            [MaybeNull] out TCoInterface? ppv) where TCoInterface : IUnknown
+            [MaybeNull] out TCoInterface? ppv)
         {
             if (!typeof(TCoInterface).IsInterface)
                 throw new InvalidOperationException("TCoInterface must be an interface.");
+
+            if (pUnkOuter != null && !Marshal.IsComObject(pUnkOuter))
+                throw new ArgumentException("pUnkOuter must be either a COM object or null.", nameof(pUnkOuter));
 
             ppv = default;
 
@@ -253,29 +259,117 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
 
             if (Macros.Succeeded(hr))
             {
-                var obj = Marshal.GetTypedObjectForIUnknown(inst, typeof(TCoInterface));
-
-                ppv = (TCoInterface)obj;
+                ppv = (TCoInterface)Marshal.GetObjectForIUnknown(inst);
+                Marshal.Release(inst);
             }
 
             return hr;
         }
 
         /// <summary>
+        /// <para>Creates and default-initializes a single object of the class associated with a specified CLSID.</para>
+        /// 
+        /// Call <see cref="CreateInstance{TCoInterface}(Guid, object?, CreateInstanceContext)"/> when you want to create
+        /// only one object on the local system. To create a single object on a remote system, call the CoCreateInstanceEx
+        /// function. To create multiple objects based on a single CLSID, call the CoGetClassObject function.
+        /// </summary>
+        /// <typeparam name="TCoInterface"></typeparam>
+        /// <param name="rclsid">The CLSID associated with the data and code that will be used to create the object.</param>
+        /// <param name="pUnkOuter">If <see langword="null"/>, indicates that the object is not being created as part of an aggregate. If non-<see langword="null"/>, pointer
+        /// to the aggregate object's <c>IUnknown</c> interface (the controlling <c>IUnknown</c>).</param>
+        /// <param name="dwClsContext">Context in which the code that manages the newly created object will run.
+        /// A bitwise combination of <see cref="CreateInstanceContext"/> values.</param>
+        /// <returns>The requested interface, or <see langword="null"/>.</returns>
+        /// <remarks>
+        /// <para>The <see cref="CreateInstance{TCoInterface}(Guid, object?, CreateInstanceContext)"/>
+        /// function provides a convenient shortcut by connecting to the class object associated with the specified CLSID,
+        /// creating a default-initialized instance, and releasing the class object.</para>
+        /// 
+        /// <para>It is convenient to use <see cref="CreateInstance{TCoInterface}(Guid, object?, CreateInstanceContext)"/>
+        /// when you need to create only a single instance of an object on the local machine. If you are creating an instance
+        /// on remote computer, call CoCreateInstanceEx.</para>
+        /// 
+        /// <para>In the <see cref="CreateInstanceContext"/> enumeration, you can specify the type of server used to manage
+        /// the object. The constants can be <see cref="CreateInstanceContext.InprocServer"/>,
+        /// <see cref="CreateInstanceContext.InprocHandler"/>, <see cref="CreateInstanceContext.LocalServer"/>, <see cref="CreateInstanceContext.RemoteServer"/> or any
+        /// combination of these values.</para>
+        /// 
+        /// <para><h3><i>UWP applications</i></h3></para>
+        /// 
+        /// Although there are no restrictions on which CLSIDs a UWP application can pass
+        /// to <see cref="CreateInstance{TCoInterface}(Guid, object?, CreateInstanceContext)"/>,
+        /// many objects will fail
+        /// with <see cref="UnauthorizedAccessException"/> for security reasons, especially if they do not run in-process.
+        /// Additionally, even if you can successfully create an object, it might fail at a later time due to UWP security
+        /// constraints, app-model differences, etc. In particular, background tasks should limit  the objects they communicate
+        /// with to avoid hangs or other complications due to connected stand-by.
+        /// </remarks>
+        /// <exception cref="InvalidOperationException">TCoInterface must be an interface.</exception>
+        /// <exception cref="ArgumentException"><paramref name="pUnkOuter"/> must be a COM object
+        /// or <see langword="null"/>.</exception>
+        /// <exception cref="COMException">This exception can get thrown in 2 cases:
+        /// <list type="bullet">
+        ///     <item>A specified class is not registered in the registration database. Also can indicate that the
+        ///     type of server you requested in the <see cref="CreateInstanceContext"/> enumeration is not registered
+        ///     or the values for the server types in the registry are corrupt.</item>
+        ///     <item>This class cannot be created as part of an aggregate.</item>
+        /// </list>
+        /// </exception>
+        /// <exception cref="InvalidCastException">The specified class does not implement the requested interface,
+        /// or the controlling <c>IUnknown</c> does not expose the requested interface.</exception>
+        /// <exception cref="UnauthorizedAccessException">The request may be denied because the COM object cannot be created in
+        /// UWP applications.</exception>
+        [SupportedOSPlatform("windows5.0")]
+        public static TCoInterface? CreateInstance<TCoInterface>(Guid rclsid,
+            [AllowNull] object? pUnkOuter,
+            CreateInstanceContext dwClsContext)
+        {
+            if (!typeof(TCoInterface).IsInterface)
+                throw new InvalidOperationException("TCoInterface must be an interface.");
+
+            if (pUnkOuter != null && !Marshal.IsComObject(pUnkOuter))
+                throw new ArgumentException("pUnkOuter must be either a COM object or null.", nameof(pUnkOuter));
+
+            Guid riid = typeof(TCoInterface).GUID;
+            HRESULT hr = (HRESULT)CoCreateInstance(ref rclsid, pUnkOuter, (uint)dwClsContext, ref riid, out nint inst);
+
+            if (Macros.Succeeded(hr))
+            {
+                try
+                {
+                    var result = (TCoInterface)Marshal.GetObjectForIUnknown(inst);
+
+                    return result;
+                }
+                finally
+                {
+                    Marshal.Release(inst);
+                }
+            }
+            else
+            {
+                Marshal.ThrowExceptionForHR((int)hr);
+            }
+
+            return default;
+        }
+
+        /// <summary>
         /// Values that are used in activation calls to indicate the execution contexts in which an object is to
-        /// be run. Used in <see cref="CreateInstance"/>.
+        /// be run. Used in <see cref="CreateInstance{TCoInterface}(Guid, object?, CreateInstanceContext)"/>.
         /// </summary>
         /// <remarks>
-        /// <para>Values from the <see cref="CreateInstanceContext"/> enumeration are used in activation calls (<see cref="CreateInstance"/>,
-        /// CoCreateInstanceEx, CoGetClassObject, and so on) to indicate the preferred execution contexts (in-process, local, or remote) in which an
-        /// object is to be run. They are also used in calls to CoRegisterClassObject to indicate the set of execution contexts in which a class object
-        /// is to be made available for requests to construct instances.</para>
+        /// <para>Values from the <see cref="CreateInstanceContext"/> enumeration are used in activation calls
+        /// (<see cref="CreateInstance{TCoInterface}(Guid, object?, CreateInstanceContext)"/>, CoCreateInstanceEx,
+        /// CoGetClassObject, and so on) to indicate the preferred execution contexts (in-process, local, or remote) in which an
+        /// object is to be run. They are also used in calls to CoRegisterClassObject to indicate the set of execution contexts in
+        /// which a class object is to be made available for requests to construct instances.</para>
         /// 
         /// <para>To indicate that more than one context is acceptable, you can combine multiple values with Boolean ORs. The contexts
         /// are tried in the order in which they are listed.</para>
         /// 
-        /// <para>Given a set of <see cref="CreateInstanceContext"/> flags, the execution context to be used depends on the availability of registered class
-        /// codes and other parameters according to the following algorithm.</para>
+        /// <para>Given a set of <see cref="CreateInstanceContext"/> flags, the execution context to be used depends on the
+        /// availability of registered class codes and other parameters according to the following algorithm.</para>
         /// 
         /// <list type="number">
         /// <item>
@@ -289,7 +383,8 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// The second case allows applications written prior to the release of distributed <see cref="COM"/> to be the configuration
         /// of classes for remote activation to be used by client applications available prior to DCOM and the <see cref="RemoteServer"/> flag. The cases
         /// in which there would be no explicit COSERVERINFO structure are when the value is specified as <see langword="null"/> or when it is not one of the function
-        /// parameters (as in calls to <see cref="CreateInstance"/> and CoGetClassObject).
+        /// parameters (as in calls to <see cref="CreateInstance{TCoInterface}(Guid, object?, CreateInstanceContext)"/> and
+        /// CoGetClassObject).
         /// </item>
         /// <item>If the explicit COSERVERINFO parameter indicates the current computer, <see cref="RemoteServer"/> is removed if present.</item>
         /// </list>

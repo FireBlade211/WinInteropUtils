@@ -17,7 +17,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces
     [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
     [Guid("43826d1e-e718-42ee-bc55-a1e261c37bfe")]
     [SupportedOSPlatform("windows6.0")]
-    public partial interface IShellItem : IUnknown
+    public partial interface IShellItem
     {
         // HRESULT BindToHandler(IBindCtx *pbc, REFGUID bhid, REFIID riid, void **ppv);
         /// <summary>

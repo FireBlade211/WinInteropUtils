@@ -213,12 +213,15 @@ namespace WinInteropUtils_Test_App
 #pragma warning disable CS0618
         private void messageBoxToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var msgBox = new Win32MessageBox();
-            msgBox.Buttons = Win32MessageBoxButtons.CancelRetryContinue;
+            var wnd = Window.FromHandle(Handle);
+            if (wnd == null) return;
+
+            var msgBox = new WinMessageBox();
+            msgBox.Buttons = WinMessageBoxButtons.CancelRetryContinue;
             msgBox.Caption = null;
             msgBox.Text = "This is some text";
             msgBox.DefaultButton = 2;
-            msgBox.Icon = Win32MessageBoxIcon.Warning;
+            msgBox.Icon = WinMessageBoxIcon.Warning;
             msgBox.ShowHelp = true;
             msgBox.Culture = new CultureInfo("en-US");
             msgBox.RightAlign = true;
@@ -226,7 +229,7 @@ namespace WinInteropUtils_Test_App
             int helpCount = 0;
             msgBox.OnHelp += (s, e) => helpCount++;
 
-            var result = msgBox.Show(Handle);
+            var result = msgBox.Show(wnd);
 
             msgBox.Caption = "Result";
             msgBox.Text =
@@ -234,13 +237,13 @@ namespace WinInteropUtils_Test_App
                 $"{result}\n" +
                 $"\n" +
                 $"Help button was clicked {helpCount} times";
-            msgBox.Buttons = Win32MessageBoxButtons.Ok;
+            msgBox.Buttons = WinMessageBoxButtons.Ok;
             msgBox.DefaultButton = 1;
-            msgBox.Icon = Win32MessageBoxIcon.Info;
+            msgBox.Icon = WinMessageBoxIcon.Info;
             msgBox.ShowHelp = false;
             msgBox.RightAlign = false;
 
-            msgBox.Show(Handle);
+            msgBox.Show(wnd);
         }
 #pragma warning restore
 
@@ -252,90 +255,100 @@ namespace WinInteropUtils_Test_App
 
             if (Macros.Succeeded(hr))
             {
-                hr = COM.CreateInstance(
-                    new Guid("DC1C5A9C-E88A-4dde-A5A1-60F82A20AEF7"),
-                    null,
-                    COM.CreateInstanceContext.InprocServer,
-                    new Guid("d57c7288-d4ad-4768-be02-9d969532d960"),
-                    out IFileOpenDialog? dlg);
-
-                if (Macros.Succeeded(hr) && dlg != null)
+                try
                 {
-                    COMDLG_FILTERSPEC[] filters =
-                    [
-            new COMDLG_FILTERSPEC { pszName = "Text Files", pszSpec = "*.txt" },
-            new COMDLG_FILTERSPEC { pszName = "All Files", pszSpec = "*.*" }
-                    ];
+                    IFileOpenDialog? dlg = COM.CreateInstance<IFileOpenDialog>(
+    new Guid("DC1C5A9C-E88A-4dde-A5A1-60F82A20AEF7"),
+    null,
+    COM.CreateInstanceContext.InprocServer);
 
-                    // Allocate unmanaged memory (SetFileTypes requires pointer)
-                    IntPtr ptr = Marshal.AllocHGlobal(Marshal.SizeOf<COMDLG_FILTERSPEC>() * filters.Length);
-
-                    try
+                    if (dlg != null)
                     {
-                        // Copy each struct into unmanaged memory
+                        COMDLG_FILTERSPEC[] filters =
+                        [
+                            new COMDLG_FILTERSPEC { pszName = "Text Files", pszSpec = "*.txt" },
+    new COMDLG_FILTERSPEC { pszName = "All Files", pszSpec = "*.*" }
+                        ];
+
+                        int structSize = IntPtr.Size * 2; // two pointers per struct
+
+                        nint buffer = Marshal.AllocHGlobal(structSize * filters.Length);
+
                         for (int i = 0; i < filters.Length; i++)
                         {
-                            IntPtr structPtr = IntPtr.Add(ptr, i * Marshal.SizeOf<COMDLG_FILTERSPEC>());
-                            Marshal.StructureToPtr(filters[i], structPtr, false);
+                            nint name = Marshal.StringToHGlobalUni(filters[i].pszName);
+                            nint spec = Marshal.StringToHGlobalUni(filters[i].pszSpec);
+
+                            nint slot = buffer + (i * structSize);
+
+                            Marshal.WriteIntPtr(slot, name);
+                            Marshal.WriteIntPtr(slot + IntPtr.Size, spec);
                         }
 
-                        // ptr now points to the unmanaged array
-                        dlg.SetFileTypes((uint)filters.Length, ptr);
-                    }
-                    catch { }
+                        dlg.SetFileTypes((uint)filters.Length, buffer);
 
-                    dlg.SetTitle("Cool File Dialog");
+                        dlg.SetTitle("Cool File Dialog");
 
-                    hr = dlg.Show(Handle);
-
-                    if (Macros.Succeeded(hr))
-                    {
-                        Console.WriteLine("Dialog accepted!");
-
-                        hr = dlg.GetResult(out nint iptr);
+                        hr = dlg.Show(Handle);
 
                         if (Macros.Succeeded(hr))
                         {
-                            IShellItem item = (IShellItem)Marshal.GetTypedObjectForIUnknown(iptr, typeof(IShellItem));
+                            Console.WriteLine("Dialog accepted!");
 
-                            hr = item.GetDisplayName(
-                                SIGDN.SIGDN_FILESYSPATH,
-                                out nint pptr);
+                            hr = dlg.GetResult(out nint iptr);
 
                             if (Macros.Succeeded(hr))
                             {
-                                string? path = Marshal.PtrToStringUni(pptr);
+                                IShellItem item = (IShellItem)Marshal.GetTypedObjectForIUnknown(iptr, typeof(IShellItem));
 
-                                if (path != null && Window.FromHandle(Handle) is Window wnd)
-                                    WinMessageBox.Show(wnd, $"Chosen path: {path}", "File dialog test", WinMessageBoxIcon.Information);
+                                hr = item.GetDisplayName(
+                                    SIGDN.SIGDN_FILESYSPATH,
+                                    out nint pptr);
+
+                                if (Macros.Succeeded(hr))
+                                {
+                                    string? path = Marshal.PtrToStringUni(pptr);
+
+                                    if (path != null && Window.FromHandle(Handle) is Window wnd)
+                                        WinMessageBox.Show(wnd, $"Chosen path: {path}", "File dialog test", WinMessageBoxIcon.Information);
+                                    else
+                                        Debug.WriteLine("Path is null!");
+
+                                    Marshal.FreeCoTaskMem(pptr);
+                                }
                                 else
-                                    Debug.WriteLine("Path is null!");
+                                {
+                                    Debug.WriteLine($"Display name get failed: {hr}");
+                                }
 
-                                Marshal.FreeCoTaskMem(pptr);
+                                Marshal.ReleaseComObject(item);
                             }
                             else
                             {
-                                Debug.WriteLine($"Display name get failed: {hr}");
+                                Debug.WriteLine($"Result get failed: {hr}");
                             }
-
-                            item.Release();
                         }
                         else
                         {
-                            Debug.WriteLine($"Result get failed: {hr}");
+                            Debug.WriteLine($"File dialog show failed: {hr}");
                         }
-                    }
-                    else
-                    {
-                        Debug.WriteLine($"File dialog show failed: {hr}");
-                    }
 
-                    dlg.Release();
-                    //Marshal.FreeHGlobal(ptr);
+                        Marshal.ReleaseComObject(dlg);
+
+                        for (int i = 0; i < filters.Length; i++)
+                        {
+                            nint slot = buffer + (i * structSize);
+
+                            Marshal.FreeHGlobal(Marshal.ReadIntPtr(slot));
+                            Marshal.FreeHGlobal(Marshal.ReadIntPtr(slot + IntPtr.Size));
+                        }
+
+                        Marshal.FreeHGlobal(buffer);
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    Debug.WriteLine($"Instance create failed: {hr}");
+                    Debug.WriteLine($"Instance create failed: {ex.Message}");
                 }
 
                 COM.Uninitialize();
