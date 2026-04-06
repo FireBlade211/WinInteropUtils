@@ -53,7 +53,7 @@ namespace FireBlade.WinInteropUtils.Dialogs
         /// Represents the collection of custom colors.
         /// </summary>
         /// <remarks>
-        /// When the <see cref="Show()"/> or <see cref="Show(nint)"/> functions return, this property will contain the custom colors
+        /// When the <see cref="Show()"/> or <see cref="Show(Window)"/> functions return, this property will contain the custom colors
         /// set by the user. You can store this array to persist the custom colors between sessions. The array has a capacity of <c>16</c>.
         /// </remarks>
         public Color[] CustomColors { get; set; } = new Color[16];

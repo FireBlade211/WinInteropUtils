@@ -1907,4 +1907,90 @@ namespace FireBlade.WinInteropUtils
         /// </summary>
         public static readonly Window TopMost = Window.FromHandleInternal(-1);
     }
+
+    /// <summary>
+    /// Defines states a window can be in.
+    /// </summary>
+    public enum WindowState
+    {
+        /// <summary>
+        /// The window is in the normal state.
+        /// </summary>
+        Normal,
+        /// <summary>
+        /// The window is zoomed (maximized).
+        /// </summary>
+        Zoomed,
+        /// <summary>
+        /// The window is iconic (minimized).
+        /// </summary>
+        Iconic,
+        /// <summary>
+        /// The window is hidden.
+        /// </summary>
+        Hidden,
+        /// <summary>
+        /// The window is zoomed (maximized).
+        /// </summary>
+        Maximized = Zoomed,
+        /// <summary>
+        /// The window is iconic (minimized).
+        /// </summary>
+        Minimized = Iconic,
+        /// <summary>
+        /// The window is hidden.
+        /// </summary>
+        Invisible = Hidden,
+        /// <summary>
+        /// The window is in the normal state.
+        /// </summary>
+        Visible = Normal
+    }
+
+    /// <summary>
+    /// Defines default index values for <see cref="Window.SetWindowLongPtr(int, nint)"/>
+    /// and <see cref="Window.GetWindowLongPtr(int)"/>.
+    /// </summary>
+    public static class WindowLongPtr
+    {
+        /// <summary>
+        /// Gets or sets a new extended window style. (GWL_EXSTYLE)
+        /// </summary>
+        public const int ExStyle = -20;
+
+        /// <summary>
+        /// Gets or sets a new application instance handle. (GWLP_HINSTANCE)
+        /// </summary>
+        public const int AppHInstance = -6;
+
+        /// <summary>
+        /// Gets or sets a new owner for a top-level window. (GWLP_HWNDPARENT)
+        /// </summary>
+        public const int HWNDParent = -8;
+
+        /// <summary>
+        /// Gets or sets a new identifier of the child window. The window cannot be a top-level window. (GWLP_ID)
+        /// </summary>
+        public const int ID = -12;
+
+        /// <summary>
+        /// Gets or sets a new <see cref="WindowStyles">window style</see>. (GWL_STYLE)
+        /// </summary>
+        public const int Style = -16;
+
+        /// <summary>
+        /// Gets or sets the user data associated with the window. This data is intended for use by the application that created the window. Its value is initially zero. (GWLP_USERDATA)
+        /// </summary>
+        public const int UserData = -21;
+
+        /// <summary>
+        /// Gets or sets a new address for the window procedure. (GWLP_WNDPROC)
+        /// </summary>
+        public const int WndProc = -4;
+
+        /// <summary>
+        /// Gets or sets the return value of a message processed in the dialog box procedure. (DWLP_MSGRESULT)
+        /// </summary>
+        public const int MessageResult = 0;
+    }
 }

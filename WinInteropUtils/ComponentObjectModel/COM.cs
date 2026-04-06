@@ -129,7 +129,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// of objects created by this thread always run on the same thread, i.e. the apartment/thread that created them. In addition, calls can arrive only at message-queue
         /// boundaries. Because of this serialization, it is not typically necessary to write concurrency control into the code for the object, other than to avoid calls
         /// to <see href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-peekmessagea">PeekMessage</see> and
-        /// <see cref="User32.SendMessage(nint, uint, nuint, nint)"/> during processing that must not be interrupted by other method invocations or calls to other 
+        /// <see cref="Window.SendMessage(uint, nuint, nint)"/> during processing that must not be interrupted by other method invocations or calls to other 
         /// objects in the same apartment/thread.</para>
         ///
         /// <para>Multi-threading (also called free-threading) allows calls to methods of objects created by this thread to be run on any thread. There is no
