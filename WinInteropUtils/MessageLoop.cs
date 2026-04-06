@@ -21,7 +21,7 @@ namespace FireBlade.WinInteropUtils
     /// </example>
     public static partial class MessageLoop
     {
-        [LibraryImport("User32.dll", EntryPoint = "GetMessage", SetLastError = true)]
+        [LibraryImport("User32.dll", EntryPoint = "GetMessageW", SetLastError = true)]
         private static unsafe partial int PInvokeGetMessage(MSG* lpMsg, nint hWnd, uint wMsgFilterMin, uint wMsgFilterMax);
 
         /// <summary>
