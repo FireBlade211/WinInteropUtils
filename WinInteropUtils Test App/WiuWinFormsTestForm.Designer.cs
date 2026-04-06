@@ -50,13 +50,27 @@
             label3 = new Label();
             label4 = new Label();
             slider5 = new FireBlade.WinInteropUtils.WinForms.Slider();
+            menuBar1 = new FireBlade.WinInteropUtils.WinForms.MenuBar();
+            fileToolStripMenuItem = new ToolStripMenuItem();
+            newToolStripMenuItem = new ToolStripMenuItem();
+            toolStripRadioMenuItem1 = new FireBlade.WinInteropUtils.WinForms.ToolStripRadioMenuItem();
+            toolStripRadioMenuItem2 = new FireBlade.WinInteropUtils.WinForms.ToolStripRadioMenuItem();
+            toolStripMenuItem2 = new ToolStripSeparator();
+            toolStripRadioMenuItem3 = new FireBlade.WinInteropUtils.WinForms.ToolStripRadioMenuItem();
+            toolStripRadioMenuItem4 = new FireBlade.WinInteropUtils.WinForms.ToolStripRadioMenuItem();
+            toolStripMenuItem1 = new ToolStripSeparator();
+            abcToolStripMenuItem = new ToolStripMenuItem();
+            testToolStripMenuItem = new ToolStripMenuItem();
+            checkboxToolStripMenuItem = new ToolStripMenuItem();
+            helpToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
+            menuBar1.SuspendLayout();
             SuspendLayout();
             // 
             // progressBarEx1
             // 
-            progressBarEx1.Location = new Point(12, 21);
+            progressBarEx1.Location = new Point(12, 71);
             progressBarEx1.MarqueeSpeed = 0;
             progressBarEx1.Name = "progressBarEx1";
             progressBarEx1.Size = new Size(201, 35);
@@ -65,7 +79,7 @@
             // 
             // progressBarEx2
             // 
-            progressBarEx2.Location = new Point(12, 80);
+            progressBarEx2.Location = new Point(12, 130);
             progressBarEx2.Name = "progressBarEx2";
             progressBarEx2.Size = new Size(201, 35);
             progressBarEx2.TabIndex = 1;
@@ -74,7 +88,7 @@
             // 
             // progressBarEx3
             // 
-            progressBarEx3.Location = new Point(12, 131);
+            progressBarEx3.Location = new Point(12, 181);
             progressBarEx3.Name = "progressBarEx3";
             progressBarEx3.Size = new Size(201, 35);
             progressBarEx3.Style = FireBlade.WinInteropUtils.WinForms.ProgressBarExStyle.Paused;
@@ -90,7 +104,7 @@
             // 
             // progressBarEx4
             // 
-            progressBarEx4.Location = new Point(12, 184);
+            progressBarEx4.Location = new Point(12, 234);
             progressBarEx4.MarqueeSpeed = 0;
             progressBarEx4.Name = "progressBarEx4";
             progressBarEx4.Size = new Size(201, 35);
@@ -99,14 +113,14 @@
             // 
             // numericUpDown1
             // 
-            numericUpDown1.Location = new Point(219, 173);
+            numericUpDown1.Location = new Point(219, 223);
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(45, 23);
             numericUpDown1.TabIndex = 4;
             // 
             // button1
             // 
-            button1.Location = new Point(219, 202);
+            button1.Location = new Point(219, 252);
             button1.Name = "button1";
             button1.Size = new Size(54, 23);
             button1.TabIndex = 5;
@@ -116,7 +130,7 @@
             // 
             // slider1
             // 
-            slider1.Location = new Point(651, 21);
+            slider1.Location = new Point(651, 71);
             slider1.Name = "slider1";
             slider1.Size = new Size(137, 35);
             slider1.TabIndex = 6;
@@ -124,7 +138,7 @@
             // 
             // slider2
             // 
-            slider2.Location = new Point(651, 62);
+            slider2.Location = new Point(651, 112);
             slider2.Maximum = 10;
             slider2.Name = "slider2";
             slider2.SelectionRangeEnd = 7;
@@ -141,7 +155,7 @@
             // slider3
             // 
             slider3.LeftBuddy = label2;
-            slider3.Location = new Point(610, 21);
+            slider3.Location = new Point(610, 71);
             slider3.Name = "slider3";
             slider3.Orientation = Orientation.Vertical;
             slider3.RightBuddy = label1;
@@ -152,7 +166,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(570, 4);
+            label2.Location = new Point(570, 54);
             label2.Name = "label2";
             label2.Size = new Size(101, 15);
             label2.TabIndex = 10;
@@ -161,7 +175,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(562, 105);
+            label1.Location = new Point(562, 155);
             label1.Name = "label1";
             label1.Size = new Size(117, 15);
             label1.TabIndex = 9;
@@ -169,7 +183,7 @@
             // 
             // slider4
             // 
-            slider4.Location = new Point(570, 131);
+            slider4.Location = new Point(570, 181);
             slider4.Name = "slider4";
             slider4.Size = new Size(159, 35);
             slider4.TabIndex = 11;
@@ -179,14 +193,14 @@
             // 
             // numericUpDown2
             // 
-            numericUpDown2.Location = new Point(738, 135);
+            numericUpDown2.Location = new Point(738, 185);
             numericUpDown2.Name = "numericUpDown2";
             numericUpDown2.Size = new Size(50, 23);
             numericUpDown2.TabIndex = 12;
             // 
             // button2
             // 
-            button2.Location = new Point(738, 173);
+            button2.Location = new Point(738, 223);
             button2.Name = "button2";
             button2.Size = new Size(59, 23);
             button2.TabIndex = 13;
@@ -196,7 +210,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(662, 173);
+            button3.Location = new Point(662, 223);
             button3.Name = "button3";
             button3.Size = new Size(70, 23);
             button3.TabIndex = 14;
@@ -207,7 +221,7 @@
             // hotKeyBox1
             // 
             hotKeyBox1.Keys = Keys.Control | Keys.A;
-            hotKeyBox1.Location = new Point(12, 225);
+            hotKeyBox1.Location = new Point(12, 275);
             hotKeyBox1.Name = "hotKeyBox1";
             hotKeyBox1.Size = new Size(108, 23);
             hotKeyBox1.TabIndex = 15;
@@ -216,7 +230,7 @@
             // hotKeyBox2
             // 
             hotKeyBox2.FallbackValue = FireBlade.WinInteropUtils.WinForms.HotKeyBoxModifiers.Shift;
-            hotKeyBox2.Location = new Point(81, 253);
+            hotKeyBox2.Location = new Point(81, 303);
             hotKeyBox2.Name = "hotKeyBox2";
             hotKeyBox2.Rules = FireBlade.WinInteropUtils.WinForms.HotKeyBoxRules.Control;
             hotKeyBox2.Size = new Size(108, 23);
@@ -227,7 +241,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(13, 256);
+            label3.Location = new Point(13, 306);
             label3.Name = "label3";
             label3.Size = new Size(62, 15);
             label3.TabIndex = 17;
@@ -236,7 +250,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(131, 228);
+            label4.Location = new Point(131, 278);
             label4.Name = "label4";
             label4.Size = new Size(58, 15);
             label4.TabIndex = 18;
@@ -245,7 +259,7 @@
             // 
             // slider5
             // 
-            slider5.Location = new Point(275, 315);
+            slider5.Location = new Point(275, 365);
             slider5.Name = "slider5";
             slider5.SelectionRangeEnd = 75;
             slider5.SelectionRangeStart = 25;
@@ -254,6 +268,106 @@
             slider5.TabIndex = 19;
             slider5.Text = "slider5";
             slider5.Value = 15;
+            // 
+            // menuBar1
+            // 
+            menuBar1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, helpToolStripMenuItem });
+            menuBar1.Location = new Point(0, 0);
+            menuBar1.Name = "menuBar1";
+            menuBar1.Size = new Size(800, 24);
+            menuBar1.TabIndex = 20;
+            menuBar1.Text = "menuBar1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { newToolStripMenuItem, toolStripMenuItem1, abcToolStripMenuItem, checkboxToolStripMenuItem });
+            fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            fileToolStripMenuItem.Size = new Size(37, 20);
+            fileToolStripMenuItem.Text = "&File";
+            // 
+            // newToolStripMenuItem
+            // 
+            newToolStripMenuItem.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            newToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { toolStripRadioMenuItem1, toolStripRadioMenuItem2, toolStripMenuItem2, toolStripRadioMenuItem3, toolStripRadioMenuItem4 });
+            newToolStripMenuItem.Name = "newToolStripMenuItem";
+            newToolStripMenuItem.Size = new Size(180, 22);
+            newToolStripMenuItem.Text = "&New";
+            // 
+            // toolStripRadioMenuItem1
+            // 
+            toolStripRadioMenuItem1.Checked = true;
+            toolStripRadioMenuItem1.CheckState = CheckState.Checked;
+            toolStripRadioMenuItem1.EndItem = null;
+            toolStripRadioMenuItem1.Name = "toolStripRadioMenuItem1";
+            toolStripRadioMenuItem1.Size = new Size(210, 22);
+            toolStripRadioMenuItem1.StartItem = null;
+            toolStripRadioMenuItem1.Text = "Radio item 1";
+            // 
+            // toolStripRadioMenuItem2
+            // 
+            toolStripRadioMenuItem2.EndItem = null;
+            toolStripRadioMenuItem2.Name = "toolStripRadioMenuItem2";
+            toolStripRadioMenuItem2.Size = new Size(210, 22);
+            toolStripRadioMenuItem2.StartItem = null;
+            toolStripRadioMenuItem2.Text = "Radio item 2";
+            // 
+            // toolStripMenuItem2
+            // 
+            toolStripMenuItem2.Name = "toolStripMenuItem2";
+            toolStripMenuItem2.Size = new Size(207, 6);
+            // 
+            // toolStripRadioMenuItem3
+            // 
+            toolStripRadioMenuItem3.EndItem = null;
+            toolStripRadioMenuItem3.Name = "toolStripRadioMenuItem3";
+            toolStripRadioMenuItem3.Size = new Size(210, 22);
+            toolStripRadioMenuItem3.StartItem = null;
+            toolStripRadioMenuItem3.Text = "toolStripRadioMenuItem3";
+            // 
+            // toolStripRadioMenuItem4
+            // 
+            toolStripRadioMenuItem4.Checked = true;
+            toolStripRadioMenuItem4.CheckState = CheckState.Checked;
+            toolStripRadioMenuItem4.EndItem = null;
+            toolStripRadioMenuItem4.Name = "toolStripRadioMenuItem4";
+            toolStripRadioMenuItem4.Size = new Size(210, 22);
+            toolStripRadioMenuItem4.StartItem = null;
+            toolStripRadioMenuItem4.Text = "toolStripRadioMenuItem4";
+            // 
+            // toolStripMenuItem1
+            // 
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(177, 6);
+            // 
+            // abcToolStripMenuItem
+            // 
+            abcToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { testToolStripMenuItem });
+            abcToolStripMenuItem.Name = "abcToolStripMenuItem";
+            abcToolStripMenuItem.Size = new Size(180, 22);
+            abcToolStripMenuItem.Text = "&Abc";
+            // 
+            // testToolStripMenuItem
+            // 
+            testToolStripMenuItem.Name = "testToolStripMenuItem";
+            testToolStripMenuItem.Size = new Size(94, 22);
+            testToolStripMenuItem.Text = "&Test";
+            // 
+            // checkboxToolStripMenuItem
+            // 
+            checkboxToolStripMenuItem.CheckOnClick = true;
+            checkboxToolStripMenuItem.Name = "checkboxToolStripMenuItem";
+            checkboxToolStripMenuItem.Size = new Size(180, 22);
+            checkboxToolStripMenuItem.Text = "Checkbox";
+            // 
+            // helpToolStripMenuItem
+            // 
+            helpToolStripMenuItem.Alignment = ToolStripItemAlignment.Right;
+            helpToolStripMenuItem.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            helpToolStripMenuItem.Image = Properties.Resources.titlebar_max;
+            helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            helpToolStripMenuItem.Size = new Size(28, 20);
+            helpToolStripMenuItem.Text = "Help";
+            helpToolStripMenuItem.Click += helpToolStripMenuItem_Click;
             // 
             // WiuWinFormsTestForm
             // 
@@ -280,10 +394,14 @@
             Controls.Add(progressBarEx3);
             Controls.Add(progressBarEx2);
             Controls.Add(progressBarEx1);
+            Controls.Add(menuBar1);
+            MainMenuStrip = menuBar1;
             Name = "WiuWinFormsTestForm";
             Text = "WinInteropUtils.WinForms - Test";
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
+            menuBar1.ResumeLayout(false);
+            menuBar1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -311,6 +429,19 @@
         private Label label3;
         private Label label4;
         private FireBlade.WinInteropUtils.WinForms.Slider slider5;
+        private FireBlade.WinInteropUtils.WinForms.MenuBar menuBar1;
+        private ToolStripMenuItem fileToolStripMenuItem;
+        private ToolStripMenuItem newToolStripMenuItem;
+        private ToolStripMenuItem abcToolStripMenuItem;
+        private ToolStripMenuItem testToolStripMenuItem;
+        private ToolStripSeparator toolStripMenuItem1;
+        private FireBlade.WinInteropUtils.WinForms.ToolStripRadioMenuItem toolStripRadioMenuItem1;
+        private FireBlade.WinInteropUtils.WinForms.ToolStripRadioMenuItem toolStripRadioMenuItem2;
+        private ToolStripSeparator toolStripMenuItem2;
+        private FireBlade.WinInteropUtils.WinForms.ToolStripRadioMenuItem toolStripRadioMenuItem3;
+        private FireBlade.WinInteropUtils.WinForms.ToolStripRadioMenuItem toolStripRadioMenuItem4;
+        private ToolStripMenuItem helpToolStripMenuItem;
+        private ToolStripMenuItem checkboxToolStripMenuItem;
         //private FireBlade.WinInteropUtils.WinForms.HyperLink hyperLink1;
     }
 }

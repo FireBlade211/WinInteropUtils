@@ -44,6 +44,11 @@ namespace WinInteropUtils_Test_App
             Debug.WriteLine($"Cancelled: {e.Cancel}\nNew value: {e.NewValue}");
         }
 
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Custom icon menu item clicked!", "Click");
+        }
+
         //private void hyperLink1_LinkClicked(object sender, FireBlade.WinInteropUtils.WinForms.HyperLinkLinkClickedEventArgs e)
         //{
         //    Debug.WriteLine("Link clicked!");
