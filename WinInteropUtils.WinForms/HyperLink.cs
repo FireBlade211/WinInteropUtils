@@ -22,7 +22,7 @@ namespace FireBlade.WinInteropUtils.WinForms
     /// </remarks>
     //[Designer(typeof(HyperLinkDesigner))]
     [SupportedOSPlatform("windows5.1")] // WinXP (visual styles)
-    internal partial class HyperLink : Control
+    internal partial class HyperLink : WinInteropUtilsControlBase
     {
         private const int WM_USER = 0x0400;
         private const int LM_GETIDEALHEIGHT = WM_USER + 0x301;

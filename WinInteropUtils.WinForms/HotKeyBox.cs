@@ -8,7 +8,7 @@ namespace FireBlade.WinInteropUtils.WinForms
     /// Represents a control that allows the user to enter a combination of keystrokes to be used as a hot key.
     /// ![Sample image](../images/hotkeys.png)
     /// </summary>
-    public partial class HotKeyBox : Control
+    public partial class HotKeyBox : WinInteropUtilsControlBase
     {
         private const int WM_USER = 0x0400;
         private const int HKM_GETHOTKEY = WM_USER + 2;

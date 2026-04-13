@@ -12,7 +12,7 @@ namespace FireBlade.WinInteropUtils.WinForms
     /// ![Sample image](../images/sliders.png)
     /// </summary>
     [Designer("FireBlade.WinInteropUtils.WinForms.SliderDesigner, WinInteropUtils.WinForms")]
-    public partial class Slider : Control
+    public partial class Slider : WinInteropUtilsControlBase
     {
         private const int WM_USER = 0x0400;
         private const int TBM_GETBUDDY = WM_USER + 33;
