@@ -50,22 +50,17 @@
             label3 = new Label();
             label4 = new Label();
             slider5 = new FireBlade.WinInteropUtils.WinForms.Slider();
-            menuBar1 = new FireBlade.WinInteropUtils.WinForms.MenuBar();
             fileToolStripMenuItem = new ToolStripMenuItem();
             newToolStripMenuItem = new ToolStripMenuItem();
-            toolStripRadioMenuItem1 = new FireBlade.WinInteropUtils.WinForms.ToolStripRadioMenuItem();
-            toolStripRadioMenuItem2 = new FireBlade.WinInteropUtils.WinForms.ToolStripRadioMenuItem();
-            toolStripMenuItem2 = new ToolStripSeparator();
-            toolStripRadioMenuItem3 = new FireBlade.WinInteropUtils.WinForms.ToolStripRadioMenuItem();
-            toolStripRadioMenuItem4 = new FireBlade.WinInteropUtils.WinForms.ToolStripRadioMenuItem();
             toolStripMenuItem1 = new ToolStripSeparator();
             abcToolStripMenuItem = new ToolStripMenuItem();
             testToolStripMenuItem = new ToolStripMenuItem();
             checkboxToolStripMenuItem = new ToolStripMenuItem();
+            toolStripMenuItem2 = new ToolStripSeparator();
             helpToolStripMenuItem = new ToolStripMenuItem();
+            label5 = new Label();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
-            menuBar1.SuspendLayout();
             SuspendLayout();
             // 
             // progressBarEx1
@@ -269,15 +264,6 @@
             slider5.Text = "slider5";
             slider5.Value = 15;
             // 
-            // menuBar1
-            // 
-            menuBar1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, helpToolStripMenuItem });
-            menuBar1.Location = new Point(0, 0);
-            menuBar1.Name = "menuBar1";
-            menuBar1.Size = new Size(800, 24);
-            menuBar1.TabIndex = 20;
-            menuBar1.Text = "menuBar1";
-            // 
             // fileToolStripMenuItem
             // 
             fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { newToolStripMenuItem, toolStripMenuItem1, abcToolStripMenuItem, checkboxToolStripMenuItem });
@@ -288,62 +274,20 @@
             // newToolStripMenuItem
             // 
             newToolStripMenuItem.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            newToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { toolStripRadioMenuItem1, toolStripRadioMenuItem2, toolStripMenuItem2, toolStripRadioMenuItem3, toolStripRadioMenuItem4 });
             newToolStripMenuItem.Name = "newToolStripMenuItem";
-            newToolStripMenuItem.Size = new Size(180, 22);
+            newToolStripMenuItem.Size = new Size(127, 22);
             newToolStripMenuItem.Text = "&New";
-            // 
-            // toolStripRadioMenuItem1
-            // 
-            toolStripRadioMenuItem1.Checked = true;
-            toolStripRadioMenuItem1.CheckState = CheckState.Checked;
-            toolStripRadioMenuItem1.EndItem = null;
-            toolStripRadioMenuItem1.Name = "toolStripRadioMenuItem1";
-            toolStripRadioMenuItem1.Size = new Size(210, 22);
-            toolStripRadioMenuItem1.StartItem = null;
-            toolStripRadioMenuItem1.Text = "Radio item 1";
-            // 
-            // toolStripRadioMenuItem2
-            // 
-            toolStripRadioMenuItem2.EndItem = null;
-            toolStripRadioMenuItem2.Name = "toolStripRadioMenuItem2";
-            toolStripRadioMenuItem2.Size = new Size(210, 22);
-            toolStripRadioMenuItem2.StartItem = null;
-            toolStripRadioMenuItem2.Text = "Radio item 2";
-            // 
-            // toolStripMenuItem2
-            // 
-            toolStripMenuItem2.Name = "toolStripMenuItem2";
-            toolStripMenuItem2.Size = new Size(207, 6);
-            // 
-            // toolStripRadioMenuItem3
-            // 
-            toolStripRadioMenuItem3.EndItem = null;
-            toolStripRadioMenuItem3.Name = "toolStripRadioMenuItem3";
-            toolStripRadioMenuItem3.Size = new Size(210, 22);
-            toolStripRadioMenuItem3.StartItem = null;
-            toolStripRadioMenuItem3.Text = "toolStripRadioMenuItem3";
-            // 
-            // toolStripRadioMenuItem4
-            // 
-            toolStripRadioMenuItem4.Checked = true;
-            toolStripRadioMenuItem4.CheckState = CheckState.Checked;
-            toolStripRadioMenuItem4.EndItem = null;
-            toolStripRadioMenuItem4.Name = "toolStripRadioMenuItem4";
-            toolStripRadioMenuItem4.Size = new Size(210, 22);
-            toolStripRadioMenuItem4.StartItem = null;
-            toolStripRadioMenuItem4.Text = "toolStripRadioMenuItem4";
             // 
             // toolStripMenuItem1
             // 
             toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(177, 6);
+            toolStripMenuItem1.Size = new Size(124, 6);
             // 
             // abcToolStripMenuItem
             // 
             abcToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { testToolStripMenuItem });
             abcToolStripMenuItem.Name = "abcToolStripMenuItem";
-            abcToolStripMenuItem.Size = new Size(180, 22);
+            abcToolStripMenuItem.Size = new Size(127, 22);
             abcToolStripMenuItem.Text = "&Abc";
             // 
             // testToolStripMenuItem
@@ -356,8 +300,13 @@
             // 
             checkboxToolStripMenuItem.CheckOnClick = true;
             checkboxToolStripMenuItem.Name = "checkboxToolStripMenuItem";
-            checkboxToolStripMenuItem.Size = new Size(180, 22);
+            checkboxToolStripMenuItem.Size = new Size(127, 22);
             checkboxToolStripMenuItem.Text = "Checkbox";
+            // 
+            // toolStripMenuItem2
+            // 
+            toolStripMenuItem2.Name = "toolStripMenuItem2";
+            toolStripMenuItem2.Size = new Size(207, 6);
             // 
             // helpToolStripMenuItem
             // 
@@ -369,11 +318,21 @@
             helpToolStripMenuItem.Text = "Help";
             helpToolStripMenuItem.Click += helpToolStripMenuItem_Click;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(570, 304);
+            label5.Name = "label5";
+            label5.Size = new Size(30, 15);
+            label5.TabIndex = 20;
+            label5.Text = "Edit:";
+            // 
             // WiuWinFormsTestForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label5);
             Controls.Add(slider5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -394,14 +353,10 @@
             Controls.Add(progressBarEx3);
             Controls.Add(progressBarEx2);
             Controls.Add(progressBarEx1);
-            Controls.Add(menuBar1);
-            MainMenuStrip = menuBar1;
             Name = "WiuWinFormsTestForm";
             Text = "WinInteropUtils.WinForms - Test";
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
-            menuBar1.ResumeLayout(false);
-            menuBar1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -429,19 +384,20 @@
         private Label label3;
         private Label label4;
         private FireBlade.WinInteropUtils.WinForms.Slider slider5;
-        private FireBlade.WinInteropUtils.WinForms.MenuBar menuBar1;
+        //private FireBlade.WinInteropUtils.WinForms.MenuBar menuBar1;
         private ToolStripMenuItem fileToolStripMenuItem;
         private ToolStripMenuItem newToolStripMenuItem;
         private ToolStripMenuItem abcToolStripMenuItem;
         private ToolStripMenuItem testToolStripMenuItem;
         private ToolStripSeparator toolStripMenuItem1;
-        private FireBlade.WinInteropUtils.WinForms.ToolStripRadioMenuItem toolStripRadioMenuItem1;
-        private FireBlade.WinInteropUtils.WinForms.ToolStripRadioMenuItem toolStripRadioMenuItem2;
+        //private FireBlade.WinInteropUtils.WinForms.ToolStripRadioMenuItem toolStripRadioMenuItem1;
+        //private FireBlade.WinInteropUtils.WinForms.ToolStripRadioMenuItem toolStripRadioMenuItem2;
         private ToolStripSeparator toolStripMenuItem2;
-        private FireBlade.WinInteropUtils.WinForms.ToolStripRadioMenuItem toolStripRadioMenuItem3;
-        private FireBlade.WinInteropUtils.WinForms.ToolStripRadioMenuItem toolStripRadioMenuItem4;
+        //private FireBlade.WinInteropUtils.WinForms.ToolStripRadioMenuItem toolStripRadioMenuItem3;
+        //private FireBlade.WinInteropUtils.WinForms.ToolStripRadioMenuItem toolStripRadioMenuItem4;
         private ToolStripMenuItem helpToolStripMenuItem;
         private ToolStripMenuItem checkboxToolStripMenuItem;
+        private Label label5;
         //private FireBlade.WinInteropUtils.WinForms.HyperLink hyperLink1;
     }
 }

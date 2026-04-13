@@ -418,7 +418,7 @@ namespace FireBlade.WinInteropUtils
         }
 
         [LibraryImport("Shell32.dll", SetLastError = true)]
-        private static partial HRESULT SHILCreateFromPath([MarshalAs(UnmanagedType.LPWStr)] string pszPath, out nint ppIdl, ref uint rgflnOut);
+        private static partial HResult SHILCreateFromPath([MarshalAs(UnmanagedType.LPWStr)] string pszPath, out nint ppIdl, ref uint rgflnOut);
 
         [LibraryImport("Shell32.dll", SetLastError = true)]
         private static partial nint ILFindLastID(nint pidl);
@@ -433,29 +433,29 @@ namespace FireBlade.WinInteropUtils
         private static partial void ILFree(nint pidl);
 
         [DllImport("Shell32.dll", SetLastError = true)]
-        private static extern HRESULT CIDLData_CreateFromIDArray(nint pidlFolder, uint cidl, nint[] apidl, out IDataObject ppdtobj);
+        private static extern HResult CIDLData_CreateFromIDArray(nint pidlFolder, uint cidl, nint[] apidl, out IDataObject ppdtobj);
 
         [DllImport("Shell32.dll", SetLastError = true)] // Can't use LibraryImport with IDataObject
-        private static extern HRESULT SHMultiFileProperties(IDataObject pdtobj, uint dwFlags);
+        private static extern HResult SHMultiFileProperties(IDataObject pdtobj, uint dwFlags);
 
         /// <summary>
         /// Displays a merged property sheet for a set of files. Property values common to all the files are shown, while those
         /// that differ display the string (multiple values).
         /// </summary>
         /// <param name="filePaths">The file paths of the files to show.</param>
-        /// <returns>If this function succeeds, it returns <see cref="HRESULT.S_OK"/>. Otherwise, it returns a <see cref="HRESULT"/> error code.</returns>
-        public static HRESULT ShowFileProperties(params string[] filePaths)
+        /// <returns>If this function succeeds, it returns <see cref="HResult.S_OK"/>. Otherwise, it returns a <see cref="HResult"/> error code.</returns>
+        public static HResult ShowFileProperties(params string[] filePaths)
         {
             nint pidlParent = nint.Zero, pidlFull = nint.Zero, pidlItem = nint.Zero;
             uint rgflnOut = 0;
             var aPidl = new nint[255];
             uint nIndex = 0;
 
-            HRESULT hr;
+            HResult hr;
             foreach (string filePath in filePaths)
             {
                 hr = SHILCreateFromPath(filePath, out pidlFull, ref rgflnOut);
-                if (hr == HRESULT.S_OK)
+                if (hr == HResult.S_OK)
                 {
                     pidlItem = ILFindLastID(pidlFull);
                     aPidl[nIndex++] = ILClone(pidlItem);
@@ -466,7 +466,7 @@ namespace FireBlade.WinInteropUtils
             }
 
             hr = CIDLData_CreateFromIDArray(pidlParent, nIndex, aPidl, out IDataObject pDO);
-            if (hr == HRESULT.S_OK)
+            if (hr == HResult.S_OK)
             {
                 hr = SHMultiFileProperties(pDO, 0);
             }

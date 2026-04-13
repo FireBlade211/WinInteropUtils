@@ -11,6 +11,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms.Design;
+using System.Windows.Forms.VisualStyles;
 
 namespace WinInteropUtils_Test_App
 {
@@ -187,7 +188,7 @@ namespace WinInteropUtils_Test_App
             }
         }
 
-        private void viewHRESULTValuesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void viewHResultValuesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new EnumValuesForm().ShowDialog();
         }
@@ -251,7 +252,7 @@ namespace WinInteropUtils_Test_App
         {
             Debug.WriteLine("Code running!");
 
-            HRESULT hr = COM.Initialize(COM.COMInitOptions.ApartmentThreaded);
+            HResult hr = COM.Initialize(COM.COMInitOptions.ApartmentThreaded);
 
             if (Macros.Succeeded(hr))
             {
@@ -409,6 +410,11 @@ namespace WinInteropUtils_Test_App
         {
             new WindowTestForm().Show(this);
         }
+
+        private void winInteropUtilsWinFormsShellToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new WiuWinFormsShellControlsTestForm().ShowDialog();
+        }
     }
 
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
@@ -515,14 +521,13 @@ namespace WinInteropUtils_Test_App
         public override object? GetEditor(Type editorBaseType)
         {
             if (_param.ParameterType.IsEnum && _param.ParameterType.GetCustomAttribute(typeof(FlagsAttribute)) != null)
-            {
                 return new FlagsEnumEditor();
-            }
 
             if (DisplayName.Contains("hWnd", StringComparison.OrdinalIgnoreCase))
-            {
                 return new HwndEditor();
-            }
+
+            if (_param.ParameterType.Equals(typeof(bool)))
+                return new BooleanTypeEditor();
 
             return base.GetEditor(editorBaseType);
         }
@@ -632,7 +637,7 @@ namespace WinInteropUtils_Test_App
                 return value;
 
             var dlg = new WindowPickerForm();
-
+            
             edSvc.ShowDialog(dlg);
 
             return dlg.Hwnd;

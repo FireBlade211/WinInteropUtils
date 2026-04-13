@@ -10,13 +10,13 @@ namespace FireBlade.WinInteropUtils
     public static class Macros
     {
         /// <summary>
-        /// Maps a system error code to an <see cref="HRESULT"/> value.
+        /// Maps a system error code to an <see cref="HResult"/> value.
         /// </summary>
         /// <param name="error">The system error code.</param>
-        /// <returns>The created <see cref="HRESULT"/>.</returns>
-        public static HRESULT HResultFromWin32(this Win32ErrorCode error)
+        /// <returns>The created <see cref="HResult"/>.</returns>
+        public static HResult HResultFromWin32(this Win32ErrorCode error)
         {
-            return ((HRESULT)((int)error) <= 0 ? ((HRESULT)((int)error)) : ((HRESULT)((((int)error) & 0x0000FFFF) | (WinConstants.FACILITY_WIN32 << 16) | 0x80000000)));
+            return ((HResult)((int)error) <= 0 ? ((HResult)((int)error)) : ((HResult)((((int)error) & 0x0000FFFF) | (WinConstants.FACILITY_WIN32 << 16) | 0x80000000)));
         }
 
         /// <summary>
@@ -33,32 +33,32 @@ namespace FireBlade.WinInteropUtils
         public static string MakeIntResource(int i) => ((ulong)((ushort)(i))).ToString(CultureInfo.InvariantCulture);
 
         /// <summary>
-        /// Provides a generic test for success on any <see cref="HRESULT"/> status value.
+        /// Provides a generic test for success on any <see cref="HResult"/> status value.
         /// </summary>
-        /// <param name="hr">The status code. This value can be a <see cref="HRESULT"/>. A non-negative number indicates success.</param>
+        /// <param name="hr">The status code. This value can be a <see cref="HResult"/>. A non-negative number indicates success.</param>
         /// <returns><see langword="true"/> if the status code is successful; otherwise, <see langword="false"/>.</returns>
-        public static bool Succeeded(HRESULT hr) => hr >= 0;
+        public static bool Succeeded(HResult hr) => hr >= 0;
 
         /// <summary>
         /// Provides a generic test for success on any <see cref="Win32ErrorCode"/> status value.
         /// </summary>
         /// <param name="hr">The status code. This value can be a <see cref="Win32ErrorCode"/>. A non-negative number indicates success.</param>
         /// <returns><see langword="true"/> if the status code is successful; otherwise, <see langword="false"/>.</returns>
-        public static bool Succeeded(Win32ErrorCode hr) => ((HRESULT)hr) >= 0;
+        public static bool Succeeded(Win32ErrorCode hr) => ((HResult)((int)hr)) >= 0;
 
         /// <summary>
-        /// Provides a generic test for failure on any <see cref="HRESULT"/> status value.
+        /// Provides a generic test for failure on any <see cref="HResult"/> status value.
         /// </summary>
-        /// <param name="hr">The status code. This value can be a <see cref="HRESULT"/>. A non-negative number indicates success.</param>
+        /// <param name="hr">The status code. This value can be a <see cref="HResult"/>. A non-negative number indicates success.</param>
         /// <returns><see langword="true"/> if the status code is successful; otherwise, <see langword="false"/>.</returns>
-        public static bool Failed(HRESULT hr) => hr < 0;
+        public static bool Failed(HResult hr) => hr < 0;
 
         /// <summary>
         /// Provides a generic test for failure on any <see cref="Win32ErrorCode"/> status value.
         /// </summary>
         /// <param name="hr">The status code. This value can be a <see cref="Win32ErrorCode"/>. A negative number indicates failure.</param>
         /// <returns><see langword="true"/> if the status code indicates failure; otherwise, <see langword="false"/>.</returns>
-        public static bool Failed(Win32ErrorCode hr) => ((HRESULT)hr) < 0;
+        public static bool Failed(Win32ErrorCode hr) => ((HResult)((int)hr)) < 0;
 
         /// <summary>
         /// Retrieves the low-order word from the specified value.

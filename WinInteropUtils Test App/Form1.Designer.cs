@@ -41,7 +41,7 @@
             settingsToolStripMenuItem = new ToolStripMenuItem();
             exitToolStripMenuItem = new ToolStripMenuItem();
             viewToolStripMenuItem = new ToolStripMenuItem();
-            viewHRESULTValuesToolStripMenuItem = new ToolStripMenuItem();
+            viewHResultValuesToolStripMenuItem = new ToolStripMenuItem();
             testToolStripMenuItem = new ToolStripMenuItem();
             messageBoxToolStripMenuItem = new ToolStripMenuItem();
             fileDialogToolStripMenuItem = new ToolStripMenuItem();
@@ -49,6 +49,7 @@
             colorDialogToolStripMenuItem = new ToolStripMenuItem();
             visualStylesToolStripMenuItem = new ToolStripMenuItem();
             windowToolStripMenuItem = new ToolStripMenuItem();
+            winInteropUtilsWinFormsShellToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -170,21 +171,21 @@
             // 
             // viewToolStripMenuItem
             // 
-            viewToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { viewHRESULTValuesToolStripMenuItem });
+            viewToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { viewHResultValuesToolStripMenuItem });
             viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             viewToolStripMenuItem.Size = new Size(44, 20);
             viewToolStripMenuItem.Text = "View";
             // 
-            // viewHRESULTValuesToolStripMenuItem
+            // viewHResultValuesToolStripMenuItem
             // 
-            viewHRESULTValuesToolStripMenuItem.Name = "viewHRESULTValuesToolStripMenuItem";
-            viewHRESULTValuesToolStripMenuItem.Size = new Size(178, 22);
-            viewHRESULTValuesToolStripMenuItem.Text = "View Enum Values...";
-            viewHRESULTValuesToolStripMenuItem.Click += viewHRESULTValuesToolStripMenuItem_Click;
+            viewHResultValuesToolStripMenuItem.Name = "viewHResultValuesToolStripMenuItem";
+            viewHResultValuesToolStripMenuItem.Size = new Size(178, 22);
+            viewHResultValuesToolStripMenuItem.Text = "View Enum Values...";
+            viewHResultValuesToolStripMenuItem.Click += viewHResultValuesToolStripMenuItem_Click;
             // 
             // testToolStripMenuItem
             // 
-            testToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { messageBoxToolStripMenuItem, fileDialogToolStripMenuItem, winInteropUtilsWinFormsToolStripMenuItem, colorDialogToolStripMenuItem, visualStylesToolStripMenuItem, windowToolStripMenuItem });
+            testToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { messageBoxToolStripMenuItem, fileDialogToolStripMenuItem, winInteropUtilsWinFormsToolStripMenuItem, colorDialogToolStripMenuItem, visualStylesToolStripMenuItem, windowToolStripMenuItem, winInteropUtilsWinFormsShellToolStripMenuItem });
             testToolStripMenuItem.Name = "testToolStripMenuItem";
             testToolStripMenuItem.Size = new Size(39, 20);
             testToolStripMenuItem.Text = "Test";
@@ -192,44 +193,51 @@
             // messageBoxToolStripMenuItem
             // 
             messageBoxToolStripMenuItem.Name = "messageBoxToolStripMenuItem";
-            messageBoxToolStripMenuItem.Size = new Size(213, 22);
+            messageBoxToolStripMenuItem.Size = new Size(249, 22);
             messageBoxToolStripMenuItem.Text = "Message box";
             messageBoxToolStripMenuItem.Click += messageBoxToolStripMenuItem_Click;
             // 
             // fileDialogToolStripMenuItem
             // 
             fileDialogToolStripMenuItem.Name = "fileDialogToolStripMenuItem";
-            fileDialogToolStripMenuItem.Size = new Size(213, 22);
+            fileDialogToolStripMenuItem.Size = new Size(249, 22);
             fileDialogToolStripMenuItem.Text = "File dialog";
             fileDialogToolStripMenuItem.Click += fileDialogToolStripMenuItem_Click;
             // 
             // winInteropUtilsWinFormsToolStripMenuItem
             // 
             winInteropUtilsWinFormsToolStripMenuItem.Name = "winInteropUtilsWinFormsToolStripMenuItem";
-            winInteropUtilsWinFormsToolStripMenuItem.Size = new Size(213, 22);
+            winInteropUtilsWinFormsToolStripMenuItem.Size = new Size(249, 22);
             winInteropUtilsWinFormsToolStripMenuItem.Text = "WinInteropUtils.WinForms";
             winInteropUtilsWinFormsToolStripMenuItem.Click += winInteropUtilsWinFormsToolStripMenuItem_Click;
             // 
             // colorDialogToolStripMenuItem
             // 
             colorDialogToolStripMenuItem.Name = "colorDialogToolStripMenuItem";
-            colorDialogToolStripMenuItem.Size = new Size(213, 22);
+            colorDialogToolStripMenuItem.Size = new Size(249, 22);
             colorDialogToolStripMenuItem.Text = "Color dialog";
             colorDialogToolStripMenuItem.Click += colorDialogToolStripMenuItem_Click;
             // 
             // visualStylesToolStripMenuItem
             // 
             visualStylesToolStripMenuItem.Name = "visualStylesToolStripMenuItem";
-            visualStylesToolStripMenuItem.Size = new Size(213, 22);
+            visualStylesToolStripMenuItem.Size = new Size(249, 22);
             visualStylesToolStripMenuItem.Text = "Visual styles";
             visualStylesToolStripMenuItem.Click += visualStylesToolStripMenuItem_Click;
             // 
             // windowToolStripMenuItem
             // 
             windowToolStripMenuItem.Name = "windowToolStripMenuItem";
-            windowToolStripMenuItem.Size = new Size(213, 22);
+            windowToolStripMenuItem.Size = new Size(249, 22);
             windowToolStripMenuItem.Text = "Window";
             windowToolStripMenuItem.Click += windowToolStripMenuItem_Click;
+            // 
+            // winInteropUtilsWinFormsShellToolStripMenuItem
+            // 
+            winInteropUtilsWinFormsShellToolStripMenuItem.Name = "winInteropUtilsWinFormsShellToolStripMenuItem";
+            winInteropUtilsWinFormsShellToolStripMenuItem.Size = new Size(249, 22);
+            winInteropUtilsWinFormsShellToolStripMenuItem.Text = "WinInteropUtils.WinForms (Shell)";
+            winInteropUtilsWinFormsShellToolStripMenuItem.Click += winInteropUtilsWinFormsShellToolStripMenuItem_Click;
             // 
             // Form1
             // 
@@ -264,7 +272,7 @@
         private ToolStripMenuItem menuToolStripMenuItem;
         private ToolStripMenuItem callMethodToolStripMenuItem;
         private ToolStripMenuItem viewToolStripMenuItem;
-        private ToolStripMenuItem viewHRESULTValuesToolStripMenuItem;
+        private ToolStripMenuItem viewHResultValuesToolStripMenuItem;
         private ToolStripSeparator toolStripMenuItem1;
         private ToolStripMenuItem settingsToolStripMenuItem;
         private ToolStripMenuItem exitToolStripMenuItem;
@@ -275,5 +283,6 @@
         private ToolStripMenuItem colorDialogToolStripMenuItem;
         private ToolStripMenuItem visualStylesToolStripMenuItem;
         private ToolStripMenuItem windowToolStripMenuItem;
+        private ToolStripMenuItem winInteropUtilsWinFormsShellToolStripMenuItem;
     }
 }

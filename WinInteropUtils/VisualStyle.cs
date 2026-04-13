@@ -64,9 +64,9 @@ namespace FireBlade.WinInteropUtils
         {
             GC.SuppressFinalize(this);
 
-            HRESULT hr = (HRESULT)CloseThemeData(_htheme);
+            HResult hr = (HResult)CloseThemeData(_htheme);
 
-            if (hr != HRESULT.S_OK)
+            if (hr != HResult.S_OK)
             {
                 Marshal.ThrowExceptionForHR((int)hr);
             }
@@ -119,9 +119,9 @@ namespace FireBlade.WinInteropUtils
 
             unsafe
             {
-                HRESULT hr = (HRESULT)_DrawThemeText(_htheme, gh.GetHdc(), iPartId, iStateId, text, cchText, (uint)options, 0, &rc);
+                HResult hr = (HResult)_DrawThemeText(_htheme, gh.GetHdc(), iPartId, iStateId, text, cchText, (uint)options, 0, &rc);
 
-                if (hr != HRESULT.S_OK)
+                if (hr != HResult.S_OK)
                 {
                     Marshal.ThrowExceptionForHR((int)hr);
                 }
@@ -293,12 +293,12 @@ namespace FireBlade.WinInteropUtils
         //        var pCb = Marshal.GetFunctionPointerForDelegate<DTT_CALLBACK_PROC>(DttCallback);
         //        dto.pfnDrawTextCallback = pCb;
 
-        //        HRESULT hr = (HRESULT)DrawThemeTextEx(_htheme, gh.GetHdc(), iPartId, iStateId, text, cchText, (uint)options, &rc, &dto);
+        //        HResult hr = (HResult)DrawThemeTextEx(_htheme, gh.GetHdc(), iPartId, iStateId, text, cchText, (uint)options, &rc, &dto);
 
         //        lParam.Free();
         //        GC.KeepAlive(pCb);
 
-        //        if (hr != HRESULT.S_OK)
+        //        if (hr != HResult.S_OK)
         //        {
         //            Marshal.ThrowExceptionForHR((int)hr);
         //        }

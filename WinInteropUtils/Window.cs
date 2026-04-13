@@ -10,7 +10,7 @@ namespace FireBlade.WinInteropUtils
     /// </summary>
     public partial class Window : IHandle
     {
-        private nint _hwnd;
+        internal nint _hwnd;
 
         /// <summary>
         /// Gets the handle (HWND) of the window.
@@ -270,7 +270,7 @@ namespace FireBlade.WinInteropUtils
 
                 if (copiedChars == 0)
                 {
-                    HRESULT hr = (HRESULT)Marshal.GetHRForLastWin32Error();
+                    HResult hr = (HResult)Marshal.GetHRForLastWin32Error();
                     var ex = Marshal.GetExceptionForHR((int)hr);
 
                     if (ex != null) throw ex;
@@ -970,10 +970,8 @@ namespace FireBlade.WinInteropUtils
             public nint hIcon;
             public nint hCursor;
             public nint hbrBackground;
-            [MarshalAs(UnmanagedType.LPWStr)]
-            public string? lpszMenuName;
-            [MarshalAs(UnmanagedType.LPWStr)]
-            public string lpszClassName;
+            public nint lpszMenuName;
+            public nint lpszClassName;
             public nint hIconSm;
         }
 
@@ -1042,7 +1040,8 @@ namespace FireBlade.WinInteropUtils
                             HInstance = cs.hInstance,
                             Location = new Point(cs.x, cs.y),
                             Size = new Size(cs.cx, cs.cy),
-                            _createParams = cs.lpCreateParams
+                            _createParams = cs.lpCreateParams,
+                            _class = Marshal.PtrToStringUni(cs.lpszClass) ?? string.Empty
                         };
 
                         var result = WindowProcedure(Window.FromHandleInternal(hwnd), uMsg, wParam, lParam);
@@ -1051,8 +1050,7 @@ namespace FireBlade.WinInteropUtils
                             GCHandle.FromIntPtr(cs.lpCreateParams).Free();
 
                         return result;
-                }
-                ;
+                };
 
                 return WindowProcedure(Window.FromHandleInternal(hwnd), uMsg, wParam, lParam);
             };
@@ -1062,8 +1060,12 @@ namespace FireBlade.WinInteropUtils
             NativeCallbackRoots.Add(WindowProcedure);
 
             wcex.lpfnWndProc = wndProc;
-            wcex.lpszMenuName = MenuName;
-            wcex.lpszClassName = ClassName;
+
+            var ptrMenu = Marshal.StringToHGlobalUni(MenuName);
+            var ptrClass = Marshal.StringToHGlobalUni(ClassName);
+
+			wcex.lpszMenuName = ptrMenu;
+            wcex.lpszClassName = ptrClass;
             wcex.cbClsExtra = ExtraSize;
             wcex.cbWndExtra = ExtraWindowSize;
             wcex.hbrBackground = BackgroundBrush != null ? (int)BackgroundBrush : 0;
@@ -1073,6 +1075,9 @@ namespace FireBlade.WinInteropUtils
             wcex.hIconSm = SmallClassIcon?.Handle ?? nint.Zero;
 
             var atom = RegisterClassExW(ref wcex);
+
+            Marshal.FreeHGlobal(ptrMenu);
+            Marshal.FreeHGlobal(ptrClass);
 
             if (atom == 0)
             {
@@ -1171,15 +1176,70 @@ namespace FireBlade.WinInteropUtils
 
                 var c = new WindowClass();
                 c.Instance = wcex.hInstance;
-                c.ClassName = wcex.lpszClassName ?? string.Empty;
+                c.ClassName = wcex.lpszClassName != nint.Zero
+                    ? Marshal.PtrToStringUni(wcex.lpszClassName) ?? string.Empty : string.Empty;
+
                 c.ExtraWindowSize = wcex.cbWndExtra;
                 c.ExtraSize = wcex.cbClsExtra;
                 c.ClassStyle = (ClassStyle)wcex.style;
-                c.MenuName = wcex.lpszMenuName;
+                c.MenuName = wcex.lpszMenuName != nint.Zero ? Marshal.PtrToStringUni(wcex.lpszMenuName) : null;
+
                 c.BackgroundBrush = (SystemColorId)wcex.hbrBackground;
-                
+
                 if (wcex.lpfnWndProc != nint.Zero)
-                    c.WindowProcedure = Marshal.GetDelegateForFunctionPointer<WndProc>(wcex.lpfnWndProc);
+                {
+                    var wndProc = Marshal.GetDelegateForFunctionPointer<WndProcInternal>(wcex.lpfnWndProc);
+                    NativeCallbackRoots.Add(wndProc); // keep it alive
+                    c.WindowProcedure = (wnd, uMsg, wParam, lParam) =>
+                    {
+                        switch (uMsg)
+                        {
+                            case WM_CREATE:
+                                var mCs = (CreateStruct)lParam;
+                                var classPtr = Marshal.StringToHGlobalUni(mCs._class);
+                                var namePtr = Marshal.StringToHGlobalUni(mCs.Text);
+
+                                var cs = new CREATESTRUCTW
+                                {
+                                    cx = mCs.Size.Width,
+                                    cy = mCs.Size.Height,
+                                    dwExStyle = (uint)mCs.ExStyle,
+                                    hInstance = mCs.HInstance,
+                                    hMenu = mCs.HMenu,
+                                    hwndParent = mCs.Parent?._hwnd ?? nint.Zero,
+                                    lpCreateParams = mCs.CreateParam != null ? mCs._createParams : nint.Zero,
+                                    lpszClass = classPtr,
+                                    lpszName = namePtr,
+                                    style = (nint)mCs.Style,
+                                    x = mCs.Location.X,
+                                    y = mCs.Location.Y
+                                };
+
+                                nint ptr = nint.Zero;
+
+                                try
+                                {
+                                    ptr = Marshal.AllocHGlobal(Marshal.SizeOf<CREATESTRUCTW>());
+                                    Marshal.StructureToPtr(cs, ptr, false);
+
+                                    return wndProc(wnd, uMsg, wParam, ptr);
+                                }
+                                finally
+                                {
+                                    if (cs.lpCreateParams != nint.Zero)
+                                        GCHandle.FromIntPtr(cs.lpCreateParams).Free();
+
+                                    Marshal.FreeHGlobal(classPtr);
+                                    Marshal.FreeHGlobal(namePtr);
+
+                                    if (ptr != nint.Zero)
+                                        Marshal.FreeHGlobal(ptr);
+                                }
+                        }
+
+						return wndProc(wnd, uMsg, wParam, lParam is nint n ? n : nint.Zero);
+					};
+				}
 
                 if (wcex.hIcon != nint.Zero)
                     c.ClassIcon = Icon.FromHandle(wcex.hIcon);
@@ -1230,12 +1290,15 @@ namespace FireBlade.WinInteropUtils
 
                 var c = new WindowClass();
                 c.Instance = wcex.hInstance;
-                c.ClassName = wcex.lpszClassName ?? string.Empty;
-                c.ExtraWindowSize = wcex.cbWndExtra;
+				c.ClassName = wcex.lpszClassName != nint.Zero
+	                ? Marshal.PtrToStringUni(wcex.lpszClassName) ?? string.Empty : string.Empty;
+
+				c.ExtraWindowSize = wcex.cbWndExtra;
                 c.ExtraSize = wcex.cbClsExtra;
                 c.ClassStyle = (ClassStyle)wcex.style;
-                c.MenuName = wcex.lpszMenuName;
-                c.BackgroundBrush = (SystemColorId)wcex.hbrBackground;
+				c.MenuName = wcex.lpszMenuName != nint.Zero ? Marshal.PtrToStringUni(wcex.lpszMenuName) : null;
+
+				c.BackgroundBrush = (SystemColorId)wcex.hbrBackground;
                 c.WindowProcedure = Marshal.GetDelegateForFunctionPointer<WndProc>(wcex.lpfnWndProc);
                 c.ClassIcon = Icon.FromHandle(wcex.hIcon);
                 c.SmallClassIcon = Icon.FromHandle(wcex.hIconSm);
@@ -1737,6 +1800,7 @@ namespace FireBlade.WinInteropUtils
         public ExWindowStyles ExStyle;
 
         internal nint _createParams;
+        internal string _class;
     }
 
     /// <summary>

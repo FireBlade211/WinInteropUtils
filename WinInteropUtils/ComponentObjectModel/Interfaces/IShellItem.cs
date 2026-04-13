@@ -19,7 +19,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces
     [SupportedOSPlatform("windows6.0")]
     public partial interface IShellItem
     {
-        // HRESULT BindToHandler(IBindCtx *pbc, REFGUID bhid, REFIID riid, void **ppv);
+        // HResult BindToHandler(IBindCtx *pbc, REFGUID bhid, REFIID riid, void **ppv);
         /// <summary>
         /// Binds to a handler for an item as specified by the handler ID value (BHID).
         /// </summary>
@@ -30,31 +30,31 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces
         /// <param name="riid">IID of the object type to retrieve.</param>
         /// <param name="ppv">When this method returns, contains a pointer of type <paramref name="riid"/> that is returned by the
         /// handler specified by <paramref name="bhid"/>.</param>
-        /// <returns>If this method succeeds, it returns <see cref="HRESULT.S_OK"/>. Otherwise, it returns an
-        /// <see cref="HRESULT"/> error code.</returns>
+        /// <returns>If this method succeeds, it returns <see cref="HResult.S_OK"/>. Otherwise, it returns an
+        /// <see cref="HResult"/> error code.</returns>
         [PreserveSig]
-        public HRESULT BindToHandler(IntPtr pbc, ref Guid bhid, ref Guid riid, out nint ppv);
+        public HResult BindToHandler(IntPtr pbc, ref Guid bhid, ref Guid riid, out nint ppv);
 
-        // HRESULT GetParent(IShellItem **ppsi);
+        // HResult GetParent(IShellItem **ppsi);
         /// <summary>
         /// Gets the parent of an <see cref="IShellItem"/> object.
         /// </summary>
         /// <param name="ppsi">The address of a pointer to the parent of an <see cref="IShellItem"/> interface.</param>
-        /// <returns>Returns <see cref="HRESULT.S_OK"/> if successful, or an error value otherwise.</returns>
+        /// <returns>Returns <see cref="HResult.S_OK"/> if successful, or an error value otherwise.</returns>
         [PreserveSig]
-        public HRESULT GetParent(out nint ppsi);
+        public HResult GetParent(out nint ppsi);
 
-        // HRESULT GetDisplayName(SIGDN sigdnName, LPWSTR *ppszName);
+        // HResult GetDisplayName(SIGDN sigdnName, LPWSTR *ppszName);
         /// <summary>
         /// Gets the display name of the <see cref="IShellItem"/> object.
         /// </summary>
         /// <param name="sigdnName">One of the <see cref="SIGDN"/> values that indicates how the name should look.</param>
         /// <param name="ppszName">A value that, when this function returns successfully, receives the address of a pointer to the retrieved display name.</param>
-        /// <returns><see cref="HRESULT.S_OK"/> if successful; otherwise, an <see cref="HRESULT"/> error code.</returns>
+        /// <returns><see cref="HResult.S_OK"/> if successful; otherwise, an <see cref="HResult"/> error code.</returns>
         [PreserveSig]
-        public HRESULT GetDisplayName(SIGDN sigdnName, out nint ppszName);
+        public HResult GetDisplayName(SIGDN sigdnName, out nint ppszName);
 
-        // HRESULT GetAttributes(SFGAOF sfgaoMask, SFGAOF *psfgaoAttribs);
+        // HResult GetAttributes(SFGAOF sfgaoMask, SFGAOF *psfgaoAttribs);
         /// <summary>
         /// Gets a requested set of attributes of the <see cref="IShellItem"/> object.
         /// </summary>
@@ -62,13 +62,13 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces
         /// to determine the attributes to retrieve.</param>
         /// <param name="psfgaoAttribs">A pointer to a value that, when this method returns successfully, contains the requested attributes.
         /// One or more of the SFGAO values. Only those attributes specified by <paramref name="sfgaoMask"/> are returned; other attribute values are undefined.</param>
-        /// <returns><see cref="HRESULT.S_OK"/> if the attributes returned exactly match those requested
-        /// in <paramref name="sfgaoMask"/>, <see cref="HRESULT.S_FALSE"/> if the attributes do not exactly match, or a
+        /// <returns><see cref="HResult.S_OK"/> if the attributes returned exactly match those requested
+        /// in <paramref name="sfgaoMask"/>, <see cref="HResult.S_FALSE"/> if the attributes do not exactly match, or a
         /// standard <see cref="COM"/> error value otherwise.</returns>
         [PreserveSig]
-        public HRESULT GetAttributes(uint sfgaoMask, out uint psfgaoAttribs);
+        public HResult GetAttributes(uint sfgaoMask, out uint psfgaoAttribs);
 
-        // HRESULT Compare(IShellItem *psi, SICHINTF hint, int *piOrder);
+        // HResult Compare(IShellItem *psi, SICHINTF hint, int *piOrder);
         /// <summary>
         /// Compares two <see cref="IShellItem"/> objects.
         /// </summary>
@@ -77,9 +77,9 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces
         /// See <see cref="SICHINTF"/> for the list of possible values for this parameter.</param>
         /// <param name="piOrder">This parameter receives the result of the comparison. If the two items are the same this parameter equals zero;
         /// if they are different the parameter is nonzero.</param>
-        /// <returns><see cref="HRESULT.S_OK"/> if the items are the same, <see cref="HRESULT.S_FALSE"/> if they are different, or an error value otherwise.</returns>
+        /// <returns><see cref="HResult.S_OK"/> if the items are the same, <see cref="HResult.S_FALSE"/> if they are different, or an error value otherwise.</returns>
         [PreserveSig]
-        public HRESULT Compare(IntPtr psi, SICHINTF hint, out int piOrder);
+        public HResult Compare(IntPtr psi, SICHINTF hint, out int piOrder);
     }
 
     // SIGDN enum for display name type

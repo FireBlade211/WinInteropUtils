@@ -29,29 +29,29 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// </remarks>
         /// <returns>
         /// This function can return the standard
-        /// return values <see cref="HRESULT.E_INVALIDARG"/>, <see cref="HRESULT.E_OUTOFMEMORY"/>,
-        /// and <see cref="HRESULT.E_UNEXPECTED"/>, as well as the following values:
+        /// return values <see cref="HResult.E_INVALIDARG"/>, <see cref="HResult.E_OUTOFMEMORY"/>,
+        /// and <see cref="HResult.E_UNEXPECTED"/>, as well as the following values:
         /// 
         /// <list type="table">
         /// <item>
-        /// <term><see cref="HRESULT.S_OK"/></term>
+        /// <term><see cref="HResult.S_OK"/></term>
         /// <description>The COM library was initialized successfully on this thread.</description>
         /// </item>
         /// 
         /// <item>
-        /// <term><see cref="HRESULT.S_FALSE"/></term>
+        /// <term><see cref="HResult.S_FALSE"/></term>
         /// <description>The COM library is already initialized on this thread.</description>
         /// </item>
         /// 
         /// <item>
-        /// <term><see cref="HRESULT.RPC_E_CHANGED_MODE"/></term>
+        /// <term><see cref="HResult.RPC_E_CHANGED_MODE"/></term>
         /// <description>A previous call to <see cref="Initialize(COMInitOptions)"/> specified the concurrency model for this thread
         /// as multithread apartment (MTA). This could also indicate that a change from neutral-threaded apartment to single-threaded
         /// apartment has occurred.</description>
         /// </item>
         /// </list>
         /// </returns>
-        public static HRESULT Initialize() => (HRESULT)CoInitialize(nint.Zero);
+        public static HResult Initialize() => (HResult)CoInitialize(nint.Zero);
 
         /// <summary>
         /// Initializes the COM library for use by the calling thread, sets the thread's concurrency model, and creates a new apartment for the thread if one is required.
@@ -59,18 +59,18 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// <param name="options">The concurrency model and initialization options for the thread. Any combination of values from <see cref="COMInitOptions"/> can be used, except
         /// that the <see cref="COMInitOptions.ApartmentThreaded"/> and <see cref="COMInitOptions.MultiThreaded"/> flags cannot both be set.
         /// The default is <see cref="COMInitOptions.MultiThreaded"/>.</param>
-        /// <returns>This function can return either <see cref="HRESULT.S_OK"/> or <see cref="HRESULT.S_FALSE"/>.</returns>
+        /// <returns>This function can return either <see cref="HResult.S_OK"/> or <see cref="HResult.S_FALSE"/>.</returns>
         /// <remarks>
         /// <para><see cref="Initialize(COMInitOptions)"/> must be called at least once, and is usually called only once, for each thread that uses the COM library. Multiple calls
         /// to <see cref="Initialize(COMInitOptions)"/> by the same thread are allowed as long as they pass the same concurrency flag, but subsequent valid calls return
-        /// <see cref="HRESULT.S_FALSE"/>. If the concurrency flag does not match, then the call fails and returns <see cref="HRESULT.RPC_E_CHANGED_MODE"/>. 
+        /// <see cref="HResult.S_FALSE"/>. If the concurrency flag does not match, then the call fails and returns <see cref="HResult.RPC_E_CHANGED_MODE"/>. 
         /// (For the purpose of this rule, a call to CoInitialize is equivalent to calling <see cref="Initialize(COMInitOptions)"/> with the <see cref="COMInitOptions.ApartmentThreaded"/> flag.) To
         /// uninitialize the COM library gracefully on a thread, each successful call to CoInitialize or <see cref="Initialize(COMInitOptions)"/>, including any call that
-        /// returns <see cref="HRESULT.S_FALSE"/>, must be balanced by a corresponding call to <see cref="Uninitialize"/>. Once COM has been uninitialized on a thread,
+        /// returns <see cref="HResult.S_FALSE"/>, must be balanced by a corresponding call to <see cref="Uninitialize"/>. Once COM has been uninitialized on a thread,
         /// you can reinitialize it in any mode, subject to the constraints above.</para>
         ///
         /// <para>You need to initialize the COM library on a thread before you call any of the library functions except CoGetMalloc, to get
-        /// a pointer to the standard allocator, and the memory allocation functions. Otherwise, the COM function will return <see cref="HRESULT.CO_E_NOTINITIALIZED"/>.</para>
+        /// a pointer to the standard allocator, and the memory allocation functions. Otherwise, the COM function will return <see cref="HResult.CO_E_NOTINITIALIZED"/>.</para>
         ///
         /// <para>Objects created in a single-threaded apartment (STA) receive method calls only from their apartment's thread, so calls are serialized and arrive
         /// only at message-queue boundaries (when the PeekMessage or SendMessage function is called).</para>
@@ -81,7 +81,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         ///
         /// <para>When an object that is configured to run in the neutral threaded apartment (NTA) is called by a thread that is in either
         /// an STA or the MTA, that thread transfers to the NTA. If this thread subsequently calls <see cref="Initialize(COMInitOptions)"/>, the call fails and returns
-        /// <see cref="HRESULT.RPC_E_CHANGED_MODE"/>.</para>
+        /// <see cref="HResult.RPC_E_CHANGED_MODE"/>.</para>
         ///
         /// <para>Because OLE technologies are not thread-safe, the OleInitialize function calls <see cref="Initialize(COMInitOptions)"/> with the <see cref="COMInitOptions.ApartmentThreaded"/> flag. As a result,
         /// an apartment that is initialized for multithreaded object concurrency cannot use the features enabled by OleInitialize.</para>
@@ -89,7 +89,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// Because there is no way to control the order in which in-process servers are loaded or unloaded, do not call CoInitialize, <see cref="Initialize(COMInitOptions)"/>,
         /// or <see cref="Uninitialize"/> from the <c>DllMain</c> function.
         /// </remarks>
-        public static HRESULT Initialize(COMInitOptions options) => (HRESULT)CoInitializeEx(nint.Zero, (uint)options);
+        public static HResult Initialize(COMInitOptions options) => (HResult)CoInitializeEx(nint.Zero, (uint)options);
 
         /// <summary>
         /// Closes the COM library on the current thread, unloads all DLLs loaded by the thread,
@@ -188,28 +188,28 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// <param name="riid">A reference to the identifier of the interface to be used to communicate with the object.</param>
         /// <param name="ppv">Upon successful return, <paramref name="ppv"/> contains the requested interface. Upon failure, <paramref name="ppv"/> contains
         /// <see langword="null"/>.</param>
-        /// <returns>A <see cref="HRESULT"/>. It can be one of the following values:
+        /// <returns>A <see cref="HResult"/>. It can be one of the following values:
         /// <list type="table">
         /// <item>
-        /// <term><see cref="HRESULT.S_OK"/></term>
+        /// <term><see cref="HResult.S_OK"/></term>
         /// <description>An instance of the specified object class was successfully created.</description>
         /// </item>
         /// <item>
-        /// <term><see cref="HRESULT.REGDB_E_CLASSNOTREG"/></term>
+        /// <term><see cref="HResult.REGDB_E_CLASSNOTREG"/></term>
         /// <description>A specified class is not registered in the registration database. Also can indicate that the type of server you requested
         /// in the <see cref="CreateInstanceContext"/> enumeration is not registered or the values for the server types in the registry are corrupt.</description>
         /// </item>
         /// <item>
-        /// <term><see cref="HRESULT.CLASS_E_NOAGGREGATION"/></term>
+        /// <term><see cref="HResult.CLASS_E_NOAGGREGATION"/></term>
         /// <description>This class cannot be created as part of an aggregate.</description>
         /// </item>
         /// <item>
-        /// <term><see cref="HRESULT.E_NOINTERFACE"/></term>
+        /// <term><see cref="HResult.E_NOINTERFACE"/></term>
         /// <description>The specified class does not implement the requested interface,
         /// or the controlling <c>IUnknown</c> does not expose the requested interface.</description>
         /// </item>
         /// <item>
-        /// <term><see cref="HRESULT.E_POINTER"/></term>
+        /// <term><see cref="HResult.E_POINTER"/></term>
         /// <description>The <paramref name="ppv"/> parameter is <see langword="null"/>.</description>
         /// </item>
         /// </list>
@@ -232,7 +232,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// 
         /// Although there are no restrictions on which CLSIDs a UWP application can pass
         /// to <c>CreateInstance</c>,
-        /// many objects will fail with <see cref="HRESULT.E_ACCESSDENIED"/> for security reasons, especially if they do
+        /// many objects will fail with <see cref="HResult.E_ACCESSDENIED"/> for security reasons, especially if they do
         /// not run in-process. Additionally, even if you can successfully create an object, it might fail at a later
         /// time due to UWP security constraints, app-model differences, etc. In particular, background tasks should limit
         /// the objects they communicate with to avoid hangs or other complications due to connected stand-by.
@@ -240,8 +240,8 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// <exception cref="InvalidOperationException">TCoInterface must be an interface.</exception>
         [SupportedOSPlatform("windows5.0")]
         [Obsolete("Use the new overload instead. The new overload automatically detects the riid to prevent runtime" +
-            " errors, and uses .NET-style exceptions instead of the old HRESULT system.")]
-        public static HRESULT CreateInstance<TCoInterface>(Guid rclsid,
+            " errors, and uses .NET-style exceptions instead of the old HResult system.")]
+        public static HResult CreateInstance<TCoInterface>(Guid rclsid,
             [AllowNull] object? pUnkOuter,
             CreateInstanceContext dwClsContext,
             Guid riid,
@@ -255,7 +255,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
 
             ppv = default;
 
-            HRESULT hr = (HRESULT)CoCreateInstance(ref rclsid, pUnkOuter, (uint)dwClsContext, ref riid, out nint inst);
+            HResult hr = (HResult)CoCreateInstance(ref rclsid, pUnkOuter, (uint)dwClsContext, ref riid, out nint inst);
 
             if (Macros.Succeeded(hr))
             {
@@ -331,7 +331,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
                 throw new ArgumentException("pUnkOuter must be either a COM object or null.", nameof(pUnkOuter));
 
             Guid riid = typeof(TCoInterface).GUID;
-            HRESULT hr = (HRESULT)CoCreateInstance(ref rclsid, pUnkOuter, (uint)dwClsContext, ref riid, out nint inst);
+            HResult hr = (HResult)CoCreateInstance(ref rclsid, pUnkOuter, (uint)dwClsContext, ref riid, out nint inst);
 
             if (Macros.Succeeded(hr))
             {
@@ -439,7 +439,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// then <see cref="COM"/> will prefer a 64-bit version of the server if available; otherwise it will activate a 32-bit version of the server.</item>
         /// </list>
         /// <para>If a <see cref="CreateInstanceContext"/> enumeration has both the <see cref="Activate32BitServer"/> and <see cref="Activate64BitServer"/> flags set,
-        /// then it is invalid and the activation will return <see cref="HRESULT.E_INVALIDARG"/>.</para>
+        /// then it is invalid and the activation will return <see cref="HResult.E_INVALIDARG"/>.</para>
         /// 
         /// 
         /// The flags <see cref="Activate32BitServer"/> and <see cref="Activate64BitServer"/> flow across computer boundaries. If the computer that hosts
