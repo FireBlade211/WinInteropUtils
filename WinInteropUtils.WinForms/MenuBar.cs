@@ -10,7 +10,7 @@ namespace FireBlade.WinInteropUtils.WinForms
     /// <summary>
     /// Represents a Win32 menu bar.
     /// </summary>
-    public partial class MenuBar : MenuStrip, IHandle
+    internal partial class MenuBar : MenuStrip, IHandle
     {
         [DefaultValue(DockStyle.Top)]
         public override DockStyle Dock => base.Dock;
@@ -496,7 +496,7 @@ new();
     /// Represents a radio button menu item. Note that this class can only be used inside a <see cref="MenuBar"/>; it will not automatically
     /// act as a radio button inside a regular <see cref="ToolStrip"/>.
     /// </summary>
-    public class ToolStripRadioMenuItem : ToolStripMenuItem
+    internal class ToolStripRadioMenuItem : ToolStripMenuItem
     {
         /// <summary>
         /// Gets or sets the first start item in the mutually exclusive radio button group.
