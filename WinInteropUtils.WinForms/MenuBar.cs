@@ -280,9 +280,9 @@ new();
                 else
                     Debug.WriteLine("SUCCESS");
             }
-            catch (Exception ex)
+            catch
             {
-                throw ex;
+                throw;
             }
             finally
             {

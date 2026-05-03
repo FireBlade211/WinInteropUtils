@@ -1,6 +1,6 @@
 ﻿namespace FireBlade.WinInteropUtils.WinForms
 {
-    partial class MenuBar
+    internal partial class MenuBar
     {
         /// <summary>
         /// Required designer variable.

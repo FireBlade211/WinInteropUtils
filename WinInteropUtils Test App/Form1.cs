@@ -526,9 +526,6 @@ namespace WinInteropUtils_Test_App
             if (DisplayName.Contains("hWnd", StringComparison.OrdinalIgnoreCase))
                 return new HwndEditor();
 
-            if (_param.ParameterType.Equals(typeof(bool)))
-                return new BooleanTypeEditor();
-
             return base.GetEditor(editorBaseType);
         }
 
