@@ -106,7 +106,7 @@ are the preferred representations of items in any new code.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
 [Guid(&quot;43826d1e-e718-42ee-bc55-a1e261c37bfe&quot;)]
-public interface IShellItem : IUnknown</code></pre>
+public interface IShellItem</code></pre>
   </div>
 
 
@@ -115,19 +115,6 @@ public interface IShellItem : IUnknown</code></pre>
 
 
 
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
-    <div>
-      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_QueryInterface_System_Guid__System_IntPtr__">IUnknown.QueryInterface(ref Guid, out nint)</a>
-    </div>
-    <div>
-      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_AddRef">IUnknown.AddRef()</a>
-    </div>
-    <div>
-      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_Release">IUnknown.Release()</a>
-    </div>
-  </dd></dl>
 
 
 
@@ -153,7 +140,7 @@ public interface IShellItem : IUnknown</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT BindToHandler(nint pbc, ref Guid bhid, ref Guid riid, out nint ppv)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult BindToHandler(nint pbc, ref Guid bhid, ref Guid riid, out nint ppv)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -177,9 +164,9 @@ handler specified by <code class="paramref">bhid</code>.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an
-<a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an
+<a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -205,7 +192,7 @@ handler specified by <code class="paramref">bhid</code>.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT Compare(nint psi, SICHINTF hint, out int piOrder)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult Compare(nint psi, SICHINTF hint, out int piOrder)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -225,8 +212,8 @@ if they are different the parameter is nonzero.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a> if the items are the same, <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_FALSE">S_FALSE</a> if they are different, or an error value otherwise.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p><span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span> if the items are the same, <span class="xref">FireBlade.WinInteropUtils.HResult.S_FALSE</span> if they are different, or an error value otherwise.</p>
 </dd>
   </dl>
 
@@ -252,7 +239,7 @@ if they are different the parameter is nonzero.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT GetAttributes(uint sfgaoMask, out uint psfgaoAttribs)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult GetAttributes(uint sfgaoMask, out uint psfgaoAttribs)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -269,9 +256,9 @@ One or more of the SFGAO values. Only those attributes specified by <code class=
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a> if the attributes returned exactly match those requested
-in <code class="paramref">sfgaoMask</code>, <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_FALSE">S_FALSE</a> if the attributes do not exactly match, or a
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p><span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span> if the attributes returned exactly match those requested
+in <code class="paramref">sfgaoMask</code>, <span class="xref">FireBlade.WinInteropUtils.HResult.S_FALSE</span> if the attributes do not exactly match, or a
 standard <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html">COM</a> error value otherwise.</p>
 </dd>
   </dl>
@@ -298,7 +285,7 @@ standard <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.CO
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT GetDisplayName(SIGDN sigdnName, out nint ppszName)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult GetDisplayName(SIGDN sigdnName, out nint ppszName)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -313,8 +300,8 @@ standard <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.CO
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a> if successful; otherwise, an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p><span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span> if successful; otherwise, an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -340,7 +327,7 @@ standard <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.CO
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT GetParent(out nint ppsi)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult GetParent(out nint ppsi)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -352,8 +339,8 @@ standard <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.CO
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>Returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a> if successful, or an error value otherwise.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>Returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span> if successful, or an error value otherwise.</p>
 </dd>
   </dl>
 

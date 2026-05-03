@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Settings system | WinInteropUtils </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Settings system | WinInteropUtils ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils PE Resource Utility/SettingsPages/README.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="WinInteropUtils">
+            WinInteropUtils
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="settings-system">Settings system</h1>
+
+<p>The PE Resource Utility's settings system is a configuration storage system
+based on a combination of JSON files and <code>UserControls</code>.</p>
+<h2 id="structure">Structure</h2>
+<h3 id="directories">Directories</h3>
+<p>All configuration-related files are in the <code>SettingsPages</code> or <code>Config</code> folder in
+the root of the project. The <code>Config</code> folder contains <code>.settings</code> files for each
+page. The <code>SettingsPages</code> folder contains a <code>Data</code> subfolder containing JSON
+files for each in-app settings or property panel, which list all the pages
+contained within. The <code>SettingsPages</code> folder also contains subdirectories
+for each settings or property panel, that contain the actual pages themselves.
+The root of the <code>SettingsPages</code> folder also contains the definition of the
+<code>IConfigPage</code> interface.</p>
+<h3 id="pages">Pages</h3>
+<p>Each page is represented by a <code>UserControl</code> that implements the <code>IConfigPage</code>
+interface within <code>/SettingsPages/&lt;DIALOG&gt;</code>. The page should also have an
+associated <code>.settings</code> file within <code>/Config</code> for storing its settings.</p>
+<h2 id="the-iconfigpage-interface">The IConfigPage interface</h2>
+<p>The <strong>IConfigPage</strong> interface is an interface that all pages should implement.
+This interface provides the following methods for your page to handle:</p>
+<ul>
+<li><code>void ApplyChanges()</code><br>
+Applies the changes made in the configuration page.</li>
+<li><code>void CancelPreview()</code><br>
+Fires whenever the user presses the Cancel or OK button,
+or navigates to a different page. This method gives the page
+an opportunity to undo any previews. For example, if the page shows
+a live preview of a setting, it can undo it in this method.</li>
+<li><code>bool GetSettingsModified()</code><br>
+Fires whenever the settings dialog needs to query whether the page was modified.</li>
+</ul>
+<p>The interface also provides the <code>OnModify</code> event, which you should <code>Invoke</code>
+whenever the modification flag that is retrieved with <code>GetSettingsModified</code>
+changes. If you have a lot of settings, it may be useful to make a helper like
+this:</p>
+<pre><code class="lang-csharp">private void SetModified()
+{
+    _modified = true;
+    OnModify?.Invoke(this, EventArgs.Empty);
+}
+</code></pre>
+<h2 id="creating-a-page">Creating a page</h2>
+<p>To create a page:</p>
+<ol>
+<li>Identify the JSON file of the settings dialog you want to add the page to
+within <code>/SettingsPages/Data</code>.</li>
+<li>Add the required info for the page to the JSON file. The schema may differ
+based on which dialog you're adding the page to, based on each page's
+requirements. Usually, each page should have a <code>UniqueId</code> property. Note it
+down, as it will be needed later.</li>
+<li>Create a new <code>UserControl</code> within <code>/SettingsPages/&lt;DIALOG&gt;</code> and name it
+<code>&lt;UNIQUE_ID&gt;Page</code>.</li>
+<li>Create a new <code>.settings</code> file for your page within <code>/Config</code>
+and add your settings.</li>
+<li>Add the controls you need on the settings page in the designer
+and wire up their event handlers. For most pages, these event handlers should
+modify <code>Config.&lt;SETTINGS_FILE_NAME&gt;</code>, but should not call <code>Save</code>.</li>
+</ol>
+<!-- the rest of the IConfigPage methods have xml docs -->
+<ol start="6">
+<li>Implement <code>IConfigPage</code>. If you wired up your event handlers to modify the
+<code>.settings</code> file, you should call <code>Config.&lt;SETTINGS_FILE_NAME&gt;.Default.Save</code>
+inside <code>ApplyChanges</code>.</li>
+<li>Build and run the application.</li>
+<li>Go to the dialog where you added the page. If you did everything correctly,
+the page should show up and you should be able to click on it to access its
+contents.</li>
+</ol>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils PE Resource Utility/SettingsPages/README.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -95,29 +95,19 @@
 Interfaces
 </h3>
     <dl class="jumplist">
-      <dt><a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html">IFileDialog</a></dt>
-      <dd><p>Exposes methods that initialize, show, and get results from the common file dialog.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
       <dt><a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.html">IFileDialogCustomize</a></dt>
       <dd><p>Exposes methods that allow an application to add controls to a common item dialog.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileOpenDialog.html">IFileOpenDialog</a></dt>
-      <dd><p>Extends the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html">IFileDialog</a> interface by adding methods specific to the open dialog.</p>
+      <dd><p>Extends the <code>IFileDialog</code> interface by adding methods specific to the open dialog.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileSaveDialog.html">IFileSaveDialog</a></dt>
-      <dd><p>Extends the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialog.html">IFileDialog</a> interface by adding methods specific to the save dialog, which include those that provide support for the collection
+      <dd><p>Extends the <code>IFileDialog</code> interface by adding methods specific to the save dialog, which include those that provide support for the collection
 of metadata to be persisted with the file.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IModalWindow.html">IModalWindow</a></dt>
-      <dd><p>Exposes a method that represents a modal window.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -125,13 +115,6 @@ of metadata to be persisted with the file.</p>
       <dd><p>Exposes methods that retrieve information about a Shell item. <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IShellItem.html">IShellItem</a> and
 <a href="https://learn.microsoft.com/en-us/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem2">IShellItem2</a>
 are the preferred representations of items in any new code.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html">IUnknown</a></dt>
-      <dd><p>Enables clients to get pointers to other interfaces on a given object through the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_QueryInterface_System_Guid__System_IntPtr__">QueryInterface(ref Guid, out nint)</a> method,
-and manage the existence of the object through the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_AddRef">AddRef()</a> and <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_Release">Release()</a> methods. All other COM interfaces are inherited,
-directly or indirectly, from <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html">IUnknown</a>. Therefore, the three methods in <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html">IUnknown</a> are the first entries in the vtable for every interface.</p>
 </dd>
     </dl>
     <h3 id="enums">

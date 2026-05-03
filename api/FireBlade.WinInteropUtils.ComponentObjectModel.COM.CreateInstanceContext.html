@@ -90,7 +90,7 @@
 
 
   <h1 id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext" class="text-break">
-Enum COM.CreateInstanceContext  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/COM.cs/#L353"><i class="bi bi-code-slash"></i></a>
+Enum COM.CreateInstanceContext  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/COM.cs/#L448"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -99,7 +99,7 @@ Enum COM.CreateInstanceContext  <a class="header-action link-secondary" title="V
   </div>
 
   <div class="markdown summary"><p>Values that are used in activation calls to indicate the execution contexts in which an object is to
-be run. Used in <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstance__1_System_Guid_FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_System_Guid___0__">CreateInstance&lt;TCoInterface&gt;(Guid, IUnknown?, CreateInstanceContext, Guid, out TCoInterface?)</a>.</p>
+be run. Used in <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstance__1_System_Guid_System_Object_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_">CreateInstance&lt;TCoInterface&gt;(Guid, object?, CreateInstanceContext)</a>.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -285,14 +285,15 @@ Reserved6 = 16777216</code></dt>
 
 
   <h2 id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>Values from the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html">COM.CreateInstanceContext</a> enumeration are used in activation calls (<a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstance__1_System_Guid_FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_System_Guid___0__">CreateInstance&lt;TCoInterface&gt;(Guid, IUnknown?, CreateInstanceContext, Guid, out TCoInterface?)</a>,
-CoCreateInstanceEx, CoGetClassObject, and so on) to indicate the preferred execution contexts (in-process, local, or remote) in which an
-object is to be run. They are also used in calls to CoRegisterClassObject to indicate the set of execution contexts in which a class object
-is to be made available for requests to construct instances.</p>
+  <div class="markdown level0 remarks"><p>Values from the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html">COM.CreateInstanceContext</a> enumeration are used in activation calls
+(<a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstance__1_System_Guid_System_Object_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_">CreateInstance&lt;TCoInterface&gt;(Guid, object?, CreateInstanceContext)</a>, CoCreateInstanceEx,
+CoGetClassObject, and so on) to indicate the preferred execution contexts (in-process, local, or remote) in which an
+object is to be run. They are also used in calls to CoRegisterClassObject to indicate the set of execution contexts in
+which a class object is to be made available for requests to construct instances.</p>
 <p>To indicate that more than one context is acceptable, you can combine multiple values with Boolean ORs. The contexts
 are tried in the order in which they are listed.</p>
-<p>Given a set of <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html">COM.CreateInstanceContext</a> flags, the execution context to be used depends on the availability of registered class
-codes and other parameters according to the following algorithm.</p>
+<p>Given a set of <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html">COM.CreateInstanceContext</a> flags, the execution context to be used depends on the
+availability of registered class codes and other parameters according to the following algorithm.</p>
 <ol><li>
 If the call specifies one of the following, <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_RemoteServer">RemoteServer</a> is implied and is added to the list of flags:
 <ul><li>An explicit COSERVERINFO structure indicating a machine different from the current computer.</li><li>No explicit COSERVERINFO structure specified but the specified class is registered with either the
@@ -301,7 +302,8 @@ or <a href="https://learn.microsoft.com/en-us/windows/win32/com/activateatstorag
 The second case allows applications written prior to the release of distributed <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html">COM</a> to be the configuration
 of classes for remote activation to be used by client applications available prior to DCOM and the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_RemoteServer">RemoteServer</a> flag. The cases
 in which there would be no explicit COSERVERINFO structure are when the value is specified as <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or when it is not one of the function
-parameters (as in calls to <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstance__1_System_Guid_FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_System_Guid___0__">CreateInstance&lt;TCoInterface&gt;(Guid, IUnknown?, CreateInstanceContext, Guid, out TCoInterface?)</a> and CoGetClassObject).
+parameters (as in calls to <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstance__1_System_Guid_System_Object_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_">CreateInstance&lt;TCoInterface&gt;(Guid, object?, CreateInstanceContext)</a> and
+CoGetClassObject).
 </li><li>If the explicit COSERVERINFO parameter indicates the current computer, <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_RemoteServer">RemoteServer</a> is removed if present.</li></ol>
 <p>The rest of the processing proceeds by looking at the value(s) in the following sequence:</p>
 <ol><li>If the flags include <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_RemoteServer">RemoteServer</a> and no COSERVERINFO parameter is specified and if the activation request indicates
@@ -338,7 +340,7 @@ if available; otherwise it will activate a 64-bit version of the server. For a 6
 otherwise it will activate a 32-bit server.</li><li>If the computer that hosts the server is running Windows XP or Windows Server 2003 without SP1 or later installed,
 then <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html">COM</a> will prefer a 64-bit version of the server if available; otherwise it will activate a 32-bit version of the server.</li></ul>
 <p>If a <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html">COM.CreateInstanceContext</a> enumeration has both the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_Activate32BitServer">Activate32BitServer</a> and <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_Activate64BitServer">Activate64BitServer</a> flags set,
-then it is invalid and the activation will return <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_E_INVALIDARG">E_INVALIDARG</a>.</p>
+then it is invalid and the activation will return <span class="xref">FireBlade.WinInteropUtils.HResult.E_INVALIDARG</span>.</p>
 <p>The flags <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_Activate32BitServer">Activate32BitServer</a> and <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_Activate64BitServer">Activate64BitServer</a> flow across computer boundaries. If the computer that hosts
 the server is running the 64-bit Windows, then it will honor these flags; otherwise it will ignore them.</p>
 </div>
@@ -346,7 +348,7 @@ the server is running the 64-bit Windows, then it will honor these flags; otherw
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/COM.cs/#L353" class="edit-link">Edit this page</a>
+          <a href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/COM.cs/#L448" class="edit-link">Edit this page</a>
         </div>
 
 

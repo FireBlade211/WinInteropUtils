@@ -155,9 +155,108 @@ Class COM
 
   <a id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstance_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstance*"></a>
 
-  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstance__1_System_Guid_FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_System_Guid___0__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstance``1(System.Guid,FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown,FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext,System.Guid,``0@)">
-  CreateInstance&lt;TCoInterface&gt;(Guid, IUnknown?, CreateInstanceContext, Guid, out TCoInterface?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/COM.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstance__1_System_Guid_System_Object_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstance``1(System.Guid,System.Object,FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext)">
+  CreateInstance&lt;TCoInterface&gt;(Guid, object?, CreateInstanceContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/COM.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates and default-initializes a single object of the class associated with a specified CLSID.</p>
+<p>Call <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstance__1_System_Guid_System_Object_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_">CreateInstance&lt;TCoInterface&gt;(Guid, object?, CreateInstanceContext)</a> when you want to create
+only one object on the local system. To create a single object on a remote system, call the CoCreateInstanceEx
+function. To create multiple objects based on a single CLSID, call the CoGetClassObject function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TCoInterface? CreateInstance&lt;TCoInterface&gt;(Guid rclsid, object? pUnkOuter, COM.CreateInstanceContext dwClsContext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rclsid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>The CLSID associated with the data and code that will be used to create the object.</p>
+</dd>
+    <dt><code>pUnkOuter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, indicates that the object is not being created as part of an aggregate. If non-<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, pointer
+to the aggregate object's <code>IUnknown</code> interface (the controlling <code>IUnknown</code>).</p>
+</dd>
+    <dt><code>dwClsContext</code> <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html">COM</a>.<a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html">CreateInstanceContext</a></dt>
+    <dd><p>Context in which the code that manages the newly created object will run.
+A bitwise combination of <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html">COM.CreateInstanceContext</a> values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TCoInterface</span></dt>
+    <dd><p>The requested interface, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TCoInterface</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstance__1_System_Guid_System_Object_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstance__1_System_Guid_System_Object_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_">CreateInstance&lt;TCoInterface&gt;(Guid, object?, CreateInstanceContext)</a>
+function provides a convenient shortcut by connecting to the class object associated with the specified CLSID,
+creating a default-initialized instance, and releasing the class object.</p>
+<p>It is convenient to use <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstance__1_System_Guid_System_Object_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_">CreateInstance&lt;TCoInterface&gt;(Guid, object?, CreateInstanceContext)</a>
+when you need to create only a single instance of an object on the local machine. If you are creating an instance
+on remote computer, call CoCreateInstanceEx.</p>
+<p>In the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html">COM.CreateInstanceContext</a> enumeration, you can specify the type of server used to manage
+the object. The constants can be <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_InprocServer">InprocServer</a>,
+<a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_InprocHandler">InprocHandler</a>, <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_LocalServer">LocalServer</a>, <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_RemoteServer">RemoteServer</a> or any
+combination of these values.</p>
+<p><h3><i>UWP applications</i></h3>
+<p>Although there are no restrictions on which CLSIDs a UWP application can pass
+to <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstance__1_System_Guid_System_Object_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_">CreateInstance&lt;TCoInterface&gt;(Guid, object?, CreateInstanceContext)</a>,
+many objects will fail
+with <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a> for security reasons, especially if they do not run in-process.
+Additionally, even if you can successfully create an object, it might fail at a later time due to UWP security
+constraints, app-model differences, etc. In particular, background tasks should limit  the objects they communicate
+with to avoid hangs or other complications due to connected stand-by.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>TCoInterface must be an interface.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">pUnkOuter</code> must be a COM object
+or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.comexception">COMException</a></dt>
+    <dd><p>This exception can get thrown in 2 cases:
+<ul><li>A specified class is not registered in the registration database. Also can indicate that the
+type of server you requested in the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html">COM.CreateInstanceContext</a> enumeration is not registered
+or the values for the server types in the registry are corrupt.</li><li>This class cannot be created as part of an aggregate.</li></ul>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidcastexception">InvalidCastException</a></dt>
+    <dd><p>The specified class does not implement the requested interface,
+or the controlling <code>IUnknown</code> does not expose the requested interface.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></dt>
+    <dd><p>The request may be denied because the COM object cannot be created in
+UWP applications.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstance_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstance*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstance__1_System_Guid_System_Object_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_System_Guid___0__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstance``1(System.Guid,System.Object,FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext,System.Guid,``0@)">
+  CreateInstance&lt;TCoInterface&gt;(Guid, object?, CreateInstanceContext, Guid, out TCoInterface?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/COM.cs/#L241"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates and default-initializes a single object of the class associated with a specified CLSID.</p>
@@ -167,7 +266,8 @@ function. To create multiple objects based on a single CLSID, call the CoGetClas
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static HRESULT CreateInstance&lt;TCoInterface&gt;(Guid rclsid, IUnknown? pUnkOuter, COM.CreateInstanceContext dwClsContext, Guid riid, out TCoInterface? ppv) where TCoInterface : IUnknown</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the new overload instead. The new overload automatically detects the riid to prevent runtime errors, and uses .NET-style exceptions instead of the old HResult system.&quot;)]
+public static HResult CreateInstance&lt;TCoInterface&gt;(Guid rclsid, object? pUnkOuter, COM.CreateInstanceContext dwClsContext, Guid riid, out TCoInterface? ppv)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -175,9 +275,9 @@ function. To create multiple objects based on a single CLSID, call the CoGetClas
     <dt><code>rclsid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
     <dd><p>The CLSID associated with the data and code that will be used to create the object.</p>
 </dd>
-    <dt><code>pUnkOuter</code> <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html">IUnknown</a></dt>
+    <dt><code>pUnkOuter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
     <dd><p>If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, indicates that the object is not being created as part of an aggregate. If non-<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, pointer
-to the aggregate object's <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html">IUnknown</a> interface (the controlling <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html">IUnknown</a>).</p>
+to the aggregate object's <code>IUnknown</code> interface (the controlling <code>IUnknown</code>).</p>
 </dd>
     <dt><code>dwClsContext</code> <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html">COM</a>.<a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html">CreateInstanceContext</a></dt>
     <dd><p>Context in which the code that manages the newly created object will run.
@@ -194,11 +294,11 @@ A bitwise combination of <a class="xref" href="FireBlade.WinInteropUtils.Compone
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>A <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a>. It can be one of the following values:
-<table><tbody><tr><td class="term"><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a></td><td class="description">An instance of the specified object class was successfully created.</td></tr><tr><td class="term"><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_REGDB_E_CLASSNOTREG">REGDB_E_CLASSNOTREG</a></td><td class="description">A specified class is not registered in the registration database. Also can indicate that the type of server you requested
-in the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html">COM.CreateInstanceContext</a> enumeration is not registered or the values for the server types in the registry are corrupt.</td></tr><tr><td class="term"><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_CLASS_E_NOAGGREGATION">CLASS_E_NOAGGREGATION</a></td><td class="description">This class cannot be created as part of an aggregate.</td></tr><tr><td class="term"><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_E_NOINTERFACE">E_NOINTERFACE</a></td><td class="description">The specified class does not implement the requested interface,
-or the controlling <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html">IUnknown</a> does not expose the requested interface.</td></tr><tr><td class="term"><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_E_POINTER">E_POINTER</a></td><td class="description">The <code class="paramref">ppv</code> parameter is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</td></tr></tbody></table>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>A <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a>. It can be one of the following values:
+<table><tbody><tr><td class="term"><span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span></td><td class="description">An instance of the specified object class was successfully created.</td></tr><tr><td class="term"><span class="xref">FireBlade.WinInteropUtils.HResult.REGDB_E_CLASSNOTREG</span></td><td class="description">A specified class is not registered in the registration database. Also can indicate that the type of server you requested
+in the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html">COM.CreateInstanceContext</a> enumeration is not registered or the values for the server types in the registry are corrupt.</td></tr><tr><td class="term"><span class="xref">FireBlade.WinInteropUtils.HResult.CLASS_E_NOAGGREGATION</span></td><td class="description">This class cannot be created as part of an aggregate.</td></tr><tr><td class="term"><span class="xref">FireBlade.WinInteropUtils.HResult.E_NOINTERFACE</span></td><td class="description">The specified class does not implement the requested interface,
+or the controlling <code>IUnknown</code> does not expose the requested interface.</td></tr><tr><td class="term"><span class="xref">FireBlade.WinInteropUtils.HResult.E_POINTER</span></td><td class="description">The <code class="paramref">ppv</code> parameter is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</td></tr></tbody></table>
 </dd>
   </dl>
 
@@ -213,22 +313,23 @@ or the controlling <a class="xref" href="FireBlade.WinInteropUtils.ComponentObje
 
 
 
-  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstance__1_System_Guid_FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_System_Guid___0___remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>The <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstance__1_System_Guid_FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_System_Guid___0__">CreateInstance&lt;TCoInterface&gt;(Guid, IUnknown?, CreateInstanceContext, Guid, out TCoInterface?)</a> function provides
+  <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstance__1_System_Guid_System_Object_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_System_Guid___0___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The <code>CreateInstance</code> function provides
 a convenient shortcut by connecting to the class object associated with the specified CLSID, creating a default-initialized instance,
 and releasing the class object.</p>
-<p>It is convenient to use <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstance__1_System_Guid_FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_System_Guid___0__">CreateInstance&lt;TCoInterface&gt;(Guid, IUnknown?, CreateInstanceContext, Guid, out TCoInterface?)</a> when
-you need to create only a single instance of an object on the local machine. If you are creating an instance on remote
-computer, call CoCreateInstanceEx.</p>
+<p>It is convenient to use <code>CreateInstance</code>
+when you need to create only a single instance of an object on the local machine. If you are creating an instance on
+remote computer, call CoCreateInstanceEx.</p>
 <p>In the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html">COM.CreateInstanceContext</a> enumeration, you can specify the type of server used to manage
 the object. The constants can be <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_InprocServer">InprocServer</a>,
 <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_InprocHandler">InprocHandler</a>, <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_LocalServer">LocalServer</a>, <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_RemoteServer">RemoteServer</a> or any
 combination of these values.</p>
-<p><i>UWP applications</i></p>
+<p><h3><i>UWP applications</i></h3>
 <p>Although there are no restrictions on which CLSIDs a UWP application can pass
-to <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstance__1_System_Guid_FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_System_Guid___0__">CreateInstance&lt;TCoInterface&gt;(Guid, IUnknown?, CreateInstanceContext, Guid, out TCoInterface?)</a>, many objects will fail
-with <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_E_ACCESSDENIED">E_ACCESSDENIED</a> for security reasons, especially if they do not run in-process. Additionally, even if you can successfully
-create an object, it might fail at a later time due to UWP security constraints, app-model differences, etc. In particular, background tasks should limit
+to <code>CreateInstance</code>,
+many objects will fail with <span class="xref">FireBlade.WinInteropUtils.HResult.E_ACCESSDENIED</span> for security reasons, especially if they do
+not run in-process. Additionally, even if you can successfully create an object, it might fail at a later
+time due to UWP security constraints, app-model differences, etc. In particular, background tasks should limit
 the objects they communicate with to avoid hangs or other complications due to connected stand-by.</p>
 </div>
 
@@ -253,17 +354,17 @@ the objects they communicate with to avoid hangs or other complications due to c
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static HRESULT Initialize()</code></pre>
+    <pre><code class="lang-csharp hljs">public static HResult Initialize()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
     <dd><p>This function can return the standard
-return values <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_E_INVALIDARG">E_INVALIDARG</a>, <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_E_OUTOFMEMORY">E_OUTOFMEMORY</a>,
-and <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_E_UNEXPECTED">E_UNEXPECTED</a>, as well as the following values:</p>
-<table><tbody><tr><td class="term"><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a></td><td class="description">The COM library was initialized successfully on this thread.</td></tr><tr><td class="term"><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_FALSE">S_FALSE</a></td><td class="description">The COM library is already initialized on this thread.</td></tr><tr><td class="term"><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_RPC_E_CHANGED_MODE">RPC_E_CHANGED_MODE</a></td><td class="description">A previous call to <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a> specified the concurrency model for this thread
+return values <span class="xref">FireBlade.WinInteropUtils.HResult.E_INVALIDARG</span>, <span class="xref">FireBlade.WinInteropUtils.HResult.E_OUTOFMEMORY</span>,
+and <span class="xref">FireBlade.WinInteropUtils.HResult.E_UNEXPECTED</span>, as well as the following values:</p>
+<table><tbody><tr><td class="term"><span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span></td><td class="description">The COM library was initialized successfully on this thread.</td></tr><tr><td class="term"><span class="xref">FireBlade.WinInteropUtils.HResult.S_FALSE</span></td><td class="description">The COM library is already initialized on this thread.</td></tr><tr><td class="term"><span class="xref">FireBlade.WinInteropUtils.HResult.RPC_E_CHANGED_MODE</span></td><td class="description">A previous call to <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a> specified the concurrency model for this thread
 as multithread apartment (MTA). This could also indicate that a change from neutral-threaded apartment to single-threaded
 apartment has occurred.</td></tr></tbody></table>
 </dd>
@@ -297,7 +398,7 @@ or <a href="https://learn.microsoft.com/en-us/windows/win32/api/roapi/nf-roapi-i
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static HRESULT Initialize(COM.COMInitOptions options)</code></pre>
+    <pre><code class="lang-csharp hljs">public static HResult Initialize(COM.COMInitOptions options)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -311,8 +412,8 @@ The default is <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectMo
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>This function can return either <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a> or <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_FALSE">S_FALSE</a>.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>This function can return either <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span> or <span class="xref">FireBlade.WinInteropUtils.HResult.S_FALSE</span>.</p>
 </dd>
   </dl>
 
@@ -325,13 +426,13 @@ The default is <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectMo
   <h4 class="section" id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p><a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a> must be called at least once, and is usually called only once, for each thread that uses the COM library. Multiple calls
 to <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a> by the same thread are allowed as long as they pass the same concurrency flag, but subsequent valid calls return
-<a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_FALSE">S_FALSE</a>. If the concurrency flag does not match, then the call fails and returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_RPC_E_CHANGED_MODE">RPC_E_CHANGED_MODE</a>. 
+<span class="xref">FireBlade.WinInteropUtils.HResult.S_FALSE</span>. If the concurrency flag does not match, then the call fails and returns <span class="xref">FireBlade.WinInteropUtils.HResult.RPC_E_CHANGED_MODE</span>. 
 (For the purpose of this rule, a call to CoInitialize is equivalent to calling <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a> with the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_ApartmentThreaded">ApartmentThreaded</a> flag.) To
 uninitialize the COM library gracefully on a thread, each successful call to CoInitialize or <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a>, including any call that
-returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_FALSE">S_FALSE</a>, must be balanced by a corresponding call to <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Uninitialize">Uninitialize()</a>. Once COM has been uninitialized on a thread,
+returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_FALSE</span>, must be balanced by a corresponding call to <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Uninitialize">Uninitialize()</a>. Once COM has been uninitialized on a thread,
 you can reinitialize it in any mode, subject to the constraints above.</p>
 <p>You need to initialize the COM library on a thread before you call any of the library functions except CoGetMalloc, to get
-a pointer to the standard allocator, and the memory allocation functions. Otherwise, the COM function will return <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_CO_E_NOTINITIALIZED">CO_E_NOTINITIALIZED</a>.</p>
+a pointer to the standard allocator, and the memory allocation functions. Otherwise, the COM function will return <span class="xref">FireBlade.WinInteropUtils.HResult.CO_E_NOTINITIALIZED</span>.</p>
 <p>Objects created in a single-threaded apartment (STA) receive method calls only from their apartment's thread, so calls are serialized and arrive
 only at message-queue boundaries (when the PeekMessage or SendMessage function is called).</p>
 <p>Objects created on a COM thread in a multithread apartment (MTA) must be able to receive method calls from other threads at any time. You
@@ -339,7 +440,7 @@ would typically implement some form of concurrency control in a multithreaded ob
 semaphores, or mutexes to help protect the object's data.</p>
 <p>When an object that is configured to run in the neutral threaded apartment (NTA) is called by a thread that is in either
 an STA or the MTA, that thread transfers to the NTA. If this thread subsequently calls <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a>, the call fails and returns
-<a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_RPC_E_CHANGED_MODE">RPC_E_CHANGED_MODE</a>.</p>
+<span class="xref">FireBlade.WinInteropUtils.HResult.RPC_E_CHANGED_MODE</span>.</p>
 <p>Because OLE technologies are not thread-safe, the OleInitialize function calls <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a> with the <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_ApartmentThreaded">ApartmentThreaded</a> flag. As a result,
 an apartment that is initialized for multithreaded object concurrency cannot use the features enabled by OleInitialize.</p>
 <p>Because there is no way to control the order in which in-process servers are loaded or unloaded, do not call CoInitialize, <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a>,

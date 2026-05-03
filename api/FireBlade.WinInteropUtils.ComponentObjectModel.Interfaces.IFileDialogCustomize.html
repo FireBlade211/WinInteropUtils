@@ -89,7 +89,7 @@
 
 
   <h1 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize" class="text-break">
-Interface IFileDialogCustomize  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L427"><i class="bi bi-code-slash"></i></a>
+Interface IFileDialogCustomize  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L698"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -104,7 +104,7 @@ Interface IFileDialogCustomize  <a class="header-action link-secondary" title="V
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
 [Guid(&quot;973510db-7d7f-452b-8975-74a85828d354&quot;)]
-public interface IFileDialogCustomize : IUnknown</code></pre>
+public interface IFileDialogCustomize</code></pre>
   </div>
 
 
@@ -113,19 +113,6 @@ public interface IFileDialogCustomize : IUnknown</code></pre>
 
 
 
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
-    <div>
-      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_QueryInterface_System_Guid__System_IntPtr__">IUnknown.QueryInterface(ref Guid, out nint)</a>
-    </div>
-    <div>
-      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_AddRef">IUnknown.AddRef()</a>
-    </div>
-    <div>
-      <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IUnknown.html#FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IUnknown_Release">IUnknown.Release()</a>
-    </div>
-  </dd></dl>
 
 
 
@@ -151,7 +138,7 @@ remove the current menu and add another with the correct text.</p>
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddCheckButton_System_UInt32_System_String_System_Boolean_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddCheckButton(System.UInt32,System.String,System.Boolean)">
   AddCheckButton(uint, string, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L484"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L755"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a check button (check box) to the dialog.</p>
@@ -159,7 +146,7 @@ remove the current menu and add another with the correct text.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT AddCheckButton(uint dwIDCtl, string pszLabel, bool bChecked)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult AddCheckButton(uint dwIDCtl, string pszLabel, bool bChecked)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -178,8 +165,8 @@ button. <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/bu
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -200,7 +187,7 @@ button. <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/bu
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddComboBox_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddComboBox(System.UInt32)">
   AddComboBox(uint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L473"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L744"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a combo box to the dialog.</p>
@@ -208,7 +195,7 @@ button. <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/bu
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT AddComboBox(uint dwIDCtl)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult AddComboBox(uint dwIDCtl)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -220,8 +207,8 @@ button. <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/bu
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -242,7 +229,7 @@ button. <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/bu
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddControlItem_System_UInt32_System_UInt32_System_String_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddControlItem(System.UInt32,System.UInt32,System.String)">
   AddControlItem(uint, uint, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L601"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L872"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds an item to a container control in the dialog.</p>
@@ -250,7 +237,7 @@ button. <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/bu
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT AddControlItem(uint dwIDCtl, uint dwIDItem, string pszLabel)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult AddControlItem(uint dwIDCtl, uint dwIDItem, string pszLabel)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -269,8 +256,8 @@ of a drop-down list, the item itself.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -293,7 +280,7 @@ with the exception of their enabled and visible states.</p>
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddEditBox_System_UInt32_System_String_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddEditBox(System.UInt32,System.String)">
   AddEditBox(uint, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L505"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L776"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds an edit box control to the dialog.</p>
@@ -301,7 +288,7 @@ with the exception of their enabled and visible states.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT AddEditBox(uint dwIDCtl, string pszText)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult AddEditBox(uint dwIDCtl, string pszText)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -316,8 +303,8 @@ with the exception of their enabled and visible states.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -339,7 +326,7 @@ with the exception of their enabled and visible states.</p>
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddMenu_System_UInt32_System_String_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddMenu(System.UInt32,System.String)">
   AddMenu(uint, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L456"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L727"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a menu to the dialog.</p>
@@ -347,7 +334,7 @@ with the exception of their enabled and visible states.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT AddMenu(uint dwIDCtl, string pszLabel)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult AddMenu(uint dwIDCtl, string pszLabel)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -362,8 +349,8 @@ with the exception of their enabled and visible states.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -385,7 +372,7 @@ with the exception of their enabled and visible states.</p>
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddPushButton_System_UInt32_System_String_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddPushButton(System.UInt32,System.String)">
   AddPushButton(uint, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L465"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L736"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a button to the dialog.</p>
@@ -393,7 +380,7 @@ with the exception of their enabled and visible states.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT AddPushButton(uint dwIDCtl, string pszLabel)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult AddPushButton(uint dwIDCtl, string pszLabel)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -408,8 +395,8 @@ with the exception of their enabled and visible states.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -430,7 +417,7 @@ with the exception of their enabled and visible states.</p>
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddRadioButtonList_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddRadioButtonList(System.UInt32)">
   AddRadioButtonList(uint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L492"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L763"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds an option button (also known as radio button) group to the dialog.</p>
@@ -438,7 +425,7 @@ with the exception of their enabled and visible states.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT AddRadioButtonList(uint dwIDCtl)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult AddRadioButtonList(uint dwIDCtl)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -450,8 +437,8 @@ with the exception of their enabled and visible states.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -472,7 +459,7 @@ with the exception of their enabled and visible states.</p>
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddSeparator_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddSeparator(System.UInt32)">
   AddSeparator(uint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L513"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L784"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a separator to the dialog, allowing a visual separation of controls.</p>
@@ -480,7 +467,7 @@ with the exception of their enabled and visible states.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT AddSeparator(uint dwIDCtl)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult AddSeparator(uint dwIDCtl)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -492,8 +479,8 @@ with the exception of their enabled and visible states.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -514,7 +501,7 @@ with the exception of their enabled and visible states.</p>
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_AddText_System_UInt32_System_String_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.AddText(System.UInt32,System.String)">
   AddText(uint, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L522"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L793"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds text content to the dialog.</p>
@@ -522,7 +509,7 @@ with the exception of their enabled and visible states.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT AddText(uint dwIDCtl, string pszText)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult AddText(uint dwIDCtl, string pszText)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -537,8 +524,8 @@ with the exception of their enabled and visible states.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -559,7 +546,7 @@ with the exception of their enabled and visible states.</p>
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_EnableOpenDropDown_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.EnableOpenDropDown(System.UInt32)">
   EnableOpenDropDown(uint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L443"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L714"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enables a drop-down list on the Open or Save button in the dialog.</p>
@@ -567,7 +554,7 @@ with the exception of their enabled and visible states.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT EnableOpenDropDown(uint dwIDCtl)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult EnableOpenDropDown(uint dwIDCtl)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -579,8 +566,8 @@ with the exception of their enabled and visible states.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -602,7 +589,7 @@ with the exception of their enabled and visible states.</p>
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_EndVisualGroup" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.EndVisualGroup">
   EndVisualGroup()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L670"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L941"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Stops the addition of elements to a visual group in the dialog.</p>
@@ -610,14 +597,14 @@ with the exception of their enabled and visible states.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT EndVisualGroup()</code></pre>
+    <pre><code class="lang-csharp hljs">HResult EndVisualGroup()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -635,7 +622,7 @@ with the exception of their enabled and visible states.</p>
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_GetCheckButtonState_System_UInt32_System_Boolean__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.GetCheckButtonState(System.UInt32,System.Boolean@)">
   GetCheckButtonState(uint, out bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L576"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L847"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the current state of a check button (check box) in the dialog.</p>
@@ -643,7 +630,7 @@ with the exception of their enabled and visible states.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT GetCheckButtonState(uint dwIDCtl, out bool pbChecked)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult GetCheckButtonState(uint dwIDCtl, out bool pbChecked)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -659,8 +646,8 @@ with the exception of their enabled and visible states.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -678,7 +665,7 @@ with the exception of their enabled and visible states.</p>
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_GetControlItemState_System_UInt32_System_UInt32_System_UInt32__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.GetControlItemState(System.UInt32,System.UInt32,System.UInt32@)">
   GetControlItemState(uint, uint, out uint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L626"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L897"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the current state of an item in a container control found in the dialog.</p>
@@ -686,7 +673,7 @@ with the exception of their enabled and visible states.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT GetControlItemState(uint dwIDCtl, uint dwIDItem, out uint pdwState)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult GetControlItemState(uint dwIDCtl, uint dwIDItem, out uint pdwState)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -705,8 +692,8 @@ enumeration that indicate the current state of the control.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -729,7 +716,7 @@ they have been created, with the exception of their enabled and visible states.<
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_GetControlState_System_UInt32_System_UInt32__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.GetControlState(System.UInt32,System.UInt32@)">
   GetControlState(uint, out uint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L540"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L811"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the current visibility and enabled states of a given control.</p>
@@ -737,7 +724,7 @@ they have been created, with the exception of their enabled and visible states.<
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT GetControlState(uint dwIDCtl, out uint pdwState)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult GetControlState(uint dwIDCtl, out uint pdwState)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -753,8 +740,8 @@ from the CDCONTROLSTATE enumeration that indicate the current state of the contr
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -772,7 +759,7 @@ from the CDCONTROLSTATE enumeration that indicate the current state of the contr
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_GetEditBoxText_System_UInt32_System_IntPtr__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.GetEditBoxText(System.UInt32,System.IntPtr@)">
   GetEditBoxText(uint, out nint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L559"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L830"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the current text in an edit box control.</p>
@@ -780,7 +767,7 @@ from the CDCONTROLSTATE enumeration that indicate the current state of the contr
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT GetEditBoxText(uint dwIDCtl, out nint ppszText)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult GetEditBoxText(uint dwIDCtl, out nint ppszText)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -795,8 +782,8 @@ from the CDCONTROLSTATE enumeration that indicate the current state of the contr
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -818,7 +805,7 @@ when it is no longer needed. Use <code>CoTaskMemFree</code> to free the buffer.<
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_GetSelectedControlItem_System_UInt32_System_UInt32__" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.GetSelectedControlItem(System.UInt32,System.UInt32@)">
   GetSelectedControlItem(uint, out uint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L655"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L926"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets a particular item from specified container controls in the dialog.</p>
@@ -826,7 +813,7 @@ when it is no longer needed. Use <code>CoTaskMemFree</code> to free the buffer.<
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT GetSelectedControlItem(uint dwIDCtl, out uint pdwIDItem)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult GetSelectedControlItem(uint dwIDCtl, out uint pdwIDItem)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -841,8 +828,8 @@ when it is no longer needed. Use <code>CoTaskMemFree</code> to free the buffer.<
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -865,7 +852,7 @@ the Open or Save button after the dialog has closed. This method cannot be calle
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_MakeProminent_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.MakeProminent(System.UInt32)">
   MakeProminent(uint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L686"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L957"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Places a control in the dialog so that it stands out compared to other added controls.</p>
@@ -873,7 +860,7 @@ the Open or Save button after the dialog has closed. This method cannot be calle
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT MakeProminent(uint dwIDCtl)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult MakeProminent(uint dwIDCtl)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -885,8 +872,8 @@ the Open or Save button after the dialog has closed. This method cannot be calle
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -910,7 +897,7 @@ only a single item of one of those types—can be made prominent.</p>
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_RemoveControlItem_System_UInt32_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.RemoveControlItem(System.UInt32,System.UInt32)">
   RemoveControlItem(uint, uint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L610"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L881"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes an item from a container control in the dialog.</p>
@@ -918,7 +905,7 @@ only a single item of one of those types—can be made prominent.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT RemoveControlItem(uint dwIDCtl, uint dwIDItem)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult RemoveControlItem(uint dwIDCtl, uint dwIDItem)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -933,8 +920,8 @@ only a single item of one of those types—can be made prominent.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -955,7 +942,7 @@ only a single item of one of those types—can be made prominent.</p>
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetCheckButtonState_System_UInt32_System_Boolean_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.SetCheckButtonState(System.UInt32,System.Boolean)">
   SetCheckButtonState(uint, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L585"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L856"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the state of a check button (check box) in the dialog.</p>
@@ -963,7 +950,7 @@ only a single item of one of those types—can be made prominent.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT SetCheckButtonState(uint dwIDCtl, bool bChecked)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult SetCheckButtonState(uint dwIDCtl, bool bChecked)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -979,8 +966,8 @@ is checked. <a href="https://learn.microsoft.com/dotnet/csharp/language-referenc
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -998,7 +985,7 @@ is checked. <a href="https://learn.microsoft.com/dotnet/csharp/language-referenc
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetControlItemState_System_UInt32_System_UInt32_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.SetControlItemState(System.UInt32,System.UInt32,System.UInt32)">
   SetControlItemState(uint, uint, uint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L641"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L912"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the current state of an item in a container control found in the dialog.</p>
@@ -1006,7 +993,7 @@ is checked. <a href="https://learn.microsoft.com/dotnet/csharp/language-referenc
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT SetControlItemState(uint dwIDCtl, uint dwIDItem, uint dwState)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult SetControlItemState(uint dwIDCtl, uint dwIDItem, uint dwState)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1024,8 +1011,8 @@ is checked. <a href="https://learn.microsoft.com/dotnet/csharp/language-referenc
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -1048,7 +1035,7 @@ been created, with the exception of their enabled and visible states.</p>
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetControlItemText_System_UInt32_System_UInt32_System_String_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.SetControlItemText(System.UInt32,System.UInt32,System.String)">
   SetControlItemText(uint, uint, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L702"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L973"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the text of a control item. For example, the text that accompanies a radio button or an item in a menu.</p>
@@ -1056,7 +1043,7 @@ been created, with the exception of their enabled and visible states.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT SetControlItemText(uint dwIDCtl, uint dwIDItem, string pszLabel)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult SetControlItemText(uint dwIDCtl, uint dwIDItem, string pszLabel)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1074,8 +1061,8 @@ been created, with the exception of their enabled and visible states.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -1098,7 +1085,7 @@ after they have been created, with the exception of their enabled and visible st
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetControlLabel_System_UInt32_System_String_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.SetControlLabel(System.UInt32,System.String)">
   SetControlLabel(uint, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L531"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L802"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the text associated with a control, such as button text or an edit box label.</p>
@@ -1106,7 +1093,7 @@ after they have been created, with the exception of their enabled and visible st
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT SetControlLabel(uint dwIDCtl, string pszLabel)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult SetControlLabel(uint dwIDCtl, string pszLabel)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1121,8 +1108,8 @@ after they have been created, with the exception of their enabled and visible st
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -1143,7 +1130,7 @@ after they have been created, with the exception of their enabled and visible st
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetControlState_System_UInt32_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.SetControlState(System.UInt32,System.UInt32)">
   SetControlState(uint, uint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L549"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L820"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the current visibility and enabled states of a given control.</p>
@@ -1151,7 +1138,7 @@ after they have been created, with the exception of their enabled and visible st
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT SetControlState(uint dwIDCtl, uint dwState)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult SetControlState(uint dwIDCtl, uint dwState)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1166,8 +1153,8 @@ after they have been created, with the exception of their enabled and visible st
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -1188,7 +1175,7 @@ after they have been created, with the exception of their enabled and visible st
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetEditBoxText_System_UInt32_System_String_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.SetEditBoxText(System.UInt32,System.String)">
   SetEditBoxText(uint, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L567"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L838"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the text in an edit box control found in the dialog.</p>
@@ -1196,7 +1183,7 @@ after they have been created, with the exception of their enabled and visible st
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT SetEditBoxText(uint dwIDCtl, string pszText)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult SetEditBoxText(uint dwIDCtl, string pszText)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1211,8 +1198,8 @@ after they have been created, with the exception of their enabled and visible st
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -1230,7 +1217,7 @@ after they have been created, with the exception of their enabled and visible st
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_SetSelectedControlItem_System_UInt32_System_UInt32_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.SetSelectedControlItem(System.UInt32,System.UInt32)">
   SetSelectedControlItem(uint, uint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L663"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L934"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the selected state of a particular item in an option button group or a combo box found in the dialog.</p>
@@ -1238,7 +1225,7 @@ after they have been created, with the exception of their enabled and visible st
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT SetSelectedControlItem(uint dwIDCtl, uint dwIDItem)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult SetSelectedControlItem(uint dwIDCtl, uint dwIDItem)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1253,8 +1240,8 @@ after they have been created, with the exception of their enabled and visible st
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -1272,7 +1259,7 @@ after they have been created, with the exception of their enabled and visible st
 
   <h3 id="FireBlade_WinInteropUtils_ComponentObjectModel_Interfaces_IFileDialogCustomize_StartVisualGroup_System_UInt32_System_String_" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces.IFileDialogCustomize.StartVisualGroup(System.UInt32,System.String)">
   StartVisualGroup(uint, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L717"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L988"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Declares a visual group in the dialog. Subsequent calls to any &quot;add&quot; method add those elements to this group.</p>
@@ -1280,7 +1267,7 @@ after they have been created, with the exception of their enabled and visible st
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HRESULT StartVisualGroup(uint dwIDCtl, string pszLabel)</code></pre>
+    <pre><code class="lang-csharp hljs">HResult StartVisualGroup(uint dwIDCtl, string pszLabel)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1295,8 +1282,8 @@ after they have been created, with the exception of their enabled and visible st
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a></dt>
-    <dd><p>If this method succeeds, it returns <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HRESULT_S_OK">S_OK</a>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HRESULT</a> error code.</p>
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a></dt>
+    <dd><p>If this method succeeds, it returns <span class="xref">FireBlade.WinInteropUtils.HResult.S_OK</span>. Otherwise, it returns an <a class="xref" href="FireBlade.WinInteropUtils.HRESULT.html">HResult</a> error code.</p>
 </dd>
   </dl>
 
@@ -1319,7 +1306,7 @@ controls within it. Individual members of the visual group can also be hidden an
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L427" class="edit-link">Edit this page</a>
+          <a href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/Interfaces/CommonItemDialogInterfaces.cs/#L698" class="edit-link">Edit this page</a>
         </div>
 
 

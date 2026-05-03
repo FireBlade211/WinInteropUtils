@@ -152,7 +152,7 @@ thread are handled, that is, the object's concurrency.</p>
 of objects created by this thread always run on the same thread, i.e. the apartment/thread that created them. In addition, calls can arrive only at message-queue
 boundaries. Because of this serialization, it is not typically necessary to write concurrency control into the code for the object, other than to avoid calls
 to <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-peekmessagea">PeekMessage</a> and
-<a class="xref" href="FireBlade.WinInteropUtils.User32.html#FireBlade_WinInteropUtils_User32_SendMessage_System_IntPtr_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(nint, uint, nuint, nint)</a> during processing that must not be interrupted by other method invocations or calls to other 
+<a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(uint, nuint, nint)</a> during processing that must not be interrupted by other method invocations or calls to other 
 objects in the same apartment/thread.</p>
 <p>Multi-threading (also called free-threading) allows calls to methods of objects created by this thread to be run on any thread. There is no
 serialization of calls, i.e. many calls may occur to the same method or to the same object or simultaneously. Multi-threaded object concurrency offers the
