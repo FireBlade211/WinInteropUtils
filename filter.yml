@@ -1,0 +1,4 @@
+apiRules:
+  - exclude:
+      uidRegex: ^FireBlade\.WinInteropUtils\.HResult
+      type: Field
