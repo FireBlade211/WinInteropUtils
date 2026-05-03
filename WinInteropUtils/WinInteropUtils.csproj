@@ -6,12 +6,12 @@
     <Nullable>enable</Nullable>
     <RootNamespace>FireBlade.WinInteropUtils</RootNamespace>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <AssemblyVersion>0.25</AssemblyVersion>
-    <FileVersion>0.25</FileVersion>
+    <AssemblyVersion>0.30</AssemblyVersion>
+    <FileVersion>0.30</FileVersion>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <Version>0.25-beta</Version>
+    <Version>0.30-beta</Version>
     <RepositoryUrl>https://github.com/FireBlade211/WinInteropUtils</RepositoryUrl>
     <PackageTags>pinvoke;winapi;win32;csharp;interop;windows;dotnet;dotnet8</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -20,6 +20,7 @@
     <Description>A C# library that provides managed wrappers for unmanaged WinAPI functions.</Description>
     <IncludeSymbols>True</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <Authors>FireBlade</Authors>
   </PropertyGroup>
 
   <ItemGroup>
