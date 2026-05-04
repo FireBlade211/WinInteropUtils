@@ -12,6 +12,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms.Design;
 using System.Windows.Forms.VisualStyles;
+using static WinInteropUtils_Test_App.HResultEditor;
 
 namespace WinInteropUtils_Test_App
 {
@@ -172,7 +173,7 @@ namespace WinInteropUtils_Test_App
                             {
                                 page.Footnote = new TaskDialogFootnote
                                 {
-                                    Text = "This is a preview of the outputted icon.",
+                                    Text = "This is a preview of the output icon.",
                                     Icon = new TaskDialogIcon(icon)
                                 };
                             }
@@ -506,6 +507,8 @@ namespace WinInteropUtils_Test_App
             ? new IntPtrConverter()
             : _param.ParameterType == typeof(nuint)
             ? new UIntPtrConverter()
+            : _param.ParameterType == typeof(HResult)
+            ? new HResultConverter()
             : base.Converter;
 
         public override string Description
@@ -530,6 +533,9 @@ namespace WinInteropUtils_Test_App
 
             if (DisplayName.Contains("hWnd", StringComparison.OrdinalIgnoreCase))
                 return new HwndEditor();
+
+            if (_param.ParameterType.Equals(typeof(HResult)))
+                return new HResultEditor();
 
             return base.GetEditor(editorBaseType);
         }
@@ -649,5 +655,89 @@ namespace WinInteropUtils_Test_App
     public class HwndWindow(nint handle) : IWin32Window
     {
         public nint Handle => handle;
+    }
+
+    public class HResultEditor : UITypeEditor
+    {
+        public override UITypeEditorEditStyle GetEditStyle(ITypeDescriptorContext? context)
+            => UITypeEditorEditStyle.DropDown;
+
+        public class HResultListBoxItem
+        {
+            public string Text = string.Empty;
+            public HResult HR;
+
+            public override string ToString() => Text;
+
+            public HResultListBoxItem(HResult hr, string text)
+            {
+                HR = hr;
+                Text = text;
+            }
+        }
+
+        public override object? EditValue(ITypeDescriptorContext? context, IServiceProvider provider,
+            object? value)
+        {
+            if (provider?.GetService(typeof(IWindowsFormsEditorService)) is not IWindowsFormsEditorService edSvc)
+                return value;
+
+            var lb = new ListBox();
+            lb.SelectionMode = SelectionMode.One;
+            lb.Height = 256;
+            //lb.IntegralHeight = false;
+            lb.Click += (s, e) => edSvc.CloseDropDown();
+
+            if (!HResultConverter._names.Any())
+                HResultConverter.InitMap();
+
+            foreach (var kvp in HResultConverter._names)
+            {
+                lb.Items.Add(new HResultListBoxItem(kvp.Key, kvp.Value));
+
+                if (kvp.Key == (HResult?)value)
+                    lb.SelectedIndex = lb.Items.Count - 1;
+            }
+
+            edSvc.DropDownControl(lb);
+
+            HResultListBoxItem? item = (HResultListBoxItem?)lb.SelectedItem;
+
+            return item?.HR ?? value;
+        }
+    }
+
+    public class HResultConverter : TypeConverter
+    {
+        public override bool CanConvertTo(ITypeDescriptorContext? context, Type? destinationType)
+            => destinationType == typeof(string) || base.CanConvertTo(context, destinationType);
+
+        public static Dictionary<HResult, string> _names = [];
+
+        public static void InitMap()
+        {
+            foreach (var field in typeof(HResult).GetFields(BindingFlags.Public | BindingFlags.Static))
+                if (field.GetValue(null) is HResult hr)
+                    _names[hr] = field.Name;
+        }
+
+        public override object? ConvertTo(ITypeDescriptorContext? context,
+            CultureInfo? culture,
+            object? value, Type destinationType)
+        {
+            if (!_names.Any())
+                InitMap();
+
+            if (destinationType == typeof(string) && value is HResult hr)
+                if (_names.TryGetValue(hr, out string? disp))
+                    return disp;
+                else
+                    return $"0x{(int)hr:X8}";
+
+            return base.ConvertTo(context, culture, value, destinationType);
+        }
+
+        public override bool CanConvertFrom(ITypeDescriptorContext? context, Type sourceType)
+            => false;
     }
 }

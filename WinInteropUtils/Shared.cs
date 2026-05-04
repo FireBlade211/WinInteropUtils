@@ -1,5 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 using System.Drawing;
+using System.Diagnostics.CodeAnalysis;
 
 namespace FireBlade.WinInteropUtils
 {
@@ -497,6 +498,35 @@ namespace FireBlade.WinInteropUtils
         {
             _code = code;
         }
+
+        /// <summary>
+        /// Indicates whether this <see cref="HResult"/> and the specified <see cref="HResult"/>
+        /// represent the same code.
+        /// </summary>
+        /// <param name="obj">The <see cref="HResult"/> to comapare to.</param>
+        /// <returns><see langword="true"/> if this <see cref="HResult"/> and the specified <see cref="HResult"/>
+        /// represent the same code; otherwise, <see langword="false"/>.</returns>
+        public override bool Equals([NotNullWhen(true)] object? obj) => FullCode == ((HResult?)obj)?.FullCode;
+
+        /// <summary>
+        /// Indicates whether two <see cref="HResult"/> values represent the same code.
+        /// </summary>
+        /// <param name="left">The first <see cref="HResult"/> to compare.</param>
+        /// <param name="right">The second <see cref="HResult"/> to comapare to.</param>
+        /// <returns><see langword="true"/> if both <see cref="HResult"/> values represent the same code;
+        /// otherwise, <see langword="false"/>.</returns>
+        public static bool operator ==(HResult? left, HResult? right)
+            => Equals(left, right);
+
+        /// <summary>
+        /// Indicates whether two <see cref="HResult"/> values don't represent the same code.
+        /// </summary>
+        /// <param name="left">The first <see cref="HResult"/> to compare.</param>
+        /// <param name="right">The second <see cref="HResult"/> to comapare to.</param>
+        /// <returns><see langword="true"/> if both <see cref="HResult"/> values don't represent the same code;
+        /// otherwise, <see langword="false"/>.</returns>
+        public static bool operator !=(HResult? left, HResult? right)
+            => !Equals(left, right);
 
         /// <summary>
         /// The operation completed successfully.
