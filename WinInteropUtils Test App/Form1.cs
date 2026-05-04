@@ -415,6 +415,11 @@ namespace WinInteropUtils_Test_App
         {
             new WiuWinFormsShellControlsTestForm().ShowDialog();
         }
+
+        private void memoryUtilsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new MemoryUtilsTestForm().ShowDialog();
+        }
     }
 
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]

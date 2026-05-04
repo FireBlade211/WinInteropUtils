@@ -50,6 +50,7 @@
             visualStylesToolStripMenuItem = new ToolStripMenuItem();
             windowToolStripMenuItem = new ToolStripMenuItem();
             winInteropUtilsWinFormsShellToolStripMenuItem = new ToolStripMenuItem();
+            memoryUtilsToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -185,7 +186,7 @@
             // 
             // testToolStripMenuItem
             // 
-            testToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { messageBoxToolStripMenuItem, fileDialogToolStripMenuItem, winInteropUtilsWinFormsToolStripMenuItem, colorDialogToolStripMenuItem, visualStylesToolStripMenuItem, windowToolStripMenuItem, winInteropUtilsWinFormsShellToolStripMenuItem });
+            testToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { messageBoxToolStripMenuItem, fileDialogToolStripMenuItem, winInteropUtilsWinFormsToolStripMenuItem, colorDialogToolStripMenuItem, visualStylesToolStripMenuItem, windowToolStripMenuItem, winInteropUtilsWinFormsShellToolStripMenuItem, memoryUtilsToolStripMenuItem });
             testToolStripMenuItem.Name = "testToolStripMenuItem";
             testToolStripMenuItem.Size = new Size(39, 20);
             testToolStripMenuItem.Text = "Test";
@@ -239,6 +240,13 @@
             winInteropUtilsWinFormsShellToolStripMenuItem.Text = "WinInteropUtils.WinForms (Shell)";
             winInteropUtilsWinFormsShellToolStripMenuItem.Click += winInteropUtilsWinFormsShellToolStripMenuItem_Click;
             // 
+            // memoryUtilsToolStripMenuItem
+            // 
+            memoryUtilsToolStripMenuItem.Name = "memoryUtilsToolStripMenuItem";
+            memoryUtilsToolStripMenuItem.Size = new Size(249, 22);
+            memoryUtilsToolStripMenuItem.Text = "Memory utils";
+            memoryUtilsToolStripMenuItem.Click += memoryUtilsToolStripMenuItem_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -284,5 +292,6 @@
         private ToolStripMenuItem visualStylesToolStripMenuItem;
         private ToolStripMenuItem windowToolStripMenuItem;
         private ToolStripMenuItem winInteropUtilsWinFormsShellToolStripMenuItem;
+        private ToolStripMenuItem memoryUtilsToolStripMenuItem;
     }
 }
