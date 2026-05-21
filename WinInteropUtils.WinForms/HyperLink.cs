@@ -148,8 +148,6 @@ namespace FireBlade.WinInteropUtils.WinForms
 
         public HyperLink()
         {
-            InitializeComponent();
-
             SetStyle(ControlStyles.UserPaint, false);
             SetStyle(ControlStyles.Selectable | ControlStyles.StandardClick | ControlStyles.UseTextForAccessibility, true);
         }

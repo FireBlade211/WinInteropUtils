@@ -143,7 +143,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    return (int)Window.FromHandle(Handle)?.SendMessage(PBM_GETRANGE, true, nint.Zero);
+                    return (int?)Window.FromHandle(Handle)?.SendMessage(PBM_GETRANGE, true, nint.Zero) ?? _min;
 
                 return _min;
             }
@@ -168,7 +168,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    return (int)Window.FromHandle(Handle)?.SendMessage(PBM_GETRANGE, false, nint.Zero);
+                    return (int?)Window.FromHandle(Handle)?.SendMessage(PBM_GETRANGE, false, nint.Zero) ?? _max;
 
                 return _max;
             }
@@ -194,7 +194,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    return (int)Window.FromHandle(Handle)?.SendMessage(PBM_GETPOS, 0, 0);
+                    return (int?)Window.FromHandle(Handle)?.SendMessage(PBM_GETPOS, 0, 0) ?? _val;
 
                 return _val;
             }
@@ -221,7 +221,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    return (ProgressBarExStyle)Window.FromHandle(Handle)?.SendMessage(PBM_GETSTATE, 0, 0);
+                    return (ProgressBarExStyle?)Window.FromHandle(Handle)?.SendMessage(PBM_GETSTATE, 0, 0) ?? _style;
 
                 return _style;
             }
@@ -246,7 +246,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    return (int)Window.FromHandle(Handle)?.SendMessage(PBM_GETSTEP, 0, 0);
+                    return (int?)Window.FromHandle(Handle)?.SendMessage(PBM_GETSTEP, 0, 0) ?? _step;
 
                 return _step;
             }
@@ -280,7 +280,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    return ((uint)Window.FromHandle(Handle)?.SendMessage(PBM_GETBKCOLOR, 0, 0)) == CLR_DEFAULT;
+                    return ((uint?)Window.FromHandle(Handle)?.SendMessage(PBM_GETBKCOLOR, 0, 0)) == CLR_DEFAULT;
 
                 return _defBk;
             }
@@ -305,7 +305,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             get
             {
                 if (IsHandleCreated)
-                    return ((uint)Window.FromHandle(Handle)?.SendMessage(PBM_GETBARCOLOR, 0, 0)) == CLR_DEFAULT;
+                    return ((uint?)Window.FromHandle(Handle)?.SendMessage(PBM_GETBARCOLOR, 0, 0)) == CLR_DEFAULT;
 
                 return _defBar;
             }
@@ -331,7 +331,7 @@ namespace FireBlade.WinInteropUtils.WinForms
                     return SystemColors.Control;
 
                 if (IsHandleCreated)
-                    return FromCOLORREF((uint)Window.FromHandle(Handle)?.SendMessage(PBM_GETBKCOLOR, 0, 0));
+                    return FromCOLORREF((uint?)Window.FromHandle(Handle)?.SendMessage(PBM_GETBKCOLOR, 0, 0) ?? _bkColor);
 
                 return FromCOLORREF(_bkColor);
             }
@@ -357,7 +357,7 @@ namespace FireBlade.WinInteropUtils.WinForms
                     return SystemColors.Highlight;
 
                 if (IsHandleCreated)
-                    return FromCOLORREF((uint)Window.FromHandle(Handle)?.SendMessage(PBM_GETBARCOLOR, 0, 0));
+                    return FromCOLORREF((uint?)Window.FromHandle(Handle)?.SendMessage(PBM_GETBARCOLOR, 0, 0) ?? _barColor);
 
                 return FromCOLORREF(_barColor);
             }
@@ -428,8 +428,6 @@ namespace FireBlade.WinInteropUtils.WinForms
         /// </summary>
         public ProgressBarEx()
         {
-            InitializeComponent();
-
             SetStyle(ControlStyles.UserPaint | ControlStyles.UseTextForAccessibility | ControlStyles.Selectable, false);
         }
 
@@ -459,7 +457,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             if (!IsHandleCreated)
                 throw new InvalidOperationException("Can't perform a step right now; the control handle has not been created yet.");
 
-            return (int)Window.FromHandle(Handle)?.SendMessage(PBM_STEPIT, 0, 0);
+            return (int?)Window.FromHandle(Handle)?.SendMessage(PBM_STEPIT, 0, 0) ?? 0;
         }
 
         /// <summary>
@@ -480,7 +478,7 @@ namespace FireBlade.WinInteropUtils.WinForms
             if (!IsHandleCreated)
                 throw new InvalidOperationException("Can't perform a step right now; the control handle has not been created yet.");
 
-            return (int)Window.FromHandle(Handle)?.SendMessage(PBM_DELTAPOS, (nuint)step, 0);
+            return (int?)Window.FromHandle(Handle)?.SendMessage(PBM_DELTAPOS, (nuint)step, 0) ?? 0;
         }
     }
 

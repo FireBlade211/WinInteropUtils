@@ -209,7 +209,6 @@ namespace FireBlade.WinInteropUtils.WinForms
 
         public Edit()
         {
-            InitializeComponent();
             SetStyle(ControlStyles.StandardClick
             | ControlStyles.StandardDoubleClick
             | ControlStyles.UseTextForAccessibility

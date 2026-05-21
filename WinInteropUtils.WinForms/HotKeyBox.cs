@@ -256,8 +256,6 @@ namespace FireBlade.WinInteropUtils.WinForms
 
         public HotKeyBox()
         {
-            InitializeComponent();
-
             SetStyle(ControlStyles.UserPaint, false);
         }
     }

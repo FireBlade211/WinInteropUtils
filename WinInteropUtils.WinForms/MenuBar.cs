@@ -17,7 +17,6 @@ namespace FireBlade.WinInteropUtils.WinForms
 
         public MenuBar()
         {
-            InitializeComponent();
             Dock = DockStyle.Top;
         }
 

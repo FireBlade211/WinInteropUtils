@@ -84,8 +84,6 @@ namespace FireBlade.WinInteropUtils.WinForms
 
         public ComboBoxEx()
         {
-            InitializeComponent();
-
             Items = new(this);
         }
     }
