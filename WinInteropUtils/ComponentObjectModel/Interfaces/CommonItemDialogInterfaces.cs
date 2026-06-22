@@ -699,7 +699,7 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces
     [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
     [Guid("973510db-7d7f-452b-8975-74a85828d354")]
     [SupportedOSPlatform("windows6.0")]
-    public partial interface IFileDialogCustomize
+    public interface IFileDialogCustomize
     {
         /// <summary>
         /// Enables a drop-down list on the Open or Save button in the dialog.
