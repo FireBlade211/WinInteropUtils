@@ -2,6 +2,7 @@ using FireBlade.WinInteropUtils;
 using FireBlade.WinInteropUtils.ComponentObjectModel;
 using FireBlade.WinInteropUtils.ComponentObjectModel.Interfaces;
 using FireBlade.WinInteropUtils.Dialogs;
+using FireBlade.WinInteropUtils.Memory;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing.Design;
@@ -11,8 +12,6 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms.Design;
-using System.Windows.Forms.VisualStyles;
-using static WinInteropUtils_Test_App.HResultEditor;
 
 namespace WinInteropUtils_Test_App
 {
@@ -30,7 +29,7 @@ namespace WinInteropUtils_Test_App
 
             listView1.BeginUpdate();
             foreach (var c in Assembly.GetAssembly(typeof(Shell32))!.GetTypes()
-            .Where(t => t.IsClass && t.Namespace == "FireBlade.WinInteropUtils"))
+                .Where(t => (t.IsClass || t.IsValueType) && t.Namespace?.StartsWith("FireBlade.WinInteropUtils") == true))
             {
                 if (c.Name == "ExceptionExtensions") continue;
 
@@ -39,15 +38,24 @@ namespace WinInteropUtils_Test_App
                 {
                     var item = new ListViewItem();
                     item.Tag = method;
-                    var cParams = method.GetParameters().Select(x =>
-                    {
-                        return GetTypeName(x.ParameterType);
-                    });
+
+                    var cParams = method.GetParameters().Select(x => GetTypeName(x.ParameterType));
+
                     item.Text = $"{GetTypeName(method.ReturnType)} {method.Name}({string.Join<string>(", ", cParams)})";
 
                     items.Add(item);
                 }
 
+                foreach (var ctor in c.GetConstructors(BindingFlags.Public | BindingFlags.Static | BindingFlags.Instance))
+                {
+                    var item = new ListViewItem();
+                    item.Tag = ctor;
+
+                    var cParams = ctor.GetParameters().Select(x => GetTypeName(x.ParameterType));
+
+                    item.Text = $"{GetTypeName(c)}({string.Join<string>(", ", cParams)})";
+                    items.Add(item);
+                }
 
                 var found = listView1.Groups.Cast<ListViewGroup>().FirstOrDefault(x => x.Name == c.Name);
                 if (found != null)
@@ -64,6 +72,7 @@ namespace WinInteropUtils_Test_App
 
                     var group = new ListViewGroup();
                     group.Header = c.Name;
+                    group.CollapsedState = ListViewGroupCollapsedState.Expanded;
 
                     listView1.Groups.Add(group);
 
@@ -96,10 +105,7 @@ namespace WinInteropUtils_Test_App
             }
         }
 
-        public static string GetTypeName<T>()
-        {
-            return GetTypeName(typeof(T));
-        }
+        public static string GetTypeName<T>() => GetTypeName(typeof(T));
 
         public static string GetTypeName(Type type)
         {
@@ -118,7 +124,7 @@ namespace WinInteropUtils_Test_App
                 "Single" => "float",
                 "UInt16" => "ushort",
                 "Byte" => "byte",
-                _ => type.Name
+                _ => type.Name.TrimEnd('&')
             };
         }
 
@@ -126,7 +132,7 @@ namespace WinInteropUtils_Test_App
         {
             if (listView1.SelectedItems.Count > 0)
             {
-                propertyGrid1.SelectedObject = new MethodArgumentDescriptor((listView1.SelectedItems[0].Tag as MethodInfo)!);
+                propertyGrid1.SelectedObject = new MethodArgumentDescriptor((listView1.SelectedItems[0].Tag as MethodBase)!);
                 callMethodToolStripMenuItem.Enabled = true;
             }
         }
@@ -137,11 +143,13 @@ namespace WinInteropUtils_Test_App
             {
                 var item = listView1.SelectedItems[0];
 
-                if (item.Tag is MethodInfo method)
+                if (item.Tag is MethodBase method)
                 {
                     if (propertyGrid1.SelectedObject is MethodArgumentDescriptor descriptor)
                     {
-                        var result = method.Invoke(null, descriptor.Values.Values.ToArray());
+                        var result = method is ConstructorInfo ctor ?
+                            ctor.Invoke(descriptor.Values.Values.ToArray())
+                            : method.Invoke(null, descriptor.Values.Values.ToArray());
 
                         var page = new TaskDialogPage
                         {
@@ -162,26 +170,25 @@ namespace WinInteropUtils_Test_App
                             var sb = new StringBuilder($"{result.GetType().Name} ({result.GetType().FullName})\n\n");
 
                             foreach (var prop in result.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance))
-                            {
                                 sb.AppendLine($"{prop.Name} = {prop.GetValue(result)?.ToString() ?? "null"}");
-                            }
 
                             exp.Text = sb.ToString();
                             page.Expander = exp;
 
                             if (result is Icon icon)
-                            {
                                 page.Footnote = new TaskDialogFootnote
                                 {
                                     Text = "This is a preview of the output icon.",
                                     Icon = new TaskDialogIcon(icon)
                                 };
-                            }
+
+                            if (result is IDisposable disp)
+                                disp.Dispose();
+                            else if (result is IAsyncDisposable adisp)
+                                _ = adisp.DisposeAsync().AsTask();
                         }
                         else
-                        {
                             page.Text += " but didn't return a value.";
-                        }
 
                         TaskDialog.ShowDialog(this, page, TaskDialogStartupLocation.CenterScreen);
                     }
@@ -273,7 +280,6 @@ namespace WinInteropUtils_Test_App
                         ];
 
                         int structSize = IntPtr.Size * 2; // two pointers per struct
-
                         nint buffer = Marshal.AllocHGlobal(structSize * filters.Length);
 
                         for (int i = 0; i < filters.Length; i++)
@@ -288,8 +294,36 @@ namespace WinInteropUtils_Test_App
                         }
 
                         dlg.SetFileTypes((uint)filters.Length, buffer);
-
                         dlg.SetTitle("Cool File Dialog");
+
+                        //try
+                        //{
+                        //    IFileDialogCustomize customize = COM.QueryInterface<IFileOpenDialog, IFileDialogCustomize>(dlg);
+
+                        //    using (ComSmartPointer<IFileDialogCustomize> ptr = new ComSmartPointer<IFileDialogCustomize>(customize))
+                        //    {
+                        //        customize.StartVisualGroup(1001, "Sample:");
+                        //        customize.AddComboBox(1002);
+
+                        //        customize.AddControlItem(1002, 1003, "Test Item 1");
+                        //        customize.AddControlItem(1002, 1004, "Test Item 2");
+                        //        customize.AddControlItem(1002, 1005, "Test Item 3");
+
+                        //        customize.EndVisualGroup();
+
+                        //        hr = customize.EnableOpenDropDown(1006);
+
+                        //        if (Macros.Succeeded(hr))
+                        //        {
+                        //            customize.AddControlItem(1006, 1007, "Open Dropdown Item");
+                        //        }
+                        //    }
+                        //}
+                        //catch (Exception ex)
+                        //{
+                        //    Debug.WriteLine($"Failed customize: {ex.Message}");
+                        //    Debugger.Break();
+                        //}
 
                         hr = dlg.Show(Handle);
 
@@ -421,6 +455,11 @@ namespace WinInteropUtils_Test_App
         {
             new MemoryUtilsTestForm().ShowDialog();
         }
+
+        private void winFileWinFileInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FileApiTestForm().ShowDialog();
+        }
     }
 
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
@@ -435,17 +474,15 @@ namespace WinInteropUtils_Test_App
 
     public class MethodArgumentDescriptor : ICustomTypeDescriptor
     {
-        private readonly MethodInfo _method;
+        private readonly MethodBase _method;
         public Dictionary<string, object> Values { get; } = new();
 
-        public MethodArgumentDescriptor(MethodInfo method)
+        public MethodArgumentDescriptor(MethodBase method)
         {
             _method = method;
 
             foreach (var param in method.GetParameters())
-            {
                 Values[param.Name!] = GetDefault(param.ParameterType)!;
-            }
         }
 
         private object? GetDefault(Type type) =>
@@ -476,11 +513,12 @@ namespace WinInteropUtils_Test_App
         #endregion
     }
 
-    public partial class MethodArgPropertyDescriptor(ParameterInfo param, Dictionary<string, object> store, MethodInfo parentMethod) : PropertyDescriptor(param.Name ?? string.Empty, null)
+    public partial class MethodArgPropertyDescriptor(ParameterInfo param, Dictionary<string, object> store,
+        MethodBase parentMethod) : PropertyDescriptor(param.Name ?? string.Empty, null)
     {
         private readonly ParameterInfo _param = param;
         private readonly Dictionary<string, object> _store = store;
-        private readonly MethodInfo _method = parentMethod;
+        private readonly MethodBase _method = parentMethod;
 
         public override Type ComponentType => typeof(MethodArgumentDescriptor);
         public override Type PropertyType => _param.ParameterType;
@@ -534,8 +572,16 @@ namespace WinInteropUtils_Test_App
             if (DisplayName.Contains("hWnd", StringComparison.OrdinalIgnoreCase))
                 return new HwndEditor();
 
+            if (_param.ParameterType.Equals(typeof(Window)))
+                return new WindowEditor();
+
             if (_param.ParameterType.Equals(typeof(HResult)))
                 return new HResultEditor();
+
+            if (_param.ParameterType.Equals(typeof(int)) && _param.Name == "code"
+                && _method.DeclaringType?.Equals(typeof(HResult)) == true)
+
+                return new HResultCodeEditor();
 
             return base.GetEditor(editorBaseType);
         }
@@ -652,6 +698,24 @@ namespace WinInteropUtils_Test_App
         }
     }
 
+    public class WindowEditor : UITypeEditor
+    {
+        public override UITypeEditorEditStyle GetEditStyle(ITypeDescriptorContext? context)
+            => UITypeEditorEditStyle.Modal;
+
+        public override object? EditValue(ITypeDescriptorContext? context, IServiceProvider? provider, object? value)
+        {
+            if (provider?.GetService(typeof(IWindowsFormsEditorService)) is not IWindowsFormsEditorService edSvc)
+                return value;
+
+            var dlg = new WindowPickerForm();
+
+            edSvc.ShowDialog(dlg);
+
+            return Window.FromHandle((nint)dlg.Hwnd!);
+        }
+    }
+
     public class HwndWindow(nint handle) : IWin32Window
     {
         public nint Handle => handle;
@@ -739,5 +803,36 @@ namespace WinInteropUtils_Test_App
 
         public override bool CanConvertFrom(ITypeDescriptorContext? context, Type sourceType)
             => false;
+    }
+
+    public class HResultCodeEditor : UITypeEditor
+    {
+        public override UITypeEditorEditStyle GetEditStyle(ITypeDescriptorContext? context)
+            => UITypeEditorEditStyle.DropDown;
+
+        public override object? EditValue(ITypeDescriptorContext? context, IServiceProvider provider, object? value)
+        {
+            if (provider?.GetService(typeof(IWindowsFormsEditorService)) is not IWindowsFormsEditorService edSvc)
+                return value;
+
+            var form = new HResultCodeEditorForm();
+            var hr = new HResult((int)value!);
+
+            form.Load += (s, e) =>
+            {
+                form.comboBox1.SelectedItem = hr.Facility;
+                form.numericUpDown2.Value = hr.Severity;
+                form.numericUpDown1.Value = hr.BaseCode;
+            };
+
+            form.button1.Click += (s, e) => edSvc.CloseDropDown();
+
+            edSvc.DropDownControl(form);
+
+            hr = new HResult((int)form.numericUpDown1.Value, (Facility)form.comboBox1.SelectedItem!,
+                (int)form.numericUpDown2.Value);
+
+            return hr.FullCode;
+        }
     }
 }

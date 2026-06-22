@@ -15,7 +15,7 @@ namespace WinInteropUtils_Test_App
                 _xmlDoc = XDocument.Load(xmlPath);
         }
 
-        public static string? GetParameterDoc(MethodInfo method, string paramName)
+        public static string? GetParameterDoc(MethodBase method, string paramName)
         {
             if (_xmlDoc == null)
                 return null;
@@ -85,7 +85,7 @@ namespace WinInteropUtils_Test_App
             return sb.ToString().Trim();
         }
 
-        private static string GetMemberElementName(MethodInfo method)
+        private static string GetMemberElementName(MethodBase method)
         {
             var parameters = method.GetParameters();
             string paramTypes = string.Join(",", parameters.Select(p => GetTypeNameForXmlDoc(p.ParameterType)));

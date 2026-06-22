@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            FireBlade.WinInteropUtils.WinForms.WinToolBarButton winToolBarButton1 = new FireBlade.WinInteropUtils.WinForms.WinToolBarButton();
+            FireBlade.WinInteropUtils.WinForms.WinToolBarButton winToolBarButton2 = new FireBlade.WinInteropUtils.WinForms.WinToolBarButton();
             progressBarEx1 = new FireBlade.WinInteropUtils.WinForms.ProgressBarEx();
             progressBarEx2 = new FireBlade.WinInteropUtils.WinForms.ProgressBarEx();
             progressBarEx3 = new FireBlade.WinInteropUtils.WinForms.ProgressBarEx();
@@ -59,6 +61,7 @@
             toolStripMenuItem2 = new ToolStripSeparator();
             helpToolStripMenuItem = new ToolStripMenuItem();
             label5 = new Label();
+            winToolBar1 = new FireBlade.WinInteropUtils.WinForms.WinToolBar();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
             SuspendLayout();
@@ -327,11 +330,30 @@
             label5.TabIndex = 20;
             label5.Text = "Edit:";
             // 
+            // winToolBar1
+            // 
+            winToolBarButton1.ImageIndex = 0;
+            winToolBarButton1.Label = "Test";
+            winToolBarButton2.ImageIndex = 0;
+            winToolBarButton2.Label = "Another test";
+            winToolBar1.Buttons.Add(winToolBarButton1);
+            winToolBar1.Buttons.Add(winToolBarButton2);
+            winToolBar1.ImageList = null;
+            winToolBar1.Location = new Point(0, 0);
+            winToolBar1.Mode = FireBlade.WinInteropUtils.WinForms.WinToolBarMode.List;
+            winToolBar1.Name = "winToolBar1";
+            winToolBar1.RegisterDrop = true;
+            winToolBar1.Size = new Size(800, 23);
+            winToolBar1.TabIndex = 21;
+            winToolBar1.Text = "winToolBar1";
+            winToolBar1.ObjectDropped += winToolBar1_ObjectDropped;
+            // 
             // WiuWinFormsTestForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(winToolBar1);
             Controls.Add(label5);
             Controls.Add(slider5);
             Controls.Add(label4);
@@ -398,6 +420,7 @@
         private ToolStripMenuItem helpToolStripMenuItem;
         private ToolStripMenuItem checkboxToolStripMenuItem;
         private Label label5;
+        private FireBlade.WinInteropUtils.WinForms.WinToolBar winToolBar1;
         //private FireBlade.WinInteropUtils.WinForms.HyperLink hyperLink1;
     }
 }
