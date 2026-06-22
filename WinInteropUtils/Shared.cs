@@ -390,9 +390,10 @@ namespace FireBlade.WinInteropUtils
     /// <summary>
     /// Represents a COM error code (<c>HResult</c>).
     /// </summary>
+    [StructLayout(LayoutKind.Sequential)]
     public partial struct HResult
     {
-        private int _code;
+        private readonly int _code;
 
         /// <summary>
         /// Gets the full <see cref="HResult"/> code.
@@ -500,6 +501,20 @@ namespace FireBlade.WinInteropUtils
         }
 
         /// <summary>
+        /// Creates a new <see cref="HResult"/> from the specified facility, severity, and base codes.
+        /// </summary>
+        /// <param name="baseCode">The base error code.</param>
+        /// <param name="facility">The facility code of the error.</param>
+        /// <param name="severity">The severity of the error.</param>
+        public HResult(int baseCode, Facility facility = Facility.Unspecified, int severity = 0)
+        {
+            _code =
+                (severity << 31) |
+                ((int)facility << 16) |
+                (baseCode & 0xFFFF);
+        }
+
+        /// <summary>
         /// Indicates whether this <see cref="HResult"/> and the specified <see cref="HResult"/>
         /// represent the same code.
         /// </summary>
@@ -527,6 +542,9 @@ namespace FireBlade.WinInteropUtils
         /// otherwise, <see langword="false"/>.</returns>
         public static bool operator !=(HResult? left, HResult? right)
             => !Equals(left, right);
+
+        /// <inheritdoc/>
+        public override int GetHashCode() => FullCode;
 
         /// <summary>
         /// The operation completed successfully.
