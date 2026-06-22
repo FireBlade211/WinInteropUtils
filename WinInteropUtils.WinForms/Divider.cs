@@ -3,6 +3,9 @@ using Windows.Win32;
 
 namespace FireBlade.WinInteropUtils.WinForms
 {
+    /// <summary>
+    /// Represents a control that can act as a horizontal or vertical separator.
+    /// </summary>
     public class Divider : Control
     {
         protected override CreateParams CreateParams
@@ -23,8 +26,12 @@ namespace FireBlade.WinInteropUtils.WinForms
 
         private Orientation _orient = Orientation.Horizontal;
 
+        /// <summary>
+        /// Gets or sets the orientation of the <see cref="Divider"/>.
+        /// </summary>
         [DefaultValue(Orientation.Horizontal)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+        [Description("Gets or sets the orientation of the Divider.")]
         public Orientation Orientation
         {
             get => _orient;
