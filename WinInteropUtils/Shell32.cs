@@ -236,6 +236,7 @@ namespace FireBlade.WinInteropUtils
         /// To use this function, call the <see cref="GetFileInfoEx(string, WindowsFileAttributes, SHGetFileInfoFlags, ref SHFILEINFO)"/> wrapper instead.
         /// </summary>
         [Flags]
+        [Obsolete("Use the new WinFile APIs instead. This enum will be removed in the next version of WinInteropUtils.")]
         public enum SHGetFileInfoFlags
         {
             /// <summary>
@@ -322,6 +323,7 @@ namespace FireBlade.WinInteropUtils
         /// <returns>The <see cref="WindowsFile"/> instance containing the data about the file if successful; otherwise, <see langword="null"/>.</returns>
         [SupportedOSPlatform("windows5.1")] // Windows XP
         [SupportedOSPlatform("windows5.0")] // Windows 2000 Server
+        [Obsolete("Use the new WinFile APIs instead. This function will be removed in the next version of WinInteropUtils.")]
         public static WindowsFile? GetFileInfo(string path)
         {
             COM.Initialize(COM.COMInitOptions.ApartmentThreaded);
@@ -407,6 +409,7 @@ namespace FireBlade.WinInteropUtils
         /// </remarks>
         [SupportedOSPlatform("windows5.1")] // Windows XP
         [SupportedOSPlatform("windows5.0")] // Windows 2000 Server
+        [Obsolete("Use the new WinFile APIs instead. This function will be removed in the next version of WinInteropUtils.")]
         public static nuint GetFileInfoEx(string pszPath, WindowsFileAttributes dwFileAttributes, SHGetFileInfoFlags uFlags, ref SHFILEINFO psfi)
         {
             COM.Initialize(COM.COMInitOptions.ApartmentThreaded);
@@ -489,6 +492,7 @@ namespace FireBlade.WinInteropUtils
     /// <param name="info">The <see cref="Shell32.SHFILEINFO"/> to create the <see cref="WindowsFile"/> from.</param>
     /// <param name="path">The file path of the file.</param>
     [SupportedOSPlatform("windows")]
+    [Obsolete("Use the new WinFile APIs instead. This class will be removed in the next version of WinInteropUtils.")]
     public class WindowsFile(Shell32.SHFILEINFO info, string path) : IDisposable
     {
         /// <summary>
