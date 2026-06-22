@@ -119,7 +119,11 @@ namespace FireBlade.WinInteropUtils
 
             unsafe
             {
-                HResult hr = (HResult)_DrawThemeText(_htheme, gh.GetHdc(), iPartId, iStateId, text, cchText, (uint)options, 0, &rc);
+                nint hdc = gh.GetHdc();
+
+                HResult hr = (HResult)_DrawThemeText(_htheme, hdc, iPartId, iStateId, text, cchText, (uint)options, 0, &rc);
+
+                gh.ReleaseHdc(hdc);
 
                 if (hr != HResult.S_OK)
                 {
@@ -179,7 +183,11 @@ namespace FireBlade.WinInteropUtils
 
             unsafe
             {
-                var result = _DrawText(gh.GetHdc(), text + "\0", -1, &rc, (uint)options);
+                nint hdc = gh.GetHdc();
+
+                var result = _DrawText(hdc, text + "\0", -1, &rc, (uint)options);
+
+                gh.ReleaseHdc(hdc);
 
                 rect = Rectangle.FromLTRB(rc.Left, rect.Top, rc.Right, rc.Bottom);
 
@@ -227,7 +235,11 @@ namespace FireBlade.WinInteropUtils
                 uint uiLengthDrawn = 0;
                 dtp.uiLengthDrawn = &uiLengthDrawn;
 
-                var result = DrawTextExW(gh.GetHdc(), text + "\0", -1, &rc, (uint)options, &dtp);
+                nint hdc = gh.GetHdc();
+
+                var result = DrawTextExW(hdc, text + "\0", -1, &rc, (uint)options, &dtp);
+
+                gh.ReleaseHdc(hdc);
 
                 rect = Rectangle.FromLTRB(rc.Left, rect.Top, rc.Right, rc.Bottom);
 
@@ -293,7 +305,11 @@ namespace FireBlade.WinInteropUtils
         //        var pCb = Marshal.GetFunctionPointerForDelegate<DTT_CALLBACK_PROC>(DttCallback);
         //        dto.pfnDrawTextCallback = pCb;
 
-        //        HResult hr = (HResult)DrawThemeTextEx(_htheme, gh.GetHdc(), iPartId, iStateId, text, cchText, (uint)options, &rc, &dto);
+        //        nint hdc = gh.GetHdc();
+
+        //        HResult hr = (HResult)DrawThemeTextEx(_htheme, hdc, iPartId, iStateId, text, cchText, (uint)options, &rc, &dto);
+
+        //        gh.ReleaseHdc(hdc);
 
         //        lParam.Free();
         //        GC.KeepAlive(pCb);
