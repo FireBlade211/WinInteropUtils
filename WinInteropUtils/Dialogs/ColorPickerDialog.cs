@@ -233,7 +233,7 @@ namespace FireBlade.WinInteropUtils.Dialogs
         /// Shows the <see cref="ColorPickerDialog"/> modally.
         /// </summary>
         /// <param name="dlg">The <see cref="ColorPickerDialog"/> to show.</param>
-        /// <param name="hwnd">The owner window.</param>
+        /// <param name="wnd">The owner window.</param>
         /// <returns>The result of the dialog.</returns>
         public static new Color? Show(ColorPickerDialog dlg, Window wnd) => DialogWindow<Color?, ColorPickerDialog>.Show(dlg, wnd);
     }
