@@ -96,23 +96,27 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// frees any other resources that the thread maintains, and forces all RPC connections on the thread to close.
         /// </summary>
         /// <remarks>
-        /// <para>A thread must call <see cref="Uninitialize"/> once for each successful call it has made to the <see cref="Initialize(COMInitOptions)"/> function,
-        /// including any call that returns S_FALSE. Only the <see cref="Uninitialize"/> call corresponding to the <see cref="Initialize(COMInitOptions)"/> call that initialized the library
-        /// can close it.</para>
+        /// <para>A thread must call <see cref="Uninitialize"/> once for each successful call it has made to the
+        /// <see cref="Initialize(COMInitOptions)"/> function, including any call that returns <see cref="HResult.S_FALSE"/>.
+        /// Only the <see cref="Uninitialize"/> call corresponding to the <see cref="Initialize(COMInitOptions)"/> call
+        /// that initialized the library can close it.</para>
         ///
-        /// <para>Calls to OleInitialize must be balanced by calls to OleUninitialize. The OleUninitialize function calls <see cref="Uninitialize"/> internally, so applications
+        /// <para>Calls to <c>OleInitialize</c> must be balanced by calls to <c>OleUninitialize</c>.
+        /// The <c>OleUninitialize</c> function calls <see cref="Uninitialize"/> internally, so applications
         /// that call OleUninitialize do not also need to call <see cref="Uninitialize"/>.</para>
         ///
         ///
-        /// <para><see cref="Uninitialize"/> should be called on application shutdown, as the last call made to the COM library after the application hides
-        /// its main windows and falls through its main message loop. If there are open conversations remaining, <see cref="Uninitialize"/>
-        /// starts a modal message loop and dispatches any pending messages from the containers or server for this COM application.
-        /// By dispatching the messages, <see cref="Uninitialize"/> ensures that the application does not quit before receiving all of its pending messages.
-        /// Non-COM messages are discarded.</para>
+        /// <para><see cref="Uninitialize"/> should be called on application shutdown, as the last call made to the
+        /// COM library after the application hides its main windows and falls through its main message loop. If
+        /// there are open conversations remaining, <see cref="Uninitialize"/> starts a modal message loop and
+        /// dispatches any pending messages from the containers or server for this COM application. By dispatching
+        /// the messages, <see cref="Uninitialize"/> ensures that the application does not quit before receiving
+        /// all of its pending messages. Non-COM messages are discarded.</para>
         ///
         ///
-        /// Because there is no way to control the order in which in-process servers are loaded or unloaded, do not call CoInitialize, <see cref="Initialize(COMInitOptions)"/>,
-        /// or <see cref="Uninitialize"/> from the <c>DllMain</c> function.
+        /// Because there is no way to control the order in which in-process servers are loaded or unloaded, do not
+        /// call <see cref="Initialize()"/>, <see cref="Initialize(COMInitOptions)"/>, or <see cref="Uninitialize"/>
+        /// from the <c>DllMain</c> function.
         /// </remarks>
         [LibraryImport("ole32.dll", EntryPoint = "CoUninitialize")]
         public static partial void Uninitialize();
@@ -121,28 +125,33 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// Specifies flags for <see cref="Initialize(COMInitOptions)"/>.
         /// </summary>
         /// <remarks>
-        /// <para>When a thread is initialized through a call to <see cref="Initialize(COMInitOptions)"/>, you choose whether to initialize it as apartment-threaded or
-        /// multithreaded by designating one of the members of <see cref="COMInitOptions"/> as its parameter. This designates how incoming calls to any object created by that
-        /// thread are handled, that is, the object's concurrency.</para>
+        /// <para>When a thread is initialized through a call to <see cref="Initialize(COMInitOptions)"/>, you choose whether
+        /// to initialize it as apartment-threaded or multithreaded by designating one of the members of <see cref="COMInitOptions"/>
+        /// as its parameter. This designates how incoming calls to any object created by that thread are handled, that is,
+        /// the object's concurrency.</para>
         ///
-        /// <para>Apartment-threading, while allowing for multiple threads of execution, serializes all incoming calls by requiring that calls to methods
-        /// of objects created by this thread always run on the same thread, i.e. the apartment/thread that created them. In addition, calls can arrive only at message-queue
-        /// boundaries. Because of this serialization, it is not typically necessary to write concurrency control into the code for the object, other than to avoid calls
+        /// <para>Apartment-threading, while allowing for multiple threads of execution, serializes all incoming calls by
+        /// requiring that calls to methods of objects created by this thread always run on the same thread, i.e. the apartment/thread
+        /// that created them. In addition, calls can arrive only at message-queue boundaries. Because of this serialization,
+        /// it is not typically necessary to write concurrency control into the code for the object, other than to avoid calls
         /// to <see href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-peekmessagea">PeekMessage</see> and
-        /// <see cref="Window.SendMessage(uint, nuint, nint)"/> during processing that must not be interrupted by other method invocations or calls to other 
-        /// objects in the same apartment/thread.</para>
+        /// <see cref="Window.SendMessage(uint, nuint, nint)"/> during processing that must not be interrupted by other method
+        /// invocations or calls to other objects in the same apartment/thread.</para>
         ///
-        /// <para>Multi-threading (also called free-threading) allows calls to methods of objects created by this thread to be run on any thread. There is no
-        /// serialization of calls, i.e. many calls may occur to the same method or to the same object or simultaneously. Multi-threaded object concurrency offers the
-        /// highest performance and takes the best advantage of multiprocessor hardware for cross-thread, cross-process, and cross-machine calling,
-        /// since calls to objects are not serialized in any way.This means, however, that the code for objects must enforce its own concurrency model, typically through
-        /// the use of synchronization primitives, such as critical sections, semaphores, or mutexes. In addition, because the object doesn't control the lifetime
-        /// of the threads that are accessing it, no thread-specific state may be stored in the object
+        /// <para>Multi-threading (also called free-threading) allows calls to methods of objects created by this
+        /// thread to be run on any thread. There is no serialization of calls, i.e. many calls may occur to the same
+        /// method or to the same object or simultaneously. Multi-threaded object concurrency offers the highest performance
+        /// and takes the best advantage of multiprocessor hardware for cross-thread, cross-process, and cross-machine calling,
+        /// since calls to objects are not serialized in any way.This means, however, that the code for objects must enforce
+        /// its own concurrency model, typically through the use of synchronization primitives, such as critical sections,
+        /// semaphores, or mutexes. In addition, because the object doesn't control the lifetime of the threads that are
+        /// accessing it, no thread-specific state may be stored in the object
         /// (in <see href="https://learn.microsoft.com/en-us/windows/desktop/ProcThread/thread-local-storage">Thread Local Storage</see>).</para>
         ///
         ///
-        /// <i>Note: The multi-threaded apartment is intended for use by non-GUI threads. Threads in multi-threaded apartments should not perform UI actions.
-        /// This is because UI threads require a message pump, and COM does not pump messages for threads in a multi-threaded apartment.</i>
+        /// <i>Note: The multi-threaded apartment is intended for use by non-GUI threads. Threads in multi-threaded
+        /// apartments should not perform UI actions. This is because UI threads require a message pump, and COM does
+        /// not pump messages for threads in a multi-threaded apartment.</i>
         /// </remarks>
         [Flags]
         public enum COMInitOptions
@@ -176,18 +185,20 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// <summary>
         /// <para>Creates and default-initializes a single object of the class associated with a specified CLSID.</para>
         /// 
-        /// Call CoCreateInstance when you want to create only one object on the local system. To create a single object on a remote system, call the CoCreateInstanceEx
-        /// function. To create multiple objects based on a single CLSID, call the CoGetClassObject function.
+        /// Call CoCreateInstance when you want to create only one object on the local system. To create a single object
+        /// on a remote system, call the <c>CoCreateInstanceEx</c> function. To create multiple objects based on a
+        /// single CLSID, call the <c>CoGetClassObject</c> function.
         /// </summary>
         /// <typeparam name="TCoInterface"></typeparam>
         /// <param name="rclsid">The CLSID associated with the data and code that will be used to create the object.</param>
-        /// <param name="pUnkOuter">If <see langword="null"/>, indicates that the object is not being created as part of an aggregate. If non-<see langword="null"/>, pointer
-        /// to the aggregate object's <c>IUnknown</c> interface (the controlling <c>IUnknown</c>).</param>
+        /// <param name="pUnkOuter">If <see langword="null"/>, indicates that the object is not being created as part of
+        /// an aggregate. If non-<see langword="null"/>, pointer to the aggregate object's <c>IUnknown</c>
+        /// interface (the controlling <c>IUnknown</c>).</param>
         /// <param name="dwClsContext">Context in which the code that manages the newly created object will run.
         /// A bitwise combination of <see cref="CreateInstanceContext"/> values.</param>
         /// <param name="riid">A reference to the identifier of the interface to be used to communicate with the object.</param>
-        /// <param name="ppv">Upon successful return, <paramref name="ppv"/> contains the requested interface. Upon failure, <paramref name="ppv"/> contains
-        /// <see langword="null"/>.</param>
+        /// <param name="ppv">Upon successful return, <paramref name="ppv"/> contains the requested interface.
+        /// Upon failure, <paramref name="ppv"/> contains <see langword="null"/>.</param>
         /// <returns>A <see cref="HResult"/>. It can be one of the following values:
         /// <list type="table">
         /// <item>
@@ -196,8 +207,9 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// </item>
         /// <item>
         /// <term><see cref="HResult.REGDB_E_CLASSNOTREG"/></term>
-        /// <description>A specified class is not registered in the registration database. Also can indicate that the type of server you requested
-        /// in the <see cref="CreateInstanceContext"/> enumeration is not registered or the values for the server types in the registry are corrupt.</description>
+        /// <description>A specified class is not registered in the registration database. Also can indicate that the
+        /// type of server you requested in the <see cref="CreateInstanceContext"/> enumeration is not registered or
+        /// the values for the server types in the registry are corrupt.</description>
         /// </item>
         /// <item>
         /// <term><see cref="HResult.CLASS_E_NOAGGREGATION"/></term>
@@ -225,7 +237,8 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// 
         /// <para>In the <see cref="CreateInstanceContext"/> enumeration, you can specify the type of server used to manage
         /// the object. The constants can be <see cref="CreateInstanceContext.InprocServer"/>,
-        /// <see cref="CreateInstanceContext.InprocHandler"/>, <see cref="CreateInstanceContext.LocalServer"/>, <see cref="CreateInstanceContext.RemoteServer"/> or any
+        /// <see cref="CreateInstanceContext.InprocHandler"/>, <see cref="CreateInstanceContext.LocalServer"/>,
+        /// <see cref="CreateInstanceContext.RemoteServer"/> or any
         /// combination of these values.</para>
         /// 
         /// <para><h3><i>UWP applications</i></h3></para>
@@ -270,29 +283,30 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// <para>Creates and default-initializes a single object of the class associated with a specified CLSID.</para>
         /// 
         /// Call <see cref="CreateInstance{TCoInterface}(Guid, object?, CreateInstanceContext)"/> when you want to create
-        /// only one object on the local system. To create a single object on a remote system, call the CoCreateInstanceEx
-        /// function. To create multiple objects based on a single CLSID, call the CoGetClassObject function.
+        /// only one object on the local system. To create a single object on a remote system, call the <c>CoCreateInstanceEx</c>
+        /// function. To create multiple objects based on a single CLSID, call the <c>CoGetClassObject</c> function.
         /// </summary>
-        /// <typeparam name="TCoInterface"></typeparam>
+        /// <typeparam name="TCoInterface">The COM interface to create an instance of.</typeparam>
         /// <param name="rclsid">The CLSID associated with the data and code that will be used to create the object.</param>
-        /// <param name="pUnkOuter">If <see langword="null"/>, indicates that the object is not being created as part of an aggregate. If non-<see langword="null"/>, pointer
-        /// to the aggregate object's <c>IUnknown</c> interface (the controlling <c>IUnknown</c>).</param>
+        /// <param name="pUnkOuter">If <see langword="null"/>, indicates that the object is not being created as part
+        /// of an aggregate. If non-<see langword="null"/>, pointer to the aggregate object's <c>IUnknown</c>
+        /// interface (the controlling <c>IUnknown</c>).</param>
         /// <param name="dwClsContext">Context in which the code that manages the newly created object will run.
         /// A bitwise combination of <see cref="CreateInstanceContext"/> values.</param>
         /// <returns>The requested interface, or <see langword="null"/>.</returns>
         /// <remarks>
         /// <para>The <see cref="CreateInstance{TCoInterface}(Guid, object?, CreateInstanceContext)"/>
-        /// function provides a convenient shortcut by connecting to the class object associated with the specified CLSID,
-        /// creating a default-initialized instance, and releasing the class object.</para>
+        /// function provides a convenient shortcut by connecting to the class object associated with
+        /// the specified CLSID, creating a default-initialized instance, and releasing the class object.</para>
         /// 
         /// <para>It is convenient to use <see cref="CreateInstance{TCoInterface}(Guid, object?, CreateInstanceContext)"/>
         /// when you need to create only a single instance of an object on the local machine. If you are creating an instance
-        /// on remote computer, call CoCreateInstanceEx.</para>
+        /// on remote computer, call <c>CoCreateInstanceEx</c>.</para>
         /// 
         /// <para>In the <see cref="CreateInstanceContext"/> enumeration, you can specify the type of server used to manage
         /// the object. The constants can be <see cref="CreateInstanceContext.InprocServer"/>,
-        /// <see cref="CreateInstanceContext.InprocHandler"/>, <see cref="CreateInstanceContext.LocalServer"/>, <see cref="CreateInstanceContext.RemoteServer"/> or any
-        /// combination of these values.</para>
+        /// <see cref="CreateInstanceContext.InprocHandler"/>, <see cref="CreateInstanceContext.LocalServer"/>,
+        /// <see cref="CreateInstanceContext.RemoteServer"/> or any combination of these values.</para>
         /// 
         /// <para><h3><i>UWP applications</i></h3></para>
         /// 
@@ -355,6 +369,52 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         }
 
         /// <summary>
+        /// Queries a COM interface for another interface.
+        /// </summary>
+        /// <typeparam name="TCoInterface">The COM interface to query.</typeparam>
+        /// <typeparam name="TOut">The COM interface requested.</typeparam>
+        /// <param name="i">The interface to query.</param>
+        /// <returns>The COM interface requested.</returns>
+        /// <exception cref="ArgumentException">TCoInterface and TOut must be COM interfaces.</exception>
+        /// <exception cref="Exception">A different exception returned by the object's <c>QueryInterface</c>
+        /// implementation.</exception>
+        public static TOut QueryInterface<TCoInterface, TOut>(TCoInterface i) where TCoInterface : notnull where TOut : notnull
+        {
+            if (!typeof(TCoInterface).IsInterface)
+                throw new ArgumentException("TCoInterface must be an interface.");
+
+            if (!typeof(TOut).IsInterface)
+                throw new ArgumentException("TOut must be an interface.");
+
+            if (!Marshal.IsComObject(i))
+                throw new ArgumentException("TCoInterface is not a COM object.");
+
+            nint pUnk = 0;
+            nint ppv  = 0;
+
+            try
+            {
+                pUnk        = Marshal.GetIUnknownForObject(i);
+                ppv         = 0;
+                Guid iid    = typeof(TOut).GUID;
+                HResult hr  = Marshal.QueryInterface(pUnk, ref iid, out ppv);
+
+                if (Macros.Succeeded(hr))
+                {
+                    TOut result = (TOut)Marshal.GetObjectForIUnknown(ppv);
+
+                    return result;
+                }
+                else throw hr;
+            }
+            finally
+            {
+                if (pUnk != nint.Zero)
+                    Marshal.Release(pUnk);
+            }
+        }
+
+        /// <summary>
         /// Values that are used in activation calls to indicate the execution contexts in which an object is to
         /// be run. Used in <see cref="CreateInstance{TCoInterface}(Guid, object?, CreateInstanceContext)"/>.
         /// </summary>
@@ -381,12 +441,15 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// or <see href="https://learn.microsoft.com/en-us/windows/win32/com/activateatstorage">ActivateAtStorage</see> registry value.</item>
         /// </list>
         /// The second case allows applications written prior to the release of distributed <see cref="COM"/> to be the configuration
-        /// of classes for remote activation to be used by client applications available prior to DCOM and the <see cref="RemoteServer"/> flag. The cases
-        /// in which there would be no explicit COSERVERINFO structure are when the value is specified as <see langword="null"/> or when it is not one of the function
+        /// of classes for remote activation to be used by client applications available prior to DCOM and the
+        /// <see cref="RemoteServer"/> flag. The cases in which there would be no explicit COSERVERINFO structure
+        /// are when the value is specified as <see langword="null"/>
+        /// or when it is not one of the function
         /// parameters (as in calls to <see cref="CreateInstance{TCoInterface}(Guid, object?, CreateInstanceContext)"/> and
         /// CoGetClassObject).
         /// </item>
-        /// <item>If the explicit COSERVERINFO parameter indicates the current computer, <see cref="RemoteServer"/> is removed if present.</item>
+        /// <item>If the explicit COSERVERINFO parameter indicates the current computer, <see cref="RemoteServer"/> is
+        /// removed if present.</item>
         /// </list>
         /// 
         /// The rest of the processing proceeds by looking at the value(s) in the following sequence:
@@ -394,131 +457,145 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
         /// <item>If the flags include <see cref="RemoteServer"/> and no COSERVERINFO parameter is specified and if the activation request indicates
         /// a persistent state from which to initialize the object (with CoGetInstanceFromFile, CoGetInstanceFromIStorage, or, for a file moniker,
         /// in a call to IMoniker::BindToObject) and the class has an
-        /// <see href="https://learn.microsoft.com/en-us/windows/win32/com/activateatstorage">ActivateAtStorage</see> subkey or no class registry information whatsoever,
-        /// the request to activate and initialize is forwarded to the computer where the persistent state resides. (Refer to the remote activation functions
+        /// <see href="https://learn.microsoft.com/en-us/windows/win32/com/activateatstorage">ActivateAtStorage</see> subkey or no
+        /// class registry information whatsoever, the request to activate and initialize is forwarded to the computer where
+        /// the persistent state resides. (Refer to the remote activation functions
         /// listed in the See Also section for details.)</item>
         /// <item>If the flags include <see cref="InprocServer"/>, the class code in the DLL found under the class's <c>InprocServer32</c>
         /// key is used if this key exists. The class code will run within the same process as the caller.</item>
-        /// <item>If the flags include <see cref="InprocHandler"/>, the class code in the DLL found under the class's <c>InprocHandler32</c> key is used if this key exists.
+        /// <item>If the flags include <see cref="InprocHandler"/>, the class code in the DLL found under the class's
+        /// <c>InprocHandler32</c> key is used if this key exists.
         /// The class code will run within the same process as the caller.</item>
-        /// <item>If the flags include <see cref="LocalServer"/>, the class code in the service found under the class's <c>LocalService</c> key is used if this key exists.
-        /// If no service is specified but an EXE is specified under that same key, the class code associated with that EXE is used. The class code (in either case)
+        /// <item>If the flags include <see cref="LocalServer"/>, the class code in the service found under
+        /// the class's <c>LocalService</c> key is used if this key exists.
+        /// If no service is specified but an EXE is specified under that same key, the class code associated
+        /// with that EXE is used. The class code (in either case)
         /// will be run in a separate service process on the same computer as the caller.</item>
-        /// <item>If the flag is set to <see cref="RemoteServer"/> and an additional COSERVERINFO parameter to the function specifies a particular remote computer,
-        /// a request to activate is forwarded to this remote computer with flags modified to set to <see cref="LocalServer"/>. The class code will run in its own process
+        /// <item>If the flag is set to <see cref="RemoteServer"/> and an additional COSERVERINFO parameter to the
+        /// function specifies a particular remote computer, a request to activate is forwarded to this remote computer
+        /// with flags modified to set to <see cref="LocalServer"/>. The class code will run in its own process
         /// on this specific computer, which must be different from that of the caller.</item>
-        /// <item>Finally, if the flags include <see cref="RemoteServer"/> and no COSERVERINFO parameter is specified and if a computer name is given under the
-        /// class's <see href="https://learn.microsoft.com/en-us/windows/win32/com/remoteservername">RemoteServerName</see> named-value, the request to activate
-        /// is forwarded to this remote computer with the flags modified to be set to <see cref="LocalServer"/>. The class code will run in its own process on
-        /// this specific computer, which must be different from that of the caller.</item>
+        /// <item>Finally, if the flags include <see cref="RemoteServer"/> and no COSERVERINFO parameter is specified
+        /// and if a computer name is given under the 
+        /// class's <see href="https://learn.microsoft.com/en-us/windows/win32/com/remoteservername">RemoteServerName</see>
+        /// named-value, the request to activate is forwarded to this remote computer with the flags modified to be set
+        /// to <see cref="LocalServer"/>. The class code will run in its own process on this specific computer, which must
+        /// be different from that of the caller.</item>
         /// </list>
         /// 
         /// <para><i><see cref="Activate32BitServer"/> and <see cref="Activate64BitServer"/></i></para>
         /// 
-        /// <para>The 64-bit versions of Windows introduce two new flags: <see cref="Activate32BitServer"/> and <see cref="Activate64BitServer"/>. On a 64-bit computer,
-        /// a 32-bit and 64-bit version of the same <see cref="COM"/> server may coexist. When a client requests an activation of an out-of-process server,
-        /// these <see cref="CreateInstanceContext"/> flags allow the client to specify a 32-bit or a 64-bit version of the server.</para>
+        /// <para>The 64-bit versions of Windows introduce two new flags: <see cref="Activate32BitServer"/> and
+        /// <see cref="Activate64BitServer"/>. On a 64-bit computer, a 32-bit and 64-bit version of the same <see cref="COM"/>
+        /// server may coexist. When a client requests an activation of an out-of-process server, these
+        /// <see cref="CreateInstanceContext"/> flags allow the client to specify a 32-bit or a 64-bit version of the server.</para>
         /// 
-        /// <para>Usually, a client will not care whether it uses a 32-bit or a 64-bit version of the server. However, if the server itself loads an additional
-        /// in-process server, then it and the in-process server must both be either 32-bit or 64-bit. For example, suppose that the client wants to use a server "A",
-        /// which in turn loads an in-process server "B". If only a 32-bit version of server "B" is available, then the client must specify the 32-bit version of server "A".
+        /// <para>Usually, a client will not care whether it uses a 32-bit or a 64-bit version of the server. However,
+        /// if the server itself loads an additional in-process server, then it and the in-process server must both be either
+        /// 32-bit or 64-bit. For example, suppose that the client wants to use a server "A", which in turn loads an in-process
+        /// server "B". If only a 32-bit version of server "B" is available, then the client must specify the 32-bit version of server "A".
         /// If only a 64-bit version of server "B" is available, then the client must specify the 64-bit version of server "A".</para>
         /// 
         /// <para>A server can specify its own architecture preference via the
-        /// <see href="https://learn.microsoft.com/en-us/windows/win32/com/preferredserverbitness">PreferredServerBitness</see> registry key, but the client's preference,
-        /// specified via a <see cref="Activate32BitServer"/> or <see cref="Activate64BitServer"/> flag, will override the server's preference. If the client does not specify
+        /// <see href="https://learn.microsoft.com/en-us/windows/win32/com/preferredserverbitness">PreferredServerBitness</see>
+        /// registry key, but the client's preference, specified via a <see cref="Activate32BitServer"/> or
+        /// <see cref="Activate64BitServer"/> flag, will override the server's preference. If the client does not specify
         /// a preference, then the server's preference will be used.</para>
         /// 
         /// If neither the client nor the server specifies a preference, then:
         /// <list type="bullet">
-        /// <item>If the computer that hosts the server is running Windows Server 2003 with Service Pack 1 (SP1) or a later system, then <see cref="COM"/>
-        /// will try to match the server architecture to the client architecture. In other words, for a 32-bit client, <see cref="COM"/> will activate a 32-bit server
-        /// if available; otherwise it will activate a 64-bit version of the server. For a 64-bit client, <see cref="COM"/> will activate a 64-bit server if available;
-        /// otherwise it will activate a 32-bit server.</item>
+        /// <item>If the computer that hosts the server is running Windows Server 2003 with Service Pack 1 (SP1) or a later
+        /// system, then <see cref="COM"/> will try to match the server architecture to the client architecture. In other
+        /// words, for a 32-bit client, <see cref="COM"/> will activate a 32-bit server if available; otherwise it will
+        /// activate a 64-bit version of the server. For a 64-bit client, <see cref="COM"/> will activate a 64-bit
+        /// server if available; otherwise it will activate a 32-bit server.</item>
         /// <item>If the computer that hosts the server is running Windows XP or Windows Server 2003 without SP1 or later installed,
-        /// then <see cref="COM"/> will prefer a 64-bit version of the server if available; otherwise it will activate a 32-bit version of the server.</item>
+        /// then <see cref="COM"/> will prefer a 64-bit version of the server if available; otherwise it will activate
+        /// a 32-bit version of the server.</item>
         /// </list>
-        /// <para>If a <see cref="CreateInstanceContext"/> enumeration has both the <see cref="Activate32BitServer"/> and <see cref="Activate64BitServer"/> flags set,
-        /// then it is invalid and the activation will return <see cref="HResult.E_INVALIDARG"/>.</para>
+        /// <para>If a <see cref="CreateInstanceContext"/> enumeration has both the <see cref="Activate32BitServer"/>
+        /// and <see cref="Activate64BitServer"/> flags set, then it is invalid and the activation will return
+        /// <see cref="HResult.E_INVALIDARG"/>.</para>
         /// 
         /// 
-        /// The flags <see cref="Activate32BitServer"/> and <see cref="Activate64BitServer"/> flow across computer boundaries. If the computer that hosts
-        /// the server is running the 64-bit Windows, then it will honor these flags; otherwise it will ignore them.
+        /// The flags <see cref="Activate32BitServer"/> and <see cref="Activate64BitServer"/> flow across computer boundaries.
+        /// If the computer that hosts the server is running the 64-bit Windows, then it will honor these flags; otherwise it will ignore them.
         /// </remarks>
         [Flags]
         public enum CreateInstanceContext
         {
             /// <summary>
             /// The code that creates and manages objects of this class is a DLL that runs in the same process as the
-            /// caller of the function specifying the class context. (CLSCTX_INPROC_SERVER)
+            /// caller of the function specifying the class context.
             /// </summary>
             InprocServer = 0x1,
             /// <summary>
-            /// The code that manages objects of this class is an in-process handler. This is a DLL that runs in the client process and implements client-side structures
-            /// of this class when instances of the class are accessed remotely. (CLSCTX_INPROC_HANDLER)
+            /// The code that manages objects of this class is an in-process handler. This is a DLL that runs in the client
+            /// process and implements client-side structures of this class when instances of the class are accessed
+            /// remotely.
             /// </summary>
             InprocHandler = 0x2,
             /// <summary>
             /// The EXE code that creates and manages objects of this class runs on same machine but is loaded
-            /// in a separate process space. (CLSCTX_LOCAL_SERVER)
+            /// in a separate process space.
             /// </summary>
             LocalServer = 0x4,
             /// <summary>
-            /// Obsolete. (CLSCTX_INPROC_SERVER16)
+            /// Obsolete.
             /// </summary>
             [Obsolete("This value is obsolete.")]
             Inproc16 = 0x8,
             /// <summary>
             /// A remote context. The LocalServer32 or LocalService code that creates and
-            /// manages objects of this class is run on a different computer. (CLSCTX_REMOTE_SERVER)
+            /// manages objects of this class is run on a different computer.
             /// </summary>
             RemoteServer = 0x10,
             /// <summary>
-            /// Obsolete. (CLSCTX_INPROC_HANDLER16)
+            /// Obsolete.
             /// </summary>
             [Obsolete("This value is obsolete.")]
             InprocHandler16 = 0x20,
             /// <summary>
-            /// Reserved. (CLSCTX_RESERVED1)
+            /// Reserved.
             /// </summary>
             [Obsolete("This value is reserved.", DiagnosticId = ErrorDiagIDs.ReservedEnumValue)]
             Reserved1 = 0x40,
             /// <summary>
-            /// Reserved. (CLSCTX_RESERVED2)
+            /// Reserved.
             /// </summary>
             [Obsolete("This value is reserved.", DiagnosticId = ErrorDiagIDs.ReservedEnumValue)]
             Reserved2 = 0x80,
             /// <summary>
-            /// Reserved. (CLSCTX_RESERVED3)
+            /// Reserved.
             /// </summary>
             [Obsolete("This value is reserved.", DiagnosticId = ErrorDiagIDs.ReservedEnumValue)]
             Reserved3 = 0x100,
             /// <summary>
-            /// Reserved. (CLSCTX_RESERVED4)
+            /// Reserved.
             /// </summary>
             [Obsolete("This value is reserved.", DiagnosticId = ErrorDiagIDs.ReservedEnumValue)]
             Reserved4 = 0x200,
             /// <summary>
             /// Disables the downloading of code from the directory service or the Internet.
-            /// This flag cannot be set at the same time as <see cref="EnableCodeDownload"/>. (CLSCTX_NO_CODE_DOWNLOAD)
+            /// This flag cannot be set at the same time as <see cref="EnableCodeDownload"/>.
             /// </summary>
             NoCodeDownload = 0x400,
             /// <summary>
-            /// Reserved. (CLSCTX_RESERVED5)
+            /// Reserved.
             /// </summary>
             [Obsolete("This value is reserved.", DiagnosticId = ErrorDiagIDs.ReservedEnumValue)]
             Reserved5 = 0x800,
             /// <summary>
-            /// Specify if you want the activation to fail if it uses custom marshalling. (CLSCTX_NO_CUSTOM_MARSHAL)
+            /// Specify if you want the activation to fail if it uses custom marshalling.
             /// </summary>
             NoCustomMarshal = 0x1000,
             /// <summary>
             /// Enables the downloading of code from the directory service or the Internet. This flag cannot be set at the
-            /// same time as <see cref="NoCodeDownload"/>. (CLSCTX_ENABLE_CODE_DOWNLOAD)
+            /// same time as <see cref="NoCodeDownload"/>.
             /// </summary>
             EnableCodeDownload = 0x2000,
             /// <summary>
-            /// <para>The <see cref="NoFailureLog"/> can be used to override the logging of failures in CoCreateInstanceEx.</para>
+            /// <para>The <see cref="NoFailureLog"/> can be used to override the logging of failures in <c>CoCreateInstanceEx</c>.</para>
             /// If the ActivationFailureLoggingLevel is created, the following values can determine the status of event logging:
             /// <list type="bullet">
             /// <item>0 = Discretionary logging. Log by default, but clients can override by
@@ -526,69 +603,75 @@ namespace FireBlade.WinInteropUtils.ComponentObjectModel
             /// <item>1 = Always log all failures no matter what the client specified.</item>
             /// <item>2 = Never log any failures no matter what client specified. If the registry entry is missing,
             /// the default is 0. If you need to control customer applications, it is recommended that you set this value to 0 and write the
-            /// client code to override failures. It is strongly recommended that you do not set the value to 2. If event logging is disabled,
-            /// it is more difficult to diagnose problems.</item>
+            /// client code to override failures. It is strongly recommended that you do not set the value to 2.
+            /// If event logging is disabled,it is more difficult to diagnose problems.</item>
             /// </list>
-            /// (CLSCTX_NO_FAILURE_LOG)
             /// </summary>
             NoFailureLog = 0x4000,
             /// <summary>
-            /// Disables activate-as-activator (AAA) activations for this activation only. This flag overrides the setting of the EOAC_DISABLE_AAA
-            /// flag from the EOLE_AUTHENTICATION_CAPABILITIES enumeration. This flag cannot be set at the same time as <see cref="EnableActivateAsActivator"/>.
-            /// Any activation where a server process would be launched under the caller's identity is known as an activate-as-activator (AAA) activation.
-            /// Disabling AAA activations allows an application that runs under a privileged account (such as LocalSystem) to help prevent its identity 
-            /// from being used to launch untrusted components. Library applications that use activation calls should always set this flag during those calls.
-            /// This helps prevent the library application from being used in an escalation-of-privilege security attack. This is the only way to disable AAA
-            /// activations in a library application because the EOAC_DISABLE_AAA flag from the EOLE_AUTHENTICATION_CAPABILITIES enumeration is applied only to
-            /// the server process and not to the library application. (CLSCTX_DISABLE_AAA)
+            /// Disables activate-as-activator (AAA) activations for this activation only. This flag overrides the setting
+            /// of the EOAC_DISABLE_AAA flag from the EOLE_AUTHENTICATION_CAPABILITIES enumeration. This flag cannot be
+            /// set at the same time as <see cref="EnableActivateAsActivator"/>. Any activation where a server process would
+            /// be launched under the caller's identity is known as an activate-as-activator (AAA) activation.
+            /// Disabling AAA activations allows an application that runs under a privileged account (such as LocalSystem) to
+            /// help prevent its identity from being used to launch untrusted components. Library applications that use
+            /// activation calls should always set this flag during those calls. This helps prevent the library application
+            /// from being used in an escalation-of-privilege security attack. This is the only way to disable AAA activations
+            /// in a library application because the EOAC_DISABLE_AAA flag from the EOLE_AUTHENTICATION_CAPABILITIES enumeration
+            /// is applied only to the server process and not to the library application.
             /// </summary>
             [UnsupportedOSPlatform("windows5.0")]
             DisableActivateAsActivator = 0x8000,
             /// <summary>
-            /// Enables activate-as-activator (AAA) activations for this activation only. This flag overrides the setting of the EOAC_DISABLE_AAA
-            /// flag from the EOLE_AUTHENTICATION_CAPABILITIES enumeration. This flag cannot be set at the same time
-            /// as <see cref="DisableActivateAsActivator"/>. Any activation where a server process would be launched under the caller's identity is known
-            /// as an activate-as-activator (AAA) activation. Enabling this flag allows an application to transfer its identity to an activated component. (CLSCTX_ENABLE_AAA)
+            /// Enables activate-as-activator (AAA) activations for this activation only. This flag overrides the
+            /// setting of the EOAC_DISABLE_AAA flag from the EOLE_AUTHENTICATION_CAPABILITIES enumeration. This flag
+            /// cannot be set at the same time as <see cref="DisableActivateAsActivator"/>. Any activation where a
+            /// server process would be launched under the caller's identity is known as an activate-as-activator (AAA)
+            /// activation. Enabling this flag allows an application to transfer its identity to an activated component.
             /// </summary>
             [UnsupportedOSPlatform("windows5.0")]
             EnableActivateAsActivator = 0x10000,
             /// <summary>
-            /// Begin this activation from the default context of the current apartment. (CLSCTX_FROM_DEFAULT_CONTEXT)
+            /// Begin this activation from the default context of the current apartment.
             /// </summary>
             FromDefaultContext = 0x20000,
             /// <summary>
-            /// Activate or connect to a 32-bit version of the server; fail if one is not registered. (CLSCTX_ACTIVATE_X86_SERVER)
+            /// Activate or connect to a 32-bit version of the server; fail if one is not registered.
             /// </summary>
             ActivateX86Server = 0x40000,
             /// <summary>
-            /// Activate or connect to a 32-bit version of the server; fail if one is not registered. (CLSCTX_ACTIVATE_32_BIT_SERVER)
+            /// Activate or connect to a 32-bit version of the server; fail if one is not registered.
             /// </summary>
             Activate32BitServer = ActivateX86Server,
             /// <summary>
-            /// Activate or connect to a 64 bit version of the server; fail if one is not registered. (CLSCTX_ACTIVATE_64_BIT_SERVER)
+            /// Activate or connect to a 64 bit version of the server; fail if one is not registered.
             /// </summary>
             Activate64BitServer = 0x80000,
             /// <summary>
-            /// When this flag is specified, <see cref="COM"/> uses the impersonation token of the thread, if one is present, for the activation request
-            /// made by the thread. When this flag is not specified or if the thread does not have an impersonation token, <see cref="COM"/>
-            /// uses the process token of the thread's process for the activation request made by the thread. (CLSCTX_ENABLE_CLOAKING)
+            /// When this flag is specified, <see cref="COM"/> uses the impersonation token of the thread, if one is
+            /// present, for the activation request made by the thread. When this flag is not specified or if the thread
+            /// does not have an impersonation token, <see cref="COM"/> uses the process token of the thread's process
+            /// for the activation request made by the thread.
             /// </summary>
             [SupportedOSPlatform("windows6.0")]
             EnableCloaking = 0x100000,
             /// <summary>
-            /// Indicates activation is for an app container. (CLSCTX_APPCONTAINER)
+            /// Indicates activation is for an app container.
             /// </summary>
-            /// <remarks>This flag is reserved for internal use and is not intended to be used directly from your code.</remarks>
+            /// <remarks>This flag is reserved for internal use and is not intended to be
+            /// used directly from your code.</remarks>
             [Obsolete("This flag is reserved.", DiagnosticId = ErrorDiagIDs.ReservedEnumValue)]
             AppContainer = 0x400000,
             /// <summary>
-            /// Specify this flag for Interactive User activation behavior for As-Activator servers. A strongly named Medium IL Windows Store
-            /// app can use this flag to launch an "As Activator" <see cref="COM"/> server without a strong name. Also, you can use this flag to bind to a running
-            /// instance of the <see cref="COM"/> server that's launched by a desktop application. (CLSCTX_ACTIVATE_AAA_AS_IU)
+            /// Specify this flag for Interactive User activation behavior for As-Activator servers. A strongly named
+            /// Medium IL Windows Store app can use this flag to launch an "As Activator" <see cref="COM"/> server
+            /// without a strong name. Also, you can use this flag to bind to a running instance of the <see cref="COM"/> 
+            /// server that's launched by a desktop application.
             /// </summary>
             /// <remarks>
-            /// <para>The client must be Medium IL, it must be strongly named, which means that it has a SysAppID in the client token, it can't be in
-            /// session 0, and it must have the same user as the session ID's user in the client token.</para>
+            /// <para>The client must be Medium IL, it must be strongly named, which means that it has a SysAppID
+            /// in the client token, it can't be in session 0, and it must have the same user as the session ID's
+            /// user in the client token.</para>
             /// 
             /// <para>If the server is out-of-process and "As Activator", it launches the server
             /// with the token of the client token's session user. This token won't be strongly named.</para>
