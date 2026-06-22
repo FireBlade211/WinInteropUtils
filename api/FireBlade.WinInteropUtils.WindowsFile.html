@@ -89,7 +89,7 @@
 
 
   <h1 id="FireBlade_WinInteropUtils_WindowsFile" data-uid="FireBlade.WinInteropUtils.WindowsFile" class="text-break">
-Class WindowsFile  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L491"><i class="bi bi-code-slash"></i></a>
+Class WindowsFile  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L494"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,8 @@ Class WindowsFile  <a class="header-action link-secondary" title="View source" h
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class WindowsFile : IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the new WinFile APIs instead. This class will be removed in the next version of WinInteropUtils.&quot;)]
+public class WindowsFile : IDisposable</code></pre>
   </div>
 
 
@@ -160,7 +161,7 @@ Class WindowsFile  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="FireBlade_WinInteropUtils_WindowsFile__ctor_FireBlade_WinInteropUtils_Shell32_SHFILEINFO_System_String_" data-uid="FireBlade.WinInteropUtils.WindowsFile.#ctor(FireBlade.WinInteropUtils.Shell32.SHFILEINFO,System.String)">
   WindowsFile(SHFILEINFO, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L491"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L494"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Stores data about a Windows file.</p>
@@ -200,7 +201,7 @@ Class WindowsFile  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="FireBlade_WinInteropUtils_WindowsFile_Attributes" data-uid="FireBlade.WinInteropUtils.WindowsFile.Attributes">
   Attributes
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L513"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L517"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the file or directory attributes.</p>
@@ -232,7 +233,7 @@ Class WindowsFile  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="FireBlade_WinInteropUtils_WindowsFile_Bytes" data-uid="FireBlade.WinInteropUtils.WindowsFile.Bytes">
   Bytes
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L546"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L550"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the bytes of the file.</p>
@@ -267,7 +268,7 @@ Class WindowsFile  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="FireBlade_WinInteropUtils_WindowsFile_Content" data-uid="FireBlade.WinInteropUtils.WindowsFile.Content">
   Content
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L538"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L542"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the text content of the file.</p>
@@ -302,7 +303,7 @@ Class WindowsFile  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="FireBlade_WinInteropUtils_WindowsFile_DisplayName" data-uid="FireBlade.WinInteropUtils.WindowsFile.DisplayName">
   DisplayName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L502"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L506"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the display name of the file.</p>
@@ -334,7 +335,7 @@ Class WindowsFile  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="FireBlade_WinInteropUtils_WindowsFile_Disposed" data-uid="FireBlade.WinInteropUtils.WindowsFile.Disposed">
   Disposed
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L559"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L563"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> when the <a class="xref" href="FireBlade.WinInteropUtils.WindowsFile.html">WindowsFile</a> instance is disposed.</p>
@@ -366,7 +367,7 @@ Class WindowsFile  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="FireBlade_WinInteropUtils_WindowsFile_FilePath" data-uid="FireBlade.WinInteropUtils.WindowsFile.FilePath">
   FilePath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L554"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L558"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the file path this <a class="xref" href="FireBlade.WinInteropUtils.WindowsFile.html">WindowsFile</a> represents.</p>
@@ -398,7 +399,7 @@ Class WindowsFile  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="FireBlade_WinInteropUtils_WindowsFile_Icon" data-uid="FireBlade.WinInteropUtils.WindowsFile.Icon">
   Icon
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L497"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L501"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the icon of the file.</p>
@@ -430,7 +431,7 @@ Class WindowsFile  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="FireBlade_WinInteropUtils_WindowsFile_IconIndex" data-uid="FireBlade.WinInteropUtils.WindowsFile.IconIndex">
   IconIndex
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L524"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L528"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the icon index of the file's icon in Windows's internal image list.</p>
@@ -462,7 +463,7 @@ Class WindowsFile  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="FireBlade_WinInteropUtils_WindowsFile_TypeName" data-uid="FireBlade.WinInteropUtils.WindowsFile.TypeName">
   TypeName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L508"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L512"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the display name of the file type of the file that this <a class="xref" href="FireBlade.WinInteropUtils.WindowsFile.html">WindowsFile</a> stores, or a localized standard Windows value (such as &quot;File folder&quot;)
@@ -499,7 +500,7 @@ for folders.</p>
 
   <h3 id="FireBlade_WinInteropUtils_WindowsFile_Dispose" data-uid="FireBlade.WinInteropUtils.WindowsFile.Dispose">
   Dispose()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L564"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L568"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Frees any resources associated with this <a class="xref" href="FireBlade.WinInteropUtils.WindowsFile.html">WindowsFile</a>.</p>
@@ -526,7 +527,7 @@ for folders.</p>
 
   <h3 id="FireBlade_WinInteropUtils_WindowsFile_ToString" data-uid="FireBlade.WinInteropUtils.WindowsFile.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L577"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L581"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts this <a class="xref" href="FireBlade.WinInteropUtils.WindowsFile.html">WindowsFile</a> to a string.</p>
@@ -559,7 +560,7 @@ for folders.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L491" class="edit-link">Edit this page</a>
+          <a href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L494" class="edit-link">Edit this page</a>
         </div>
 
 

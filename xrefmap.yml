@@ -369,6 +369,22 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.ComponentObjectModel.COM.Initialize
   nameWithType: COM.Initialize
+- uid: FireBlade.WinInteropUtils.ComponentObjectModel.COM.QueryInterface*
+  name: QueryInterface
+  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_QueryInterface_
+  commentId: Overload:FireBlade.WinInteropUtils.ComponentObjectModel.COM.QueryInterface
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.COM.QueryInterface
+  nameWithType: COM.QueryInterface
+- uid: FireBlade.WinInteropUtils.ComponentObjectModel.COM.QueryInterface``2(``0)
+  name: QueryInterface<TCoInterface, TOut>(TCoInterface)
+  href: api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_QueryInterface__2___0_
+  commentId: M:FireBlade.WinInteropUtils.ComponentObjectModel.COM.QueryInterface``2(``0)
+  name.vb: QueryInterface(Of TCoInterface, TOut)(TCoInterface)
+  fullName: FireBlade.WinInteropUtils.ComponentObjectModel.COM.QueryInterface<TCoInterface, TOut>(TCoInterface)
+  fullName.vb: FireBlade.WinInteropUtils.ComponentObjectModel.COM.QueryInterface(Of TCoInterface, TOut)(TCoInterface)
+  nameWithType: COM.QueryInterface<TCoInterface, TOut>(TCoInterface)
+  nameWithType.vb: COM.QueryInterface(Of TCoInterface, TOut)(TCoInterface)
 - uid: FireBlade.WinInteropUtils.ComponentObjectModel.COM.Uninitialize
   name: Uninitialize()
   href: api/FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Uninitialize
@@ -4678,6 +4694,737 @@ references:
   commentId: F:FireBlade.WinInteropUtils.Facility.XmlPrinterSpec
   fullName: FireBlade.WinInteropUtils.Facility.XmlPrinterSpec
   nameWithType: Facility.XmlPrinterSpec
+- uid: FireBlade.WinInteropUtils.FileSystem
+  name: FireBlade.WinInteropUtils.FileSystem
+  href: api/FireBlade.WinInteropUtils.FileSystem.html
+  commentId: N:FireBlade.WinInteropUtils.FileSystem
+  fullName: FireBlade.WinInteropUtils.FileSystem
+  nameWithType: FireBlade.WinInteropUtils.FileSystem
+- uid: FireBlade.WinInteropUtils.FileSystem.ExecutableType
+  name: ExecutableType
+  href: api/FireBlade.WinInteropUtils.FileSystem.ExecutableType.html
+  commentId: T:FireBlade.WinInteropUtils.FileSystem.ExecutableType
+  fullName: FireBlade.WinInteropUtils.FileSystem.ExecutableType
+  nameWithType: ExecutableType
+- uid: FireBlade.WinInteropUtils.FileSystem.ExecutableType.Console
+  name: Console
+  href: api/FireBlade.WinInteropUtils.FileSystem.ExecutableType.html#FireBlade_WinInteropUtils_FileSystem_ExecutableType_Console
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.ExecutableType.Console
+  fullName: FireBlade.WinInteropUtils.FileSystem.ExecutableType.Console
+  nameWithType: ExecutableType.Console
+- uid: FireBlade.WinInteropUtils.FileSystem.ExecutableType.MSDos
+  name: MSDos
+  href: api/FireBlade.WinInteropUtils.FileSystem.ExecutableType.html#FireBlade_WinInteropUtils_FileSystem_ExecutableType_MSDos
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.ExecutableType.MSDos
+  fullName: FireBlade.WinInteropUtils.FileSystem.ExecutableType.MSDos
+  nameWithType: ExecutableType.MSDos
+- uid: FireBlade.WinInteropUtils.FileSystem.ExecutableType.NE
+  name: NE
+  href: api/FireBlade.WinInteropUtils.FileSystem.ExecutableType.html#FireBlade_WinInteropUtils_FileSystem_ExecutableType_NE
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.ExecutableType.NE
+  fullName: FireBlade.WinInteropUtils.FileSystem.ExecutableType.NE
+  nameWithType: ExecutableType.NE
+- uid: FireBlade.WinInteropUtils.FileSystem.ExecutableType.None
+  name: None
+  href: api/FireBlade.WinInteropUtils.FileSystem.ExecutableType.html#FireBlade_WinInteropUtils_FileSystem_ExecutableType_None
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.ExecutableType.None
+  fullName: FireBlade.WinInteropUtils.FileSystem.ExecutableType.None
+  nameWithType: ExecutableType.None
+- uid: FireBlade.WinInteropUtils.FileSystem.ExecutableType.PE
+  name: PE
+  href: api/FireBlade.WinInteropUtils.FileSystem.ExecutableType.html#FireBlade_WinInteropUtils_FileSystem_ExecutableType_PE
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.ExecutableType.PE
+  fullName: FireBlade.WinInteropUtils.FileSystem.ExecutableType.PE
+  nameWithType: ExecutableType.PE
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFile
+  name: WinFile
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFile.html
+  commentId: T:FireBlade.WinInteropUtils.FileSystem.WinFile
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFile
+  nameWithType: WinFile
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFile.#ctor(System.String,FireBlade.WinInteropUtils.FileSystem.WinFileAccess,FireBlade.WinInteropUtils.FileSystem.WinFileShareMode,FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode,FireBlade.WinInteropUtils.FileSystem.WinFileAttributes,FireBlade.WinInteropUtils.FileSystem.WinFileOptions,FireBlade.WinInteropUtils.FileSystem.WinFile)
+  name: WinFile(string, WinFileAccess, WinFileShareMode, WinFileOpenMode, WinFileAttributes, WinFileOptions, WinFile?)
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFile.html#FireBlade_WinInteropUtils_FileSystem_WinFile__ctor_System_String_FireBlade_WinInteropUtils_FileSystem_WinFileAccess_FireBlade_WinInteropUtils_FileSystem_WinFileShareMode_FireBlade_WinInteropUtils_FileSystem_WinFileOpenMode_FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_FireBlade_WinInteropUtils_FileSystem_WinFileOptions_FireBlade_WinInteropUtils_FileSystem_WinFile_
+  commentId: M:FireBlade.WinInteropUtils.FileSystem.WinFile.#ctor(System.String,FireBlade.WinInteropUtils.FileSystem.WinFileAccess,FireBlade.WinInteropUtils.FileSystem.WinFileShareMode,FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode,FireBlade.WinInteropUtils.FileSystem.WinFileAttributes,FireBlade.WinInteropUtils.FileSystem.WinFileOptions,FireBlade.WinInteropUtils.FileSystem.WinFile)
+  name.vb: New(String, WinFileAccess, WinFileShareMode, WinFileOpenMode, WinFileAttributes, WinFileOptions, WinFile)
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFile.WinFile(string, FireBlade.WinInteropUtils.FileSystem.WinFileAccess, FireBlade.WinInteropUtils.FileSystem.WinFileShareMode, FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode, FireBlade.WinInteropUtils.FileSystem.WinFileAttributes, FireBlade.WinInteropUtils.FileSystem.WinFileOptions, FireBlade.WinInteropUtils.FileSystem.WinFile?)
+  fullName.vb: FireBlade.WinInteropUtils.FileSystem.WinFile.New(String, FireBlade.WinInteropUtils.FileSystem.WinFileAccess, FireBlade.WinInteropUtils.FileSystem.WinFileShareMode, FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode, FireBlade.WinInteropUtils.FileSystem.WinFileAttributes, FireBlade.WinInteropUtils.FileSystem.WinFileOptions, FireBlade.WinInteropUtils.FileSystem.WinFile)
+  nameWithType: WinFile.WinFile(string, WinFileAccess, WinFileShareMode, WinFileOpenMode, WinFileAttributes, WinFileOptions, WinFile?)
+  nameWithType.vb: WinFile.New(String, WinFileAccess, WinFileShareMode, WinFileOpenMode, WinFileAttributes, WinFileOptions, WinFile)
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFile.#ctor*
+  name: WinFile
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFile.html#FireBlade_WinInteropUtils_FileSystem_WinFile__ctor_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFile.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFile.WinFile
+  fullName.vb: FireBlade.WinInteropUtils.FileSystem.WinFile.New
+  nameWithType: WinFile.WinFile
+  nameWithType.vb: WinFile.New
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFile.Bytes
+  name: Bytes
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFile.html#FireBlade_WinInteropUtils_FileSystem_WinFile_Bytes
+  commentId: P:FireBlade.WinInteropUtils.FileSystem.WinFile.Bytes
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFile.Bytes
+  nameWithType: WinFile.Bytes
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFile.Bytes*
+  name: Bytes
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFile.html#FireBlade_WinInteropUtils_FileSystem_WinFile_Bytes_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFile.Bytes
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFile.Bytes
+  nameWithType: WinFile.Bytes
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFile.Content
+  name: Content
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFile.html#FireBlade_WinInteropUtils_FileSystem_WinFile_Content
+  commentId: P:FireBlade.WinInteropUtils.FileSystem.WinFile.Content
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFile.Content
+  nameWithType: WinFile.Content
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFile.Content*
+  name: Content
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFile.html#FireBlade_WinInteropUtils_FileSystem_WinFile_Content_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFile.Content
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFile.Content
+  nameWithType: WinFile.Content
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFile.Dispose
+  name: Dispose()
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFile.html#FireBlade_WinInteropUtils_FileSystem_WinFile_Dispose
+  commentId: M:FireBlade.WinInteropUtils.FileSystem.WinFile.Dispose
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFile.Dispose()
+  nameWithType: WinFile.Dispose()
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFile.Dispose*
+  name: Dispose
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFile.html#FireBlade_WinInteropUtils_FileSystem_WinFile_Dispose_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFile.Dispose
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFile.Dispose
+  nameWithType: WinFile.Dispose
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFile.FileInfo
+  name: FileInfo
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFile.html#FireBlade_WinInteropUtils_FileSystem_WinFile_FileInfo
+  commentId: P:FireBlade.WinInteropUtils.FileSystem.WinFile.FileInfo
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFile.FileInfo
+  nameWithType: WinFile.FileInfo
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFile.FileInfo*
+  name: FileInfo
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFile.html#FireBlade_WinInteropUtils_FileSystem_WinFile_FileInfo_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFile.FileInfo
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFile.FileInfo
+  nameWithType: WinFile.FileInfo
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFile.Handle
+  name: Handle
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFile.html#FireBlade_WinInteropUtils_FileSystem_WinFile_Handle
+  commentId: P:FireBlade.WinInteropUtils.FileSystem.WinFile.Handle
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFile.Handle
+  nameWithType: WinFile.Handle
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFile.Handle*
+  name: Handle
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFile.html#FireBlade_WinInteropUtils_FileSystem_WinFile_Handle_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFile.Handle
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFile.Handle
+  nameWithType: WinFile.Handle
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFile.Path
+  name: Path
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFile.html#FireBlade_WinInteropUtils_FileSystem_WinFile_Path
+  commentId: P:FireBlade.WinInteropUtils.FileSystem.WinFile.Path
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFile.Path
+  nameWithType: WinFile.Path
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFile.Path*
+  name: Path
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFile.html#FireBlade_WinInteropUtils_FileSystem_WinFile_Path_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFile.Path
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFile.Path
+  nameWithType: WinFile.Path
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFile.Size
+  name: Size
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFile.html#FireBlade_WinInteropUtils_FileSystem_WinFile_Size
+  commentId: P:FireBlade.WinInteropUtils.FileSystem.WinFile.Size
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFile.Size
+  nameWithType: WinFile.Size
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFile.Size*
+  name: Size
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFile.html#FireBlade_WinInteropUtils_FileSystem_WinFile_Size_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFile.Size
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFile.Size
+  nameWithType: WinFile.Size
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAccess
+  name: WinFileAccess
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAccess.html
+  commentId: T:FireBlade.WinInteropUtils.FileSystem.WinFileAccess
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAccess
+  nameWithType: WinFileAccess
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAccess.None
+  name: None
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAccess.html#FireBlade_WinInteropUtils_FileSystem_WinFileAccess_None
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAccess.None
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAccess.None
+  nameWithType: WinFileAccess.None
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAccess.Read
+  name: Read
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAccess.html#FireBlade_WinInteropUtils_FileSystem_WinFileAccess_Read
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAccess.Read
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAccess.Read
+  nameWithType: WinFileAccess.Read
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAccess.Write
+  name: Write
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAccess.html#FireBlade_WinInteropUtils_FileSystem_WinFileAccess_Write
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAccess.Write
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAccess.Write
+  nameWithType: WinFileAccess.Write
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes
+  name: WinFileAttributes
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html
+  commentId: T:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes
+  nameWithType: WinFileAttributes
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Archive
+  name: Archive
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_Archive
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Archive
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Archive
+  nameWithType: WinFileAttributes.Archive
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.ArchiveDir
+  name: ArchiveDir
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_ArchiveDir
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.ArchiveDir
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.ArchiveDir
+  nameWithType: WinFileAttributes.ArchiveDir
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Compressed
+  name: Compressed
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_Compressed
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Compressed
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Compressed
+  nameWithType: WinFileAttributes.Compressed
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Device
+  name: Device
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_Device
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Device
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Device
+  nameWithType: WinFileAttributes.Device
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Directory
+  name: Directory
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_Directory
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Directory
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Directory
+  nameWithType: WinFileAttributes.Directory
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Encrypted
+  name: Encrypted
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_Encrypted
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Encrypted
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Encrypted
+  nameWithType: WinFileAttributes.Encrypted
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.ExAttrib
+  name: ExAttrib
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_ExAttrib
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.ExAttrib
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.ExAttrib
+  nameWithType: WinFileAttributes.ExAttrib
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Hidden
+  name: Hidden
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_Hidden
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Hidden
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Hidden
+  nameWithType: WinFileAttributes.Hidden
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.IntegrityStream
+  name: IntegrityStream
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_IntegrityStream
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.IntegrityStream
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.IntegrityStream
+  nameWithType: WinFileAttributes.IntegrityStream
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.NoContentIndex
+  name: NoContentIndex
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_NoContentIndex
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.NoContentIndex
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.NoContentIndex
+  nameWithType: WinFileAttributes.NoContentIndex
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.NoScrubData
+  name: NoScrubData
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_NoScrubData
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.NoScrubData
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.NoScrubData
+  nameWithType: WinFileAttributes.NoScrubData
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.None
+  name: None
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_None
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.None
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.None
+  nameWithType: WinFileAttributes.None
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Offline
+  name: Offline
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_Offline
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Offline
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Offline
+  nameWithType: WinFileAttributes.Offline
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Pinned
+  name: Pinned
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_Pinned
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Pinned
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Pinned
+  nameWithType: WinFileAttributes.Pinned
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.ReadOnly
+  name: ReadOnly
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_ReadOnly
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.ReadOnly
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.ReadOnly
+  nameWithType: WinFileAttributes.ReadOnly
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.RecallOnDataAccess
+  name: RecallOnDataAccess
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_RecallOnDataAccess
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.RecallOnDataAccess
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.RecallOnDataAccess
+  nameWithType: WinFileAttributes.RecallOnDataAccess
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.RecallOnOpen
+  name: RecallOnOpen
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_RecallOnOpen
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.RecallOnOpen
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.RecallOnOpen
+  nameWithType: WinFileAttributes.RecallOnOpen
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.ReparsePoint
+  name: ReparsePoint
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_ReparsePoint
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.ReparsePoint
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.ReparsePoint
+  nameWithType: WinFileAttributes.ReparsePoint
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Sparse
+  name: Sparse
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_Sparse
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Sparse
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Sparse
+  nameWithType: WinFileAttributes.Sparse
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.System
+  name: System
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_System
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.System
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.System
+  nameWithType: WinFileAttributes.System
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.SystemFile
+  name: SystemFile
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_SystemFile
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.SystemFile
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.SystemFile
+  nameWithType: WinFileAttributes.SystemFile
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Temporary
+  name: Temporary
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_Temporary
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Temporary
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Temporary
+  nameWithType: WinFileAttributes.Temporary
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Unpinned
+  name: Unpinned
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_Unpinned
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Unpinned
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Unpinned
+  nameWithType: WinFileAttributes.Unpinned
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Virtual
+  name: Virtual
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html#FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_Virtual
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Virtual
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.Virtual
+  nameWithType: WinFileAttributes.Virtual
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileIcon
+  name: WinFileIcon
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileIcon.html
+  commentId: T:FireBlade.WinInteropUtils.FileSystem.WinFileIcon
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileIcon
+  nameWithType: WinFileIcon
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileIcon.#ctor(System.Drawing.Icon,System.Int32)
+  name: WinFileIcon(Icon, int)
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileIcon.html#FireBlade_WinInteropUtils_FileSystem_WinFileIcon__ctor_System_Drawing_Icon_System_Int32_
+  commentId: M:FireBlade.WinInteropUtils.FileSystem.WinFileIcon.#ctor(System.Drawing.Icon,System.Int32)
+  name.vb: New(Icon, Integer)
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileIcon.WinFileIcon(System.Drawing.Icon, int)
+  fullName.vb: FireBlade.WinInteropUtils.FileSystem.WinFileIcon.New(System.Drawing.Icon, Integer)
+  nameWithType: WinFileIcon.WinFileIcon(Icon, int)
+  nameWithType.vb: WinFileIcon.New(Icon, Integer)
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileIcon.#ctor*
+  name: WinFileIcon
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileIcon.html#FireBlade_WinInteropUtils_FileSystem_WinFileIcon__ctor_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFileIcon.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileIcon.WinFileIcon
+  fullName.vb: FireBlade.WinInteropUtils.FileSystem.WinFileIcon.New
+  nameWithType: WinFileIcon.WinFileIcon
+  nameWithType.vb: WinFileIcon.New
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileIcon.Dispose
+  name: Dispose()
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileIcon.html#FireBlade_WinInteropUtils_FileSystem_WinFileIcon_Dispose
+  commentId: M:FireBlade.WinInteropUtils.FileSystem.WinFileIcon.Dispose
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileIcon.Dispose()
+  nameWithType: WinFileIcon.Dispose()
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileIcon.Dispose*
+  name: Dispose
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileIcon.html#FireBlade_WinInteropUtils_FileSystem_WinFileIcon_Dispose_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFileIcon.Dispose
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileIcon.Dispose
+  nameWithType: WinFileIcon.Dispose
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileIcon.Icon
+  name: Icon
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileIcon.html#FireBlade_WinInteropUtils_FileSystem_WinFileIcon_Icon
+  commentId: P:FireBlade.WinInteropUtils.FileSystem.WinFileIcon.Icon
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileIcon.Icon
+  nameWithType: WinFileIcon.Icon
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileIcon.Icon*
+  name: Icon
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileIcon.html#FireBlade_WinInteropUtils_FileSystem_WinFileIcon_Icon_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFileIcon.Icon
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileIcon.Icon
+  nameWithType: WinFileIcon.Icon
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileIcon.SysIconIndex
+  name: SysIconIndex
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileIcon.html#FireBlade_WinInteropUtils_FileSystem_WinFileIcon_SysIconIndex
+  commentId: P:FireBlade.WinInteropUtils.FileSystem.WinFileIcon.SysIconIndex
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileIcon.SysIconIndex
+  nameWithType: WinFileIcon.SysIconIndex
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileIcon.SysIconIndex*
+  name: SysIconIndex
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileIcon.html#FireBlade_WinInteropUtils_FileSystem_WinFileIcon_SysIconIndex_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFileIcon.SysIconIndex
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileIcon.SysIconIndex
+  nameWithType: WinFileIcon.SysIconIndex
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo
+  name: WinFileInfo
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html
+  commentId: T:FireBlade.WinInteropUtils.FileSystem.WinFileInfo
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo
+  nameWithType: WinFileInfo
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.#ctor(System.String,FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions,System.Nullable{FireBlade.WinInteropUtils.FileSystem.WinFileAttributes})
+  name: WinFileInfo(string, WinFileInfoOptions, WinFileAttributes?)
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfo__ctor_System_String_FireBlade_WinInteropUtils_FileSystem_WinFileInfoOptions_System_Nullable_FireBlade_WinInteropUtils_FileSystem_WinFileAttributes__
+  commentId: M:FireBlade.WinInteropUtils.FileSystem.WinFileInfo.#ctor(System.String,FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions,System.Nullable{FireBlade.WinInteropUtils.FileSystem.WinFileAttributes})
+  name.vb: New(String, WinFileInfoOptions, WinFileAttributes?)
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.WinFileInfo(string, FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions, FireBlade.WinInteropUtils.FileSystem.WinFileAttributes?)
+  fullName.vb: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.New(String, FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions, FireBlade.WinInteropUtils.FileSystem.WinFileAttributes?)
+  nameWithType: WinFileInfo.WinFileInfo(string, WinFileInfoOptions, WinFileAttributes?)
+  nameWithType.vb: WinFileInfo.New(String, WinFileInfoOptions, WinFileAttributes?)
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.#ctor*
+  name: WinFileInfo
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfo__ctor_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFileInfo.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.WinFileInfo
+  fullName.vb: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.New
+  nameWithType: WinFileInfo.WinFileInfo
+  nameWithType.vb: WinFileInfo.New
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.Attributes
+  name: Attributes
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfo_Attributes
+  commentId: P:FireBlade.WinInteropUtils.FileSystem.WinFileInfo.Attributes
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.Attributes
+  nameWithType: WinFileInfo.Attributes
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.Attributes*
+  name: Attributes
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfo_Attributes_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFileInfo.Attributes
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.Attributes
+  nameWithType: WinFileInfo.Attributes
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.DisplayName
+  name: DisplayName
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfo_DisplayName
+  commentId: P:FireBlade.WinInteropUtils.FileSystem.WinFileInfo.DisplayName
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.DisplayName
+  nameWithType: WinFileInfo.DisplayName
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.DisplayName*
+  name: DisplayName
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfo_DisplayName_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFileInfo.DisplayName
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.DisplayName
+  nameWithType: WinFileInfo.DisplayName
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.Dispose
+  name: Dispose()
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfo_Dispose
+  commentId: M:FireBlade.WinInteropUtils.FileSystem.WinFileInfo.Dispose
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.Dispose()
+  nameWithType: WinFileInfo.Dispose()
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.Dispose*
+  name: Dispose
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfo_Dispose_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFileInfo.Dispose
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.Dispose
+  nameWithType: WinFileInfo.Dispose
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.ExecutableType
+  name: ExecutableType
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfo_ExecutableType
+  commentId: P:FireBlade.WinInteropUtils.FileSystem.WinFileInfo.ExecutableType
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.ExecutableType
+  nameWithType: WinFileInfo.ExecutableType
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.ExecutableType*
+  name: ExecutableType
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfo_ExecutableType_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFileInfo.ExecutableType
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.ExecutableType
+  nameWithType: WinFileInfo.ExecutableType
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.IconLocation
+  name: IconLocation
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfo_IconLocation
+  commentId: P:FireBlade.WinInteropUtils.FileSystem.WinFileInfo.IconLocation
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.IconLocation
+  nameWithType: WinFileInfo.IconLocation
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.IconLocation*
+  name: IconLocation
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfo_IconLocation_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFileInfo.IconLocation
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.IconLocation
+  nameWithType: WinFileInfo.IconLocation
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.IsDisposed
+  name: IsDisposed
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfo_IsDisposed
+  commentId: P:FireBlade.WinInteropUtils.FileSystem.WinFileInfo.IsDisposed
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.IsDisposed
+  nameWithType: WinFileInfo.IsDisposed
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.IsDisposed*
+  name: IsDisposed
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfo_IsDisposed_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFileInfo.IsDisposed
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.IsDisposed
+  nameWithType: WinFileInfo.IsDisposed
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.LargeIcon
+  name: LargeIcon
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfo_LargeIcon
+  commentId: P:FireBlade.WinInteropUtils.FileSystem.WinFileInfo.LargeIcon
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.LargeIcon
+  nameWithType: WinFileInfo.LargeIcon
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.LargeIcon*
+  name: LargeIcon
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfo_LargeIcon_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFileInfo.LargeIcon
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.LargeIcon
+  nameWithType: WinFileInfo.LargeIcon
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.ShellIcon
+  name: ShellIcon
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfo_ShellIcon
+  commentId: P:FireBlade.WinInteropUtils.FileSystem.WinFileInfo.ShellIcon
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.ShellIcon
+  nameWithType: WinFileInfo.ShellIcon
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.ShellIcon*
+  name: ShellIcon
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfo_ShellIcon_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFileInfo.ShellIcon
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.ShellIcon
+  nameWithType: WinFileInfo.ShellIcon
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.SmallIcon
+  name: SmallIcon
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfo_SmallIcon
+  commentId: P:FireBlade.WinInteropUtils.FileSystem.WinFileInfo.SmallIcon
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.SmallIcon
+  nameWithType: WinFileInfo.SmallIcon
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.SmallIcon*
+  name: SmallIcon
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfo_SmallIcon_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFileInfo.SmallIcon
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.SmallIcon
+  nameWithType: WinFileInfo.SmallIcon
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.TypeName
+  name: TypeName
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfo_TypeName
+  commentId: P:FireBlade.WinInteropUtils.FileSystem.WinFileInfo.TypeName
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.TypeName
+  nameWithType: WinFileInfo.TypeName
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.TypeName*
+  name: TypeName
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfo_TypeName_
+  commentId: Overload:FireBlade.WinInteropUtils.FileSystem.WinFileInfo.TypeName
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfo.TypeName
+  nameWithType: WinFileInfo.TypeName
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions
+  name: WinFileInfoOptions
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.html
+  commentId: T:FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions
+  nameWithType: WinFileInfoOptions
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.IconOverlays
+  name: IconOverlays
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfoOptions_IconOverlays
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.IconOverlays
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.IconOverlays
+  nameWithType: WinFileInfoOptions.IconOverlays
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.LinkOverlay
+  name: LinkOverlay
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfoOptions_LinkOverlay
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.LinkOverlay
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.LinkOverlay
+  nameWithType: WinFileInfoOptions.LinkOverlay
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.None
+  name: None
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfoOptions_None
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.None
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.None
+  nameWithType: WinFileInfoOptions.None
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.OpenIcon
+  name: OpenIcon
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfoOptions_OpenIcon
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.OpenIcon
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.OpenIcon
+  nameWithType: WinFileInfoOptions.OpenIcon
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.Selected
+  name: Selected
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.html#FireBlade_WinInteropUtils_FileSystem_WinFileInfoOptions_Selected
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.Selected
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.Selected
+  nameWithType: WinFileInfoOptions.Selected
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode
+  name: WinFileOpenMode
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.html
+  commentId: T:FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode
+  nameWithType: WinFileOpenMode
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.CreateAlways
+  name: CreateAlways
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.html#FireBlade_WinInteropUtils_FileSystem_WinFileOpenMode_CreateAlways
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.CreateAlways
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.CreateAlways
+  nameWithType: WinFileOpenMode.CreateAlways
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.CreateNew
+  name: CreateNew
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.html#FireBlade_WinInteropUtils_FileSystem_WinFileOpenMode_CreateNew
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.CreateNew
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.CreateNew
+  nameWithType: WinFileOpenMode.CreateNew
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.OpenAlways
+  name: OpenAlways
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.html#FireBlade_WinInteropUtils_FileSystem_WinFileOpenMode_OpenAlways
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.OpenAlways
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.OpenAlways
+  nameWithType: WinFileOpenMode.OpenAlways
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.OpenExisting
+  name: OpenExisting
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.html#FireBlade_WinInteropUtils_FileSystem_WinFileOpenMode_OpenExisting
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.OpenExisting
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.OpenExisting
+  nameWithType: WinFileOpenMode.OpenExisting
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.TruncateExisting
+  name: TruncateExisting
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.html#FireBlade_WinInteropUtils_FileSystem_WinFileOpenMode_TruncateExisting
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.TruncateExisting
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.TruncateExisting
+  nameWithType: WinFileOpenMode.TruncateExisting
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileOptions
+  name: WinFileOptions
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileOptions.html
+  commentId: T:FireBlade.WinInteropUtils.FileSystem.WinFileOptions
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileOptions
+  nameWithType: WinFileOptions
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileOptions.BackupSemantics
+  name: BackupSemantics
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileOptions.html#FireBlade_WinInteropUtils_FileSystem_WinFileOptions_BackupSemantics
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileOptions.BackupSemantics
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileOptions.BackupSemantics
+  nameWithType: WinFileOptions.BackupSemantics
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileOptions.DeleteOnClose
+  name: DeleteOnClose
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileOptions.html#FireBlade_WinInteropUtils_FileSystem_WinFileOptions_DeleteOnClose
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileOptions.DeleteOnClose
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileOptions.DeleteOnClose
+  nameWithType: WinFileOptions.DeleteOnClose
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileOptions.NoBuffering
+  name: NoBuffering
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileOptions.html#FireBlade_WinInteropUtils_FileSystem_WinFileOptions_NoBuffering
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileOptions.NoBuffering
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileOptions.NoBuffering
+  nameWithType: WinFileOptions.NoBuffering
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileOptions.NoRecall
+  name: NoRecall
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileOptions.html#FireBlade_WinInteropUtils_FileSystem_WinFileOptions_NoRecall
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileOptions.NoRecall
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileOptions.NoRecall
+  nameWithType: WinFileOptions.NoRecall
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileOptions.None
+  name: None
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileOptions.html#FireBlade_WinInteropUtils_FileSystem_WinFileOptions_None
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileOptions.None
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileOptions.None
+  nameWithType: WinFileOptions.None
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileOptions.PosixSemantics
+  name: PosixSemantics
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileOptions.html#FireBlade_WinInteropUtils_FileSystem_WinFileOptions_PosixSemantics
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileOptions.PosixSemantics
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileOptions.PosixSemantics
+  nameWithType: WinFileOptions.PosixSemantics
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileOptions.RandomAccess
+  name: RandomAccess
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileOptions.html#FireBlade_WinInteropUtils_FileSystem_WinFileOptions_RandomAccess
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileOptions.RandomAccess
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileOptions.RandomAccess
+  nameWithType: WinFileOptions.RandomAccess
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileOptions.ReparsePoint
+  name: ReparsePoint
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileOptions.html#FireBlade_WinInteropUtils_FileSystem_WinFileOptions_ReparsePoint
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileOptions.ReparsePoint
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileOptions.ReparsePoint
+  nameWithType: WinFileOptions.ReparsePoint
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileOptions.SequentialScan
+  name: SequentialScan
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileOptions.html#FireBlade_WinInteropUtils_FileSystem_WinFileOptions_SequentialScan
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileOptions.SequentialScan
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileOptions.SequentialScan
+  nameWithType: WinFileOptions.SequentialScan
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileOptions.SessionAware
+  name: SessionAware
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileOptions.html#FireBlade_WinInteropUtils_FileSystem_WinFileOptions_SessionAware
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileOptions.SessionAware
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileOptions.SessionAware
+  nameWithType: WinFileOptions.SessionAware
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileOptions.WriteThrough
+  name: WriteThrough
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileOptions.html#FireBlade_WinInteropUtils_FileSystem_WinFileOptions_WriteThrough
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileOptions.WriteThrough
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileOptions.WriteThrough
+  nameWithType: WinFileOptions.WriteThrough
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileShareMode
+  name: WinFileShareMode
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.html
+  commentId: T:FireBlade.WinInteropUtils.FileSystem.WinFileShareMode
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileShareMode
+  nameWithType: WinFileShareMode
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.Delete
+  name: Delete
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.html#FireBlade_WinInteropUtils_FileSystem_WinFileShareMode_Delete
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.Delete
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.Delete
+  nameWithType: WinFileShareMode.Delete
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.None
+  name: None
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.html#FireBlade_WinInteropUtils_FileSystem_WinFileShareMode_None
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.None
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.None
+  nameWithType: WinFileShareMode.None
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.Read
+  name: Read
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.html#FireBlade_WinInteropUtils_FileSystem_WinFileShareMode_Read
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.Read
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.Read
+  nameWithType: WinFileShareMode.Read
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.ReadWrite
+  name: ReadWrite
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.html#FireBlade_WinInteropUtils_FileSystem_WinFileShareMode_ReadWrite
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.ReadWrite
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.ReadWrite
+  nameWithType: WinFileShareMode.ReadWrite
+- uid: FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.Write
+  name: Write
+  href: api/FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.html#FireBlade_WinInteropUtils_FileSystem_WinFileShareMode_Write
+  commentId: F:FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.Write
+  fullName: FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.Write
+  nameWithType: WinFileShareMode.Write
 - uid: FireBlade.WinInteropUtils.HResult
   name: HResult
   href: api/FireBlade.WinInteropUtils.HRESULT.html
@@ -4693,6 +5440,15 @@ references:
   fullName.vb: FireBlade.WinInteropUtils.HResult.New(Integer)
   nameWithType: HResult.HResult(int)
   nameWithType.vb: HResult.New(Integer)
+- uid: FireBlade.WinInteropUtils.HResult.#ctor(System.Int32,FireBlade.WinInteropUtils.Facility,System.Int32)
+  name: HResult(int, Facility, int)
+  href: api/FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HResult__ctor_System_Int32_FireBlade_WinInteropUtils_Facility_System_Int32_
+  commentId: M:FireBlade.WinInteropUtils.HResult.#ctor(System.Int32,FireBlade.WinInteropUtils.Facility,System.Int32)
+  name.vb: New(Integer, Facility, Integer)
+  fullName: FireBlade.WinInteropUtils.HResult.HResult(int, FireBlade.WinInteropUtils.Facility, int)
+  fullName.vb: FireBlade.WinInteropUtils.HResult.New(Integer, FireBlade.WinInteropUtils.Facility, Integer)
+  nameWithType: HResult.HResult(int, Facility, int)
+  nameWithType.vb: HResult.New(Integer, Facility, Integer)
 - uid: FireBlade.WinInteropUtils.HResult.#ctor*
   name: HResult
   href: api/FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HResult__ctor_
@@ -4716,6 +5472,22 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.HResult.BaseCode
   nameWithType: HResult.BaseCode
+- uid: FireBlade.WinInteropUtils.HResult.Equals(System.Object)
+  name: Equals(object?)
+  href: api/FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HResult_Equals_System_Object_
+  commentId: M:FireBlade.WinInteropUtils.HResult.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: FireBlade.WinInteropUtils.HResult.Equals(object?)
+  fullName.vb: FireBlade.WinInteropUtils.HResult.Equals(Object)
+  nameWithType: HResult.Equals(object?)
+  nameWithType.vb: HResult.Equals(Object)
+- uid: FireBlade.WinInteropUtils.HResult.Equals*
+  name: Equals
+  href: api/FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HResult_Equals_
+  commentId: Overload:FireBlade.WinInteropUtils.HResult.Equals
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.HResult.Equals
+  nameWithType: HResult.Equals
 - uid: FireBlade.WinInteropUtils.HResult.Exception
   name: Exception
   href: api/FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HResult_Exception
@@ -4755,6 +5527,19 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.HResult.FullCode
   nameWithType: HResult.FullCode
+- uid: FireBlade.WinInteropUtils.HResult.GetHashCode
+  name: GetHashCode()
+  href: api/FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HResult_GetHashCode
+  commentId: M:FireBlade.WinInteropUtils.HResult.GetHashCode
+  fullName: FireBlade.WinInteropUtils.HResult.GetHashCode()
+  nameWithType: HResult.GetHashCode()
+- uid: FireBlade.WinInteropUtils.HResult.GetHashCode*
+  name: GetHashCode
+  href: api/FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HResult_GetHashCode_
+  commentId: Overload:FireBlade.WinInteropUtils.HResult.GetHashCode
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.HResult.GetHashCode
+  nameWithType: HResult.GetHashCode
 - uid: FireBlade.WinInteropUtils.HResult.Message
   name: Message
   href: api/FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HResult_Message
@@ -4794,6 +5579,25 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.HResult.ToString
   nameWithType: HResult.ToString
+- uid: FireBlade.WinInteropUtils.HResult.op_Equality(System.Nullable{FireBlade.WinInteropUtils.HResult},System.Nullable{FireBlade.WinInteropUtils.HResult})
+  name: operator ==(HResult?, HResult?)
+  href: api/FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HResult_op_Equality_System_Nullable_FireBlade_WinInteropUtils_HResult__System_Nullable_FireBlade_WinInteropUtils_HResult__
+  commentId: M:FireBlade.WinInteropUtils.HResult.op_Equality(System.Nullable{FireBlade.WinInteropUtils.HResult},System.Nullable{FireBlade.WinInteropUtils.HResult})
+  name.vb: =(HResult?, HResult?)
+  fullName: FireBlade.WinInteropUtils.HResult.operator ==(FireBlade.WinInteropUtils.HResult?, FireBlade.WinInteropUtils.HResult?)
+  fullName.vb: FireBlade.WinInteropUtils.HResult.=(FireBlade.WinInteropUtils.HResult?, FireBlade.WinInteropUtils.HResult?)
+  nameWithType: HResult.operator ==(HResult?, HResult?)
+  nameWithType.vb: HResult.=(HResult?, HResult?)
+- uid: FireBlade.WinInteropUtils.HResult.op_Equality*
+  name: operator ==
+  href: api/FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HResult_op_Equality_
+  commentId: Overload:FireBlade.WinInteropUtils.HResult.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: FireBlade.WinInteropUtils.HResult.operator ==
+  fullName.vb: FireBlade.WinInteropUtils.HResult.=
+  nameWithType: HResult.operator ==
+  nameWithType.vb: HResult.=
 - uid: FireBlade.WinInteropUtils.HResult.op_Implicit(FireBlade.WinInteropUtils.HResult)~System.Exception
   name: implicit operator Exception(HResult)
   href: api/FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HResult_op_Implicit_FireBlade_WinInteropUtils_HResult__System_Exception
@@ -4831,6 +5635,25 @@ references:
   fullName.vb: FireBlade.WinInteropUtils.HResult.CType
   nameWithType: HResult.implicit operator
   nameWithType.vb: HResult.CType
+- uid: FireBlade.WinInteropUtils.HResult.op_Inequality(System.Nullable{FireBlade.WinInteropUtils.HResult},System.Nullable{FireBlade.WinInteropUtils.HResult})
+  name: operator !=(HResult?, HResult?)
+  href: api/FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HResult_op_Inequality_System_Nullable_FireBlade_WinInteropUtils_HResult__System_Nullable_FireBlade_WinInteropUtils_HResult__
+  commentId: M:FireBlade.WinInteropUtils.HResult.op_Inequality(System.Nullable{FireBlade.WinInteropUtils.HResult},System.Nullable{FireBlade.WinInteropUtils.HResult})
+  name.vb: <>(HResult?, HResult?)
+  fullName: FireBlade.WinInteropUtils.HResult.operator !=(FireBlade.WinInteropUtils.HResult?, FireBlade.WinInteropUtils.HResult?)
+  fullName.vb: FireBlade.WinInteropUtils.HResult.<>(FireBlade.WinInteropUtils.HResult?, FireBlade.WinInteropUtils.HResult?)
+  nameWithType: HResult.operator !=(HResult?, HResult?)
+  nameWithType.vb: HResult.<>(HResult?, HResult?)
+- uid: FireBlade.WinInteropUtils.HResult.op_Inequality*
+  name: operator !=
+  href: api/FireBlade.WinInteropUtils.HRESULT.html#FireBlade_WinInteropUtils_HResult_op_Inequality_
+  commentId: Overload:FireBlade.WinInteropUtils.HResult.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: FireBlade.WinInteropUtils.HResult.operator !=
+  fullName.vb: FireBlade.WinInteropUtils.HResult.<>
+  nameWithType: HResult.operator !=
+  nameWithType.vb: HResult.<>
 - uid: FireBlade.WinInteropUtils.IHandle
   name: IHandle
   href: api/FireBlade.WinInteropUtils.IHandle.html
@@ -5166,6 +5989,288 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.Macros.Succeeded
   nameWithType: Macros.Succeeded
+- uid: FireBlade.WinInteropUtils.Memory
+  name: FireBlade.WinInteropUtils.Memory
+  href: api/FireBlade.WinInteropUtils.Memory.html
+  commentId: N:FireBlade.WinInteropUtils.Memory
+  fullName: FireBlade.WinInteropUtils.Memory
+  nameWithType: FireBlade.WinInteropUtils.Memory
+- uid: FireBlade.WinInteropUtils.Memory.ComSmartPointer`1
+  name: ComSmartPointer<T>
+  href: api/FireBlade.WinInteropUtils.Memory.ComSmartPointer-1.html
+  commentId: T:FireBlade.WinInteropUtils.Memory.ComSmartPointer`1
+  name.vb: ComSmartPointer(Of T)
+  fullName: FireBlade.WinInteropUtils.Memory.ComSmartPointer<T>
+  fullName.vb: FireBlade.WinInteropUtils.Memory.ComSmartPointer(Of T)
+  nameWithType: ComSmartPointer<T>
+  nameWithType.vb: ComSmartPointer(Of T)
+- uid: FireBlade.WinInteropUtils.Memory.ComSmartPointer`1.#ctor(System.Guid,System.Object,FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext)
+  name: ComSmartPointer(Guid, object?, CreateInstanceContext)
+  href: api/FireBlade.WinInteropUtils.Memory.ComSmartPointer-1.html#FireBlade_WinInteropUtils_Memory_ComSmartPointer_1__ctor_System_Guid_System_Object_FireBlade_WinInteropUtils_ComponentObjectModel_COM_CreateInstanceContext_
+  commentId: M:FireBlade.WinInteropUtils.Memory.ComSmartPointer`1.#ctor(System.Guid,System.Object,FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext)
+  name.vb: New(Guid, Object, CreateInstanceContext)
+  fullName: FireBlade.WinInteropUtils.Memory.ComSmartPointer<T>.ComSmartPointer(System.Guid, object?, FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext)
+  fullName.vb: FireBlade.WinInteropUtils.Memory.ComSmartPointer(Of T).New(System.Guid, Object, FireBlade.WinInteropUtils.ComponentObjectModel.COM.CreateInstanceContext)
+  nameWithType: ComSmartPointer<T>.ComSmartPointer(Guid, object?, COM.CreateInstanceContext)
+  nameWithType.vb: ComSmartPointer(Of T).New(Guid, Object, COM.CreateInstanceContext)
+- uid: FireBlade.WinInteropUtils.Memory.ComSmartPointer`1.#ctor(`0)
+  name: ComSmartPointer(T)
+  href: api/FireBlade.WinInteropUtils.Memory.ComSmartPointer-1.html#FireBlade_WinInteropUtils_Memory_ComSmartPointer_1__ctor__0_
+  commentId: M:FireBlade.WinInteropUtils.Memory.ComSmartPointer`1.#ctor(`0)
+  name.vb: New(T)
+  fullName: FireBlade.WinInteropUtils.Memory.ComSmartPointer<T>.ComSmartPointer(T)
+  fullName.vb: FireBlade.WinInteropUtils.Memory.ComSmartPointer(Of T).New(T)
+  nameWithType: ComSmartPointer<T>.ComSmartPointer(T)
+  nameWithType.vb: ComSmartPointer(Of T).New(T)
+- uid: FireBlade.WinInteropUtils.Memory.ComSmartPointer`1.#ctor*
+  name: ComSmartPointer
+  href: api/FireBlade.WinInteropUtils.Memory.ComSmartPointer-1.html#FireBlade_WinInteropUtils_Memory_ComSmartPointer_1__ctor_
+  commentId: Overload:FireBlade.WinInteropUtils.Memory.ComSmartPointer`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: FireBlade.WinInteropUtils.Memory.ComSmartPointer<T>.ComSmartPointer
+  fullName.vb: FireBlade.WinInteropUtils.Memory.ComSmartPointer(Of T).New
+  nameWithType: ComSmartPointer<T>.ComSmartPointer
+  nameWithType.vb: ComSmartPointer(Of T).New
+- uid: FireBlade.WinInteropUtils.Memory.ComSmartPointer`1.Dispose
+  name: Dispose()
+  href: api/FireBlade.WinInteropUtils.Memory.ComSmartPointer-1.html#FireBlade_WinInteropUtils_Memory_ComSmartPointer_1_Dispose
+  commentId: M:FireBlade.WinInteropUtils.Memory.ComSmartPointer`1.Dispose
+  fullName: FireBlade.WinInteropUtils.Memory.ComSmartPointer<T>.Dispose()
+  fullName.vb: FireBlade.WinInteropUtils.Memory.ComSmartPointer(Of T).Dispose()
+  nameWithType: ComSmartPointer<T>.Dispose()
+  nameWithType.vb: ComSmartPointer(Of T).Dispose()
+- uid: FireBlade.WinInteropUtils.Memory.ComSmartPointer`1.Dispose*
+  name: Dispose
+  href: api/FireBlade.WinInteropUtils.Memory.ComSmartPointer-1.html#FireBlade_WinInteropUtils_Memory_ComSmartPointer_1_Dispose_
+  commentId: Overload:FireBlade.WinInteropUtils.Memory.ComSmartPointer`1.Dispose
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Memory.ComSmartPointer<T>.Dispose
+  fullName.vb: FireBlade.WinInteropUtils.Memory.ComSmartPointer(Of T).Dispose
+  nameWithType: ComSmartPointer<T>.Dispose
+  nameWithType.vb: ComSmartPointer(Of T).Dispose
+- uid: FireBlade.WinInteropUtils.Memory.ComSmartPointer`1.Interface
+  name: Interface
+  href: api/FireBlade.WinInteropUtils.Memory.ComSmartPointer-1.html#FireBlade_WinInteropUtils_Memory_ComSmartPointer_1_Interface
+  commentId: P:FireBlade.WinInteropUtils.Memory.ComSmartPointer`1.Interface
+  fullName: FireBlade.WinInteropUtils.Memory.ComSmartPointer<T>.Interface
+  fullName.vb: FireBlade.WinInteropUtils.Memory.ComSmartPointer(Of T).Interface
+  nameWithType: ComSmartPointer<T>.Interface
+  nameWithType.vb: ComSmartPointer(Of T).Interface
+- uid: FireBlade.WinInteropUtils.Memory.ComSmartPointer`1.Interface*
+  name: Interface
+  href: api/FireBlade.WinInteropUtils.Memory.ComSmartPointer-1.html#FireBlade_WinInteropUtils_Memory_ComSmartPointer_1_Interface_
+  commentId: Overload:FireBlade.WinInteropUtils.Memory.ComSmartPointer`1.Interface
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Memory.ComSmartPointer<T>.Interface
+  fullName.vb: FireBlade.WinInteropUtils.Memory.ComSmartPointer(Of T).Interface
+  nameWithType: ComSmartPointer<T>.Interface
+  nameWithType.vb: ComSmartPointer(Of T).Interface
+- uid: FireBlade.WinInteropUtils.Memory.ComSmartPointer`1.IsDisposed
+  name: IsDisposed
+  href: api/FireBlade.WinInteropUtils.Memory.ComSmartPointer-1.html#FireBlade_WinInteropUtils_Memory_ComSmartPointer_1_IsDisposed
+  commentId: P:FireBlade.WinInteropUtils.Memory.ComSmartPointer`1.IsDisposed
+  fullName: FireBlade.WinInteropUtils.Memory.ComSmartPointer<T>.IsDisposed
+  fullName.vb: FireBlade.WinInteropUtils.Memory.ComSmartPointer(Of T).IsDisposed
+  nameWithType: ComSmartPointer<T>.IsDisposed
+  nameWithType.vb: ComSmartPointer(Of T).IsDisposed
+- uid: FireBlade.WinInteropUtils.Memory.ComSmartPointer`1.IsDisposed*
+  name: IsDisposed
+  href: api/FireBlade.WinInteropUtils.Memory.ComSmartPointer-1.html#FireBlade_WinInteropUtils_Memory_ComSmartPointer_1_IsDisposed_
+  commentId: Overload:FireBlade.WinInteropUtils.Memory.ComSmartPointer`1.IsDisposed
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Memory.ComSmartPointer<T>.IsDisposed
+  fullName.vb: FireBlade.WinInteropUtils.Memory.ComSmartPointer(Of T).IsDisposed
+  nameWithType: ComSmartPointer<T>.IsDisposed
+  nameWithType.vb: ComSmartPointer(Of T).IsDisposed
+- uid: FireBlade.WinInteropUtils.Memory.ComSmartPointer`1.op_Implicit(FireBlade.WinInteropUtils.Memory.ComSmartPointer{`0})~`0
+  name: implicit operator T(ComSmartPointer<T>)
+  href: api/FireBlade.WinInteropUtils.Memory.ComSmartPointer-1.html#FireBlade_WinInteropUtils_Memory_ComSmartPointer_1_op_Implicit_FireBlade_WinInteropUtils_Memory_ComSmartPointer__0____0
+  commentId: M:FireBlade.WinInteropUtils.Memory.ComSmartPointer`1.op_Implicit(FireBlade.WinInteropUtils.Memory.ComSmartPointer{`0})~`0
+  name.vb: CType(ComSmartPointer(Of T))
+  fullName: FireBlade.WinInteropUtils.Memory.ComSmartPointer<T>.implicit operator T(FireBlade.WinInteropUtils.Memory.ComSmartPointer<T>)
+  fullName.vb: FireBlade.WinInteropUtils.Memory.ComSmartPointer(Of T).CType(FireBlade.WinInteropUtils.Memory.ComSmartPointer(Of T))
+  nameWithType: ComSmartPointer<T>.implicit operator T(ComSmartPointer<T>)
+  nameWithType.vb: ComSmartPointer(Of T).CType(ComSmartPointer(Of T))
+- uid: FireBlade.WinInteropUtils.Memory.ComSmartPointer`1.op_Implicit*
+  name: implicit operator
+  href: api/FireBlade.WinInteropUtils.Memory.ComSmartPointer-1.html#FireBlade_WinInteropUtils_Memory_ComSmartPointer_1_op_Implicit_
+  commentId: Overload:FireBlade.WinInteropUtils.Memory.ComSmartPointer`1.op_Implicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: FireBlade.WinInteropUtils.Memory.ComSmartPointer<T>.implicit operator
+  fullName.vb: FireBlade.WinInteropUtils.Memory.ComSmartPointer(Of T).CType
+  nameWithType: ComSmartPointer<T>.implicit operator
+  nameWithType.vb: ComSmartPointer(Of T).CType
+- uid: FireBlade.WinInteropUtils.Memory.MemoryString
+  name: MemoryString
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryString.html
+  commentId: T:FireBlade.WinInteropUtils.Memory.MemoryString
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryString
+  nameWithType: MemoryString
+- uid: FireBlade.WinInteropUtils.Memory.MemoryString.#ctor(System.String,FireBlade.WinInteropUtils.Memory.MemoryStringEncoding)
+  name: MemoryString(string, MemoryStringEncoding)
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryString.html#FireBlade_WinInteropUtils_Memory_MemoryString__ctor_System_String_FireBlade_WinInteropUtils_Memory_MemoryStringEncoding_
+  commentId: M:FireBlade.WinInteropUtils.Memory.MemoryString.#ctor(System.String,FireBlade.WinInteropUtils.Memory.MemoryStringEncoding)
+  name.vb: New(String, MemoryStringEncoding)
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryString.MemoryString(string, FireBlade.WinInteropUtils.Memory.MemoryStringEncoding)
+  fullName.vb: FireBlade.WinInteropUtils.Memory.MemoryString.New(String, FireBlade.WinInteropUtils.Memory.MemoryStringEncoding)
+  nameWithType: MemoryString.MemoryString(string, MemoryStringEncoding)
+  nameWithType.vb: MemoryString.New(String, MemoryStringEncoding)
+- uid: FireBlade.WinInteropUtils.Memory.MemoryString.#ctor*
+  name: MemoryString
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryString.html#FireBlade_WinInteropUtils_Memory_MemoryString__ctor_
+  commentId: Overload:FireBlade.WinInteropUtils.Memory.MemoryString.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryString.MemoryString
+  fullName.vb: FireBlade.WinInteropUtils.Memory.MemoryString.New
+  nameWithType: MemoryString.MemoryString
+  nameWithType.vb: MemoryString.New
+- uid: FireBlade.WinInteropUtils.Memory.MemoryString.ByteCount
+  name: ByteCount
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryString.html#FireBlade_WinInteropUtils_Memory_MemoryString_ByteCount
+  commentId: P:FireBlade.WinInteropUtils.Memory.MemoryString.ByteCount
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryString.ByteCount
+  nameWithType: MemoryString.ByteCount
+- uid: FireBlade.WinInteropUtils.Memory.MemoryString.ByteCount*
+  name: ByteCount
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryString.html#FireBlade_WinInteropUtils_Memory_MemoryString_ByteCount_
+  commentId: Overload:FireBlade.WinInteropUtils.Memory.MemoryString.ByteCount
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryString.ByteCount
+  nameWithType: MemoryString.ByteCount
+- uid: FireBlade.WinInteropUtils.Memory.MemoryString.Dispose
+  name: Dispose()
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryString.html#FireBlade_WinInteropUtils_Memory_MemoryString_Dispose
+  commentId: M:FireBlade.WinInteropUtils.Memory.MemoryString.Dispose
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryString.Dispose()
+  nameWithType: MemoryString.Dispose()
+- uid: FireBlade.WinInteropUtils.Memory.MemoryString.Dispose*
+  name: Dispose
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryString.html#FireBlade_WinInteropUtils_Memory_MemoryString_Dispose_
+  commentId: Overload:FireBlade.WinInteropUtils.Memory.MemoryString.Dispose
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryString.Dispose
+  nameWithType: MemoryString.Dispose
+- uid: FireBlade.WinInteropUtils.Memory.MemoryString.Encoding
+  name: Encoding
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryString.html#FireBlade_WinInteropUtils_Memory_MemoryString_Encoding
+  commentId: P:FireBlade.WinInteropUtils.Memory.MemoryString.Encoding
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryString.Encoding
+  nameWithType: MemoryString.Encoding
+- uid: FireBlade.WinInteropUtils.Memory.MemoryString.Encoding*
+  name: Encoding
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryString.html#FireBlade_WinInteropUtils_Memory_MemoryString_Encoding_
+  commentId: Overload:FireBlade.WinInteropUtils.Memory.MemoryString.Encoding
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryString.Encoding
+  nameWithType: MemoryString.Encoding
+- uid: FireBlade.WinInteropUtils.Memory.MemoryString.Finalize
+  name: ~MemoryString()
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryString.html#FireBlade_WinInteropUtils_Memory_MemoryString_Finalize
+  commentId: M:FireBlade.WinInteropUtils.Memory.MemoryString.Finalize
+  name.vb: ''
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryString.~MemoryString()
+  fullName.vb: ''
+  nameWithType: MemoryString.~MemoryString()
+  nameWithType.vb: ''
+- uid: FireBlade.WinInteropUtils.Memory.MemoryString.Finalize*
+  name: ~MemoryString
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryString.html#FireBlade_WinInteropUtils_Memory_MemoryString_Finalize_
+  commentId: Overload:FireBlade.WinInteropUtils.Memory.MemoryString.Finalize
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryString.~MemoryString
+  nameWithType: MemoryString.~MemoryString
+- uid: FireBlade.WinInteropUtils.Memory.MemoryString.Length
+  name: Length
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryString.html#FireBlade_WinInteropUtils_Memory_MemoryString_Length
+  commentId: P:FireBlade.WinInteropUtils.Memory.MemoryString.Length
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryString.Length
+  nameWithType: MemoryString.Length
+- uid: FireBlade.WinInteropUtils.Memory.MemoryString.Length*
+  name: Length
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryString.html#FireBlade_WinInteropUtils_Memory_MemoryString_Length_
+  commentId: Overload:FireBlade.WinInteropUtils.Memory.MemoryString.Length
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryString.Length
+  nameWithType: MemoryString.Length
+- uid: FireBlade.WinInteropUtils.Memory.MemoryString.OriginalString
+  name: OriginalString
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryString.html#FireBlade_WinInteropUtils_Memory_MemoryString_OriginalString
+  commentId: P:FireBlade.WinInteropUtils.Memory.MemoryString.OriginalString
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryString.OriginalString
+  nameWithType: MemoryString.OriginalString
+- uid: FireBlade.WinInteropUtils.Memory.MemoryString.OriginalString*
+  name: OriginalString
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryString.html#FireBlade_WinInteropUtils_Memory_MemoryString_OriginalString_
+  commentId: Overload:FireBlade.WinInteropUtils.Memory.MemoryString.OriginalString
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryString.OriginalString
+  nameWithType: MemoryString.OriginalString
+- uid: FireBlade.WinInteropUtils.Memory.MemoryString.Pointer
+  name: Pointer
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryString.html#FireBlade_WinInteropUtils_Memory_MemoryString_Pointer
+  commentId: P:FireBlade.WinInteropUtils.Memory.MemoryString.Pointer
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryString.Pointer
+  nameWithType: MemoryString.Pointer
+- uid: FireBlade.WinInteropUtils.Memory.MemoryString.Pointer*
+  name: Pointer
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryString.html#FireBlade_WinInteropUtils_Memory_MemoryString_Pointer_
+  commentId: Overload:FireBlade.WinInteropUtils.Memory.MemoryString.Pointer
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryString.Pointer
+  nameWithType: MemoryString.Pointer
+- uid: FireBlade.WinInteropUtils.Memory.MemoryString.ToString
+  name: ToString()
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryString.html#FireBlade_WinInteropUtils_Memory_MemoryString_ToString
+  commentId: M:FireBlade.WinInteropUtils.Memory.MemoryString.ToString
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryString.ToString()
+  nameWithType: MemoryString.ToString()
+- uid: FireBlade.WinInteropUtils.Memory.MemoryString.ToString*
+  name: ToString
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryString.html#FireBlade_WinInteropUtils_Memory_MemoryString_ToString_
+  commentId: Overload:FireBlade.WinInteropUtils.Memory.MemoryString.ToString
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryString.ToString
+  nameWithType: MemoryString.ToString
+- uid: FireBlade.WinInteropUtils.Memory.MemoryString.op_Implicit(FireBlade.WinInteropUtils.Memory.MemoryString)~System.IntPtr
+  name: implicit operator nint(MemoryString)
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryString.html#FireBlade_WinInteropUtils_Memory_MemoryString_op_Implicit_FireBlade_WinInteropUtils_Memory_MemoryString__System_IntPtr
+  commentId: M:FireBlade.WinInteropUtils.Memory.MemoryString.op_Implicit(FireBlade.WinInteropUtils.Memory.MemoryString)~System.IntPtr
+  name.vb: CType(MemoryString)
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryString.implicit operator nint(FireBlade.WinInteropUtils.Memory.MemoryString)
+  fullName.vb: FireBlade.WinInteropUtils.Memory.MemoryString.CType(FireBlade.WinInteropUtils.Memory.MemoryString)
+  nameWithType: MemoryString.implicit operator nint(MemoryString)
+  nameWithType.vb: MemoryString.CType(MemoryString)
+- uid: FireBlade.WinInteropUtils.Memory.MemoryString.op_Implicit*
+  name: implicit operator
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryString.html#FireBlade_WinInteropUtils_Memory_MemoryString_op_Implicit_
+  commentId: Overload:FireBlade.WinInteropUtils.Memory.MemoryString.op_Implicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryString.implicit operator
+  fullName.vb: FireBlade.WinInteropUtils.Memory.MemoryString.CType
+  nameWithType: MemoryString.implicit operator
+  nameWithType.vb: MemoryString.CType
+- uid: FireBlade.WinInteropUtils.Memory.MemoryStringEncoding
+  name: MemoryStringEncoding
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryStringEncoding.html
+  commentId: T:FireBlade.WinInteropUtils.Memory.MemoryStringEncoding
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryStringEncoding
+  nameWithType: MemoryStringEncoding
+- uid: FireBlade.WinInteropUtils.Memory.MemoryStringEncoding.Ansi
+  name: Ansi
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryStringEncoding.html#FireBlade_WinInteropUtils_Memory_MemoryStringEncoding_Ansi
+  commentId: F:FireBlade.WinInteropUtils.Memory.MemoryStringEncoding.Ansi
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryStringEncoding.Ansi
+  nameWithType: MemoryStringEncoding.Ansi
+- uid: FireBlade.WinInteropUtils.Memory.MemoryStringEncoding.Unicode
+  name: Unicode
+  href: api/FireBlade.WinInteropUtils.Memory.MemoryStringEncoding.html#FireBlade_WinInteropUtils_Memory_MemoryStringEncoding_Unicode
+  commentId: F:FireBlade.WinInteropUtils.Memory.MemoryStringEncoding.Unicode
+  fullName: FireBlade.WinInteropUtils.Memory.MemoryStringEncoding.Unicode
+  nameWithType: MemoryStringEncoding.Unicode
 - uid: FireBlade.WinInteropUtils.MessageLoop
   name: MessageLoop
   href: api/FireBlade.WinInteropUtils.MessageLoop.html
@@ -23479,6 +24584,70 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.WinForms.ComboBoxExItemCollection.RemoveAt
   nameWithType: ComboBoxExItemCollection.RemoveAt
+- uid: FireBlade.WinInteropUtils.WinForms.Divider
+  name: Divider
+  href: api/FireBlade.WinInteropUtils.WinForms.Divider.html
+  commentId: T:FireBlade.WinInteropUtils.WinForms.Divider
+  fullName: FireBlade.WinInteropUtils.WinForms.Divider
+  nameWithType: Divider
+- uid: FireBlade.WinInteropUtils.WinForms.Divider.#ctor
+  name: Divider()
+  href: api/FireBlade.WinInteropUtils.WinForms.Divider.html#FireBlade_WinInteropUtils_WinForms_Divider__ctor
+  commentId: M:FireBlade.WinInteropUtils.WinForms.Divider.#ctor
+  name.vb: New()
+  fullName: FireBlade.WinInteropUtils.WinForms.Divider.Divider()
+  fullName.vb: FireBlade.WinInteropUtils.WinForms.Divider.New()
+  nameWithType: Divider.Divider()
+  nameWithType.vb: Divider.New()
+- uid: FireBlade.WinInteropUtils.WinForms.Divider.#ctor*
+  name: Divider
+  href: api/FireBlade.WinInteropUtils.WinForms.Divider.html#FireBlade_WinInteropUtils_WinForms_Divider__ctor_
+  commentId: Overload:FireBlade.WinInteropUtils.WinForms.Divider.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: FireBlade.WinInteropUtils.WinForms.Divider.Divider
+  fullName.vb: FireBlade.WinInteropUtils.WinForms.Divider.New
+  nameWithType: Divider.Divider
+  nameWithType.vb: Divider.New
+- uid: FireBlade.WinInteropUtils.WinForms.Divider.CreateParams
+  name: CreateParams
+  href: api/FireBlade.WinInteropUtils.WinForms.Divider.html#FireBlade_WinInteropUtils_WinForms_Divider_CreateParams
+  commentId: P:FireBlade.WinInteropUtils.WinForms.Divider.CreateParams
+  fullName: FireBlade.WinInteropUtils.WinForms.Divider.CreateParams
+  nameWithType: Divider.CreateParams
+- uid: FireBlade.WinInteropUtils.WinForms.Divider.CreateParams*
+  name: CreateParams
+  href: api/FireBlade.WinInteropUtils.WinForms.Divider.html#FireBlade_WinInteropUtils_WinForms_Divider_CreateParams_
+  commentId: Overload:FireBlade.WinInteropUtils.WinForms.Divider.CreateParams
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinForms.Divider.CreateParams
+  nameWithType: Divider.CreateParams
+- uid: FireBlade.WinInteropUtils.WinForms.Divider.DefaultSize
+  name: DefaultSize
+  href: api/FireBlade.WinInteropUtils.WinForms.Divider.html#FireBlade_WinInteropUtils_WinForms_Divider_DefaultSize
+  commentId: P:FireBlade.WinInteropUtils.WinForms.Divider.DefaultSize
+  fullName: FireBlade.WinInteropUtils.WinForms.Divider.DefaultSize
+  nameWithType: Divider.DefaultSize
+- uid: FireBlade.WinInteropUtils.WinForms.Divider.DefaultSize*
+  name: DefaultSize
+  href: api/FireBlade.WinInteropUtils.WinForms.Divider.html#FireBlade_WinInteropUtils_WinForms_Divider_DefaultSize_
+  commentId: Overload:FireBlade.WinInteropUtils.WinForms.Divider.DefaultSize
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinForms.Divider.DefaultSize
+  nameWithType: Divider.DefaultSize
+- uid: FireBlade.WinInteropUtils.WinForms.Divider.Orientation
+  name: Orientation
+  href: api/FireBlade.WinInteropUtils.WinForms.Divider.html#FireBlade_WinInteropUtils_WinForms_Divider_Orientation
+  commentId: P:FireBlade.WinInteropUtils.WinForms.Divider.Orientation
+  fullName: FireBlade.WinInteropUtils.WinForms.Divider.Orientation
+  nameWithType: Divider.Orientation
+- uid: FireBlade.WinInteropUtils.WinForms.Divider.Orientation*
+  name: Orientation
+  href: api/FireBlade.WinInteropUtils.WinForms.Divider.html#FireBlade_WinInteropUtils_WinForms_Divider_Orientation_
+  commentId: Overload:FireBlade.WinInteropUtils.WinForms.Divider.Orientation
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.WinForms.Divider.Orientation
+  nameWithType: Divider.Orientation
 - uid: FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor
   name: FlagsEnumEditor
   href: api/FireBlade.WinInteropUtils.WinForms.FlagsEnumEditor.html
@@ -23596,22 +24765,6 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox.CreateParams
   nameWithType: HotKeyBox.CreateParams
-- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox.Dispose(System.Boolean)
-  name: Dispose(bool)
-  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html#FireBlade_WinInteropUtils_WinForms_HotKeyBox_Dispose_System_Boolean_
-  commentId: M:FireBlade.WinInteropUtils.WinForms.HotKeyBox.Dispose(System.Boolean)
-  name.vb: Dispose(Boolean)
-  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox.Dispose(bool)
-  fullName.vb: FireBlade.WinInteropUtils.WinForms.HotKeyBox.Dispose(Boolean)
-  nameWithType: HotKeyBox.Dispose(bool)
-  nameWithType.vb: HotKeyBox.Dispose(Boolean)
-- uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox.Dispose*
-  name: Dispose
-  href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html#FireBlade_WinInteropUtils_WinForms_HotKeyBox_Dispose_
-  commentId: Overload:FireBlade.WinInteropUtils.WinForms.HotKeyBox.Dispose
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.WinForms.HotKeyBox.Dispose
-  nameWithType: HotKeyBox.Dispose
 - uid: FireBlade.WinInteropUtils.WinForms.HotKeyBox.FallbackValue
   name: FallbackValue
   href: api/FireBlade.WinInteropUtils.WinForms.HotKeyBox.html#FireBlade_WinInteropUtils_WinForms_HotKeyBox_FallbackValue
@@ -23955,22 +25108,6 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.WinForms.ProgressBarEx.CreateParams
   nameWithType: ProgressBarEx.CreateParams
-- uid: FireBlade.WinInteropUtils.WinForms.ProgressBarEx.Dispose(System.Boolean)
-  name: Dispose(bool)
-  href: api/FireBlade.WinInteropUtils.WinForms.ProgressBarEx.html#FireBlade_WinInteropUtils_WinForms_ProgressBarEx_Dispose_System_Boolean_
-  commentId: M:FireBlade.WinInteropUtils.WinForms.ProgressBarEx.Dispose(System.Boolean)
-  name.vb: Dispose(Boolean)
-  fullName: FireBlade.WinInteropUtils.WinForms.ProgressBarEx.Dispose(bool)
-  fullName.vb: FireBlade.WinInteropUtils.WinForms.ProgressBarEx.Dispose(Boolean)
-  nameWithType: ProgressBarEx.Dispose(bool)
-  nameWithType.vb: ProgressBarEx.Dispose(Boolean)
-- uid: FireBlade.WinInteropUtils.WinForms.ProgressBarEx.Dispose*
-  name: Dispose
-  href: api/FireBlade.WinInteropUtils.WinForms.ProgressBarEx.html#FireBlade_WinInteropUtils_WinForms_ProgressBarEx_Dispose_
-  commentId: Overload:FireBlade.WinInteropUtils.WinForms.ProgressBarEx.Dispose
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.WinForms.ProgressBarEx.Dispose
-  nameWithType: ProgressBarEx.Dispose
 - uid: FireBlade.WinInteropUtils.WinForms.ProgressBarEx.ForeColor
   name: ForeColor
   href: api/FireBlade.WinInteropUtils.WinForms.ProgressBarEx.html#FireBlade_WinInteropUtils_WinForms_ProgressBarEx_ForeColor
@@ -24306,22 +25443,6 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.WinForms.Slider.CreateParams
   nameWithType: Slider.CreateParams
-- uid: FireBlade.WinInteropUtils.WinForms.Slider.Dispose(System.Boolean)
-  name: Dispose(bool)
-  href: api/FireBlade.WinInteropUtils.WinForms.Slider.html#FireBlade_WinInteropUtils_WinForms_Slider_Dispose_System_Boolean_
-  commentId: M:FireBlade.WinInteropUtils.WinForms.Slider.Dispose(System.Boolean)
-  name.vb: Dispose(Boolean)
-  fullName: FireBlade.WinInteropUtils.WinForms.Slider.Dispose(bool)
-  fullName.vb: FireBlade.WinInteropUtils.WinForms.Slider.Dispose(Boolean)
-  nameWithType: Slider.Dispose(bool)
-  nameWithType.vb: Slider.Dispose(Boolean)
-- uid: FireBlade.WinInteropUtils.WinForms.Slider.Dispose*
-  name: Dispose
-  href: api/FireBlade.WinInteropUtils.WinForms.Slider.html#FireBlade_WinInteropUtils_WinForms_Slider_Dispose_
-  commentId: Overload:FireBlade.WinInteropUtils.WinForms.Slider.Dispose
-  isSpec: "True"
-  fullName: FireBlade.WinInteropUtils.WinForms.Slider.Dispose
-  nameWithType: Slider.Dispose
 - uid: FireBlade.WinInteropUtils.WinForms.Slider.FixedLength
   name: FixedLength
   href: api/FireBlade.WinInteropUtils.WinForms.Slider.html#FireBlade_WinInteropUtils_WinForms_Slider_FixedLength
@@ -25151,6 +26272,22 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.Window.Enabled
   nameWithType: Window.Enabled
+- uid: FireBlade.WinInteropUtils.Window.Equals(System.Object)
+  name: Equals(object?)
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Equals_System_Object_
+  commentId: M:FireBlade.WinInteropUtils.Window.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: FireBlade.WinInteropUtils.Window.Equals(object?)
+  fullName.vb: FireBlade.WinInteropUtils.Window.Equals(Object)
+  nameWithType: Window.Equals(object?)
+  nameWithType.vb: Window.Equals(Object)
+- uid: FireBlade.WinInteropUtils.Window.Equals*
+  name: Equals
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Equals_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.Equals
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.Equals
+  nameWithType: Window.Equals
 - uid: FireBlade.WinInteropUtils.Window.Exists(System.IntPtr)
   name: Exists(nint)
   href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Exists_System_IntPtr_
@@ -25196,6 +26333,19 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.Window.FromPoint
   nameWithType: Window.FromPoint
+- uid: FireBlade.WinInteropUtils.Window.GetHashCode
+  name: GetHashCode()
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_GetHashCode
+  commentId: M:FireBlade.WinInteropUtils.Window.GetHashCode
+  fullName: FireBlade.WinInteropUtils.Window.GetHashCode()
+  nameWithType: Window.GetHashCode()
+- uid: FireBlade.WinInteropUtils.Window.GetHashCode*
+  name: GetHashCode
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_GetHashCode_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.GetHashCode
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.GetHashCode
+  nameWithType: Window.GetHashCode
 - uid: FireBlade.WinInteropUtils.Window.GetWindowLongPtr(System.Int32)
   name: GetWindowLongPtr(int)
   href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_GetWindowLongPtr_System_Int32_
@@ -25407,6 +26557,19 @@ references:
   isSpec: "True"
   fullName: FireBlade.WinInteropUtils.Window.Text
   nameWithType: Window.Text
+- uid: FireBlade.WinInteropUtils.Window.ToString
+  name: ToString()
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_ToString
+  commentId: M:FireBlade.WinInteropUtils.Window.ToString
+  fullName: FireBlade.WinInteropUtils.Window.ToString()
+  nameWithType: Window.ToString()
+- uid: FireBlade.WinInteropUtils.Window.ToString*
+  name: ToString
+  href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_ToString_
+  commentId: Overload:FireBlade.WinInteropUtils.Window.ToString
+  isSpec: "True"
+  fullName: FireBlade.WinInteropUtils.Window.ToString
+  nameWithType: Window.ToString
 - uid: FireBlade.WinInteropUtils.Window.Visible
   name: Visible
   href: api/FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_Visible

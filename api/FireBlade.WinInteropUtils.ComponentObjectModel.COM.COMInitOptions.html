@@ -90,7 +90,7 @@
 
 
   <h1 id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions" data-uid="FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions" class="text-break">
-Enum COM.COMInitOptions  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/COM.cs/#L147"><i class="bi bi-code-slash"></i></a>
+Enum COM.COMInitOptions  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/COM.cs/#L156"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -145,30 +145,35 @@ public enum COM.COMInitOptions</code></pre>
 
 
   <h2 id="FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>When a thread is initialized through a call to <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a>, you choose whether to initialize it as apartment-threaded or
-multithreaded by designating one of the members of <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.html">COM.COMInitOptions</a> as its parameter. This designates how incoming calls to any object created by that
-thread are handled, that is, the object's concurrency.</p>
-<p>Apartment-threading, while allowing for multiple threads of execution, serializes all incoming calls by requiring that calls to methods
-of objects created by this thread always run on the same thread, i.e. the apartment/thread that created them. In addition, calls can arrive only at message-queue
-boundaries. Because of this serialization, it is not typically necessary to write concurrency control into the code for the object, other than to avoid calls
+  <div class="markdown level0 remarks"><p>When a thread is initialized through a call to <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.html#FireBlade_WinInteropUtils_ComponentObjectModel_COM_Initialize_FireBlade_WinInteropUtils_ComponentObjectModel_COM_COMInitOptions_">Initialize(COMInitOptions)</a>, you choose whether
+to initialize it as apartment-threaded or multithreaded by designating one of the members of <a class="xref" href="FireBlade.WinInteropUtils.ComponentObjectModel.COM.COMInitOptions.html">COM.COMInitOptions</a>
+as its parameter. This designates how incoming calls to any object created by that thread are handled, that is,
+the object's concurrency.</p>
+<p>Apartment-threading, while allowing for multiple threads of execution, serializes all incoming calls by
+requiring that calls to methods of objects created by this thread always run on the same thread, i.e. the apartment/thread
+that created them. In addition, calls can arrive only at message-queue boundaries. Because of this serialization,
+it is not typically necessary to write concurrency control into the code for the object, other than to avoid calls
 to <a href="https://learn.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-peekmessagea">PeekMessage</a> and
-<a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(uint, nuint, nint)</a> during processing that must not be interrupted by other method invocations or calls to other 
-objects in the same apartment/thread.</p>
-<p>Multi-threading (also called free-threading) allows calls to methods of objects created by this thread to be run on any thread. There is no
-serialization of calls, i.e. many calls may occur to the same method or to the same object or simultaneously. Multi-threaded object concurrency offers the
-highest performance and takes the best advantage of multiprocessor hardware for cross-thread, cross-process, and cross-machine calling,
-since calls to objects are not serialized in any way.This means, however, that the code for objects must enforce its own concurrency model, typically through
-the use of synchronization primitives, such as critical sections, semaphores, or mutexes. In addition, because the object doesn't control the lifetime
-of the threads that are accessing it, no thread-specific state may be stored in the object
+<a class="xref" href="FireBlade.WinInteropUtils.Window.html#FireBlade_WinInteropUtils_Window_SendMessage_System_UInt32_System_UIntPtr_System_IntPtr_">SendMessage(uint, nuint, nint)</a> during processing that must not be interrupted by other method
+invocations or calls to other objects in the same apartment/thread.</p>
+<p>Multi-threading (also called free-threading) allows calls to methods of objects created by this
+thread to be run on any thread. There is no serialization of calls, i.e. many calls may occur to the same
+method or to the same object or simultaneously. Multi-threaded object concurrency offers the highest performance
+and takes the best advantage of multiprocessor hardware for cross-thread, cross-process, and cross-machine calling,
+since calls to objects are not serialized in any way.This means, however, that the code for objects must enforce
+its own concurrency model, typically through the use of synchronization primitives, such as critical sections,
+semaphores, or mutexes. In addition, because the object doesn't control the lifetime of the threads that are
+accessing it, no thread-specific state may be stored in the object
 (in <a href="https://learn.microsoft.com/en-us/windows/desktop/ProcThread/thread-local-storage">Thread Local Storage</a>).</p>
-<p><i>Note: The multi-threaded apartment is intended for use by non-GUI threads. Threads in multi-threaded apartments should not perform UI actions.
-This is because UI threads require a message pump, and COM does not pump messages for threads in a multi-threaded apartment.</i></p>
+<p><i>Note: The multi-threaded apartment is intended for use by non-GUI threads. Threads in multi-threaded
+apartments should not perform UI actions. This is because UI threads require a message pump, and COM does
+not pump messages for threads in a multi-threaded apartment.</i></p>
 </div>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/COM.cs/#L147" class="edit-link">Edit this page</a>
+          <a href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/ComponentObjectModel/COM.cs/#L156" class="edit-link">Edit this page</a>
         </div>
 
 

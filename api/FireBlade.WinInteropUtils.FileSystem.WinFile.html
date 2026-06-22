@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class WinFile | WinInteropUtils </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class WinFile | WinInteropUtils ">
+      
+      <meta name="description" content="Represents a Windows file.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="WinInteropUtils">
+            WinInteropUtils
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FireBlade.WinInteropUtils.FileSystem.WinFile">
+
+
+
+  <h1 id="FireBlade_WinInteropUtils_FileSystem_WinFile" data-uid="FireBlade.WinInteropUtils.FileSystem.WinFile" class="text-break">
+Class WinFile  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FireBlade.html">FireBlade</a>.<a class="xref" href="FireBlade.WinInteropUtils.html">WinInteropUtils</a>.<a class="xref" href="FireBlade.WinInteropUtils.FileSystem.html">FileSystem</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>WinInteropUtils.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a Windows file.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class WinFile : IDisposable, IHandle</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">WinFile</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="FireBlade.WinInteropUtils.IHandle.html">IHandle</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="FireBlade_WinInteropUtils_FileSystem_WinFile__ctor_" data-uid="FireBlade.WinInteropUtils.FileSystem.WinFile.#ctor*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_FileSystem_WinFile__ctor_System_String_FireBlade_WinInteropUtils_FileSystem_WinFileAccess_FireBlade_WinInteropUtils_FileSystem_WinFileShareMode_FireBlade_WinInteropUtils_FileSystem_WinFileOpenMode_FireBlade_WinInteropUtils_FileSystem_WinFileAttributes_FireBlade_WinInteropUtils_FileSystem_WinFileOptions_FireBlade_WinInteropUtils_FileSystem_WinFile_" data-uid="FireBlade.WinInteropUtils.FileSystem.WinFile.#ctor(System.String,FireBlade.WinInteropUtils.FileSystem.WinFileAccess,FireBlade.WinInteropUtils.FileSystem.WinFileShareMode,FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode,FireBlade.WinInteropUtils.FileSystem.WinFileAttributes,FireBlade.WinInteropUtils.FileSystem.WinFileOptions,FireBlade.WinInteropUtils.FileSystem.WinFile)">
+  WinFile(string, WinFileAccess, WinFileShareMode, WinFileOpenMode, WinFileAttributes, WinFileOptions, WinFile?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/FileSystem/WinFile.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FireBlade.WinInteropUtils.FileSystem.WinFile.html">WinFile</a> class with the specified path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WinFile(string path, WinFileAccess access = WinFileAccess.Read, WinFileShareMode shareMode = WinFileShareMode.None, WinFileOpenMode mode = WinFileOpenMode.OpenExisting, WinFileAttributes attribs = WinFileAttributes.None, WinFileOptions options = WinFileOptions.None, WinFile? templateFile = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to the file.</p>
+</dd>
+    <dt><code>access</code> <a class="xref" href="FireBlade.WinInteropUtils.FileSystem.WinFileAccess.html">WinFileAccess</a></dt>
+    <dd><p>The requested access to the file. A bitwise combination of <a class="xref" href="FireBlade.WinInteropUtils.FileSystem.WinFileAccess.html">WinFileAccess</a> values.</p>
+</dd>
+    <dt><code>shareMode</code> <a class="xref" href="FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.html">WinFileShareMode</a></dt>
+    <dd><p>The requested sharing mode of the file.</p>
+</dd>
+    <dt><code>mode</code> <a class="xref" href="FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.html">WinFileOpenMode</a></dt>
+    <dd><p>The action to take on a file that exists or does not exist.</p>
+</dd>
+    <dt><code>attribs</code> <a class="xref" href="FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html">WinFileAttributes</a></dt>
+    <dd><p>The file attributes and flags.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="FireBlade.WinInteropUtils.FileSystem.WinFileOptions.html">WinFileOptions</a></dt>
+    <dd><p>Additional options for opening the file.</p>
+</dd>
+    <dt><code>templateFile</code> <a class="xref" href="FireBlade.WinInteropUtils.FileSystem.WinFile.html">WinFile</a></dt>
+    <dd><p>A valid template file with the <a class="xref" href="FireBlade.WinInteropUtils.FileSystem.WinFileAccess.html#FireBlade_WinInteropUtils_FileSystem_WinFileAccess_Read">Read</a> access right.
+The template file supplies file attributes and extended attributes for the file that is being created.
+If opening an existing file, this parameter is ignored.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="FireBlade_WinInteropUtils_FileSystem_WinFile_Bytes_" data-uid="FireBlade.WinInteropUtils.FileSystem.WinFile.Bytes*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_FileSystem_WinFile_Bytes" data-uid="FireBlade.WinInteropUtils.FileSystem.WinFile.Bytes">
+  Bytes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/FileSystem/WinFile.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the bytes of the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] Bytes { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_FileSystem_WinFile_Bytes_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Do not repeatedly get this property; instead, cache it, as reading files can be expensive.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_FileSystem_WinFile_Content_" data-uid="FireBlade.WinInteropUtils.FileSystem.WinFile.Content*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_FileSystem_WinFile_Content" data-uid="FireBlade.WinInteropUtils.FileSystem.WinFile.Content">
+  Content
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/FileSystem/WinFile.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the string content of the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Content { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="FireBlade_WinInteropUtils_FileSystem_WinFile_Content_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This property assumes the file is encoded with UTF-8. If the file is a different encoding,
+you may have to use <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding.getstring#system-text-encoding-getstring(system-byte())">GetString(byte[])</a> or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding.getbytes#system-text-encoding-getbytes(system-string)">GetBytes(string)</a> instead.</p>
+</div>
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_FileSystem_WinFile_FileInfo_" data-uid="FireBlade.WinInteropUtils.FileSystem.WinFile.FileInfo*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_FileSystem_WinFile_FileInfo" data-uid="FireBlade.WinInteropUtils.FileSystem.WinFile.FileInfo">
+  FileInfo
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/FileSystem/WinFile.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the information about this file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WinFileInfo FileInfo { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html">WinFileInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_FileSystem_WinFile_Handle_" data-uid="FireBlade.WinInteropUtils.FileSystem.WinFile.Handle*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_FileSystem_WinFile_Handle" data-uid="FireBlade.WinInteropUtils.FileSystem.WinFile.Handle">
+  Handle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/FileSystem/WinFile.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the handle (<code>HFILE</code>) of this file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public nint Handle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_FileSystem_WinFile_Path_" data-uid="FireBlade.WinInteropUtils.FileSystem.WinFile.Path*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_FileSystem_WinFile_Path" data-uid="FireBlade.WinInteropUtils.FileSystem.WinFile.Path">
+  Path
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/FileSystem/WinFile.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the path to this file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Path { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FireBlade_WinInteropUtils_FileSystem_WinFile_Size_" data-uid="FireBlade.WinInteropUtils.FileSystem.WinFile.Size*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_FileSystem_WinFile_Size" data-uid="FireBlade.WinInteropUtils.FileSystem.WinFile.Size">
+  Size
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/FileSystem/WinFile.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the current size of the file, in bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Size { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FireBlade_WinInteropUtils_FileSystem_WinFile_Dispose_" data-uid="FireBlade.WinInteropUtils.FileSystem.WinFile.Dispose*"></a>
+
+  <h3 id="FireBlade_WinInteropUtils_FileSystem_WinFile_Dispose" data-uid="FireBlade.WinInteropUtils.FileSystem.WinFile.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/FileSystem/WinFile.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Releases this <a class="xref" href="FireBlade.WinInteropUtils.FileSystem.WinFile.html">WinFile</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

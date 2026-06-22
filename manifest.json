@@ -596,6 +596,160 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.FileSystem.ExecutableType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.FileSystem.ExecutableType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.FileSystem.ExecutableType",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.FileSystem.ExecutableType.yml\" sourcestartlinenumber=\"1\">Represents the type of an EXE file.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.FileSystem.WinFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.FileSystem.WinFile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.FileSystem.WinFile",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.FileSystem.WinFile.yml\" sourcestartlinenumber=\"1\">Represents a Windows file.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.FileSystem.WinFileAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.FileSystem.WinFileAccess.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.FileSystem.WinFileAccess",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.FileSystem.WinFileAccess.yml\" sourcestartlinenumber=\"1\">Represents the file access mode of a <xref href=\"FireBlade.WinInteropUtils.FileSystem.WinFile\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.FileSystem.WinFileAttributes",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.FileSystem.WinFileAttributes.yml\" sourcestartlinenumber=\"1\">Specifies attributes for Windows files.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.FileSystem.WinFileIcon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.FileSystem.WinFileIcon.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.FileSystem.WinFileIcon",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.FileSystem.WinFileIcon.yml\" sourcestartlinenumber=\"1\">Represents the icon of a <xref href=\"FireBlade.WinInteropUtils.FileSystem.WinFile\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.FileSystem.WinFileInfo",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.FileSystem.WinFileInfo.yml\" sourcestartlinenumber=\"1\">Represents information about a <xref href=\"FireBlade.WinInteropUtils.FileSystem.WinFile\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions.yml\" sourcestartlinenumber=\"1\">Represents the options for <xref href=\"FireBlade.WinInteropUtils.FileSystem.WinFileInfo.%23ctor(System.String%2cFireBlade.WinInteropUtils.FileSystem.WinFileInfoOptions%2cSystem.Nullable%7bFireBlade.WinInteropUtils.FileSystem.WinFileAttributes%7d)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.FileSystem.WinFileOpenMode.yml\" sourcestartlinenumber=\"1\">Specifies how to open a <xref href=\"FireBlade.WinInteropUtils.FileSystem.WinFile\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.FileSystem.WinFileOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.FileSystem.WinFileOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.FileSystem.WinFileOptions",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.FileSystem.WinFileOptions.yml\" sourcestartlinenumber=\"1\">Represents options for a <xref href=\"FireBlade.WinInteropUtils.FileSystem.WinFile\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.FileSystem.WinFileShareMode",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.FileSystem.WinFileShareMode.yml\" sourcestartlinenumber=\"1\">Represents the sharing mode of a <xref href=\"FireBlade.WinInteropUtils.FileSystem.WinFile\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.FileSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.FileSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.FileSystem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/FireBlade.WinInteropUtils.HRESULT.yml",
       "output": {
         ".html": {
@@ -649,6 +803,62 @@
       "IsMRef": true,
       "Title": "FireBlade.WinInteropUtils.Macros",
       "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Macros.yml\" sourcestartlinenumber=\"1\">Defines Win32 macros.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Memory.ComSmartPointer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Memory.ComSmartPointer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Memory.ComSmartPointer<T>",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Memory.ComSmartPointer-1.yml\" sourcestartlinenumber=\"1\">Represents a smart COM pointer that automatically releases its associated COM interface on dispose.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Memory.MemoryString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Memory.MemoryString.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Memory.MemoryString",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Memory.MemoryString.yml\" sourcestartlinenumber=\"1\">Represents a string allocated in memory.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Memory.MemoryStringEncoding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Memory.MemoryStringEncoding.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Memory.MemoryStringEncoding",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.Memory.MemoryStringEncoding.yml\" sourcestartlinenumber=\"1\">Represents the encoding of a <xref href=\"FireBlade.WinInteropUtils.Memory.MemoryString\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.Memory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.Memory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.Memory",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -943,6 +1153,20 @@
       "IsMRef": true,
       "Title": "FireBlade.WinInteropUtils.WinForms.ComboBoxExItemCollection",
       "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.ComboBoxExItemCollection.yml\" sourcestartlinenumber=\"1\">Represents a collection of items in a <xref href=\"FireBlade.WinInteropUtils.WinForms.ComboBoxEx\" data-throw-if-not-resolved=\"false\"></xref> control.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FireBlade.WinInteropUtils.WinForms.Divider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FireBlade.WinInteropUtils.WinForms.Divider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FireBlade.WinInteropUtils.WinForms.Divider",
+      "Summary": "<p sourcefile=\"api/FireBlade.WinInteropUtils.WinForms.Divider.yml\" sourcestartlinenumber=\"1\">Represents a control that can act as a horizontal or vertical separator.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1435,6 +1659,36 @@
       "output": {
         ".html": {
           "relative_path": "docs/com-interfaces_filedlg.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/filesystem/caching.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/filesystem/caching.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/filesystem/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/filesystem/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/filesystem/reparsepoints.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/filesystem/reparsepoints.html"
         }
       },
       "version": ""

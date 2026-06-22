@@ -210,7 +210,7 @@ information, call <a class="xref" href="https://learn.microsoft.com/dotnet/api/s
 
   <h3 id="FireBlade_WinInteropUtils_Shell32_GetFileInfo_System_String_" data-uid="FireBlade.WinInteropUtils.Shell32.GetFileInfo(System.String)">
   GetFileInfo(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L324"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves information about an object in the file system, such as a file, folder, directory, or drive root.</p>
@@ -218,7 +218,8 @@ information, call <a class="xref" href="https://learn.microsoft.com/dotnet/api/s
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static WindowsFile? GetFileInfo(string path)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the new WinFile APIs instead. This function will be removed in the next version of WinInteropUtils.&quot;)]
+public static WindowsFile? GetFileInfo(string path)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -252,7 +253,7 @@ information, call <a class="xref" href="https://learn.microsoft.com/dotnet/api/s
 
   <h3 id="FireBlade_WinInteropUtils_Shell32_GetFileInfoEx_System_String_FireBlade_WinInteropUtils_WindowsFileAttributes_FireBlade_WinInteropUtils_Shell32_SHGetFileInfoFlags_FireBlade_WinInteropUtils_Shell32_SHFILEINFO__" data-uid="FireBlade.WinInteropUtils.Shell32.GetFileInfoEx(System.String,FireBlade.WinInteropUtils.WindowsFileAttributes,FireBlade.WinInteropUtils.Shell32.SHGetFileInfoFlags,FireBlade.WinInteropUtils.Shell32.SHFILEINFO@)">
   GetFileInfoEx(string, WindowsFileAttributes, SHGetFileInfoFlags, ref SHFILEINFO)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L408"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L410"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves information about an object in the file system, such as a file, folder, directory, or drive root. This function provides all the customization
@@ -261,7 +262,8 @@ of the Windows API function <a class="xref" href="https://learn.microsoft.com/do
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nuint GetFileInfoEx(string pszPath, WindowsFileAttributes dwFileAttributes, Shell32.SHGetFileInfoFlags uFlags, ref Shell32.SHFILEINFO psfi)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the new WinFile APIs instead. This function will be removed in the next version of WinInteropUtils.&quot;)]
+public static nuint GetFileInfoEx(string pszPath, WindowsFileAttributes dwFileAttributes, Shell32.SHGetFileInfoFlags uFlags, ref Shell32.SHFILEINFO psfi)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -452,7 +454,7 @@ in which case the dialog displays the Windows icon.</p>
 
   <h3 id="FireBlade_WinInteropUtils_Shell32_ShowFileProperties_System_String___" data-uid="FireBlade.WinInteropUtils.Shell32.ShowFileProperties(System.String[])">
   ShowFileProperties(params string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L447"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FireBlade211/WinInteropUtils/blob/main/WinInteropUtils/Shell32.cs/#L450"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Displays a merged property sheet for a set of files. Property values common to all the files are shown, while those

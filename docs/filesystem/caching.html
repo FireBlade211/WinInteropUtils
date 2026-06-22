@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Filesystem Caching | WinInteropUtils </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Filesystem Caching | WinInteropUtils ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/FireBlade211/WinInteropUtils/blob/main/docs/filesystem/caching.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="WinInteropUtils">
+            WinInteropUtils
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="filesystem-caching">Filesystem Caching</h1>
+
+<p>By default, <strong>Windows</strong> caches file data that is read from disks and written to disks. This implies that read operations read file data from an area in system memory known as the <em>system file cache</em>, rather than from the physical disk. Correspondingly, write operations write file data to the system file cache rather than to the disk, and this type of cache is referred to as a <strong>write-back cache</strong>. Caching is managed per file object.</p>
+<p>Caching occurs under the direction of the <strong>cache manager</strong>, which operates continuously while <strong>Windows</strong> is running. File data in the system file cache is written to the disk at intervals determined by the operating system, and the memory previously used by that file data is freed — this is referred to as flushing the cache. The policy of delaying the writing of the data to the file and holding it in the cache until the cache is flushed is called <strong>lazy writing</strong>, and it is triggered by the cache manager at a determinate time interval. The time at which a block of file data is flushed is partially based on the amount of time it has been stored in the cache and the amount of time since the data was last accessed in a read operation. This ensures that file data that is frequently read will stay accessible in the system file cache for the maximum amount of time.</p>
+<p>This file data caching process is illustrated in the following figure.</p>
+<p><img src="https://learn.microsoft.com/en-us/windows/win32/fileio/images/fig3.png" alt="File caching"></p>
+<p>As depicted by the solid arrows in the previous figure, a <code>256 KB</code> region of data is read into a <code>256 KB</code> cache &quot;slot&quot; in system address space when it is first requested by the cache manager during a <strong>file read</strong> operation. A user-mode process then copies the data in this slot to its own address space. When the process has completed its data access, it writes the altered data back to the same slot in the system cache, as shown by the dotted arrow between the process address space and the system cache. When the cache manager has determined that the data will no longer be needed for a certain amount of time, it writes the altered data back to the file on the disk, as shown by the dotted arrow between the system cache and the disk.</p>
+<p>The amount of I/O performance improvement that file data caching offers depends on the size of the file data block being read or written. When large blocks of file data are read and written, it is more likely that disk reads and writes will be necessary to finish the I/O operation. I/O performance will be increasingly impaired as more of this kind of I/O operation occurs.</p>
+<p>In these situations, caching can be turned off. This is done at the time the file is opened by passing <code>WinFileOptions.NoBuffering</code> as a value for the <code>options</code> parameter of the <code>WinFile</code> constructor. When caching is disabled, all read and write operations directly access the physical disk. However, the file metadata may still be cached.</p>
+<p>The frequency at which flushing occurs is an important consideration that balances system performance with system reliability. If the system flushes the cache too often, the number of large write operations flushing incurs will degrade system performance significantly. If the system is not flushed often enough, then the likelihood is greater that either system memory will be depleted by the cache, or a sudden system failure (such as a <strong>loss of power to the computer</strong>) will happen before the flush. In the latter instance, <strong>the cached data will be lost</strong>.</p>
+<p>To ensure that the right amount of flushing occurs, the cache manager spawns a process every second called a lazy writer. The lazy writer process queues one-eighth of the pages that have not been flushed recently to be written to disk. It constantly reevaluates the amount of data being flushed for optimal system performance, and if more data needs to be written it queues more data. Lazy writers do not flush temporary files, because the assumption is that they will be deleted by the application or system.</p>
+<p>Some applications, such as virus-checking software, require that their write operations be flushed to disk immediately; <strong>Windows</strong> provides this ability through <em>write-through caching</em>. A process enables write-through caching for a specific I/O operation by passing the <code>WinFileOptions.WriteThrough</code> option into its call to the <code>WinFile</code> constructor. With write-through caching enabled, data is still written into the cache, but the cache manager writes the data immediately to disk rather than incurring a delay by using the lazy writer.</p>
+<p>File system metadata is always cached. Therefore, to store any metadata changes to disk, the file must either be flushed or be opened with <code>WinFileOptions.WriteThrough</code>.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/FireBlade211/WinInteropUtils/blob/main/docs/filesystem/caching.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
