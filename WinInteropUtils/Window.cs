@@ -840,6 +840,26 @@ namespace FireBlade.WinInteropUtils
             if (!SetWindowPos(_hwnd, insertAfter?._hwnd ?? nint.Zero, pos.X, pos.Y, size.Width, size.Height, (uint)options))
                 throw new Win32Exception(Marshal.GetLastPInvokeError());
         }
+
+        /// <summary>
+        /// Returns the text of the window.
+        /// </summary>
+        /// <returns>The text of the window.</returns>
+        public override string ToString() => Text;
+
+        /// <summary>
+        /// Determines whether two <see cref="Window"/> instances represent the same window.
+        /// </summary>
+        /// <param name="obj">The <see cref="Window"/> to compare.</param>
+        /// <returns><see langword="true"/> if the specified <see cref="Window"/> represents the same <see cref="Window"/>;
+        /// otherwise, <see langword="false"/>.</returns>
+        public override bool Equals(object? obj) => Handle == (obj as Window)?.Handle;
+
+        /// <summary>
+        /// Gets the hash code for the current <see cref="Window"/>.
+        /// </summary>
+        /// <returns>The hash code for the current <see cref="Window"/>.</returns>
+        public override int GetHashCode() => Handle.GetHashCode();
     }
 
     /// <summary>
